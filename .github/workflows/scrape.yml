@@ -12,6 +12,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
+      - env:
+          aaa: ${{ secrets.abc }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
         with:
@@ -19,7 +21,7 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: echo "Hello World!" > ./runs/test.txt
+      - run: echo $aaa > ./runs/test.txt
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
