@@ -12,9 +12,6 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: initialize
-        env:
-          aaa: ${{ secrets.abc }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
         with:
@@ -23,9 +20,12 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
       - run: echo $aaa > ./runs/test.txt
+        env:
+          aaa: ${{ secrets.abc }}
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add ./runs/
           git commit -m "daily run"
           git push
+
