@@ -21,6 +21,8 @@ jobs:
       - run: python -m playwright install chromium
       - run: echo "Hello World!" > ./runs/test.txt
       - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add ./runs/
           git commit -m "daily run"
           git push
