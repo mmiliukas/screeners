@@ -49,6 +49,8 @@ async def login(page: Page, username: str, password: str):
     await page.wait_for_selector("input#login-username")
     await page.type('input#login-username', username, delay=100)
     await page.click('input#login-signin')
+    await asyncio.sleep(2)
+    print(await page.inner_html('body'))
     await page.wait_for_selector('input#login-passwd')
     await page.type('input#login-passwd', password, delay=120)
     await asyncio.sleep(2)
