@@ -122,4 +122,5 @@ if __name__ == '__main__':
     password = sys.argv[2]
     urls = sys.argv[3:]
 
+    print(username[:3], password[:3], urls)
     asyncio.run(main(username, password, urls))
