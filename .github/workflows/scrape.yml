@@ -12,7 +12,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - env:
+      - name: initialize
+        env:
           aaa: ${{ secrets.abc }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
