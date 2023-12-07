@@ -19,4 +19,8 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: echo Hello World!
+      - run: echo Hello World! > ./runs/test.txt
+      - run: |
+          git add ./runs/
+          git commit -m "daily run"
+          git push
