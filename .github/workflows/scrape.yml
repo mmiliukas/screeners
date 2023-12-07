@@ -19,7 +19,7 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: python yahoo.py "$USERNAME" "$PASSWORD" "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736" "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
+      - run: python yahoo.py "$USERNAME" "$PASSWORD" "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736" "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39" || echo failed
         env:
           USERNAME: ${{ secrets.username }}
           PASSWORD: ${{ secrets.password }}
