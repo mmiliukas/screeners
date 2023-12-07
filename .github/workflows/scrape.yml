@@ -1,4 +1,4 @@
-name: python application
+name: scrape
 
 on:
   pull_request:
@@ -8,20 +8,14 @@ permissions:
   contents: read
 
 jobs:
-  build:
-
+  scrape:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    - name: set up python 3.10
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
         cache: 'pip'
-    - name: install dependencies
       run: pip install -r requirements.txt
-    - name: install chromium
       run: python -m playwright install chromium
-    - name: run
       run: echo Hello World!
