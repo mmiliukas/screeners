@@ -25,10 +25,13 @@ jobs:
           PASSWORD: ${{ secrets.password }}
           COOKIES: ${{ secrets.cookies }}
       - run: python yahoo-aggregate.py
+      - run: python yahoo-info.py
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add ./runs/
+          git add ./tickers/
+          git add ./tickers.json
           git commit -m "daily run"
           git push
 
