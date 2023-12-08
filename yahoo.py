@@ -2,6 +2,7 @@ import sys
 import time
 import asyncio
 import pandas
+import json
 
 from datetime import datetime
 from io import StringIO
@@ -49,8 +50,6 @@ async def login(page: Page, username: str, password: str):
     await page.wait_for_selector("input#login-username")
     await page.type('input#login-username', username, delay=100)
     await page.click('input#login-signin')
-    await asyncio.sleep(2)
-    await page.screenshot(path="./runs/abc.jpg")
     await page.wait_for_selector('input#login-passwd')
     await page.type('input#login-passwd', password, delay=120)
     await asyncio.sleep(2)
@@ -105,13 +104,20 @@ async def scrape(page: Page, url: str):
                 await button.click()
                 await asyncio.sleep(2)
 
-async def main(username: str, password: str, urls: List[str]):
+async def main(username: str, password: str, cookies: str, urls: List[str]):
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
 
-        await login(page, username, password)
+        if not cookies:
+          await login(page, username, password)
+
+          new_cookies = await page.context.cookies()
+          with open("./cookies.json", "w") as f:
+              f.write(json.dumps(new_cookies))
+        else:
+           await page.context.add_cookies(json.loads(cookies))
 
         for url in urls:
             result_from_url = await scrape(page, url)
@@ -120,7 +126,9 @@ async def main(username: str, password: str, urls: List[str]):
 if __name__ == '__main__':
     username = sys.argv[1]
     password = sys.argv[2]
-    urls = sys.argv[3:]
+    cookies = sys.argv[3]
+
+    urls = sys.argv[4:]
 
     print(username[:3], password[:3], urls)
-    asyncio.run(main(username, password, urls))
+    asyncio.run(main(username, password, cookies, urls))
