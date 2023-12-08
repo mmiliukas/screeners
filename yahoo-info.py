@@ -1,18 +1,21 @@
-import os
 import json
 import pandas as pd
 import yfinance as yf
 
 if __name__ == '__main__':
     df = pd.read_csv('./runs/all.csv')
+
     tickers = [symbol for symbol in df['Symbol']]
+    tickers_info = []
+
     for ticker in tickers:
         path = './tickers/' + ticker + '.json'
-        path_exists = os.path.exists(path)
+        result = yf.Ticker(ticker)
+        tickers_info.append(result.info or {})
 
-        if not path_exists:
-            print('getting ticker details', ticker)
+        with open(path, 'w') as f:
+            f.write(json.dumps(result.info or {}))
 
-            result = yf.Ticker(ticker)
-            with open(path, 'w') as f:
-                f.write(json.dumps(result.info))
+    with open('./tickers.json', 'w') as f:
+        f.write(json.dumps(tickers_info))
+
