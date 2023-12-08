@@ -3,6 +3,7 @@ import time
 import asyncio
 import pandas
 import json
+import base64
 
 from datetime import datetime
 from io import StringIO
@@ -111,13 +112,14 @@ async def main(username: str, password: str, cookies: str, urls: List[str]):
         page = await context.new_page()
 
         if not cookies:
-          await login(page, username, password)
+            await login(page, username, password)
 
-          new_cookies = await page.context.cookies()
-          with open("./cookies.json", "w") as f:
-              f.write(json.dumps(new_cookies))
+            new_cookies = await page.context.cookies()
+            with open("./cookies.json", "w") as f:
+                f.write(json.dumps(new_cookies))
         else:
-           await page.context.add_cookies(json.loads(cookies))
+            decoded_cookies = base64.b64decode(cookies)
+            await page.context.add_cookies(json.loads(decoded_cookies))
 
         for url in urls:
             result_from_url = await scrape(page, url)
