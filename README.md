@@ -8,8 +8,11 @@ python -m pip install -r requirements.txt
 
 ```
 >>> import pandas as pd
+
 >>> all = pd.read_csv('https://raw.githubusercontent.com/mmiliukas/screeners/main/runs/all.csv')
+
 >>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
+
 >>> all
     Symbol                               Name  Price (Intraday)  ...  Avg Vol (3 month)  Market Cap                        Date
 0    SAMHF                  Alleima AB (publ)            7.3000  ...                  1  2270000000  2023-12-08T19:07:18.414773
@@ -25,7 +28,9 @@ python -m pip install -r requirements.txt
 343   NREG                     NewRegen, Inc.            0.0230  ...            1224000           0  2023-12-08T17:29:07.448884
 
 [344 rows x 9 columns]
+
 >>> tickers
+
                         address1       city      zip  ... fiveYearAvgDividendYield earningsGrowth pegRatio
 0                    Storgatan 2  Sandviken   811 81  ...                      NaN            NaN      NaN
 1            18 King Street East    Toronto  M5C 1C4  ...                      NaN            NaN      NaN
