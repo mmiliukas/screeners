@@ -14,6 +14,8 @@ on:
 
 ## usage
 
+### screener results
+
 ```python
 import pandas as pd
 
@@ -74,6 +76,11 @@ all[all['% Change'] > 50]
 1015  KROEF                       KR1 Plc  ...   203975000 2023-12-09 08:10:19.965670
 '''
 
+```
+
+### ticker results
+
+```python
 >>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
 
 >>> all
