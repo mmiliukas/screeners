@@ -56,6 +56,24 @@ all.sort_values(by=['% Change'], ascending=False)[['Symbol', '% Change']]
 915   BYSD    -22.76
 '''
 
+# filter rows by condition
+all[all['% Change'] > 50]
+
+'''
+     Symbol                          Name  ...  Market Cap                       Date
+4     KROEF                       KR1 Plc  ...   203975000 2023-12-08 19:07:18.414773
+11     EXOD         Exodus Movement, Inc.  ...           0 2023-12-08 19:07:18.414773
+29     TNRG  Thunder Energies Corporation  ...     7872000 2023-12-08 19:07:22.287810
+36    OLVRF         Olivut Resources Ltd.  ...     5156000 2023-12-08 19:07:22.287810
+43    CPPMF         COPPERNICO METALS INC  ...           0 2023-12-08 19:07:22.287810
+...     ...                           ...  ...         ...                        ...
+991   GXUSF     Guardian Exploration Inc.  ...    24501000 2023-12-08 22:08:15.541271
+995    TNRG  Thunder Energies Corporation  ...     7872000 2023-12-08 22:08:15.541271
+1001  OLVRF         Olivut Resources Ltd.  ...     5156000 2023-12-08 22:08:15.541271
+1007  CPPMF         COPPERNICO METALS INC  ...           0 2023-12-08 22:08:15.541271
+1015  KROEF                       KR1 Plc  ...   203975000 2023-12-09 08:10:19.965670
+'''
+
 >>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
 
 >>> all
