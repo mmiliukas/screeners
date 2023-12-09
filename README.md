@@ -14,10 +14,29 @@ on:
 
 ## usage
 
-```
->>> import pandas as pd
+```python
+import pandas as pd
 
->>> all = pd.read_csv('https://raw.githubusercontent.com/mmiliukas/screeners/main/runs/all.csv')
+base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
+all = pd.read_csv(f'{base_url}/runs/all.csv', parse_dates=['Date'])
+
+'''
+ #   Column             Non-Null Count  Dtype
+---  ------             --------------  -----
+ 0   Symbol             1025 non-null   object
+ 1   Name               1025 non-null   object
+ 2   Price (Intraday)   1025 non-null   float64
+ 3   Change             1025 non-null   float64
+ 4   % Change           1025 non-null   float64
+ 5   Volume             1025 non-null   int64
+ 6   Avg Vol (3 month)  1025 non-null   int64
+ 7   Market Cap         1025 non-null   int64
+ 8   Date               1025 non-null   datetime64[ns]
+ '''
+
+#  get unique symbols
+all['Symbol'].unique()
+
 
 >>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
 
