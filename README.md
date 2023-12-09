@@ -81,7 +81,10 @@ all[all['% Change'] > 50]
 ### ticker results
 
 ```python
->>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
+import pandas as pd
+
+base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
+tickers = pd.read_json(f'{base_url}/all_tickers.json')
 
 >>> all
     Symbol                               Name  Price (Intraday)  ...  Avg Vol (3 month)  Market Cap                        Date

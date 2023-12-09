@@ -32,7 +32,6 @@ jobs:
           git add ./runs/
           git add ./all.csv
           git add ./tickers/
-          git add ./tickers.json
+          git add ./all-tickers.json
           git commit -m "daily run"
           git push
-
