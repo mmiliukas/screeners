@@ -30,6 +30,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add ./runs/
+          git add ./all.csv
           git add ./tickers/
           git add ./tickers.json
           git commit -m "daily run"

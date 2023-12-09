@@ -20,7 +20,7 @@ on:
 import pandas as pd
 
 base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
-all = pd.read_csv(f'{base_url}/runs/all.csv', parse_dates=['Date'])
+all = pd.read_csv(f'{base_url}/all.csv', parse_dates=['Date'])
 
 '''
  #   Column             Non-Null Count  Dtype
