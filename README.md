@@ -14,12 +14,15 @@ on:
 
 ## usage
 
-### screener results
-
 ```python
 import pandas as pd
 
 base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
+```
+
+### screener results
+
+```python
 all = pd.read_csv(f'{base_url}/all.csv', parse_dates=['Date'])
 
 '''
@@ -81,41 +84,27 @@ all[all['% Change'] > 50]
 ### ticker results
 
 ```python
-import pandas as pd
+# gives short information about the tickers
+# mainly used for industry and sector information
+tickers = pd.read_json(f'{base_url}/all-tickers.json')
 
-base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
-tickers = pd.read_json(f'{base_url}/all_tickers.json')
+# get full details about the ticker
+ticker_AAGH = pd.read_json(f'{base_url}/tickers/AAGH.json')
 
->>> all
-    Symbol                               Name  Price (Intraday)  ...  Avg Vol (3 month)  Market Cap                        Date
-0    SAMHF                  Alleima AB (publ)            7.3000  ...                  1  2270000000  2023-12-08T19:07:18.414773
-1     BITF                      Bitfarms Ltd.            2.5050  ...           12576000   808116000  2023-12-08T19:07:18.414773
-2     APLD        Applied Digital Corporation            6.2600  ...            3361000   665831000  2023-12-08T19:07:18.414773
-3     APLT         Applied Therapeutics, Inc.            3.2150  ...            1039000   248292000  2023-12-08T19:07:18.414773
-4    KROEF                            KR1 Plc            1.1500  ...               8687   203975000  2023-12-08T19:07:18.414773
-..     ...                                ...               ...  ...                ...         ...                         ...
-339  EATBF  Eat & Beyond Global Holdings Inc.            0.0645  ...               3933     1539000  2023-12-08T17:29:07.448884
-340   MHHC              MHHC Enterprises Inc.            0.0999  ...              22499    91702000  2023-12-08T17:29:07.448884
-341  MNRLD            Badlands Resources Inc.            0.3700  ...               8663           0  2023-12-08T17:29:07.448884
-342  CPPMF              COPPERNICO METALS INC            0.0750  ...              76242           0  2023-12-08T17:29:07.448884
-343   NREG                     NewRegen, Inc.            0.0230  ...            1224000           0  2023-12-08T17:29:07.448884
+tickers[['symbol', 'industryKey', 'sectorKey', 'volume']]
 
-[344 rows x 9 columns]
-
->>> tickers
-
-                        address1       city      zip  ... fiveYearAvgDividendYield earningsGrowth pegRatio
-0                    Storgatan 2  Sandviken   811 81  ...                      NaN            NaN      NaN
-1            18 King Street East    Toronto  M5C 1C4  ...                      NaN            NaN      NaN
-2    3811 Turtle Creek Boulevard     Dallas    75219  ...                      NaN            NaN      NaN
-3                 545 5th Avenue   New York    10017  ...                      NaN            NaN      NaN
-4              First Names House    Douglas  IM2 4DF  ...                      NaN            NaN      NaN
-..                           ...        ...      ...  ...                      ...            ...      ...
-339    1570 – 505 Burrard Street  Vancouver  V7X 1M5  ...                      NaN            NaN      NaN
-340          400 Union Avenue SE    Olympia    98501  ...                      NaN            NaN      NaN
-341           200 Burrard Street  Vancouver  V6C 3L6  ...                      NaN            NaN      NaN
-342                          NaN        NaN      NaN  ...                      NaN            NaN      NaN
-343     200 Ashford Center North    Atlanta    30338  ...                      NaN            NaN      NaN
-
-[344 rows x 134 columns]
+'''
+     symbol           industryKey        sectorKey  volume
+0     PTPIF   specialty-chemicals  basic-materials    5000
+1      AAGH         biotechnology       healthcare  111100
+2     IPDQF       medical-devices       healthcare   30000
+3     ALGEF               uranium           energy  126000
+4     WONDF  software-application       technology  623817
+...     ...                   ...              ...     ...
+1020   BTCM                                         166363
+1021   XELB                                          99068
+1022   POSC                                          53186
+1023   PRTT                                         204647
+1024   GBAT                                           1584
+'''
 ```
