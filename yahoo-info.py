@@ -27,7 +27,7 @@ def ticker_summary(ticker):
 if __name__ == '__main__':
     df = pd.read_csv('./all.csv')
 
-    tickers = [symbol for symbol in df['Symbol']]
+    tickers = list(df['Symbol'].unique())
     tickers_info = []
 
     for ticker in tickers:
