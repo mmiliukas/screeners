@@ -18,6 +18,10 @@ on:
 import pandas as pd
 
 base_url = 'https://raw.githubusercontent.com/mmiliukas/screeners/main'
+
+all = pd.read_csv(f'{base_url}/all.csv', parse_dates=['Date'])
+tickers = pd.read_json(f'{base_url}/all-tickers.json')
+ticker_AAGH = pd.read_json(f'{base_url}/tickers/AAGH.json')
 ```
 
 ### screener results
