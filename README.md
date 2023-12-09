@@ -38,6 +38,24 @@ all = pd.read_csv(f'{base_url}/runs/all.csv', parse_dates=['Date'])
 all['Symbol'].unique()
 
 
+# sorty by % Change
+all.sort_values(by=['% Change'], ascending=False)[['Symbol', '% Change']]
+
+'''
+    Symbol  % Change
+386   PSCO    550.00
+83    PSCO    550.00
+145   PSCO    550.00
+610   PSCO    550.00
+763   PSCO    550.00
+..     ...       ...
+248   EKSN      0.00
+393   EKSN      0.00
+131  RTMFF      0.00
+244  TLSIW     -7.69
+915   BYSD    -22.76
+'''
+
 >>> tickers = pd.read_json('https://raw.githubusercontent.com/mmiliukas/screeners/main/tickers.json')
 
 >>> all
