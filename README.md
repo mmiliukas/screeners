@@ -8,10 +8,12 @@ python -m pip install -r requirements.txt
 
 ## config
 
+Expression can be checked online at [https://crontab.cronhub.io](https://crontab.cronhub.io)
+
 ```yaml
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 6 * * 2-6'
 ```
 
 ## usage
