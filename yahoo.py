@@ -11,7 +11,7 @@ from typing import List
 from playwright.async_api import async_playwright, Page
 
 def a_string(x: str):
-   return x
+    return x
 
 def a_percent(x: str):
   try:
@@ -132,4 +132,10 @@ if __name__ == '__main__':
 
     urls = sys.argv[4:]
 
-    asyncio.run(main(username, password, cookies, urls))
+    try:
+        asyncio.run(main(username, password, cookies, urls))
+    except Exception:
+        try:
+            asyncio.run(main(username, password, cookies, urls))
+        except Exception:
+            asyncio.run(main(username, password, cookies, urls))
