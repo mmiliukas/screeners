@@ -63,7 +63,7 @@ if __name__ == '__main__':
     print(f'correlation for {symbol} = {correlation}')
 
     fig, ax = plt.subplots()
-    a.plot(y='Close', ax=ax)
-    b.plot(y='Close', ax=ax, secondary_y=True)
+    a.plot(y='Close', ax=ax, label=f"{symbol} STOCK close")
+    b.plot(y='Close', ax=ax, label=f"{symbol} ETF close", secondary_y=True)
 
     plt.show()
