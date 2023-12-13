@@ -20,11 +20,12 @@ if __name__ == '__main__':
     result = pd.merge(result, sectors, left_on="sector", right_on="Sector")
     result = result[['Symbol', 'Name', 'Date', 'sector', 'industry', 'country', 'EU', 'US']]
 
-    print(result.head())
-    
-    ticker = yf.Ticker(result['Symbol'][0])
-    us = yf.Ticker(result['US'][0].split(sep=',')[0])
-    date = result['Date'][0].date()
+    print(result)
+
+    index = 19
+    ticker = yf.Ticker(result['Symbol'][index])
+    us = yf.Ticker(result['US'][index].split(sep=',')[0])
+    date = result['Date'][index].date()
 
     a = ticker.history(start=adjust(date, -84), end=adjust(date, 14))
     b = us.history(start=adjust(date, -84), end=adjust(date, 14))
