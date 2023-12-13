@@ -52,18 +52,20 @@ if __name__ == '__main__':
     index = 19
 
     symbol = result['Symbol'][index]
+    etf_symbol = result['US'][index].split(sep=',')[0] # taking only first available ETF from US
+
     ticker = yf.Ticker(symbol)
-    us = yf.Ticker(result['US'][index].split(sep=',')[0]) # taking only first available ETF
+    us = yf.Ticker(etf_symbol)
     date = result['Date'][index].date()
 
     a = ticker.history(start=adjust(date, -84), end=adjust(date, 14))
     b = us.history(start=adjust(date, -84), end=adjust(date, 14))
 
     correlation = calculate_stock_correlation(a['Close'], b['Close'])
-    print(f'correlation for {symbol} = {correlation}')
+    print(f'correlation for {symbol} versus {etf_symbol} = {correlation}')
 
     fig, ax = plt.subplots()
     a.plot(y='Close', ax=ax, label=f"{symbol} STOCK close")
-    b.plot(y='Close', ax=ax, label=f"{symbol} ETF close", secondary_y=True)
+    b.plot(y='Close', ax=ax, label=f"{etf_symbol} ETF close", secondary_y=True)
 
     plt.show()

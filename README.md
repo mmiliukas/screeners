@@ -126,5 +126,5 @@ python yahoo-correlation.py
 ![ETF versus STOCK](./docs/etf-vs-stock.png)
 
 ```
-correlation for GRCL = 2.0130538335026253
+correlation for GRCL versus XLV = 2.0130538335026253
 ```
