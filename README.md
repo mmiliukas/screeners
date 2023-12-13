@@ -123,8 +123,10 @@ tickers[['symbol', 'industryKey', 'sectorKey', 'volume']]
 python yahoo-correlation.py
 ```
 
-![ETF versus STOCK](./docs/etf-vs-stock.png)
+![ETF versus STOCK](./docs/etf-vs-stock-1.png)
+![ETF versus STOCK](./docs/etf-vs-stock-2.png)
 
 ```
 correlation for GRCL versus XLV = 2.0130538335026253
+correlation for LANRF versus XLB = 0.07172429869274641
 ```

@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     print(result)
 
-    index = 19
+    index = 4
 
     symbol = result['Symbol'][index]
     etf_symbol = result['US'][index].split(sep=',')[0] # taking only first available ETF from US
