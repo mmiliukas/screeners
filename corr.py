@@ -20,12 +20,20 @@ def correlation(row):
     ticker_history = ticker.history(start=adjust(date, -90), end=adjust(date, 14))
     us_history = us.history(start=adjust(date, -90), end=adjust(date, 14))
 
+    a = None
+    b = None
+
     try:
-        coef = np.corrcoef(ticker_history['Close'], us_history['Close'])
-        return coef[0][1]
+        a = ticker_history['Close'].corr(us_history['Close'])
     except Exception:
-        print('failed', row['symbol'])
-        return None
+        pass
+
+    try:
+        b = np.corrcoef(ticker_history['Close'], us_history['Close'])[0][1]
+    except Exception:
+        pass
+
+    return a, b
 
 if __name__ == '__main__':
     sectors = pd.read_csv('./sector-etf.csv').rename(str.lower, axis='columns')
@@ -38,11 +46,15 @@ if __name__ == '__main__':
     result = pd.merge(result, sectors, left_on="sector", right_on="sector")
     result = result[['symbol', 'sector', 'industry', 'date', 'us']]
 
-    corr = []
+    corr_numpy = []
+    corr_pandas = []
 
     for index, row in result.iterrows():
-        corr.append(correlation(row))
+        a, b = correlation(row)
+        corr_pandas.append(a)
+        corr_numpy.append(b)
 
-    result['corr'] = corr
+    result['corr_pandas'] = corr_pandas
+    result['corr_numpy'] = corr_numpy
 
     result.to_csv('./corr.csv')
