@@ -18,8 +18,8 @@ def save(symbols):
 if __name__ == '__main__':
     df = pd.read_csv('./sector-etf.csv')
 
-    for eu in df['EU']:
-        save(eu.split(sep=','))
+    # for eu in df['EU']:
+    #     save(eu.split(sep=','))
 
     for us in df['US']:
         save(us.split(sep=','))
