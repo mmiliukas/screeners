@@ -62,9 +62,6 @@ if __name__ == '__main__':
     a = ticker.history(start=adjust(date, -90), end=adjust(date, 14))
     b = us.history(start=adjust(date, -90), end=adjust(date, 14))
 
-    print(a.head())
-    print(b.head())
-
     correlation = calculate_stock_correlation(a['Close'], b['Close'])
     print(f'correlation for {symbol} versus {etf_symbol} = {correlation}')
 
