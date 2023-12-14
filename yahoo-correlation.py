@@ -1,5 +1,6 @@
 import math
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 from datetime import timedelta
 
@@ -58,14 +59,20 @@ if __name__ == '__main__':
     us = yf.Ticker(etf_symbol)
     date = result['Date'][index].date()
 
-    a = ticker.history(start=adjust(date, -84), end=adjust(date, 14))
-    b = us.history(start=adjust(date, -84), end=adjust(date, 14))
+    a = ticker.history(start=adjust(date, -90), end=adjust(date, 14))
+    b = us.history(start=adjust(date, -90), end=adjust(date, 14))
+
+    print(a.head())
+    print(b.head())
 
     correlation = calculate_stock_correlation(a['Close'], b['Close'])
     print(f'correlation for {symbol} versus {etf_symbol} = {correlation}')
 
     fig, ax = plt.subplots()
-    a.plot(y='Close', ax=ax, label=f"{symbol} STOCK close")
-    b.plot(y='Close', ax=ax, label=f"{etf_symbol} ETF close", secondary_y=True)
+    a.plot(y='Close', ax=ax, label=f"{symbol} STOCK close", rot=0, ylabel=symbol)
+    b.plot(y='Close', ax=ax, label=f"{etf_symbol} ETF close", secondary_y=True, rot=0, ylabel=etf_symbol)
+
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%m-%d"))
+    ax.xaxis.set_minor_formatter(mdates.DateFormatter("%m-%d"))
 
     plt.show()
