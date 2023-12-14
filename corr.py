@@ -25,7 +25,7 @@ def correlation(row):
         return coef[0][1]
     except Exception:
         print('failed', row['symbol'])
-        return -10
+        return None
 
 if __name__ == '__main__':
     sectors = pd.read_csv('./sector-etf.csv').rename(str.lower, axis='columns')
