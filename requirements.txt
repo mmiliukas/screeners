@@ -5,7 +5,7 @@ charset-normalizer==3.3.2
 contourpy==1.2.0
 cycler==0.12.1
 fonttools==4.47.0
-frozendict==2.3.10
+frozendict==2.4.0
 greenlet==3.0.1
 html5lib==1.1
 idna==3.6
