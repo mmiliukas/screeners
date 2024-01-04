@@ -1,0 +1,4530 @@
+,symbol,date,algo
+0,GMINF,2023-10-27,pivot points
+1,GMINF,2023-10-30,pivot points
+2,GMINF,2023-11-02,pivot points
+3,GMINF,2023-11-10,pivot points
+4,GMINF,2023-11-14,pivot points
+5,GMINF,2023-11-16,pivot points
+6,GMINF,2023-11-17,pivot points
+7,GMINF,2023-11-21,pivot points
+8,GMINF,2023-11-24,pivot points
+9,GMINF,2023-11-28,pivot points
+10,GMINF,2023-11-30,pivot points
+11,GMINF,2023-12-01,pivot points
+12,GMINF,2023-12-11,pivot points
+13,GMINF,2023-12-21,pivot points
+14,GMINF,2023-12-26,pivot points
+15,GMINF,2024-01-02,pivot points
+16,GMINF,2024-01-03,pivot points
+17,YRD,2023-10-13,pivot points
+18,YRD,2023-10-17,pivot points
+19,YRD,2023-10-25,pivot points
+20,YRD,2023-10-27,pivot points
+21,YRD,2023-10-30,pivot points
+22,YRD,2023-11-01,pivot points
+23,YRD,2023-11-06,pivot points
+24,YRD,2023-11-08,pivot points
+25,YRD,2023-11-13,pivot points
+26,YRD,2023-11-15,pivot points
+27,YRD,2023-11-17,pivot points
+28,YRD,2023-11-20,pivot points
+29,YRD,2023-11-21,pivot points
+30,YRD,2023-11-24,pivot points
+31,YRD,2023-11-27,pivot points
+32,YRD,2023-11-28,pivot points
+33,YRD,2023-12-01,pivot points
+34,YRD,2023-12-04,pivot points
+35,YRD,2023-12-07,pivot points
+36,YRD,2023-12-13,pivot points
+37,YRD,2023-12-18,pivot points
+38,YRD,2023-12-21,pivot points
+39,YRD,2023-12-22,pivot points
+40,YRD,2023-12-28,pivot points
+41,YRD,2023-12-29,pivot points
+42,YRD,2024-01-02,pivot points
+43,YRD,2024-01-03,pivot points
+44,YELLQ,2023-10-30,pivot points
+45,YELLQ,2023-11-06,pivot points
+46,YELLQ,2023-11-07,pivot points
+47,YELLQ,2023-11-09,pivot points
+48,YELLQ,2023-11-17,pivot points
+49,YELLQ,2023-11-21,pivot points
+50,YELLQ,2023-11-22,pivot points
+51,YELLQ,2023-12-04,pivot points
+52,YELLQ,2023-12-06,pivot points
+53,YELLQ,2023-12-11,pivot points
+54,YELLQ,2023-12-12,pivot points
+55,YELLQ,2023-12-13,pivot points
+56,YELLQ,2023-12-20,pivot points
+57,YELLQ,2023-12-21,pivot points
+58,YELLQ,2023-12-26,pivot points
+59,YELLQ,2023-12-29,pivot points
+60,YELLQ,2024-01-03,pivot points
+61,ARBK,2023-11-14,rolling window size
+62,ARBK,2023-11-15,fibonacci
+63,ARBK,2023-10-23,pivot points
+64,ARBK,2023-10-24,pivot points
+65,ARBK,2023-10-25,pivot points
+66,ARBK,2023-10-30,pivot points
+67,ARBK,2023-10-31,pivot points
+68,ARBK,2023-11-07,pivot points
+69,ARBK,2023-11-15,pivot points
+70,ARBK,2023-11-16,pivot points
+71,ARBK,2023-11-20,pivot points
+72,ARBK,2023-11-24,pivot points
+73,ARBK,2023-11-28,pivot points
+74,ARBK,2023-12-01,pivot points
+75,ARBK,2023-12-04,pivot points
+76,ARBK,2023-12-08,pivot points
+77,ARBK,2023-12-13,pivot points
+78,ARBK,2023-12-14,pivot points
+79,ARBK,2023-12-19,pivot points
+80,ARBK,2023-12-21,pivot points
+81,ARBK,2023-12-22,pivot points
+82,ARBK,2023-12-28,pivot points
+83,ARBK,2024-01-03,pivot points
+84,MEEC,2023-12-18,rolling window size
+85,MEEC,2023-10-17,pivot points
+86,MEEC,2023-10-23,pivot points
+87,MEEC,2023-10-26,pivot points
+88,MEEC,2023-11-02,pivot points
+89,MEEC,2023-11-06,pivot points
+90,MEEC,2023-11-07,pivot points
+91,MEEC,2023-11-10,pivot points
+92,MEEC,2023-11-17,pivot points
+93,MEEC,2023-11-22,pivot points
+94,MEEC,2023-11-27,pivot points
+95,MEEC,2023-11-28,pivot points
+96,MEEC,2023-12-19,pivot points
+97,MEEC,2023-12-21,pivot points
+98,MEEC,2023-12-22,pivot points
+99,MEEC,2024-01-02,pivot points
+100,MEEC,2024-01-03,pivot points
+101,ZMMPY,2023-10-25,pivot points
+102,ZMMPY,2023-12-26,pivot points
+103,RNWWW,2023-11-14,rolling window size
+104,RNWWW,2023-11-29,fibonacci
+105,RNWWW,2023-11-28,pivot points
+106,RNWWW,2023-11-29,pivot points
+107,RNWWW,2023-12-11,pivot points
+108,RNWWW,2023-12-13,pivot points
+109,RNWWW,2023-12-14,pivot points
+110,RNWWW,2023-12-19,pivot points
+111,RNWWW,2023-12-22,pivot points
+112,RNWWW,2023-12-27,pivot points
+113,RNWWW,2023-12-28,pivot points
+114,RNWWW,2023-12-29,pivot points
+115,OIBZQ,2023-11-15,rolling window size
+116,OIBZQ,2023-12-14,fibonacci
+117,OIBZQ,2023-11-20,pivot points
+118,OIBZQ,2023-12-14,pivot points
+119,NYMXF,2023-11-09,rolling window size
+120,NYMXF,2023-12-19,rolling window size
+121,NYMXF,2023-12-22,rolling window size
+122,NYMXF,2023-11-10,fibonacci
+123,NYMXF,2023-10-13,pivot points
+124,NYMXF,2023-10-19,pivot points
+125,NYMXF,2023-10-23,pivot points
+126,NYMXF,2023-10-26,pivot points
+127,NYMXF,2023-10-31,pivot points
+128,NYMXF,2023-11-09,pivot points
+129,NYMXF,2023-11-10,pivot points
+130,NYMXF,2023-11-14,pivot points
+131,NYMXF,2023-11-16,pivot points
+132,NYMXF,2023-11-21,pivot points
+133,NYMXF,2023-12-07,pivot points
+134,NYMXF,2023-12-22,pivot points
+135,NYMXF,2023-12-27,pivot points
+136,NYMXF,2023-12-29,pivot points
+137,XTPT,2023-11-22,rolling window size
+138,XTPT,2023-11-24,fibonacci
+139,XTPT,2023-10-19,pivot points
+140,XTPT,2023-11-01,pivot points
+141,XTPT,2023-11-07,pivot points
+142,XTPT,2023-11-17,pivot points
+143,XTPT,2023-11-22,pivot points
+144,XTPT,2023-11-24,pivot points
+145,XTPT,2023-11-30,pivot points
+146,XTPT,2023-12-06,pivot points
+147,XTPT,2023-12-12,pivot points
+148,XTPT,2023-12-19,pivot points
+149,XTPT,2023-12-21,pivot points
+150,XTPT,2023-12-27,pivot points
+151,AMEGF,2023-11-03,rolling window size
+152,AMEGF,2023-11-09,rolling window size
+153,AMEGF,2023-11-20,fibonacci
+154,AMEGF,2023-10-17,pivot points
+155,AMEGF,2023-11-09,pivot points
+156,AMEGF,2023-11-21,pivot points
+157,AMEGF,2023-12-11,pivot points
+158,ETST,2023-12-08,rolling window size
+159,ETST,2023-12-18,rolling window size
+160,ETST,2023-12-21,rolling window size
+161,ETST,2023-10-17,pivot points
+162,ETST,2023-10-20,pivot points
+163,ETST,2023-10-25,pivot points
+164,ETST,2023-11-10,pivot points
+165,ETST,2023-11-16,pivot points
+166,ETST,2023-11-20,pivot points
+167,ETST,2023-11-29,pivot points
+168,ETST,2023-12-08,pivot points
+169,ETST,2023-12-18,pivot points
+170,ETST,2023-12-21,pivot points
+171,ETST,2023-12-27,pivot points
+172,ETST,2023-12-29,pivot points
+173,ETST,2024-01-03,pivot points
+174,GRHI,2023-11-27,rolling window size
+175,GRHI,2023-11-30,rolling window size
+176,GRHI,2023-10-13,pivot points
+177,GRHI,2023-10-18,pivot points
+178,GRHI,2023-10-23,pivot points
+179,GRHI,2023-10-24,pivot points
+180,GRHI,2023-10-27,pivot points
+181,GRHI,2023-11-03,pivot points
+182,GRHI,2023-11-08,pivot points
+183,GRHI,2023-12-08,pivot points
+184,GRHI,2023-12-13,pivot points
+185,GRHI,2023-12-14,pivot points
+186,GRHI,2023-12-20,pivot points
+187,GRHI,2023-12-26,pivot points
+188,GRHI,2023-12-27,pivot points
+189,GRHI,2024-01-03,pivot points
+190,SMURF,2023-11-09,rolling window size
+191,SMURF,2023-11-13,fibonacci
+192,SMURF,2023-12-18,fibonacci
+193,SMURF,2023-10-20,pivot points
+194,SMURF,2023-10-23,pivot points
+195,SMURF,2023-10-24,pivot points
+196,SMURF,2023-10-30,pivot points
+197,SMURF,2023-11-01,pivot points
+198,SMURF,2023-11-09,pivot points
+199,SMURF,2023-11-13,pivot points
+200,SMURF,2023-11-15,pivot points
+201,SMURF,2023-11-24,pivot points
+202,SMURF,2023-11-29,pivot points
+203,SMURF,2023-11-30,pivot points
+204,SMURF,2023-12-04,pivot points
+205,SMURF,2023-12-05,pivot points
+206,SMURF,2023-12-15,pivot points
+207,SMURF,2023-12-18,pivot points
+208,SMURF,2023-12-20,pivot points
+209,SMURF,2023-12-28,pivot points
+210,BLTHD,2023-11-29,rolling window size
+211,BLTHD,2023-10-13,pivot points
+212,BLTHD,2023-10-17,pivot points
+213,BLTHD,2023-10-20,pivot points
+214,BLTHD,2023-10-24,pivot points
+215,BLTHD,2023-10-31,pivot points
+216,BLTHD,2023-11-03,pivot points
+217,BLTHD,2023-11-10,pivot points
+218,BLTHD,2023-11-14,pivot points
+219,BLTHD,2023-11-17,pivot points
+220,BLTHD,2023-12-04,pivot points
+221,BLTHD,2023-12-11,pivot points
+222,BLTHD,2023-12-20,pivot points
+223,BLTHD,2023-12-27,pivot points
+224,IXIXF,2023-11-08,rolling window size
+225,IXIXF,2023-11-15,rolling window size
+226,IXIXF,2023-11-30,rolling window size
+227,IXIXF,2023-12-08,rolling window size
+228,IXIXF,2023-12-21,rolling window size
+229,IXIXF,2023-12-04,fibonacci
+230,IXIXF,2023-11-01,pivot points
+231,IXIXF,2023-11-15,pivot points
+232,IXIXF,2023-11-21,pivot points
+233,IXIXF,2023-12-14,pivot points
+234,IXIXF,2023-12-15,pivot points
+235,IXIXF,2023-12-19,pivot points
+236,IXIXF,2023-12-27,pivot points
+237,LGCXF,2023-11-14,rolling window size
+238,LGCXF,2023-10-16,pivot points
+239,LGCXF,2023-10-18,pivot points
+240,LGCXF,2023-10-24,pivot points
+241,LGCXF,2023-10-30,pivot points
+242,LGCXF,2023-11-22,pivot points
+243,LGCXF,2023-11-27,pivot points
+244,LGCXF,2023-11-29,pivot points
+245,LGCXF,2023-12-01,pivot points
+246,CSOC,2023-11-06,rolling window size
+247,CSOC,2023-12-22,rolling window size
+248,CSOC,2023-11-14,fibonacci
+249,CSOC,2023-10-18,pivot points
+250,CSOC,2023-10-30,pivot points
+251,CSOC,2023-11-16,pivot points
+252,CSOC,2023-11-20,pivot points
+253,CSOC,2023-12-04,pivot points
+254,CSOC,2023-12-27,pivot points
+255,CSOC,2023-12-29,pivot points
+256,DIGP,2023-11-22,fibonacci
+257,DIGP,2023-10-17,pivot points
+258,DIGP,2023-10-19,pivot points
+259,DIGP,2023-10-20,pivot points
+260,DIGP,2023-10-25,pivot points
+261,DIGP,2023-10-30,pivot points
+262,DIGP,2023-11-06,pivot points
+263,DIGP,2023-11-08,pivot points
+264,DIGP,2023-11-13,pivot points
+265,DIGP,2023-11-21,pivot points
+266,DIGP,2023-11-22,pivot points
+267,DIGP,2023-11-27,pivot points
+268,DIGP,2023-11-29,pivot points
+269,DIGP,2023-11-30,pivot points
+270,DIGP,2023-12-01,pivot points
+271,DIGP,2023-12-06,pivot points
+272,DIGP,2023-12-07,pivot points
+273,DIGP,2023-12-12,pivot points
+274,DIGP,2023-12-15,pivot points
+275,DIGP,2023-12-18,pivot points
+276,DIGP,2023-12-19,pivot points
+277,DIGP,2023-12-27,pivot points
+278,TZPC,2023-12-13,rolling window size
+279,TZPC,2023-12-18,rolling window size
+280,TZPC,2023-12-26,rolling window size
+281,TZPC,2023-12-27,fibonacci
+282,TZPC,2023-10-20,pivot points
+283,TZPC,2023-10-31,pivot points
+284,TZPC,2023-11-01,pivot points
+285,TZPC,2023-12-04,pivot points
+286,TZPC,2023-12-13,pivot points
+287,TZPC,2023-12-27,pivot points
+288,SNNC,2023-11-24,rolling window size
+289,SNNC,2023-12-01,rolling window size
+290,SNNC,2023-11-28,fibonacci
+291,SNNC,2023-12-04,fibonacci
+292,SNNC,2023-10-13,pivot points
+293,SNNC,2023-10-19,pivot points
+294,SNNC,2023-10-27,pivot points
+295,SNNC,2023-10-31,pivot points
+296,SNNC,2023-11-02,pivot points
+297,SNNC,2023-11-06,pivot points
+298,SNNC,2023-11-27,pivot points
+299,SNNC,2023-11-28,pivot points
+300,SNNC,2023-12-04,pivot points
+301,SNNC,2023-12-07,pivot points
+302,SNNC,2023-12-11,pivot points
+303,SNNC,2023-12-15,pivot points
+304,SNNC,2023-12-20,pivot points
+305,SNNC,2023-12-27,pivot points
+306,JADA,2023-12-19,pivot points
+307,JADA,2023-12-20,pivot points
+308,JADA,2023-12-27,pivot points
+309,JADA,2023-12-29,pivot points
+310,BULT,2023-11-28,rolling window size
+311,BULT,2023-10-19,pivot points
+312,BULT,2023-10-31,pivot points
+313,BULT,2023-12-04,pivot points
+314,BULT,2023-12-08,pivot points
+315,BULT,2023-12-14,pivot points
+316,BULT,2023-12-21,pivot points
+317,BULT,2023-12-22,pivot points
+318,BULT,2023-12-27,pivot points
+319,BULT,2023-12-29,pivot points
+320,BULT,2024-01-03,pivot points
+321,CPPMF,2023-12-27,rolling window size
+322,CPPMF,2023-11-29,pivot points
+323,CPPMF,2023-12-01,pivot points
+324,CPPMF,2023-12-20,pivot points
+325,CPPMF,2023-12-27,pivot points
+326,LYRA,2023-11-02,rolling window size
+327,LYRA,2023-11-10,rolling window size
+328,LYRA,2023-10-16,pivot points
+329,LYRA,2023-10-17,pivot points
+330,LYRA,2023-10-20,pivot points
+331,LYRA,2023-10-26,pivot points
+332,LYRA,2023-10-30,pivot points
+333,LYRA,2023-11-10,pivot points
+334,LYRA,2023-11-16,pivot points
+335,LYRA,2023-11-21,pivot points
+336,LYRA,2023-11-27,pivot points
+337,LYRA,2023-12-01,pivot points
+338,LYRA,2023-12-06,pivot points
+339,LYRA,2023-12-07,pivot points
+340,LYRA,2023-12-11,pivot points
+341,LYRA,2023-12-12,pivot points
+342,LYRA,2023-12-15,pivot points
+343,LYRA,2023-12-18,pivot points
+344,LYRA,2023-12-22,pivot points
+345,LYRA,2023-12-26,pivot points
+346,LYRA,2023-12-27,pivot points
+347,LYRA,2023-12-29,pivot points
+348,MYNA,2023-11-27,rolling window size
+349,MYNA,2023-10-16,pivot points
+350,MYNA,2023-10-27,pivot points
+351,MYNA,2023-10-31,pivot points
+352,MYNA,2023-11-02,pivot points
+353,MYNA,2023-11-03,pivot points
+354,MYNA,2023-11-06,pivot points
+355,MYNA,2023-11-08,pivot points
+356,MYNA,2023-11-27,pivot points
+357,MYNA,2023-11-29,pivot points
+358,MYNA,2023-12-01,pivot points
+359,MYNA,2023-12-06,pivot points
+360,MYNA,2023-12-12,pivot points
+361,MYNA,2023-12-13,pivot points
+362,MYNA,2023-12-15,pivot points
+363,MYNA,2023-12-21,pivot points
+364,MYNA,2023-12-26,pivot points
+365,MYNA,2024-01-02,pivot points
+366,SPPL,2023-12-11,rolling window size
+367,SPPL,2023-12-26,rolling window size
+368,SPPL,2023-12-12,fibonacci
+369,SPPL,2023-10-19,pivot points
+370,SPPL,2023-10-20,pivot points
+371,SPPL,2023-10-30,pivot points
+372,SPPL,2023-10-31,pivot points
+373,SPPL,2023-11-02,pivot points
+374,SPPL,2023-11-08,pivot points
+375,SPPL,2023-11-09,pivot points
+376,SPPL,2023-11-13,pivot points
+377,SPPL,2023-11-17,pivot points
+378,SPPL,2023-11-21,pivot points
+379,SPPL,2023-11-24,pivot points
+380,SPPL,2023-11-28,pivot points
+381,SPPL,2023-12-04,pivot points
+382,SPPL,2023-12-05,pivot points
+383,SPPL,2023-12-11,pivot points
+384,SPPL,2023-12-12,pivot points
+385,SPPL,2023-12-14,pivot points
+386,SPPL,2023-12-15,pivot points
+387,IMMX,2023-10-17,pivot points
+388,IMMX,2023-10-20,pivot points
+389,IMMX,2023-10-23,pivot points
+390,IMMX,2023-10-24,pivot points
+391,IMMX,2023-10-31,pivot points
+392,IMMX,2023-11-02,pivot points
+393,IMMX,2023-11-03,pivot points
+394,IMMX,2023-11-06,pivot points
+395,IMMX,2023-11-10,pivot points
+396,IMMX,2023-11-14,pivot points
+397,IMMX,2023-11-15,pivot points
+398,IMMX,2023-11-20,pivot points
+399,IMMX,2023-11-22,pivot points
+400,IMMX,2023-11-24,pivot points
+401,IMMX,2023-11-27,pivot points
+402,IMMX,2023-12-05,pivot points
+403,IMMX,2023-12-14,pivot points
+404,IMMX,2023-12-15,pivot points
+405,IMMX,2023-12-21,pivot points
+406,IMMX,2023-12-29,pivot points
+407,MYO,2023-10-16,pivot points
+408,MYO,2023-10-18,pivot points
+409,MYO,2023-10-23,pivot points
+410,MYO,2023-10-31,pivot points
+411,MYO,2023-11-01,pivot points
+412,MYO,2023-11-02,pivot points
+413,MYO,2023-11-03,pivot points
+414,MYO,2023-11-06,pivot points
+415,MYO,2023-11-07,pivot points
+416,MYO,2023-11-08,pivot points
+417,MYO,2023-11-10,pivot points
+418,MYO,2023-11-14,pivot points
+419,MYO,2023-11-15,pivot points
+420,MYO,2023-11-20,pivot points
+421,MYO,2023-11-27,pivot points
+422,MYO,2023-12-01,pivot points
+423,MYO,2023-12-04,pivot points
+424,MYO,2023-12-07,pivot points
+425,MYO,2023-12-12,pivot points
+426,MYO,2023-12-14,pivot points
+427,MYO,2023-12-26,pivot points
+428,MYO,2023-12-28,pivot points
+429,MFH,2023-11-22,rolling window size
+430,MFH,2023-12-01,fibonacci
+431,MFH,2023-10-13,pivot points
+432,MFH,2023-10-17,pivot points
+433,MFH,2023-10-18,pivot points
+434,MFH,2023-10-23,pivot points
+435,MFH,2023-11-01,pivot points
+436,MFH,2023-11-14,pivot points
+437,MFH,2023-11-22,pivot points
+438,MFH,2023-11-24,pivot points
+439,MFH,2023-11-30,pivot points
+440,MFH,2023-12-04,pivot points
+441,MFH,2023-12-05,pivot points
+442,MFH,2023-12-06,pivot points
+443,MFH,2023-12-08,pivot points
+444,MFH,2023-12-14,pivot points
+445,MFH,2023-12-15,pivot points
+446,MFH,2023-12-19,pivot points
+447,MFH,2023-12-21,pivot points
+448,MFH,2023-12-26,pivot points
+449,MFH,2023-12-27,pivot points
+450,MFH,2023-12-29,pivot points
+451,QNCX,2023-11-06,rolling window size
+452,QNCX,2023-11-08,rolling window size
+453,QNCX,2023-11-13,rolling window size
+454,QNCX,2023-11-16,rolling window size
+455,QNCX,2023-11-20,rolling window size
+456,QNCX,2023-11-24,fibonacci
+457,QNCX,2023-10-18,pivot points
+458,QNCX,2023-10-23,pivot points
+459,QNCX,2023-10-26,pivot points
+460,QNCX,2023-11-22,pivot points
+461,QNCX,2023-11-24,pivot points
+462,QNCX,2023-12-01,pivot points
+463,QNCX,2023-12-04,pivot points
+464,QNCX,2023-12-06,pivot points
+465,QNCX,2023-12-11,pivot points
+466,QNCX,2023-12-14,pivot points
+467,QNCX,2023-12-15,pivot points
+468,QNCX,2023-12-20,pivot points
+469,QNCX,2023-12-22,pivot points
+470,QNCX,2024-01-03,pivot points
+471,CDIO,2023-12-13,rolling window size
+472,CDIO,2023-12-15,fibonacci
+473,CDIO,2023-11-01,pivot points
+474,CDIO,2023-11-02,pivot points
+475,CDIO,2023-11-06,pivot points
+476,CDIO,2023-11-07,pivot points
+477,CDIO,2023-11-20,pivot points
+478,CDIO,2023-11-21,pivot points
+479,CDIO,2023-11-27,pivot points
+480,CDIO,2023-12-08,pivot points
+481,CDIO,2023-12-13,pivot points
+482,CDIO,2023-12-14,pivot points
+483,CDIO,2023-12-15,pivot points
+484,CDIO,2023-12-19,pivot points
+485,CDIO,2023-12-21,pivot points
+486,CDIO,2023-12-27,pivot points
+487,CDIO,2023-12-28,pivot points
+488,CDIO,2024-01-02,pivot points
+489,HLGN,2023-11-13,rolling window size
+490,HLGN,2023-12-26,rolling window size
+491,HLGN,2023-12-29,rolling window size
+492,HLGN,2023-11-16,fibonacci
+493,HLGN,2023-10-24,pivot points
+494,HLGN,2023-10-26,pivot points
+495,HLGN,2023-10-31,pivot points
+496,HLGN,2023-11-02,pivot points
+497,HLGN,2023-11-03,pivot points
+498,HLGN,2023-11-07,pivot points
+499,HLGN,2023-11-13,pivot points
+500,HLGN,2023-11-16,pivot points
+501,HLGN,2023-11-27,pivot points
+502,HLGN,2023-11-29,pivot points
+503,HLGN,2023-12-01,pivot points
+504,HLGN,2023-12-06,pivot points
+505,HLGN,2023-12-07,pivot points
+506,HLGN,2023-12-11,pivot points
+507,HLGN,2023-12-29,pivot points
+508,NTMFF,2023-12-01,fibonacci
+509,NTMFF,2023-11-09,pivot points
+510,NTMFF,2023-11-13,pivot points
+511,NTMFF,2023-11-17,pivot points
+512,NTMFF,2023-11-28,pivot points
+513,NTMFF,2023-11-30,pivot points
+514,NTMFF,2023-12-01,pivot points
+515,NTMFF,2023-12-05,pivot points
+516,NTMFF,2023-12-06,pivot points
+517,NTMFF,2023-12-08,pivot points
+518,NTMFF,2023-12-11,pivot points
+519,NTMFF,2023-12-12,pivot points
+520,NTMFF,2023-12-13,pivot points
+521,NTMFF,2023-12-15,pivot points
+522,NTMFF,2023-12-18,pivot points
+523,NTMFF,2023-12-19,pivot points
+524,EBFI,2023-12-06,pivot points
+525,EBFI,2023-12-08,pivot points
+526,EBFI,2023-12-13,pivot points
+527,EBFI,2023-12-15,pivot points
+528,EBFI,2023-12-20,pivot points
+529,EBFI,2023-12-28,pivot points
+530,EBFI,2023-12-29,pivot points
+531,PCOGF,2023-11-03,rolling window size
+532,PCOGF,2023-11-10,rolling window size
+533,PCOGF,2023-12-07,rolling window size
+534,PCOGF,2023-10-13,pivot points
+535,PCOGF,2023-11-17,pivot points
+536,PCOGF,2023-12-07,pivot points
+537,NULGF,2023-12-12,rolling window size
+538,NULGF,2023-12-28,rolling window size
+539,NULGF,2023-12-13,fibonacci
+540,NULGF,2023-10-13,pivot points
+541,NULGF,2023-10-20,pivot points
+542,NULGF,2023-10-25,pivot points
+543,NULGF,2023-10-27,pivot points
+544,NULGF,2023-10-30,pivot points
+545,NULGF,2023-11-02,pivot points
+546,NULGF,2023-11-03,pivot points
+547,NULGF,2023-11-13,pivot points
+548,NULGF,2023-11-15,pivot points
+549,NULGF,2023-11-16,pivot points
+550,NULGF,2023-11-17,pivot points
+551,NULGF,2023-11-21,pivot points
+552,NULGF,2023-11-29,pivot points
+553,NULGF,2023-12-01,pivot points
+554,NULGF,2023-12-13,pivot points
+555,NULGF,2023-12-28,pivot points
+556,NULGF,2023-12-29,pivot points
+557,CAMZF,2023-11-02,rolling window size
+558,CAMZF,2023-10-24,pivot points
+559,CAMZF,2023-11-08,pivot points
+560,CAMZF,2023-11-14,pivot points
+561,CAMZF,2023-11-15,pivot points
+562,CAMZF,2023-11-22,pivot points
+563,CAMZF,2023-11-30,pivot points
+564,CAMZF,2023-12-13,pivot points
+565,CAMZF,2023-12-28,pivot points
+566,DROR,2023-11-20,rolling window size
+567,DROR,2023-12-12,rolling window size
+568,DROR,2024-01-02,rolling window size
+569,DROR,2023-12-13,fibonacci
+570,DROR,2023-11-03,pivot points
+571,DROR,2023-11-20,pivot points
+572,DROR,2023-12-06,pivot points
+573,DROR,2023-12-12,pivot points
+574,DROR,2023-12-13,pivot points
+575,DROR,2023-12-14,pivot points
+576,CTCGF,2023-11-27,rolling window size
+577,CTCGF,2023-10-16,pivot points
+578,CTCGF,2023-12-01,pivot points
+579,CTCGF,2023-12-19,pivot points
+580,CTCGF,2023-12-20,pivot points
+581,CTCGF,2023-12-22,pivot points
+582,CTCGF,2024-01-03,pivot points
+583,RKFL,2023-11-17,rolling window size
+584,RKFL,2023-11-24,rolling window size
+585,RKFL,2023-11-20,fibonacci
+586,RKFL,2023-11-27,fibonacci
+587,RKFL,2023-10-18,pivot points
+588,RKFL,2023-10-30,pivot points
+589,RKFL,2023-11-01,pivot points
+590,RKFL,2023-11-08,pivot points
+591,RKFL,2023-11-15,pivot points
+592,RKFL,2023-11-17,pivot points
+593,RKFL,2023-11-20,pivot points
+594,RKFL,2023-11-27,pivot points
+595,RKFL,2023-12-01,pivot points
+596,RKFL,2023-12-12,pivot points
+597,RKFL,2023-12-13,pivot points
+598,AWON,2023-11-15,rolling window size
+599,AWON,2023-11-24,rolling window size
+600,AWON,2023-11-29,rolling window size
+601,AWON,2023-12-11,rolling window size
+602,AWON,2023-11-16,fibonacci
+603,AWON,2023-10-23,pivot points
+604,AWON,2023-10-31,pivot points
+605,AWON,2023-11-06,pivot points
+606,AWON,2023-11-10,pivot points
+607,AWON,2023-11-30,pivot points
+608,AWON,2023-12-11,pivot points
+609,AWON,2023-12-13,pivot points
+610,AWON,2023-12-21,pivot points
+611,CBMJ,2023-11-09,rolling window size
+612,CBMJ,2023-10-17,pivot points
+613,CBMJ,2023-10-25,pivot points
+614,CBMJ,2023-11-09,pivot points
+615,CBMJ,2023-11-20,pivot points
+616,CBMJ,2023-11-24,pivot points
+617,CBMJ,2023-11-29,pivot points
+618,CBMJ,2023-12-05,pivot points
+619,CBMJ,2023-12-13,pivot points
+620,CBMJ,2023-12-22,pivot points
+621,CBMJ,2023-12-26,pivot points
+622,NILA,2023-12-21,rolling window size
+623,NILA,2023-12-13,fibonacci
+624,NILA,2023-11-21,pivot points
+625,NILA,2023-11-28,pivot points
+626,NILA,2023-11-29,pivot points
+627,NILA,2023-11-30,pivot points
+628,NILA,2023-12-01,pivot points
+629,NILA,2023-12-13,pivot points
+630,NILA,2023-12-14,pivot points
+631,NILA,2023-12-29,pivot points
+632,NILA,2024-01-02,pivot points
+633,WRIT,2023-11-10,rolling window size
+634,WRIT,2023-12-27,rolling window size
+635,WRIT,2024-01-02,rolling window size
+636,WRIT,2023-10-18,pivot points
+637,WRIT,2023-11-27,pivot points
+638,WRIT,2023-12-01,pivot points
+639,WRIT,2023-12-13,pivot points
+640,WRIT,2024-01-02,pivot points
+641,PPCB,2023-11-02,rolling window size
+642,PPCB,2023-11-27,rolling window size
+643,PPCB,2023-11-30,rolling window size
+644,PPCB,2023-12-04,rolling window size
+645,PPCB,2023-12-26,fibonacci
+646,PPCB,2023-10-18,pivot points
+647,PPCB,2023-10-20,pivot points
+648,PPCB,2023-10-24,pivot points
+649,PPCB,2023-11-02,pivot points
+650,PPCB,2023-11-07,pivot points
+651,PPCB,2023-12-04,pivot points
+652,PPCB,2023-12-06,pivot points
+653,PPCB,2023-12-13,pivot points
+654,PPCB,2023-12-19,pivot points
+655,PPCB,2023-12-26,pivot points
+656,PPCB,2023-12-27,pivot points
+657,MHHC,2023-12-29,rolling window size
+658,MHHC,2023-11-30,fibonacci
+659,MHHC,2023-11-24,pivot points
+660,MHHC,2023-11-28,pivot points
+661,MHHC,2023-11-30,pivot points
+662,MHHC,2023-12-11,pivot points
+663,MHHC,2023-12-13,pivot points
+664,MHHC,2023-12-29,pivot points
+665,SYSX,2023-11-21,rolling window size
+666,SYSX,2023-11-24,rolling window size
+667,SYSX,2023-11-14,fibonacci
+668,SYSX,2023-10-16,pivot points
+669,SYSX,2023-10-17,pivot points
+670,SYSX,2023-10-19,pivot points
+671,SYSX,2023-10-26,pivot points
+672,SYSX,2023-10-30,pivot points
+673,SYSX,2023-11-02,pivot points
+674,SYSX,2023-11-08,pivot points
+675,SYSX,2023-11-14,pivot points
+676,SYSX,2023-11-21,pivot points
+677,SYSX,2023-11-24,pivot points
+678,SYSX,2023-11-30,pivot points
+679,SYSX,2023-12-04,pivot points
+680,SYSX,2023-12-08,pivot points
+681,SYSX,2023-12-13,pivot points
+682,SYSX,2023-12-19,pivot points
+683,SYSX,2023-12-20,pivot points
+684,SYSX,2023-12-21,pivot points
+685,NREG,2023-11-07,rolling window size
+686,NREG,2024-01-03,rolling window size
+687,NREG,2023-10-13,pivot points
+688,NREG,2023-10-31,pivot points
+689,NREG,2023-11-13,pivot points
+690,NREG,2023-11-14,pivot points
+691,NREG,2023-11-20,pivot points
+692,NREG,2023-11-24,pivot points
+693,NREG,2023-11-29,pivot points
+694,NREG,2023-11-30,pivot points
+695,NREG,2023-12-05,pivot points
+696,NREG,2023-12-08,pivot points
+697,NREG,2023-12-13,pivot points
+698,NREG,2023-12-14,pivot points
+699,NREG,2024-01-03,pivot points
+700,AAGH,2023-12-21,fibonacci
+701,AAGH,2023-10-20,pivot points
+702,AAGH,2023-11-15,pivot points
+703,AAGH,2023-11-24,pivot points
+704,AAGH,2023-12-20,pivot points
+705,AAGH,2023-12-28,pivot points
+706,RIOFF,2023-11-09,rolling window size
+707,RIOFF,2023-11-16,rolling window size
+708,RIOFF,2023-11-24,rolling window size
+709,RIOFF,2023-10-31,pivot points
+710,RIOFF,2023-11-03,pivot points
+711,RIOFF,2023-11-16,pivot points
+712,RIOFF,2023-11-29,pivot points
+713,RIOFF,2023-12-01,pivot points
+714,RIOFF,2023-12-05,pivot points
+715,RIOFF,2023-12-07,pivot points
+716,RIOFF,2023-12-13,pivot points
+717,RIOFF,2023-12-18,pivot points
+718,RIOFF,2023-12-19,pivot points
+719,DMGGF,2023-12-12,rolling window size
+720,DMGGF,2023-12-14,fibonacci
+721,DMGGF,2023-10-13,pivot points
+722,DMGGF,2023-10-16,pivot points
+723,DMGGF,2023-10-19,pivot points
+724,DMGGF,2023-10-23,pivot points
+725,DMGGF,2023-10-30,pivot points
+726,DMGGF,2023-11-02,pivot points
+727,DMGGF,2023-11-07,pivot points
+728,DMGGF,2023-11-15,pivot points
+729,DMGGF,2023-11-17,pivot points
+730,DMGGF,2023-11-24,pivot points
+731,DMGGF,2023-11-28,pivot points
+732,DMGGF,2023-12-01,pivot points
+733,DMGGF,2023-12-04,pivot points
+734,DMGGF,2023-12-13,pivot points
+735,DMGGF,2023-12-14,pivot points
+736,DMGGF,2023-12-18,pivot points
+737,DMGGF,2023-12-20,pivot points
+738,DMGGF,2023-12-21,pivot points
+739,DMGGF,2023-12-22,pivot points
+740,DMGGF,2023-12-26,pivot points
+741,DMGGF,2023-12-27,pivot points
+742,FSXLF,2023-12-14,fibonacci
+743,FSXLF,2023-10-16,pivot points
+744,FSXLF,2023-10-19,pivot points
+745,FSXLF,2023-10-24,pivot points
+746,FSXLF,2023-11-01,pivot points
+747,FSXLF,2023-11-02,pivot points
+748,FSXLF,2023-11-06,pivot points
+749,FSXLF,2023-11-15,pivot points
+750,FSXLF,2023-11-17,pivot points
+751,FSXLF,2023-11-21,pivot points
+752,FSXLF,2023-11-28,pivot points
+753,FSXLF,2023-12-01,pivot points
+754,FSXLF,2023-12-04,pivot points
+755,FSXLF,2023-12-06,pivot points
+756,FSXLF,2023-12-07,pivot points
+757,FSXLF,2023-12-15,pivot points
+758,FSXLF,2023-12-20,pivot points
+759,FSXLF,2023-12-22,pivot points
+760,FSXLF,2023-12-26,pivot points
+761,FSXLF,2023-12-28,pivot points
+762,INXDF,2023-11-03,rolling window size
+763,INXDF,2023-11-20,rolling window size
+764,INXDF,2023-11-27,rolling window size
+765,INXDF,2023-11-06,fibonacci
+766,INXDF,2023-11-28,fibonacci
+767,INXDF,2023-10-13,pivot points
+768,INXDF,2023-10-26,pivot points
+769,INXDF,2023-11-03,pivot points
+770,INXDF,2023-11-15,pivot points
+771,INXDF,2023-11-28,pivot points
+772,INXDF,2023-11-30,pivot points
+773,INXDF,2023-12-05,pivot points
+774,INXDF,2023-12-06,pivot points
+775,INXDF,2023-12-22,pivot points
+776,INXDF,2023-12-26,pivot points
+777,INXDF,2024-01-02,pivot points
+778,CYFRF,2023-11-13,pivot points
+779,CYFRF,2023-12-01,pivot points
+780,CYFRF,2023-12-20,pivot points
+781,CYFRF,2023-12-28,pivot points
+782,CYFRF,2024-01-02,pivot points
+783,RWGI,2023-11-15,fibonacci
+784,RWGI,2023-10-16,pivot points
+785,RWGI,2023-10-23,pivot points
+786,RWGI,2023-11-01,pivot points
+787,RWGI,2023-11-08,pivot points
+788,RWGI,2023-12-19,pivot points
+789,RWGI,2023-12-20,pivot points
+790,CLIEF,2023-12-12,pivot points
+791,CLIEF,2023-12-20,pivot points
+792,MRGE,2023-11-07,rolling window size
+793,MRGE,2023-11-13,rolling window size
+794,MRGE,2023-11-15,rolling window size
+795,MRGE,2023-10-18,pivot points
+796,MRGE,2023-10-20,pivot points
+797,MRGE,2023-10-24,pivot points
+798,MRGE,2023-10-26,pivot points
+799,MRGE,2023-11-15,pivot points
+800,MRGE,2023-11-29,pivot points
+801,MRGE,2023-12-01,pivot points
+802,MRGE,2023-12-20,pivot points
+803,MRGE,2023-12-26,pivot points
+804,LUXFF,2023-12-14,rolling window size
+805,LUXFF,2023-10-18,pivot points
+806,LUXFF,2023-11-15,pivot points
+807,LUXFF,2023-12-01,pivot points
+808,LUXFF,2023-12-11,pivot points
+809,LUXFF,2023-12-20,pivot points
+810,LUXFF,2023-12-27,pivot points
+811,LUXFF,2024-01-02,pivot points
+812,VDRM,2023-12-27,rolling window size
+813,VDRM,2023-10-20,pivot points
+814,VDRM,2023-10-30,pivot points
+815,VDRM,2023-11-07,pivot points
+816,VDRM,2023-11-10,pivot points
+817,VDRM,2023-12-14,pivot points
+818,VDRM,2023-12-20,pivot points
+819,OSCR,2023-12-12,rolling window size
+820,OSCR,2023-12-19,rolling window size
+821,OSCR,2023-10-16,pivot points
+822,OSCR,2023-10-17,pivot points
+823,OSCR,2023-10-20,pivot points
+824,OSCR,2023-10-24,pivot points
+825,OSCR,2023-10-31,pivot points
+826,OSCR,2023-11-07,pivot points
+827,OSCR,2023-11-10,pivot points
+828,OSCR,2023-11-14,pivot points
+829,OSCR,2023-11-17,pivot points
+830,OSCR,2023-11-20,pivot points
+831,OSCR,2023-11-22,pivot points
+832,OSCR,2023-11-24,pivot points
+833,OSCR,2023-12-12,pivot points
+834,OSCR,2023-12-13,pivot points
+835,OSCR,2023-12-19,pivot points
+836,OSCR,2023-12-21,pivot points
+837,OSCR,2023-12-22,pivot points
+838,OSCR,2023-12-26,pivot points
+839,OSCR,2023-12-28,pivot points
+840,IREN,2023-11-13,rolling window size
+841,IREN,2023-11-15,rolling window size
+842,IREN,2023-11-20,rolling window size
+843,IREN,2023-10-16,pivot points
+844,IREN,2023-10-17,pivot points
+845,IREN,2023-10-27,pivot points
+846,IREN,2023-11-02,pivot points
+847,IREN,2023-11-15,pivot points
+848,IREN,2023-11-20,pivot points
+849,IREN,2023-11-22,pivot points
+850,IREN,2023-11-24,pivot points
+851,IREN,2023-11-27,pivot points
+852,IREN,2023-11-28,pivot points
+853,IREN,2023-11-29,pivot points
+854,IREN,2023-12-01,pivot points
+855,IREN,2023-12-07,pivot points
+856,IREN,2023-12-12,pivot points
+857,IREN,2023-12-13,pivot points
+858,IREN,2023-12-14,pivot points
+859,IREN,2023-12-15,pivot points
+860,IREN,2023-12-21,pivot points
+861,IREN,2023-12-22,pivot points
+862,IREN,2023-12-26,pivot points
+863,IREN,2023-12-27,pivot points
+864,HIVE,2023-11-22,rolling window size
+865,HIVE,2023-10-16,pivot points
+866,HIVE,2023-10-23,pivot points
+867,HIVE,2023-10-24,pivot points
+868,HIVE,2023-10-31,pivot points
+869,HIVE,2023-11-01,pivot points
+870,HIVE,2023-11-02,pivot points
+871,HIVE,2023-11-03,pivot points
+872,HIVE,2023-11-15,pivot points
+873,HIVE,2023-11-17,pivot points
+874,HIVE,2023-11-24,pivot points
+875,HIVE,2023-11-28,pivot points
+876,HIVE,2023-12-01,pivot points
+877,HIVE,2023-12-04,pivot points
+878,HIVE,2023-12-07,pivot points
+879,HIVE,2023-12-08,pivot points
+880,HIVE,2023-12-13,pivot points
+881,HIVE,2023-12-15,pivot points
+882,HIVE,2023-12-18,pivot points
+883,HIVE,2023-12-21,pivot points
+884,HIVE,2023-12-27,pivot points
+885,CORZQ,2023-11-15,rolling window size
+886,CORZQ,2023-11-20,rolling window size
+887,CORZQ,2023-12-01,rolling window size
+888,CORZQ,2023-12-04,fibonacci
+889,CORZQ,2023-10-19,pivot points
+890,CORZQ,2023-10-20,pivot points
+891,CORZQ,2023-10-23,pivot points
+892,CORZQ,2023-11-02,pivot points
+893,CORZQ,2023-11-15,pivot points
+894,CORZQ,2023-12-01,pivot points
+895,CORZQ,2023-12-04,pivot points
+896,CORZQ,2023-12-06,pivot points
+897,CORZQ,2023-12-12,pivot points
+898,CORZQ,2023-12-13,pivot points
+899,CORZQ,2023-12-18,pivot points
+900,CORZQ,2023-12-19,pivot points
+901,CORZQ,2023-12-21,pivot points
+902,CORZQ,2023-12-22,pivot points
+903,CORZQ,2023-12-26,pivot points
+904,CORZQ,2023-12-27,pivot points
+905,IVVD,2023-11-02,rolling window size
+906,IVVD,2023-11-13,rolling window size
+907,IVVD,2023-10-16,pivot points
+908,IVVD,2023-10-25,pivot points
+909,IVVD,2023-10-30,pivot points
+910,IVVD,2023-11-02,pivot points
+911,IVVD,2023-11-13,pivot points
+912,IVVD,2023-11-16,pivot points
+913,IVVD,2023-11-22,pivot points
+914,IVVD,2023-12-01,pivot points
+915,IVVD,2023-12-04,pivot points
+916,IVVD,2023-12-08,pivot points
+917,IVVD,2023-12-13,pivot points
+918,IVVD,2023-12-18,pivot points
+919,IVVD,2023-12-20,pivot points
+920,IVVD,2023-12-21,pivot points
+921,IVVD,2023-12-27,pivot points
+922,NBTX,2023-11-03,rolling window size
+923,NBTX,2023-12-13,fibonacci
+924,NBTX,2023-10-17,pivot points
+925,NBTX,2023-10-20,pivot points
+926,NBTX,2023-10-24,pivot points
+927,NBTX,2023-10-27,pivot points
+928,NBTX,2023-10-31,pivot points
+929,NBTX,2023-11-10,pivot points
+930,NBTX,2023-11-17,pivot points
+931,NBTX,2023-11-24,pivot points
+932,NBTX,2023-11-29,pivot points
+933,NBTX,2023-12-01,pivot points
+934,NBTX,2023-12-12,pivot points
+935,NBTX,2023-12-13,pivot points
+936,NBTX,2023-12-14,pivot points
+937,NBTX,2023-12-20,pivot points
+938,NBTX,2023-12-21,pivot points
+939,NBTX,2023-12-27,pivot points
+940,NBTX,2024-01-02,pivot points
+941,NBTX,2024-01-03,pivot points
+942,PRCH,2023-10-23,pivot points
+943,PRCH,2023-10-26,pivot points
+944,PRCH,2023-10-27,pivot points
+945,PRCH,2023-11-02,pivot points
+946,PRCH,2023-11-03,pivot points
+947,PRCH,2023-11-07,pivot points
+948,PRCH,2023-11-08,pivot points
+949,PRCH,2023-11-10,pivot points
+950,PRCH,2023-11-13,pivot points
+951,PRCH,2023-11-14,pivot points
+952,PRCH,2023-11-15,pivot points
+953,PRCH,2023-11-22,pivot points
+954,PRCH,2023-11-24,pivot points
+955,PRCH,2023-12-01,pivot points
+956,PRCH,2023-12-04,pivot points
+957,PRCH,2023-12-06,pivot points
+958,PRCH,2023-12-07,pivot points
+959,PRCH,2023-12-11,pivot points
+960,PRCH,2023-12-13,pivot points
+961,PRCH,2023-12-14,pivot points
+962,PRCH,2023-12-19,pivot points
+963,PRCH,2023-12-21,pivot points
+964,PRCH,2023-12-26,pivot points
+965,PRCH,2023-12-27,pivot points
+966,VRCA,2023-11-15,rolling window size
+967,VRCA,2023-12-12,rolling window size
+968,VRCA,2023-11-16,fibonacci
+969,VRCA,2023-10-23,pivot points
+970,VRCA,2023-10-24,pivot points
+971,VRCA,2023-10-25,pivot points
+972,VRCA,2023-10-30,pivot points
+973,VRCA,2023-10-31,pivot points
+974,VRCA,2023-11-02,pivot points
+975,VRCA,2023-11-15,pivot points
+976,VRCA,2023-11-16,pivot points
+977,VRCA,2023-11-20,pivot points
+978,VRCA,2023-11-29,pivot points
+979,VRCA,2023-12-01,pivot points
+980,VRCA,2023-12-04,pivot points
+981,VRCA,2023-12-06,pivot points
+982,VRCA,2023-12-07,pivot points
+983,VRCA,2023-12-12,pivot points
+984,VRCA,2023-12-13,pivot points
+985,VRCA,2023-12-15,pivot points
+986,VRCA,2023-12-21,pivot points
+987,VRCA,2023-12-22,pivot points
+988,VRCA,2023-12-27,pivot points
+989,DNTH,2023-11-09,rolling window size
+990,DNTH,2023-11-15,rolling window size
+991,DNTH,2023-12-01,rolling window size
+992,DNTH,2023-12-06,rolling window size
+993,DNTH,2023-12-13,rolling window size
+994,DNTH,2023-12-19,rolling window size
+995,DNTH,2023-12-21,fibonacci
+996,DNTH,2023-10-13,pivot points
+997,DNTH,2023-10-16,pivot points
+998,DNTH,2023-10-27,pivot points
+999,DNTH,2023-11-07,pivot points
+1000,DNTH,2023-11-09,pivot points
+1001,DNTH,2023-11-15,pivot points
+1002,DNTH,2023-11-20,pivot points
+1003,DNTH,2023-11-24,pivot points
+1004,DNTH,2023-11-28,pivot points
+1005,DNTH,2023-12-06,pivot points
+1006,DNTH,2023-12-07,pivot points
+1007,DNTH,2023-12-13,pivot points
+1008,DNTH,2023-12-20,pivot points
+1009,DNTH,2023-12-21,pivot points
+1010,DNTH,2023-12-22,pivot points
+1011,DNTH,2024-01-02,pivot points
+1012,DNTH,2024-01-03,pivot points
+1013,VRSSF,2023-11-20,fibonacci
+1014,VRSSF,2023-12-08,fibonacci
+1015,VRSSF,2023-10-17,pivot points
+1016,VRSSF,2023-10-26,pivot points
+1017,VRSSF,2023-10-27,pivot points
+1018,VRSSF,2023-10-30,pivot points
+1019,VRSSF,2023-10-31,pivot points
+1020,VRSSF,2023-11-02,pivot points
+1021,VRSSF,2023-11-14,pivot points
+1022,VRSSF,2023-11-17,pivot points
+1023,VRSSF,2023-11-20,pivot points
+1024,VRSSF,2023-11-30,pivot points
+1025,VRSSF,2023-12-07,pivot points
+1026,VRSSF,2023-12-08,pivot points
+1027,VRSSF,2023-12-11,pivot points
+1028,VRSSF,2023-12-13,pivot points
+1029,VRSSF,2023-12-14,pivot points
+1030,VRSSF,2023-12-18,pivot points
+1031,VRSSF,2023-12-19,pivot points
+1032,VRSSF,2023-12-20,pivot points
+1033,VRSSF,2023-12-26,pivot points
+1034,VRSSF,2024-01-02,pivot points
+1035,SPRB,2023-10-16,pivot points
+1036,SPRB,2023-10-30,pivot points
+1037,SPRB,2023-11-07,pivot points
+1038,SPRB,2023-11-08,pivot points
+1039,SPRB,2023-11-13,pivot points
+1040,SPRB,2023-11-15,pivot points
+1041,SPRB,2023-11-16,pivot points
+1042,SPRB,2023-11-17,pivot points
+1043,SPRB,2023-11-21,pivot points
+1044,SPRB,2023-11-24,pivot points
+1045,SPRB,2023-12-01,pivot points
+1046,SPRB,2023-12-04,pivot points
+1047,SPRB,2023-12-11,pivot points
+1048,SPRB,2023-12-12,pivot points
+1049,SPRB,2023-12-21,pivot points
+1050,SPRB,2023-12-26,pivot points
+1051,SPRB,2023-12-27,pivot points
+1052,GSIT,2024-01-02,rolling window size
+1053,GSIT,2023-11-14,fibonacci
+1054,GSIT,2023-11-27,fibonacci
+1055,GSIT,2023-10-16,pivot points
+1056,GSIT,2023-10-23,pivot points
+1057,GSIT,2023-10-24,pivot points
+1058,GSIT,2023-10-31,pivot points
+1059,GSIT,2023-11-01,pivot points
+1060,GSIT,2023-11-02,pivot points
+1061,GSIT,2023-11-06,pivot points
+1062,GSIT,2023-11-13,pivot points
+1063,GSIT,2023-11-14,pivot points
+1064,GSIT,2023-11-17,pivot points
+1065,GSIT,2023-11-27,pivot points
+1066,GSIT,2023-11-30,pivot points
+1067,GSIT,2023-12-07,pivot points
+1068,GSIT,2023-12-13,pivot points
+1069,GSIT,2023-12-14,pivot points
+1070,GSIT,2023-12-21,pivot points
+1071,GSIT,2024-01-02,pivot points
+1072,BTCM,2023-11-03,fibonacci
+1073,BTCM,2023-11-15,fibonacci
+1074,BTCM,2023-10-16,pivot points
+1075,BTCM,2023-10-17,pivot points
+1076,BTCM,2023-10-23,pivot points
+1077,BTCM,2023-10-30,pivot points
+1078,BTCM,2023-10-31,pivot points
+1079,BTCM,2023-11-02,pivot points
+1080,BTCM,2023-11-03,pivot points
+1081,BTCM,2023-11-13,pivot points
+1082,BTCM,2023-11-20,pivot points
+1083,BTCM,2023-11-24,pivot points
+1084,BTCM,2023-11-27,pivot points
+1085,BTCM,2023-11-28,pivot points
+1086,BTCM,2023-12-01,pivot points
+1087,BTCM,2023-12-04,pivot points
+1088,BTCM,2023-12-06,pivot points
+1089,BTCM,2023-12-08,pivot points
+1090,BTCM,2023-12-12,pivot points
+1091,BTCM,2023-12-19,pivot points
+1092,BTCM,2023-12-21,pivot points
+1093,FDMIF,2023-11-13,rolling window size
+1094,FDMIF,2023-11-15,rolling window size
+1095,FDMIF,2023-11-21,rolling window size
+1096,FDMIF,2023-11-24,fibonacci
+1097,FDMIF,2023-12-21,fibonacci
+1098,FDMIF,2023-10-18,pivot points
+1099,FDMIF,2023-10-27,pivot points
+1100,FDMIF,2023-10-31,pivot points
+1101,FDMIF,2023-11-13,pivot points
+1102,FDMIF,2023-11-16,pivot points
+1103,FDMIF,2023-11-24,pivot points
+1104,FDMIF,2023-11-27,pivot points
+1105,FDMIF,2023-11-28,pivot points
+1106,FDMIF,2023-12-01,pivot points
+1107,FDMIF,2023-12-04,pivot points
+1108,FDMIF,2023-12-13,pivot points
+1109,FDMIF,2023-12-21,pivot points
+1110,FDMIF,2023-12-22,pivot points
+1111,FDMIF,2023-12-26,pivot points
+1112,FDMIF,2023-12-27,pivot points
+1113,FDMIF,2024-01-03,pivot points
+1114,OPXS,2023-11-08,rolling window size
+1115,OPXS,2023-11-13,rolling window size
+1116,OPXS,2023-10-17,pivot points
+1117,OPXS,2023-10-18,pivot points
+1118,OPXS,2023-10-20,pivot points
+1119,OPXS,2023-10-26,pivot points
+1120,OPXS,2023-11-02,pivot points
+1121,OPXS,2023-11-09,pivot points
+1122,OPXS,2023-11-13,pivot points
+1123,OPXS,2023-11-14,pivot points
+1124,OPXS,2023-11-15,pivot points
+1125,OPXS,2023-11-16,pivot points
+1126,OPXS,2023-11-22,pivot points
+1127,OPXS,2023-11-28,pivot points
+1128,OPXS,2023-12-01,pivot points
+1129,OPXS,2023-12-05,pivot points
+1130,OPXS,2023-12-08,pivot points
+1131,OPXS,2023-12-19,pivot points
+1132,OPXS,2023-12-20,pivot points
+1133,OPXS,2023-12-21,pivot points
+1134,OPXS,2023-12-26,pivot points
+1135,OPXS,2023-12-27,pivot points
+1136,OPXS,2023-12-28,pivot points
+1137,OPXS,2023-12-29,pivot points
+1138,OPXS,2024-01-02,pivot points
+1139,CNTX,2023-11-15,rolling window size
+1140,CNTX,2023-11-22,rolling window size
+1141,CNTX,2023-11-29,rolling window size
+1142,CNTX,2023-12-15,fibonacci
+1143,CNTX,2023-10-24,pivot points
+1144,CNTX,2023-10-26,pivot points
+1145,CNTX,2023-10-31,pivot points
+1146,CNTX,2023-11-02,pivot points
+1147,CNTX,2023-11-09,pivot points
+1148,CNTX,2023-12-01,pivot points
+1149,CNTX,2023-12-11,pivot points
+1150,CNTX,2023-12-15,pivot points
+1151,CNTX,2023-12-21,pivot points
+1152,CNTX,2023-12-26,pivot points
+1153,CNTX,2024-01-02,pivot points
+1154,CETX,2023-12-26,rolling window size
+1155,CETX,2023-12-29,rolling window size
+1156,CETX,2023-12-20,fibonacci
+1157,CETX,2023-11-02,pivot points
+1158,CETX,2023-11-03,pivot points
+1159,CETX,2023-11-07,pivot points
+1160,CETX,2023-11-10,pivot points
+1161,CETX,2023-11-15,pivot points
+1162,CETX,2023-11-17,pivot points
+1163,CETX,2023-11-22,pivot points
+1164,CETX,2023-11-27,pivot points
+1165,CETX,2023-12-01,pivot points
+1166,CETX,2023-12-05,pivot points
+1167,CETX,2023-12-14,pivot points
+1168,CETX,2023-12-20,pivot points
+1169,CETX,2023-12-21,pivot points
+1170,CETX,2023-12-29,pivot points
+1171,PROP,2023-11-27,rolling window size
+1172,PROP,2023-12-12,rolling window size
+1173,PROP,2023-12-21,rolling window size
+1174,PROP,2023-12-27,fibonacci
+1175,PROP,2023-10-13,pivot points
+1176,PROP,2023-10-18,pivot points
+1177,PROP,2023-10-20,pivot points
+1178,PROP,2023-10-31,pivot points
+1179,PROP,2023-11-02,pivot points
+1180,PROP,2023-11-07,pivot points
+1181,PROP,2023-11-14,pivot points
+1182,PROP,2023-11-20,pivot points
+1183,PROP,2023-11-27,pivot points
+1184,PROP,2023-11-28,pivot points
+1185,PROP,2023-11-29,pivot points
+1186,PROP,2023-11-30,pivot points
+1187,PROP,2023-12-05,pivot points
+1188,PROP,2023-12-21,pivot points
+1189,PROP,2023-12-22,pivot points
+1190,PROP,2023-12-27,pivot points
+1191,PROP,2023-12-28,pivot points
+1192,HZEN,2023-10-17,pivot points
+1193,HZEN,2023-10-20,pivot points
+1194,HZEN,2023-10-24,pivot points
+1195,HZEN,2023-10-31,pivot points
+1196,HZEN,2023-11-01,pivot points
+1197,HZEN,2023-11-06,pivot points
+1198,HZEN,2023-11-07,pivot points
+1199,HZEN,2023-11-08,pivot points
+1200,HZEN,2023-11-10,pivot points
+1201,HZEN,2023-11-13,pivot points
+1202,HZEN,2023-12-01,pivot points
+1203,HZEN,2023-12-04,pivot points
+1204,HZEN,2023-12-14,pivot points
+1205,HZEN,2023-12-21,pivot points
+1206,HZEN,2024-01-02,pivot points
+1207,NOKPF,2023-10-17,pivot points
+1208,NOKPF,2023-10-19,pivot points
+1209,NOKPF,2023-11-02,pivot points
+1210,NOKPF,2023-12-19,pivot points
+1211,NOKPF,2023-12-26,pivot points
+1212,NOKPF,2023-12-28,pivot points
+1213,TCRI,2023-12-01,rolling window size
+1214,TCRI,2023-12-06,rolling window size
+1215,TCRI,2023-12-15,rolling window size
+1216,TCRI,2023-10-25,pivot points
+1217,TCRI,2023-11-09,pivot points
+1218,TCRI,2023-11-10,pivot points
+1219,TCRI,2023-11-16,pivot points
+1220,TCRI,2023-11-27,pivot points
+1221,TCRI,2023-12-01,pivot points
+1222,TCRI,2023-12-08,pivot points
+1223,TCRI,2023-12-15,pivot points
+1224,HYHDF,2023-12-27,rolling window size
+1225,HYHDF,2023-12-28,fibonacci
+1226,HYHDF,2023-11-07,pivot points
+1227,HYHDF,2023-12-04,pivot points
+1228,CRVH,2023-12-15,rolling window size
+1229,CRVH,2023-11-07,pivot points
+1230,CRVH,2023-11-28,pivot points
+1231,LANRF,2023-11-03,rolling window size
+1232,LANRF,2023-11-13,rolling window size
+1233,LANRF,2023-12-11,rolling window size
+1234,LANRF,2023-11-30,fibonacci
+1235,LANRF,2023-10-25,pivot points
+1236,LANRF,2023-11-03,pivot points
+1237,LANRF,2023-11-15,pivot points
+1238,LANRF,2023-11-27,pivot points
+1239,LANRF,2023-12-11,pivot points
+1240,LANRF,2023-12-13,pivot points
+1241,JKSM,2023-11-06,rolling window size
+1242,JKSM,2023-11-09,rolling window size
+1243,JKSM,2023-11-10,fibonacci
+1244,JKSM,2023-11-10,pivot points
+1245,JKSM,2023-12-05,pivot points
+1246,JKSM,2023-12-07,pivot points
+1247,JKSM,2023-12-08,pivot points
+1248,JKSM,2023-12-19,pivot points
+1249,CRYBF,2023-12-01,pivot points
+1250,CRYBF,2023-12-12,pivot points
+1251,CRYBF,2023-12-22,pivot points
+1252,CRYBF,2023-12-28,pivot points
+1253,CRYBF,2023-12-29,pivot points
+1254,CYAP,2023-11-09,rolling window size
+1255,CYAP,2023-11-20,rolling window size
+1256,CYAP,2023-11-21,fibonacci
+1257,CYAP,2023-10-16,pivot points
+1258,CYAP,2023-10-19,pivot points
+1259,CYAP,2023-10-23,pivot points
+1260,CYAP,2023-10-24,pivot points
+1261,CYAP,2023-10-26,pivot points
+1262,CYAP,2023-10-30,pivot points
+1263,CYAP,2023-11-06,pivot points
+1264,CYAP,2023-11-10,pivot points
+1265,CYAP,2023-11-14,pivot points
+1266,CYAP,2023-12-06,pivot points
+1267,CYAP,2023-12-18,pivot points
+1268,AHIX,2023-12-12,rolling window size
+1269,AHIX,2023-12-13,fibonacci
+1270,AHIX,2023-10-17,pivot points
+1271,AHIX,2023-10-19,pivot points
+1272,AHIX,2023-11-01,pivot points
+1273,AHIX,2023-11-22,pivot points
+1274,AHIX,2023-12-13,pivot points
+1275,AHIX,2023-12-15,pivot points
+1276,AHIX,2023-12-20,pivot points
+1277,AHIX,2023-12-28,pivot points
+1278,AHIX,2024-01-03,pivot points
+1279,FZRO,2023-12-14,rolling window size
+1280,FZRO,2023-12-18,rolling window size
+1281,FZRO,2023-12-28,rolling window size
+1282,FZRO,2023-12-22,fibonacci
+1283,FZRO,2023-10-13,pivot points
+1284,FZRO,2023-10-23,pivot points
+1285,FZRO,2023-10-30,pivot points
+1286,FZRO,2023-11-02,pivot points
+1287,FZRO,2023-11-07,pivot points
+1288,FZRO,2023-11-09,pivot points
+1289,FZRO,2023-11-10,pivot points
+1290,FZRO,2023-11-17,pivot points
+1291,FZRO,2023-11-28,pivot points
+1292,FZRO,2023-12-14,pivot points
+1293,FZRO,2023-12-21,pivot points
+1294,FZRO,2023-12-28,pivot points
+1295,WOWI,2023-12-18,pivot points
+1296,WOWI,2023-12-26,pivot points
+1297,ARBKF,2023-11-27,fibonacci
+1298,ARBKF,2023-10-19,pivot points
+1299,ARBKF,2023-10-23,pivot points
+1300,ARBKF,2023-10-24,pivot points
+1301,ARBKF,2023-10-25,pivot points
+1302,ARBKF,2023-10-27,pivot points
+1303,ARBKF,2023-11-03,pivot points
+1304,ARBKF,2023-11-09,pivot points
+1305,ARBKF,2023-11-15,pivot points
+1306,ARBKF,2023-12-01,pivot points
+1307,ARBKF,2023-12-04,pivot points
+1308,ARBKF,2023-12-05,pivot points
+1309,ARBKF,2023-12-06,pivot points
+1310,ARBKF,2023-12-08,pivot points
+1311,ARBKF,2023-12-12,pivot points
+1312,ARBKF,2023-12-14,pivot points
+1313,ARBKF,2023-12-19,pivot points
+1314,ARBKF,2023-12-20,pivot points
+1315,ARBKF,2023-12-21,pivot points
+1316,ARBKF,2023-12-22,pivot points
+1317,ARBKF,2023-12-26,pivot points
+1318,ARBKF,2023-12-27,pivot points
+1319,SMGI,2023-12-01,rolling window size
+1320,SMGI,2023-12-18,rolling window size
+1321,SMGI,2023-10-27,pivot points
+1322,SMGI,2023-11-02,pivot points
+1323,SMGI,2023-11-09,pivot points
+1324,SMGI,2023-12-01,pivot points
+1325,SMGI,2023-12-22,pivot points
+1326,SNANF,2023-11-03,rolling window size
+1327,SNANF,2023-12-11,rolling window size
+1328,SNANF,2023-10-17,pivot points
+1329,SNANF,2023-11-15,pivot points
+1330,SNANF,2023-11-27,pivot points
+1331,SNANF,2023-12-11,pivot points
+1332,SNANF,2023-12-12,pivot points
+1333,SNANF,2023-12-22,pivot points
+1334,LBSR,2023-11-10,rolling window size
+1335,LBSR,2023-11-13,fibonacci
+1336,LBSR,2023-10-16,pivot points
+1337,LBSR,2023-11-01,pivot points
+1338,LBSR,2023-11-13,pivot points
+1339,LBSR,2023-11-15,pivot points
+1340,LBSR,2023-11-17,pivot points
+1341,LBSR,2023-11-27,pivot points
+1342,LBSR,2023-11-30,pivot points
+1343,LBSR,2023-12-01,pivot points
+1344,LBSR,2023-12-04,pivot points
+1345,LBSR,2023-12-05,pivot points
+1346,LBSR,2023-12-07,pivot points
+1347,LBSR,2023-12-08,pivot points
+1348,LBSR,2023-12-11,pivot points
+1349,LBSR,2023-12-12,pivot points
+1350,LBSR,2023-12-13,pivot points
+1351,LBSR,2023-12-21,pivot points
+1352,LBSR,2023-12-22,pivot points
+1353,LBSR,2024-01-03,pivot points
+1354,MTPP,2023-12-22,rolling window size
+1355,MTPP,2024-01-02,rolling window size
+1356,MTPP,2023-10-20,pivot points
+1357,MTPP,2023-11-01,pivot points
+1358,MTPP,2023-11-13,pivot points
+1359,MTPP,2023-11-16,pivot points
+1360,MTPP,2023-11-17,pivot points
+1361,MTPP,2023-11-21,pivot points
+1362,MTPP,2023-11-29,pivot points
+1363,MTPP,2023-12-01,pivot points
+1364,MTPP,2023-12-06,pivot points
+1365,NPRFF,2023-11-29,rolling window size
+1366,NPRFF,2023-11-06,pivot points
+1367,NPRFF,2023-11-08,pivot points
+1368,NPRFF,2023-11-09,pivot points
+1369,NPRFF,2023-11-13,pivot points
+1370,NPRFF,2023-11-14,pivot points
+1371,NPRFF,2023-11-17,pivot points
+1372,NPRFF,2023-11-21,pivot points
+1373,NPRFF,2023-11-22,pivot points
+1374,NPRFF,2023-11-24,pivot points
+1375,NPRFF,2023-11-29,pivot points
+1376,NPRFF,2023-12-01,pivot points
+1377,NPRFF,2023-12-12,pivot points
+1378,NPRFF,2023-12-15,pivot points
+1379,NPRFF,2023-12-19,pivot points
+1380,NPRFF,2023-12-21,pivot points
+1381,NPRFF,2023-12-22,pivot points
+1382,NPRFF,2023-12-29,pivot points
+1383,NRPI,2024-01-02,rolling window size
+1384,NRPI,2023-11-29,pivot points
+1385,NRPI,2023-11-30,pivot points
+1386,NRPI,2023-12-11,pivot points
+1387,NRPI,2023-12-22,pivot points
+1388,MYIDF,2023-11-24,rolling window size
+1389,MYIDF,2023-10-17,pivot points
+1390,MYIDF,2023-10-24,pivot points
+1391,MYIDF,2023-11-02,pivot points
+1392,MYIDF,2023-11-30,pivot points
+1393,MYIDF,2023-12-19,pivot points
+1394,MYIDF,2023-12-21,pivot points
+1395,MYIDF,2023-12-22,pivot points
+1396,MYIDF,2023-12-26,pivot points
+1397,MYIDF,2023-12-27,pivot points
+1398,MVCO,2023-12-11,rolling window size
+1399,MVCO,2023-12-22,rolling window size
+1400,MVCO,2023-10-23,pivot points
+1401,MVCO,2023-11-02,pivot points
+1402,MVCO,2023-11-09,pivot points
+1403,MVCO,2023-11-14,pivot points
+1404,MVCO,2023-11-17,pivot points
+1405,MVCO,2023-11-20,pivot points
+1406,MVCO,2023-11-21,pivot points
+1407,MVCO,2023-11-22,pivot points
+1408,MVCO,2023-11-27,pivot points
+1409,MVCO,2023-11-30,pivot points
+1410,MVCO,2023-12-22,pivot points
+1411,USNU,2023-11-08,pivot points
+1412,USNU,2023-11-09,pivot points
+1413,USNU,2023-11-10,pivot points
+1414,USNU,2023-12-04,pivot points
+1415,NUMD,2023-11-20,rolling window size
+1416,NUMD,2023-10-19,pivot points
+1417,NUMD,2023-11-15,pivot points
+1418,NUMD,2023-12-04,pivot points
+1419,NUMD,2023-12-12,pivot points
+1420,NUMD,2023-12-15,pivot points
+1421,ARTM,2023-11-17,rolling window size
+1422,ARTM,2023-11-20,fibonacci
+1423,ARTM,2023-10-18,pivot points
+1424,ARTM,2023-10-19,pivot points
+1425,ARTM,2023-10-23,pivot points
+1426,ARTM,2023-10-25,pivot points
+1427,ARTM,2023-10-27,pivot points
+1428,ARTM,2023-11-09,pivot points
+1429,ARTM,2023-11-13,pivot points
+1430,ARTM,2023-11-15,pivot points
+1431,ARTM,2023-11-21,pivot points
+1432,ARTM,2023-12-06,pivot points
+1433,ARTM,2023-12-08,pivot points
+1434,ARTM,2023-12-22,pivot points
+1435,ARTM,2023-12-29,pivot points
+1436,CLHI,2023-11-30,fibonacci
+1437,CLHI,2023-10-16,pivot points
+1438,CLHI,2023-11-14,pivot points
+1439,CLHI,2023-12-20,pivot points
+1440,CLHI,2023-12-21,pivot points
+1441,CLHI,2023-12-22,pivot points
+1442,MSAH,2023-12-22,rolling window size
+1443,MSAH,2023-12-29,rolling window size
+1444,MSAH,2024-01-03,rolling window size
+1445,MSAH,2023-10-20,pivot points
+1446,MSAH,2023-10-30,pivot points
+1447,MSAH,2023-12-12,pivot points
+1448,MSAH,2023-12-22,pivot points
+1449,MSAH,2024-01-03,pivot points
+1450,CNCOF,2023-12-04,pivot points
+1451,CNCOF,2023-12-07,pivot points
+1452,CNCOF,2023-12-14,pivot points
+1453,CNCOF,2023-12-22,pivot points
+1454,COOLW,2023-11-03,rolling window size
+1455,COOLW,2023-11-09,rolling window size
+1456,COOLW,2023-11-16,rolling window size
+1457,COOLW,2023-12-01,rolling window size
+1458,COOLW,2023-12-06,rolling window size
+1459,COOLW,2023-10-17,pivot points
+1460,COOLW,2023-10-24,pivot points
+1461,COOLW,2023-11-03,pivot points
+1462,COOLW,2023-11-09,pivot points
+1463,COOLW,2023-11-16,pivot points
+1464,COOLW,2023-12-01,pivot points
+1465,COOLW,2023-12-06,pivot points
+1466,COOLW,2023-12-07,pivot points
+1467,COOLW,2023-12-14,pivot points
+1468,COOLW,2023-12-20,pivot points
+1469,COOLW,2023-12-22,pivot points
+1470,COOLW,2023-12-27,pivot points
+1471,COOLW,2024-01-02,pivot points
+1472,AUR,2023-10-16,pivot points
+1473,AUR,2023-10-20,pivot points
+1474,AUR,2023-10-31,pivot points
+1475,AUR,2023-11-01,pivot points
+1476,AUR,2023-11-08,pivot points
+1477,AUR,2023-11-10,pivot points
+1478,AUR,2023-11-14,pivot points
+1479,AUR,2023-11-16,pivot points
+1480,AUR,2023-11-17,pivot points
+1481,AUR,2023-11-24,pivot points
+1482,AUR,2023-11-29,pivot points
+1483,AUR,2023-12-01,pivot points
+1484,AUR,2023-12-07,pivot points
+1485,AUR,2023-12-08,pivot points
+1486,AUR,2023-12-11,pivot points
+1487,AUR,2023-12-12,pivot points
+1488,AUR,2023-12-13,pivot points
+1489,AUR,2023-12-14,pivot points
+1490,AUR,2023-12-15,pivot points
+1491,AUR,2023-12-18,pivot points
+1492,AUR,2023-12-19,pivot points
+1493,AUR,2023-12-21,pivot points
+1494,AUR,2023-12-22,pivot points
+1495,AUR,2023-12-26,pivot points
+1496,AUR,2023-12-27,pivot points
+1497,OPEN,2023-11-08,fibonacci
+1498,OPEN,2023-10-30,pivot points
+1499,OPEN,2023-11-02,pivot points
+1500,OPEN,2023-11-07,pivot points
+1501,OPEN,2023-11-08,pivot points
+1502,OPEN,2023-11-10,pivot points
+1503,OPEN,2023-11-15,pivot points
+1504,OPEN,2023-11-17,pivot points
+1505,OPEN,2023-11-22,pivot points
+1506,OPEN,2023-11-24,pivot points
+1507,OPEN,2023-11-27,pivot points
+1508,OPEN,2023-11-28,pivot points
+1509,OPEN,2023-12-01,pivot points
+1510,OPEN,2023-12-07,pivot points
+1511,OPEN,2023-12-08,pivot points
+1512,OPEN,2023-12-13,pivot points
+1513,OPEN,2023-12-19,pivot points
+1514,OPEN,2023-12-21,pivot points
+1515,OPEN,2023-12-22,pivot points
+1516,OPEN,2023-12-26,pivot points
+1517,ADV,2023-11-10,rolling window size
+1518,ADV,2023-11-13,fibonacci
+1519,ADV,2023-10-17,pivot points
+1520,ADV,2023-10-20,pivot points
+1521,ADV,2023-10-30,pivot points
+1522,ADV,2023-10-31,pivot points
+1523,ADV,2023-11-03,pivot points
+1524,ADV,2023-11-13,pivot points
+1525,ADV,2023-11-14,pivot points
+1526,ADV,2023-11-16,pivot points
+1527,ADV,2023-11-24,pivot points
+1528,ADV,2023-11-27,pivot points
+1529,ADV,2023-11-29,pivot points
+1530,ADV,2023-12-05,pivot points
+1531,ADV,2023-12-06,pivot points
+1532,ADV,2023-12-07,pivot points
+1533,ADV,2023-12-08,pivot points
+1534,ADV,2023-12-14,pivot points
+1535,ADV,2023-12-15,pivot points
+1536,ADV,2023-12-19,pivot points
+1537,ADV,2023-12-21,pivot points
+1538,ADV,2023-12-26,pivot points
+1539,ADV,2024-01-03,pivot points
+1540,RDFN,2023-11-07,pivot points
+1541,RDFN,2023-11-10,pivot points
+1542,RDFN,2023-11-14,pivot points
+1543,RDFN,2023-11-15,pivot points
+1544,RDFN,2023-11-17,pivot points
+1545,RDFN,2023-11-22,pivot points
+1546,RDFN,2023-12-01,pivot points
+1547,RDFN,2023-12-07,pivot points
+1548,RDFN,2023-12-08,pivot points
+1549,RDFN,2023-12-13,pivot points
+1550,RDFN,2023-12-14,pivot points
+1551,RDFN,2023-12-18,pivot points
+1552,RDFN,2023-12-21,pivot points
+1553,RDFN,2023-12-26,pivot points
+1554,RDFN,2023-12-27,pivot points
+1555,PGY,2023-12-06,rolling window size
+1556,PGY,2023-12-08,rolling window size
+1557,PGY,2023-10-17,pivot points
+1558,PGY,2023-10-19,pivot points
+1559,PGY,2023-10-24,pivot points
+1560,PGY,2023-10-26,pivot points
+1561,PGY,2023-10-30,pivot points
+1562,PGY,2023-10-31,pivot points
+1563,PGY,2023-11-01,pivot points
+1564,PGY,2023-11-02,pivot points
+1565,PGY,2023-11-14,pivot points
+1566,PGY,2023-11-17,pivot points
+1567,PGY,2023-11-22,pivot points
+1568,PGY,2023-11-28,pivot points
+1569,PGY,2023-12-01,pivot points
+1570,PGY,2023-12-08,pivot points
+1571,PGY,2023-12-13,pivot points
+1572,PGY,2023-12-15,pivot points
+1573,DHC,2023-10-24,pivot points
+1574,DHC,2023-10-26,pivot points
+1575,DHC,2023-10-30,pivot points
+1576,DHC,2023-11-01,pivot points
+1577,DHC,2023-11-03,pivot points
+1578,DHC,2023-11-10,pivot points
+1579,DHC,2023-11-14,pivot points
+1580,DHC,2023-11-28,pivot points
+1581,DHC,2023-11-30,pivot points
+1582,DHC,2023-12-01,pivot points
+1583,DHC,2023-12-13,pivot points
+1584,DHC,2023-12-14,pivot points
+1585,DHC,2023-12-18,pivot points
+1586,DHC,2023-12-19,pivot points
+1587,DHC,2023-12-21,pivot points
+1588,DHC,2023-12-26,pivot points
+1589,STTK,2023-10-24,pivot points
+1590,STTK,2023-10-30,pivot points
+1591,STTK,2023-11-03,pivot points
+1592,STTK,2023-11-06,pivot points
+1593,STTK,2023-11-07,pivot points
+1594,STTK,2023-11-08,pivot points
+1595,STTK,2023-11-14,pivot points
+1596,STTK,2023-11-17,pivot points
+1597,STTK,2023-11-22,pivot points
+1598,STTK,2023-11-24,pivot points
+1599,STTK,2023-12-06,pivot points
+1600,STTK,2023-12-12,pivot points
+1601,STTK,2023-12-13,pivot points
+1602,STTK,2023-12-14,pivot points
+1603,STTK,2023-12-19,pivot points
+1604,STTK,2023-12-22,pivot points
+1605,STTK,2023-12-28,pivot points
+1606,STTK,2024-01-02,pivot points
+1607,IMRX,2023-11-14,rolling window size
+1608,IMRX,2023-12-13,rolling window size
+1609,IMRX,2023-12-14,fibonacci
+1610,IMRX,2023-12-26,fibonacci
+1611,IMRX,2023-10-30,pivot points
+1612,IMRX,2023-10-31,pivot points
+1613,IMRX,2023-11-14,pivot points
+1614,IMRX,2023-11-17,pivot points
+1615,IMRX,2023-11-21,pivot points
+1616,IMRX,2023-11-22,pivot points
+1617,IMRX,2023-11-27,pivot points
+1618,IMRX,2023-12-01,pivot points
+1619,IMRX,2023-12-13,pivot points
+1620,IMRX,2023-12-14,pivot points
+1621,IMRX,2023-12-21,pivot points
+1622,IMRX,2023-12-22,pivot points
+1623,IMRX,2023-12-26,pivot points
+1624,IMRX,2023-12-28,pivot points
+1625,LOOP,2023-10-20,pivot points
+1626,LOOP,2023-10-31,pivot points
+1627,LOOP,2023-11-01,pivot points
+1628,LOOP,2023-11-02,pivot points
+1629,LOOP,2023-11-13,pivot points
+1630,LOOP,2023-11-16,pivot points
+1631,LOOP,2023-11-20,pivot points
+1632,LOOP,2023-11-24,pivot points
+1633,LOOP,2023-11-30,pivot points
+1634,LOOP,2023-12-06,pivot points
+1635,LOOP,2023-12-13,pivot points
+1636,LOOP,2023-12-14,pivot points
+1637,LOOP,2023-12-15,pivot points
+1638,LOOP,2023-12-19,pivot points
+1639,LOOP,2023-12-27,pivot points
+1640,MAKOF,2023-10-16,pivot points
+1641,MAKOF,2023-10-26,pivot points
+1642,MAKOF,2023-10-30,pivot points
+1643,MAKOF,2023-11-02,pivot points
+1644,MAKOF,2023-11-03,pivot points
+1645,MAKOF,2023-11-07,pivot points
+1646,MAKOF,2023-11-08,pivot points
+1647,MAKOF,2023-11-09,pivot points
+1648,MAKOF,2023-11-14,pivot points
+1649,MAKOF,2023-11-16,pivot points
+1650,MAKOF,2023-11-28,pivot points
+1651,MAKOF,2023-11-29,pivot points
+1652,MAKOF,2023-11-30,pivot points
+1653,MAKOF,2023-12-01,pivot points
+1654,MAKOF,2023-12-14,pivot points
+1655,MAKOF,2023-12-15,pivot points
+1656,MAKOF,2023-12-19,pivot points
+1657,MAKOF,2023-12-21,pivot points
+1658,MAKOF,2023-12-22,pivot points
+1659,MAKOF,2023-12-26,pivot points
+1660,MAKOF,2023-12-28,pivot points
+1661,DMAC,2023-10-17,pivot points
+1662,DMAC,2023-10-20,pivot points
+1663,DMAC,2023-10-23,pivot points
+1664,DMAC,2023-10-24,pivot points
+1665,DMAC,2023-10-25,pivot points
+1666,DMAC,2023-10-27,pivot points
+1667,DMAC,2023-10-31,pivot points
+1668,DMAC,2023-11-01,pivot points
+1669,DMAC,2023-11-03,pivot points
+1670,DMAC,2023-11-10,pivot points
+1671,DMAC,2023-11-14,pivot points
+1672,DMAC,2023-11-17,pivot points
+1673,DMAC,2023-11-21,pivot points
+1674,DMAC,2023-11-22,pivot points
+1675,DMAC,2023-11-24,pivot points
+1676,DMAC,2023-12-01,pivot points
+1677,DMAC,2023-12-04,pivot points
+1678,DMAC,2023-12-06,pivot points
+1679,DMAC,2023-12-08,pivot points
+1680,DMAC,2023-12-13,pivot points
+1681,DMAC,2023-12-14,pivot points
+1682,DMAC,2023-12-21,pivot points
+1683,DMAC,2023-12-22,pivot points
+1684,DMAC,2023-12-27,pivot points
+1685,DMAC,2024-01-03,pivot points
+1686,CLIR,2023-11-17,rolling window size
+1687,CLIR,2024-01-03,rolling window size
+1688,CLIR,2023-11-20,fibonacci
+1689,CLIR,2023-12-14,fibonacci
+1690,CLIR,2023-12-19,fibonacci
+1691,CLIR,2023-10-23,pivot points
+1692,CLIR,2023-11-01,pivot points
+1693,CLIR,2023-11-02,pivot points
+1694,CLIR,2023-11-06,pivot points
+1695,CLIR,2023-11-07,pivot points
+1696,CLIR,2023-11-08,pivot points
+1697,CLIR,2023-11-14,pivot points
+1698,CLIR,2023-11-20,pivot points
+1699,CLIR,2023-11-22,pivot points
+1700,CLIR,2023-11-24,pivot points
+1701,CLIR,2023-12-11,pivot points
+1702,CLIR,2023-12-14,pivot points
+1703,CLIR,2023-12-19,pivot points
+1704,CLIR,2024-01-03,pivot points
+1705,MRKR,2023-11-22,rolling window size
+1706,MRKR,2023-11-29,fibonacci
+1707,MRKR,2023-10-17,pivot points
+1708,MRKR,2023-10-30,pivot points
+1709,MRKR,2023-11-01,pivot points
+1710,MRKR,2023-11-02,pivot points
+1711,MRKR,2023-11-07,pivot points
+1712,MRKR,2023-11-15,pivot points
+1713,MRKR,2023-11-17,pivot points
+1714,MRKR,2023-11-24,pivot points
+1715,MRKR,2023-11-28,pivot points
+1716,MRKR,2023-11-29,pivot points
+1717,MRKR,2023-12-06,pivot points
+1718,MRKR,2023-12-08,pivot points
+1719,MRKR,2023-12-11,pivot points
+1720,MRKR,2023-12-13,pivot points
+1721,MRKR,2023-12-14,pivot points
+1722,MRKR,2023-12-26,pivot points
+1723,MRKR,2023-12-27,pivot points
+1724,MRKR,2023-12-28,pivot points
+1725,DGHI,2023-12-14,rolling window size
+1726,DGHI,2023-10-13,pivot points
+1727,DGHI,2023-10-16,pivot points
+1728,DGHI,2023-10-19,pivot points
+1729,DGHI,2023-10-20,pivot points
+1730,DGHI,2023-10-23,pivot points
+1731,DGHI,2023-10-24,pivot points
+1732,DGHI,2023-11-01,pivot points
+1733,DGHI,2023-11-02,pivot points
+1734,DGHI,2023-11-07,pivot points
+1735,DGHI,2023-11-15,pivot points
+1736,DGHI,2023-11-20,pivot points
+1737,DGHI,2023-11-24,pivot points
+1738,DGHI,2023-11-28,pivot points
+1739,DGHI,2023-12-01,pivot points
+1740,DGHI,2023-12-04,pivot points
+1741,DGHI,2023-12-14,pivot points
+1742,DGHI,2023-12-15,pivot points
+1743,DGHI,2023-12-18,pivot points
+1744,DGHI,2023-12-22,pivot points
+1745,DGHI,2023-12-26,pivot points
+1746,DGHI,2023-12-27,pivot points
+1747,PRTT,2023-10-13,pivot points
+1748,PRTT,2023-11-07,pivot points
+1749,PRTT,2023-11-08,pivot points
+1750,PRTT,2023-11-14,pivot points
+1751,PRTT,2023-11-17,pivot points
+1752,PRTT,2023-11-20,pivot points
+1753,PRTT,2023-11-22,pivot points
+1754,PRTT,2023-11-27,pivot points
+1755,PRTT,2023-11-29,pivot points
+1756,PRTT,2023-11-30,pivot points
+1757,PRTT,2023-12-04,pivot points
+1758,PRTT,2023-12-05,pivot points
+1759,PRTT,2023-12-06,pivot points
+1760,PRTT,2023-12-08,pivot points
+1761,PRTT,2023-12-14,pivot points
+1762,PRTT,2023-12-22,pivot points
+1763,PRTT,2023-12-27,pivot points
+1764,PRTT,2023-12-28,pivot points
+1765,PRTT,2024-01-02,pivot points
+1766,RMLFF,2023-11-10,rolling window size
+1767,RMLFF,2023-11-16,rolling window size
+1768,RMLFF,2023-11-29,rolling window size
+1769,RMLFF,2023-11-17,fibonacci
+1770,RMLFF,2023-10-16,pivot points
+1771,RMLFF,2023-10-19,pivot points
+1772,RMLFF,2023-10-25,pivot points
+1773,RMLFF,2023-11-10,pivot points
+1774,RMLFF,2023-11-16,pivot points
+1775,RMLFF,2023-11-17,pivot points
+1776,RMLFF,2023-11-22,pivot points
+1777,RMLFF,2023-11-29,pivot points
+1778,RMLFF,2023-12-01,pivot points
+1779,RMLFF,2023-12-07,pivot points
+1780,RMLFF,2023-12-12,pivot points
+1781,RMLFF,2023-12-14,pivot points
+1782,RMLFF,2023-12-15,pivot points
+1783,RMLFF,2023-12-18,pivot points
+1784,RMLFF,2023-12-21,pivot points
+1785,RMLFF,2023-12-26,pivot points
+1786,RMLFF,2023-12-27,pivot points
+1787,RMLFF,2023-12-29,pivot points
+1788,NUKK,2023-11-20,rolling window size
+1789,NUKK,2023-11-21,fibonacci
+1790,NUKK,2023-10-13,pivot points
+1791,NUKK,2023-10-19,pivot points
+1792,NUKK,2023-10-26,pivot points
+1793,NUKK,2023-10-31,pivot points
+1794,NUKK,2023-11-21,pivot points
+1795,NUKK,2023-11-29,pivot points
+1796,NUKK,2023-12-01,pivot points
+1797,NUKK,2023-12-21,pivot points
+1798,NUKK,2023-12-26,pivot points
+1799,NUKK,2023-12-29,pivot points
+1800,EAWD,2023-12-14,fibonacci
+1801,EAWD,2023-10-13,pivot points
+1802,EAWD,2023-10-20,pivot points
+1803,EAWD,2023-10-26,pivot points
+1804,EAWD,2023-10-30,pivot points
+1805,EAWD,2023-11-01,pivot points
+1806,EAWD,2023-11-03,pivot points
+1807,EAWD,2023-11-06,pivot points
+1808,EAWD,2023-11-09,pivot points
+1809,EAWD,2023-11-13,pivot points
+1810,EAWD,2023-11-20,pivot points
+1811,EAWD,2023-11-22,pivot points
+1812,EAWD,2023-11-28,pivot points
+1813,EAWD,2023-12-01,pivot points
+1814,EAWD,2023-12-06,pivot points
+1815,EAWD,2023-12-15,pivot points
+1816,EAWD,2023-12-18,pivot points
+1817,EAWD,2023-12-21,pivot points
+1818,EAWD,2023-12-28,pivot points
+1819,EAWD,2024-01-02,pivot points
+1820,AHG,2023-11-17,rolling window size
+1821,AHG,2023-12-06,rolling window size
+1822,AHG,2023-12-14,rolling window size
+1823,AHG,2023-11-20,fibonacci
+1824,AHG,2023-12-22,fibonacci
+1825,AHG,2023-10-13,pivot points
+1826,AHG,2023-10-16,pivot points
+1827,AHG,2023-10-23,pivot points
+1828,AHG,2023-10-24,pivot points
+1829,AHG,2023-10-25,pivot points
+1830,AHG,2023-10-27,pivot points
+1831,AHG,2023-11-10,pivot points
+1832,AHG,2023-11-17,pivot points
+1833,AHG,2023-11-20,pivot points
+1834,AHG,2023-11-24,pivot points
+1835,AHG,2023-12-01,pivot points
+1836,AHG,2023-12-14,pivot points
+1837,AHG,2023-12-22,pivot points
+1838,AHG,2024-01-02,pivot points
+1839,TRRXF,2023-12-14,rolling window size
+1840,TRRXF,2023-11-09,pivot points
+1841,TRRXF,2023-11-20,pivot points
+1842,TRRXF,2023-12-12,pivot points
+1843,TRRXF,2023-12-18,pivot points
+1844,SNBH,2023-11-06,rolling window size
+1845,SNBH,2023-11-07,fibonacci
+1846,SNBH,2023-10-16,pivot points
+1847,SNBH,2023-10-19,pivot points
+1848,SNBH,2023-10-27,pivot points
+1849,SNBH,2023-11-06,pivot points
+1850,SNBH,2023-11-27,pivot points
+1851,SNBH,2023-12-18,pivot points
+1852,SNBH,2023-12-21,pivot points
+1853,SNBH,2024-01-02,pivot points
+1854,IONI,2023-10-18,pivot points
+1855,IONI,2023-11-03,pivot points
+1856,IONI,2023-11-07,pivot points
+1857,IONI,2023-11-09,pivot points
+1858,IONI,2023-11-14,pivot points
+1859,IONI,2023-11-29,pivot points
+1860,IONI,2023-11-30,pivot points
+1861,IONI,2023-12-05,pivot points
+1862,IONI,2023-12-11,pivot points
+1863,IONI,2023-12-13,pivot points
+1864,IONI,2023-12-18,pivot points
+1865,IONI,2023-12-22,pivot points
+1866,IONI,2024-01-02,pivot points
+1867,ZHUD,2023-11-22,rolling window size
+1868,ZHUD,2023-12-06,rolling window size
+1869,ZHUD,2023-12-12,rolling window size
+1870,ZHUD,2023-10-26,pivot points
+1871,ZHUD,2023-10-31,pivot points
+1872,ZHUD,2023-11-01,pivot points
+1873,ZHUD,2023-11-02,pivot points
+1874,ZHUD,2023-11-07,pivot points
+1875,ZHUD,2023-11-17,pivot points
+1876,ZHUD,2023-11-22,pivot points
+1877,ZHUD,2023-11-24,pivot points
+1878,ZHUD,2023-11-28,pivot points
+1879,ZHUD,2023-12-06,pivot points
+1880,ZHUD,2023-12-12,pivot points
+1881,ZHUD,2023-12-14,pivot points
+1882,ZHUD,2023-12-18,pivot points
+1883,ZHUD,2023-12-21,pivot points
+1884,ZHUD,2023-12-29,pivot points
+1885,ZHUD,2024-01-03,pivot points
+1886,BMCS,2023-11-06,rolling window size
+1887,BMCS,2023-10-19,pivot points
+1888,BMCS,2023-10-25,pivot points
+1889,BMCS,2023-11-07,pivot points
+1890,BMCS,2023-11-17,pivot points
+1891,BMCS,2023-12-07,pivot points
+1892,BMCS,2023-12-12,pivot points
+1893,BMCS,2023-12-18,pivot points
+1894,BMCS,2023-12-21,pivot points
+1895,BRZV,2023-12-22,rolling window size
+1896,BRZV,2023-12-26,fibonacci
+1897,BRZV,2023-10-20,pivot points
+1898,BRZV,2023-11-01,pivot points
+1899,BRZV,2023-11-03,pivot points
+1900,BRZV,2023-11-10,pivot points
+1901,BRZV,2023-12-01,pivot points
+1902,BRZV,2023-12-06,pivot points
+1903,BRZV,2023-12-07,pivot points
+1904,BRZV,2023-12-11,pivot points
+1905,BRZV,2023-12-18,pivot points
+1906,DZCA,2023-12-14,rolling window size
+1907,DZCA,2023-11-22,fibonacci
+1908,DZCA,2023-10-30,pivot points
+1909,DZCA,2023-10-31,pivot points
+1910,DZCA,2023-11-07,pivot points
+1911,DZCA,2023-11-09,pivot points
+1912,DZCA,2023-11-13,pivot points
+1913,DZCA,2023-11-17,pivot points
+1914,DZCA,2023-11-21,pivot points
+1915,DZCA,2023-11-22,pivot points
+1916,DZCA,2023-11-28,pivot points
+1917,DZCA,2023-11-30,pivot points
+1918,DZCA,2023-12-05,pivot points
+1919,DZCA,2023-12-21,pivot points
+1920,REGRF,2023-11-10,rolling window size
+1921,REGRF,2023-12-27,rolling window size
+1922,REGRF,2023-10-20,pivot points
+1923,REGRF,2023-10-26,pivot points
+1924,REGRF,2023-11-27,pivot points
+1925,REGRF,2023-12-04,pivot points
+1926,REGRF,2023-12-11,pivot points
+1927,REGRF,2023-12-18,pivot points
+1928,REGRF,2023-12-29,pivot points
+1929,CEOS,2023-12-05,rolling window size
+1930,CEOS,2023-11-30,fibonacci
+1931,CEOS,2023-12-06,fibonacci
+1932,CEOS,2023-10-13,pivot points
+1933,CEOS,2023-10-18,pivot points
+1934,CEOS,2023-10-20,pivot points
+1935,CEOS,2023-10-30,pivot points
+1936,CEOS,2023-10-31,pivot points
+1937,CEOS,2023-11-01,pivot points
+1938,CEOS,2023-11-13,pivot points
+1939,CEOS,2023-11-15,pivot points
+1940,CEOS,2023-11-20,pivot points
+1941,CEOS,2023-11-30,pivot points
+1942,CEOS,2023-12-05,pivot points
+1943,CEOS,2023-12-06,pivot points
+1944,CEOS,2023-12-11,pivot points
+1945,CEOS,2023-12-14,pivot points
+1946,CEOS,2023-12-15,pivot points
+1947,CEOS,2023-12-18,pivot points
+1948,CEOS,2023-12-21,pivot points
+1949,CEOS,2023-12-22,pivot points
+1950,CEOS,2023-12-27,pivot points
+1951,CEOS,2024-01-02,pivot points
+1952,TAWNF,2023-11-28,rolling window size
+1953,TAWNF,2023-11-30,fibonacci
+1954,TAWNF,2023-12-26,fibonacci
+1955,TAWNF,2023-12-29,fibonacci
+1956,TAWNF,2023-10-31,pivot points
+1957,TAWNF,2023-11-29,pivot points
+1958,TAWNF,2023-11-30,pivot points
+1959,TAWNF,2023-12-05,pivot points
+1960,TAWNF,2023-12-07,pivot points
+1961,TAWNF,2023-12-11,pivot points
+1962,TAWNF,2023-12-15,pivot points
+1963,TAWNF,2023-12-19,pivot points
+1964,TAWNF,2023-12-22,pivot points
+1965,TAWNF,2023-12-26,pivot points
+1966,TAWNF,2023-12-29,pivot points
+1967,TAWNF,2024-01-02,pivot points
+1968,TAWNF,2024-01-03,pivot points
+1969,IFUS,2023-11-20,rolling window size
+1970,IFUS,2023-11-21,fibonacci
+1971,IFUS,2023-10-20,pivot points
+1972,IFUS,2023-10-25,pivot points
+1973,IFUS,2023-10-26,pivot points
+1974,IFUS,2023-10-27,pivot points
+1975,IFUS,2023-11-02,pivot points
+1976,IFUS,2023-11-08,pivot points
+1977,IFUS,2023-11-09,pivot points
+1978,IFUS,2023-11-14,pivot points
+1979,IFUS,2023-11-21,pivot points
+1980,IFUS,2023-11-28,pivot points
+1981,IFUS,2023-11-29,pivot points
+1982,IFUS,2023-12-01,pivot points
+1983,IFUS,2023-12-04,pivot points
+1984,IFUS,2023-12-06,pivot points
+1985,IFUS,2023-12-07,pivot points
+1986,IFUS,2023-12-08,pivot points
+1987,IFUS,2023-12-11,pivot points
+1988,IFUS,2023-12-12,pivot points
+1989,IFUS,2023-12-14,pivot points
+1990,IFUS,2023-12-15,pivot points
+1991,IFUS,2023-12-21,pivot points
+1992,IFUS,2023-12-27,pivot points
+1993,IFUS,2024-01-02,pivot points
+1994,MMTIF,2023-11-06,rolling window size
+1995,MMTIF,2023-10-16,pivot points
+1996,MMTIF,2023-10-18,pivot points
+1997,MMTIF,2023-10-25,pivot points
+1998,MMTIF,2023-10-31,pivot points
+1999,MMTIF,2023-11-06,pivot points
+2000,MMTIF,2023-11-29,pivot points
+2001,MMTIF,2023-12-01,pivot points
+2002,MMTIF,2023-12-07,pivot points
+2003,MMTIF,2023-12-08,pivot points
+2004,MMTIF,2023-12-11,pivot points
+2005,MMTIF,2023-12-18,pivot points
+2006,MMTIF,2024-01-02,pivot points
+2007,FDCT,2023-12-11,fibonacci
+2008,FDCT,2023-12-28,fibonacci
+2009,FDCT,2023-10-19,pivot points
+2010,FDCT,2023-10-27,pivot points
+2011,FDCT,2023-10-30,pivot points
+2012,FDCT,2023-11-10,pivot points
+2013,FDCT,2023-11-13,pivot points
+2014,FDCT,2023-11-16,pivot points
+2015,FDCT,2023-11-20,pivot points
+2016,FDCT,2023-11-24,pivot points
+2017,FDCT,2023-12-11,pivot points
+2018,FDCT,2023-12-12,pivot points
+2019,FDCT,2023-12-14,pivot points
+2020,FDCT,2023-12-19,pivot points
+2021,FDCT,2023-12-28,pivot points
+2022,ECDP,2023-11-07,rolling window size
+2023,ECDP,2023-11-09,rolling window size
+2024,ECDP,2023-11-16,rolling window size
+2025,ECDP,2023-12-11,rolling window size
+2026,ECDP,2023-11-20,fibonacci
+2027,ECDP,2023-10-17,pivot points
+2028,ECDP,2023-10-20,pivot points
+2029,ECDP,2023-10-31,pivot points
+2030,ECDP,2023-11-16,pivot points
+2031,ECDP,2023-11-17,pivot points
+2032,ECDP,2023-11-20,pivot points
+2033,ECDP,2023-11-28,pivot points
+2034,ECDP,2023-12-19,pivot points
+2035,ECDP,2023-12-21,pivot points
+2036,ECDP,2023-12-22,pivot points
+2037,ECDP,2024-01-02,pivot points
+2038,ECDP,2024-01-03,pivot points
+2039,IXHL,2023-11-17,rolling window size
+2040,IXHL,2023-12-21,rolling window size
+2041,IXHL,2023-11-24,fibonacci
+2042,IXHL,2023-10-18,pivot points
+2043,IXHL,2023-10-27,pivot points
+2044,IXHL,2023-10-31,pivot points
+2045,IXHL,2023-11-02,pivot points
+2046,IXHL,2023-11-08,pivot points
+2047,IXHL,2023-11-09,pivot points
+2048,IXHL,2023-11-17,pivot points
+2049,IXHL,2023-11-30,pivot points
+2050,IXHL,2023-12-04,pivot points
+2051,IXHL,2023-12-21,pivot points
+2052,IXHL,2023-12-22,pivot points
+2053,IXHL,2023-12-27,pivot points
+2054,IXHL,2023-12-28,pivot points
+2055,BRPHF,2023-10-23,pivot points
+2056,BRPHF,2023-10-24,pivot points
+2057,BRPHF,2023-10-25,pivot points
+2058,BRPHF,2023-10-27,pivot points
+2059,BRPHF,2023-10-30,pivot points
+2060,BRPHF,2023-11-01,pivot points
+2061,BRPHF,2023-11-02,pivot points
+2062,BRPHF,2023-11-03,pivot points
+2063,BRPHF,2023-11-07,pivot points
+2064,BRPHF,2023-11-15,pivot points
+2065,BRPHF,2023-11-17,pivot points
+2066,BRPHF,2023-11-20,pivot points
+2067,BRPHF,2023-11-24,pivot points
+2068,BRPHF,2023-11-28,pivot points
+2069,BRPHF,2023-11-29,pivot points
+2070,BRPHF,2023-12-01,pivot points
+2071,BRPHF,2023-12-04,pivot points
+2072,BRPHF,2023-12-08,pivot points
+2073,BRPHF,2023-12-13,pivot points
+2074,BRPHF,2023-12-18,pivot points
+2075,BRPHF,2023-12-19,pivot points
+2076,BRPHF,2023-12-21,pivot points
+2077,BRPHF,2023-12-22,pivot points
+2078,BRPHF,2023-12-27,pivot points
+2079,WULF,2023-11-10,rolling window size
+2080,WULF,2023-10-16,pivot points
+2081,WULF,2023-10-17,pivot points
+2082,WULF,2023-10-23,pivot points
+2083,WULF,2023-11-10,pivot points
+2084,WULF,2023-11-13,pivot points
+2085,WULF,2023-11-15,pivot points
+2086,WULF,2023-11-17,pivot points
+2087,WULF,2023-11-20,pivot points
+2088,WULF,2023-11-24,pivot points
+2089,WULF,2023-12-01,pivot points
+2090,WULF,2023-12-08,pivot points
+2091,WULF,2023-12-13,pivot points
+2092,WULF,2023-12-14,pivot points
+2093,WULF,2023-12-21,pivot points
+2094,WULF,2023-12-22,pivot points
+2095,WULF,2023-12-26,pivot points
+2096,WULF,2023-12-27,pivot points
+2097,WULF,2023-12-28,pivot points
+2098,BLND,2023-11-14,rolling window size
+2099,BLND,2023-11-28,fibonacci
+2100,BLND,2023-10-16,pivot points
+2101,BLND,2023-10-17,pivot points
+2102,BLND,2023-10-24,pivot points
+2103,BLND,2023-11-01,pivot points
+2104,BLND,2023-11-02,pivot points
+2105,BLND,2023-11-03,pivot points
+2106,BLND,2023-11-06,pivot points
+2107,BLND,2023-11-20,pivot points
+2108,BLND,2023-11-22,pivot points
+2109,BLND,2023-11-24,pivot points
+2110,BLND,2023-11-27,pivot points
+2111,BLND,2023-11-28,pivot points
+2112,BLND,2023-11-29,pivot points
+2113,BLND,2023-12-01,pivot points
+2114,BLND,2023-12-04,pivot points
+2115,BLND,2023-12-05,pivot points
+2116,BLND,2023-12-11,pivot points
+2117,BLND,2023-12-15,pivot points
+2118,BLND,2023-12-18,pivot points
+2119,BLND,2023-12-19,pivot points
+2120,BLND,2023-12-21,pivot points
+2121,BLND,2023-12-22,pivot points
+2122,BLND,2023-12-27,pivot points
+2123,FUSN,2023-11-13,rolling window size
+2124,FUSN,2023-11-14,fibonacci
+2125,FUSN,2023-11-20,fibonacci
+2126,FUSN,2023-10-13,pivot points
+2127,FUSN,2023-10-17,pivot points
+2128,FUSN,2023-10-20,pivot points
+2129,FUSN,2023-10-26,pivot points
+2130,FUSN,2023-10-31,pivot points
+2131,FUSN,2023-11-03,pivot points
+2132,FUSN,2023-11-07,pivot points
+2133,FUSN,2023-11-13,pivot points
+2134,FUSN,2023-11-20,pivot points
+2135,FUSN,2023-11-21,pivot points
+2136,FUSN,2023-11-24,pivot points
+2137,FUSN,2023-11-28,pivot points
+2138,FUSN,2023-11-29,pivot points
+2139,FUSN,2023-11-30,pivot points
+2140,FUSN,2023-12-07,pivot points
+2141,FUSN,2023-12-08,pivot points
+2142,FUSN,2023-12-12,pivot points
+2143,FUSN,2023-12-13,pivot points
+2144,FUSN,2023-12-18,pivot points
+2145,FUSN,2023-12-19,pivot points
+2146,FUSN,2023-12-22,pivot points
+2147,FUSN,2023-12-27,pivot points
+2148,BTBT,2023-11-14,rolling window size
+2149,BTBT,2023-11-15,fibonacci
+2150,BTBT,2023-10-17,pivot points
+2151,BTBT,2023-10-31,pivot points
+2152,BTBT,2023-11-02,pivot points
+2153,BTBT,2023-11-14,pivot points
+2154,BTBT,2023-11-15,pivot points
+2155,BTBT,2023-11-17,pivot points
+2156,BTBT,2023-11-20,pivot points
+2157,BTBT,2023-11-24,pivot points
+2158,BTBT,2023-11-28,pivot points
+2159,BTBT,2023-11-29,pivot points
+2160,BTBT,2023-12-01,pivot points
+2161,BTBT,2023-12-04,pivot points
+2162,BTBT,2023-12-05,pivot points
+2163,BTBT,2023-12-08,pivot points
+2164,BTBT,2023-12-13,pivot points
+2165,BTBT,2023-12-14,pivot points
+2166,BTBT,2023-12-18,pivot points
+2167,BTBT,2023-12-21,pivot points
+2168,BTBT,2023-12-22,pivot points
+2169,BTBT,2023-12-26,pivot points
+2170,BTBT,2023-12-27,pivot points
+2171,ABSI,2023-10-13,pivot points
+2172,ABSI,2023-10-16,pivot points
+2173,ABSI,2023-10-17,pivot points
+2174,ABSI,2023-10-27,pivot points
+2175,ABSI,2023-10-31,pivot points
+2176,ABSI,2023-11-02,pivot points
+2177,ABSI,2023-11-03,pivot points
+2178,ABSI,2023-11-07,pivot points
+2179,ABSI,2023-11-14,pivot points
+2180,ABSI,2023-11-17,pivot points
+2181,ABSI,2023-11-22,pivot points
+2182,ABSI,2023-11-24,pivot points
+2183,ABSI,2023-11-28,pivot points
+2184,ABSI,2023-11-29,pivot points
+2185,ABSI,2023-11-30,pivot points
+2186,ABSI,2023-12-01,pivot points
+2187,ABSI,2023-12-05,pivot points
+2188,ABSI,2023-12-07,pivot points
+2189,ABSI,2023-12-12,pivot points
+2190,ABSI,2023-12-13,pivot points
+2191,ABSI,2023-12-14,pivot points
+2192,ABSI,2023-12-18,pivot points
+2193,ABSI,2023-12-19,pivot points
+2194,ABSI,2023-12-21,pivot points
+2195,ABSI,2023-12-26,pivot points
+2196,ABSI,2023-12-27,pivot points
+2197,LUXH,2023-12-04,rolling window size
+2198,LUXH,2023-10-13,pivot points
+2199,LUXH,2023-10-19,pivot points
+2200,LUXH,2023-10-26,pivot points
+2201,LUXH,2023-10-27,pivot points
+2202,LUXH,2023-11-01,pivot points
+2203,LUXH,2023-11-02,pivot points
+2204,LUXH,2023-11-06,pivot points
+2205,LUXH,2023-11-14,pivot points
+2206,LUXH,2023-11-15,pivot points
+2207,LUXH,2023-11-16,pivot points
+2208,LUXH,2023-11-21,pivot points
+2209,LUXH,2023-11-27,pivot points
+2210,LUXH,2023-12-04,pivot points
+2211,LUXH,2023-12-06,pivot points
+2212,LUXH,2023-12-13,pivot points
+2213,LUXH,2023-12-14,pivot points
+2214,LUXH,2023-12-19,pivot points
+2215,LUXH,2023-12-20,pivot points
+2216,LUXH,2023-12-21,pivot points
+2217,LUXH,2023-12-26,pivot points
+2218,LUXH,2023-12-27,pivot points
+2219,BKKT,2023-11-03,rolling window size
+2220,BKKT,2023-11-09,rolling window size
+2221,BKKT,2023-10-17,pivot points
+2222,BKKT,2023-10-30,pivot points
+2223,BKKT,2023-10-31,pivot points
+2224,BKKT,2023-11-03,pivot points
+2225,BKKT,2023-11-10,pivot points
+2226,BKKT,2023-11-14,pivot points
+2227,BKKT,2023-11-15,pivot points
+2228,BKKT,2023-11-16,pivot points
+2229,BKKT,2023-11-21,pivot points
+2230,BKKT,2023-11-24,pivot points
+2231,BKKT,2023-12-01,pivot points
+2232,BKKT,2023-12-04,pivot points
+2233,BKKT,2023-12-12,pivot points
+2234,BKKT,2023-12-13,pivot points
+2235,BKKT,2023-12-15,pivot points
+2236,BKKT,2023-12-18,pivot points
+2237,BKKT,2023-12-27,pivot points
+2238,HOWL,2023-11-20,fibonacci
+2239,HOWL,2023-11-27,fibonacci
+2240,HOWL,2023-10-16,pivot points
+2241,HOWL,2023-10-18,pivot points
+2242,HOWL,2023-10-25,pivot points
+2243,HOWL,2023-10-27,pivot points
+2244,HOWL,2023-11-03,pivot points
+2245,HOWL,2023-11-17,pivot points
+2246,HOWL,2023-11-20,pivot points
+2247,HOWL,2023-11-22,pivot points
+2248,HOWL,2023-11-24,pivot points
+2249,HOWL,2023-11-27,pivot points
+2250,HOWL,2023-11-29,pivot points
+2251,HOWL,2023-12-01,pivot points
+2252,HOWL,2023-12-04,pivot points
+2253,HOWL,2023-12-06,pivot points
+2254,HOWL,2023-12-07,pivot points
+2255,HOWL,2023-12-13,pivot points
+2256,HOWL,2023-12-15,pivot points
+2257,HOWL,2023-12-21,pivot points
+2258,HOWL,2023-12-22,pivot points
+2259,HOWL,2023-12-26,pivot points
+2260,HOWL,2023-12-27,pivot points
+2261,HOWL,2024-01-02,pivot points
+2262,NGENF,2023-11-07,rolling window size
+2263,NGENF,2023-12-06,rolling window size
+2264,NGENF,2023-12-13,rolling window size
+2265,NGENF,2023-11-08,fibonacci
+2266,NGENF,2023-12-19,fibonacci
+2267,NGENF,2023-10-17,pivot points
+2268,NGENF,2023-10-18,pivot points
+2269,NGENF,2023-10-23,pivot points
+2270,NGENF,2023-11-07,pivot points
+2271,NGENF,2023-11-08,pivot points
+2272,NGENF,2023-11-14,pivot points
+2273,NGENF,2023-11-20,pivot points
+2274,NGENF,2023-11-22,pivot points
+2275,NGENF,2023-12-07,pivot points
+2276,NGENF,2023-12-15,pivot points
+2277,NGENF,2023-12-18,pivot points
+2278,NGENF,2023-12-20,pivot points
+2279,NGENF,2023-12-21,pivot points
+2280,NGENF,2023-12-22,pivot points
+2281,NGENF,2023-12-26,pivot points
+2282,NGENF,2023-12-27,pivot points
+2283,WRAP,2023-12-13,rolling window size
+2284,WRAP,2023-11-30,fibonacci
+2285,WRAP,2023-12-27,fibonacci
+2286,WRAP,2023-10-16,pivot points
+2287,WRAP,2023-10-23,pivot points
+2288,WRAP,2023-10-24,pivot points
+2289,WRAP,2023-10-27,pivot points
+2290,WRAP,2023-10-30,pivot points
+2291,WRAP,2023-10-31,pivot points
+2292,WRAP,2023-11-03,pivot points
+2293,WRAP,2023-11-07,pivot points
+2294,WRAP,2023-11-10,pivot points
+2295,WRAP,2023-11-16,pivot points
+2296,WRAP,2023-11-17,pivot points
+2297,WRAP,2023-11-24,pivot points
+2298,WRAP,2023-11-29,pivot points
+2299,WRAP,2023-11-30,pivot points
+2300,WRAP,2023-12-01,pivot points
+2301,WRAP,2023-12-06,pivot points
+2302,WRAP,2023-12-13,pivot points
+2303,WRAP,2023-12-14,pivot points
+2304,WRAP,2023-12-21,pivot points
+2305,WRAP,2023-12-27,pivot points
+2306,WRAP,2023-12-28,pivot points
+2307,WRAP,2023-12-29,pivot points
+2308,WRAP,2024-01-03,pivot points
+2309,MIGI,2023-11-15,rolling window size
+2310,MIGI,2023-10-19,pivot points
+2311,MIGI,2023-10-20,pivot points
+2312,MIGI,2023-10-23,pivot points
+2313,MIGI,2023-10-25,pivot points
+2314,MIGI,2023-11-02,pivot points
+2315,MIGI,2023-11-15,pivot points
+2316,MIGI,2023-11-17,pivot points
+2317,MIGI,2023-11-21,pivot points
+2318,MIGI,2023-11-24,pivot points
+2319,MIGI,2023-11-28,pivot points
+2320,MIGI,2023-11-29,pivot points
+2321,MIGI,2023-12-01,pivot points
+2322,MIGI,2023-12-04,pivot points
+2323,MIGI,2023-12-08,pivot points
+2324,MIGI,2023-12-13,pivot points
+2325,MIGI,2023-12-15,pivot points
+2326,MIGI,2023-12-18,pivot points
+2327,MIGI,2023-12-19,pivot points
+2328,MIGI,2023-12-20,pivot points
+2329,MIGI,2023-12-21,pivot points
+2330,MIGI,2023-12-22,pivot points
+2331,MIGI,2023-12-26,pivot points
+2332,MIGI,2023-12-27,pivot points
+2333,PPSI,2023-11-24,rolling window size
+2334,PPSI,2023-12-14,rolling window size
+2335,PPSI,2023-12-19,rolling window size
+2336,PPSI,2023-12-20,fibonacci
+2337,PPSI,2023-10-16,pivot points
+2338,PPSI,2023-10-17,pivot points
+2339,PPSI,2023-10-24,pivot points
+2340,PPSI,2023-10-30,pivot points
+2341,PPSI,2023-10-31,pivot points
+2342,PPSI,2023-11-01,pivot points
+2343,PPSI,2023-11-02,pivot points
+2344,PPSI,2023-11-08,pivot points
+2345,PPSI,2023-11-09,pivot points
+2346,PPSI,2023-11-10,pivot points
+2347,PPSI,2023-11-14,pivot points
+2348,PPSI,2023-11-16,pivot points
+2349,PPSI,2023-11-24,pivot points
+2350,PPSI,2023-11-28,pivot points
+2351,PPSI,2023-11-29,pivot points
+2352,PPSI,2023-12-19,pivot points
+2353,PPSI,2023-12-20,pivot points
+2354,PPSI,2023-12-21,pivot points
+2355,PPSI,2023-12-27,pivot points
+2356,GREE,2023-11-22,rolling window size
+2357,GREE,2023-12-13,fibonacci
+2358,GREE,2023-12-18,fibonacci
+2359,GREE,2023-10-16,pivot points
+2360,GREE,2023-10-17,pivot points
+2361,GREE,2023-10-23,pivot points
+2362,GREE,2023-10-25,pivot points
+2363,GREE,2023-10-30,pivot points
+2364,GREE,2023-11-01,pivot points
+2365,GREE,2023-11-02,pivot points
+2366,GREE,2023-11-06,pivot points
+2367,GREE,2023-11-07,pivot points
+2368,GREE,2023-11-15,pivot points
+2369,GREE,2023-11-22,pivot points
+2370,GREE,2023-11-24,pivot points
+2371,GREE,2023-11-29,pivot points
+2372,GREE,2023-12-01,pivot points
+2373,GREE,2023-12-08,pivot points
+2374,GREE,2023-12-12,pivot points
+2375,GREE,2023-12-13,pivot points
+2376,GREE,2023-12-15,pivot points
+2377,GREE,2023-12-18,pivot points
+2378,GREE,2023-12-21,pivot points
+2379,GREE,2023-12-22,pivot points
+2380,GREE,2023-12-26,pivot points
+2381,GREE,2023-12-27,pivot points
+2382,ANY,2023-11-02,rolling window size
+2383,ANY,2023-11-24,rolling window size
+2384,ANY,2023-12-01,rolling window size
+2385,ANY,2023-10-16,pivot points
+2386,ANY,2023-10-23,pivot points
+2387,ANY,2023-11-02,pivot points
+2388,ANY,2023-11-07,pivot points
+2389,ANY,2023-11-15,pivot points
+2390,ANY,2023-11-24,pivot points
+2391,ANY,2023-12-04,pivot points
+2392,ANY,2023-12-05,pivot points
+2393,ANY,2023-12-13,pivot points
+2394,ANY,2023-12-18,pivot points
+2395,ANY,2023-12-19,pivot points
+2396,ANY,2023-12-20,pivot points
+2397,ANY,2023-12-22,pivot points
+2398,ANY,2023-12-26,pivot points
+2399,ANY,2023-12-27,pivot points
+2400,NSPR,2023-11-27,rolling window size
+2401,NSPR,2023-12-01,rolling window size
+2402,NSPR,2023-12-19,rolling window size
+2403,NSPR,2023-12-22,rolling window size
+2404,NSPR,2023-12-05,fibonacci
+2405,NSPR,2023-12-26,fibonacci
+2406,NSPR,2023-10-26,pivot points
+2407,NSPR,2023-10-31,pivot points
+2408,NSPR,2023-11-01,pivot points
+2409,NSPR,2023-11-03,pivot points
+2410,NSPR,2023-11-15,pivot points
+2411,NSPR,2023-11-27,pivot points
+2412,NSPR,2023-12-04,pivot points
+2413,NSPR,2023-12-05,pivot points
+2414,NSPR,2023-12-22,pivot points
+2415,NSPR,2023-12-26,pivot points
+2416,NSPR,2023-12-27,pivot points
+2417,NSPR,2023-12-29,pivot points
+2418,ABTS,2023-11-09,rolling window size
+2419,ABTS,2023-11-10,fibonacci
+2420,ABTS,2023-12-27,fibonacci
+2421,ABTS,2023-10-18,pivot points
+2422,ABTS,2023-10-24,pivot points
+2423,ABTS,2023-10-27,pivot points
+2424,ABTS,2023-11-10,pivot points
+2425,ABTS,2023-11-14,pivot points
+2426,ABTS,2023-11-21,pivot points
+2427,ABTS,2023-11-22,pivot points
+2428,ABTS,2023-12-04,pivot points
+2429,ABTS,2023-12-05,pivot points
+2430,ABTS,2023-12-08,pivot points
+2431,ABTS,2023-12-13,pivot points
+2432,ABTS,2023-12-18,pivot points
+2433,ABTS,2023-12-22,pivot points
+2434,ABTS,2023-12-27,pivot points
+2435,ABTS,2024-01-02,pivot points
+2436,SOS,2023-12-14,rolling window size
+2437,SOS,2023-12-19,rolling window size
+2438,SOS,2023-11-01,pivot points
+2439,SOS,2023-11-02,pivot points
+2440,SOS,2023-11-03,pivot points
+2441,SOS,2023-11-07,pivot points
+2442,SOS,2023-11-13,pivot points
+2443,SOS,2023-11-15,pivot points
+2444,SOS,2023-11-17,pivot points
+2445,SOS,2023-11-22,pivot points
+2446,SOS,2023-11-24,pivot points
+2447,SOS,2023-11-28,pivot points
+2448,SOS,2023-12-01,pivot points
+2449,SOS,2023-12-04,pivot points
+2450,SOS,2023-12-19,pivot points
+2451,SOS,2023-12-21,pivot points
+2452,SOS,2023-12-22,pivot points
+2453,SOS,2023-12-26,pivot points
+2454,SOS,2023-12-27,pivot points
+2455,XPON,2023-11-17,rolling window size
+2456,XPON,2023-10-18,pivot points
+2457,XPON,2023-10-20,pivot points
+2458,XPON,2023-11-02,pivot points
+2459,XPON,2023-11-09,pivot points
+2460,XPON,2023-11-15,pivot points
+2461,XPON,2023-11-17,pivot points
+2462,XPON,2023-11-20,pivot points
+2463,XPON,2023-11-22,pivot points
+2464,XPON,2023-11-27,pivot points
+2465,XPON,2023-11-30,pivot points
+2466,XPON,2023-12-01,pivot points
+2467,XPON,2023-12-05,pivot points
+2468,XPON,2023-12-06,pivot points
+2469,XPON,2023-12-22,pivot points
+2470,XPON,2023-12-27,pivot points
+2471,NCTY,2023-12-08,rolling window size
+2472,NCTY,2023-12-12,rolling window size
+2473,NCTY,2023-12-15,fibonacci
+2474,NCTY,2023-10-23,pivot points
+2475,NCTY,2023-10-24,pivot points
+2476,NCTY,2023-10-25,pivot points
+2477,NCTY,2023-10-30,pivot points
+2478,NCTY,2023-11-02,pivot points
+2479,NCTY,2023-11-03,pivot points
+2480,NCTY,2023-11-08,pivot points
+2481,NCTY,2023-11-09,pivot points
+2482,NCTY,2023-11-10,pivot points
+2483,NCTY,2023-11-15,pivot points
+2484,NCTY,2023-11-20,pivot points
+2485,NCTY,2023-11-28,pivot points
+2486,NCTY,2023-11-30,pivot points
+2487,NCTY,2023-12-08,pivot points
+2488,NCTY,2023-12-12,pivot points
+2489,NCTY,2023-12-14,pivot points
+2490,NCTY,2023-12-15,pivot points
+2491,NCTY,2023-12-18,pivot points
+2492,NCTY,2023-12-20,pivot points
+2493,NCTY,2023-12-27,pivot points
+2494,BTCS,2023-11-03,fibonacci
+2495,BTCS,2023-10-23,pivot points
+2496,BTCS,2023-10-25,pivot points
+2497,BTCS,2023-11-02,pivot points
+2498,BTCS,2023-11-10,pivot points
+2499,BTCS,2023-11-13,pivot points
+2500,BTCS,2023-11-15,pivot points
+2501,BTCS,2023-11-17,pivot points
+2502,BTCS,2023-11-20,pivot points
+2503,BTCS,2023-11-24,pivot points
+2504,BTCS,2023-12-01,pivot points
+2505,BTCS,2023-12-04,pivot points
+2506,BTCS,2023-12-05,pivot points
+2507,BTCS,2023-12-07,pivot points
+2508,BTCS,2023-12-08,pivot points
+2509,BTCS,2023-12-13,pivot points
+2510,BTCS,2023-12-22,pivot points
+2511,BTCS,2023-12-27,pivot points
+2512,BTCS,2023-12-28,pivot points
+2513,ITRM,2023-10-24,pivot points
+2514,ITRM,2023-11-01,pivot points
+2515,ITRM,2023-11-09,pivot points
+2516,ITRM,2023-11-15,pivot points
+2517,ITRM,2023-11-16,pivot points
+2518,ITRM,2023-11-17,pivot points
+2519,ITRM,2023-11-21,pivot points
+2520,ITRM,2023-11-22,pivot points
+2521,ITRM,2023-11-28,pivot points
+2522,ITRM,2023-12-01,pivot points
+2523,ITRM,2023-12-06,pivot points
+2524,ITRM,2023-12-08,pivot points
+2525,ITRM,2023-12-14,pivot points
+2526,ITRM,2023-12-15,pivot points
+2527,ITRM,2023-12-26,pivot points
+2528,ITRM,2023-12-27,pivot points
+2529,ITRM,2023-12-28,pivot points
+2530,FTFT,2023-11-07,rolling window size
+2531,FTFT,2023-11-16,rolling window size
+2532,FTFT,2023-11-29,fibonacci
+2533,FTFT,2023-12-13,fibonacci
+2534,FTFT,2023-10-16,pivot points
+2535,FTFT,2023-10-24,pivot points
+2536,FTFT,2023-10-25,pivot points
+2537,FTFT,2023-11-02,pivot points
+2538,FTFT,2023-11-03,pivot points
+2539,FTFT,2023-11-08,pivot points
+2540,FTFT,2023-11-16,pivot points
+2541,FTFT,2023-11-21,pivot points
+2542,FTFT,2023-11-28,pivot points
+2543,FTFT,2023-12-01,pivot points
+2544,FTFT,2023-12-04,pivot points
+2545,FTFT,2023-12-05,pivot points
+2546,FTFT,2023-12-06,pivot points
+2547,FTFT,2023-12-13,pivot points
+2548,FTFT,2023-12-19,pivot points
+2549,FTFT,2023-12-20,pivot points
+2550,FTFT,2023-12-21,pivot points
+2551,FTFT,2023-12-22,pivot points
+2552,FTFT,2023-12-27,pivot points
+2553,FTFT,2023-12-28,pivot points
+2554,APTO,2023-11-28,rolling window size
+2555,APTO,2023-12-22,rolling window size
+2556,APTO,2023-11-14,fibonacci
+2557,APTO,2023-11-29,fibonacci
+2558,APTO,2023-10-16,pivot points
+2559,APTO,2023-10-24,pivot points
+2560,APTO,2023-10-26,pivot points
+2561,APTO,2023-10-27,pivot points
+2562,APTO,2023-11-01,pivot points
+2563,APTO,2023-11-02,pivot points
+2564,APTO,2023-11-07,pivot points
+2565,APTO,2023-11-09,pivot points
+2566,APTO,2023-11-13,pivot points
+2567,APTO,2023-11-16,pivot points
+2568,APTO,2023-11-17,pivot points
+2569,APTO,2023-11-29,pivot points
+2570,APTO,2023-12-01,pivot points
+2571,APTO,2023-12-07,pivot points
+2572,APTO,2023-12-08,pivot points
+2573,APTO,2023-12-14,pivot points
+2574,APTO,2023-12-19,pivot points
+2575,APTO,2023-12-27,pivot points
+2576,APTO,2023-12-29,pivot points
+2577,SLGD,2023-10-13,pivot points
+2578,SLGD,2023-11-10,pivot points
+2579,SLGD,2023-11-30,pivot points
+2580,SLGD,2023-12-05,pivot points
+2581,SLGD,2023-12-27,pivot points
+2582,SLGD,2024-01-02,pivot points
+2583,SERA,2023-12-13,fibonacci
+2584,SERA,2023-10-25,pivot points
+2585,SERA,2023-10-26,pivot points
+2586,SERA,2023-10-30,pivot points
+2587,SERA,2023-11-01,pivot points
+2588,SERA,2023-11-02,pivot points
+2589,SERA,2023-11-08,pivot points
+2590,SERA,2023-11-13,pivot points
+2591,SERA,2023-11-22,pivot points
+2592,SERA,2023-11-24,pivot points
+2593,SERA,2023-11-28,pivot points
+2594,SERA,2023-12-05,pivot points
+2595,SERA,2023-12-12,pivot points
+2596,SERA,2023-12-13,pivot points
+2597,SERA,2023-12-18,pivot points
+2598,SERA,2023-12-20,pivot points
+2599,SERA,2023-12-28,pivot points
+2600,DTTVY,2023-12-18,pivot points
+2601,DTTVY,2023-12-19,pivot points
+2602,DTTVY,2023-12-21,pivot points
+2603,EGRNQ,2024-01-03,rolling window size
+2604,EGRNQ,2023-10-23,pivot points
+2605,EGRNQ,2023-11-10,pivot points
+2606,EGRNQ,2023-11-24,pivot points
+2607,EGRNQ,2023-12-01,pivot points
+2608,EGRNQ,2023-12-08,pivot points
+2609,EGRNQ,2023-12-14,pivot points
+2610,EGRNQ,2024-01-03,pivot points
+2611,EULIF,2023-12-08,rolling window size
+2612,EULIF,2023-12-19,fibonacci
+2613,EULIF,2023-10-16,pivot points
+2614,EULIF,2023-10-20,pivot points
+2615,EULIF,2023-10-23,pivot points
+2616,EULIF,2023-11-01,pivot points
+2617,EULIF,2023-11-09,pivot points
+2618,EULIF,2023-11-15,pivot points
+2619,EULIF,2023-12-01,pivot points
+2620,EULIF,2023-12-18,pivot points
+2621,EULIF,2023-12-26,pivot points
+2622,EULIF,2024-01-02,pivot points
+2623,ELMSQ,2023-11-07,rolling window size
+2624,ELMSQ,2023-11-29,fibonacci
+2625,ELMSQ,2023-10-18,pivot points
+2626,ELMSQ,2023-10-27,pivot points
+2627,ELMSQ,2023-11-03,pivot points
+2628,ELMSQ,2023-11-10,pivot points
+2629,ELMSQ,2023-11-21,pivot points
+2630,ELMSQ,2023-11-24,pivot points
+2631,ELMSQ,2023-11-29,pivot points
+2632,ELMSQ,2023-12-12,pivot points
+2633,ELMSQ,2023-12-19,pivot points
+2634,ELYS,2023-11-28,rolling window size
+2635,ELYS,2023-12-06,rolling window size
+2636,ELYS,2023-11-08,fibonacci
+2637,ELYS,2023-10-19,pivot points
+2638,ELYS,2023-10-24,pivot points
+2639,ELYS,2023-11-03,pivot points
+2640,ELYS,2023-11-13,pivot points
+2641,ELYS,2023-11-24,pivot points
+2642,ELYS,2023-11-30,pivot points
+2643,ELYS,2023-12-06,pivot points
+2644,ELYS,2023-12-15,pivot points
+2645,ELYS,2023-12-18,pivot points
+2646,ELYS,2023-12-19,pivot points
+2647,ELYS,2023-12-26,pivot points
+2648,ELYS,2023-12-27,pivot points
+2649,ELYS,2024-01-03,pivot points
+2650,KITL,2023-12-11,rolling window size
+2651,KITL,2023-12-15,rolling window size
+2652,KITL,2023-12-19,fibonacci
+2653,KITL,2023-11-01,pivot points
+2654,KITL,2023-11-02,pivot points
+2655,KITL,2023-11-03,pivot points
+2656,KITL,2023-11-08,pivot points
+2657,KITL,2023-11-14,pivot points
+2658,KITL,2023-11-15,pivot points
+2659,KITL,2023-11-17,pivot points
+2660,KITL,2023-11-22,pivot points
+2661,KITL,2023-12-06,pivot points
+2662,KITL,2023-12-18,pivot points
+2663,KITL,2023-12-19,pivot points
+2664,KITL,2023-12-26,pivot points
+2665,IWAL,2023-12-19,rolling window size
+2666,IWAL,2023-11-22,pivot points
+2667,IWAL,2023-12-14,pivot points
+2668,INNI,2023-11-14,rolling window size
+2669,INNI,2023-12-19,fibonacci
+2670,INNI,2023-11-02,pivot points
+2671,INNI,2023-11-14,pivot points
+2672,INNI,2023-12-27,pivot points
+2673,INNI,2024-01-03,pivot points
+2674,AMQFF,2023-12-29,pivot points
+2675,FNMA,2023-11-21,rolling window size
+2676,FNMA,2023-12-15,rolling window size
+2677,FNMA,2023-10-16,pivot points
+2678,FNMA,2023-10-24,pivot points
+2679,FNMA,2023-10-25,pivot points
+2680,FNMA,2023-10-27,pivot points
+2681,FNMA,2023-10-31,pivot points
+2682,FNMA,2023-11-03,pivot points
+2683,FNMA,2023-11-07,pivot points
+2684,FNMA,2023-11-14,pivot points
+2685,FNMA,2023-11-21,pivot points
+2686,FNMA,2023-11-28,pivot points
+2687,FNMA,2023-11-29,pivot points
+2688,FNMA,2023-12-15,pivot points
+2689,FNMA,2023-12-20,pivot points
+2690,FNMA,2023-12-21,pivot points
+2691,FNMA,2023-12-22,pivot points
+2692,FNMA,2023-12-26,pivot points
+2693,FNMA,2023-12-29,pivot points
+2694,CGEN,2023-11-14,rolling window size
+2695,CGEN,2023-10-13,pivot points
+2696,CGEN,2023-10-17,pivot points
+2697,CGEN,2023-10-24,pivot points
+2698,CGEN,2023-10-31,pivot points
+2699,CGEN,2023-11-14,pivot points
+2700,CGEN,2023-11-15,pivot points
+2701,CGEN,2023-11-20,pivot points
+2702,CGEN,2023-11-21,pivot points
+2703,CGEN,2023-11-28,pivot points
+2704,CGEN,2023-11-29,pivot points
+2705,CGEN,2023-12-04,pivot points
+2706,CGEN,2023-12-06,pivot points
+2707,CGEN,2023-12-26,pivot points
+2708,CGEN,2023-12-27,pivot points
+2709,CGEN,2023-12-28,pivot points
+2710,CGEN,2023-12-29,pivot points
+2711,ALAR,2023-12-15,rolling window size
+2712,ALAR,2023-12-20,fibonacci
+2713,ALAR,2023-10-16,pivot points
+2714,ALAR,2023-10-24,pivot points
+2715,ALAR,2023-10-30,pivot points
+2716,ALAR,2023-11-01,pivot points
+2717,ALAR,2023-11-03,pivot points
+2718,ALAR,2023-11-06,pivot points
+2719,ALAR,2023-11-14,pivot points
+2720,ALAR,2023-11-15,pivot points
+2721,ALAR,2023-11-16,pivot points
+2722,ALAR,2023-11-17,pivot points
+2723,ALAR,2023-11-21,pivot points
+2724,ALAR,2023-11-22,pivot points
+2725,ALAR,2023-11-24,pivot points
+2726,ALAR,2023-12-04,pivot points
+2727,ALAR,2023-12-20,pivot points
+2728,ALAR,2023-12-21,pivot points
+2729,ALAR,2023-12-22,pivot points
+2730,ALAR,2023-12-26,pivot points
+2731,ALAR,2023-12-27,pivot points
+2732,ALAR,2023-12-28,pivot points
+2733,ALAR,2023-12-29,pivot points
+2734,ALAR,2024-01-02,pivot points
+2735,EKSO,2023-12-12,rolling window size
+2736,EKSO,2023-12-14,rolling window size
+2737,EKSO,2023-12-19,fibonacci
+2738,EKSO,2023-10-27,pivot points
+2739,EKSO,2023-10-30,pivot points
+2740,EKSO,2023-10-31,pivot points
+2741,EKSO,2023-11-01,pivot points
+2742,EKSO,2023-11-06,pivot points
+2743,EKSO,2023-11-07,pivot points
+2744,EKSO,2023-11-08,pivot points
+2745,EKSO,2023-11-14,pivot points
+2746,EKSO,2023-11-16,pivot points
+2747,EKSO,2023-11-21,pivot points
+2748,EKSO,2023-11-29,pivot points
+2749,EKSO,2023-11-30,pivot points
+2750,EKSO,2023-12-05,pivot points
+2751,EKSO,2023-12-15,pivot points
+2752,EKSO,2023-12-18,pivot points
+2753,EKSO,2023-12-19,pivot points
+2754,EKSO,2023-12-20,pivot points
+2755,EKSO,2023-12-22,pivot points
+2756,EKSO,2023-12-26,pivot points
+2757,EKSO,2023-12-28,pivot points
+2758,EKSO,2023-12-29,pivot points
+2759,EKSO,2024-01-02,pivot points
+2760,SYBX,2023-11-02,rolling window size
+2761,SYBX,2023-11-06,fibonacci
+2762,SYBX,2023-10-19,pivot points
+2763,SYBX,2023-11-02,pivot points
+2764,SYBX,2023-11-10,pivot points
+2765,SYBX,2023-11-14,pivot points
+2766,SYBX,2023-11-20,pivot points
+2767,SYBX,2023-11-28,pivot points
+2768,SYBX,2023-11-29,pivot points
+2769,SYBX,2023-12-07,pivot points
+2770,SYBX,2023-12-13,pivot points
+2771,SYBX,2023-12-14,pivot points
+2772,SYBX,2023-12-19,pivot points
+2773,SYBX,2023-12-22,pivot points
+2774,SYBX,2023-12-26,pivot points
+2775,SYBX,2023-12-29,pivot points
+2776,SYBX,2024-01-02,pivot points
+2777,CLRB,2023-11-13,rolling window size
+2778,CLRB,2023-11-03,fibonacci
+2779,CLRB,2023-11-28,fibonacci
+2780,CLRB,2023-10-16,pivot points
+2781,CLRB,2023-10-30,pivot points
+2782,CLRB,2023-10-31,pivot points
+2783,CLRB,2023-11-03,pivot points
+2784,CLRB,2023-11-13,pivot points
+2785,CLRB,2023-11-17,pivot points
+2786,CLRB,2023-11-20,pivot points
+2787,CLRB,2023-11-22,pivot points
+2788,CLRB,2023-11-28,pivot points
+2789,CLRB,2023-11-29,pivot points
+2790,CLRB,2023-11-30,pivot points
+2791,CLRB,2023-12-01,pivot points
+2792,CLRB,2023-12-05,pivot points
+2793,CLRB,2023-12-08,pivot points
+2794,CLRB,2023-12-21,pivot points
+2795,CLRB,2023-12-29,pivot points
+2796,TOMZ,2023-12-07,rolling window size
+2797,TOMZ,2023-12-12,rolling window size
+2798,TOMZ,2023-12-14,rolling window size
+2799,TOMZ,2023-12-22,rolling window size
+2800,TOMZ,2023-12-28,rolling window size
+2801,TOMZ,2023-11-03,fibonacci
+2802,TOMZ,2023-11-14,fibonacci
+2803,TOMZ,2023-10-13,pivot points
+2804,TOMZ,2023-10-20,pivot points
+2805,TOMZ,2023-10-27,pivot points
+2806,TOMZ,2023-10-31,pivot points
+2807,TOMZ,2023-11-02,pivot points
+2808,TOMZ,2023-11-07,pivot points
+2809,TOMZ,2023-11-09,pivot points
+2810,TOMZ,2023-11-15,pivot points
+2811,TOMZ,2023-11-16,pivot points
+2812,TOMZ,2023-11-17,pivot points
+2813,TOMZ,2023-11-20,pivot points
+2814,TOMZ,2023-11-24,pivot points
+2815,TOMZ,2023-12-01,pivot points
+2816,TOMZ,2023-12-07,pivot points
+2817,TOMZ,2023-12-12,pivot points
+2818,TOMZ,2023-12-22,pivot points
+2819,TOMZ,2023-12-28,pivot points
+2820,TOMZ,2023-12-29,pivot points
+2821,TLSIW,2023-11-02,rolling window size
+2822,TLSIW,2023-11-06,rolling window size
+2823,TLSIW,2023-11-02,pivot points
+2824,TLSIW,2023-11-08,pivot points
+2825,TLSIW,2023-11-16,pivot points
+2826,TLSIW,2023-11-20,pivot points
+2827,TLSIW,2023-12-05,pivot points
+2828,TLSIW,2023-12-07,pivot points
+2829,TLSIW,2023-12-11,pivot points
+2830,TLSIW,2023-12-14,pivot points
+2831,TLSIW,2023-12-15,pivot points
+2832,TLSIW,2023-12-19,pivot points
+2833,TLSIW,2023-12-20,pivot points
+2834,TLSIW,2023-12-27,pivot points
+2835,TLSIW,2023-12-29,pivot points
+2836,NGXXF,2023-11-07,fibonacci
+2837,NGXXF,2023-11-20,fibonacci
+2838,NGXXF,2023-10-17,pivot points
+2839,NGXXF,2023-10-23,pivot points
+2840,NGXXF,2023-10-30,pivot points
+2841,NGXXF,2023-11-07,pivot points
+2842,NGXXF,2023-11-17,pivot points
+2843,NGXXF,2023-12-01,pivot points
+2844,NGXXF,2023-12-08,pivot points
+2845,NGXXF,2023-12-15,pivot points
+2846,NGXXF,2024-01-02,pivot points
+2847,BBAI,2023-11-02,rolling window size
+2848,BBAI,2023-12-08,rolling window size
+2849,BBAI,2023-12-11,fibonacci
+2850,BBAI,2023-12-22,fibonacci
+2851,BBAI,2023-10-16,pivot points
+2852,BBAI,2023-10-17,pivot points
+2853,BBAI,2023-10-23,pivot points
+2854,BBAI,2023-10-31,pivot points
+2855,BBAI,2023-11-02,pivot points
+2856,BBAI,2023-11-03,pivot points
+2857,BBAI,2023-11-10,pivot points
+2858,BBAI,2023-11-13,pivot points
+2859,BBAI,2023-11-14,pivot points
+2860,BBAI,2023-11-24,pivot points
+2861,BBAI,2023-11-27,pivot points
+2862,BBAI,2023-12-01,pivot points
+2863,BBAI,2023-12-08,pivot points
+2864,BBAI,2023-12-11,pivot points
+2865,BBAI,2023-12-13,pivot points
+2866,BBAI,2023-12-21,pivot points
+2867,BBAI,2023-12-22,pivot points
+2868,BBAI,2023-12-26,pivot points
+2869,BBAI,2023-12-27,pivot points
+2870,BBAI,2023-12-28,pivot points
+2871,ARMP,2023-11-17,rolling window size
+2872,ARMP,2023-12-26,rolling window size
+2873,ARMP,2023-12-01,fibonacci
+2874,ARMP,2023-12-20,fibonacci
+2875,ARMP,2023-12-27,fibonacci
+2876,ARMP,2023-10-23,pivot points
+2877,ARMP,2023-10-26,pivot points
+2878,ARMP,2023-10-30,pivot points
+2879,ARMP,2023-11-09,pivot points
+2880,ARMP,2023-11-10,pivot points
+2881,ARMP,2023-11-14,pivot points
+2882,ARMP,2023-11-17,pivot points
+2883,ARMP,2023-11-28,pivot points
+2884,ARMP,2023-11-30,pivot points
+2885,ARMP,2023-12-01,pivot points
+2886,ARMP,2023-12-04,pivot points
+2887,ARMP,2023-12-07,pivot points
+2888,ARMP,2023-12-20,pivot points
+2889,ARMP,2023-12-27,pivot points
+2890,ARMP,2023-12-28,pivot points
+2891,CASI,2023-10-16,pivot points
+2892,CASI,2023-10-18,pivot points
+2893,CASI,2023-10-19,pivot points
+2894,CASI,2023-10-24,pivot points
+2895,CASI,2023-10-27,pivot points
+2896,CASI,2023-10-31,pivot points
+2897,CASI,2023-11-01,pivot points
+2898,CASI,2023-11-09,pivot points
+2899,CASI,2023-11-13,pivot points
+2900,CASI,2023-11-16,pivot points
+2901,CASI,2023-11-17,pivot points
+2902,CASI,2023-11-20,pivot points
+2903,CASI,2023-11-21,pivot points
+2904,CASI,2023-11-24,pivot points
+2905,CASI,2023-11-29,pivot points
+2906,CASI,2023-11-30,pivot points
+2907,CASI,2023-12-04,pivot points
+2908,CASI,2023-12-06,pivot points
+2909,CASI,2023-12-07,pivot points
+2910,CASI,2023-12-11,pivot points
+2911,CASI,2023-12-18,pivot points
+2912,CASI,2023-12-19,pivot points
+2913,CASI,2023-12-26,pivot points
+2914,CASI,2023-12-28,pivot points
+2915,TXHG,2023-10-23,pivot points
+2916,TXHG,2023-10-26,pivot points
+2917,TXHG,2023-12-29,pivot points
+2918,JPPYY,2023-12-19,fibonacci
+2919,JPPYY,2023-10-24,pivot points
+2920,JPPYY,2023-10-27,pivot points
+2921,JPPYY,2023-11-28,pivot points
+2922,JPPYY,2023-12-05,pivot points
+2923,JPPYY,2023-12-12,pivot points
+2924,ANTMF,2023-11-16,rolling window size
+2925,ANTMF,2023-12-19,rolling window size
+2926,ANTMF,2024-01-03,rolling window size
+2927,ANTMF,2024-01-03,pivot points
+2928,MLYCF,2023-12-06,pivot points
+2929,MLYCF,2023-12-12,pivot points
+2930,MLYCF,2023-12-28,pivot points
+2931,CINGF,2023-12-06,rolling window size
+2932,CINGF,2023-12-14,fibonacci
+2933,CINGF,2023-10-17,pivot points
+2934,CINGF,2023-11-15,pivot points
+2935,CINGF,2023-11-17,pivot points
+2936,CINGF,2023-12-14,pivot points
+2937,CINGF,2023-12-29,pivot points
+2938,CINGF,2024-01-03,pivot points
+2939,FMHS,2023-12-13,pivot points
+2940,FMHS,2023-12-14,pivot points
+2941,FMHS,2023-12-15,pivot points
+2942,FMHS,2023-12-21,pivot points
+2943,APGI,2023-11-16,rolling window size
+2944,APGI,2023-10-23,pivot points
+2945,APGI,2023-10-26,pivot points
+2946,APGI,2023-10-30,pivot points
+2947,APGI,2023-11-16,pivot points
+2948,APGI,2023-12-07,pivot points
+2949,APGI,2023-12-18,pivot points
+2950,APGI,2023-12-28,pivot points
+2951,APGI,2024-01-03,pivot points
+2952,VXLLF,2023-11-20,rolling window size
+2953,VXLLF,2023-12-13,rolling window size
+2954,VXLLF,2023-12-20,rolling window size
+2955,VXLLF,2023-10-19,pivot points
+2956,VXLLF,2023-11-20,pivot points
+2957,VXLLF,2023-12-01,pivot points
+2958,VXLLF,2023-12-13,pivot points
+2959,VXLLF,2023-12-29,pivot points
+2960,RNGE,2023-11-09,rolling window size
+2961,RNGE,2023-12-01,rolling window size
+2962,RNGE,2023-10-19,pivot points
+2963,RNGE,2023-10-31,pivot points
+2964,RNGE,2023-11-03,pivot points
+2965,RNGE,2023-11-09,pivot points
+2966,RNGE,2023-11-14,pivot points
+2967,RNGE,2023-11-17,pivot points
+2968,RNGE,2023-12-01,pivot points
+2969,RNGE,2023-12-12,pivot points
+2970,RNGE,2023-12-13,pivot points
+2971,RNGE,2023-12-14,pivot points
+2972,RNGE,2023-12-20,pivot points
+2973,RNGE,2023-12-21,pivot points
+2974,RNGE,2023-12-22,pivot points
+2975,RNGE,2023-12-26,pivot points
+2976,CIFR,2023-11-15,rolling window size
+2977,CIFR,2023-11-20,rolling window size
+2978,CIFR,2023-11-22,rolling window size
+2979,CIFR,2023-12-13,rolling window size
+2980,CIFR,2023-12-01,fibonacci
+2981,CIFR,2023-12-18,fibonacci
+2982,CIFR,2023-10-16,pivot points
+2983,CIFR,2023-10-17,pivot points
+2984,CIFR,2023-10-23,pivot points
+2985,CIFR,2023-10-24,pivot points
+2986,CIFR,2023-10-25,pivot points
+2987,CIFR,2023-11-01,pivot points
+2988,CIFR,2023-11-02,pivot points
+2989,CIFR,2023-11-03,pivot points
+2990,CIFR,2023-11-22,pivot points
+2991,CIFR,2023-11-24,pivot points
+2992,CIFR,2023-11-28,pivot points
+2993,CIFR,2023-11-29,pivot points
+2994,CIFR,2023-12-01,pivot points
+2995,CIFR,2023-12-08,pivot points
+2996,CIFR,2023-12-13,pivot points
+2997,CIFR,2023-12-15,pivot points
+2998,CIFR,2023-12-18,pivot points
+2999,CIFR,2023-12-19,pivot points
+3000,CIFR,2023-12-26,pivot points
+3001,BADEF,2023-12-06,rolling window size
+3002,BADEF,2024-01-03,rolling window size
+3003,BADEF,2023-11-30,fibonacci
+3004,BADEF,2023-12-07,fibonacci
+3005,BADEF,2023-10-13,pivot points
+3006,BADEF,2023-10-17,pivot points
+3007,BADEF,2023-10-19,pivot points
+3008,BADEF,2023-10-23,pivot points
+3009,BADEF,2023-10-24,pivot points
+3010,BADEF,2023-10-26,pivot points
+3011,BADEF,2023-10-27,pivot points
+3012,BADEF,2023-10-30,pivot points
+3013,BADEF,2023-11-03,pivot points
+3014,BADEF,2023-11-06,pivot points
+3015,BADEF,2023-11-10,pivot points
+3016,BADEF,2023-11-14,pivot points
+3017,BADEF,2023-11-16,pivot points
+3018,BADEF,2023-11-17,pivot points
+3019,BADEF,2023-11-21,pivot points
+3020,BADEF,2023-11-22,pivot points
+3021,BADEF,2023-11-29,pivot points
+3022,BADEF,2023-12-01,pivot points
+3023,BADEF,2023-12-07,pivot points
+3024,BADEF,2023-12-12,pivot points
+3025,BADEF,2023-12-18,pivot points
+3026,BADEF,2023-12-22,pivot points
+3027,DERM,2023-10-13,pivot points
+3028,DERM,2023-10-16,pivot points
+3029,DERM,2023-10-20,pivot points
+3030,DERM,2023-10-25,pivot points
+3031,DERM,2023-10-26,pivot points
+3032,DERM,2023-10-30,pivot points
+3033,DERM,2023-10-31,pivot points
+3034,DERM,2023-11-07,pivot points
+3035,DERM,2023-11-08,pivot points
+3036,DERM,2023-11-13,pivot points
+3037,DERM,2023-11-14,pivot points
+3038,DERM,2023-11-15,pivot points
+3039,DERM,2023-11-20,pivot points
+3040,DERM,2023-11-21,pivot points
+3041,DERM,2023-11-27,pivot points
+3042,DERM,2023-11-28,pivot points
+3043,DERM,2023-11-30,pivot points
+3044,DERM,2023-12-01,pivot points
+3045,DERM,2023-12-04,pivot points
+3046,DERM,2023-12-05,pivot points
+3047,DERM,2023-12-06,pivot points
+3048,DERM,2023-12-07,pivot points
+3049,DERM,2023-12-15,pivot points
+3050,DERM,2023-12-18,pivot points
+3051,DERM,2023-12-19,pivot points
+3052,DERM,2023-12-21,pivot points
+3053,DERM,2023-12-22,pivot points
+3054,DERM,2023-12-27,pivot points
+3055,DRCT,2023-12-18,rolling window size
+3056,DRCT,2023-12-19,fibonacci
+3057,DRCT,2023-10-17,pivot points
+3058,DRCT,2023-10-20,pivot points
+3059,DRCT,2023-10-25,pivot points
+3060,DRCT,2023-10-27,pivot points
+3061,DRCT,2023-11-01,pivot points
+3062,DRCT,2023-11-02,pivot points
+3063,DRCT,2023-11-06,pivot points
+3064,DRCT,2023-11-09,pivot points
+3065,DRCT,2023-11-10,pivot points
+3066,DRCT,2023-11-13,pivot points
+3067,DRCT,2023-11-15,pivot points
+3068,DRCT,2023-11-17,pivot points
+3069,DRCT,2023-11-21,pivot points
+3070,DRCT,2023-11-24,pivot points
+3071,DRCT,2023-11-27,pivot points
+3072,DRCT,2023-11-29,pivot points
+3073,DRCT,2023-12-04,pivot points
+3074,DRCT,2023-12-06,pivot points
+3075,DRCT,2023-12-18,pivot points
+3076,DRCT,2023-12-19,pivot points
+3077,DRCT,2023-12-20,pivot points
+3078,DRCT,2023-12-21,pivot points
+3079,DRCT,2023-12-26,pivot points
+3080,DRCT,2023-12-27,pivot points
+3081,DRCT,2023-12-28,pivot points
+3082,CXDO,2023-11-07,fibonacci
+3083,CXDO,2023-10-27,pivot points
+3084,CXDO,2023-10-30,pivot points
+3085,CXDO,2023-11-02,pivot points
+3086,CXDO,2023-11-07,pivot points
+3087,CXDO,2023-11-09,pivot points
+3088,CXDO,2023-11-10,pivot points
+3089,CXDO,2023-11-13,pivot points
+3090,CXDO,2023-11-15,pivot points
+3091,CXDO,2023-11-16,pivot points
+3092,CXDO,2023-11-21,pivot points
+3093,CXDO,2023-11-22,pivot points
+3094,CXDO,2023-11-24,pivot points
+3095,CXDO,2023-12-01,pivot points
+3096,CXDO,2023-12-04,pivot points
+3097,CXDO,2023-12-05,pivot points
+3098,CXDO,2023-12-08,pivot points
+3099,CXDO,2023-12-13,pivot points
+3100,CXDO,2023-12-22,pivot points
+3101,CXDO,2023-12-26,pivot points
+3102,CXDO,2023-12-27,pivot points
+3103,CXDO,2023-12-28,pivot points
+3104,CXDO,2024-01-03,pivot points
+3105,NGLD,2023-11-16,rolling window size
+3106,NGLD,2023-12-01,rolling window size
+3107,NGLD,2023-12-18,fibonacci
+3108,NGLD,2023-10-13,pivot points
+3109,NGLD,2023-10-18,pivot points
+3110,NGLD,2023-10-19,pivot points
+3111,NGLD,2023-10-20,pivot points
+3112,NGLD,2023-10-24,pivot points
+3113,NGLD,2023-10-27,pivot points
+3114,NGLD,2023-11-01,pivot points
+3115,NGLD,2023-11-03,pivot points
+3116,NGLD,2023-11-06,pivot points
+3117,NGLD,2023-11-08,pivot points
+3118,NGLD,2023-11-17,pivot points
+3119,NGLD,2023-12-01,pivot points
+3120,NGLD,2023-12-05,pivot points
+3121,NGLD,2023-12-06,pivot points
+3122,NGLD,2023-12-07,pivot points
+3123,NGLD,2023-12-12,pivot points
+3124,NGLD,2023-12-13,pivot points
+3125,NGLD,2023-12-18,pivot points
+3126,NGLD,2023-12-26,pivot points
+3127,SSNT,2023-11-02,rolling window size
+3128,SSNT,2023-11-03,fibonacci
+3129,SSNT,2023-10-19,pivot points
+3130,SSNT,2023-11-02,pivot points
+3131,SSNT,2023-11-03,pivot points
+3132,SSNT,2023-11-09,pivot points
+3133,SSNT,2023-11-10,pivot points
+3134,SSNT,2023-11-15,pivot points
+3135,SSNT,2023-11-16,pivot points
+3136,SSNT,2023-11-20,pivot points
+3137,SSNT,2023-11-21,pivot points
+3138,SSNT,2023-11-22,pivot points
+3139,SSNT,2023-11-27,pivot points
+3140,SSNT,2023-12-04,pivot points
+3141,SSNT,2023-12-07,pivot points
+3142,SSNT,2023-12-11,pivot points
+3143,SSNT,2023-12-18,pivot points
+3144,SSNT,2023-12-20,pivot points
+3145,SSNT,2023-12-21,pivot points
+3146,SSNT,2023-12-26,pivot points
+3147,SSNT,2023-12-27,pivot points
+3148,SSNT,2023-12-28,pivot points
+3149,SSNT,2023-12-29,pivot points
+3150,ZKIN,2024-01-02,rolling window size
+3151,ZKIN,2023-11-13,fibonacci
+3152,ZKIN,2023-10-19,pivot points
+3153,ZKIN,2023-10-30,pivot points
+3154,ZKIN,2023-11-01,pivot points
+3155,ZKIN,2023-11-07,pivot points
+3156,ZKIN,2023-11-08,pivot points
+3157,ZKIN,2023-11-10,pivot points
+3158,ZKIN,2023-11-15,pivot points
+3159,ZKIN,2023-11-17,pivot points
+3160,ZKIN,2023-11-24,pivot points
+3161,ZKIN,2023-12-04,pivot points
+3162,ZKIN,2023-12-13,pivot points
+3163,ZKIN,2023-12-22,pivot points
+3164,ZKIN,2023-12-28,pivot points
+3165,ZKIN,2024-01-02,pivot points
+3166,ABEO,2023-11-03,fibonacci
+3167,ABEO,2023-10-16,pivot points
+3168,ABEO,2023-10-17,pivot points
+3169,ABEO,2023-11-02,pivot points
+3170,ABEO,2023-11-03,pivot points
+3171,ABEO,2023-11-10,pivot points
+3172,ABEO,2023-11-13,pivot points
+3173,ABEO,2023-11-16,pivot points
+3174,ABEO,2023-11-24,pivot points
+3175,ABEO,2023-11-28,pivot points
+3176,ABEO,2023-12-07,pivot points
+3177,ABEO,2023-12-12,pivot points
+3178,ABEO,2023-12-13,pivot points
+3179,ABEO,2023-12-14,pivot points
+3180,ABEO,2023-12-15,pivot points
+3181,ABEO,2023-12-19,pivot points
+3182,ABEO,2023-12-20,pivot points
+3183,ABEO,2023-12-21,pivot points
+3184,ABEO,2023-12-22,pivot points
+3185,ABEO,2023-12-27,pivot points
+3186,ABEO,2023-12-28,pivot points
+3187,ABEO,2024-01-02,pivot points
+3188,ABEO,2024-01-03,pivot points
+3189,BWAY,2023-12-15,rolling window size
+3190,BWAY,2023-12-18,fibonacci
+3191,BWAY,2023-10-13,pivot points
+3192,BWAY,2023-10-17,pivot points
+3193,BWAY,2023-10-20,pivot points
+3194,BWAY,2023-10-24,pivot points
+3195,BWAY,2023-10-30,pivot points
+3196,BWAY,2023-10-31,pivot points
+3197,BWAY,2023-11-01,pivot points
+3198,BWAY,2023-11-02,pivot points
+3199,BWAY,2023-11-03,pivot points
+3200,BWAY,2023-11-07,pivot points
+3201,BWAY,2023-11-13,pivot points
+3202,BWAY,2023-11-15,pivot points
+3203,BWAY,2023-11-16,pivot points
+3204,BWAY,2023-11-17,pivot points
+3205,BWAY,2023-11-20,pivot points
+3206,BWAY,2023-11-21,pivot points
+3207,BWAY,2023-11-22,pivot points
+3208,BWAY,2023-11-28,pivot points
+3209,BWAY,2023-12-01,pivot points
+3210,BWAY,2023-12-11,pivot points
+3211,BWAY,2023-12-15,pivot points
+3212,BWAY,2023-12-18,pivot points
+3213,BWAY,2023-12-19,pivot points
+3214,BWAY,2023-12-21,pivot points
+3215,BWAY,2023-12-27,pivot points
+3216,BWAY,2024-01-02,pivot points
+3217,ACTHF,2023-11-08,rolling window size
+3218,ACTHF,2023-11-09,fibonacci
+3219,ACTHF,2023-10-17,pivot points
+3220,ACTHF,2023-10-24,pivot points
+3221,ACTHF,2023-10-25,pivot points
+3222,ACTHF,2023-11-08,pivot points
+3223,ACTHF,2023-11-09,pivot points
+3224,ACTHF,2023-11-13,pivot points
+3225,ACTHF,2023-11-15,pivot points
+3226,ACTHF,2023-11-22,pivot points
+3227,ACTHF,2023-11-27,pivot points
+3228,ACTHF,2023-11-28,pivot points
+3229,ACTHF,2023-11-29,pivot points
+3230,ACTHF,2023-11-30,pivot points
+3231,ACTHF,2023-12-07,pivot points
+3232,ACTHF,2023-12-11,pivot points
+3233,ACTHF,2023-12-12,pivot points
+3234,ACTHF,2023-12-15,pivot points
+3235,ACTHF,2023-12-18,pivot points
+3236,ACTHF,2023-12-19,pivot points
+3237,ACTHF,2023-12-20,pivot points
+3238,ACTHF,2023-12-26,pivot points
+3239,ACTHF,2023-12-29,pivot points
+3240,ACTHF,2024-01-02,pivot points
+3241,XELB,2023-11-06,rolling window size
+3242,XELB,2023-10-13,pivot points
+3243,XELB,2023-10-16,pivot points
+3244,XELB,2023-10-20,pivot points
+3245,XELB,2023-10-30,pivot points
+3246,XELB,2023-11-06,pivot points
+3247,XELB,2023-11-08,pivot points
+3248,XELB,2023-11-09,pivot points
+3249,XELB,2023-11-14,pivot points
+3250,XELB,2023-11-22,pivot points
+3251,XELB,2023-11-24,pivot points
+3252,XELB,2023-11-28,pivot points
+3253,XELB,2023-12-01,pivot points
+3254,XELB,2023-12-06,pivot points
+3255,XELB,2023-12-07,pivot points
+3256,XELB,2023-12-08,pivot points
+3257,XELB,2023-12-12,pivot points
+3258,XELB,2023-12-19,pivot points
+3259,XELB,2023-12-20,pivot points
+3260,XELB,2024-01-02,pivot points
+3261,FNMAT,2023-11-07,rolling window size
+3262,FNMAT,2023-11-15,rolling window size
+3263,FNMAT,2023-11-22,rolling window size
+3264,FNMAT,2023-10-13,pivot points
+3265,FNMAT,2023-10-23,pivot points
+3266,FNMAT,2023-10-26,pivot points
+3267,FNMAT,2023-11-07,pivot points
+3268,FNMAT,2023-11-22,pivot points
+3269,FNMAT,2023-11-24,pivot points
+3270,FNMAT,2023-11-28,pivot points
+3271,FNMAT,2023-11-30,pivot points
+3272,FNMAT,2023-12-05,pivot points
+3273,FNMAT,2023-12-08,pivot points
+3274,FNMAT,2023-12-12,pivot points
+3275,FNMAT,2023-12-15,pivot points
+3276,FNMAT,2023-12-18,pivot points
+3277,FNMAT,2023-12-20,pivot points
+3278,FNMAT,2023-12-22,pivot points
+3279,FNMAT,2023-12-26,pivot points
+3280,FNMAT,2023-12-28,pivot points
+3281,FNMAT,2024-01-02,pivot points
+3282,FMCKM,2023-11-08,rolling window size
+3283,FMCKM,2023-11-13,rolling window size
+3284,FMCKM,2023-11-14,fibonacci
+3285,FMCKM,2023-11-09,pivot points
+3286,FMCKM,2023-11-14,pivot points
+3287,FMCKM,2023-11-22,pivot points
+3288,FMCKM,2023-11-30,pivot points
+3289,FMCKM,2023-12-13,pivot points
+3290,FMCKM,2023-12-18,pivot points
+3291,FMCKM,2023-12-21,pivot points
+3292,FMCKM,2023-12-27,pivot points
+3293,FMCKM,2024-01-02,pivot points
+3294,AUTL,2023-12-07,rolling window size
+3295,AUTL,2023-10-13,pivot points
+3296,AUTL,2023-10-17,pivot points
+3297,AUTL,2023-10-24,pivot points
+3298,AUTL,2023-10-25,pivot points
+3299,AUTL,2023-10-30,pivot points
+3300,AUTL,2023-10-31,pivot points
+3301,AUTL,2023-11-01,pivot points
+3302,AUTL,2023-11-02,pivot points
+3303,AUTL,2023-11-03,pivot points
+3304,AUTL,2023-11-13,pivot points
+3305,AUTL,2023-11-14,pivot points
+3306,AUTL,2023-11-15,pivot points
+3307,AUTL,2023-11-16,pivot points
+3308,AUTL,2023-11-17,pivot points
+3309,AUTL,2023-11-22,pivot points
+3310,AUTL,2023-11-24,pivot points
+3311,AUTL,2023-12-05,pivot points
+3312,AUTL,2023-12-07,pivot points
+3313,AUTL,2023-12-08,pivot points
+3314,AUTL,2023-12-11,pivot points
+3315,AUTL,2023-12-13,pivot points
+3316,AUTL,2023-12-14,pivot points
+3317,AUTL,2023-12-15,pivot points
+3318,AUTL,2023-12-18,pivot points
+3319,AUTL,2023-12-20,pivot points
+3320,AUTL,2023-12-26,pivot points
+3321,AUTL,2024-01-02,pivot points
+3322,GRCL,2023-10-17,pivot points
+3323,GRCL,2023-10-20,pivot points
+3324,GRCL,2023-10-23,pivot points
+3325,GRCL,2023-10-26,pivot points
+3326,GRCL,2023-10-31,pivot points
+3327,GRCL,2023-11-01,pivot points
+3328,GRCL,2023-11-02,pivot points
+3329,GRCL,2023-11-08,pivot points
+3330,GRCL,2023-11-10,pivot points
+3331,GRCL,2023-11-13,pivot points
+3332,GRCL,2023-11-16,pivot points
+3333,GRCL,2023-11-17,pivot points
+3334,GRCL,2023-11-22,pivot points
+3335,GRCL,2023-11-27,pivot points
+3336,GRCL,2023-11-30,pivot points
+3337,GRCL,2023-12-01,pivot points
+3338,GRCL,2023-12-07,pivot points
+3339,GRCL,2023-12-12,pivot points
+3340,GRCL,2023-12-15,pivot points
+3341,GRCL,2023-12-20,pivot points
+3342,GRCL,2023-12-21,pivot points
+3343,GRCL,2023-12-26,pivot points
+3344,GRCL,2024-01-02,pivot points
+3345,FPH,2023-10-30,pivot points
+3346,FPH,2023-10-31,pivot points
+3347,FPH,2023-11-02,pivot points
+3348,FPH,2023-11-03,pivot points
+3349,FPH,2023-11-14,pivot points
+3350,FPH,2023-11-22,pivot points
+3351,FPH,2023-11-24,pivot points
+3352,FPH,2023-11-28,pivot points
+3353,FPH,2023-12-06,pivot points
+3354,FPH,2023-12-11,pivot points
+3355,FPH,2023-12-12,pivot points
+3356,FPH,2023-12-13,pivot points
+3357,FPH,2023-12-18,pivot points
+3358,FPH,2023-12-20,pivot points
+3359,FPH,2023-12-22,pivot points
+3360,FPH,2023-12-26,pivot points
+3361,FPH,2023-12-27,pivot points
+3362,FPH,2024-01-02,pivot points
+3363,BCHG,2023-11-07,fibonacci
+3364,BCHG,2023-10-16,pivot points
+3365,BCHG,2023-10-19,pivot points
+3366,BCHG,2023-10-23,pivot points
+3367,BCHG,2023-10-30,pivot points
+3368,BCHG,2023-11-02,pivot points
+3369,BCHG,2023-11-06,pivot points
+3370,BCHG,2023-11-07,pivot points
+3371,BCHG,2023-11-10,pivot points
+3372,BCHG,2023-11-21,pivot points
+3373,BCHG,2023-11-24,pivot points
+3374,BCHG,2023-11-28,pivot points
+3375,BCHG,2023-11-30,pivot points
+3376,BCHG,2023-12-01,pivot points
+3377,BCHG,2023-12-04,pivot points
+3378,BCHG,2023-12-07,pivot points
+3379,BCHG,2023-12-08,pivot points
+3380,BCHG,2023-12-12,pivot points
+3381,BCHG,2023-12-13,pivot points
+3382,BCHG,2023-12-20,pivot points
+3383,BCHG,2023-12-21,pivot points
+3384,BCHG,2023-12-22,pivot points
+3385,BCHG,2023-12-26,pivot points
+3386,RVPH,2023-11-20,rolling window size
+3387,RVPH,2023-11-29,rolling window size
+3388,RVPH,2023-12-01,rolling window size
+3389,RVPH,2023-12-07,rolling window size
+3390,RVPH,2023-12-19,rolling window size
+3391,RVPH,2023-12-21,fibonacci
+3392,RVPH,2023-10-20,pivot points
+3393,RVPH,2023-10-26,pivot points
+3394,RVPH,2023-10-30,pivot points
+3395,RVPH,2023-11-02,pivot points
+3396,RVPH,2023-11-06,pivot points
+3397,RVPH,2023-11-07,pivot points
+3398,RVPH,2023-11-09,pivot points
+3399,RVPH,2023-11-10,pivot points
+3400,RVPH,2023-11-13,pivot points
+3401,RVPH,2023-11-20,pivot points
+3402,RVPH,2023-11-21,pivot points
+3403,RVPH,2023-11-22,pivot points
+3404,RVPH,2023-11-24,pivot points
+3405,RVPH,2023-12-07,pivot points
+3406,RVPH,2023-12-12,pivot points
+3407,RVPH,2023-12-22,pivot points
+3408,RVPH,2023-12-26,pivot points
+3409,RVPH,2023-12-27,pivot points
+3410,RVPH,2023-12-29,pivot points
+3411,RVPH,2024-01-02,pivot points
+3412,BSEM,2023-11-08,rolling window size
+3413,BSEM,2023-10-18,pivot points
+3414,BSEM,2023-10-20,pivot points
+3415,BSEM,2023-11-02,pivot points
+3416,BSEM,2023-11-08,pivot points
+3417,BSEM,2023-11-10,pivot points
+3418,BSEM,2023-11-13,pivot points
+3419,BSEM,2023-11-14,pivot points
+3420,BSEM,2023-11-22,pivot points
+3421,BSEM,2023-11-30,pivot points
+3422,BSEM,2023-12-04,pivot points
+3423,BSEM,2023-12-05,pivot points
+3424,BSEM,2023-12-07,pivot points
+3425,BSEM,2023-12-08,pivot points
+3426,BSEM,2023-12-13,pivot points
+3427,BSEM,2023-12-14,pivot points
+3428,BSEM,2023-12-21,pivot points
+3429,BSEM,2023-12-26,pivot points
+3430,BSEM,2023-12-28,pivot points
+3431,BSEM,2024-01-02,pivot points
+3432,ACHV,2023-12-13,rolling window size
+3433,ACHV,2023-12-27,fibonacci
+3434,ACHV,2023-10-16,pivot points
+3435,ACHV,2023-10-17,pivot points
+3436,ACHV,2023-10-20,pivot points
+3437,ACHV,2023-10-24,pivot points
+3438,ACHV,2023-10-25,pivot points
+3439,ACHV,2023-10-30,pivot points
+3440,ACHV,2023-10-31,pivot points
+3441,ACHV,2023-11-01,pivot points
+3442,ACHV,2023-11-08,pivot points
+3443,ACHV,2023-11-13,pivot points
+3444,ACHV,2023-11-14,pivot points
+3445,ACHV,2023-11-15,pivot points
+3446,ACHV,2023-11-16,pivot points
+3447,ACHV,2023-11-17,pivot points
+3448,ACHV,2023-11-20,pivot points
+3449,ACHV,2023-11-24,pivot points
+3450,ACHV,2023-11-27,pivot points
+3451,ACHV,2023-11-28,pivot points
+3452,ACHV,2023-11-30,pivot points
+3453,ACHV,2023-12-01,pivot points
+3454,ACHV,2023-12-07,pivot points
+3455,ACHV,2023-12-13,pivot points
+3456,ACHV,2023-12-18,pivot points
+3457,ACHV,2023-12-19,pivot points
+3458,ACHV,2023-12-22,pivot points
+3459,ACHV,2023-12-26,pivot points
+3460,ACHV,2024-01-02,pivot points
+3461,TPST,2023-11-09,rolling window size
+3462,TPST,2023-12-07,rolling window size
+3463,TPST,2023-12-13,fibonacci
+3464,TPST,2023-10-16,pivot points
+3465,TPST,2023-10-19,pivot points
+3466,TPST,2023-10-25,pivot points
+3467,TPST,2023-10-31,pivot points
+3468,TPST,2023-11-02,pivot points
+3469,TPST,2023-11-17,pivot points
+3470,TPST,2023-11-20,pivot points
+3471,TPST,2023-11-22,pivot points
+3472,TPST,2023-11-30,pivot points
+3473,TPST,2023-12-07,pivot points
+3474,TPST,2023-12-12,pivot points
+3475,TPST,2023-12-13,pivot points
+3476,TPST,2023-12-14,pivot points
+3477,TPST,2023-12-22,pivot points
+3478,TPST,2023-12-26,pivot points
+3479,TPST,2023-12-27,pivot points
+3480,TPST,2024-01-03,pivot points
+3481,MATH,2023-11-13,rolling window size
+3482,MATH,2023-12-12,rolling window size
+3483,MATH,2023-10-17,pivot points
+3484,MATH,2023-10-18,pivot points
+3485,MATH,2023-10-20,pivot points
+3486,MATH,2023-10-23,pivot points
+3487,MATH,2023-10-24,pivot points
+3488,MATH,2023-11-06,pivot points
+3489,MATH,2023-11-13,pivot points
+3490,MATH,2023-11-15,pivot points
+3491,MATH,2023-11-17,pivot points
+3492,MATH,2023-11-30,pivot points
+3493,MATH,2023-12-04,pivot points
+3494,MATH,2023-12-12,pivot points
+3495,MATH,2023-12-13,pivot points
+3496,MATH,2023-12-18,pivot points
+3497,MATH,2023-12-19,pivot points
+3498,MATH,2023-12-20,pivot points
+3499,MATH,2023-12-22,pivot points
+3500,MATH,2023-12-26,pivot points
+3501,MATH,2023-12-27,pivot points
+3502,NEPH,2023-10-17,pivot points
+3503,NEPH,2023-10-18,pivot points
+3504,NEPH,2023-10-31,pivot points
+3505,NEPH,2023-11-01,pivot points
+3506,NEPH,2023-11-13,pivot points
+3507,NEPH,2023-11-20,pivot points
+3508,NEPH,2023-11-21,pivot points
+3509,NEPH,2023-11-24,pivot points
+3510,NEPH,2023-11-29,pivot points
+3511,NEPH,2023-12-06,pivot points
+3512,NEPH,2023-12-08,pivot points
+3513,NEPH,2023-12-12,pivot points
+3514,NEPH,2023-12-13,pivot points
+3515,NEPH,2023-12-20,pivot points
+3516,NEPH,2023-12-22,pivot points
+3517,NEPH,2023-12-26,pivot points
+3518,NEPH,2023-12-27,pivot points
+3519,NEPH,2024-01-03,pivot points
+3520,BTCY,2023-11-02,rolling window size
+3521,BTCY,2023-11-10,rolling window size
+3522,BTCY,2023-11-17,fibonacci
+3523,BTCY,2023-10-18,pivot points
+3524,BTCY,2023-10-24,pivot points
+3525,BTCY,2023-10-26,pivot points
+3526,BTCY,2023-11-10,pivot points
+3527,BTCY,2023-11-14,pivot points
+3528,BTCY,2023-11-16,pivot points
+3529,BTCY,2023-11-17,pivot points
+3530,BTCY,2023-11-24,pivot points
+3531,BTCY,2023-11-29,pivot points
+3532,BTCY,2023-12-04,pivot points
+3533,BTCY,2023-12-06,pivot points
+3534,BTCY,2023-12-07,pivot points
+3535,BTCY,2023-12-12,pivot points
+3536,BTCY,2023-12-13,pivot points
+3537,BTCY,2023-12-18,pivot points
+3538,BTCY,2023-12-19,pivot points
+3539,BTCY,2023-12-20,pivot points
+3540,BTCY,2023-12-22,pivot points
+3541,BTCY,2023-12-26,pivot points
+3542,BTCY,2024-01-02,pivot points
+3543,RVIV,2023-12-22,rolling window size
+3544,RVIV,2023-12-26,fibonacci
+3545,RVIV,2023-10-13,pivot points
+3546,RVIV,2023-10-19,pivot points
+3547,RVIV,2023-10-27,pivot points
+3548,RVIV,2023-11-01,pivot points
+3549,RVIV,2023-11-07,pivot points
+3550,RVIV,2023-11-13,pivot points
+3551,RVIV,2023-11-17,pivot points
+3552,RVIV,2023-11-21,pivot points
+3553,RVIV,2023-11-22,pivot points
+3554,RVIV,2023-11-28,pivot points
+3555,RVIV,2023-11-29,pivot points
+3556,RVIV,2023-12-01,pivot points
+3557,RVIV,2023-12-08,pivot points
+3558,RVIV,2023-12-14,pivot points
+3559,RVIV,2023-12-22,pivot points
+3560,RVIV,2023-12-29,pivot points
+3561,BNTRF,2023-12-15,rolling window size
+3562,BNTRF,2023-10-16,pivot points
+3563,BNTRF,2023-10-24,pivot points
+3564,BNTRF,2023-10-25,pivot points
+3565,BNTRF,2023-10-30,pivot points
+3566,BNTRF,2023-11-01,pivot points
+3567,BNTRF,2023-11-07,pivot points
+3568,BNTRF,2023-11-08,pivot points
+3569,BNTRF,2023-11-13,pivot points
+3570,BNTRF,2023-11-14,pivot points
+3571,BNTRF,2023-11-24,pivot points
+3572,BNTRF,2023-11-28,pivot points
+3573,BNTRF,2023-12-06,pivot points
+3574,BNTRF,2023-12-19,pivot points
+3575,BNTRF,2023-12-22,pivot points
+3576,BNTRF,2023-12-26,pivot points
+3577,BNTRF,2023-12-29,pivot points
+3578,BNTRF,2024-01-03,pivot points
+3579,MVNT,2023-11-03,rolling window size
+3580,MVNT,2023-12-07,rolling window size
+3581,MVNT,2023-12-13,rolling window size
+3582,MVNT,2023-12-27,rolling window size
+3583,MVNT,2023-11-06,fibonacci
+3584,MVNT,2023-10-13,pivot points
+3585,MVNT,2023-10-26,pivot points
+3586,MVNT,2023-11-01,pivot points
+3587,MVNT,2023-11-07,pivot points
+3588,MVNT,2023-11-08,pivot points
+3589,MVNT,2023-11-14,pivot points
+3590,MVNT,2023-11-29,pivot points
+3591,MVNT,2023-12-27,pivot points
+3592,MVNT,2023-12-29,pivot points
+3593,IHAI,2023-12-21,rolling window size
+3594,IHAI,2023-11-28,fibonacci
+3595,IHAI,2023-12-27,fibonacci
+3596,IHAI,2023-10-26,pivot points
+3597,IHAI,2023-11-07,pivot points
+3598,IHAI,2023-11-08,pivot points
+3599,IHAI,2023-11-17,pivot points
+3600,IHAI,2023-11-28,pivot points
+3601,IHAI,2023-12-01,pivot points
+3602,IHAI,2023-12-07,pivot points
+3603,IHAI,2023-12-27,pivot points
+3604,MDWK,2023-12-13,pivot points
+3605,MDWK,2023-12-14,pivot points
+3606,RGBP,2023-11-03,rolling window size
+3607,RGBP,2023-11-10,rolling window size
+3608,RGBP,2023-11-14,rolling window size
+3609,RGBP,2023-11-16,rolling window size
+3610,RGBP,2023-11-21,rolling window size
+3611,RGBP,2023-12-06,rolling window size
+3612,RGBP,2023-12-08,rolling window size
+3613,RGBP,2023-12-15,rolling window size
+3614,RGBP,2023-12-28,rolling window size
+3615,RGBP,2023-12-29,fibonacci
+3616,RGBP,2023-10-25,pivot points
+3617,RGBP,2023-11-07,pivot points
+3618,RGBP,2023-11-14,pivot points
+3619,RGBP,2023-11-24,pivot points
+3620,RGBP,2023-11-27,pivot points
+3621,RGBP,2023-12-06,pivot points
+3622,RGBP,2023-12-15,pivot points
+3623,RGBP,2023-12-19,pivot points
+3624,RGBP,2023-12-28,pivot points
+3625,RGBP,2023-12-29,pivot points
+3626,BLIAQ,2023-11-08,rolling window size
+3627,BLIAQ,2023-12-20,fibonacci
+3628,BLIAQ,2023-12-29,fibonacci
+3629,BLIAQ,2023-11-09,pivot points
+3630,BLIAQ,2023-11-13,pivot points
+3631,BLIAQ,2023-11-16,pivot points
+3632,BLIAQ,2023-12-08,pivot points
+3633,BLIAQ,2023-12-13,pivot points
+3634,BLIAQ,2023-12-20,pivot points
+3635,BLIAQ,2023-12-28,pivot points
+3636,BLIAQ,2023-12-29,pivot points
+3637,GERS,2023-11-29,rolling window size
+3638,GERS,2023-12-08,rolling window size
+3639,GERS,2023-10-17,pivot points
+3640,GERS,2023-10-18,pivot points
+3641,GERS,2023-11-29,pivot points
+3642,GERS,2023-12-12,pivot points
+3643,GERS,2023-12-20,pivot points
+3644,GERS,2023-12-26,pivot points
+3645,GERS,2023-12-29,pivot points
+3646,AFFL,2023-12-14,rolling window size
+3647,AFFL,2023-12-15,fibonacci
+3648,AFFL,2023-11-15,pivot points
+3649,AFFL,2023-12-29,pivot points
+3650,NXSGF,2023-12-29,rolling window size
+3651,CNVT,2023-11-09,pivot points
+3652,CNVT,2023-12-29,pivot points
+3653,CNVT,2024-01-02,pivot points
+3654,LINRF,2023-11-02,rolling window size
+3655,LINRF,2023-11-14,rolling window size
+3656,LINRF,2023-11-16,rolling window size
+3657,LINRF,2023-11-21,rolling window size
+3658,LINRF,2023-11-27,rolling window size
+3659,LINRF,2023-11-29,rolling window size
+3660,LINRF,2023-12-06,rolling window size
+3661,LINRF,2023-11-02,pivot points
+3662,LINRF,2023-11-14,pivot points
+3663,LINRF,2023-11-16,pivot points
+3664,LINRF,2023-11-29,pivot points
+3665,LINRF,2023-11-30,pivot points
+3666,LINRF,2023-12-06,pivot points
+3667,LINRF,2023-12-14,pivot points
+3668,LINRF,2023-12-18,pivot points
+3669,LINRF,2023-12-19,pivot points
+3670,LINRF,2023-12-22,pivot points
+3671,CNTA,2023-11-30,rolling window size
+3672,CNTA,2023-11-14,fibonacci
+3673,CNTA,2023-12-01,fibonacci
+3674,CNTA,2023-10-16,pivot points
+3675,CNTA,2023-10-17,pivot points
+3676,CNTA,2023-10-18,pivot points
+3677,CNTA,2023-10-24,pivot points
+3678,CNTA,2023-10-30,pivot points
+3679,CNTA,2023-11-01,pivot points
+3680,CNTA,2023-11-03,pivot points
+3681,CNTA,2023-11-07,pivot points
+3682,CNTA,2023-11-14,pivot points
+3683,CNTA,2023-11-24,pivot points
+3684,CNTA,2023-11-30,pivot points
+3685,CNTA,2023-12-01,pivot points
+3686,CNTA,2023-12-04,pivot points
+3687,CNTA,2023-12-07,pivot points
+3688,CNTA,2023-12-13,pivot points
+3689,CNTA,2023-12-19,pivot points
+3690,CNTA,2023-12-22,pivot points
+3691,CNTA,2024-01-02,pivot points
+3692,AVAH,2023-10-13,pivot points
+3693,AVAH,2023-10-16,pivot points
+3694,AVAH,2023-10-17,pivot points
+3695,AVAH,2023-10-30,pivot points
+3696,AVAH,2023-11-01,pivot points
+3697,AVAH,2023-11-02,pivot points
+3698,AVAH,2023-11-06,pivot points
+3699,AVAH,2023-11-07,pivot points
+3700,AVAH,2023-11-09,pivot points
+3701,AVAH,2023-11-10,pivot points
+3702,AVAH,2023-11-14,pivot points
+3703,AVAH,2023-11-17,pivot points
+3704,AVAH,2023-11-22,pivot points
+3705,AVAH,2023-11-27,pivot points
+3706,AVAH,2023-11-28,pivot points
+3707,AVAH,2023-11-29,pivot points
+3708,AVAH,2023-12-04,pivot points
+3709,AVAH,2023-12-08,pivot points
+3710,AVAH,2023-12-19,pivot points
+3711,AVAH,2023-12-21,pivot points
+3712,AVAH,2023-12-22,pivot points
+3713,AVAH,2023-12-26,pivot points
+3714,AVAH,2023-12-27,pivot points
+3715,AVAH,2024-01-02,pivot points
+3716,FPAY,2023-11-08,rolling window size
+3717,FPAY,2023-10-23,pivot points
+3718,FPAY,2023-10-27,pivot points
+3719,FPAY,2023-11-08,pivot points
+3720,FPAY,2023-11-16,pivot points
+3721,FPAY,2023-11-20,pivot points
+3722,FPAY,2023-11-21,pivot points
+3723,FPAY,2023-11-22,pivot points
+3724,FPAY,2023-11-30,pivot points
+3725,FPAY,2023-12-04,pivot points
+3726,FPAY,2023-12-08,pivot points
+3727,FPAY,2023-12-19,pivot points
+3728,FPAY,2023-12-21,pivot points
+3729,FPAY,2023-12-27,pivot points
+3730,FPAY,2024-01-03,pivot points
+3731,WALDW,2023-11-02,rolling window size
+3732,WALDW,2023-11-14,rolling window size
+3733,WALDW,2023-10-26,pivot points
+3734,WALDW,2023-11-14,pivot points
+3735,WALDW,2023-12-01,pivot points
+3736,WALDW,2023-12-05,pivot points
+3737,WALDW,2023-12-18,pivot points
+3738,WALDW,2023-12-19,pivot points
+3739,WALDW,2023-12-22,pivot points
+3740,SOFI,2023-11-10,rolling window size
+3741,SOFI,2023-11-17,rolling window size
+3742,SOFI,2023-11-21,rolling window size
+3743,SOFI,2023-11-14,fibonacci
+3744,SOFI,2023-11-28,fibonacci
+3745,SOFI,2023-10-16,pivot points
+3746,SOFI,2023-10-31,pivot points
+3747,SOFI,2023-11-01,pivot points
+3748,SOFI,2023-11-02,pivot points
+3749,SOFI,2023-11-10,pivot points
+3750,SOFI,2023-11-13,pivot points
+3751,SOFI,2023-11-14,pivot points
+3752,SOFI,2023-11-17,pivot points
+3753,SOFI,2023-11-21,pivot points
+3754,SOFI,2023-11-22,pivot points
+3755,SOFI,2023-11-27,pivot points
+3756,SOFI,2023-11-28,pivot points
+3757,SOFI,2023-12-01,pivot points
+3758,SOFI,2023-12-04,pivot points
+3759,SOFI,2023-12-08,pivot points
+3760,SOFI,2023-12-13,pivot points
+3761,SOFI,2023-12-14,pivot points
+3762,SOFI,2023-12-18,pivot points
+3763,SOFI,2023-12-19,pivot points
+3764,SOFI,2023-12-21,pivot points
+3765,SOFI,2023-12-26,pivot points
+3766,SOFI,2023-12-27,pivot points
+3767,BITF,2023-10-16,pivot points
+3768,BITF,2023-10-23,pivot points
+3769,BITF,2023-10-24,pivot points
+3770,BITF,2023-11-01,pivot points
+3771,BITF,2023-11-02,pivot points
+3772,BITF,2023-11-14,pivot points
+3773,BITF,2023-11-15,pivot points
+3774,BITF,2023-11-22,pivot points
+3775,BITF,2023-11-28,pivot points
+3776,BITF,2023-11-29,pivot points
+3777,BITF,2023-12-01,pivot points
+3778,BITF,2023-12-05,pivot points
+3779,BITF,2023-12-07,pivot points
+3780,BITF,2023-12-08,pivot points
+3781,BITF,2023-12-12,pivot points
+3782,BITF,2023-12-13,pivot points
+3783,BITF,2023-12-15,pivot points
+3784,BITF,2023-12-21,pivot points
+3785,BITF,2023-12-22,pivot points
+3786,BITF,2023-12-26,pivot points
+3787,BITF,2023-12-27,pivot points
+3788,DESP,2023-10-16,pivot points
+3789,DESP,2023-10-17,pivot points
+3790,DESP,2023-10-24,pivot points
+3791,DESP,2023-10-30,pivot points
+3792,DESP,2023-10-31,pivot points
+3793,DESP,2023-11-02,pivot points
+3794,DESP,2023-11-03,pivot points
+3795,DESP,2023-11-07,pivot points
+3796,DESP,2023-11-14,pivot points
+3797,DESP,2023-11-15,pivot points
+3798,DESP,2023-11-16,pivot points
+3799,DESP,2023-11-17,pivot points
+3800,DESP,2023-11-20,pivot points
+3801,DESP,2023-12-01,pivot points
+3802,DESP,2023-12-04,pivot points
+3803,DESP,2023-12-06,pivot points
+3804,DESP,2023-12-08,pivot points
+3805,SOUN,2023-12-07,rolling window size
+3806,SOUN,2023-10-16,pivot points
+3807,SOUN,2023-10-27,pivot points
+3808,SOUN,2023-10-31,pivot points
+3809,SOUN,2023-11-02,pivot points
+3810,SOUN,2023-11-03,pivot points
+3811,SOUN,2023-11-10,pivot points
+3812,SOUN,2023-11-13,pivot points
+3813,SOUN,2023-11-14,pivot points
+3814,SOUN,2023-11-15,pivot points
+3815,SOUN,2023-11-17,pivot points
+3816,SOUN,2023-11-22,pivot points
+3817,SOUN,2023-11-27,pivot points
+3818,SOUN,2023-11-28,pivot points
+3819,SOUN,2023-12-01,pivot points
+3820,SOUN,2023-12-13,pivot points
+3821,SOUN,2023-12-19,pivot points
+3822,SOUN,2023-12-21,pivot points
+3823,SOUN,2023-12-26,pivot points
+3824,SOUN,2023-12-28,pivot points
+3825,GATO,2023-11-13,rolling window size
+3826,GATO,2023-10-13,pivot points
+3827,GATO,2023-10-17,pivot points
+3828,GATO,2023-10-24,pivot points
+3829,GATO,2023-10-27,pivot points
+3830,GATO,2023-11-13,pivot points
+3831,GATO,2023-11-14,pivot points
+3832,GATO,2023-11-15,pivot points
+3833,GATO,2023-11-20,pivot points
+3834,GATO,2023-11-21,pivot points
+3835,GATO,2023-11-27,pivot points
+3836,GATO,2023-11-28,pivot points
+3837,GATO,2023-11-30,pivot points
+3838,GATO,2023-12-13,pivot points
+3839,GATO,2023-12-14,pivot points
+3840,GATO,2023-12-19,pivot points
+3841,GATO,2023-12-21,pivot points
+3842,GATO,2023-12-26,pivot points
+3843,GATO,2023-12-27,pivot points
+3844,PPTA,2023-11-14,rolling window size
+3845,PPTA,2023-11-17,rolling window size
+3846,PPTA,2023-11-24,rolling window size
+3847,PPTA,2023-11-28,rolling window size
+3848,PPTA,2023-11-03,fibonacci
+3849,PPTA,2023-11-29,fibonacci
+3850,PPTA,2023-10-13,pivot points
+3851,PPTA,2023-10-26,pivot points
+3852,PPTA,2023-10-31,pivot points
+3853,PPTA,2023-11-02,pivot points
+3854,PPTA,2023-11-03,pivot points
+3855,PPTA,2023-11-14,pivot points
+3856,PPTA,2023-11-17,pivot points
+3857,PPTA,2023-11-20,pivot points
+3858,PPTA,2023-11-24,pivot points
+3859,PPTA,2023-11-28,pivot points
+3860,PPTA,2023-11-29,pivot points
+3861,PPTA,2023-12-08,pivot points
+3862,PPTA,2023-12-13,pivot points
+3863,PPTA,2023-12-14,pivot points
+3864,PPTA,2023-12-19,pivot points
+3865,PPTA,2023-12-21,pivot points
+3866,PPTA,2023-12-26,pivot points
+3867,PPTA,2024-01-02,pivot points
+3868,NTCPF,2023-11-02,rolling window size
+3869,NTCPF,2023-11-06,rolling window size
+3870,NTCPF,2023-11-09,rolling window size
+3871,NTCPF,2023-11-17,fibonacci
+3872,NTCPF,2023-10-17,pivot points
+3873,NTCPF,2023-10-24,pivot points
+3874,NTCPF,2023-11-10,pivot points
+3875,NTCPF,2023-11-27,pivot points
+3876,NTCPF,2023-12-18,pivot points
+3877,NTCPF,2023-12-22,pivot points
+3878,GNS,2023-11-02,rolling window size
+3879,GNS,2023-11-10,rolling window size
+3880,GNS,2023-12-06,rolling window size
+3881,GNS,2023-11-15,fibonacci
+3882,GNS,2023-12-11,fibonacci
+3883,GNS,2023-12-15,fibonacci
+3884,GNS,2023-10-24,pivot points
+3885,GNS,2023-10-31,pivot points
+3886,GNS,2023-11-02,pivot points
+3887,GNS,2023-11-10,pivot points
+3888,GNS,2023-11-15,pivot points
+3889,GNS,2023-11-24,pivot points
+3890,GNS,2023-12-01,pivot points
+3891,GNS,2023-12-06,pivot points
+3892,GNS,2023-12-08,pivot points
+3893,GNS,2023-12-15,pivot points
+3894,GNS,2023-12-19,pivot points
+3895,SITKF,2023-10-26,pivot points
+3896,SITKF,2023-11-29,pivot points
+3897,SITKF,2023-12-04,pivot points
+3898,SITKF,2023-12-15,pivot points
+3899,SITKF,2023-12-19,pivot points
+3900,SITKF,2023-12-22,pivot points
+3901,SITKF,2023-12-26,pivot points
+3902,SITKF,2023-12-28,pivot points
+3903,SITKF,2023-12-29,pivot points
+3904,SITKF,2024-01-03,pivot points
+3905,AIGFF,2023-11-08,rolling window size
+3906,AIGFF,2023-11-10,rolling window size
+3907,AIGFF,2023-11-14,rolling window size
+3908,AIGFF,2023-11-16,rolling window size
+3909,AIGFF,2023-11-22,fibonacci
+3910,AIGFF,2023-10-20,pivot points
+3911,AIGFF,2023-10-24,pivot points
+3912,AIGFF,2023-10-30,pivot points
+3913,AIGFF,2023-11-08,pivot points
+3914,AIGFF,2023-11-14,pivot points
+3915,AIGFF,2023-11-21,pivot points
+3916,AIGFF,2023-11-27,pivot points
+3917,AIGFF,2023-12-01,pivot points
+3918,AIGFF,2023-12-04,pivot points
+3919,AIGFF,2023-12-19,pivot points
+3920,AIGFF,2023-12-20,pivot points
+3921,AIGFF,2023-12-26,pivot points
+3922,IMNM,2023-11-13,rolling window size
+3923,IMNM,2023-11-17,rolling window size
+3924,IMNM,2023-11-21,rolling window size
+3925,IMNM,2023-12-01,rolling window size
+3926,IMNM,2023-12-13,rolling window size
+3927,IMNM,2023-12-15,fibonacci
+3928,IMNM,2023-10-13,pivot points
+3929,IMNM,2023-10-20,pivot points
+3930,IMNM,2023-10-24,pivot points
+3931,IMNM,2023-11-03,pivot points
+3932,IMNM,2023-11-07,pivot points
+3933,IMNM,2023-11-13,pivot points
+3934,IMNM,2023-11-17,pivot points
+3935,IMNM,2023-11-21,pivot points
+3936,IMNM,2023-12-01,pivot points
+3937,IMNM,2023-12-04,pivot points
+3938,IMNM,2023-12-08,pivot points
+3939,IMNM,2023-12-15,pivot points
+3940,IMNM,2023-12-18,pivot points
+3941,IMNM,2023-12-19,pivot points
+3942,IMNM,2023-12-21,pivot points
+3943,IMNM,2023-12-22,pivot points
+3944,IMNM,2023-12-26,pivot points
+3945,IMNM,2023-12-27,pivot points
+3946,IMNM,2023-12-28,pivot points
+3947,IMNM,2024-01-02,pivot points
+3948,IMNM,2024-01-03,pivot points
+3949,TCRX,2023-12-19,rolling window size
+3950,TCRX,2023-12-22,fibonacci
+3951,TCRX,2023-10-16,pivot points
+3952,TCRX,2023-10-17,pivot points
+3953,TCRX,2023-10-24,pivot points
+3954,TCRX,2023-10-25,pivot points
+3955,TCRX,2023-10-27,pivot points
+3956,TCRX,2023-10-30,pivot points
+3957,TCRX,2023-11-02,pivot points
+3958,TCRX,2023-11-03,pivot points
+3959,TCRX,2023-11-06,pivot points
+3960,TCRX,2023-11-10,pivot points
+3961,TCRX,2023-11-13,pivot points
+3962,TCRX,2023-11-14,pivot points
+3963,TCRX,2023-11-17,pivot points
+3964,TCRX,2023-11-22,pivot points
+3965,TCRX,2023-11-29,pivot points
+3966,TCRX,2023-11-30,pivot points
+3967,TCRX,2023-12-05,pivot points
+3968,TCRX,2023-12-13,pivot points
+3969,TCRX,2023-12-19,pivot points
+3970,TCRX,2023-12-22,pivot points
+3971,TCRX,2023-12-26,pivot points
+3972,TCRX,2023-12-27,pivot points
+3973,OMER,2023-11-03,fibonacci
+3974,OMER,2023-10-24,pivot points
+3975,OMER,2023-10-30,pivot points
+3976,OMER,2023-10-31,pivot points
+3977,OMER,2023-11-02,pivot points
+3978,OMER,2023-11-06,pivot points
+3979,OMER,2023-11-07,pivot points
+3980,OMER,2023-11-13,pivot points
+3981,OMER,2023-11-14,pivot points
+3982,OMER,2023-11-17,pivot points
+3983,OMER,2023-11-20,pivot points
+3984,OMER,2023-11-22,pivot points
+3985,OMER,2023-11-27,pivot points
+3986,OMER,2023-11-28,pivot points
+3987,OMER,2023-11-29,pivot points
+3988,OMER,2023-12-04,pivot points
+3989,OMER,2023-12-06,pivot points
+3990,OMER,2023-12-12,pivot points
+3991,OMER,2023-12-13,pivot points
+3992,OMER,2023-12-18,pivot points
+3993,OMER,2023-12-19,pivot points
+3994,OMER,2023-12-21,pivot points
+3995,OMER,2023-12-22,pivot points
+3996,OMER,2023-12-28,pivot points
+3997,TNYA,2023-11-24,rolling window size
+3998,TNYA,2023-10-13,pivot points
+3999,TNYA,2023-10-31,pivot points
+4000,TNYA,2023-11-02,pivot points
+4001,TNYA,2023-11-03,pivot points
+4002,TNYA,2023-11-17,pivot points
+4003,TNYA,2023-11-24,pivot points
+4004,TNYA,2023-11-27,pivot points
+4005,TNYA,2023-12-01,pivot points
+4006,TNYA,2023-12-06,pivot points
+4007,TNYA,2023-12-11,pivot points
+4008,TNYA,2023-12-13,pivot points
+4009,TNYA,2023-12-19,pivot points
+4010,TNYA,2023-12-21,pivot points
+4011,TNYA,2023-12-22,pivot points
+4012,TNYA,2023-12-26,pivot points
+4013,TNYA,2023-12-27,pivot points
+4014,SYRS,2023-11-29,rolling window size
+4015,SYRS,2023-10-20,pivot points
+4016,SYRS,2023-10-25,pivot points
+4017,SYRS,2023-10-26,pivot points
+4018,SYRS,2023-11-03,pivot points
+4019,SYRS,2023-11-06,pivot points
+4020,SYRS,2023-11-07,pivot points
+4021,SYRS,2023-11-15,pivot points
+4022,SYRS,2023-11-21,pivot points
+4023,SYRS,2023-11-24,pivot points
+4024,SYRS,2023-11-29,pivot points
+4025,SYRS,2023-12-04,pivot points
+4026,SYRS,2023-12-06,pivot points
+4027,SYRS,2023-12-07,pivot points
+4028,SYRS,2023-12-11,pivot points
+4029,SYRS,2023-12-18,pivot points
+4030,SYRS,2023-12-19,pivot points
+4031,SYRS,2023-12-21,pivot points
+4032,SYRS,2023-12-22,pivot points
+4033,SYRS,2023-12-27,pivot points
+4034,SYRS,2023-12-29,pivot points
+4035,SDIG,2023-11-15,rolling window size
+4036,SDIG,2023-10-23,pivot points
+4037,SDIG,2023-11-02,pivot points
+4038,SDIG,2023-11-15,pivot points
+4039,SDIG,2023-11-17,pivot points
+4040,SDIG,2023-11-22,pivot points
+4041,SDIG,2023-11-24,pivot points
+4042,SDIG,2023-11-28,pivot points
+4043,SDIG,2023-12-01,pivot points
+4044,SDIG,2023-12-04,pivot points
+4045,SDIG,2023-12-13,pivot points
+4046,SDIG,2023-12-18,pivot points
+4047,SDIG,2023-12-21,pivot points
+4048,SDIG,2023-12-22,pivot points
+4049,SDIG,2023-12-27,pivot points
+4050,PRFX,2023-11-06,fibonacci
+4051,PRFX,2023-11-27,fibonacci
+4052,PRFX,2023-12-22,fibonacci
+4053,PRFX,2023-10-16,pivot points
+4054,PRFX,2023-10-17,pivot points
+4055,PRFX,2023-10-24,pivot points
+4056,PRFX,2023-11-01,pivot points
+4057,PRFX,2023-11-03,pivot points
+4058,PRFX,2023-11-14,pivot points
+4059,PRFX,2023-11-17,pivot points
+4060,PRFX,2023-11-22,pivot points
+4061,PRFX,2023-11-24,pivot points
+4062,PRFX,2023-12-04,pivot points
+4063,PRFX,2023-12-06,pivot points
+4064,PRFX,2023-12-15,pivot points
+4065,PRFX,2023-12-21,pivot points
+4066,PRFX,2023-12-22,pivot points
+4067,PTN,2023-11-10,rolling window size
+4068,PTN,2023-11-15,rolling window size
+4069,PTN,2023-12-21,fibonacci
+4070,PTN,2023-10-19,pivot points
+4071,PTN,2023-10-20,pivot points
+4072,PTN,2023-10-30,pivot points
+4073,PTN,2023-11-01,pivot points
+4074,PTN,2023-11-10,pivot points
+4075,PTN,2023-11-15,pivot points
+4076,PTN,2023-11-17,pivot points
+4077,PTN,2023-11-21,pivot points
+4078,PTN,2023-11-30,pivot points
+4079,PTN,2023-12-01,pivot points
+4080,PTN,2023-12-06,pivot points
+4081,PTN,2023-12-07,pivot points
+4082,PTN,2023-12-08,pivot points
+4083,PTN,2023-12-21,pivot points
+4084,PTN,2023-12-22,pivot points
+4085,PTN,2023-12-26,pivot points
+4086,PTN,2023-12-27,pivot points
+4087,MOR,2023-11-20,rolling window size
+4088,MOR,2023-11-24,rolling window size
+4089,MOR,2023-11-29,fibonacci
+4090,MOR,2023-10-13,pivot points
+4091,MOR,2023-10-16,pivot points
+4092,MOR,2023-10-23,pivot points
+4093,MOR,2023-10-26,pivot points
+4094,MOR,2023-11-01,pivot points
+4095,MOR,2023-11-20,pivot points
+4096,MOR,2023-11-24,pivot points
+4097,MOR,2023-11-27,pivot points
+4098,MOR,2023-11-28,pivot points
+4099,MOR,2023-11-29,pivot points
+4100,MOR,2023-11-30,pivot points
+4101,MOR,2023-12-05,pivot points
+4102,MOR,2023-12-08,pivot points
+4103,MOR,2023-12-11,pivot points
+4104,MOR,2023-12-12,pivot points
+4105,MOR,2023-12-27,pivot points
+4106,MOR,2023-12-28,pivot points
+4107,OPFI,2023-10-19,pivot points
+4108,OPFI,2023-10-20,pivot points
+4109,OPFI,2023-10-26,pivot points
+4110,OPFI,2023-11-06,pivot points
+4111,OPFI,2023-11-07,pivot points
+4112,OPFI,2023-11-10,pivot points
+4113,OPFI,2023-11-14,pivot points
+4114,OPFI,2023-11-15,pivot points
+4115,OPFI,2023-11-16,pivot points
+4116,OPFI,2023-11-17,pivot points
+4117,OPFI,2023-11-20,pivot points
+4118,OPFI,2023-11-21,pivot points
+4119,OPFI,2023-11-27,pivot points
+4120,OPFI,2023-12-01,pivot points
+4121,OPFI,2023-12-04,pivot points
+4122,OPFI,2023-12-11,pivot points
+4123,OPFI,2023-12-14,pivot points
+4124,OPFI,2023-12-19,pivot points
+4125,OPFI,2023-12-22,pivot points
+4126,OPFI,2023-12-26,pivot points
+4127,OPFI,2023-12-27,pivot points
+4128,CHSN,2023-11-14,rolling window size
+4129,CHSN,2023-11-16,rolling window size
+4130,CHSN,2023-12-21,rolling window size
+4131,CHSN,2023-12-28,rolling window size
+4132,CHSN,2023-11-24,fibonacci
+4133,CHSN,2023-12-01,fibonacci
+4134,CHSN,2023-10-13,pivot points
+4135,CHSN,2023-10-27,pivot points
+4136,CHSN,2023-11-01,pivot points
+4137,CHSN,2023-11-06,pivot points
+4138,CHSN,2023-11-07,pivot points
+4139,CHSN,2023-11-14,pivot points
+4140,CHSN,2023-11-16,pivot points
+4141,CHSN,2023-11-17,pivot points
+4142,CHSN,2023-11-22,pivot points
+4143,CHSN,2023-11-24,pivot points
+4144,CHSN,2023-11-30,pivot points
+4145,CHSN,2023-12-01,pivot points
+4146,CHSN,2023-12-04,pivot points
+4147,CHSN,2023-12-05,pivot points
+4148,CHSN,2023-12-06,pivot points
+4149,CHSN,2023-12-07,pivot points
+4150,CHSN,2023-12-11,pivot points
+4151,CHSN,2023-12-12,pivot points
+4152,CHSN,2023-12-14,pivot points
+4153,CHSN,2023-12-21,pivot points
+4154,IPDN,2023-11-03,rolling window size
+4155,IPDN,2023-11-13,rolling window size
+4156,IPDN,2023-11-17,rolling window size
+4157,IPDN,2023-12-29,rolling window size
+4158,IPDN,2023-10-13,pivot points
+4159,IPDN,2023-11-06,pivot points
+4160,IPDN,2023-11-13,pivot points
+4161,IPDN,2023-11-17,pivot points
+4162,IPDN,2023-11-27,pivot points
+4163,IPDN,2023-11-28,pivot points
+4164,IPDN,2023-12-01,pivot points
+4165,IPDN,2023-12-06,pivot points
+4166,IPDN,2023-12-11,pivot points
+4167,IPDN,2023-12-20,pivot points
+4168,IPDN,2023-12-22,pivot points
+4169,IPDN,2023-12-29,pivot points
+4170,CNER,2023-11-15,rolling window size
+4171,CNER,2023-11-21,rolling window size
+4172,CNER,2023-12-21,rolling window size
+4173,CNER,2023-12-28,rolling window size
+4174,CNER,2023-11-22,fibonacci
+4175,CNER,2023-10-17,pivot points
+4176,CNER,2023-10-20,pivot points
+4177,CNER,2023-10-23,pivot points
+4178,CNER,2023-10-24,pivot points
+4179,CNER,2023-11-21,pivot points
+4180,CNER,2023-11-22,pivot points
+4181,CNER,2023-11-24,pivot points
+4182,CNER,2023-11-28,pivot points
+4183,CNER,2023-11-30,pivot points
+4184,CNER,2023-12-21,pivot points
+4185,CNER,2023-12-28,pivot points
+4186,LOWLF,2023-11-15,rolling window size
+4187,LOWLF,2023-11-17,rolling window size
+4188,LOWLF,2023-12-08,rolling window size
+4189,LOWLF,2023-12-12,fibonacci
+4190,LOWLF,2024-01-02,fibonacci
+4191,LOWLF,2023-10-13,pivot points
+4192,LOWLF,2023-10-20,pivot points
+4193,LOWLF,2023-11-03,pivot points
+4194,LOWLF,2023-11-06,pivot points
+4195,LOWLF,2023-11-09,pivot points
+4196,LOWLF,2023-11-17,pivot points
+4197,LOWLF,2023-11-21,pivot points
+4198,LOWLF,2023-12-08,pivot points
+4199,LOWLF,2023-12-11,pivot points
+4200,LOWLF,2023-12-12,pivot points
+4201,LOWLF,2023-12-22,pivot points
+4202,LOWLF,2023-12-28,pivot points
+4203,CPWR,2023-12-21,rolling window size
+4204,CPWR,2023-11-02,pivot points
+4205,CPWR,2023-12-28,pivot points
+4206,MONI,2023-11-07,rolling window size
+4207,MONI,2023-11-14,rolling window size
+4208,MONI,2023-11-29,rolling window size
+4209,MONI,2023-12-04,rolling window size
+4210,MONI,2023-12-07,rolling window size
+4211,MONI,2023-12-19,rolling window size
+4212,MONI,2023-12-22,rolling window size
+4213,MONI,2023-11-08,fibonacci
+4214,MONI,2023-11-15,fibonacci
+4215,MONI,2023-10-13,pivot points
+4216,MONI,2023-10-25,pivot points
+4217,MONI,2023-11-07,pivot points
+4218,MONI,2023-11-14,pivot points
+4219,MONI,2023-11-15,pivot points
+4220,MONI,2023-11-21,pivot points
+4221,MONI,2023-12-04,pivot points
+4222,MONI,2023-12-05,pivot points
+4223,MONI,2023-12-12,pivot points
+4224,MONI,2023-12-14,pivot points
+4225,MONI,2023-12-22,pivot points
+4226,MONI,2023-12-27,pivot points
+4227,ZVRA,2023-11-14,rolling window size
+4228,ZVRA,2023-12-21,rolling window size
+4229,ZVRA,2023-12-19,fibonacci
+4230,ZVRA,2023-10-17,pivot points
+4231,ZVRA,2023-10-26,pivot points
+4232,ZVRA,2023-10-31,pivot points
+4233,ZVRA,2023-11-03,pivot points
+4234,ZVRA,2023-11-14,pivot points
+4235,ZVRA,2023-11-17,pivot points
+4236,ZVRA,2023-11-20,pivot points
+4237,ZVRA,2023-11-24,pivot points
+4238,ZVRA,2023-11-27,pivot points
+4239,ZVRA,2023-11-29,pivot points
+4240,ZVRA,2023-12-01,pivot points
+4241,ZVRA,2023-12-04,pivot points
+4242,ZVRA,2023-12-07,pivot points
+4243,ZVRA,2023-12-13,pivot points
+4244,ZVRA,2023-12-18,pivot points
+4245,ZVRA,2023-12-19,pivot points
+4246,ZVRA,2023-12-21,pivot points
+4247,ZVRA,2023-12-22,pivot points
+4248,ZVRA,2023-12-27,pivot points
+4249,ZVRA,2023-12-29,pivot points
+4250,ZVRA,2024-01-02,pivot points
+4251,ALIM,2023-10-16,pivot points
+4252,ALIM,2023-10-19,pivot points
+4253,ALIM,2023-10-23,pivot points
+4254,ALIM,2023-10-24,pivot points
+4255,ALIM,2023-10-26,pivot points
+4256,ALIM,2023-10-30,pivot points
+4257,ALIM,2023-11-03,pivot points
+4258,ALIM,2023-11-09,pivot points
+4259,ALIM,2023-11-13,pivot points
+4260,ALIM,2023-11-14,pivot points
+4261,ALIM,2023-11-17,pivot points
+4262,ALIM,2023-11-20,pivot points
+4263,ALIM,2023-11-22,pivot points
+4264,ALIM,2023-12-01,pivot points
+4265,ALIM,2023-12-05,pivot points
+4266,ALIM,2023-12-06,pivot points
+4267,ALIM,2023-12-15,pivot points
+4268,ALIM,2023-12-19,pivot points
+4269,ALIM,2023-12-22,pivot points
+4270,ALIM,2023-12-28,pivot points
+4271,ALIM,2023-12-29,pivot points
+4272,SNTG,2023-11-14,rolling window size
+4273,SNTG,2023-12-26,fibonacci
+4274,SNTG,2023-10-13,pivot points
+4275,SNTG,2023-10-18,pivot points
+4276,SNTG,2023-10-20,pivot points
+4277,SNTG,2023-10-24,pivot points
+4278,SNTG,2023-10-26,pivot points
+4279,SNTG,2023-10-31,pivot points
+4280,SNTG,2023-11-14,pivot points
+4281,SNTG,2023-11-17,pivot points
+4282,SNTG,2023-11-20,pivot points
+4283,SNTG,2023-12-04,pivot points
+4284,SNTG,2023-12-12,pivot points
+4285,SNTG,2023-12-19,pivot points
+4286,SNTG,2023-12-21,pivot points
+4287,SNTG,2023-12-27,pivot points
+4288,ARTTF,2023-12-08,rolling window size
+4289,ARTTF,2023-12-21,pivot points
+4290,FLHLF,2023-11-03,rolling window size
+4291,FLHLF,2023-12-21,rolling window size
+4292,FLHLF,2023-11-14,fibonacci
+4293,FLHLF,2023-10-17,pivot points
+4294,FLHLF,2023-10-26,pivot points
+4295,FLHLF,2023-11-08,pivot points
+4296,FLHLF,2023-11-15,pivot points
+4297,FLHLF,2023-11-16,pivot points
+4298,FLHLF,2023-11-21,pivot points
+4299,FLHLF,2023-11-27,pivot points
+4300,FLHLF,2023-11-29,pivot points
+4301,FLHLF,2023-11-30,pivot points
+4302,FLHLF,2023-12-04,pivot points
+4303,FLHLF,2023-12-08,pivot points
+4304,FLHLF,2023-12-28,pivot points
+4305,FLHLF,2024-01-02,pivot points
+4306,GLFH,2023-10-19,pivot points
+4307,GLFH,2023-10-30,pivot points
+4308,GLFH,2023-11-13,pivot points
+4309,GLFH,2023-11-20,pivot points
+4310,GLFH,2023-11-28,pivot points
+4311,GLFH,2023-11-29,pivot points
+4312,GLFH,2023-12-01,pivot points
+4313,GLFH,2023-12-21,pivot points
+4314,GLFH,2023-12-29,pivot points
+4315,PFFOF,2023-11-28,rolling window size
+4316,PFFOF,2023-12-14,rolling window size
+4317,PFFOF,2023-10-24,pivot points
+4318,PFFOF,2023-10-27,pivot points
+4319,PFFOF,2023-11-15,pivot points
+4320,PFFOF,2023-12-04,pivot points
+4321,PFFOF,2023-12-21,pivot points
+4322,PFFOF,2023-12-28,pivot points
+4323,PFFOF,2023-12-29,pivot points
+4324,CRDV,2023-12-08,rolling window size
+4325,CRDV,2023-11-02,pivot points
+4326,CRDV,2023-12-13,pivot points
+4327,CRDV,2023-12-15,pivot points
+4328,CRDV,2023-12-18,pivot points
+4329,CRDV,2023-12-20,pivot points
+4330,CRDV,2023-12-21,pivot points
+4331,CRDV,2023-12-28,pivot points
+4332,CRDV,2024-01-02,pivot points
+4333,CGRW,2023-11-24,rolling window size
+4334,CGRW,2023-12-05,rolling window size
+4335,CGRW,2023-10-18,pivot points
+4336,CGRW,2023-10-26,pivot points
+4337,CGRW,2023-11-09,pivot points
+4338,CGRW,2023-11-14,pivot points
+4339,CGRW,2023-11-24,pivot points
+4340,CGRW,2023-11-28,pivot points
+4341,ECPL,2023-11-22,rolling window size
+4342,ECPL,2024-01-03,rolling window size
+4343,ECPL,2023-11-27,fibonacci
+4344,ECPL,2023-10-30,pivot points
+4345,ECPL,2023-10-31,pivot points
+4346,ECPL,2023-11-16,pivot points
+4347,ECPL,2023-11-27,pivot points
+4348,ECPL,2023-12-11,pivot points
+4349,OBSEF,2023-11-20,rolling window size
+4350,OBSEF,2023-10-13,pivot points
+4351,OBSEF,2023-10-30,pivot points
+4352,OBSEF,2023-11-02,pivot points
+4353,OBSEF,2023-12-21,pivot points
+4354,OBSEF,2023-12-27,pivot points
+4355,OBSEF,2024-01-02,pivot points
+4356,TMCWW,2023-11-13,rolling window size
+4357,TMCWW,2023-12-20,rolling window size
+4358,TMCWW,2023-10-24,pivot points
+4359,TMCWW,2023-10-31,pivot points
+4360,TMCWW,2023-11-03,pivot points
+4361,TMCWW,2023-11-13,pivot points
+4362,TMCWW,2023-11-24,pivot points
+4363,TMCWW,2023-11-28,pivot points
+4364,TMCWW,2023-12-04,pivot points
+4365,TMCWW,2023-12-05,pivot points
+4366,TMCWW,2023-12-21,pivot points
+4367,TMCWW,2023-12-29,pivot points
+4368,OPTHF,2023-11-08,rolling window size
+4369,OPTHF,2023-11-14,fibonacci
+4370,OPTHF,2023-12-08,fibonacci
+4371,OPTHF,2023-10-20,pivot points
+4372,OPTHF,2023-10-24,pivot points
+4373,OPTHF,2023-11-13,pivot points
+4374,OPTHF,2023-11-14,pivot points
+4375,OPTHF,2023-11-21,pivot points
+4376,OPTHF,2023-11-28,pivot points
+4377,OPTHF,2023-12-01,pivot points
+4378,OPTHF,2023-12-07,pivot points
+4379,OPTHF,2023-12-08,pivot points
+4380,OPTHF,2023-12-14,pivot points
+4381,OPTHF,2023-12-20,pivot points
+4382,OPTHF,2023-12-21,pivot points
+4383,OPTHF,2023-12-26,pivot points
+4384,OPTHF,2023-12-29,pivot points
+4385,OPTHF,2024-01-02,pivot points
+4386,LBRG,2023-11-07,pivot points
+4387,LBRG,2023-11-14,pivot points
+4388,LBRG,2023-11-15,pivot points
+4389,LBRG,2023-11-21,pivot points
+4390,LBRG,2023-11-24,pivot points
+4391,LBRG,2023-11-27,pivot points
+4392,LBRG,2023-12-01,pivot points
+4393,LBRG,2023-12-06,pivot points
+4394,LBRG,2023-12-15,pivot points
+4395,LBRG,2023-12-22,pivot points
+4396,LBRG,2023-12-27,pivot points
+4397,LBRG,2024-01-02,pivot points
+4398,ASKH,2023-11-06,rolling window size
+4399,ASKH,2023-12-12,rolling window size
+4400,ASKH,2023-10-23,pivot points
+4401,ASKH,2023-10-24,pivot points
+4402,ASKH,2023-11-06,pivot points
+4403,ASKH,2023-11-09,pivot points
+4404,ASKH,2023-11-14,pivot points
+4405,ASKH,2023-11-20,pivot points
+4406,ASKH,2023-11-21,pivot points
+4407,ASKH,2023-11-22,pivot points
+4408,ASKH,2023-11-24,pivot points
+4409,ASKH,2023-11-27,pivot points
+4410,ASKH,2023-11-30,pivot points
+4411,ASKH,2023-12-13,pivot points
+4412,ASKH,2023-12-15,pivot points
+4413,ASKH,2023-12-28,pivot points
+4414,NMGC,2023-12-12,rolling window size
+4415,NMGC,2023-12-28,fibonacci
+4416,MEIL,2023-12-14,rolling window size
+4417,MEIL,2023-11-08,fibonacci
+4418,MEIL,2023-11-21,fibonacci
+4419,MEIL,2023-10-18,pivot points
+4420,MEIL,2023-10-25,pivot points
+4421,MEIL,2023-10-31,pivot points
+4422,MEIL,2023-11-01,pivot points
+4423,MEIL,2023-11-07,pivot points
+4424,MEIL,2023-11-09,pivot points
+4425,MEIL,2023-11-15,pivot points
+4426,MEIL,2023-11-21,pivot points
+4427,MEIL,2023-11-28,pivot points
+4428,MEIL,2023-12-05,pivot points
+4429,MEIL,2023-12-14,pivot points
+4430,MEIL,2024-01-02,pivot points
+4431,MEIL,2024-01-03,pivot points
+4432,VAGNF,2023-11-08,fibonacci
+4433,VAGNF,2024-01-02,fibonacci
+4434,VAGNF,2023-10-23,pivot points
+4435,VAGNF,2023-10-31,pivot points
+4436,VAGNF,2023-11-07,pivot points
+4437,VAGNF,2023-11-13,pivot points
+4438,VAGNF,2023-11-20,pivot points
+4439,VAGNF,2023-11-27,pivot points
+4440,VAGNF,2023-12-01,pivot points
+4441,VAGNF,2023-12-05,pivot points
+4442,VAGNF,2023-12-18,pivot points
+4443,VAGNF,2023-12-26,pivot points
+4444,VAGNF,2024-01-02,pivot points
+4445,TKVR,2023-12-08,rolling window size
+4446,TKVR,2023-11-13,pivot points
+4447,TKVR,2023-11-14,pivot points
+4448,TKVR,2023-11-21,pivot points
+4449,TKVR,2023-11-22,pivot points
+4450,TKVR,2023-11-29,pivot points
+4451,TKVR,2023-12-08,pivot points
+4452,TKVR,2023-12-22,pivot points
+4453,TKVR,2023-12-27,pivot points
+4454,KALV,2023-11-10,rolling window size
+4455,KALV,2023-11-14,rolling window size
+4456,KALV,2023-11-17,rolling window size
+4457,KALV,2023-10-16,pivot points
+4458,KALV,2023-10-17,pivot points
+4459,KALV,2023-10-31,pivot points
+4460,KALV,2023-11-01,pivot points
+4461,KALV,2023-11-10,pivot points
+4462,KALV,2023-11-17,pivot points
+4463,KALV,2023-11-24,pivot points
+4464,KALV,2023-11-28,pivot points
+4465,KALV,2023-11-30,pivot points
+4466,KALV,2023-12-01,pivot points
+4467,KALV,2023-12-04,pivot points
+4468,KALV,2023-12-11,pivot points
+4469,KALV,2023-12-12,pivot points
+4470,KALV,2023-12-13,pivot points
+4471,KALV,2023-12-14,pivot points
+4472,KALV,2023-12-15,pivot points
+4473,KALV,2023-12-19,pivot points
+4474,KALV,2023-12-21,pivot points
+4475,KALV,2023-12-22,pivot points
+4476,KALV,2023-12-26,pivot points
+4477,KALV,2023-12-27,pivot points
+4478,EGYF,2023-11-29,rolling window size
+4479,EGYF,2023-10-16,pivot points
+4480,EGYF,2023-10-19,pivot points
+4481,EGYF,2023-10-20,pivot points
+4482,EGYF,2023-10-23,pivot points
+4483,EGYF,2023-10-25,pivot points
+4484,EGYF,2023-10-27,pivot points
+4485,EGYF,2023-10-30,pivot points
+4486,EGYF,2023-11-01,pivot points
+4487,EGYF,2023-11-03,pivot points
+4488,EGYF,2023-11-15,pivot points
+4489,EGYF,2023-11-17,pivot points
+4490,EGYF,2023-12-14,pivot points
+4491,EGYF,2023-12-20,pivot points
+4492,DTARF,2023-11-09,rolling window size
+4493,DTARF,2023-11-13,rolling window size
+4494,DTARF,2023-11-27,rolling window size
+4495,DTARF,2023-10-18,pivot points
+4496,DTARF,2023-11-17,pivot points
+4497,DTARF,2023-11-27,pivot points
+4498,DTARF,2023-11-29,pivot points
+4499,DTARF,2023-11-30,pivot points
+4500,DTARF,2023-12-04,pivot points
+4501,DTARF,2023-12-14,pivot points
+4502,DTARF,2023-12-19,pivot points
+4503,DTARF,2023-12-20,pivot points
+4504,DTARF,2023-12-22,pivot points
+4505,DTARF,2023-12-29,pivot points
+4506,KTPPF,2023-11-06,rolling window size
+4507,KTPPF,2023-10-31,pivot points
+4508,MFMLF,2023-11-20,pivot points
+4509,MFMLF,2023-12-01,pivot points
+4510,MFMLF,2023-12-04,pivot points
+4511,MFMLF,2023-12-06,pivot points
+4512,MFMLF,2023-12-07,pivot points
+4513,MFMLF,2023-12-14,pivot points
+4514,LILMW,2023-12-19,fibonacci
+4515,LILMW,2023-10-24,pivot points
+4516,LILMW,2023-10-26,pivot points
+4517,LILMW,2023-10-30,pivot points
+4518,LILMW,2023-11-01,pivot points
+4519,LILMW,2023-11-02,pivot points
+4520,LILMW,2023-11-14,pivot points
+4521,LILMW,2023-11-17,pivot points
+4522,LILMW,2023-11-21,pivot points
+4523,LILMW,2023-11-27,pivot points
+4524,LILMW,2023-11-28,pivot points
+4525,LILMW,2023-12-06,pivot points
+4526,LILMW,2023-12-14,pivot points
+4527,LILMW,2023-12-20,pivot points
+4528,LILMW,2023-12-27,pivot points
