@@ -43,8 +43,8 @@ def an_integer(x: str):
   except Exception:
     return 0
 
-def a_csv_file_name():
-    return './runs/' + time.strftime('%Y_%m_%d_%H_%M_%S') + '.csv'
+def a_csv_file_name(target: str):
+    return target + time.strftime('%Y_%m_%d_%H_%M_%S') + '.csv'
 
 async def login(page: Page, username: str, password: str):
     await page.goto("https://login.yahoo.com")
@@ -105,7 +105,7 @@ async def scrape(page: Page, url: str):
                 await button.click()
                 await asyncio.sleep(2)
 
-async def main(username: str, password: str, cookies: str, urls: List[str]):
+async def main(username: str, password: str, cookies: str, target: str, urls: List[str]):
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context()
@@ -123,19 +123,20 @@ async def main(username: str, password: str, cookies: str, urls: List[str]):
 
         for url in urls:
             result_from_url = await scrape(page, url)
-            result_from_url.to_csv(a_csv_file_name(), index=False)
+            result_from_url.to_csv(a_csv_file_name(target), index=False)
 
 if __name__ == '__main__':
     username = sys.argv[1]
     password = sys.argv[2]
     cookies = sys.argv[3]
+    target = sys.argv[4]
 
-    urls = sys.argv[4:]
+    urls = sys.argv[5:]
 
     try:
-        asyncio.run(main(username, password, cookies, urls))
+        asyncio.run(main(username, password, cookies, target, urls))
     except Exception:
         try:
-            asyncio.run(main(username, password, cookies, urls))
+            asyncio.run(main(username, password, cookies, target, urls))
         except Exception:
-            asyncio.run(main(username, password, cookies, urls))
+            asyncio.run(main(username, password, cookies, target, urls))

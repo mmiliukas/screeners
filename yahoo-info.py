@@ -25,7 +25,10 @@ def ticker_summary(ticker):
     }
 
 if __name__ == '__main__':
-    df = pd.read_csv('./all.csv')
+    all_gainers = pd.read_csv('./all.csv')
+    all_loosers = pd.read_csv('./all-loosers.csv')
+
+    df = pd.concat([all_gainers, all_loosers])
 
     tickers = list(df['Symbol'].unique())
     tickers_info = []

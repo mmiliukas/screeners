@@ -1,7 +1,11 @@
 import glob
-import pandas
+import pandas as pd
 
 if __name__ == '__main__':
-    all_files = glob.glob('./runs/*.csv')
-    df = pandas.concat((pandas.read_csv(file) for file in all_files), ignore_index=True)
+    all_gainers = glob.glob('./runs/*.csv')
+    df = pd.concat((pd.read_csv(file) for file in all_gainers), ignore_index=True)
     df.to_csv('./all.csv', index=False)
+
+    all_loosers = glob.glob('./runs-loosers/*.csv')
+    df = pd.concat((pd.read_csv(file) for file in all_loosers), ignore_index=True)
+    df.to_csv('./all-loosers.csv', index=False)
