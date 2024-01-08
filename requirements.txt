@@ -31,5 +31,5 @@ typing_extensions==4.9.0
 tzdata==2023.4
 urllib3==1.26.18
 webencodings==0.5.1
-yfinance==0.2.33
+yfinance==0.2.35
 zipp==3.17.0
