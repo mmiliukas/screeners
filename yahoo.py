@@ -125,6 +125,16 @@ async def main(username: str, password: str, cookies: str, target: str, urls: Li
             result_from_url = await scrape(page, url)
             result_from_url.to_csv(a_csv_file_name(target), index=False)
 
+def retry(times: int):
+    def try_fn(fn):
+        for _ in range(times):
+            try:
+                return fn()
+            except Exception as e:
+                if _ + 1 < times: continue
+                else: raise e
+    return try_fn
+
 if __name__ == '__main__':
     username = sys.argv[1]
     password = sys.argv[2]
@@ -133,10 +143,4 @@ if __name__ == '__main__':
 
     urls = sys.argv[5:]
 
-    try:
-        asyncio.run(main(username, password, cookies, target, urls))
-    except Exception:
-        try:
-            asyncio.run(main(username, password, cookies, target, urls))
-        except Exception:
-            asyncio.run(main(username, password, cookies, target, urls))
+    retry(3)(lambda: asyncio.run(main(username, password, cookies, target, urls)))

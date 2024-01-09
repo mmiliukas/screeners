@@ -43,4 +43,3 @@ if __name__ == '__main__':
 
     with open('./all-tickers.json', 'w') as f:
         f.write(json.dumps(list(map(ticker_summary, tickers_info))))
-
