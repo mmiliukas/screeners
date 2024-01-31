@@ -1,4 +1,5 @@
 import json
+import os
 import pandas as pd
 import yfinance as yf
 
@@ -36,11 +37,20 @@ if __name__ == '__main__':
 
     for ticker in tickers:
         path = './tickers/' + ticker + '.json'
-        result = yf.Ticker(ticker)
-        tickers_info.append(result.info or {})
 
-        with open(path, 'w') as f:
-            f.write(json.dumps([result.info or {}]))
+        if os.path.exists(path):
+            print(f'ticker already fetched, reusing {path}...')
+
+            with open(path, 'r') as f:
+                result = json.load(f)
+                tickers_info.append(result)
+        else:
+            print(f'fetching ticker, {ticker}...')
+
+            result = yf.Ticker(ticker)
+            with open(path, 'w') as f:
+                f.write(json.dumps([result.info or {}]))
+                tickers_info.append(result.info or {})
 
     with open('./all-tickers.json', 'w') as f:
         f.write(json.dumps(list(map(ticker_summary, tickers_info))))
