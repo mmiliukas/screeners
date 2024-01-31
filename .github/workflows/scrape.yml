@@ -29,6 +29,11 @@ jobs:
           USERNAME: ${{ secrets.username }}
           PASSWORD: ${{ secrets.password }}
           COOKIES: ${{ secrets.cookies }}
+      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES" "./runs-random/" "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
+        env:
+          USERNAME: ${{ secrets.username }}
+          PASSWORD: ${{ secrets.password }}
+          COOKIES: ${{ secrets.cookies }}
       - run: python yahoo-aggregate.py
       - run: python yahoo-info.py
       - run: |
