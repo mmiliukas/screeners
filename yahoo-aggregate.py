@@ -1,11 +1,12 @@
 import glob
 import pandas as pd
 
-if __name__ == '__main__':
-    all_gainers = glob.glob('./runs/*.csv')
-    df = pd.concat((pd.read_csv(file) for file in all_gainers), ignore_index=True)
-    df.to_csv('./all.csv', index=False)
+def aggregate(source: str, target: str):
+    all = glob.glob(source)
+    df = pd.concat((pd.read_csv(file) for file in all), ignore_index=True)
+    df.to_csv(target, index=False)
 
-    all_loosers = glob.glob('./runs-loosers/*.csv')
-    df = pd.concat((pd.read_csv(file) for file in all_loosers), ignore_index=True)
-    df.to_csv('./all-loosers.csv', index=False)
+if __name__ == '__main__':
+    aggregate('./runs/*.csv', './all.csv')
+    aggregate('./runs-loosers/*.csv', './all-loosers.csv')
+    aggregate('./runs-random/*.csv', './all-random.csv')
