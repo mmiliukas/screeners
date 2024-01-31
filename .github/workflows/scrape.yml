@@ -41,9 +41,11 @@ jobs:
           git config user.email github-actions@github.com
           git add ./runs/
           git add ./runs-loosers/
+          git add ./runs-random/
           git add ./tickers/
           git add ./all.csv
           git add ./all-loosers.csv
+          git add ./all-random.csv
           git add ./all-tickers.json
           git commit -m "daily run"
           git push
