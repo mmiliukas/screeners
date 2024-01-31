@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
             with open(path, 'r') as f:
                 result = json.load(f)
-                tickers_info.append(result)
+                tickers_info.append(result[0])
         else:
             print(f'fetching ticker, {ticker}...')
 
