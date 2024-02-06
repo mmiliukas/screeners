@@ -47,5 +47,6 @@ jobs:
           git add ./all-loosers.csv
           git add ./all-random.csv
           git add ./all-tickers.json
+          git add ./all-combined.csv
           git commit -m "daily run"
           git push
