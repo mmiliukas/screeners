@@ -92,6 +92,7 @@ async def scrape(page: Page, url: str):
         html = '' if not table else await table.inner_html()
 
         data = pandas.read_html(StringIO(html), converters=converters)[0][columns] # type: ignore
+        data.dropna(inplace=True)
         data["Date"] = date
 
         results.append(data)
