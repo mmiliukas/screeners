@@ -1,56 +1,30 @@
+import yaml
 import json
 import os
+import glob
 import pandas as pd
 import yfinance as yf
 
-def ticker_summary(ticker):
-    return {
-        'volume': ticker.get('volume') or 0,
-        'regularMarketVolume': ticker.get('regularMarketVolume') or 0,
-        'averageVolume': ticker.get('averageVolume') or 0,
-        'averageVolume10days': ticker.get('averageVolume10days') or 0,
-        'averageDailyVolume10Day': ticker.get('averageDailyVolume10Day') or 0,
-        'marketCap': ticker.get('marketCap') or 0,
-        'fiftyTwoWeekLow': ticker.get('fiftyTwoWeekLow') or 0,
-        'fiftyTwoWeekHigh': ticker.get('fiftyTwoWeekHigh') or 0,
-        'fiftyDayAverage': ticker.get('fiftyDayAverage') or 0,
-        'industry': ticker.get('industry') or '',
-        'industryKey': ticker.get('industryKey') or '',
-        'industryDisp': ticker.get('industryDisp') or '',
-        'sector': ticker.get('sector') or '',
-        'sectorKey': ticker.get('sectorKey') or '',
-        'sectorDisp': ticker.get('sectorDisp') or '',
-        'city': ticker.get('city') or '',
-        'country': ticker.get('country') or '',
-        'symbol': ticker.get('symbol') or '',
-    }
-
 if __name__ == '__main__':
-    all_gainers = pd.read_csv('./all.csv')
-    all_loosers = pd.read_csv('./all-loosers.csv')
-    all_random = pd.read_csv('./all-random.csv')
+  with open('yahoo.yml', 'r') as file:
+    config = yaml.safe_load(file)
 
-    df = pd.concat([all_gainers, all_loosers, all_random])
+  targets = [screener['target'] for screener in config['screeners']]
 
-    tickers = list(df['Symbol'].unique())
-    tickers_info = []
+  runs = []
+  for target in targets:
+    runs.extend(glob.glob(f'{target}/*.csv'))
 
-    for ticker in tickers:
-        path = './tickers/' + ticker + '.json'
+  df = pd.concat([pd.read_csv(csv) for csv in runs])
 
-        if os.path.exists(path):
-            print(f'ticker already fetched, reusing {path}...')
+  tickers = list(df['Symbol'].unique())
 
-            with open(path, 'r') as f:
-                result = json.load(f)
-                tickers_info.append(result[0])
-        else:
-            print(f'fetching ticker, {ticker}...')
+  for ticker in tickers:
+    path = config['tickers']['target'] + ticker + '.json'
 
-            result = yf.Ticker(ticker)
-            with open(path, 'w') as f:
-                f.write(json.dumps([result.info or {}]))
-                tickers_info.append(result.info or {})
+    if not os.path.exists(path):
+      print(f'fetching ticker, {ticker}...')
 
-    with open('./all-tickers.json', 'w') as f:
-        f.write(json.dumps(list(map(ticker_summary, tickers_info))))
+      result = yf.Ticker(ticker)
+      with open(path, 'w') as f:
+        f.write(json.dumps([result.info or {}]))

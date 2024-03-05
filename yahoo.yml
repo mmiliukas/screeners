@@ -1,3 +1,7 @@
+tickers:
+
+  target: ./tickers/
+
 screeners:
 
   - name: Winners
