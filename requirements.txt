@@ -9,7 +9,7 @@ frozendict==2.4.0
 greenlet==3.0.3
 html5lib==1.1
 idna==3.6
-importlib-resources==6.1.2
+importlib_resources==6.1.2
 kiwisolver==1.4.5
 lxml==5.1.0
 matplotlib==3.8.3
