@@ -35,6 +35,12 @@ VXLLF,Vaxil Bio Ltd.,0.0149,0.0081,119.12,12900,19109,2056000,2024-01-04T06:18:3
 INNI,"Innovaro, Inc.",0.0177,0.0034,23.78,16250,14960,400283,2024-01-04T06:18:30.511310,Winners,Financial Services,Shell Companies,XLF
 ECDP,Echo Defense Projects Inc.,0.34,0.0695,25.68,28518,31280,49026,2024-01-04T06:18:30.511310,Winners,Real Estate,Real Estate - Diversified,XLRE
 RNGE,"Range Impact, Inc.",0.4,0.0725,22.14,140413,21175,35876000,2024-01-04T06:18:30.511310,Winners,Basic Materials,Other Industrial Metals & Mining,XLB
+BRGC,BrightRock Gold Corp.,0.38,0.09,31.03,137127,42656,125589000,2024-03-06T21:28:51.188053,Winners,Basic Materials,Other Precious Metals & Mining,XLB
+LGCFF,Lavras Gold Corp.,0.7757,0.1432,22.64,16500,11181,39899000,2024-03-06T21:28:51.188053,Winners,Basic Materials,Gold,XLB
+CRYBF,Cryptoblox Technologies Inc.,0.4,0.07,21.21,221265,183198,26979000,2024-03-06T21:28:51.188053,Winners,Technology,Software - Infrastructure,XLK
+IPSI,"Innovative Payment Solutions, Inc.",0.2139,0.0439,25.82,100,15020,2849000,2024-03-06T21:28:51.188053,Winners,Technology,Software - Infrastructure,XLK
+ANICF,Anonymous Intelligence Company Inc.,0.0115,0.0025,27.78,411302,155051,151897,2024-03-06T21:28:51.188053,Winners,Technology,Software - Application,XLK
+OBSEF,ObsEva SA,0.02,0.0075,60.0,25393,24682,0,2024-03-06T21:28:51.188053,Winners,,,
 RSCI,"Redwood Scientific Technologies, Inc.",0.7,0.21,42.86,34000,10242,142924000,2024-02-21T06:17:21.496119,Winners,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
 GRUSF,Grown Rogue International Inc.,0.58,0.1003,20.91,159198,137500,99083000,2024-02-21T06:17:21.496119,Winners,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
 EDEYF,Eden Innovations Ltd,0.0185,0.0165,825.0,58509,31433,68048000,2024-02-21T06:17:21.496119,Winners,Industrials,Specialty Industrial Machinery,XLI
@@ -100,6 +106,28 @@ ARBK,Argo Blockchain plc,3.78,0.43,12.84,2239000,662903,218686000,2024-01-04T06:
 MEEC,Midwest Energy Emissions Corp.,1.07,0.1,10.31,241239,337691,100921000,2024-01-04T06:18:27.649562,Winners,Industrials,Pollution & Treatment Controls,XLI
 ZMMPY,Zamp S.A.,10.0,2.0,25.0,100,221157,0,2024-01-04T06:18:27.649562,Winners,,,
 RNWWW,ReNew Energy Global Plc,1.12,-0.02,-1.75,577,51467,0,2024-01-04T06:18:27.649562,Winners,Utilities,Utilities - Renewable,XLU
+FNMAI,Federal National Mortgage Association,3.31,0.33,11.07,9280,89457,4565000000,2024-03-06T21:28:44.562703,Winners,Financial Services,Mortgage Finance,XLF
+FMCKM,Federal Home Loan Mortgage Corporation,3.38,0.46,15.75,10800,176143,2719000000,2024-03-06T21:28:44.562703,Winners,Financial Services,Mortgage Finance,XLF
+CIFR,Cipher Mining Inc.,3.675,0.825,28.95,13254000,9988000,1090000000,2024-03-06T21:28:44.562703,Winners,Financial Services,Capital Markets,XLF
+BLND,"Blend Labs, Inc.",3.035,0.395,14.96,3499000,1549000,753284000,2024-03-06T21:28:44.562703,Winners,Technology,Software - Application,XLK
+RGTI,"Rigetti Computing, Inc.",1.7875,0.2175,13.85,5596000,5053000,262132000,2024-03-06T21:28:44.562703,Winners,Technology,Computer Hardware,XLK
+QBTS,D-Wave Quantum Inc.,1.58,0.22,16.18,5461000,3182000,252686000,2024-03-06T21:28:44.562703,Winners,Technology,Computer Hardware,XLK
+BCHG,Grayscale Bitcoin Cash Trust,6.5,1.28,24.52,716408,530621,206541000,2024-03-06T21:28:44.562703,Winners,,,
+CXDO,"Crexendo, Inc.",6.16,0.8,14.93,768660,260466,160373000,2024-03-06T21:28:44.562703,Winners,Communication Services,Telecom Services,XLC
+AHG,Akso Health Group,1.436,0.206,16.75,50832,179090,153406000,2024-03-06T21:28:44.562703,Winners,Healthcare,Medical Distribution,XLV
+VINC,"Vincerx Pharma, Inc.",6.76,1.22,22.15,1786000,931818,144426000,2024-03-06T21:28:44.562703,Winners,Healthcare,Biotechnology,XLV
+BYSI,BeyondSpring Inc.,3.5301,0.6301,21.73,2620000,119970,137729000,2024-03-06T21:28:44.562703,Winners,Healthcare,Biotechnology,XLV
+DTSRF,Ether Capital Corporation,3.088,0.338,12.29,3457,23000,109741000,2024-03-06T21:28:44.562703,Winners,Financial Services,Asset Management,XLF
+GSIT,"GSI Technology, Inc.",3.9873,0.4173,11.69,450930,419500,100859000,2024-03-06T21:28:44.562703,Winners,Technology,Semiconductors,XLK
+PSRHF,PULSAR HELIUM INC,1.01,0.2103,26.3,437473,93688,93927000,2024-03-06T21:28:44.562703,Winners,Basic Materials,Other Industrial Metals & Mining,XLB
+FDMIF,Founders Metals Inc.,1.4,0.13,10.24,17055,28849,82489000,2024-03-06T21:28:44.562703,Winners,Basic Materials,Gold,XLB
+NGLD,Nevada Canyon Gold Corp.,3.25,0.55,20.37,6949,15886,80015000,2024-03-06T21:28:44.562703,Winners,Basic Materials,Gold,XLB
+TPST,"Tempest Therapeutics, Inc.",3.6699,0.4999,15.77,936608,902263,70636000,2024-03-06T21:28:44.562703,Winners,Healthcare,Biotechnology,XLV
+SWVL,Swvl Holdings Corp.,5.5,0.53,10.66,43033,198580,37353000,2024-03-06T21:28:44.562703,Winners,Technology,Software - Application,XLK
+CBMJ,Conservative Broadcast Media & Journalism Inc.,1.77,0.18,11.32,187646,94452,31182000,2024-03-06T21:28:44.562703,Winners,Industrials,Specialty Business Services,XLI
+MINM,"Minim, Inc.",6.15,0.58,10.41,319091,3754000,17767000,2024-03-06T21:28:44.562703,Winners,Technology,Communication Equipment,XLK
+ZCSH,Grayscale Zcash Trust (ZEC),6.49,1.19,22.41,61156,46840,0,2024-03-06T21:28:44.562703,Winners,,,
+HZEN,Grayscale Horizen Trust (ZEN),6.97,1.17,20.26,67182,49478,0,2024-03-06T21:28:44.562703,Winners,,,
 ARRNF,American Rare Earths Limited,0.2866,0.0716,33.3,9559000,953780,127947000,2024-02-18T17:37:23.548476,Winners,Basic Materials,Other Industrial Metals & Mining,XLB
 HERB,YaSheng Group,0.147,0.059,67.05,860110,33899,34325000,2024-02-18T17:37:23.548476,Winners,Consumer Defensive,Farm Products,XLP
 ADXS,"Ayala Pharmaceuticals, Inc.",0.7289,0.1279,21.28,23261,21745,31039000,2024-02-18T17:37:23.548476,Winners,Healthcare,Biotechnology,XLV
@@ -1508,6 +1536,11 @@ CBMJ,Conservative Broadcast Media & Journalism Inc.,0.4,0.1575,64.95,162264,5455
 NYWKF,NTG Clarity Networks Inc.,0.0337,0.006,21.66,700,19514,6240000,2024-02-08T06:17:49.738705,Winners,Technology,Software - Application,XLK
 CSOC,Caduceus Software Systems Corp.,0.0219,0.0043,24.43,1120,24533,6060000,2024-02-08T06:17:49.738705,Winners,Consumer Defensive,Packaged Foods,XLP
 CRYBF,Cryptoblox Technologies Inc.,0.05,0.01,25.0,144202,80590,3320000,2024-02-08T06:17:49.738705,Winners,Technology,Software - Infrastructure,XLK
+NYCB-PA,"New York Community Bancorp, Inc.",9.25,-5.2,-35.99,934636,296571,1581000000,2024-03-06T21:29:11.413664,Loosers,Financial Services,Banks - Regional,XLF
+NYCB,"New York Community Bancorp, Inc.",1.86,-1.36,-42.24,41367000,30128000,1343000000,2024-03-06T21:29:11.413664,Loosers,Financial Services,Banks - Regional,XLF
+EVC,Entravision Communications Corporation,1.735,-1.835,-51.4,10582000,268843,177185000,2024-03-06T21:29:11.413664,Loosers,Communication Services,Advertising Agencies,XLC
+ARIZ,Arisz Acquisition Corp.,6.03,-2.22,-26.91,68898,31306,31089000,2024-03-06T21:29:11.413664,Loosers,Financial Services,Shell Companies,XLF
+RETO,"ReTo Eco-Solutions, Inc.",2.0729,-0.5771,-21.78,768936,15424,7763000,2024-03-06T21:29:11.413664,Loosers,Basic Materials,Building Materials,XLB
 FBRKF,FBR Limited,0.0148,-0.0103,-41.0,98000,59070,65509000,2024-02-07T06:17:01.988687,Loosers,Industrials,Farm & Heavy Construction Machinery,XLI
 APLM,"Apollomics, Inc.",0.5813,-0.1479,-20.28,1170000,2092000,52015000,2024-02-07T06:17:01.988687,Loosers,Healthcare,Biotechnology,XLV
 NSGP,"NewStream Energy Technologies Group, Inc.",0.091,-0.049,-35.0,55768,10944,33341000,2024-02-07T06:17:01.988687,Loosers,Industrials,Specialty Industrial Machinery,XLI
@@ -3503,6 +3536,35 @@ WNW,Meiwu Technology Company Limited,1.21,-0.6294,-34.22,780956,202315,3480000,2
 REVB,"Revelation Biosciences, Inc.",3.18,-5.62,-63.86,2531000,138649,667517,2024-02-02T06:16:50.683455,Loosers,Healthcare,Biotechnology,XLV
 NEUE,"NeueHealth, Inc.",6.25,-4.99,-44.4,200129,44265,0,2024-02-02T06:16:50.683455,Loosers,Healthcare,Healthcare Plans,XLV
 TRUG,"Trugolf, Inc.",1.33,-1.63,-55.07,778694,13981,15728000,2024-02-02T06:16:50.683455,Loosers,,,
+ARAFF,Arafura Rare Earths Limited,0.08,-0.026,-24.53,18912,56638,187205000,2024-03-06T21:29:18.200773,Loosers,Basic Materials,Other Industrial Metals & Mining,XLB
+NVAAF,Nova Minerals Limited,0.16,-0.09,-36.0,35534,10978,33742000,2024-03-06T21:29:18.200773,Loosers,Basic Materials,Other Industrial Metals & Mining,XLB
+NANX,Nanophase Technologies Corporation,0.5399,-0.2101,-28.01,24360,11610,26794000,2024-03-06T21:29:18.200773,Loosers,Basic Materials,Specialty Chemicals,XLB
+ZHCLF,Zenith Capital Corp.,0.12,-0.04,-25.0,17233,22203,17240000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Biotechnology,XLV
+VVCVF,VVC Exploration Corporation,0.023,-0.0062,-21.23,607578,86103,13292000,2024-03-06T21:29:18.200773,Loosers,Energy,Oil & Gas E&P,XLE
+BRCNF,Burcon NutraScience Corporation,0.1001,-0.0699,-41.12,12812,13081,12173000,2024-03-06T21:29:18.200773,Loosers,Consumer Defensive,Packaged Foods,XLP
+MLMLF,McFarlane Lake Mining Limited,0.0467,-0.0123,-20.85,7000,52793,9279000,2024-03-06T21:29:18.200773,Loosers,Basic Materials,Gold,XLB
+HSCS,"Heart Test Laboratories, Inc.",0.129,-0.0501,-27.97,4070000,3650000,8206000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Medical Devices,XLV
+REPO,National Asset Recovery Corp.,0.035,-0.0099,-22.05,34944,19918,5780000,2024-03-06T21:29:18.200773,Loosers,Industrials,Specialty Business Services,XLI
+WEWKQ,WeWork Inc.,0.0951,-0.0549,-36.6,4904,64608,5017000,2024-03-06T21:29:18.200773,Loosers,Real Estate,Real Estate Services,XLRE
+JAGX,"Jaguar Health, Inc.",0.0885,-0.0376,-29.82,47366000,27057000,4492000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Biotechnology,XLV
+SBFM,"Sunshine Biopharma, Inc.",0.0684,-0.0152,-18.18,37817000,13836000,3725000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
+TIPS,"Tianrong Internet Products and Services, Inc.",0.038,-0.011,-22.45,135633,23891,3218000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Medical Devices,XLV
+GMVDF,G Medical Innovations Holdings Ltd,0.01,-0.0038,-27.8,12223,48415,2599000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Medical Instruments & Supplies,XLV
+ELIQ,"Electriq Power Holdings, Inc.",0.0578,-0.0222,-27.81,1570,137135,2410000,2024-03-06T21:29:18.200773,Loosers,Utilities,Utilities - Renewable,XLU
+HGYN,Hong Yuan Holding Group,0.023,-0.006,-20.69,1668,31127,1717000,2024-03-06T21:29:18.200773,Loosers,Financial Services,Shell Companies,XLF
+NDEV,Novus Acquisition & Development Corp.,0.0157,-0.0078,-33.05,3900,17656,1693000,2024-03-06T21:29:18.200773,Loosers,Financial Services,Insurance - Diversified,XLF
+CMRA,"Comera Life Sciences Holdings, Inc.",0.0339,-0.011,-24.5,1593,26030,1042000,2024-03-06T21:29:18.200773,Loosers,Healthcare,Biotechnology,XLV
+NEPT,Neptune Wellness Solutions Inc.,0.1901,-0.183,-49.05,1837000,363305,861540,2024-03-06T21:29:18.200773,Loosers,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
+BLIS,"Treasure & Shipwreck Recovery, Inc.",0.0126,-0.0052,-29.21,423127,382547,690527,2024-03-06T21:29:18.200773,Loosers,Industrials,Specialty Business Services,XLI
+GIGA,Giga-tronics Incorporated,0.113,-0.032,-22.07,3100,12413,670270,2024-03-06T21:29:18.200773,Loosers,Technology,Scientific & Technical Instruments,XLK
+AESO,"Atlantic Energy Solutions, Inc.",0.0125,-0.0042,-25.15,325,67168,594856,2024-03-06T21:29:18.200773,Loosers,Financial Services,Shell Companies,XLF
+PLFLF,PlantFuel Life Inc.,0.017,-0.0051,-23.3,12000,17624,304574,2024-03-06T21:29:18.200773,Loosers,Consumer Defensive,Packaged Foods,XLP
+FLES,"Auto Parts 4Less Group, Inc.",0.0246,-0.0066,-21.07,4520000,402065,217816,2024-03-06T21:29:18.200773,Loosers,Consumer Cyclical,Auto Parts,XLY
+NOGNQ,"Nogin, Inc.",0.0139,-0.006,-30.07,1364,527028,157087,2024-03-06T21:29:18.200773,Loosers,Technology,Software - Application,XLK
+IDGR,Ideal Group of Companies Inc.,0.0395,-0.0105,-21.0,2673,17460,0,2024-03-06T21:29:18.200773,Loosers,,,
+POLC,Polished.com Inc.,0.0724,-0.1276,-63.8,37733,3300000,0,2024-03-06T21:29:18.200773,Loosers,,,
+ARVLF,Arrival,0.21,-0.09,-30.0,17984,167408,0,2024-03-06T21:29:18.200773,Loosers,Consumer Cyclical,Auto Manufacturers,XLY
+STMHD,"Stem Holdings, Inc.",0.1401,-0.2999,-68.16,2620,21770,0,2024-03-06T21:29:18.200773,Loosers,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
 LGST,Semper Paratus Acquisition Corporation,5.55,-1.59,-22.27,37591,46033,82892000,2024-01-30T06:17:48.135060,Loosers,Financial Services,Shell Companies,XLF
 BTOG,Bit Origin Ltd,3.77,-0.97,-20.46,1253000,125725,20859000,2024-01-30T06:17:48.135060,Loosers,Financial Services,Capital Markets,XLF
 BREA,Brera Holdings PLC,1.3101,-0.4599,-25.98,261619,99010,15191000,2024-01-30T06:17:48.135060,Loosers,Communication Services,Entertainment,XLC
@@ -4629,6 +4691,89 @@ WETG,"WeTrade Group, Inc.",3.61,-0.28,-7.2,47598,86540,9477000,2024-02-15T06:17:
 LBRG,"Ladybug Resource Group, Inc.",0.0187,0.0031,19.94,110110,228341,4248000,2024-02-15T06:17:49.160757,Random,Consumer Defensive,Tobacco,XLP
 RVBR,Markray Corp.,0.038,0.0,0.0,72925,20468,1911000,2024-02-15T06:17:49.160757,Random,Consumer Defensive,Beverages - Non-Alcoholic,XLP
 JADA,Jade Art Group Inc.,0.0148,-0.0012,-7.5,9824,31108,1184000,2024-02-15T06:17:49.160757,Random,Financial Services,Shell Companies,XLF
+RCRUY,"Recruit Holdings Co., Ltd.",8.34,0.05,0.6,106216,228688,65330000000,2024-03-06T21:29:43.300979,Random,Communication Services,Internet Content & Information,XLC
+UGP,Ultrapar Participações S.A.,5.93,0.06,0.94,968562,1369000,6490000000,2024-03-06T21:29:43.300979,Random,Energy,Oil & Gas Refining & Marketing,XLE
+MAKSY,Marks and Spencer Group plc,6.16,0.15,2.49,13553,29743,6254000000,2024-03-06T21:29:43.300979,Random,Consumer Cyclical,Department Stores,XLY
+HMY,Harmony Gold Mining Company Limited,7.03,0.14,2.11,6068000,4748000,4355000000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+AUR,"Aurora Innovation, Inc.",2.28,-0.01,-0.44,3886000,6911000,3500000000,2024-03-06T21:29:43.300979,Random,Technology,Information Technology Services,XLK
+UEC,Uranium Energy Corp.,6.54,0.04,0.62,3062000,8801000,2570000000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+ATHOF,Athabasca Oil Corporation,3.872,0.1122,2.98,88227,249850,2195000000,2024-03-06T21:29:43.300979,Random,Energy,Oil & Gas E&P,XLE
+OPEN,Opendoor Technologies Inc.,2.985,0.205,7.37,14423000,21521000,2029000000,2024-03-06T21:29:43.300979,Random,Real Estate,Real Estate Services,XLRE
+IONQ,"IonQ, Inc.",9.8,0.43,4.59,7621000,7324000,2041000000,2024-03-06T21:29:43.300979,Random,Technology,Computer Hardware,XLK
+YLLXF,Yellow Cake plc,8.12,0.07,0.93,10563,20085,1762000000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+HOEGF,Höegh Autoliners ASA,9.2,-1.01,-9.89,81893,18355,1766000000,2024-03-06T21:29:43.300979,Random,Industrials,Marine Shipping,XLI
+AWEVF,Alphawave IP Group plc,2.365,-0.005,-0.21,40751,17888,1718000000,2024-03-06T21:29:43.300979,Random,Technology,Semiconductors,XLK
+DNN,Denison Mines Corp.,1.85,0.05,2.78,5926000,13969000,1659000000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+VTEX,VTEX,8.93,0.61,7.4,1170000,382258,1642000000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+ZJYL,Jin Medical International Ltd.,9.48,0.58,6.46,1074000,1281000,1483000000,2024-03-06T21:29:43.300979,Random,Healthcare,Medical Instruments & Supplies,XLV
+ADMA,"ADMA Biologics, Inc.",6.01,0.21,3.71,2922000,2380000,1373000000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+AUTL,Autolus Therapeutics plc,5.73,0.03,0.53,349389,1701000,1331000000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+MDXG,"MiMedx Group, Inc.",8.07,0.07,0.82,328372,715470,1185000000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+WDOFF,Wesdome Gold Mines Ltd.,7.35,0.19,2.65,103447,135836,1095000000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+CIFR,Cipher Mining Inc.,3.685,0.835,29.3,8209000,9988000,1093000000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+CXBMF,Calibre Mining Corp.,1.29,0.04,3.2,182156,345086,927257000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+BITF,Bitfarms Ltd.,2.64,0.15,6.02,24546000,31315000,850418000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+OABI,"OmniAb, Inc.",5.88,0.39,7.1,240178,510910,683850000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+DYLLF,Deep Yellow Limited,0.8375,0.0045,0.54,61549,233390,647838000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+SNWGF,Snowline Gold Corp.,4.165,0.02,0.48,28280,65310,611826000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+IREN,Iris Energy Limited,5.51,0.41,8.15,5601000,7956000,572702000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+QD,Qudian Inc.,2.335,0.015,0.65,340524,974921,525139000,2024-03-06T21:29:43.300979,Random,Financial Services,Credit Services,XLF
+REAX,The Real Brokerage Inc.,2.85,-0.02,-0.7,241226,325666,518130000,2024-03-06T21:29:43.300979,Random,Real Estate,Real Estate Services,XLRE
+CATX,"Perspective Therapeutics, Inc.",1.035,0.015,1.47,1015000,2178000,511906000,2024-03-06T21:29:43.300979,Random,Healthcare,Medical Devices,XLV
+TALK,"Talkspace, Inc.",3.055,0.105,3.56,1175000,1001000,510475000,2024-03-06T21:29:43.300979,Random,Healthcare,Health Information Services,XLV
+CURV,Torrid Holdings Inc.,4.775,0.045,0.95,24050,187281,497092000,2024-03-06T21:29:43.300979,Random,Consumer Cyclical,Apparel Retail,XLY
+YRD,Yiren Digital Ltd.,5.12,0.06,1.2,39050,143688,453752000,2024-03-06T21:29:43.300979,Random,Financial Services,Credit Services,XLF
+ACIU,AC Immune SA,3.96,0.01,0.25,42236,155233,391254000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+DAKT,"Daktronics, Inc.",8.77,-0.02,-0.22,291509,646025,388383000,2024-03-06T21:29:43.300979,Random,Technology,Electronic Components,XLK
+JFIN,Jiayin Group Inc.,6.11,0.38,6.64,97925,67690,328032000,2024-03-06T21:29:43.300979,Random,Communication Services,Internet Content & Information,XLC
+BNNLF,Bannerman Energy Ltd,2.0,0.01,0.5,35607,66521,305856000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+DRSHF,DroneShield Limited,0.46,0.02,4.55,30114,28420,285257000,2024-03-06T21:29:43.300979,Random,Technology,Computer Hardware,XLK
+ADTH,"AdTheorent Holding Company, Inc.",3.055,0.035,1.16,71557,231493,269579000,2024-03-06T21:29:43.300979,Random,Communication Services,Advertising Agencies,XLC
+BTBT,"Bit Digital, Inc.",2.45,0.075,3.16,7442000,9767000,261910000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+MG,"Mistras Group, Inc.",8.33,0.07,0.85,9513,77378,254878000,2024-03-06T21:29:43.300979,Random,Industrials,Security & Protection Services,XLI
+GAU,Galiano Gold Inc.,1.1198,-0.0002,-0.02,638793,470040,251925000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+KROEF,KR1 Plc,1.37,0.0,0.0,38668,10448,242997000,2024-03-06T21:29:43.300979,Random,Financial Services,Asset Management,XLF
+ORN,"Orion Group Holdings, Inc.",7.28,0.32,4.61,182626,124923,236991000,2024-03-06T21:29:43.300979,Random,Industrials,Engineering & Construction,XLI
+XBIT,XBiotech Inc.,6.44,0.15,2.37,32271,36513,195993000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+MAMA,"Mama's Creations, Inc.",5.2,0.06,1.17,246271,417623,194732000,2024-03-06T21:29:43.300979,Random,Consumer Defensive,Packaged Foods,XLP
+KRKNF,Kraken Robotics Inc.,0.7742,-0.0256,-3.2,98226,117483,160200000,2024-03-06T21:29:43.300979,Random,Technology,Scientific & Technical Instruments,XLK
+ULBI,Ultralife Corporation,9.72,0.34,3.57,26088,56981,158744000,2024-03-06T21:29:43.300979,Random,Industrials,Electrical Equipment & Parts,XLI
+VIRC,Virco Mfg. Corporation,9.7,-0.24,-2.45,110010,284926,158512000,2024-03-06T21:29:43.300979,Random,Consumer Cyclical,"Furnishings, Fixtures & Appliances",XLY
+ESOA,Energy Services of America Corporation,8.32,0.49,6.26,133195,160373,138202000,2024-03-06T21:29:43.300979,Random,Industrials,Engineering & Construction,XLI
+BRGC,BrightRock Gold Corp.,0.38,0.09,31.03,137127,42656,125589000,2024-03-06T21:29:43.300979,Random,Basic Materials,Other Precious Metals & Mining,XLB
+TZOO,Travelzoo,8.98,0.44,5.15,76149,103483,125467000,2024-03-06T21:29:43.300979,Random,Communication Services,Advertising Agencies,XLC
+FNGR,"FingerMotion, Inc.",2.36,-0.03,-1.26,124064,363380,124007000,2024-03-06T21:29:43.300979,Random,Communication Services,Telecom Services,XLC
+OGNRF,Orogen Royalties Inc.,0.6339,0.0139,2.24,108534,76450,123815000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+DMAC,DiaMedica Therapeutics Inc.,3.1,0.0,0.0,22578,42033,117656000,2024-03-06T21:29:43.300979,Random,Healthcare,Biotechnology,XLV
+CRDL,Cardiol Therapeutics Inc.,1.67,-0.11,-6.18,141655,340941,109805000,2024-03-06T21:29:43.300979,Random,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
+VTSI,"VirTra, Inc.",9.29,0.03,0.32,39341,181120,103070000,2024-03-06T21:29:43.300979,Random,Industrials,Aerospace & Defense,XLI
+IDR,"Idaho Strategic Resources, Inc.",8.3,0.19,2.34,25822,25955,101728000,2024-03-06T21:29:43.300979,Random,Basic Materials,Gold,XLB
+GSIT,"GSI Technology, Inc.",3.9873,0.4173,11.69,450934,419500,100859000,2024-03-06T21:29:43.300979,Random,Technology,Semiconductors,XLK
+MPU,Mega Matrix Corp.,2.69,0.06,2.28,51905,578055,96406000,2024-03-06T21:29:43.300979,Random,Industrials,Rental & Leasing Services,XLI
+IZM,ICZOOM Group Inc.,9.02,0.47,5.5,172246,337866,93539000,2024-03-06T21:29:43.300979,Random,Technology,Electronics & Computer Distribution,XLK
+FEBO,Fenbo Holdings Limited,8.36,0.16,2.0,14739,30008,92006000,2024-03-06T21:29:43.300979,Random,Technology,Consumer Electronics,XLK
+LFVN,LifeVantage Corporation,7.0,0.0,0.0,18376,36338,90080000,2024-03-06T21:29:43.300979,Random,Consumer Defensive,Packaged Foods,XLP
+BMR,Beamr Imaging Ltd.,5.64,-0.4,-6.71,859673,4936000,85030000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+OSSIF,OneSoft Solutions Inc.,0.6383,0.0019,0.29,40600,76705,77892000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+DMGGF,DMG Blockchain Solutions Inc.,0.4374,0.0224,5.39,321169,443765,74721000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+WSTRF,Western Uranium & Vanadium Corp.,1.39,0.04,2.96,24012,86943,74190000,2024-03-06T21:29:43.300979,Random,Energy,Uranium,XLE
+IXHL,Incannex Healthcare Inc.,4.18,0.08,1.95,79258,306181,66337000,2024-03-06T21:29:43.300979,Random,Healthcare,Drug Manufacturers - Specialty & Generic,XLV
+BTTC,Bitech Technologies Corporation,0.1132,0.0042,3.85,25160,133551,54016000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+PPSI,"Pioneer Power Solutions, Inc.",5.11,0.2,4.07,159508,75661,50742000,2024-03-06T21:29:43.300979,Random,Industrials,Electrical Equipment & Parts,XLI
+OPXS,"Optex Systems Holdings, Inc",7.46,0.0,0.03,41920,39640,50921000,2024-03-06T21:29:43.300979,Random,Industrials,Aerospace & Defense,XLI
+PALT,"Paltalk, Inc.",4.62,0.07,1.54,77964,110558,42606000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+IVFH,"Innovative Food Holdings, Inc.",0.85,-0.02,-2.3,70639,67461,41632000,2024-03-06T21:29:43.300979,Random,Consumer Defensive,Food Distribution,XLP
+DTST,Data Storage Corporation,5.55,-0.17,-2.93,157880,71676,38086000,2024-03-06T21:29:43.300979,Random,Technology,Information Technology Services,XLK
+NPPTF,Neptune Digital Assets Corp.,0.2459,0.003,1.24,16246,60376,31276000,2024-03-06T21:29:43.300979,Random,Financial Services,Capital Markets,XLF
+FUST,Fuse Group Holding Inc.,0.42,-0.06,-12.5,113510,86213,27876000,2024-03-06T21:29:43.300979,Random,Basic Materials,Other Industrial Metals & Mining,XLB
+BGLC,BioNexus Gene Lab Corp.,0.845,-0.007,-0.82,262225,1576000,15035000,2024-03-06T21:29:43.300979,Random,Basic Materials,Specialty Chemicals,XLB
+BLFR,BlueFire Equipment Corporation,0.42,-0.0199,-4.52,26368,57863,14258000,2024-03-06T21:29:43.300979,Random,Consumer Cyclical,Apparel Manufacturing,XLY
+RGLG,"UHF Logistics Group, Inc.",0.2,0.024,13.64,15308,14425,11763000,2024-03-06T21:29:43.300979,Random,Financial Services,Shell Companies,XLF
+CANOF,California Nanotechnologies Corp.,0.2651,-0.0159,-5.66,13500,18110,11500000,2024-03-06T21:29:43.300979,Random,Basic Materials,Specialty Chemicals,XLB
+SRCGF,Spruce Ridge Resources Ltd.,0.055,0.0,0.0,23930,25220,12388000,2024-03-06T21:29:43.300979,Random,Basic Materials,Other Industrial Metals & Mining,XLB
+SLGD,Scott's Liquid Gold-Inc.,0.84,0.07,9.09,11078,58235,10925000,2024-03-06T21:29:43.300979,Random,Consumer Defensive,Household & Personal Products,XLP
+WETG,"WeTrade Group, Inc.",3.64,0.06,1.68,47833,97388,9555000,2024-03-06T21:29:43.300979,Random,Technology,Software - Application,XLK
+JADA,Jade Art Group Inc.,0.012,-0.0039,-24.53,11340,33288,959760,2024-03-06T21:29:43.300979,Random,Financial Services,Shell Companies,XLF
 RNECY,Renesas Electronics Corporation,8.15,-0.06,-0.74,179036,161566,29188000000,2024-02-03T06:16:15.151583,Random,Technology,Semiconductors,XLK
 MZDAY,Mazda Motor Corporation,6.02,-0.08,-1.31,163315,125868,7609000000,2024-02-03T06:16:15.151583,Random,Consumer Cyclical,Auto Manufacturers,XLY
 MAKSY,Marks and Spencer Group plc,6.08,-0.07,-1.14,15365,38080,6046000000,2024-02-03T06:16:15.151583,Random,Consumer Cyclical,Department Stores,XLY
