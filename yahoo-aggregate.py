@@ -2,6 +2,10 @@ import yaml
 import glob
 import json
 import pandas as pd
+import yfinance as yf
+
+from datetime import timedelta
+from requests_cache import CachedSession
 
 SECTOR_ETF = {
   'Basic Materials': 'XLB',
@@ -17,10 +21,54 @@ SECTOR_ETF = {
   'Industrials': 'XLI'
 }
 
-if __name__ == '__main__':
-  with open('yahoo.yml', 'r') as file:
-    config = yaml.safe_load(file)
+with open('yahoo.yml', 'r') as file:
+  config = yaml.safe_load(file)
 
+# https://requests-cache.readthedocs.io/en/stable/user_guide.html
+cache_session = CachedSession(config['yfinance']['cache'],
+                              backend='filesystem',
+                              expire_after=timedelta(days=config['yfinance']['days']))
+
+def get_ratios(symbol: str, index: int):
+  ticker = yf.Ticker(symbol, session=cache_session)
+
+  balance_sheet: pd.DataFrame = ticker.get_balance_sheet(freq='quarterly', as_dict=False) # type: ignore
+  if balance_sheet.empty:
+    return pd.Series([0, 0, 0])
+
+  quarter = balance_sheet.columns.to_list()[index]
+
+  total_assets = balance_sheet.loc['TotalAssets'][quarter] if 'TotalAssets' in balance_sheet.index else 0
+  non_current_assets = balance_sheet.loc['TotalNonCurrentAssets'][quarter] if 'TotalNonCurrentAssets' in balance_sheet.index else 0
+
+  current_assets = total_assets - non_current_assets
+
+  a = balance_sheet.loc['TotalLiabilitiesNetMinorityInterest'][quarter] if 'TotalLiabilitiesNetMinorityInterest' in balance_sheet.index else 0
+  b = balance_sheet.loc['TotalNonCurrentLiabilitiesNetMinorityInterest'][quarter] if 'TotalNonCurrentLiabilitiesNetMinorityInterest' in balance_sheet.index else 0
+
+  current_liabilities = a - b
+
+  inventory = balance_sheet.loc['Inventory'][quarter] if 'Inventory' in balance_sheet.index else 0
+  cash_and_cash_equivalents = balance_sheet.loc['CashAndCashEquivalents'][quarter] if 'CashAndCashEquivalents' in balance_sheet.index else 0
+
+  try:
+    current_ratio = current_assets / current_liabilities
+  except:
+    current_ratio = 0
+
+  try:
+    quick_ratio = (current_assets - inventory) / current_liabilities
+  except:
+    quick_ratio = 0
+
+  try:
+    cash_ratio = cash_and_cash_equivalents / current_liabilities
+  except:
+    cash_ratio = 0
+
+  return pd.Series([current_ratio, quick_ratio, cash_ratio])
+
+if __name__ == '__main__':
   json_cache = {}
 
   def read_value_from_json(symbol: str, key: str, default = None):
@@ -64,5 +112,7 @@ if __name__ == '__main__':
   df['FinancialsReturnOnEquity'] = df['Symbol'].apply(lambda x: read_value_from_json(x, 'returnOnEquity', ''))
   df['FinancialsFreeCashflow'] = df['Symbol'].apply(lambda x: read_value_from_json(x, 'freeCashflow', ''))
   df['FinancialsOperatingCashflow'] = df['Symbol'].apply(lambda x: read_value_from_json(x, 'operatingCashflow', ''))
+
+  df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda x: get_ratios(x, 0))
 
   df.to_csv(config['tickers']['target'], index=False)
