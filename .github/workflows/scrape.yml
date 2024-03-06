@@ -19,17 +19,7 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES" "./runs/" "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736" "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
-        env:
-          USERNAME: ${{ secrets.username }}
-          PASSWORD: ${{ secrets.password }}
-          COOKIES: ${{ secrets.cookies }}
-      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES" "./runs-loosers/" "https://finance.yahoo.com/screener/e5b8bbee-e004-46ce-86dc-ea8c422f3ac7" "https://finance.yahoo.com/screener/197f7d16-cd60-4df9-ab7f-fb1867736c98"
-        env:
-          USERNAME: ${{ secrets.username }}
-          PASSWORD: ${{ secrets.password }}
-          COOKIES: ${{ secrets.cookies }}
-      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES" "./runs-random/" "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
+      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES"
         env:
           USERNAME: ${{ secrets.username }}
           PASSWORD: ${{ secrets.password }}
@@ -41,10 +31,6 @@ jobs:
           git config user.email github-actions@github.com
           git add ./runs/
           git add ./tickers/
-          git add ./all.csv
-          git add ./all-loosers.csv
-          git add ./all-random.csv
-          git add ./all-tickers.json
-          git add ./all-combined.csv
+          git add ./tickers.csv
           git commit -m "daily run"
           git push
