@@ -9,7 +9,7 @@ if __name__ == '__main__':
   with open('yahoo.yml', 'r') as file:
     config = yaml.safe_load(file)
 
-  targets = [screener['target'] for screener in config['screeners']]
+  targets = [screener['cache'] for screener in config['screeners']]
 
   runs = []
   for target in targets:
@@ -20,7 +20,7 @@ if __name__ == '__main__':
   tickers = list(df['Symbol'].unique())
 
   for ticker in tickers:
-    path = config['tickers']['target'] + ticker + '.json'
+    path = config['tickers']['cache'] + ticker + '.json'
 
     if not os.path.exists(path):
       print(f'fetching ticker, {ticker}...')

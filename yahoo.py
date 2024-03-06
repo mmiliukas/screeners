@@ -147,7 +147,7 @@ if __name__ == '__main__':
 
   for screener in config['screeners']:
     name = screener['name']
-    target = screener['target']
+    target = screener['cache']
     urls = screener['urls']
 
     retry(3)(lambda: asyncio.run(main(username, password, cookies, target, urls)))

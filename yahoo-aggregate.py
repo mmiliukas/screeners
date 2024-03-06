@@ -1,25 +1,40 @@
+import yaml
 import glob
+import json
 import pandas as pd
 
-def aggregate(source: str, target: str):
-    all = glob.glob(source)
-    df = pd.concat((pd.read_csv(file) for file in all), ignore_index=True)
-    df.to_csv(target, index=False)
-
 if __name__ == '__main__':
-    aggregate('./runs/*.csv', './all.csv')
-    aggregate('./runs-loosers/*.csv', './all-loosers.csv')
-    aggregate('./runs-random/*.csv', './all-random.csv')
+  with open('yahoo.yml', 'r') as file:
+    config = yaml.safe_load(file)
 
+  dfs = []
+  for screener in config['screeners']:
+    csvs = glob.glob(screener['cache'] + '*.csv')
+    df = pd.concat([pd.read_csv(csv) for csv in csvs], ignore_index=True)
+    df['Screener'] = screener['name']
+    dfs.append(df)
 
-    winners = pd.read_csv('./all.csv')
-    winners['Screener'] = 'Winners'
+  df = pd.concat(dfs, ignore_index=True)
 
-    loosers = pd.read_csv('./all-loosers.csv')
-    loosers['Screener'] = 'Loosers'
+  def resolve_sector(symbol):
+    with open(config['tickers']['cache'] + symbol + '.json') as file:
+      ticker = json.load(file)
 
-    random = pd.read_csv('./all-random.csv')
-    random['Screener'] = 'Random'
+    if len(ticker) > 0:
+      return ticker[0]['sector'] if 'sector' in ticker[0] else ''
 
-    all = pd.concat([winners, loosers, random], ignore_index=True)
-    all.to_csv('./all-combined.csv', index=False)
+    return ''
+
+  def resolve_industry(symbol):
+    with open(config['tickers']['cache'] + symbol + '.json') as file:
+      ticker = json.load(file)
+
+    if len(ticker) > 0:
+      return ticker[0]['industry'] if 'industry' in ticker[0] else ''
+
+    return ''
+
+  df['Sector'] = df['Symbol'].apply(lambda x: resolve_sector(x))
+  df['Industry'] = df['Symbol'].apply(lambda x: resolve_industry(x))
+
+  df.to_csv(config['tickers']['target'], index=False)
