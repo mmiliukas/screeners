@@ -3,9 +3,25 @@ import glob
 import json
 import pandas as pd
 
+SECTOR_ETF = {
+  'Basic Materials': 'XLB',
+  'Financial Services': 'XLF',
+  'Consumer Defensive': 'XLP',
+  'Utilities': 'XLU',
+  'Energy': 'XLE',
+  'Technology': 'XLK',
+  'Consumer Cyclical': 'XLY',
+  'Real Estate': 'XLRE',
+  'Healthcare': 'XLV',
+  'Communication Services': 'XLC',
+  'Industrials': 'XLI'
+}
+
 if __name__ == '__main__':
   with open('yahoo.yml', 'r') as file:
     config = yaml.safe_load(file)
+
+  etfs = pd.read_csv('tickers-etf.csv')
 
   dfs = []
   for screener in config['screeners']:
@@ -34,7 +50,11 @@ if __name__ == '__main__':
 
     return ''
 
+  def resolve_etf(sector):
+    return SECTOR_ETF[sector] if sector in SECTOR_ETF else ''
+
   df['Sector'] = df['Symbol'].apply(lambda x: resolve_sector(x))
   df['Industry'] = df['Symbol'].apply(lambda x: resolve_industry(x))
+  df['ETF'] = df['Sector'].apply(lambda x: resolve_etf(x))
 
   df.to_csv(config['tickers']['target'], index=False)
