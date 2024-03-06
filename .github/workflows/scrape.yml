@@ -24,7 +24,7 @@ jobs:
           USERNAME: ${{ secrets.username }}
           PASSWORD: ${{ secrets.password }}
           COOKIES: ${{ secrets.cookies }}
-      - run: python yahoo-info.py
+      - run: python yahoo-tickers.py
       - run: python yahoo-aggregate.py
       - run: |
           git config user.name github-actions
