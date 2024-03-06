@@ -26,12 +26,7 @@ if __name__ == '__main__':
   tickers = list(df['Symbol'].unique())
 
   for i, ticker in enumerate(tickers):
-    print(i, '/', len(tickers))
     path = config['tickers']['cache'] + ticker + '.json'
-
-    #if not os.path.exists(path):
-    #  print(f'fetching ticker, {ticker}...')
-
     result = yf.Ticker(ticker, session=cache_session)
 
     with open(path, 'w') as f:
