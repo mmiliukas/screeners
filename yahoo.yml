@@ -1,3 +1,8 @@
+yfinance:
+
+  cache: .cache-yfinance
+  days: 5
+
 tickers:
 
   cache: ./tickers/

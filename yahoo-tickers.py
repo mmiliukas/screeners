@@ -1,20 +1,19 @@
 import yaml
 import json
-import os
 import glob
 import pandas as pd
 import yfinance as yf
 from datetime import timedelta
 from requests_cache import CachedSession
 
-# https://requests-cache.readthedocs.io/en/stable/user_guide.html
-cache_session = CachedSession('.cache-yfinance',
-                              backend='filesystem',
-                              expire_after=timedelta(days=5))
-
 if __name__ == '__main__':
   with open('yahoo.yml', 'r') as file:
     config = yaml.safe_load(file)
+
+  # https://requests-cache.readthedocs.io/en/stable/user_guide.html
+  cache_session = CachedSession(config['yfinance']['cache'],
+                                backend='filesystem',
+                                expire_after=timedelta(days=config['yfinance']['days']))
 
   targets = [screener['cache'] for screener in config['screeners']]
 
