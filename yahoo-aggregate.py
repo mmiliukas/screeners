@@ -115,4 +115,7 @@ if __name__ == '__main__':
 
   df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda x: get_ratios(x, 0))
 
+  # TODO: store inside a black list
+  df = df[df['FinancialsCurrentRatio'] >= 0.5]
+
   df.to_csv(config['tickers']['target'], index=False)
