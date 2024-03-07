@@ -1,5 +1,3 @@
-import yaml
-
 from datetime import timedelta
 from requests_cache import CachedSession
 
