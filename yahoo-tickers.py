@@ -1,34 +1,28 @@
-import yaml
 import json
 import glob
 import pandas as pd
 import yfinance as yf
 
-from datetime import timedelta
-from requests_cache import CachedSession
+from screeners.config import config
+from screeners.cache import session
 
 if __name__ == '__main__':
-  with open('yahoo.yml', 'r') as file:
-    config = yaml.safe_load(file)
 
-  # https://requests-cache.readthedocs.io/en/stable/user_guide.html
-  cache_session = CachedSession(config['yfinance']['cache'],
-                                backend='filesystem',
-                                expire_after=timedelta(days=config['yfinance']['days']))
+  runs = [screener['cache_name'] for screener in config['screeners']]
 
-  targets = [screener['cache'] for screener in config['screeners']]
+  csvs = []
+  for run in runs: csvs.extend(glob.glob(f'{run}/*.csv'))
 
-  runs = []
-  for target in targets:
-    runs.extend(glob.glob(f'{target}/*.csv'))
+  df = pd.concat([pd.read_csv(csv) for csv in csvs])
 
-  df = pd.concat([pd.read_csv(csv) for csv in runs])
+  for symbol in df['Symbol'].unique():
 
-  tickers = list(df['Symbol'].unique())
+    result = yf.Ticker(symbol, session=session)
 
-  for i, ticker in enumerate(tickers):
-    path = config['tickers']['cache'] + ticker + '.json'
-    result = yf.Ticker(ticker, session=cache_session)
+    ticker_path = config['tickers']['cache_name'] + symbol + '.json'
+    with open(ticker_path, 'w') as file:
+      file.write(json.dumps([result.info or {}]))
 
-    with open(path, 'w') as f:
-      f.write(json.dumps([result.info or {}]))
+    ticker_balance_path = config['tickers']['balance_cache_name'] + symbol + '.csv'
+    with open(ticker_balance_path, 'w') as file:
+      result.get_balance_sheet(freq='quarterly').to_csv(ticker_balance_path, index=True) # type: ignore
