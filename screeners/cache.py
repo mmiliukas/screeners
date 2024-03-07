@@ -1,7 +1,7 @@
 from datetime import timedelta
 from requests_cache import CachedSession
 
-from .config import config
+from screeners.config import config
 
 # https://requests-cache.readthedocs.io/en/stable/user_guide.html
 session = CachedSession(config['yfinance']['cache_name'],

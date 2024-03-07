@@ -1,28 +1,34 @@
 yfinance:
 
-  cache: .cache-yfinance
-  days: 5
+  cache_name: .cache-yfinance
+  backend: filesystem
+  expire_after_days: 5
 
 tickers:
 
-  cache: ./tickers/
-  target: ./tickers.csv
+  cache_name: tickers/
+  target: tickers.csv
+
+scraper:
+
+  retry_times: 3
+  cache_cookies: cookies.json
 
 screeners:
 
   - name: Winners
-    cache: ./runs/winners/
+    cache_name: runs/winners/
     urls:
       - "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736"
       - "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
 
   - name: Loosers
-    cache: ./runs/loosers/
+    cache_name: runs/loosers/
     urls:
       - "https://finance.yahoo.com/screener/e5b8bbee-e004-46ce-86dc-ea8c422f3ac7"
       - "https://finance.yahoo.com/screener/197f7d16-cd60-4df9-ab7f-fb1867736c98"
 
   - name: Random
-    cache: ./runs/random/
+    cache_name: runs/random/
     urls:
       - "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
