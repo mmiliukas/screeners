@@ -9,7 +9,7 @@ from screeners.utils import unique_file_name
 from screeners.scraper.login import login
 from screeners.scraper.scrape import scrape
 
-async def scrape_screener(username: str,password: str, cookies: str, target: str, urls: List[str]):
+async def scrape_screener(username: str, password: str, cookies: str, target: str, urls: List[str]):
 
   async with async_playwright() as playwright:
     browser = await playwright.chromium.launch(headless=True)
