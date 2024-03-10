@@ -4,7 +4,7 @@ import pandas as pd
 
 from screeners.config import config
 from screeners.etfs import resolve_etf
-from screeners.tickers import get_tickers, mark_as_ignored
+from screeners.tickers import get_tickers, mark_as_ignored, get_etfs
 
 def get_ratios(symbol: str, index: int):
   balance_sheet = pd.read_csv(f'./tickers-balance/{symbol}.csv', index_col=0)
@@ -70,9 +70,8 @@ def read_value_from_json(symbol: str, key: str, default = None):
     return default
   return ticker[0][key] if key in ticker[0] else default
 
-if __name__ == '__main__':
-
-  df = pd.DataFrame({ 'Symbol': get_tickers() })
+def enrich_tickers(symbols) -> pd.DataFrame:
+  df = pd.DataFrame({ 'Symbol': symbols })
 
   df['Name'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'longName', pd.NA))
   df['Sector'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'sector', pd.NA))
@@ -98,9 +97,16 @@ if __name__ == '__main__':
 
   df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda _: get_ratios(_, 0))
 
-  filter = df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']
+  return df
 
+if __name__ == '__main__':
+
+  df = enrich_tickers(get_tickers())
+
+  filter = df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']
   (df[filter]).to_csv(config['tickers']['target'], index=False)
+
   mark_as_ignored(df[~filter])
 
-  # TODO: get list of stocks from ETF
+  df = enrich_tickers(get_etfs())
+  df.to_csv('./tickers-etfs.csv', index=False)
