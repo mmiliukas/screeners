@@ -1,3 +1,17 @@
+ETFS = [
+  {"EU": ["CRB","SXPR"], "US": ["XLB"], "Sector": "Basic Materials"},
+  {"EU": ["EXX1","EUNB"], "US": ["XLF"], "Sector": "Financial Services"},
+  {"EU": ["EXV6","SX3E"], "US": ["XLP"], "Sector": "Consumer Defensive"},
+  {"EU": ["EXH9","UTIW"], "US": ["XLU"], "Sector": "Utilities"},
+  {"EU": ["EXH1","STN","OILW"], "US": ["XLE"], "Sector": "Energy"},
+  {"EU": ["EXV3","LYX0GP","DX2T","STK"], "US": ["XLK","VGT"], "Sector": "Technology"},
+  {"EU": ["EXV5","STP","LYPH"], "US": ["XLY"], "Sector": "Consumer Cyclical"},
+  {"EU": ["IPRP","EURE","XDER"], "US": ["XLRE","VNQ"], "Sector": "Real Estate"},
+  {"EU": ["EXV5","HEALTH"], "US": ["XLV"], "Sector": "Healthcare"},
+  {"EU": ["EXI3","EXV4"], "US": ["XLC"], "Sector": "Communication Services"},
+  {"EU": ["EXH1","SI6E"], "US": ["XLI"], "Sector": "Industrials"}
+]
+
 SECTOR_ETF = {
   'Basic Materials': 'XLB',
   'Financial Services': 'XLF',
