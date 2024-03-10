@@ -28,4 +28,4 @@ async def scrape_screener(username: str,password: str, cookies: str, target: str
 
     for url in urls:
       result_from_url = await scrape(page, url)
-      result_from_url.to_csv(target + unique_file_name('.csv'), index=False)
+      result_from_url.to_csv(target + unique_file_name(extension='.csv'), index=False)
