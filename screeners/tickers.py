@@ -3,6 +3,10 @@ import pandas as pd
 
 from screeners.config import config
 
+def get_etfs():
+  df = pd.concat([pd.read_csv(csv) for csv in glob.glob('etfs/*.csv')])
+  return df['Symbol'].unique()
+
 def mark_as_ignored(df: pd.DataFrame):
   a = set(df['Symbol'].unique())
   b = set(pd.read_csv('./tickers-ignored.csv')['Symbol'].unique())

@@ -1,15 +1,14 @@
 import json
-import glob
-import pandas as pd
 import yfinance as yf
 
 from screeners.config import config
 from screeners.cache import session
-from screeners.tickers import get_tickers
+from screeners.tickers import get_tickers, get_etfs
 
 if __name__ == '__main__':
 
   tickers = get_tickers()
+  tickers.extend(get_etfs())
 
   for symbol in tickers:
 
