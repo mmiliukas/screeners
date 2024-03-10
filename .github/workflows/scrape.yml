@@ -37,5 +37,6 @@ jobs:
           git add ./tickers/
           git add ./tickers-balance/
           git add ./tickers.csv
+          git add ./tickers-ignored.csv
           git commit -m "daily run"
           git push

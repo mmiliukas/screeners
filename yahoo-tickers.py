@@ -5,17 +5,13 @@ import yfinance as yf
 
 from screeners.config import config
 from screeners.cache import session
+from screeners.tickers import get_tickers
 
 if __name__ == '__main__':
 
-  runs = [screener['cache_name'] for screener in config['screeners']]
+  tickers = get_tickers()
 
-  csvs = []
-  for run in runs: csvs.extend(glob.glob(f'{run}/*.csv'))
-
-  df = pd.concat([pd.read_csv(csv) for csv in csvs])
-
-  for symbol in df['Symbol'].unique():
+  for symbol in tickers:
 
     result = yf.Ticker(symbol, session=session)
 

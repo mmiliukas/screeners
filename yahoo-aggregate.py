@@ -4,6 +4,7 @@ import pandas as pd
 
 from screeners.config import config
 from screeners.etfs import resolve_etf
+from screeners.tickers import get_tickers, mark_as_ignored
 
 def get_ratios(symbol: str, index: int):
   balance_sheet = pd.read_csv(f'./tickers-balance/{symbol}.csv', index_col=0)
@@ -58,15 +59,6 @@ def enrich_screeners(df: pd.DataFrame):
 
   df['Screener'] = df.apply(enrich_screeners_names, axis=1)
 
-def get_unique_symbols():
-  runs = [screener['cache_name'] for screener in config['screeners']]
-
-  csvs = []
-  for run in runs: csvs.extend(glob.glob(f'{run}/*.csv'))
-
-  df = pd.concat([pd.read_csv(csv) for csv in csvs])
-  return df['Symbol'].unique()
-
 json_cache = {}
 
 def read_value_from_json(symbol: str, key: str, default = None):
@@ -80,7 +72,7 @@ def read_value_from_json(symbol: str, key: str, default = None):
 
 if __name__ == '__main__':
 
-  df = pd.DataFrame({ 'Symbol': get_unique_symbols() })
+  df = pd.DataFrame({ 'Symbol': get_tickers() })
 
   df['Name'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'longName', pd.NA))
   df['Sector'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'sector', pd.NA))
@@ -106,8 +98,10 @@ if __name__ == '__main__':
 
   df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda _: get_ratios(_, 0))
 
-  df = df[df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']]
+  filter = df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']
+
+  (df[filter]).to_csv(config['tickers']['target'], index=False)
+  mark_as_ignored(df[~filter])
 
   # TODO: store inside a black list
   # TODO: get list of stocks from ETF
-  df.to_csv(config['tickers']['target'], index=False)
