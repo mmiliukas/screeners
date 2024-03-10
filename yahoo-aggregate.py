@@ -103,5 +103,4 @@ if __name__ == '__main__':
   (df[filter]).to_csv(config['tickers']['target'], index=False)
   mark_as_ignored(df[~filter])
 
-  # TODO: store inside a black list
   # TODO: get list of stocks from ETF
