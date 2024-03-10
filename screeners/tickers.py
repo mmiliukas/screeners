@@ -4,8 +4,8 @@ import pandas as pd
 from screeners.config import config
 
 def mark_as_ignored(df: pd.DataFrame):
-  a = df['Symbol'].unique()
-  b = pd.read_csv('./tickers-ignored.csv')['Symbol'].unique()
+  a = set(df['Symbol'].unique())
+  b = set(pd.read_csv('./tickers-ignored.csv')['Symbol'].unique())
   c = sorted(list(a | b))
 
   df = pd.DataFrame({ 'Symbol': c })
