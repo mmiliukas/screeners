@@ -9,4 +9,4 @@ if __name__ == '__main__':
   tickers = len(pd.read_csv('./tickers.csv'))
   ignore = len(pd.read_csv('./tickers-ignored.csv'))
 
-  log_to_telegram(f'{tickers} found and {ignore} are ignored', bot_token, channel_id)
+  log_to_telegram(f'DAILY RUN: {tickers} tickers matched and {ignore} ignored', bot_token, channel_id)
