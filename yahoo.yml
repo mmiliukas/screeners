@@ -9,6 +9,8 @@ tickers:
   cache_name: tickers/
   balance_cache_name: tickers-balance/
   target: tickers.csv
+  filter:
+    FinancialsCurrentRatio: 0.5
 
 scraper:
 

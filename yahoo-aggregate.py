@@ -106,5 +106,8 @@ if __name__ == '__main__':
 
   df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda _: get_ratios(_, 0))
 
-  print(df.info())
-  print(df[['Symbol', 'Winners', 'Loosers', 'Random', 'Screener']])
+  df = df[df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']]
+
+  # TODO: store inside a black list
+  # TODO: get list of stocks from ETF
+  df.to_csv(config['tickers']['target'], index=False)
