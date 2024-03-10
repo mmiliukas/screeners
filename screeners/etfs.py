@@ -11,3 +11,6 @@ SECTOR_ETF = {
   'Communication Services': 'XLC',
   'Industrials': 'XLI'
 }
+
+def resolve_etf(sector):
+  return SECTOR_ETF[sector] if sector in SECTOR_ETF else ''
