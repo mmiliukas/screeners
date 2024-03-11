@@ -1,12 +1,15 @@
 import json
 import base64
 import pandas
+import logging
 
 from io import StringIO
 from playwright.async_api import Page, async_playwright
 
 from screeners.scraper.login import login
 from screeners.etfs import ETFS
+
+logger = logging.getLogger(__name__)
 
 async def scrape_holdings(page: Page, symbol: str) -> pandas.DataFrame:
   await page.goto(f'https://finance.yahoo.com/quote/{symbol}/holdings')
@@ -30,5 +33,6 @@ async def scrape_etfs(username: str, password: str, cookies: str):
 
     for etf in ETFS:
       for symbol in etf['US']:
+        logger.info('scraping holdings for %s', symbol)
         df = await scrape_holdings(page, symbol)
         df.to_csv(f'./etfs/{symbol}.csv', index=False)

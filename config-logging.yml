@@ -1,0 +1,28 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  simple_formatter:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+  console_handler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple_formatter
+    stream: ext://sys.stdout
+
+loggers:
+  __main__:
+    level: DEBUG
+    handlers: [console_handler]
+    propagate: no
+
+  screeners:
+    level: DEBUG
+    handlers: [console_handler]
+    propagate: no
+
+root:
+  level: WARNING
+  handlers: [console_handler]

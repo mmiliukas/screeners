@@ -1,5 +1,6 @@
 import json
 import base64
+import logging
 
 from typing import List
 from playwright.async_api import async_playwright
@@ -8,6 +9,8 @@ from screeners.config import config
 from screeners.utils import unique_file_name
 from screeners.scraper.login import login
 from screeners.scraper.scrape import scrape
+
+logger = logging.getLogger(__name__)
 
 async def scrape_screener(username: str, password: str, cookies: str, target: str, urls: List[str]):
 
@@ -27,5 +30,7 @@ async def scrape_screener(username: str, password: str, cookies: str, target: st
       await page.context.add_cookies(json.loads(decoded_cookies))
 
     for url in urls:
+      logging.info('scraping screener %s', url)
+
       result_from_url = await scrape(page, url)
       result_from_url.to_csv(target + unique_file_name(extension='.csv'), index=False)

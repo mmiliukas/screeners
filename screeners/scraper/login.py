@@ -1,8 +1,13 @@
 import asyncio
+import logging
 
 from playwright.async_api import Page
 
+logger = logging.getLogger(__name__)
+
 async def login(page: Page, username: str, password: str):
+  logger.info('logging in into yahoo.com...')
+
   await page.goto("https://login.yahoo.com")
   await page.wait_for_selector("input#login-username")
   await page.type('input#login-username', username, delay=100)
