@@ -1,25 +1,23 @@
 yfinance:
-
   cache_name: .cache-yfinance
   backend: filesystem
   expire_after_days: 5
 
 tickers:
-
   cache_name: tickers/
   balance_cache_name: tickers-balance/
-  etf_cache_name: etfs/
   target: tickers.csv
   filter:
     FinancialsCurrentRatio: 0.5
 
 scraper:
-
-  retry_times: 3
+  retry_times: 2
   cache_cookies: cookies.json
 
-screeners:
+etf:
+  cache_name: etfs/
 
+screeners:
   - name: Winners
     cache_name: runs/winners/
     urls:
@@ -38,5 +36,4 @@ screeners:
       - "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
 
 telegram:
-
   enabled: true

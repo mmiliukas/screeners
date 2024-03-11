@@ -17,6 +17,6 @@ def scrape_etf(page: Page, symbol: str):
   html = '' if not selector else selector.inner_html()
 
   data = pandas.read_html(StringIO(html))
-  etf_cache_name = config['tickers']['etf_cache_name']
+  etf_cache_name = config['etf']['cache_name']
 
   data[0].to_csv(f'{etf_cache_name}{symbol}.csv', index=False)
