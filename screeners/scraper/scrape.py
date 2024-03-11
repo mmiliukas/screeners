@@ -1,17 +1,17 @@
-import asyncio
 import pandas
 
+from time import sleep
 from io import StringIO
 from datetime import datetime
-from playwright.async_api import Page
+from playwright.sync_api import Page
 
 from screeners.utils import a_number, a_string, a_percent, an_integer
 
-async def scrape(page: Page, url: str):
+def scrape(page: Page, url: str):
   results = []
 
-  await page.goto(url)
-  await page.wait_for_selector("#scr-res-table")
+  page.goto(url)
+  page.wait_for_selector("#scr-res-table")
 
   converters = {
     "Symbol": a_string,
@@ -38,8 +38,8 @@ async def scrape(page: Page, url: str):
   date = datetime.now().isoformat()
 
   while True:
-    table = await page.wait_for_selector("#scr-res-table")
-    html = '' if not table else await table.inner_html()
+    table = page.wait_for_selector("#scr-res-table")
+    html = '' if not table else table.inner_html()
 
     data = pandas.read_html(StringIO(html), converters=converters)[0][columns] # type: ignore
     data.dropna(inplace=True)
@@ -47,11 +47,11 @@ async def scrape(page: Page, url: str):
 
     results.append(data)
 
-    button = await page.wait_for_selector('#scr-res-table button span:has-text("Next")')
+    button = page.wait_for_selector('#scr-res-table button span:has-text("Next")')
     if button:
-      is_last = await button.is_disabled()
+      is_last = button.is_disabled()
       if is_last:
         return pandas.concat(results)
       else:
-        await button.click()
-        await asyncio.sleep(2)
+        button.click()
+        sleep(2)
