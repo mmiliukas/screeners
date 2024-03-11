@@ -8,6 +8,7 @@ tickers:
 
   cache_name: tickers/
   balance_cache_name: tickers-balance/
+  etf_cache_name: etfs/
   target: tickers.csv
   filter:
     FinancialsCurrentRatio: 0.5

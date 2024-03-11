@@ -14,6 +14,8 @@ def login(page: Page, username: str, password: str):
   page.click('input#login-signin')
   page.wait_for_selector('input#login-passwd')
   page.type('input#login-passwd', password, delay=120)
+
   sleep(2)
+
   page.click('button#login-signin')
   page.wait_for_selector('#Page.twelve-col')

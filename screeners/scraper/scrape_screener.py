@@ -1,36 +1,63 @@
-import json
-import base64
+import pandas
 import logging
 
-from typing import List
-from playwright.sync_api import sync_playwright
+from time import sleep
+from io import StringIO
+from datetime import datetime
+from playwright.sync_api import Page
 
-from screeners.config import config
-from screeners.utils import unique_file_name
-from screeners.scraper.login import login
-from screeners.scraper.scrape import scrape
+from screeners.utils import a_number, a_string, a_percent, an_integer, unique_file_name
 
 logger = logging.getLogger(__name__)
 
-def scrape_screener(username: str, password: str, cookies: str, target: str, urls: List[str]):
+def scrape_screener(page: Page, url: str, target: str):
+  logger.info(f'scraping screener {url} to {target}...')
 
-  with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=True)
-    context = browser.new_context()
-    page = context.new_page()
+  results = []
 
-    if not cookies:
-      login(page, username, password)
+  page.goto(url)
+  page.wait_for_selector("#scr-res-table")
 
-      new_cookies = page.context.cookies()
-      with open(config['scraper']['cache_cookies'], "w") as f:
-        f.write(json.dumps(new_cookies))
-    else:
-      decoded_cookies = base64.b64decode(cookies)
-      page.context.add_cookies(json.loads(decoded_cookies))
+  converters = {
+    "Symbol": a_string,
+    "Name": a_string,
+    "Price (Intraday)": a_number,
+    "Change": a_number,
+    "% Change": a_percent,
+    "Volume": an_integer,
+    "Avg Vol (3 month)": an_integer,
+    "Market Cap": an_integer
+  }
 
-    for url in urls:
-      logging.info('scraping screener %s', url)
+  columns = [
+    "Symbol",
+    "Name",
+    "Price (Intraday)",
+    "Change",
+    "% Change",
+    "Volume",
+    "Avg Vol (3 month)",
+    "Market Cap"
+  ]
 
-      result_from_url = scrape(page, url)
-      result_from_url.to_csv(target + unique_file_name(extension='.csv'), index=False)
+  date = datetime.now().isoformat()
+
+  while True:
+    table = page.wait_for_selector("#scr-res-table")
+    html = '' if not table else table.inner_html()
+
+    data = pandas.read_html(StringIO(html), converters=converters)[0][columns] # type: ignore
+    data.dropna(inplace=True)
+    data["Date"] = date
+
+    results.append(data)
+
+    button = page.wait_for_selector('#scr-res-table button span:has-text("Next")')
+    if button:
+      is_last = button.is_disabled()
+      if is_last:
+        pandas.concat(results).to_csv(target + unique_file_name(extension='.csv'), index=False)
+        return
+      else:
+        button.click()
+        sleep(2)
