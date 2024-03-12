@@ -1,3 +1,4 @@
+import os
 import pandas
 import logging
 
@@ -56,6 +57,9 @@ def scrape_screener(page: Page, url: str, target: str):
     if button:
       is_last = button.is_disabled()
       if is_last:
+        if not os.path.exists(target):
+          os.makedirs(target)
+
         pandas.concat(results).to_csv(target + unique_file_name(extension='.csv'), index=False)
         return
       else:
