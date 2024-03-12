@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
   df = enrich_tickers(get_tickers())
 
-  filter = df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']
+  filter = (df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']) & (~df['Sector'].isna())
   (df[filter]).to_csv(config['tickers']['target'], index=False)
 
   mark_as_ignored(df[~filter])
