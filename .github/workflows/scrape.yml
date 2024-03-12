@@ -19,10 +19,8 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: python yahoo.py "$USERNAME" "$PASSWORD" "$COOKIES"
+      - run: python yahoo.py "$COOKIES"
         env:
-          USERNAME: ${{ secrets.username }}
-          PASSWORD: ${{ secrets.password }}
           COOKIES: ${{ secrets.cookies }}
       - run: python yahoo-tickers.py
       - run: python yahoo-aggregate.py

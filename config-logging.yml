@@ -2,6 +2,8 @@ version: 1
 disable_existing_loggers: False
 
 formatters:
+  short_formatter:
+    format: "%(asctime)s - %(message)s"
   simple_formatter:
     format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
@@ -9,7 +11,7 @@ handlers:
   console_handler:
     class: logging.StreamHandler
     level: DEBUG
-    formatter: simple_formatter
+    formatter: short_formatter
     stream: ext://sys.stdout
 
 loggers:

@@ -1,21 +1,24 @@
 import logging
-
 from time import sleep
+
 from playwright.sync_api import Page
 
 logger = logging.getLogger(__name__)
 
+
 def login(page: Page, username: str, password: str):
-  logger.info('logging in into yahoo.com...')
+    login_url = "https://login.yahoo.com"
 
-  page.goto("https://login.yahoo.com")
-  page.wait_for_selector("input#login-username")
-  page.type('input#login-username', username, delay=100)
-  page.click('input#login-signin')
-  page.wait_for_selector('input#login-passwd')
-  page.type('input#login-passwd', password, delay=120)
+    logger.info(f'logging in into "{login_url}"...')
 
-  sleep(2)
+    page.goto(login_url)
+    page.wait_for_selector("input#login-username")
+    page.type("input#login-username", username, delay=100)
+    page.click("input#login-signin")
+    page.wait_for_selector("input#login-passwd")
+    page.type("input#login-passwd", password, delay=120)
 
-  page.click('button#login-signin')
-  page.wait_for_selector('#Page.twelve-col')
+    sleep(2)
+
+    page.click("button#login-signin")
+    page.wait_for_selector("#Page.twelve-col")

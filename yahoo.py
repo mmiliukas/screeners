@@ -1,48 +1,48 @@
-import sys
-import yaml
-import json
 import base64
+import json
 import logging
 import logging.config
+import sys
 
+import yaml
 from playwright.sync_api import sync_playwright
 
-from screeners.etfs import ETFS
 from screeners.config import config
+from screeners.etfs import list_etfs
+from screeners.scraper import scrape_etf, scrape_screener
 from screeners.utils import retry
-from screeners.scraper import login, scrape_screener, scrape_etf
 
-with open('config-logging.yml', 'r') as config_logging:
-  logging.config.dictConfig(yaml.safe_load(config_logging.read()))
+with open("config-logging.yml", "r") as config_logging:
+    logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 logger = logging.getLogger(__name__)
 
+
 def main(argv):
-  username, password, cookies = argv[1:]
-  retry_times = config['scraper']['retry_times']
+    cookies = argv[1]
+    retry_times = config["scraper"]["retry_times"]
 
-  with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=True)
-    context = browser.new_context()
-    page = context.new_page()
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=True)
+        context = browser.new_context()
+        page = context.new_page()
 
-    if not cookies:
-      login(page, username, password)
-    else:
-      decoded_cookies = base64.b64decode(cookies)
-      page.context.add_cookies(json.loads(decoded_cookies))
+        decoded_cookies = base64.b64decode(cookies)
+        page.context.add_cookies(json.loads(decoded_cookies))
 
-    for etf in ETFS:
-      for symbol in etf['US']:
-        retry(retry_times)(lambda: scrape_etf(page, symbol))
+        for etf in list_etfs():
+            retry(retry_times)(lambda: scrape_etf(page, etf))
 
-    for screener in config['screeners']:
+        for screener in config["screeners"]:
 
-      screener_cache_name = screener['cache_name']
-      screener_urls = screener['urls']
+            screener_cache_name = screener["cache_name"]
+            screener_urls = screener["urls"]
 
-      for screener_url in screener_urls:
-        retry(retry_times)(lambda: scrape_screener(page, screener_url, screener_cache_name))
+            for screener_url in screener_urls:
+                retry(retry_times)(
+                    lambda: scrape_screener(page, screener_url, screener_cache_name)
+                )
 
-if __name__ == '__main__':
-  sys.exit(main(sys.argv))
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))
