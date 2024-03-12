@@ -6,44 +6,6 @@ from screeners.config import config
 from screeners.etfs import resolve_etf
 from screeners.tickers import get_tickers, mark_as_ignored, get_etfs
 
-def get_ratios(symbol: str, index: int):
-  balance_sheet = pd.read_csv(f'./tickers-balance/{symbol}.csv', index_col=0)
-
-  if balance_sheet.empty:
-    return pd.Series([pd.NA, pd.NA, pd.NA])
-
-  quarter = balance_sheet.columns.to_list()[index]
-
-  total_assets = balance_sheet.loc['TotalAssets'][quarter] if 'TotalAssets' in balance_sheet.index else pd.NA
-  non_current_assets = balance_sheet.loc['TotalNonCurrentAssets'][quarter] if 'TotalNonCurrentAssets' in balance_sheet.index else pd.NA
-
-  current_assets = total_assets - non_current_assets
-
-  a = balance_sheet.loc['TotalLiabilitiesNetMinorityInterest'][quarter] if 'TotalLiabilitiesNetMinorityInterest' in balance_sheet.index else pd.NA
-  b = balance_sheet.loc['TotalNonCurrentLiabilitiesNetMinorityInterest'][quarter] if 'TotalNonCurrentLiabilitiesNetMinorityInterest' in balance_sheet.index else pd.NA
-
-  current_liabilities = a - b
-
-  inventory = balance_sheet.loc['Inventory'][quarter] if 'Inventory' in balance_sheet.index else pd.NA
-  cash_and_cash_equivalents = balance_sheet.loc['CashAndCashEquivalents'][quarter] if 'CashAndCashEquivalents' in balance_sheet.index else pd.NA
-
-  try:
-    current_ratio = current_assets / current_liabilities
-  except:
-    current_ratio = pd.NA
-
-  try:
-    quick_ratio = (current_assets - inventory) / current_liabilities
-  except:
-    quick_ratio = pd.NA
-
-  try:
-    cash_ratio = cash_and_cash_equivalents / current_liabilities
-  except:
-    cash_ratio = pd.NA
-
-  return pd.Series([current_ratio, quick_ratio, cash_ratio])
-
 def enrich_screeners_names(row):
   names = []
   for screener in config['screeners']:
@@ -80,10 +42,7 @@ def enrich_tickers(symbols) -> pd.DataFrame:
 
   enrich_screeners(df)
 
-  df['FinancialsCurrentPrice'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'currentPrice', pd.NA))
   df['FinancialsMarketCap'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'marketCap', pd.NA))
-  df['FinancialsVolume'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'volume', pd.NA))
-  df['FinancialsAverageVolume'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'averageVolume', pd.NA))
   df['FinancialsTotalCash'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'totalCash', pd.NA))
   df['FinancialsTotalDebt'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'totalDebt', pd.NA))
   df['FinancialsQuickRatio'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'quickRatio', pd.NA))
@@ -94,8 +53,6 @@ def enrich_tickers(symbols) -> pd.DataFrame:
   df['FinancialsReturnOnEquity'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'returnOnEquity', pd.NA))
   df['FinancialsFreeCashflow'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'freeCashflow', pd.NA))
   df['FinancialsOperatingCashflow'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'operatingCashflow', pd.NA))
-
-  df[['CurrentRatio', 'QuickRatio', 'CashRatio']] = df['Symbol'].apply(lambda _: get_ratios(_, 0))
 
   return df
 
