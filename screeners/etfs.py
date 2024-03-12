@@ -1,3 +1,9 @@
+import glob
+
+import pandas as pd
+
+from screeners.config import config
+
 ETFS = [
     {"EU": ["CRB", "SXPR"], "US": ["XLB"], "Sector": "Basic Materials"},
     {"EU": ["EXX1", "EUNB"], "US": ["XLF"], "Sector": "Financial Services"},
@@ -38,6 +44,16 @@ def get_etfs():
         # ignoring EU for now, we are focusing on US first
         # all.update(_["EU"])
     return list(all)
+
+
+def get_etfs_and_holdings():
+    etfs = get_etfs()
+
+    cache_name = glob.glob(config["etf"]["cache_name"])
+    df = pd.concat([pd.read_csv(csv) for csv in glob.glob(f"{cache_name}*.csv")])
+
+    etfs.extend(df["Symbol"].unique())
+    return etfs
 
 
 def resolve_etf(sector):
