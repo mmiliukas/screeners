@@ -23,7 +23,4 @@ def get_tickers():
 
     df = pd.concat([pd.read_csv(csv) for csv in csvs])
 
-    all = set(df["Symbol"].unique())
-    ignore = set(pd.read_csv("./tickers-ignored.csv")["Symbol"].unique())
-
-    return sorted(list(all - ignore))
+    return sorted(list(df["Symbol"].unique()))
