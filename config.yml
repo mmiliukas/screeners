@@ -7,18 +7,7 @@ etf:
   # specifies directory for caching etf holdings
   cache_name: etfs/
 
-yfinance:
-  cache_name: .cache-yfinance
-  backend: filesystem
-  expire_after_days: 5
-
-tickers:
-  cache_name: tickers/
-  balance_cache_name: tickers-balance/
-  target: tickers.csv
-  filter:
-    FinancialsCurrentRatio: 0.5
-
+# specifies which urls to scrape, how to name tickers and where to cache them
 screeners:
   - name: Winners
     cache_name: runs/winners/
@@ -46,6 +35,22 @@ screeners:
     cache_name: runs/random10/
     urls:
       - "https://finance.yahoo.com/screener/c2f52d5b-078c-43ea-ad73-0de929180492"
+
+# global settings for yfinance library
+# works only on local machine though
+yfinance:
+  backend: filesystem
+  # directory to use for cached responses
+  cache_name: .cache-yfinance
+  # how long to keep the cache active
+  expire_after_days: 5
+
+tickers:
+  # specifies directory where to story downloaded information about the ticker
+  cache_name: tickers/
+  target: tickers.csv
+  filter:
+    FinancialsCurrentRatio: 0.5
 
 telegram:
   enabled: true

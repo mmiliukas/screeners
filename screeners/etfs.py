@@ -31,7 +31,7 @@ SECTOR_ETF = {
 }
 
 
-def list_etfs():
+def get_etfs():
     all = set()
     for _ in ETFS:
         all.update(_["US"])
