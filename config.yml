@@ -55,8 +55,7 @@ tickers:
   # specifies directory where to story downloaded information about the ticker
   cache_name: tickers/
   target: tickers.csv
-  filter:
-    FinancialsCurrentRatio: 0.5
 
 telegram:
+  # specify if we should report success/error states to telegram channel
   enabled: true
