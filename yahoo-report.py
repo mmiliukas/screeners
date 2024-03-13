@@ -15,10 +15,20 @@ def main(argv):
     message = f"<b>DAILY RUN:</b> <code>{len(tickers)}</code> tickers matched and <code>{len(ignored_tickers)}</code> ignored"
     log_to_telegram(message, bot_token, channel_id)
 
-    ignored_summary = ignored_tickers.groupby("Reason").count().to_string()
+    ignored_summary = (
+        ignored_tickers.groupby("Reason")
+        .count()["Symbol"]
+        .sort_values(ascending=False)
+        .to_string()
+    )
     log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
 
-    tickers_summary = tickers.groupby("Screener").count()["Symbol"].to_string()
+    tickers_summary = (
+        tickers.groupby("Screener")
+        .count()["Symbol"]
+        .sort_values(ascending=False)
+        .to_string()
+    )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
 
