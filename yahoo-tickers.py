@@ -46,8 +46,6 @@ def main():
         ticker_path = config["tickers"]["cache_name"] + symbol + ".json"
 
         if should_update(df, symbol, ticker_path):
-            logger.info(f'updating ticker "{symbol}"...')
-
             result = yf.Ticker(symbol, session=session)
             if not result.info or "symbol" not in result.info:
                 logger.info(f'ticker "{symbol}" not found on yahoo.com, ignoring...')
