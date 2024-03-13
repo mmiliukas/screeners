@@ -12,7 +12,7 @@ def main(argv):
     tickers = len(pd.read_csv(config["tickers"]["target"]))
     ignore = len(pd.read_csv(config["ignored_tickers"]["target"]))
 
-    message = f"DAILY RUN: {tickers} tickers matched and {ignore} ignored"
+    message = f"<b>DAILY RUN:</b> <code>{tickers}</code> tickers matched and <code>{ignore}</code> ignored"
     log_to_telegram(message, bot_token, channel_id)
 
 
