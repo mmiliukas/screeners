@@ -46,13 +46,17 @@ def get_etfs():
     return list(all)
 
 
-def get_etfs_and_holdings():
-    etfs = get_etfs()
-
+def get_holdings():
     cache_name = config["etf"]["cache_name"]
     df = pd.concat([pd.read_csv(csv) for csv in glob.glob(f"{cache_name}*.csv")])
 
-    etfs.extend(df["Symbol"].unique())
+    return df["Symbol"].unique()
+
+
+def get_etfs_and_holdings():
+    etfs = get_etfs()
+    etfs.extend(get_holdings())
+
     return etfs
 
 
