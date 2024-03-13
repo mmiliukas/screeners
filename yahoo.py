@@ -19,6 +19,8 @@ logger = logging.getLogger(__name__)
 
 
 def main(argv):
+    return 1
+
     cookies = argv[1]
     retry_times = config["scraper"]["retry_times"]
 
