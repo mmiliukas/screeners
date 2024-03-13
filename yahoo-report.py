@@ -1,12 +1,20 @@
 import sys
+
 import pandas as pd
 
+from screeners.config import config
 from screeners.telegram import log_to_telegram
 
-if __name__ == '__main__':
-  bot_token, channel_id = sys.argv[1:]
 
-  tickers = len(pd.read_csv('./tickers.csv'))
-  ignore = len(pd.read_csv('./tickers-ignored.csv'))
+def main(argv):
+    bot_token, channel_id = argv[1:]
 
-  log_to_telegram(f'DAILY RUN: {tickers} tickers matched and {ignore} ignored', bot_token, channel_id)
+    tickers = len(pd.read_csv(config["tickers"]["target"]))
+    ignore = len(pd.read_csv(config["ignored_tickers"]["target"]))
+
+    message = f"DAILY RUN: {tickers} tickers matched and {ignore} ignored"
+    log_to_telegram(message, bot_token, channel_id)
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

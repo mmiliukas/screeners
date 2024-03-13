@@ -6,6 +6,7 @@ scraper:
 etf:
   # specifies directory for caching etf holdings
   cache_name: etfs/
+  target: tickers-etfs.csv
 
 # specifies which urls to scrape, how to name tickers and where to cache them
 screeners:
@@ -54,7 +55,6 @@ tickers:
   # specifies directory where to story downloaded information about the ticker
   cache_name: tickers/
   target: tickers.csv
-  ignored_target: tickers-ignored.csv
   filter:
     FinancialsCurrentRatio: 0.5
 

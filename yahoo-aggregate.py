@@ -1,69 +1,88 @@
+import datetime
 import glob
-import json
+
 import pandas as pd
 
 from screeners.config import config
-from screeners.etfs import resolve_etf
-from screeners.tickers import get_tickers, mark_as_ignored, get_etfs
+from screeners.etfs import get_holdings, resolve_etf
+from screeners.tickers import get_info, get_tickers_whitelisted
+
+
+def ignore(df: pd.DataFrame, reason: str):
+    if len(df) == 0:
+        return
+
+    now = datetime.datetime.now()
+    ignored_target = config["ignored_tickers"]["target"]
+    ignored = pd.read_csv(ignored_target, parse_dates=["Date"])
+
+    for symbol in df["Symbol"].unique():
+        ignored.loc[len(ignored.index)] = [symbol, now, reason]
+
+    ignored.to_csv(ignored_target, index=False)
+
 
 def enrich_screeners_names(row):
-  names = []
-  for screener in config['screeners']:
-    if row[screener['name']] > 0:
-      names.append(screener['name'])
-  return ','.join(names)
+    names = []
+    for screener in config["screeners"]:
+        if row[screener["name"]] > 0:
+            names.append(screener["name"])
+    return ",".join(names)
+
 
 def enrich_screeners(df: pd.DataFrame):
-  for screener in config['screeners']:
-    csvs = glob.glob(f'{screener["cache_name"]}/*.csv')
-    all = pd.concat([pd.read_csv(csv) for csv in csvs])
-    df[screener['name']] = df['Symbol'].apply(lambda _: len(all[all['Symbol'] == _]))
+    for screener in config["screeners"]:
+        csvs = glob.glob(f'{screener["cache_name"]}/*.csv')
+        all = pd.concat([pd.read_csv(csv) for csv in csvs])
+        df[screener["name"]] = df["Symbol"].apply(
+            lambda _: len(all[all["Symbol"] == _])
+        )
 
-  df['Screener'] = df.apply(enrich_screeners_names, axis=1)
+    df["Screener"] = df.apply(enrich_screeners_names, axis=1)
 
-json_cache = {}
-
-def read_value_from_json(symbol: str, key: str, default = None):
-  if symbol not in json_cache:
-    with open(config['tickers']['cache_name'] + symbol + '.json') as file:
-      json_cache[symbol] = json.load(file)
-  ticker = json_cache[symbol]
-  if len(ticker) == 0:
-    return default
-  return ticker[0][key] if key in ticker[0] else default
 
 def enrich_tickers(symbols) -> pd.DataFrame:
-  df = pd.DataFrame({ 'Symbol': symbols })
+    df = pd.DataFrame({"Symbol": symbols})
 
-  df['Name'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'longName', pd.NA))
-  df['Sector'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'sector', pd.NA))
-  df['Industry'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'industry', pd.NA))
-  df['ETF'] = df['Sector'].apply(lambda _: resolve_etf(_))
+    df["Name"] = get_info(df, "longName")
+    df["Sector"] = get_info(df, "sector")
+    df["Industry"] = get_info(df, "industry")
 
-  enrich_screeners(df)
+    df["ETF"] = df["Sector"].apply(resolve_etf)
 
-  df['FinancialsMarketCap'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'marketCap', pd.NA))
-  df['FinancialsTotalCash'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'totalCash', pd.NA))
-  df['FinancialsTotalDebt'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'totalDebt', pd.NA))
-  df['FinancialsQuickRatio'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'quickRatio', pd.NA))
-  df['FinancialsCurrentRatio'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'currentRatio', pd.NA))
-  df['FinancialsTotalRevenue'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'totalRevenue', pd.NA))
-  df['FinancialsDebtToEquity'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'debtToEquity', pd.NA))
-  df['FinancialsReturnOnAssets'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'returnOnAssets', pd.NA))
-  df['FinancialsReturnOnEquity'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'returnOnEquity', pd.NA))
-  df['FinancialsFreeCashflow'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'freeCashflow', pd.NA))
-  df['FinancialsOperatingCashflow'] = df['Symbol'].apply(lambda _: read_value_from_json(_, 'operatingCashflow', pd.NA))
+    enrich_screeners(df)
 
-  return df
+    df["Financials Market Cap"] = get_info(df, "marketCap")
+    df["Financials Total Cash"] = get_info(df, "totalCash")
+    df["Financials Total Debt"] = get_info(df, "totalDebt")
+    df["Financials Quick Ratio"] = get_info(df, "quickRatio")
+    df["Financials Current Ratio"] = get_info(df, "currentRatio")
+    df["Financials Total Revenue"] = get_info(df, "totalRevenue")
+    df["Financials Debt To Equity"] = get_info(df, "debtToEquity")
+    df["Financials Return On Assets"] = get_info(df, "returnOnAssets")
+    df["Financials Return On Equity"] = get_info(df, "returnOnEquity")
+    df["Financials Free Cashflow"] = get_info(df, "freeCashflow")
+    df["Financials Operating Cashflow"] = get_info(df, "operatingCashflow")
 
-if __name__ == '__main__':
+    return df
 
-  df = enrich_tickers(get_tickers())
 
-  filter = (df['FinancialsCurrentRatio'] >= config['tickers']['filter']['FinancialsCurrentRatio']) & (~df['Sector'].isna())
-  (df[filter]).to_csv(config['tickers']['target'], index=False)
+def main():
+    df = enrich_tickers(get_tickers_whitelisted())
 
-  mark_as_ignored(df[~filter])
+    # custom filters to omit tickers in advance
+    filter_sector = ~df["Sector"].isna()
+    ignore(df[~filter_sector], "Not Categorized")
 
-  df = enrich_tickers(get_etfs())
-  df.to_csv('./tickers-etfs.csv', index=False)
+    filter_ratio = df["Financials Current Ratio"] >= 0.5
+    ignore(df[~filter_ratio], "Current Ratio Below 0.5")
+
+    filter = filter_ratio & filter_sector
+    df[filter].to_csv(config["tickers"]["target"], index=False)
+
+    df = enrich_tickers(get_holdings())
+    df.to_csv(config["etf"]["target"], index=False)
+
+
+if __name__ == "__main__":
+    main()
