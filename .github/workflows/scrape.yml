@@ -23,20 +23,19 @@ jobs:
         env:
           COOKIES: ${{ secrets.cookies }}
       - run: python yahoo-tickers.py
-      #- run: python yahoo-aggregate.py
-      # - run: python yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
-      #   env:
-      #     TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
-      #     TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
+      - run: python yahoo-aggregate.py
+      - run: python yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
+          TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add ./runs/
           git add ./etfs/
+          git add ./runs/
           git add ./tickers/
-          git add ./tickers-balance/
-          git add ./tickers.csv
-          git add ./tickers-ignored.csv
           git add ./tickers-etfs.csv
+          git add ./tickers-ignored.csv
+          git add ./tickers.csv
           git commit -m "daily run"
           git push
