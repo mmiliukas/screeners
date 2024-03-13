@@ -42,13 +42,19 @@ yfinance:
   backend: filesystem
   # directory to use for cached responses
   cache_name: .cache-yfinance
-  # how long to keep the cache active
+  # how long to keep the cache active (checking the last modification date of a file)
   expire_after_days: 5
+
+ignored_tickers:
+  # file for storing ignored tickers
+  # contains date and reason for ignore
+  target: tickers-ignored.csv
 
 tickers:
   # specifies directory where to story downloaded information about the ticker
   cache_name: tickers/
   target: tickers.csv
+  ignored_target: tickers-ignored.csv
   filter:
     FinancialsCurrentRatio: 0.5
 
