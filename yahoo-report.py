@@ -18,6 +18,9 @@ def main(argv):
     ignored_summary = ignored_tickers.groupby("Reason").count().to_string()
     log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
 
+    tickers_summary = tickers.groupby("Screener").count()["Symbol"].to_string()
+    log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
+
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv))
