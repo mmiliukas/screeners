@@ -5,7 +5,7 @@ import pandas as pd
 
 from screeners.config import config
 from screeners.etfs import get_holdings, resolve_etf
-from screeners.tickers import get_info, get_tickers_whitelisted
+from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
 
 
 def ignore(df: pd.DataFrame, reason: str):
@@ -44,7 +44,7 @@ def enrich_screeners(df: pd.DataFrame):
 def enrich_tickers(symbols) -> pd.DataFrame:
     df = pd.DataFrame({"Symbol": symbols})
 
-    df["Name"] = get_info(df, "longName")
+    df["Name"] = get_infos(df, ["longName", "shortName"])
     df["Sector"] = get_info(df, "sector")
     df["Industry"] = get_info(df, "industry")
 

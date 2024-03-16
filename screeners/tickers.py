@@ -25,6 +25,25 @@ def get_tickers_whitelisted():
     return sorted(list(all - ignored))
 
 
+def get_infos(df: pd.DataFrame, keys: list[str]):
+    def get_info_internal(row):
+        file_name = config["tickers"]["cache_name"] + row + ".json"
+        with open(file_name) as file:
+            info = json.load(file)
+
+            if len(info) == 0:
+                return pd.NA
+
+            for key in keys:
+                value = info[0][key] if key in info[0] else None
+                if value is not None:
+                    return value
+
+            return pd.NA
+
+    return df["Symbol"].apply(get_info_internal)
+
+
 def get_info(df: pd.DataFrame, key: str):
     def get_info_internal(row):
         file_name = config["tickers"]["cache_name"] + row + ".json"
