@@ -1,21 +1,21 @@
 Symbol,Name,Sector,Industry,ETF,Winners,Loosers,Random,Random 5,Random 10,Screener,Financials Market Cap,Financials Total Cash,Financials Total Debt,Financials Quick Ratio,Financials Current Ratio,Financials Total Revenue,Financials Debt To Equity,Financials Return On Assets,Financials Return On Equity,Financials Free Cashflow,Financials Operating Cashflow
 AACTF,Aurora Solar Technologies Inc.,Technology,Solar,XLK,0,1,0,0,0,Loosers,7643474,4356710,421531,1.138,1.759,10683343,7.125,-0.041360002,-0.23775,2579274,1689232
 AAMMF,Almadex Minerals Ltd.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,10981422,18091596,,127.49,127.76,2163636,,-0.05501,-0.05073,-744435,632901
-AATC,Autoscope Technologies Corporation,Technology,Scientific & Technical Instruments,XLK,0,0,23,0,10,"Random,Random 10",40787100,12470000,1631000,11.929,13.467,16789000,7.373,0.15085,0.22286,4294375,8096000
+AATC,Autoscope Technologies Corporation,Technology,Scientific & Technical Instruments,XLK,0,0,23,0,11,"Random,Random 10",40787100,12470000,1631000,11.929,13.467,16789000,7.373,0.15085,0.22286,4294375,8096000
 ABEO,Abeona Therapeutics Inc.,Healthcare,Biotechnology,XLV,4,0,0,0,0,Winners,193479472,53754000,5692000,6.653,6.807,3568000,25.828,-0.56006,-2.38808,-22618000,-41766000
 ABSI,Absci Corporation,Healthcare,Biotechnology,XLV,6,0,0,0,0,Winners,527072064,113479000,17748000,4.085,4.816,6937000,9.036,-0.19493,-0.43523,-37539124,-68282000
 ABTS,Abits Group Inc.,Financial Services,Capital Markets,XLF,4,0,0,0,0,Winners,29332628,1538831,,2.843,9.283,131278,,-0.44139,-0.76492995,-38155020,28085956
 ACDXF,American Copper Development Corporation,Basic Materials,Other Precious Metals & Mining,XLB,0,2,0,0,0,Loosers,4728023,1845750,,9.251,9.251,,,-0.03223,-0.06325,-5835247,-1174348
 ACHV,"Achieve Life Sciences, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,148995760,19919000,16278000,4.9,5.364,,403.12,-0.87718004,-13.998819,-20353876,-31238000
-ACIU,AC Immune SA,Healthcare,Biotechnology,XLV,2,0,25,8,0,"Winners,Random,Random 5",337900800,79927000,2393000,6.887,7.359,1000,1.904,-0.24667,-0.43227002,-38051624,-61624000
+ACIU,AC Immune SA,Healthcare,Biotechnology,XLV,2,0,25,9,0,"Winners,Random,Random 5",337900800,79927000,2393000,6.887,7.359,1000,1.904,-0.24667,-0.43227002,-38051624,-61624000
 ACRS,"Aclaris Therapeutics, Inc.",Healthcare,Diagnostics & Research,XLV,0,1,0,0,0,Loosers,91493248,119106000,3500000,3.858,4.163,31249000,2.227,-0.32529998,-0.49877,-39920500,-78325000
 ACTHF,Aduro Clean Technologies Inc.,Industrials,Pollution & Treatment Controls,XLI,1,0,16,1,0,"Winners,Random,Random 5",73336128,2402615,165799,4.655,5.125,241267,2.984,-0.84733003,-1.55462,-3827226,-4711292
 ADAG,Adagene Inc.,Healthcare,Biotechnology,XLV,6,0,0,0,0,Winners,128159016,128759960,25238704,3.312,3.403,22665296,30.484,-0.16287,-0.37280998,,
 ADD,"Color Star Technology Co., Ltd.",Communication Services,Entertainment,XLC,0,1,0,0,0,Loosers,4862376,239473,583915,1.078,3.013,,2.362,-0.42637002,-1.03471,2805210,-7878729
 ADIL,"Adial Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,3326840,315880,,1.261,2.15,,,-1.197,-2.47342,-4632171,-7335125
-ADMA,"ADMA Biologics, Inc.",Healthcare,Biotechnology,XLV,0,0,31,0,10,"Random,Random 10",1410399616,51352000,141418000,1.582,5.16,258215008,104.594,0.04507,-0.19666,378125,8800000
+ADMA,"ADMA Biologics, Inc.",Healthcare,Biotechnology,XLV,0,0,31,0,11,"Random,Random 10",1410399616,51352000,141418000,1.582,5.16,258215008,104.594,0.04507,-0.19666,378125,8800000
 ADSE,ADS-TEC Energy PLC,Industrials,Electrical Equipment & Parts,XLI,1,0,0,0,0,Winners,512424032,13964000,14577000,0.725,1.821,55275000,27.776,-0.20181999,-0.56372,,
-ADTH,"AdTheorent Holding Company, Inc.",Communication Services,Advertising Agencies,XLC,9,0,44,10,0,"Winners,Random,Random 5",243547648,74339000,6518000,5.664,5.787,162932000,4.067,0.00488,0.04086,15303750,11297000
+ADTH,"AdTheorent Holding Company, Inc.",Communication Services,Advertising Agencies,XLC,9,0,44,11,0,"Winners,Random,Random 5",243547648,74339000,6518000,5.664,5.787,162932000,4.067,0.00488,0.04086,15303750,11297000
 ADV,Advantage Solutions Inc.,Communication Services,Advertising Agencies,XLC,1,0,0,0,0,Winners,1252869632,152758000,1917009024,1.602,1.87,4224846080,173.63,0.02316,-0.0517,336164864,238995008
 ADVM,"Adverum Biotechnologies, Inc.",Healthcare,Biotechnology,XLV,8,0,0,0,0,Winners,370821792,117082000,75524000,4.057,4.318,3600000,73.528,-0.29993,-0.81136,-51518000,-88049000
 AEPT,"American Environmental Partners, Inc.",Utilities,Utilities - Regulated Water,XLU,0,4,0,0,0,Loosers,41879,510220,8062021,0.75,0.783,17084460,,-0.05179,-0.47519,-8175518,-923969
@@ -33,7 +33,7 @@ AIGFF,Genesis AI Corp.,Technology,Software - Application,XLK,1,2,0,0,0,"Winners,
 AIMD,"Ainos, Inc.",Healthcare,Medical Devices,XLV,0,2,0,0,0,Loosers,9765085,1885628,5693556,1.411,1.85,122112,23.289,-0.23422001,-0.4662,948636,-4694668
 AIRS,"AirSculpt Technologies, Inc.",Healthcare,Medical Care Facilities,XLV,1,0,0,0,0,Winners,336494112,10262000,99668000,0.601,0.786,195916992,118.664,0.02863,-0.05788,18845250,23956000
 AJOY,Ayujoy Herbals Ltd.,Consumer Defensive,Packaged Foods,XLP,0,15,0,0,0,Loosers,776875,3284866,,328.152,328.686,70867152,,0.13937001,0.18827,315857,4628574
-AKBA,"Akebia Therapeutics, Inc.",Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,271280160,46529000,113762000,0.867,1.375,194208992,,-0.03885,,10307000,-75755000
+AKBA,"Akebia Therapeutics, Inc.",Healthcare,Biotechnology,XLV,4,0,0,0,0,Winners,271280160,46529000,113762000,0.867,1.375,194208992,,-0.03885,,10307000,-75755000
 AKTS,"Akoustis Technologies, Inc.",Technology,Communication Equipment,XLK,0,1,0,0,0,Loosers,61577572,12875000,44193000,1.326,1.822,29708000,82.19,-0.36705002,-1.0410501,-28626876,-43048000
 ALAR,Alarum Technologies Ltd.,Technology,Software - Infrastructure,XLK,5,0,0,0,0,Winners,101178440,3813000,3377000,0.954,1.026,22645000,55.144,-0.17403999,-1.1651,-1746250,-3265000
 ALGEF,Alligator Energy Limited,Energy,Uranium,XLE,0,0,12,0,0,Random,140703504,18498328,306473,9.298,9.304,601624,0.74,-0.036170002,-0.06684,-6294435,-1526427
@@ -45,8 +45,10 @@ AMBO,Ambow Education Holding Ltd.,Consumer Defensive,Education & Training Servic
 AMEGF,American Eagle Gold Corp.,Basic Materials,Gold,XLB,5,0,0,0,0,Winners,52529964,4523005,,2.644,2.657,,,-0.85476995,-1.9451,-1376071,-4162239
 AMLX,"Amylyx Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,10,0,0,0,Loosers,257571968,371361984,4237000,5.021,5.664,380785984,0.978,0.05336,0.12731,38359248,11919000
 AMPE,"Ampio Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,2020940,6432000,362000,3.066,3.367,,6.735,-0.47217,-0.91530997,-7311500,-10549000
+AMPS,"Altus Power, Inc.",Utilities,Utilities - Renewable,XLU,0,1,0,0,0,Loosers,727000192,160816992,1390480000,1.67,2.148,155162000,264.848,0.00882,-0.05257,-80772000,79357000
 AMQFF,Abitibi Metals Corp.,Basic Materials,Gold,XLB,2,0,0,0,0,Winners,37874900,14351178,,10.242,10.681,,,-0.01872,-0.053590003,-128840,-789476
 ANDR,Andrea Electronics Corporation,Technology,Consumer Electronics,XLK,0,1,0,0,0,Loosers,878554,55622,2821557,0.401,1.017,1961796,,-0.20031,,-277572,-226187
+ANNX,"Annexon, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,523653056,165271008,31508000,9.626,9.853,,20.089,-0.36398,-0.67425,-75269624,-124804000
 ANTX,"AN2 Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,87737128,123818000,,8.344,8.519,,,-0.29990998,-0.48806,-21105000,-43858000
 ANVS,"Annovis Bio, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,95324904,6354942,,1.783,2.868,,,-1.24072,-2.27846,-23621660,-34211728
 ANY,Sphere 3D Corp.,Technology,Software - Application,XLK,2,0,0,0,0,Winners,24978222,613000,,0.116,0.783,15644000,,-0.11452,-1.04071,19031250,-8689000
@@ -61,7 +63,7 @@ APSI,Aqua Power Systems Inc.,Financial Services,Shell Companies,XLF,0,1,0,0,0,Lo
 APT,"Alpha Pro Tech, Ltd.",Industrials,Building Products & Equipment,XLI,0,0,13,0,9,"Random,Random 10",70930840,18163000,1251000,13.422,26.583,58192000,2.038,0.03738,0.059510004,5671425,6875000
 APTO,Aptose Biosciences Inc.,Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,24816744,17717000,1110000,1.431,1.589,,14.275,-0.8122,-1.8044299,-25858000,-43982000
 APVO,Aptevo Therapeutics Inc.,Healthcare,Biotechnology,XLV,0,10,0,0,0,Loosers,2347241,16904000,6079000,2.34,2.639,,49.742,-0.61123,-1.2353,-12378750,-11730000
-AQST,"Aquestive Therapeutics, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,11,0,0,0,0,Winners,362107936,23872000,33319000,1.767,2.238,50583000,,-0.16489,,-18936500,-6380000
+AQST,"Aquestive Therapeutics, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,12,0,0,0,0,Winners,362107936,23872000,33319000,1.767,2.238,50583000,,-0.16489,,-18936500,-6380000
 ARAFF,Arafura Rare Earths Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,6,0,0,0,Loosers,221887184,66940412,5972852,2.375,2.375,,3.477,-0.38689998,-0.66543996,-66418760,-115573896
 ARAV,"Aravive, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,2949860,8535000,2427000,0.873,0.978,6994000,142.681,-1.3406199,-4.75984,-38195752,-59452000
 ARBE,Arbe Robotics Ltd.,Technology,Software - Infrastructure,XLK,0,2,0,0,0,Loosers,134856800,43989000,1742000,7.285,7.637,1470000,4.138,-0.52649,-0.95765996,-18991124,-33513000
@@ -90,25 +92,25 @@ ASTS,"AST SpaceMobile, Inc.",Technology,Communication Equipment,XLK,0,1,0,0,0,Lo
 ASXSF,Elysee Development Corp.,Financial Services,Asset Management,XLF,0,1,0,0,0,Loosers,6795915,9562927,,2423.473,2435.09,256332,,-0.01511,-0.02688,-48472,559714
 ATAI,Atai Life Sciences N.V.,Healthcare,Biotechnology,XLV,2,0,13,8,0,"Winners,Random,Random 5",335340192,208994000,18969000,10.688,10.958,334000,7.064,-0.24252,-0.25293,-42366248,-92661000
 ATBHF,Aston Bay Holdings Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,2,0,0,0,0,Winners,25782834,837138,621534,0.967,1.19,,239.679,-0.73885,,-1834865,-2145888
-ATHOF,Athabasca Oil Corporation,Energy,Oil & Gas E&P,XLE,0,0,39,10,0,"Random,Random 5",2177890304,343308992,185536992,2.395,2.704,1195076992,11.717,0.048049998,-0.0311,85144128,305526016
+ATHOF,Athabasca Oil Corporation,Energy,Oil & Gas E&P,XLE,0,0,39,11,0,"Random,Random 5",2177890304,343308992,185536992,2.395,2.704,1195076992,11.717,0.048049998,-0.0311,85144128,305526016
 ATOS,"Atossa Therapeutics, Inc.",Healthcare,Biotechnology,XLV,7,0,0,0,0,Winners,150364800,94031000,,27.311,28.353,,,-0.16689,-0.26861998,-10437000,-19893000
 ATOXF,Durango Resources Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,0,3,0,0,0,Loosers,2449379,353053,,0.717,0.717,,,-0.12297,-0.2865,-169734,-227709
 AULT,"Ault Alliance, Inc.",Industrials,Aerospace & Defense,XLI,0,2,0,0,0,Loosers,1253427,11826000,96343000,0.17,0.79,167103008,79.466,-0.10406,-0.92265,-16710500,2442000
 AUMN,Golden Minerals Company,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,5550780,1594000,303000,0.846,1.061,16287000,12.01,-0.41689998,-1.97663,-4072250,-9813000
 AUPH,Aurinia Pharmaceuticals Inc.,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,776598656,350368992,97607000,4.86,5.503,175512992,25.825,-0.10524999,-0.19919,-3892750,-33461000
-AUR,"Aurora Innovation, Inc.",Technology,Information Technology Services,XLK,1,0,47,10,0,"Winners,Random,Random 5",3331536128,1200000000,122000000,10.811,10.964,,6.146,-0.2464,-0.42238998,-329875008,-598000000
+AUR,"Aurora Innovation, Inc.",Technology,Information Technology Services,XLK,1,0,47,11,0,"Winners,Random,Random 5",3331536128,1200000000,122000000,10.811,10.964,,6.146,-0.2464,-0.42238998,-329875008,-598000000
 AUSVF,Gold79 Mines Ltd.,Basic Materials,Other Precious Metals & Mining,XLB,0,2,0,0,0,Loosers,3558161,54152,,0.444,0.831,,,-0.0572,-0.10305,-836830,-686923
-AUTL,Autolus Therapeutics plc,Healthcare,Biotechnology,XLV,1,0,47,0,10,"Winners,Random,Random 10",1256861952,256415008,52458000,7.948,8.215,5523000,29.06,-0.31797,-0.92582,-116022872,-135320000
+AUTL,Autolus Therapeutics plc,Healthcare,Biotechnology,XLV,1,0,47,0,11,"Winners,Random,Random 10",1256861952,256415008,52458000,7.948,8.215,5523000,29.06,-0.31797,-0.92582,-116022872,-135320000
 AUUD,Auddia Inc.,Technology,Software - Application,XLK,0,1,0,0,0,Loosers,2593060,2199678,2993639,0.607,0.622,,123.96,-0.78446,-2.32741,-3301886,-4535592
 AUVI,"Applied UV, Inc.",Consumer Cyclical,"Furnishings, Fixtures & Appliances",XLY,0,1,0,0,0,Loosers,2305303,1546911,13604567,0.252,0.509,37944720,59.787,-0.14475,-0.80013,14742473,-9105985
 AVAH,Aveanna Healthcare Holdings Inc.,Healthcare,Medical Care Facilities,XLV,2,0,0,0,0,Winners,448222528,48294000,1498356992,0.809,0.874,1867515008,,0.03428,-5.47915,7086625,-14559000
 AVGR,"Avinger, Inc.",Healthcare,Medical Instruments & Supplies,XLV,0,1,0,0,0,Loosers,4485910,8725000,15178000,0.52,0.854,7747000,,-0.43242002,-9.73163,-11080625,-13760000
-AVPT,"AvePoint, Inc.",Technology,Software - Infrastructure,XLK,0,0,40,0,10,"Random,Random 10",1448166656,226883008,14720000,1.77,1.843,271824992,6.547,-0.02236,-0.09189,39417624,34694000
-AWEVF,Alphawave IP Group plc,Technology,Semiconductors,XLK,0,0,29,1,0,"Random,Random 5",1753949184,122764000,240391008,0.833,0.876,315478016,49.319,-0.00263,-0.06224,-10337000,-67551000
+AVPT,"AvePoint, Inc.",Technology,Software - Infrastructure,XLK,0,0,40,0,11,"Random,Random 10",1448166656,226883008,14720000,1.77,1.843,271824992,6.547,-0.02236,-0.09189,39417624,34694000
+AWEVF,Alphawave IP Group plc,Technology,Semiconductors,XLK,0,0,29,2,0,"Random,Random 5",1753949184,122764000,240391008,0.833,0.876,315478016,49.319,-0.00263,-0.06224,-10337000,-67551000
 AWKNF,Awakn Life Sciences Corp.,Healthcare,Biotechnology,XLV,0,5,0,0,0,Loosers,3873410,554657,,0.44,0.51,1560898,,-1.50883,-84.95297,-4199206,-4529733
 AWMLF,American West Metals Limited,Basic Materials,Other Industrial Metals & Mining,XLB,2,0,0,0,0,Winners,55638528,5096190,,1.168,1.259,298248,,-1.91571,-48.714752,-6386246,-12643034
 AXDX,"Accelerate Diagnostics, Inc.",Healthcare,Medical Devices,XLV,0,4,0,0,0,Loosers,24282228,21151000,36570000,0.63,0.859,12004000,,-0.62145,,-531500,-41991000
-AYRWF,Ayr Wellness Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,7,0,0,0,0,Winners,131206608,72843000,633462016,0.354,0.877,507256992,105.833,-0.0195,-0.30145,12713750,25643000
+AYRWF,Ayr Wellness Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,8,0,0,0,0,Winners,131206608,72843000,633462016,0.354,0.877,507256992,105.833,-0.0195,-0.30145,12713750,25643000
 AYURF,Ayurcann Holdings Corp.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,1,0,0,0,Loosers,3007586,2915775,674336,0.572,0.918,19641064,35.347,-0.22941,-1.19566,4937182,1869233
 AZLAF,Arizona Lithium Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,2,0,0,0,Loosers,68605552,3303842,2696628,2.017,2.097,4103,3.508,-0.15233,-0.23999001,-6397964,-7380500
 AZTR,"Azitra, Inc.",Healthcare,Biotechnology,XLV,0,3,0,0,0,Loosers,6618734,4400327,959201,3.064,3.346,626500,17.989,-0.57408,-3.7964,-4846601,-6951654
@@ -130,14 +132,14 @@ BDVB,"Bagger Dave's Burger Tavern, Inc.",Consumer Cyclical,Restaurants,XLY,0,1,0
 BERI,"Blue Earth Resources, Inc.",Energy,Oil & Gas Refining & Marketing,XLE,0,4,0,0,0,Loosers,415013,38428,23600,0.526,0.526,417409,0.691,-0.02417,-0.18045,-93497,22683
 BETS,Bit Brother Limited,Financial Services,Capital Markets,XLF,0,3,0,0,0,Loosers,587302784,5368284,998755,1.924,3.682,2883418,3.456,-0.36089,-1.36026,-4347971,-9956945
 BETSF,Bit Brother Limited,Financial Services,Capital Markets,XLF,0,5,0,0,0,Loosers,,5368284,998755,1.924,3.682,2883418,3.456,-0.36089,-1.36026,-4347971,-9956945
-BEWFF,BeWhere Holdings Inc.,Technology,Communication Equipment,XLK,0,0,1,0,0,Random,23965584,4108767,822699,3.936,4.486,11119126,11.566,0.0537,0.35906,467050,819244
+BEWFF,BeWhere Holdings Inc.,Technology,Communication Equipment,XLK,0,0,2,0,0,Random,23965584,4108767,822699,3.936,4.486,11119126,11.566,0.0537,0.35906,467050,819244
 BFRG,"Bullfrog AI Holdings, Inc.",Healthcare,Health Information Services,XLV,1,0,3,0,0,"Winners,Random",29134502,3856037,213290,8.645,9.435,75000,5.659,-1.34771,-7.01521,-3529650,-5022928
 BFRI,Biofrontera Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,1,0,0,0,Loosers,6158186,6763000,2814000,0.362,1.017,33619000,271.098,-0.30754,-2.23772,-3409500,-24300000
 BFX,BowFlex Inc.,Consumer Cyclical,Leisure,XLY,0,3,0,0,0,Loosers,28345588,81482000,41348000,1.296,2.173,735318016,21.002,0.28667998,0.75398004,,
 BFXXQ,BowFlex Inc.,Consumer Cyclical,Leisure,XLY,0,13,0,0,0,Loosers,,81482000,41348000,1.296,2.173,735318016,21.002,0.28667998,0.75398004,,
 BGLC,BioNexus Gene Lab Corp.,Basic Materials,Specialty Chemicals,XLB,1,0,16,0,0,"Winners,Random",13737743,6146883,138764,4.356,5.03,10337314,1.432,-0.15126,-0.38401002,1184844,-570741
 BIG,"Big Lots, Inc.",Consumer Defensive,Discount Stores,XLP,0,1,0,0,0,Loosers,120372392,46411000,2265288960,0.056,1.307,4722099200,796.249,-0.0748,-0.91926,-22024000,-251960000
-BIMI,BIMI Holdings Inc.,Healthcare,Pharmaceutical Retailers,XLV,7,0,0,0,0,Winners,49712780,994131,4994269,0.259,1.209,12632651,49.247,-0.13005,-1.03778,-5748967,-2900155
+BIMI,BIMI Holdings Inc.,Healthcare,Pharmaceutical Retailers,XLV,8,0,0,0,0,Winners,49712780,994131,4994269,0.259,1.209,12632651,49.247,-0.13005,-1.03778,-5748967,-2900155
 BIOCQ,"Biocept, Inc.",Healthcare,Diagnostics & Research,XLV,0,1,0,0,0,Loosers,2,6633000,11591000,1.516,1.807,1357000,3996.897,-0.5165,-1.8693601,-4236000,-17597000
 BIOL,"BIOLASE, Inc.",Healthcare,Medical Devices,XLV,0,3,0,0,0,Loosers,2551015,7809000,15979000,0.617,1.404,49725000,271.567,-0.31381,-2.54959,-4267500,-17390000
 BITF,Bitfarms Ltd.,Financial Services,Capital Markets,XLF,7,0,47,1,0,"Winners,Random,Random 5",803697280,46775000,26303000,1.975,2.821,127162000,9.149,-0.1342,-0.2307,3067125,43109000
@@ -145,12 +147,12 @@ BIVI,BioVie Inc.,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,38156120,2022669
 BKKT,"Bakkt Holdings, Inc.",Technology,Software - Infrastructure,XLK,2,2,0,0,0,"Winners,Loosers",80853792,90897000,28102000,0.187,1.169,579873024,13.314,-0.10415,-1.08873,-75043872,-77583000
 BKLPF,PT Bukalapak.com Tbk.,Consumer Cyclical,Internet Retail,XLY,1,0,0,0,0,Winners,5196239872,23342497136640,46226194432,31.263,31.595,4367786704896,0.179,-0.0294,-0.09137,-827162820608,-79879045120
 BLIAQ,BB Liquidating Inc.,Communication Services,Entertainment,XLC,5,0,0,0,0,Winners,2413074,44000000,,7.357,7.357,1295699968,,-0.29559,,70837504,-8100000
-BLND,"Blend Labs, Inc.",Technology,Software - Application,XLK,9,0,0,0,0,Winners,722259136,244960992,231434000,7.197,7.693,163527008,453.383,-0.28094,-1.73582,-45924124,-154263008
+BLND,"Blend Labs, Inc.",Technology,Software - Application,XLK,10,0,0,0,0,Winners,722259136,244960992,231434000,7.197,7.693,163527008,453.383,-0.28094,-1.73582,-45924124,-154263008
 BLPH,"Bellerophon Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,651997,4382000,,3.489,3.964,5640000,,-0.78474,-1.6595799,-9696625,-12339000
 BLRX,BioLineRx Ltd.,Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,88260392,25968000,13313000,1.785,1.956,,101.363,-0.36727002,-1.5281799,-22640124,-33282000
-BMR,Beamr Imaging Ltd.,Technology,Software - Application,XLK,9,0,30,0,10,"Winners,Random,Random 10",85344944,6116000,500000,6.575,6.704,2909000,4.873,-0.062230002,-0.14184,-379875,-659000
+BMR,Beamr Imaging Ltd.,Technology,Software - Application,XLK,9,0,30,0,11,"Winners,Random,Random 10",85344944,6116000,500000,6.575,6.704,2909000,4.873,-0.062230002,-0.14184,-379875,-659000
 BMXI,Brookmount Explorations Inc.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,5031173,64000,300000,0.069,3.861,17215000,0.805,,,,-204000
-BNNLF,Bannerman Energy Ltd,Energy,Uranium,XLE,0,0,33,2,0,"Random,Random 5",317879648,42589000,16000,22.195,22.411,1385000,0.014,-0.025220001,-0.04156,-78750,-2329000
+BNNLF,Bannerman Energy Ltd,Energy,Uranium,XLE,0,0,33,3,0,"Random,Random 5",317879648,42589000,16000,22.195,22.411,1385000,0.014,-0.025220001,-0.04156,-78750,-2329000
 BNTRF,Benton Resources Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,25969802,1202187,103600,1.917,4.198,,0.665,-0.05198,-0.00947,-2701420,-408759
 BNXAF,Banxa Holdings Inc.,Technology,Information Technology Services,XLK,0,0,6,0,0,Random,28378976,1598103,13929506,0.807,0.86,208787568,,-0.17372999,-53.36188,-5484331,-14095169
 BOF,BranchOut Food Inc.,Consumer Defensive,Packaged Foods,XLP,0,1,0,0,0,Loosers,9625315,1008484,376001,2.593,4.716,1373930,10.443,-0.4427,,-3148483,-3712338
@@ -166,7 +168,7 @@ BSNLF,Blue Star Helium Limited,Energy,Oil & Gas E&P,XLE,0,7,0,0,0,Loosers,128648
 BSTO,Blue Star Opportunities Corp.,Basic Materials,Lumber & Wood Production,XLB,0,1,0,0,0,Loosers,1017604,11000,,0.394,1.265,3131333,,0.01124,0.01994,,
 BSWGF,Black Swan Graphene Inc.,Basic Materials,Chemicals,XLB,1,0,0,0,0,Winners,22373874,6030879,,15.857,15.874,,,-0.14849,-0.29311,-1440123,-4085025
 BTAI,"BioXcel Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,88107512,89961000,99961000,2.301,2.506,1242000,,-0.72639,-4.89951,-95574128,-166782000
-BTBT,"Bit Digital, Inc.",Financial Services,Capital Markets,XLF,7,0,47,10,0,"Winners,Random,Random 5",251219696,20807208,,9.57,29.609,36639328,,-0.15010999,-0.61604,-17522104,-22684988
+BTBT,"Bit Digital, Inc.",Financial Services,Capital Markets,XLF,7,0,47,11,0,"Winners,Random,Random 5",251219696,20807208,,9.57,29.609,36639328,,-0.15010999,-0.61604,-17522104,-22684988
 BTCM,BIT Mining Limited,Technology,Information Technology Services,XLK,3,0,0,0,0,Winners,34892624,3575000,3752000,0.178,1.12,43101000,9.515,-0.13448,-0.23903999,,
 BTCS,BTCS Inc.,Financial Services,Capital Markets,XLF,5,0,0,0,0,Winners,24635184,853233,,1.759,18.356,1284397,,-0.22719999,-0.47713003,-6759897,-3340729
 BTOG,Bit Origin Ltd,Financial Services,Capital Markets,XLF,0,11,0,0,0,Loosers,29929276,16274,2075799,0.187,1.38,6261091,20.23,-0.2848,-1.2564,19706822,-6761587
@@ -176,6 +178,7 @@ BTTR,Better Choice Company Inc.,Consumer Defensive,Packaged Foods,XLP,0,4,0,0,0,
 BTTX,"Better Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,10957636,6598000,14307000,0.516,0.568,,,-0.95052004,,-15560500,-26083000
 BUENF,Blue Energy Limited,Energy,Oil & Gas E&P,XLE,0,1,0,0,0,Loosers,19616218,2400000,28000,1.828,1.828,402000,0.032,-0.014140001,-0.0196,-23145876,-2024000
 BURU,"Nuburu, Inc.",Industrials,Specialty Industrial Machinery,XLI,0,1,0,0,0,Loosers,5220543,1626730,7174683,0.325,0.593,2145694,,-1.15565,,-8759989,-16199075
+BW,"Babcock & Wilcox Enterprises, Inc.",Industrials,Specialty Industrial Machinery,XLI,0,1,0,0,0,Loosers,88554512,65300000,436400000,0.958,1.421,999400000,,-0.0095999995,,613500,-42300000
 BWAY,BrainsWay Ltd.,Healthcare,Medical Devices,XLV,1,0,0,0,0,Winners,104283128,44164000,,5.758,6.359,28789000,,-0.09285,-0.18176001,-4638500,-3433000
 BWCGF,Blackwolf Copper and Gold Ltd.,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,10450945,6764327,,3.918,3.939,,,-0.4012,-1.0074099,-2861305,-5347478
 BWMG,"Brownie's Marine Group, Inc.",Consumer Cyclical,Leisure,XLY,0,5,0,0,0,Loosers,5270532,287868,1556214,0.271,1.341,7385132,72.21,-0.15583,-0.55223,206800,-546272
@@ -189,7 +192,7 @@ CANB,Can B Corp.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,1,0,0
 CANG,Cango Inc.,Consumer Cyclical,Auto & Truck Dealerships,XLY,0,0,0,7,0,Random 5,210428720,1655674624,90541576,2.727,4.994,1701918720,2.372,0.0107700005,-0.00931,,
 CANOF,California Nanotechnologies Corp.,Basic Materials,Specialty Chemicals,XLB,0,0,36,0,0,Random,11712276,1128419,1332457,4.58,4.952,2716817,342.804,0.21849,,19097,392867
 CASI,"CASI Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,7,0,0,0,0,Winners,61678548,35597000,,3.995,4.914,42264000,,-0.16649,-0.59422,,
-CATX,"Perspective Therapeutics, Inc.",Healthcare,Medical Devices,XLV,14,0,47,10,0,"Winners,Random,Random 5",668953152,17983000,3306000,2.429,2.673,6308000,3.347,,,,-33999000
+CATX,"Perspective Therapeutics, Inc.",Healthcare,Medical Devices,XLV,14,0,47,11,0,"Winners,Random,Random 5",668953152,17983000,3306000,2.429,2.673,6308000,3.347,,,,-33999000
 CAULF,Cauldron Energy Limited,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,29289122,1038464,,1.122,1.122,15079,,-1.31494,,-1352997,-2060594
 CCCFF,Carlyle Commodities Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,3,0,0,0,Loosers,2023329,138314,,0.629,1.212,,,-0.2315,-0.56587005,-1101093,-2026890
 CCTG,CCSC Technology International Holdings Limited,Industrials,Electrical Equipment & Parts,XLI,0,2,0,0,0,Loosers,34511976,7370501,1778524,2.246,3.213,15942151,16.621,-0.02113,-0.01998,2333809,2467870
@@ -197,6 +200,7 @@ CDIO,"Cardio Diagnostics Holdings, Inc.",Healthcare,Biotechnology,XLV,6,1,0,0,0,
 CDMO,"Avid Bioservices, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,411054784,31424000,196696000,0.723,1.354,140938000,107.089,-0.0135699995,-0.06276,-52683752,1705000
 CDRO,"Codere Online Luxembourg, S.A.",Consumer Cyclical,Gambling,XLY,2,0,0,0,0,Winners,310290624,45383000,2393000,1.245,1.502,139120000,11.056,-0.31743,-0.81681997,-30467124,-33072000
 CDSG,"China Dongsheng International, Inc.",Financial Services,Shell Companies,XLF,0,2,0,0,0,Loosers,7886532,260859,452654,0.105,1.015,30973372,,0.22487,0.87394994,-20167662,15023198
+CDXC,ChromaDex Corporation,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,180741856,27173000,3277000,1.615,2.402,83570000,11.516,-0.0642,-0.17287001,9472625,7117000
 CECAF,CanAsia Energy Corp.,Energy,Oil & Gas E&P,XLE,0,1,0,0,0,Loosers,9587490,5651000,27000,1.519,1.534,,1.934,,,,-2572714
 CERO,"CERo Therapeutics Holdings, Inc.",Healthcare,Biotechnology,XLV,0,5,0,0,0,Loosers,34596420,119014,1395000,0.025,1.764,,,-0.02548,,-7951432,-1710095
 CESDF,CES Energy Solutions Corp.,Energy,Oil & Gas Equipment & Services,XLE,1,0,4,1,0,"Winners,Random,Random 5",813715136,,463716992,1.482,2.954,2163512064,70.474,0.10005,0.2441,189056880,301779008
@@ -212,10 +216,10 @@ CGOLF,Contact Gold Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,7837289,3766
 CHNR,"China Natural Resources, Inc.",Industrials,Pollution & Treatment Controls,XLI,0,2,0,0,0,Loosers,11397893,32765000,74882000,0.329,0.616,16450000,44.677,-0.043530002,-0.20014,240508000,-5257000
 CHSN,Chanson International Holding,Consumer Cyclical,Restaurants,XLY,1,0,0,0,0,Winners,20071800,1471984,14529141,0.282,0.567,13539559,119.81,-0.0322,-0.16407,445015,1521448
 CHUC,"Charlie's Holdings, Inc.",Consumer Defensive,Tobacco,XLP,1,0,0,0,0,Winners,38159728,739000,3298000,0.216,1.021,15232000,,-0.30838,-2.41938,690875,-934000
-CIFR,Cipher Mining Inc.,Financial Services,Capital Markets,XLF,15,0,46,9,0,"Winners,Random,Random 5",936917888,86105000,21978000,2.566,4.601,126842000,4.473,-0.07201,-0.0618,-34084500,-94241000
+CIFR,Cipher Mining Inc.,Financial Services,Capital Markets,XLF,16,0,46,10,0,"Winners,Random,Random 5",936917888,86105000,21978000,2.566,4.601,126842000,4.473,-0.07201,-0.0618,-34084500,-94241000
 CING,Cingulate Inc.,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,6000943,1986313,3604148,0.354,0.506,,,-1.20235,-5.12812,-9646880,-16678666
-CINGF,Coinsilium Group Limited,Technology,Software - Application,XLK,19,5,16,0,0,"Winners,Loosers,Random",6815172,608355,,12.895,32.833,129052,,-0.28493,-0.2035,-1377071,-1014197
-CISS,C3is Inc.,Industrials,Marine Shipping,XLI,0,2,0,0,0,Loosers,4114262,8949353,,0.851,1.06,7889042,,,,,2523614
+CINGF,Coinsilium Group Limited,Technology,Software - Application,XLK,19,5,17,0,0,"Winners,Loosers,Random",6815172,608355,,12.895,32.833,129052,,-0.28493,-0.2035,-1377071,-1014197
+CISS,C3is Inc.,Industrials,Marine Shipping,XLI,0,3,0,0,0,Loosers,4114262,8949353,,0.851,1.06,7889042,,,,,2523614
 CLBT,Cellebrite DI Ltd.,Technology,Software - Infrastructure,XLK,0,0,12,0,0,Random,2259863552,302923008,14129000,1.498,1.663,325110016,41.298,0.04438,-1.50078,13091125,102058000
 CLCFF,Christina Lake Cannabis Corp.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,2,0,0,0,Loosers,4431923,1728433,6002855,0.68,1.697,12126766,51.242,-0.06451,-0.27896,1054147,1331025
 CLDI,"Calidi Biotherapeutics, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,21775108,10147000,9750000,0.933,1.075,,,-1.7297701,,-38646624,-25673000
@@ -240,7 +244,7 @@ COMM,"CommScope Holding Company, Inc.",Technology,Communication Equipment,XLK,0,
 CORR,"CorEnergy Infrastructure Trust, Inc.",Real Estate,REIT - Specialty,XLRE,0,10,0,0,0,Loosers,1432068,3048354,227205696,0.114,1.018,134332976,99.171,0.01112,-0.0475,-90732016,8711462
 CORRL,"CorEnergy Infrastructure Trust, Inc.",Real Estate,REIT - Specialty,XLRE,0,1,0,0,0,Loosers,,3048354,227205696,0.114,1.018,134332976,99.171,0.01112,-0.0475,-90732016,8711462
 COYA,"Coya Therapeutics, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,140595728,10886282,,6.026,6.544,,,-0.65494,-5.2251897,-8522007,-11170806
-CPHRF,Cipher Pharmaceuticals Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,0,27,0,8,"Random,Random 10",127798640,42086000,353000,3.833,4.066,21151000,0.455,0.08875,0.53132,8199625,14798000
+CPHRF,Cipher Pharmaceuticals Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,1,0,27,0,9,"Winners,Random,Random 10",127798640,42086000,353000,3.833,4.066,21151000,0.455,0.08875,0.53132,8199625,14798000
 CPOP,"Pop Culture Group Co., Ltd",Communication Services,Entertainment,XLC,3,0,0,0,0,Winners,7048826,3637133,5234864,1.823,2.514,18543244,19.997,-0.2818,-0.63984,-9106995,-5962481
 CPSH,CPS Technologies Corporation,Technology,Electronic Components,XLK,0,2,0,0,0,Loosers,26207156,8813626,386887,3.265,4.459,27550646,2.234,0.04908,0.08298001,,
 CPYYF,Centrica plc,Utilities,Utilities - Independent Power Producers,XLU,1,0,0,0,0,Winners,9087305728,6848000000,4103000064,1.054,1.443,26457999360,96.929,-0.10845,1.46563,-6650375168,2752000000
@@ -248,7 +252,7 @@ CRBP,"Corbus Pharmaceuticals Holdings, Inc.",Healthcare,Biotechnology,XLV,3,0,0,
 CRD-A,Crawford & Company,Financial Services,Insurance Brokers,XLF,0,0,2,0,0,Random,386784288,58363000,311528000,1.04,1.234,1267131008,222.789,0.0533,0.22993,59634376,103790000
 CRD-B,Crawford & Company,Financial Services,Insurance Brokers,XLF,0,0,2,0,0,Random,386784256,58363000,311528000,1.04,1.234,1267131008,222.789,0.0533,0.22993,59634376,103790000
 CRDF,"Cardiff Oncology, Inc.",Healthcare,Biotechnology,XLV,19,0,0,0,0,Winners,180495888,74823000,2149000,7.195,7.415,488000,3.081,-0.28694,-0.4707,-18013500,-30887000
-CRDL,Cardiol Therapeutics Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,5,0,47,10,0,"Winners,Random,Random 5",90508320,40540136,181206,5.085,5.286,,0.52,-0.34614,-0.59876,-16223832,-31261212
+CRDL,Cardiol Therapeutics Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,5,0,47,11,0,"Winners,Random,Random 5",90508320,40540136,181206,5.085,5.286,,0.52,-0.34614,-0.59876,-16223832,-31261212
 CRDOF,Cerrado Gold Inc.,Basic Materials,Gold,XLB,0,3,0,0,0,Loosers,14211464,11586000,53498000,0.488,0.619,95049000,268.483,0.02945,-0.57712,-9262125,45962000
 CREX,"Creative Realities, Inc.",Technology,Software - Application,XLK,1,0,0,0,0,Winners,35390600,8376000,15983000,0.724,0.89,41198000,58.326,-0.01663,-0.21149999,5615125,8648000
 CRGE,"Charge Enterprises, Inc.",Communication Services,Telecom Services,XLC,0,30,0,0,0,Loosers,4515840,60936000,30889000,0.926,0.935,641369024,70.898,-0.15009,-0.99154,23154936,18776000
@@ -264,22 +268,23 @@ CTNT,Cheetah Net Supply Chain Service Inc.,Consumer Cyclical,Auto & Truck Dealer
 CTTH,"CTT Pharmaceutical Holdings, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,1,2,0,0,0,"Winners,Loosers",1312401,32121,87618,0.204,5.012,,11.871,-1.53569,-4.48831,-216976,-131174
 CUBXF,CubicFarm Systems Corp.,Industrials,Farm & Heavy Construction Machinery,XLI,0,12,0,0,0,Loosers,5599489,581994,16311620,0.076,0.674,4013157,,-0.37954,-73.39458,-3194385,-9408840
 CUEN,Cuentas Inc.,Technology,Software - Application,XLK,0,3,0,0,0,Loosers,1228527,1057000,207000,0.631,0.661,1787000,10.34,-0.5417,-2.95017,-2954250,-4815000
+CURLF,"Curaleaf Holdings, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,1,0,0,0,0,Winners,3738406400,91818000,1098219008,0.299,0.847,1346631936,93.761,0.00823,-0.1858,296600128,75261000
 CURO,CURO Group Holdings Corp.,Financial Services,Credit Services,XLF,0,3,0,0,0,Loosers,7966866,84594000,2107568000,12.151,13.073,244964992,,-0.08140001,,,
 CURV,Torrid Holdings Inc.,Consumer Cyclical,Apparel Retail,XLY,1,0,20,0,0,"Winners,Random",472627616,15596000,517367008,0.071,0.857,1159634048,,0.06653,,60516124,33132000
 CUTR,"Cutera, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,40320412,179516000,431976000,2.533,3.369,230182000,,-0.15609999,,-109708376,-120893000
 CVHL,"CV Holdings, Inc.",Real Estate,REIT - Mortgage,XLRE,2,12,0,0,0,"Winners,Loosers",2474924,4478000,809000,0.65,0.658,-1808239,15.782,-0.09079,,,5465855
 CVKD,"Cadrenal Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,10418332,8402500,21350,10.162,10.27,,0.278,-1.0262,-7.8059,-3916140,-3530323
-CXBMF,Calibre Mining Corp.,Basic Materials,Gold,XLB,0,0,27,10,0,"Random,Random 5",947077632,86160000,20733000,0.95,2.207,561702016,3.721,0.116969995,0.16871001,43862124,201106000
+CXBMF,Calibre Mining Corp.,Basic Materials,Gold,XLB,0,0,27,11,0,"Random,Random 5",947077632,86160000,20733000,0.95,2.207,561702016,3.721,0.116969995,0.16871001,43862124,201106000
 CXDO,"Crexendo, Inc.",Communication Services,Telecom Services,XLC,9,0,0,0,0,Winners,147717200,10347000,2186000,1.464,1.685,53199000,4.9,-0.01889,-0.00841,5783500,3499000
 CXOXF,Core Lithium Ltd,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,293957472,152946000,22944000,1.32,1.585,50598000,6.465,0.013359999,0.03642,-91136248,90806000
 CYAN,Cyanotech Corporation,Consumer Defensive,Packaged Foods,XLP,0,1,0,0,0,Loosers,2134846,661000,11209000,0.316,1.439,22493000,81.031,-0.085109994,-0.29247,1683625,-179000
 CYAP,Cyber Apps World Inc.,Technology,Software - Application,XLK,6,0,0,0,0,Winners,198575,10003,,0.52,0.52,,,0.084580004,0.48036,-113739,68599
 CYFRF,Cypherpunk Holdings Inc.,Financial Services,Capital Markets,XLF,5,0,28,0,0,"Winners,Random",15982242,1940949,,11.638,11.849,-970391,,-0.056810003,-0.099259995,-1312439,-638694
 CYH,"Community Health Systems, Inc.",Healthcare,Medical Care Facilities,XLV,0,1,0,0,0,Loosers,382863584,38000000,12174000128,1.12,1.498,12490000384,,0.03734,,-142250000,210000000
-CYIO,CYIOS Corporation,Industrials,Conglomerates,XLI,3,0,0,0,0,Winners,2620969,2472,29555,1.489,1.508,1490642,9.497,-0.12328,-0.17910999,42620,-29337
+CYIO,CYIOS Corporation,Industrials,Conglomerates,XLI,4,0,0,0,0,Winners,2620969,2472,29555,1.489,1.508,1490642,9.497,-0.12328,-0.17910999,42620,-29337
 CZOO,Cazoo Group Ltd,Consumer Cyclical,Auto & Truck Dealerships,XLY,0,2,0,0,0,Loosers,13939350,194578000,535897984,1.343,2.118,1083933056,,-0.16184999,-2.10394,93213872,8857000
 DADA,Dada Nexus Limited,Consumer Cyclical,Internet Retail,XLY,0,2,0,0,0,Loosers,660267712,3757323008,19858000,2.775,3.265,10933689344,0.291,-0.08166,-0.14731,,
-DAKT,"Daktronics, Inc.",Technology,Electronic Components,XLK,0,0,46,0,10,"Random,Random 10",397208640,76764000,49966000,1.333,2.206,812065024,21.15,0.112749994,0.25748,47735000,78300000
+DAKT,"Daktronics, Inc.",Technology,Electronic Components,XLK,0,0,46,0,11,"Random,Random 10",397208640,76764000,49966000,1.333,2.206,812065024,21.15,0.112749994,0.25748,47735000,78300000
 DATS,"DatChat, Inc.",Technology,Software - Application,XLK,0,1,0,0,0,Loosers,3281903,7498845,102205,15.964,16.555,4419,1.366,-0.52174,-0.93165,-3090182,-6690691
 DCFC,Tritium DCFC Limited,Industrials,Electrical Equipment & Parts,XLI,0,1,0,0,0,Loosers,19230330,29421000,229396000,0.286,0.92,184544000,,-0.25432,,-129097624,-162430000
 DCGO,DocGo Inc.,Healthcare,Medical Care Facilities,XLV,0,1,0,0,0,Loosers,394808096,59286148,46497144,1.889,1.992,624288640,15.236,0.02167,0.03441,-84864328,-64221880
@@ -296,15 +301,15 @@ DHC,Diversified Healthcare Trust,Real Estate,REIT - Healthcare Facilities,XLRE,3
 DIBS,"1stdibs.Com, Inc.",Consumer Cyclical,Internet Retail,XLY,5,0,0,0,0,Winners,231320560,139320992,21919000,5.166,5.337,84684000,16.322,-0.09633,-0.16081,-353375,-13556000
 DIOSF,Dios Exploration Inc.,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,3597334,677822,79479,2.027,2.039,,1.104,-0.01556,0.00105,-1483559,-136004
 DLA,"Delta Apparel, Inc.",Consumer Cyclical,Apparel Manufacturing,XLY,0,2,0,0,0,Loosers,21717542,377000,202788000,0.163,1.101,387990016,142.832,-0.025510002,-0.23778,61353752,38515000
-DMAC,DiaMedica Therapeutics Inc.,Healthcare,Biotechnology,XLV,1,0,45,10,0,"Winners,Random,Random 5",110445272,46465000,420000,21.555,22.067,,0.755,-0.25468,-0.39624,-10933000,-17682000
+DMAC,DiaMedica Therapeutics Inc.,Healthcare,Biotechnology,XLV,1,0,45,11,0,"Winners,Random,Random 5",110445272,46465000,420000,21.555,22.067,,0.755,-0.25468,-0.39624,-10933000,-17682000
 DMAQ,Deep Medicine Acquisition Corp.,Financial Services,Shell Companies,XLF,0,6,0,0,0,Loosers,12899562,357478,2149617,0.103,2.019,,,-0.01756,,121558792,-996685
 DMEHF,Desert Mountain Energy Corp.,Energy,Oil & Gas E&P,XLE,0,1,0,0,0,Loosers,16732064,14998332,,7.399,7.702,1704047,,-0.09125,-0.17512,-18174628,-4665140
-DMGGF,DMG Blockchain Solutions Inc.,Financial Services,Capital Markets,XLF,2,0,54,0,0,"Winners,Random",67544000,2833954,1427060,0.93,5.596,30457168,1.687,-0.10106,-0.02932,-10746656,9882319
+DMGGF,DMG Blockchain Solutions Inc.,Financial Services,Capital Markets,XLF,2,0,55,0,0,"Winners,Random",67544000,2833954,1427060,0.93,5.596,30457168,1.687,-0.10106,-0.02932,-10746656,9882319
 DMK,DMK Pharmaceuticals Corporation,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,1,0,0,0,Loosers,2341947,6663921,63209,0.495,0.585,3619689,,-1.0240799,,1171288,-9383119
 DMKPQ,DMK Pharmaceuticals Corporation,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,4,0,0,0,Loosers,,6663921,63209,0.495,0.585,3619689,,-1.0240799,,1171288,-9383119
 DMTK,"DermTech, Inc.",Healthcare,Diagnostics & Research,XLV,0,1,0,0,0,Loosers,22661016,55864000,54394000,4.347,4.592,15296000,95.136,-0.37823,-1.06462,-37312500,-76979000
 DMXCF,District Metals Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,36589124,4085731,,1.907,1.922,,,-0.09986,-0.15319,1170559,1038741
-DNN,Denison Mines Corp.,Energy,Uranium,XLE,0,0,33,10,0,"Random,Random 5",1621612672,141454000,417000,7.989,8.277,1855000,0.065,-0.04597,0.16583,-18003250,-30667000
+DNN,Denison Mines Corp.,Energy,Uranium,XLE,0,0,33,11,0,"Random,Random 5",1621612672,141454000,417000,7.989,8.277,1855000,0.065,-0.04597,0.16583,-18003250,-30667000
 DNTH,"Dianthus Therapeutics, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,735300480,189870000,670000,14.575,14.638,3544000,0.376,,,,-33858000
 DOGZ,Dogness (International) Corporation,Consumer Cyclical,Leisure,XLY,0,1,0,0,0,Loosers,18769682,4483308,18466980,0.787,1.503,17584454,24.189,-0.06008,-0.09052,-6097817,-8902265
 DPRO,Draganfly Inc.,Industrials,Aerospace & Defense,XLI,0,1,0,0,0,Loosers,10958640,2827341,975408,0.863,1.579,6952703,24.838,-0.85134006,-2.3415802,-7382040,-19403264
@@ -312,15 +317,15 @@ DRCR,Dear Cashmere Holding Company,Technology,Software - Application,XLK,0,1,0,0
 DRCT,"Direct Digital Holdings, Inc.",Communication Services,Advertising Agencies,XLC,1,0,0,0,0,Winners,315090432,5481949,24387392,1.136,1.163,146841552,381.239,0.08619001,0.81163,2210961,3403288
 DRFS,"Dr. Foods, Inc.",Industrials,Pollution & Treatment Controls,XLI,0,2,0,0,0,Loosers,1323063,82295,,1.017,7.779,1654,,-0.30598,-0.51666,-221794,-256451
 DROR,"Dror Ortho-Design, Inc.",Communication Services,Electronic Gaming & Multimedia,XLC,3,3,0,0,0,"Winners,Loosers",4954550,4015551,,4.244,4.244,,,-0.117860004,-0.30366,-185136,-768139
-DRSHF,DroneShield Limited,Technology,Computer Hardware,XLK,1,0,35,0,0,"Winners,Random",268639328,56771344,2625404,2.939,4.185,55078256,3.523,0.03735,0.19964,5776698,9482476
+DRSHF,DroneShield Limited,Technology,Computer Hardware,XLK,1,0,36,0,0,"Winners,Random",268639328,56771344,2625404,2.939,4.185,55078256,3.523,0.03735,0.19964,5776698,9482476
 DSP,Viant Technology Inc.,Technology,Software - Application,XLK,2,0,0,0,0,Winners,664000128,216458000,25434000,3.068,3.127,222934000,9.269,-0.02922,-0.03682,28123000,37752000
 DTARF,Delta Resources Limited,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,11343949,7456664,30000,6.291,6.427,,0.431,-0.96819997,-1.6693699,-2775162,-5933111
 DTLAP,Brookfield DTLA Fund Office Trust Investor Inc.,Real Estate,REIT - Office,XLRE,0,7,0,0,0,Loosers,,33785000,2279572992,8.643,10.474,297129984,1231.476,0.00612,-0.74492997,78646496,39827000
 DTMXF,Datametrex AI Limited,Technology,Information Technology Services,XLK,0,2,0,0,0,Loosers,15128741,599521,3856549,0.447,0.515,8518672,37.339,-0.23834999,-0.8199,-2394572,-5838364
-DTSRF,Ether Capital Corporation,Financial Services,Asset Management,XLF,2,0,32,9,0,"Winners,Random,Random 5",112152480,457454,,1.481,1.481,801976,,0.0059100003,0.63245,837311,-2726362
+DTSRF,Ether Capital Corporation,Financial Services,Asset Management,XLF,2,0,32,10,0,"Winners,Random,Random 5",112152480,457454,,1.481,1.481,801976,,0.0059100003,0.63245,837311,-2726362
 DTSS,Datasea Inc.,Technology,Software - Infrastructure,XLK,0,2,0,0,0,Loosers,20433234,437716,775410,0.204,1.682,25143064,30.627,-1.55605,-13.6569605,-4626285,-7002874
-DTST,Data Storage Corporation,Technology,Information Technology Services,XLK,11,0,47,0,10,"Winners,Random,Random 10",37453580,11525309,822145,3.65,3.879,24737344,4.177,-0.01528,-0.13198,1650876,2679533
-DYLLF,Deep Yellow Limited,Energy,Uranium,XLE,0,0,56,0,0,Random,617857408,40770144,3833828,4.104,4.195,38459,1.023,-0.02881,-0.04131,-25720376,-5229820
+DTST,Data Storage Corporation,Technology,Information Technology Services,XLK,11,0,47,0,11,"Winners,Random,Random 10",37453580,11525309,822145,3.65,3.879,24737344,4.177,-0.01528,-0.13198,1650876,2679533
+DYLLF,Deep Yellow Limited,Energy,Uranium,XLE,0,0,57,0,0,Random,617857408,40770144,3833828,4.104,4.195,38459,1.023,-0.02881,-0.04131,-25720376,-5229820
 DYNT,Dynatronics Corporation,Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,2245894,401107,6908167,0.504,1.406,35176880,44.483,-0.09175,-0.27628002,439844,-1443887
 DZCA,"DrazCanna, Inc.",Financial Services,Shell Companies,XLF,3,0,0,0,0,Winners,1437529,59360,286319,0.149,0.594,2047519,32.354,-1.17821,-6.9064,-5443380,-6597751
 EB,"Eventbrite, Inc.",Technology,Software - Application,XLK,0,1,0,0,0,Loosers,539900416,642945984,360959008,1.815,1.991,326134016,188.238,-0.01717,-0.1478,30849000,19018000
@@ -328,17 +333,17 @@ EBON,Ebang International Holdings Inc.,Technology,Computer Hardware,XLK,0,0,3,0,
 ECAOF,Eco (Atlantic) Oil & Gas Ltd.,Energy,Oil & Gas E&P,XLE,0,2,0,0,0,Loosers,47160168,2203470,,1.439,1.459,-91480,,-0.044299997,-0.07761,-14660428,-13178409
 ECDA,"ECD Automotive Design, Inc.",Consumer Cyclical,Auto Manufacturers,XLY,0,1,0,0,0,Loosers,27114660,5182541,8089452,0.563,0.815,19545080,,,,,-329208
 ECGS,Eco-Growth Strategies Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,4,0,0,0,0,Winners,4404012,675918,2218340,0.857,0.908,10838927,49.829,,,,
-ECRFF,Cartier Resources Inc.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,24766720,2880188,58345,10.601,10.809,,0.145,-0.02096,-0.034879997,-8566075,-1112253
+ECRFF,Cartier Resources Inc.,Basic Materials,Gold,XLB,0,2,0,0,0,Loosers,24766720,2880188,58345,10.601,10.809,,0.145,-0.02096,-0.034879997,-8566075,-1112253
 EDEYF,Eden Innovations Ltd,Industrials,Specialty Industrial Machinery,XLI,1,0,0,0,0,Winners,40460968,1420502,10711084,0.133,0.557,2503659,145.048,-0.21213,-1.17057,-5396794,-4244719
 EFSH,1847 Holdings LLC,Industrials,Conglomerates,XLI,0,13,0,0,0,Loosers,6305496,2334567,37821740,0.41,1.025,63063840,1521.868,-0.07297,-2.5917401,-4946527,-5851510
 EGAN,eGain Corporation,Technology,Software - Application,XLK,0,1,0,0,0,Loosers,203752992,86833000,2057000,1.897,1.984,95639000,3.08,0.02865,0.10939,11432375,12272000
-EGRNQ,China Evergrande Group,Real Estate,Real Estate - Development,XLRE,6,21,0,0,0,"Winners,Loosers",396128992,7990000128,625629986816,0.115,0.689,268967002112,,0.00102,,-7837000192,-11075000320
+EGRNQ,China Evergrande Group,Real Estate,Real Estate - Development,XLRE,7,21,0,0,0,"Winners,Loosers",396128992,7990000128,625629986816,0.115,0.689,268967002112,,0.00102,,-7837000192,-11075000320
 EGTYF,Eguana Technologies Inc.,Industrials,Electrical Equipment & Parts,XLI,0,1,0,0,0,Loosers,6658203,2813659,35882504,1.453,2.28,18730804,,,,,-24061548
 EJH,E-Home Household Service Holdings Limited,Consumer Cyclical,Personal Services,XLY,0,3,0,0,0,Loosers,4029007,71252384,7521103,5.739,6.546,68321744,5.458,-0.15898,-0.35823002,-13680890,-8405064
 EKSO,"Ekso Bionics Holdings, Inc.",Healthcare,Medical Instruments & Supplies,XLV,5,0,0,0,0,Winners,25064340,8638000,7168000,1.76,2.49,18279000,56.862,-0.27055,-0.79889,-6960750,-12054000
 ELAB,"Elevai Labs, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,13274473,487695,244219,0.302,0.777,1152902,,,,,-2675065
-ELEK,Elektros Inc.,Consumer Cyclical,Auto Manufacturers,XLY,0,7,0,0,0,Loosers,199562544,23211,84460,0.637,17.777,,13.202,-0.41987,-0.80428004,-414191,-465652
-ELEV,"Elevation Oncology, Inc.",Healthcare,Biotechnology,XLV,9,0,0,0,0,Winners,213578320,83107000,30137000,20.05,21.222,,54.985,-0.27515,-0.88027,-38169248,-56180000
+ELEK,Elektros Inc.,Consumer Cyclical,Auto Manufacturers,XLY,0,8,0,0,0,Loosers,199562544,23211,84460,0.637,17.777,,13.202,-0.41987,-0.80428004,-414191,-465652
+ELEV,"Elevation Oncology, Inc.",Healthcare,Biotechnology,XLV,10,0,0,0,0,Winners,213578320,83107000,30137000,20.05,21.222,,54.985,-0.27515,-0.88027,-38169248,-56180000
 ELIQ,"Electriq Power Holdings, Inc.",Utilities,Utilities - Renewable,XLU,0,7,0,0,0,Loosers,3338984,8099738,25158526,0.175,0.628,1660407,,-0.57095003,,12836648,-26117780
 ELLXF,Elixinol Wellness Limited,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,0,4,0,0,0,Loosers,8462397,708000,1262000,0.487,1.639,8269000,19.53,-0.29261,-0.9612,-2018375,-2758000
 ELMSQ,"Electric Last Mile Solutions, Inc.",Consumer Cyclical,Auto Manufacturers,XLY,2,2,0,0,0,"Winners,Loosers",17363840,143154000,,3.665,3.665,,,,,,-2385816
@@ -357,12 +362,12 @@ ENTEF,ESE Entertainment Inc.,Communication Services,Entertainment,XLC,0,1,0,0,0,
 ENZN,"Enzon Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,4979800,46557000,,114.672,115.483,26000,,-0.013780001,0.02214,-592375,980000
 EPIX,ESSA Pharma Inc.,Healthcare,Biotechnology,XLV,5,0,0,0,0,Winners,398585280,142119792,374835,40.302,40.746,,0.266,-0.1287,-0.1705,-15167110,-22191780
 EQ,"Equillium, Inc.",Healthcare,Biotechnology,XLV,5,0,0,0,0,Winners,88851576,46306000,926000,1.836,1.912,42632000,3.841,-0.11169,-0.31453,11690750,11606000
-ESOA,Energy Services of America Corporation,Industrials,Engineering & Construction,XLI,5,0,47,0,10,"Winners,Random,Random 10",130228672,11255020,41587032,1.172,1.208,334225088,116.696,0.08189999,0.29072002,5067508,22359028
+ESOA,Energy Services of America Corporation,Industrials,Engineering & Construction,XLI,5,0,47,0,11,"Winners,Random,Random 10",130228672,11255020,41587032,1.172,1.208,334225088,116.696,0.08189999,0.29072002,5067508,22359028
 ESPGY,Esprit Holdings Limited,Consumer Cyclical,Apparel Retail,XLY,0,2,0,0,0,Loosers,109135056,1348999936,2024999936,0.9,1.663,6462000128,56.219,-0.09877,-0.32603002,185500000,-251000000
 ETAO,"ETAO International Co., Ltd.",Healthcare,Health Information Services,XLV,0,1,0,0,0,Loosers,15715217,12038241,15409672,0.612,0.768,58060024,,-3.34948,-12.09841,281820256,10823888
 ETON,"Eton Pharmaceuticals, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,1,0,0,0,0,Winners,117002304,22070000,5831000,2.46,2.613,32827000,34.519,0.043899998,0.15901,7602250,9268000
 ETST,"Earth Science Tech, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,XLV,5,0,0,0,0,Winners,24873230,205718,427832,0.386,0.865,5983770,19.813,-0.010089999,0.5258,108314,14547
-EUBG,Entrepreneur Universe Bright Group,Industrials,Consulting Services,XLI,0,0,1,0,0,Random,543527040,8727258,43497,15.124,15.156,5253598,0.504,0.21343,0.20989001,2669501,1597642
+EUBG,Entrepreneur Universe Bright Group,Industrials,Consulting Services,XLI,0,0,2,0,0,Random,543527040,8727258,43497,15.124,15.156,5253598,0.504,0.21343,0.20989001,2669501,1597642
 EULIF,European Lithium Limited,Basic Materials,Other Industrial Metals & Mining,XLB,5,0,4,0,0,"Winners,Random",73197600,13144813,,2.484,2.49,742885,,-0.03844,-0.16857,5214736,-7158699
 EVA,Enviva Inc.,Basic Materials,Lumber & Wood Production,XLB,0,12,0,0,0,Loosers,49555068,315201984,1930727936,0.985,1.416,1130936960,736.026,-0.027290002,-1.04135,-144267376,-62812000
 EVAX,Evaxion Biotech A/S,Healthcare,Biotechnology,XLV,0,4,0,0,0,Loosers,15012067,2605000,10306000,0.722,1.462,,,,,,-21515000
@@ -378,7 +383,7 @@ FCUV,Focus Universal Inc.,Technology,Scientific & Technical Instruments,XLK,0,2,
 FDCT,"FDCTech, Inc.",Financial Services,Capital Markets,XLF,15,0,0,0,0,Winners,4303246,1231766,554598,1.694,2.308,8814301,8.692,0.03218,0.28268,-1826751,-1055977
 FDMIF,Founders Metals Inc.,Basic Materials,Gold,XLB,11,0,0,0,0,Winners,76896256,5786556,,3.751,3.85,,,-0.09471,-0.16236,-2761361,-1717259
 FDVXF,FenixOro Gold Corp.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,9464196,1170706,408850,0.91,1.107,,4.906,-0.32993,-0.65547997,-4402060,-5981758
-FEBO,Fenbo Holdings Limited,Technology,Consumer Electronics,XLK,2,0,23,0,8,"Winners,Random,Random 10",101524496,21297000,18281000,1.191,1.6,116899000,52.179,,,,-3334000
+FEBO,Fenbo Holdings Limited,Technology,Consumer Electronics,XLK,2,0,23,0,9,"Winners,Random,Random 10",101524496,21297000,18281000,1.191,1.6,116899000,52.179,,,,-3334000
 FEERF,Freeport Resources Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,0,6,0,0,0,Loosers,3499826,1120934,,8.717,9.448,,,-1.36314,-3.0985901,-1560958,-2504858
 FEMY,Femasys Inc.,Healthcare,Medical Instruments & Supplies,XLV,1,0,0,0,0,Winners,40268256,8692435,2862522,4.022,4.675,1093103,27.409,-0.46793,-0.89495003,-6685179,-11112453
 FFIE,Faraday Future Intelligent Electric Inc.,Consumer Cyclical,Auto Manufacturers,XLY,0,1,0,0,0,Loosers,5504791,6714000,134744000,0.035,0.666,551000,51.468,-0.31464002,-1.9489701,-184755376,-268319008
@@ -389,9 +394,10 @@ FKMCF,Fokus Mining Corporation,Basic Materials,Other Industrial Metals & Mining,
 FLHLF,Filament Health Corp.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,2,0,0,0,0,Winners,9203806,2202840,1394577,6.187,6.236,569970,55.916,-0.27032,-1.8808299,-3221386,-3650854
 FLYNF,Flying Nickel Mining Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,3918113,581953,,13.645,14.266,,,,,,-1433768
 FMCC,Federal Home Loan Mortgage Corporation,Financial Services,Mortgage Finance,XLF,1,0,0,0,0,Winners,810949824,131157999616,3209219014656,205.916,207.309,22101000192,6724.821,0.0032499998,0.24871,,7615000064
+FMCKI,Federal Home Loan Mortgage Corporation,Financial Services,Mortgage Finance,XLF,1,0,0,0,0,Winners,2583925504,131157999616,3209219014656,205.916,207.309,22101000192,6724.821,0.0032499998,0.24871,,7615000064
 FMCKL,Federal Home Loan Mortgage Corporation,Financial Services,Mortgage Finance,XLF,2,0,0,0,0,Winners,2926500096,131157999616,3209219014656,205.916,207.309,22101000192,6724.821,0.0032499998,0.24871,,7615000064
 FMCKM,Federal Home Loan Mortgage Corporation,Financial Services,Mortgage Finance,XLF,7,0,0,0,0,Winners,2550528000,131157999616,3209219014656,205.916,207.309,22101000192,6724.821,0.0032499998,0.24871,,7615000064
-FNGR,"FingerMotion, Inc.",Communication Services,Telecom Services,XLC,0,0,29,9,0,"Random,Random 5",119278056,1934565,35330,2.49,3.541,40401592,0.279,-0.16518,-0.43308,-6703752,-9966714
+FNGR,"FingerMotion, Inc.",Communication Services,Telecom Services,XLC,0,0,29,10,0,"Random,Random 5",119278056,1934565,35330,2.49,3.541,40401592,0.279,-0.16518,-0.43308,-6703752,-9966714
 FNICF,Fathom Nickel Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,9960448,1868590,235909,2.056,2.056,,1.594,-0.06204,-0.13196,-3602827,-2162699
 FNMA,Federal National Mortgage Association,Financial Services,Mortgage Finance,XLF,13,0,0,0,0,Winners,1783458560,66718998528,4222858035200,81.416,82.093,31936999424,5436.083,0.00403,0.25236,,11882999808
 FNMAG,Federal National Mortgage Association,Financial Services,Mortgage Finance,XLF,2,0,0,0,0,Winners,4862989312,66718998528,4222858035200,81.416,82.093,31936999424,5436.083,0.00403,0.25236,,11882999808
@@ -400,13 +406,14 @@ FNMAI,Federal National Mortgage Association,Financial Services,Mortgage Finance,
 FNMAN,Federal National Mortgage Association,Financial Services,Mortgage Finance,XLF,1,0,0,0,0,Winners,4654468608,66718998528,4222858035200,81.416,82.093,31936999424,5436.083,0.00403,0.25236,,11882999808
 FNMAP,Federal National Mortgage Association,Financial Services,Mortgage Finance,XLF,4,0,0,0,0,Winners,,66718998528,4222858035200,81.416,82.093,31936999424,5436.083,0.00403,0.25236,,11882999808
 FNMAT,Federal National Mortgage Association,Financial Services,Mortgage Finance,XLF,1,0,0,0,0,Winners,5319464960,66718998528,4222858035200,81.416,82.093,31936999424,5436.083,0.00403,0.25236,,11882999808
+FORD,"Forward Industries, Inc.",Consumer Cyclical,Footwear & Accessories,XLY,0,1,0,0,0,Loosers,4628152,3026786,3999279,0.846,0.928,34087576,172.915,-0.00303,-0.03211,4743642,1305465
 FPAY,"FlexShopper, Inc.",Industrials,Rental & Leasing Services,XLI,1,0,0,0,0,Winners,24466194,5732483,108365904,5.985,13.363,108115592,378.878,0.040359996,0.12832,-14740681,-1128710
 FPH,"Five Point Holdings, LLC",Real Estate,Real Estate - Development,XLRE,1,0,0,0,0,Winners,447908288,353800992,694318976,5.281,32.938,211732000,34.593,0.00559,0.05831,54311376,154123008
 FRZT,"Freeze Tag, Inc.",Communication Services,Electronic Gaming & Multimedia,XLC,0,1,0,0,0,Loosers,645483,504430,545676,0.501,0.52,2158096,,0.011360001,,-251089,8029
 FSR,Fisker Inc.,Consumer Cyclical,Auto Manufacturers,XLY,0,2,0,0,0,Loosers,201366016,326801984,1307714944,0.578,1.822,272892992,1637.099,-0.14807999,-2.7195098,,
 FSXLF,Great Pacific Gold Corp.,Basic Materials,Gold,XLB,2,0,0,0,0,Winners,72284944,12889658,,42.989,43.341,,,-0.09961,-0.18525,-1613067,-3989908
 FTCHF,,Consumer Cyclical,Internet Retail,XLY,0,7,0,0,0,Loosers,7237027,453820000,1153121024,1.012,1.474,2351006976,190.23,-0.13288,-1.05326,-306420384,-247490000
-FTEL,Fitell Corporation,Consumer Cyclical,Specialty Retail,XLY,10,0,0,0,2,"Winners,Random 10",101456704,744508,709463,0.431,3.176,4799222,11.056,-0.02992,-0.35991,-4407054,-373104
+FTEL,Fitell Corporation,Consumer Cyclical,Specialty Retail,XLY,10,0,0,0,3,"Winners,Random 10",101456704,744508,709463,0.431,3.176,4799222,11.056,-0.02992,-0.35991,-4407054,-373104
 FTFT,Future FinTech Group Inc.,Technology,Software - Application,XLK,5,0,0,0,0,Winners,19225956,33662408,1499378,3.714,4.398,31994026,2.563,-0.081099994,-0.18536,10076898,-7230058
 FULC,"Fulcrum Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,0,3,0,0,Random,698629056,236220992,10821000,17.438,17.711,2805000,4.601,-0.28558,-0.44841,-56719000,-90965000
 FUSEF,Fuse Battery Metals Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,0,9,0,0,0,Loosers,4181037,1223195,,486.144,505.321,,,-0.106680006,-0.19293,-1293105,-942982
@@ -418,7 +425,7 @@ FYMNF,Finlay Minerals Ltd.,Basic Materials,Other Precious Metals & Mining,XLB,0,
 GALT,Galectin Therapeutics Inc.,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,124315888,20362000,62559000,1.935,2.054,,,-1.2208999,,-22427124,-35502000
 GARWF,Golden Arrow Resources Corporation,Basic Materials,Other Industrial Metals & Mining,XLB,0,5,0,0,0,Loosers,4797273,1934969,348594,5.338,5.917,,5.256,-0.48558998,-0.67032,-4645458,-7069921
 GATO,"Gatos Silver, Inc.",Basic Materials,Other Precious Metals & Mining,XLB,1,0,0,0,0,Winners,518165664,55484000,,1.701,2.359,,,-0.041100003,0.03592,-8689000,-12020000
-GAU,Galiano Gold Inc.,Basic Materials,Gold,XLB,0,0,43,10,0,"Random,Random 5",267717872,55270000,203000,4.699,4.763,,0.101,-0.054980002,0.13927001,2291000,-3634000
+GAU,Galiano Gold Inc.,Basic Materials,Gold,XLB,0,0,43,11,0,"Random,Random 5",267717872,55270000,203000,4.699,4.763,,0.101,-0.054980002,0.13927001,2291000,-3634000
 GBLTF,GBLT Corp.,Industrials,Electrical Equipment & Parts,XLI,0,2,0,0,0,Loosers,2521053,,2693859,0.475,0.885,25444580,,-0.061929997,,1252062,1206411
 GBRRF,Gabriel Resources Ltd.,Basic Materials,Other Precious Metals & Mining,XLB,1,5,0,0,0,"Winners,Loosers",20719600,4644000,,0.614,0.664,,,-0.80133003,-150.52113,-4610125,-8956000
 GDLNF,Energy Transition Minerals Ltd,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,31529740,21624000,930000,5.808,6.511,370000,4.066,-0.12835,-0.23628001,-2848626,-4444000
@@ -428,11 +435,11 @@ GDVM,"VeeMost Technologies Holdings, Inc.",Technology,Information Technology Ser
 GEVI,"General Enterprise Ventures, Inc.",Basic Materials,Specialty Chemicals,XLB,1,0,0,0,0,Winners,78036320,565867,1730855,0.434,0.55,260891,49.384,-1.28354,-2.80948,2455145,-1021655
 GIFI,"Gulf Island Fabrication, Inc.",Industrials,Metal Fabrication,XLI,9,0,0,0,0,Winners,112407184,46409000,21349000,2.863,3.405,151067008,27.034,-0.13,-0.26875,-26625376,7197000
 GIGA,Giga-tronics Incorporated,Technology,Scientific & Technical Instruments,XLK,0,7,0,0,0,Loosers,965664,2052000,19302000,0.617,1.066,36598000,353.97,-0.1247,-1.5466499,-2327250,-8635000
-GKPRF,Gatekeeper Systems Inc.,Industrials,Security & Protection Services,XLI,1,0,47,0,0,"Winners,Random",47065552,2363834,1185901,3.297,5.901,32788524,6.55,0.18045,0.35051998,239961,3934926
+GKPRF,Gatekeeper Systems Inc.,Industrials,Security & Protection Services,XLI,1,0,48,0,0,"Winners,Random",47065552,2363834,1185901,3.297,5.901,32788524,6.55,0.18045,0.35051998,239961,3934926
 GLFH,"Galenfeha, Inc.",Energy,Oil & Gas Equipment & Services,XLE,3,4,0,0,0,"Winners,Loosers",7195829,160793,,1.219,1.219,121000,,0.21855,2.09217,442131,555451
-GLGI,"Greystone Logistics, Inc.",Basic Materials,Specialty Chemicals,XLB,1,0,16,0,0,"Winners,Random",35915220,4183406,19856176,1.226,2.094,62714396,90.433,0.16248,0.43272,2272532,14912002
+GLGI,"Greystone Logistics, Inc.",Basic Materials,Specialty Chemicals,XLB,1,0,16,1,0,"Winners,Random,Random 5",35915220,4183406,19856176,1.226,2.094,62714396,90.433,0.16248,0.43272,2272532,14912002
 GLNLF,Galan Lithium Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,110890640,45150544,749427,6.311,6.311,3622,0.644,-0.04665,-0.07493,-30799064,-1907110
-GLPEY,"Galp Energia, SGPS, S.A.",Energy,Oil & Gas Integrated,XLE,0,0,0,0,9,Random 10,13190880256,2407000064,5409999872,1.096,1.563,20678000640,101.501,0.10024,0.27778,,
+GLPEY,"Galp Energia, SGPS, S.A.",Energy,Oil & Gas Integrated,XLE,0,0,0,0,10,Random 10,13190880256,2407000064,5409999872,1.096,1.563,20678000640,101.501,0.10024,0.27778,,
 GLUC,"Glucose Health, Inc.",Consumer Defensive,Packaged Foods,XLP,0,0,9,0,0,Random,3576250,308536,,312.68,534.125,1112699,,,,,-350436
 GMINF,G Mining Ventures Corp.,Basic Materials,Other Precious Metals & Mining,XLB,2,0,0,0,0,Winners,667471616,111818008,20149230,2.877,3.037,,8.257,,,,241672768
 GMVMF,GMV Minerals Inc.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,9605110,509912,,16.464,18.938,,,-0.06516,-0.1205,-688121,-478452
@@ -445,22 +452,23 @@ GRCMF,Green Shift Commodities Ltd.,Basic Materials,Other Industrial Metals & Min
 GREE,Greenidge Generation Holdings Inc.,Financial Services,Capital Markets,XLF,5,0,0,0,0,Winners,35615016,10687000,89450000,0.379,0.62,66759000,,-0.1232,-13.71163,2453000,-9108000
 GRFX,Graphex Group Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,20681546,17483000,263063008,0.88,1.104,329382016,71.978,-0.0355,-0.14847,57425000,55790000
 GRI,"GRI Bio, Inc.",Healthcare,Biotechnology,XLV,0,3,0,0,0,Loosers,827805,3488000,28000,1.602,2.006,,1.257,-2.92499,,-6234000,-4274000
-GRND,Grindr Inc.,Technology,Software - Application,XLK,0,0,1,0,1,"Random,Random 10",1659198976,27606000,342840992,1.014,1.183,259691008,,0.07846,,43658624,36147000
+GRND,Grindr Inc.,Technology,Software - Application,XLK,0,0,1,0,2,"Random,Random 10",1659198976,27606000,342840992,1.014,1.183,259691008,,0.07846,,43658624,36147000
 GRPH,"Graphite Bio, Inc.",Healthcare,Biotechnology,XLV,4,0,0,0,0,Winners,217223632,184259008,362000,38.411,39.196,,0.197,-0.17989,-0.51952,-44892000,-90007000
 GRUSF,Grown Rogue International Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,1,0,0,0,0,Winners,92459048,8858247,6719962,0.843,1.34,23353184,53.552,0.14186,-0.06165,8032895,5729351
 GSDT,GSDT Fintech Group Inc.,Technology,Information Technology Services,XLK,0,1,0,0,0,Loosers,21072660,145812,205550,1.08,1.08,1189357,187.358,,,,-1273462
-GSIT,"GSI Technology, Inc.",Technology,Semiconductors,XLK,11,0,30,10,0,"Winners,Random,Random 5",112056848,21575000,888000,2.858,3.745,21995000,2.243,-0.24039,-0.41801998,-8037250,-14801000
+GSIT,"GSI Technology, Inc.",Technology,Semiconductors,XLK,11,0,30,11,0,"Winners,Random,Random 5",112056848,21575000,888000,2.858,3.745,21995000,2.243,-0.24039,-0.41801998,-8037250,-14801000
 GSRFF,Golden Shield Resources Inc.,Basic Materials,Gold,XLB,0,13,0,0,0,Loosers,5385782,2449453,,12.245,13.091,,,-0.71713996,-1.20171,-1900033,-5099581
-GTEC,Greenland Technologies Holding Corporation,Industrials,Specialty Industrial Machinery,XLI,0,0,12,0,0,Random,34122196,25937740,12833795,1.614,1.969,86689920,15.03,0.02718,0.057129998,5890569,13875935
+GTEC,Greenland Technologies Holding Corporation,Industrials,Specialty Industrial Machinery,XLI,0,0,12,1,0,"Random,Random 5",34122196,25937740,12833795,1.614,1.969,86689920,15.03,0.02718,0.057129998,5890569,13875935
 GTN,"Gray Television, Inc.",Communication Services,Broadcasting,XLC,0,2,0,0,0,Loosers,575306816,21000000,6240000000,0.972,1.185,3280999936,238.077,0.025810001,-0.02822,411249984,648000000
 GTRIF,GTI Energy Limited,Basic Materials,Other Industrial Metals & Mining,XLB,2,0,1,0,0,"Winners,Random",12709690,3508145,,19.462,20.721,48773,,-0.04986,-0.06963,-6463557,-1545440
 GUELF,Global Uranium and Enrichment Limited,Energy,Uranium,XLE,0,1,0,0,0,Loosers,30525346,1469170,,8.499,9.052,50000,,-0.05861,-0.11436,-5311393,-2671833
 GURE,"Gulf Resources, Inc.",Basic Materials,Chemicals,XLB,0,1,0,0,0,Loosers,14396022,103774976,8923974,10.732,11.644,41762644,3.423,-0.00992,-0.021559998,-8892650,23917652
 GXAI,Gaxos.ai Inc.,Communication Services,Electronic Gaming & Multimedia,XLC,0,1,0,0,0,Loosers,,4335865,,21.518,21.913,,,,,,-2663246
 HAO,Haoxi Health Technology Limited,Communication Services,Advertising Agencies,XLC,1,0,4,0,0,"Winners,Random",227942000,1261677,949508,0.493,1.426,28229148,60.613,0.29852,19.23729,-1234619,-872132
-HCHDF,Hochschild Mining plc,Basic Materials,Gold,XLB,0,0,16,9,0,"Random,Random 5",722425664,93578000,323480992,0.706,0.929,701884992,46.386,0.01594,-0.066360004,-75200624,170634000
+HCHDF,Hochschild Mining plc,Basic Materials,Gold,XLB,0,0,16,10,0,"Random,Random 5",722425664,93578000,323480992,0.706,0.929,701884992,46.386,0.01594,-0.066360004,-75200624,170634000
 HELFY,HelloFresh SE,Consumer Cyclical,Restaurants,XLY,0,10,0,0,0,Loosers,1273023616,466600000,727000000,0.514,0.908,7612100096,68.819,0.03506,0.04659,-144475008,328500000
-HERB,YaSheng Group,Consumer Defensive,Farm Products,XLP,2,5,1,0,0,"Winners,Loosers,Random",34324996,1397324,45666684,1.675,2.492,18588588,21.484,0.0115,0.02019,2698105,2398836
+HERB,YaSheng Group,Consumer Defensive,Farm Products,XLP,2,6,1,0,0,"Winners,Loosers,Random",34324996,1397324,45666684,1.675,2.492,18588588,21.484,0.0115,0.02019,2698105,2398836
+HGAS,Global Gas Corporation,Basic Materials,Specialty Chemicals,XLB,0,1,0,0,0,Loosers,8468085,527,83950,20.292,20.292,,,,,,-6888
 HHDS,"Highlands REIT, Inc.",Real Estate,REIT - Diversified,XLRE,1,0,0,0,0,Winners,88860000,34023000,101650000,2.89,3.018,31188000,43.278,-0.011779999,-0.03845,1989125,3233000
 HIVE,HIVE Digital Technologies Ltd.,Financial Services,Capital Markets,XLF,3,0,4,0,0,"Winners,Random",290498112,24724000,32874000,0.902,3.511,95807216,18.258,-0.07277,-0.2557,-38226996,31243534
 HKIT,Hitek Global Inc.,Technology,Software - Application,XLK,0,3,0,0,0,Loosers,23747460,12222411,2555223,2.42,3.92,6517573,9.844,0.03187,0.071609996,-2747624,-197394
@@ -470,7 +478,7 @@ HLOGF,Helium One Global Ltd,Basic Materials,Other Industrial Metals & Mining,XLB
 HLP,Hongli Group Inc.,Basic Materials,Steel,XLB,0,1,0,0,0,Loosers,17320660,940792,7391592,1.109,1.669,18712774,35.911,0.05074,0.11175,-9996224,-151771
 HLTH,Cue Health Inc.,Healthcare,Health Information Services,XLV,0,1,0,0,0,Loosers,34873520,80889000,47939000,1.892,2.539,70936000,19.156,-0.31429002,-0.90346,,
 HLYK,HealthLynked Corp.,Healthcare,Medical Care Facilities,XLV,0,1,0,0,0,Loosers,13104020,51328,1806212,0.59,0.655,6197343,115.717,-0.39145002,-2.28884,-2908675,-3552950
-HMY,Harmony Gold Mining Company Limited,Basic Materials,Gold,XLB,5,0,45,0,10,"Winners,Random,Random 10",4916084224,3436000000,3652999936,1.063,1.615,57430999040,9.138,0.1351,0.25031,3662000128,13877999616
+HMY,Harmony Gold Mining Company Limited,Basic Materials,Gold,XLB,5,0,45,0,11,"Winners,Random,Random 10",4916084224,3436000000,3652999936,1.063,1.615,57430999040,9.138,0.1351,0.25031,3662000128,13877999616
 HNST,"The Honest Company, Inc.",Consumer Defensive,Household & Personal Products,XLP,10,0,0,0,0,Winners,447820320,32827000,29866000,1.339,2.782,344364992,24.254,-0.10375,-0.29119,41564876,19353000
 HOEGF,Höegh Autoliners ASA,Industrials,Marine Shipping,XLI,0,0,21,0,1,"Random,Random 10",1755083904,458332992,509847008,2.38,2.587,1446075008,36.115,0.19347,0.47649,334060384,746256000
 HOLO,MicroCloud Hologram Inc.,Technology,Electronic Components,XLK,0,3,0,0,0,Loosers,29527812,136273120,3401036,2.533,2.686,371653024,1.99,-0.57193,-1.3275399,-103004376,-181923040
@@ -487,7 +495,7 @@ HYHDF,Sixty Six Capital Inc.,Financial Services,Capital Markets,XLF,1,3,0,0,0,"W
 HYMCL,Hycroft Mining Holding Corporation,Basic Materials,Gold,XLB,0,22,0,0,0,Loosers,,107147000,142386000,12.91,13.649,11474000,630.613,-0.15019,-1.16414,-40361752,-42423000
 IAALF,IBC Advanced Alloys Corp.,Industrials,Metal Fabrication,XLI,0,6,0,0,0,Loosers,7119224,1772000,16378000,0.21,0.678,31841000,543.037,-0.018660001,-0.81577003,-1914375,1615000
 IBRX,"ImmunityBio, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,3445501184,189796000,719688000,2.127,2.381,556000,,-0.57478,,-209320624,-342212992
-IDR,"Idaho Strategic Resources, Inc.",Basic Materials,Gold,XLB,0,0,25,0,10,"Random,Random 10",96948912,1978522,2518484,1.767,2.355,13311334,13.012,0.0379,0.07395,-642393,1533133
+IDR,"Idaho Strategic Resources, Inc.",Basic Materials,Gold,XLB,0,0,25,0,11,"Random,Random 10",96948912,1978522,2518484,1.767,2.355,13311334,13.012,0.0379,0.07395,-642393,1533133
 IEGCF,Independence Gold Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,28106608,996516,447250,3.114,3.161,,8.678,-0.30565,-0.58376,-1329987,-2361651
 IFBD,"Infobird Co., Ltd",Technology,Software - Application,XLK,0,7,0,0,0,Loosers,8346455,3390,,0.303,1.356,5505734,,-0.29423,-2.21193,-18648612,-3697453
 ILAG,Intelligent Living Application Group Inc.,Industrials,Building Products & Equipment,XLI,0,2,0,0,0,Loosers,9118494,7513948,1883516,3.813,6.39,6750883,10.92,-0.19012,-0.42118,-6885815,-3709298
@@ -498,7 +506,7 @@ IMMX,"Immix Biopharma, Inc.",Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,7864
 IMNM,"Immunome, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,1352004224,90641000,350000,3.922,3.955,10192000,5.76,-0.22900999,-1.5060401,8027000,3208000
 IMPM,"Impac Mortgage Holdings, Inc.",Financial Services,Mortgage Finance,XLF,0,8,0,0,0,Loosers,965418,25916000,46426000,7.326,12.863,-10736000,,-0.03786,,,249568992
 IMRFF,iMetal Resources Inc.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,111599,58574,,0.231,0.5,,,-0.25139,-0.41292998,-2710402,-2588521
-IMRX,Immuneering Corporation,Healthcare,Biotechnology,XLV,1,1,5,0,0,"Winners,Loosers,Random",173796384,85665688,4462959,10.919,11.355,,4.927,-0.32459,-0.53358,-31097564,-48968632
+IMRX,Immuneering Corporation,Healthcare,Biotechnology,XLV,1,2,5,0,0,"Winners,Loosers,Random",173796384,85665688,4462959,10.919,11.355,,4.927,-0.32459,-0.53358,-31097564,-48968632
 INBS,Intelligent Bio Solutions Inc.,Healthcare,Medical Devices,XLV,0,3,0,0,0,Loosers,9843356,1119004,1080965,0.322,0.568,2460350,34.27,-0.44674,-2.00224,-3513016,-7283784
 INGN,"Inogen, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,167719696,128471000,21923000,2.364,2.856,315660000,10.704,-0.10912,-0.40799,4717625,-3234000
 INLX,"Intellinetics, Inc.",Technology,Software - Application,XLK,5,0,0,0,0,Winners,36134252,1689125,5808656,0.922,1.012,16731838,61.956,0.03999,0.07472,315870,1192358
@@ -506,30 +514,30 @@ INOD,Innodata Inc.,Technology,Information Technology Services,XLK,0,0,1,0,0,Rand
 INUMF,Infinitum Copper Corp.,Basic Materials,Copper,XLB,0,5,0,0,0,Loosers,1455759,94179,53500,0.167,0.56,,1.821,-0.45719,-1.18525,-1025628,-2274625
 INXDF,"The INX Digital Company, Inc.",Technology,Software - Application,XLK,2,11,0,0,0,"Winners,Loosers",26591420,20593000,962000,0.252,0.77,13042000,,-0.13385001,,-36843500,-13995000
 INZY,"Inozyme Pharma, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,354506400,192442000,34100000,15.678,16.363,,21.284,-0.25148,-0.46217,-43788248,-66588000
-IONGF,Lithium ION Energy Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,4217493,320652,,1.18,1.317,,,-0.34644002,-0.70198,-1425174,-1650185
-IONQ,"IonQ, Inc.",Technology,Computer Hardware,XLK,0,0,11,0,10,"Random,Random 10",2038571648,355440992,8105000,9.873,10.494,22042000,1.671,-0.17124,-0.2996,-39859248,-78811000
+IONGF,Lithium ION Energy Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,0,2,0,0,0,Loosers,4217493,320652,,1.18,1.317,,,-0.34644002,-0.70198,-1425174,-1650185
+IONQ,"IonQ, Inc.",Technology,Computer Hardware,XLK,0,0,11,0,11,"Random,Random 10",2038571648,355440992,8105000,9.873,10.494,22042000,1.671,-0.17124,-0.2996,-39859248,-78811000
 IPDN,"Professional Diversity Network, Inc.",Industrials,Staffing & Employment Services,XLI,1,0,0,0,0,Winners,19364236,615133,386368,0.391,0.559,7756008,18.082,-0.45206,-2.04066,-1888834,-3295110
 IPDQF,ImpediMed Limited,Healthcare,Medical Devices,XLV,0,0,5,0,0,Random,154118240,36905000,1273000,6.674,7.001,10473000,2.497,-0.27575,-0.42359,-14645875,-12630000
 IQAIF,IQ-AI Limited,Healthcare,Health Information Services,XLV,0,1,0,0,0,Loosers,5510861,90206,,0.638,0.638,562929,,-0.24002,-0.77806,-177510,-258668
-IQST,iQSTEL Inc.,Communication Services,Telecom Services,XLC,0,0,24,0,0,Random,46608824,2001320,786367,1.015,1.189,125396432,9.875,-0.11936,-0.62425,9996,-710860
-IREN,Iris Energy Limited,Financial Services,Capital Markets,XLF,7,0,33,8,2,"Winners,Random,Random 5,Random 10",528487648,91587000,1359000,3.008,3.376,122513000,0.356,-0.04883,-0.0629,-70767128,33554000
+IQST,iQSTEL Inc.,Communication Services,Telecom Services,XLC,0,0,25,0,0,Random,46608824,2001320,786367,1.015,1.189,125396432,9.875,-0.11936,-0.62425,9996,-710860
+IREN,Iris Energy Limited,Financial Services,Capital Markets,XLF,7,0,33,9,2,"Winners,Random,Random 5,Random 10",528487648,91587000,1359000,3.008,3.376,122513000,0.356,-0.04883,-0.0629,-70767128,33554000
 ISENF,IsoEnergy Ltd.,Energy,Uranium,XLE,1,0,0,0,0,Winners,522685824,54068940,37960808,15.174,15.279,,12.527,-0.02578,-0.10123,-10228704,-6010927
 ISPC,iSpecimen Inc.,Healthcare,Diagnostics & Research,XLV,0,1,0,0,0,Loosers,3270580,5005598,196244,1.314,1.362,9928184,2.015,-0.34527,-0.73873,-6401669,-5807550
 ISUN,"iSun, Inc.",Technology,Solar,XLK,0,1,0,0,0,Loosers,8949819,5600000,16286000,0.736,0.816,96130000,70.951,-0.060450003,-1.10997,2051375,-2534000
 ITRM,Iterum Therapeutics plc,Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,21765348,35892000,20214000,2.199,2.35,,588.986,-0.49382,-1.7286301,2447875,-30752000
 IVDN,"Innovative Designs, Inc.",Consumer Cyclical,Apparel Retail,XLY,0,1,0,0,0,Loosers,6636700,238677,135494,0.769,2.336,347763,12.222,-0.11913,-0.28544,-241445,-209489
-IVFH,"Innovative Food Holdings, Inc.",Consumer Defensive,Food Distribution,XLP,0,0,38,0,0,Random,46040352,3711887,9487422,1.172,1.621,77005528,215.492,0.03497,-0.32243,347502,7397
+IVFH,"Innovative Food Holdings, Inc.",Consumer Defensive,Food Distribution,XLP,0,0,39,0,0,Random,46040352,3711887,9487422,1.172,1.621,77005528,215.492,0.03497,-0.32243,347502,7397
 IVP,"Inspire Veterinary Partners, Inc.",Consumer Cyclical,Personal Services,XLY,0,1,0,0,0,Loosers,1560894,1956385,15601628,0.461,0.695,16071010,575.202,-0.20759001,,3287788,-3406373
 IVVD,"Invivyd, Inc.",Healthcare,Biotechnology,XLV,4,0,0,0,0,Winners,442107136,264884992,2565000,9.914,10.082,,1.041,-0.28741,-0.54352003,-103240752,-161328000
-IXHL,Incannex Healthcare Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,4,0,33,10,0,"Winners,Random,Random 5",70621944,14554000,470000,6.323,6.696,691124,2.49,-0.17692,0.5194,-7575953,-13282634
+IXHL,Incannex Healthcare Inc.,Healthcare,Drug Manufacturers - Specialty & Generic,XLV,4,0,33,11,0,"Winners,Random,Random 5",70621944,14554000,470000,6.323,6.696,691124,2.49,-0.17692,0.5194,-7575953,-13282634
 IXIXF,Indigo Exploration Inc.,Basic Materials,Gold,XLB,7,0,0,0,0,Winners,6549148,563282,30000,4.718,5.175,,4.173,-0.81058997,-5.75963,-450878,-961979
 IXRRF,Ionic Rare Earths Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,60316064,11116649,7319,14.814,16.048,2761222,0.017,-0.11769,-0.18563999,-8486970,-11658004
-IZM,ICZOOM Group Inc.,Technology,Electronics & Computer Distribution,XLK,0,0,47,0,10,"Random,Random 10",95094736,1109834,16431043,1.095,1.202,214405232,105.705,0.0061500003,0.1345,-6471074,-3751832
+IZM,ICZOOM Group Inc.,Technology,Electronics & Computer Distribution,XLK,0,0,47,0,11,"Random,Random 10",95094736,1109834,16431043,1.095,1.202,214405232,105.705,0.0061500003,0.1345,-6471074,-3751832
 JADA,Jade Art Group Inc.,Financial Services,Shell Companies,XLF,6,1,26,0,0,"Winners,Loosers,Random",1287678,16270724,,11.453,11.585,18741952,,0.09483,0.10899,10735537,11377901
 JAGX,"Jaguar Health, Inc.",Healthcare,Biotechnology,XLV,0,5,0,0,0,Loosers,3623950,3226000,35543000,0.407,1.771,10721000,2510.099,-0.42698002,-16.28076,-17903500,-32214000
 JCSE,JE Cleantech Holdings Limited,Industrials,Specialty Industrial Machinery,XLI,0,1,0,0,0,Loosers,3755002,4924000,9815000,0.851,1.969,20248000,59.456,0.03616,0.08347999,-1611125,623000
 JFBR,Jeffs' Brands Ltd,Consumer Cyclical,Internet Retail,XLY,0,5,0,0,0,Loosers,1925081,2153000,88000,1.606,3.041,7387000,0.78,-0.2926,-0.41846,-4478500,-4955000
-JFIN,Jiayin Group Inc.,Communication Services,Internet Content & Information,XLC,0,0,47,0,10,"Random,Random 10",332847616,180274000,53223000,1.218,2.583,4920721920,2.6,0.25081,1.06769,,
+JFIN,Jiayin Group Inc.,Communication Services,Internet Content & Information,XLC,0,0,47,0,11,"Random,Random 10",332847616,180274000,53223000,1.218,2.583,4920721920,2.6,0.25081,1.06769,,
 JG,Aurora Mobile Limited,Technology,Software - Infrastructure,XLK,0,1,0,0,0,Loosers,18133732,97890000,12361000,0.554,0.657,299736000,10.258,-0.088240005,-0.50056,,
 JMIA,Jumia Technologies AG,Consumer Cyclical,Internet Retail,XLY,2,0,0,0,0,Winners,655010176,120571000,6075000,1.269,1.43,186402000,8.84,-0.17542,-0.81705004,-61274124,-73998000
 JOAN,JOANN Inc.,Consumer Cyclical,Specialty Retail,XLY,0,3,0,0,0,Loosers,9660647,41200000,2022000000,0.074,1.427,2164499968,,-0.02833,,-36400000,-52500000
@@ -554,20 +562,20 @@ KLGDF,Kalo Gold Corp.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,2373424,306963,
 KMDA,Kamada Ltd.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,0,1,0,0,Random,335807392,55641000,8822000,1.551,3.427,142519008,3.615,0.01857,0.03944,-17142000,4315000
 KOOYF,Kootenay Silver Inc.,Basic Materials,Silver,XLB,3,0,0,0,0,Winners,38185128,3597224,,18.643,20.403,,,-0.12855,-0.3091,-4571756,-4724239
 KOPN,Kopin Corporation,Technology,Electronic Components,XLK,1,0,0,0,0,Winners,266307424,21210160,2770598,2.13,2.825,44000900,8.061,-0.19951999,-0.60133,-9948970,-13876196
-KRKNF,Kraken Robotics Inc.,Technology,Scientific & Technical Instruments,XLK,0,0,43,0,0,Random,168120080,791000,12447000,0.517,1.075,50388000,42.355,0.02632,0.06229,-2810875,9810000
-KROEF,KR1 Plc,Financial Services,Asset Management,XLF,2,0,12,2,0,"Winners,Random,Random 5",223486192,10444199,,13.06,113.2,7566019,,0.023629999,0.17916,-39917688,-34247352
+KRKNF,Kraken Robotics Inc.,Technology,Scientific & Technical Instruments,XLK,0,0,44,0,0,Random,168120080,791000,12447000,0.517,1.075,50388000,42.355,0.02632,0.06229,-2810875,9810000
+KROEF,KR1 Plc,Financial Services,Asset Management,XLF,2,0,12,3,0,"Winners,Random,Random 5",223486192,10444199,,13.06,113.2,7566019,,0.023629999,0.17916,-39917688,-34247352
 KRTL,"KRTL Holding Group, Inc.",Consumer Defensive,Beverages—Non-Alcoholic,XLP,0,3,0,0,0,Loosers,458663,5635,,2.459,24.274,260407,,,,,
 KXIN,Kaixin Auto Holdings,Consumer Cyclical,Auto & Truck Dealerships,XLY,0,2,0,0,0,Loosers,5943384,2851000,2981000,0.979,1.915,68399000,9.266,-0.24121,-0.77426004,10125250,-2498000
 KZIA,Kazia Therapeutics Limited,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,5306570,5241197,1796500,0.707,1.424,555,14.908,-0.4718,-1.34972,-14625265,-15156157
 LAES,SEALSQ Corp,Technology,Semiconductors,XLK,0,4,0,0,0,Loosers,41948032,1864000,15005000,0.586,1.697,27293000,,0.08663,,-4199750,-488000
-LBBB,Lakeshore Acquisition II Corp.,Financial Services,Shell Companies,XLF,0,7,0,0,0,Loosers,10764480,30050,870000,0.008,9.99,,,-0.00913,,32564244,-386370
+LBBB,Lakeshore Acquisition II Corp.,Financial Services,Shell Companies,XLF,0,8,0,0,0,Loosers,10764480,30050,870000,0.008,9.99,,,-0.00913,,32564244,-386370
 LBSR,Liberty Star Uranium & Metals Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,7,0,0,0,0,Winners,25953044,721737,117774,1.783,1.839,,35.835,-0.981,,-532477,-534658
 LEEEF,Leef Brands Inc.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,3,0,0,0,Loosers,25912620,4030171,19499940,0.429,0.855,29167028,240.959,-0.10215,-1.7400999,17527576,193528
 LEXTF,Lexston Mining Corporation,Basic Materials,Other Industrial Metals & Mining,XLB,2,0,0,0,0,Winners,1850352,233872,,10.858,24.036,,,,,,-759724
-LEXX,Lexaria Bioscience Corp.,Healthcare,Biotechnology,XLV,6,0,14,9,1,"Winners,Random,Random 5,Random 10",77360624,2026592,155071,20.569,21.632,279751,4.598,-0.75935,-1.31724,-3816904,-5817577
+LEXX,Lexaria Bioscience Corp.,Healthcare,Biotechnology,XLV,6,0,14,10,1,"Winners,Random,Random 5,Random 10",77360624,2026592,155071,20.569,21.632,279751,4.598,-0.75935,-1.31724,-3816904,-5817577
 LFMD,"LifeMD, Inc.",Healthcare,Health Information Services,XLV,1,0,0,0,0,Winners,311665440,33146724,18932352,1.105,1.225,152547008,340.133,-0.21524,,-8552784,8820232
 LFST,"LifeStance Health Group, Inc.",Healthcare,Medical Care Facilities,XLV,0,0,5,0,0,Random,2699091968,78824000,511041984,1.008,1.113,1055665024,35.764,-0.05178,-0.12638,13567750,-16884000
-LFVN,LifeVantage Corporation,Consumer Defensive,Packaged Foods,XLP,0,0,42,0,10,"Random,Random 10",89178704,17331000,13779000,0.865,1.68,210950000,50.46,0.03917,0.100030005,13970250,13728000
+LFVN,LifeVantage Corporation,Consumer Defensive,Packaged Foods,XLP,0,0,42,0,11,"Random,Random 10",89178704,17331000,13779000,0.865,1.68,210950000,50.46,0.03917,0.100030005,13970250,13728000
 LGCFF,Lavras Gold Corp.,Basic Materials,Gold,XLB,5,0,0,0,0,Winners,45190640,11052838,203813,17.892,18.004,,0.762,-0.06092,-0.09758,-6456926,-1728961
 LGCXF,Lahontan Gold Corp.,Basic Materials,Other Precious Metals & Mining,XLB,1,1,0,0,0,"Winners,Loosers",7168290,1095917,,7.67,8.619,,,-0.05459,-0.09989,-3556263,-1347755
 LGHL,Lion Group Holding Ltd.,Financial Services,Capital Markets,XLF,0,1,0,0,0,Loosers,3401608,32598142,4919148,1.078,1.14,12266925,16.686,-0.11108,-0.3225,,1565896
@@ -575,11 +583,12 @@ LIAN,LianBio,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,531669984,252222000,
 LICY,Li-Cycle Holdings Corp.,Industrials,Waste Management,XLI,0,1,0,0,0,Loosers,71496080,137400000,350300000,1.366,1.898,36500000,115.382,,,,-261400000
 LIDR,"AEye, Inc.",Technology,Software—Infrastructure,XLK,2,0,0,0,0,Winners,8278301,45892000,15484000,3.853,4.636,2487000,29.027,-0.44165,-1.011,-28236876,-57632000
 LILMW,Lilium N.V.,Industrials,Aerospace & Defense,XLI,1,0,0,0,0,Winners,,180480992,12117000,0.534,0.557,,,-0.58194,-6.9602003,148568128,-236886000
-LINC,Lincoln Educational Services Corporation,Consumer Defensive,Education & Training Services,XLP,0,0,26,0,6,"Random,Random 10",315052256,75992000,116786000,1.521,1.834,378070016,70.014,0.01307,0.16681999,-13242375,25558000
+LINC,Lincoln Educational Services Corporation,Consumer Defensive,Education & Training Services,XLP,0,0,26,0,7,"Random,Random 10",315052256,75992000,116786000,1.521,1.834,378070016,70.014,0.01307,0.16681999,-13242375,25558000
 LINRF,Liontown Resources Limited,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,2022350080,305438016,121273000,4.121,4.276,496000,26.965,-0.03746,-0.04847,-211912624,-16352000
 LIPO,Lipella Pharmaceuticals Inc.,Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,4919422,3293738,136594,8.631,8.899,449617,4.344,-0.62268,-1.1813099,-1516392,-3150172
 LLAP,Terran Orbital Corporation,Industrials,Aerospace & Defense,XLI,0,2,0,0,0,Loosers,233353200,38676000,195627008,0.802,1.427,136238000,,-0.53290004,,-132531752,-123890000
 LMPX,"LMP Automotive Holdings, Inc.",Consumer Cyclical,Auto & Truck Dealerships,XLY,0,2,0,0,0,Loosers,1909030,18849314,131860320,0.52,1.486,318486368,275.475,0.050890002,0.0019400001,-26301612,32730020
+LNSR,"LENSAR, Inc.",Healthcare,Medical Devices,XLV,1,0,0,0,0,Winners,44212988,24064000,2309000,2.497,3.993,42164000,4.894,-0.12187,-0.32263002,-1980125,-9659000
 LOOP,"Loop Industries, Inc.",Basic Materials,Specialty Chemicals,XLB,1,0,4,0,0,"Winners,Random",131179760,9366000,3315000,3.194,6.744,120838,17.538,-0.40669,-0.44714,-19145040,-24641760
 LOT,Lotus Technology Inc.,Consumer Cyclical,Auto Manufacturers,XLY,0,1,0,0,0,Loosers,5637044224,550899008,1008513984,0.394,0.623,137172992,,,,,-522383008
 LOWLF,Lowell Farms Inc.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,2,0,0,0,0,Winners,2620926,5688000,81503000,0.26,0.556,30058000,339.214,-0.07271,-0.87066,4898625,-3025000
@@ -587,12 +596,12 @@ LPSN,"LivePerson, Inc.",Technology,Software—Application,XLK,0,1,0,0,0,Loosers,
 LPTV,"Loop Media, Inc.",Communication Services,Broadcasting,XLC,0,1,0,0,0,Loosers,26384986,3811159,7108963,0.524,0.64,26987718,,-0.69005996,,1042989,-9298992
 LQR,LQR House Inc.,Consumer Defensive,Beverages—Wineries & Distilleries,XLP,0,1,0,0,0,Loosers,7972712,1863835,12210,3.02,5.24,880435,0.259,,,,-4451582
 LQWC,LifeQuest World Corporation,Industrials,Pollution & Treatment Controls,XLI,0,3,0,0,0,Loosers,301185,303531,,3.142,3.41,146466,,,,,-168997
-LSF,"Laird Superfood, Inc.",Consumer Defensive,Packaged Foods,XLP,2,0,0,0,0,Winners,17828878,7706806,382636,1.995,3.734,34224200,2.853,-0.27820998,-0.56582,-8625173,-10765881
+LSF,"Laird Superfood, Inc.",Consumer Defensive,Packaged Foods,XLP,3,0,0,0,0,Winners,17828878,7706806,382636,1.995,3.734,34224200,2.853,-0.27820998,-0.56582,-8625173,-10765881
 LTCHW,"Latch, Inc.",Technology,Software—Application,XLK,3,0,3,0,0,"Winners,Random",,263952000,2678000,7.217,7.981,48386000,0.782,-0.40602002,-1.05186,-96939504,-135332992
 LTHHF,Lithium Power International Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,0,9,0,0,Random,239707920,11501120,,1.687,2.476,90785,,-0.05747,0.01495,-460170,-6562865
-LTRN,Lantern Pharma Inc.,Healthcare,Biotechnology,XLV,10,0,0,0,0,Winners,67900816,44925580,274529,19.938,21.047,,0.605,-0.19132,-0.29026,-8407648,-13630061
+LTRN,Lantern Pharma Inc.,Healthcare,Biotechnology,XLV,11,0,0,0,0,Winners,67900816,44925580,274529,19.938,21.047,,0.605,-0.19132,-0.29026,-8407648,-13630061
 LTRX,"Lantronix, Inc.",Technology,Communication Equipment,XLK,1,1,0,0,0,"Winners,Loosers",140725392,22146000,29083000,1.131,2.082,137956992,37.88,-0.01925,-0.11769,23427750,21678000
-LTSRF,Lotus Resources Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,0,6,0,0,Random,476117184,12367478,,8.941,9.586,102472,,-0.048049998,-0.14761,-13071431,-6134712
+LTSRF,Lotus Resources Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,0,7,0,0,Random,476117184,12367478,,8.941,9.586,102472,,-0.048049998,-0.14761,-13071431,-6134712
 LUNA,Luna Innovations Incorporated,Technology,Scientific & Technical Instruments,XLK,0,8,0,0,0,Loosers,131852072,6028000,40134000,1.504,2.861,116614000,42.42,0.0055199997,-0.0123000005,-14091750,-13422000
 LUNMF,Lundin Mining Corporation,Basic Materials,Copper,XLB,5,0,0,0,0,Winners,7380032000,268792992,1485808000,0.895,1.48,3392077056,23.15,0.03294,0.053239997,-349314752,1016611968
 LUXH,LuxUrban Hotels Inc.,Consumer Cyclical,Lodging,XLY,2,0,0,0,0,Winners,79566192,4798580,244449392,0.819,1.305,98832856,1138.121,0.03608,-2.51016,-1179989,-11758049
@@ -603,7 +612,7 @@ LYRA,"Lyra Therapeutics, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,29
 MAIA,"MAIA Biotechnology, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,22046518,6104587,,1.499,1.598,,,-1.03285,-2.43803,-7159628,-11587905
 MAKOF,Mako Mining Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,125919080,660000,17151000,0.074,1.366,55565000,150.831,0.00215,-0.27435,-1130756,5854000
 MAKSY,Marks and Spencer Group plc,Consumer Cyclical,Department Stores,XLY,0,0,24,0,0,Random,6396579328,837699968,3291899904,0.425,0.802,12527099904,115.607,0.05652,0.13814001,741174976,1212099968
-MAMA,"Mama's Creations, Inc.",Consumer Defensive,Packaged Foods,XLP,0,0,47,2,8,"Random,Random 5,Random 10",181625216,5625000,14454000,1.169,1.418,99375624,80.506,0.14569001,0.49280998,4906924,7202036
+MAMA,"Mama's Creations, Inc.",Consumer Defensive,Packaged Foods,XLP,0,0,47,2,9,"Random,Random 5,Random 10",181625216,5625000,14454000,1.169,1.418,99375624,80.506,0.14569001,0.49280998,4906924,7202036
 MAPPF,ProStar Holdings Inc.,Technology,Software—Application,XLK,0,1,0,0,0,Loosers,17766638,1310329,143271,1.621,1.621,838769,19.628,-1.20043,-2.95355,-2309698,-4566739
 MARVF,Marvel Discovery Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,3664950,654329,3587,0.942,1.113,,0.075,-0.08998,-0.23419,-1413286,-803135
 MATH,Metalpha Technology Holding Limited,Financial Services,Capital Markets,XLF,7,0,0,0,0,Winners,66503428,6748115,133279,0.144,1.179,5692056,1.55,-0.18236,-1.04566,10728968,-1140324
@@ -613,12 +622,13 @@ MDNAF,,Healthcare,Biotechnology,XLV,8,0,0,0,0,Winners,75419320,21758000,,4.777,5
 MDVL,"MedAvail Holdings, Inc.",Healthcare,Pharmaceutical Retailers,XLV,0,2,0,0,0,Loosers,2905038,14359000,2264000,3.525,6.508,43326000,9.824,-0.68146,-1.9467,-27085376,-31539000
 MDVLQ,"MedAvail Holdings, Inc.",Healthcare,Pharmaceutical Retailers,XLV,0,4,0,0,0,Loosers,,14359000,2264000,3.525,6.508,43326000,9.824,-0.68146,-1.9467,-27085376,-31539000
 MDWK,"MDWerks, Inc.",Financial Services,Shell Companies,XLF,8,0,0,0,0,Winners,15426532,188302,73982,0.172,0.51,1779342,10.327,,,,-378679
-MDXG,"MiMedx Group, Inc.",Healthcare,Biotechnology,XLV,0,0,47,0,10,"Random,Random 10",1175664000,82000000,50545000,2.953,3.57,321476992,35.416,0.11303,0.62092,26149124,26775000
+MDXG,"MiMedx Group, Inc.",Healthcare,Biotechnology,XLV,0,0,47,0,11,"Random,Random 10",1175664000,82000000,50545000,2.953,3.57,321476992,35.416,0.11303,0.62092,26149124,26775000
 MEDVF,Medivolve Inc.,Healthcare,Diagnostics & Research,XLV,0,14,0,0,0,Loosers,308425,1817643,1781840,0.513,0.537,36583248,,-0.41446,,-956178,-4414113
 MEEC,Midwest Energy Emissions Corp.,Industrials,Pollution & Treatment Controls,XLI,2,0,0,0,0,Winners,102806952,2497128,10904576,1.146,1.379,19535440,,-0.086610004,,2480006,1224888
-MEIL,Methes Energies International Ltd.,Financial Services,Shell Companies,XLF,3,2,0,0,0,"Winners,Loosers",539169,353664,3863381,0.317,0.581,3719491,101.882,-0.17912,-0.6154,-1053856,-1917320
+MEIL,Methes Energies International Ltd.,Financial Services,Shell Companies,XLF,3,3,0,0,0,"Winners,Loosers",539169,353664,3863381,0.317,0.581,3719491,101.882,-0.17912,-0.6154,-1053856,-1917320
 MFH,Mercurity Fintech Holding Inc.,Financial Services,Capital Markets,XLF,10,0,0,0,0,Winners,138669376,15883434,10710976,1.5,1.505,326591,56.296,-0.19713,-0.27836,-6235805,-2038567
-MG,"Mistras Group, Inc.",Industrials,Security & Protection Services,XLI,0,0,33,0,10,"Random,Random 10",272012672,17646000,239256992,1.292,1.548,705473024,125.592,0.02948,-0.08963,49961752,26748000
+MG,"Mistras Group, Inc.",Industrials,Security & Protection Services,XLI,0,0,33,0,11,"Random,Random 10",272012672,17646000,239256992,1.292,1.548,705473024,125.592,0.02948,-0.08963,49961752,26748000
+MGHCF,Minco Capital Corp.,Financial Services,Asset Management,XLF,0,1,0,0,0,Loosers,1796645,5415935,188726,81.467,81.88,-339879,3.492,-0.08085,-0.13706,-269532,133825
 MGOL,"MGO Global, Inc.",Communication Services,Advertising Agencies,XLC,0,1,0,0,0,Loosers,5513007,1721050,,2.481,4.378,4467350,,-1.9994099,-8.56915,-4758801,-6901851
 MGRX,"Mangoceuticals, Inc.",Healthcare,Health Information Services,XLV,0,1,0,0,0,Loosers,3629181,1236747,143425,7.77,8.435,496058,10.586,,,,-5949194
 MHHC,MHHC Enterprises Inc.,Industrials,Specialty Business Services,XLI,4,0,0,0,0,Winners,369112,104505,955569,1.042,1.13,809442,,-0.18330999,,-1296525,159322
@@ -630,10 +640,10 @@ MITQ,"Moving iMage Technologies, Inc.",Technology,Communication Equipment,XLK,0,
 MKULQ,"Molekule Group, Inc.",Industrials,Pollution & Treatment Controls,XLI,0,1,0,0,0,Loosers,13862,5269376,47159648,0.432,2.275,21741914,115.857,-0.25182,-1.17011,-38316840,-33655976
 MLGO,MicroAlgo Inc.,Technology,Software—Infrastructure,XLK,0,1,0,0,0,Loosers,35787860,138675776,9004345,4.258,4.812,549777024,2.078,-0.04654,-0.26083001,-290112320,-33653952
 MLMLF,McFarlane Lake Mining Limited,Basic Materials,Gold,XLB,0,6,0,0,0,Loosers,9595123,3154597,195000,1.732,1.846,,11.52,-0.81316,-3.9561498,-1789053,-4705065
-MLXEF,Metals X Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,204318848,143042000,8357000,5.915,7.215,153780992,2.5,0.07467,0.04461,13480625,64860000
+MLXEF,Metals X Limited,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,1,0,0,"Loosers,Random",204318848,143042000,8357000,5.915,7.215,153780992,2.5,0.07467,0.04461,13480625,64860000
 MMAT,Meta Materials Inc.,Technology,Electronic Components,XLK,0,2,0,0,0,Loosers,14576532,9189994,12120708,0.714,0.957,7088678,12.987,-0.14014,-1.39485,32143492,-50814488
 MMRGF,Minaurum Gold Inc.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,69318728,1100255,,4.133,4.305,,,-0.16258,-0.36183,-1272877,-2351570
-MNMD,Mind Medicine (MindMed) Inc.,Healthcare,Biotechnology,XLV,5,0,0,0,0,Winners,587978368,99704000,14129000,3.092,3.221,,18.083,-0.39837003,-0.83589995,-25911250,-64365000
+MNMD,Mind Medicine (MindMed) Inc.,Healthcare,Biotechnology,XLV,6,0,0,0,0,Winners,587978368,99704000,14129000,3.092,3.221,,18.083,-0.39837003,-0.83589995,-25911250,-64365000
 MNMRF,Monumental Energy Corp.,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,3806520,3038896,,28.899,28.939,,,-0.096049994,-0.09843001,-2793644,-962370
 MNTS,Momentus Inc.,Industrials,Aerospace & Defense,XLI,0,2,0,0,0,Loosers,7526383,9750000,12166000,0.446,0.916,2186000,283.458,-0.66302,-2.46978,-41056624,-62379000
 MOBX,"Mobix Labs, Inc.",Technology,Semiconductors,XLK,0,1,0,0,0,Loosers,36131340,14796000,6473000,0.704,0.74,830000,148.259,-0.92127,,-6012500,-12750000
@@ -641,7 +651,7 @@ MOGLF,Mongolian Mining Corporation,Basic Materials,Coking Coal,XLB,3,0,0,0,0,Win
 MOMO,Hello Group Inc.,Communication Services,Internet Content & Information,XLC,0,1,0,0,0,Loosers,1132048256,6891091968,2285750016,3.394,3.744,12002323456,19.069,0.08988,0.17031999,1148706688,2277160960
 MOR,MorphoSys AG,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,2690763264,641047424,282515648,2.751,3.139,260859616,,-0.05683,,-261672304,-342828896
 MOTS,"Motus GI Holdings, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,942147,5724000,9441000,1.286,1.489,364000,,-0.57745,,-6393375,-13376000
-MPU,Mega Matrix Corp.,Industrials,Rental & Leasing Services,XLI,4,0,45,10,0,"Winners,Random,Random 5",96047448,1967000,,6.734,24.948,25800,,-0.38919,-1.20939,-11416788,-3149600
+MPU,Mega Matrix Corp.,Industrials,Rental & Leasing Services,XLI,5,0,45,11,0,"Winners,Random,Random 5",96047448,1967000,,6.734,24.948,25800,,-0.38919,-1.20939,-11416788,-3149600
 MQ,"Marqeta, Inc.",Technology,Software—Infrastructure,XLK,0,0,2,0,0,Random,3113694720,1249696000,9034000,4.037,4.126,676171008,0.727,-0.10529,-0.16416,41084624,21104000
 MREO,Mereo BioPharma Group plc,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,497862656,42113000,9312000,3.027,3.106,7128000,16.126,-0.20981,-0.40945998,-30122500,-33276000
 MRKR,"Marker Therapeutics, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,36800540,17473900,,6.317,7.011,8513744,,-0.51230997,-1.24674,-19333748,-20377800
@@ -652,6 +662,7 @@ MSAI,"MultiSensor AI Holdings, Inc.",Technology,Software - Infrastructure,XLK,0,
 MSCLF,Satellos Bioscience Inc.,Healthcare,Biotechnology,XLV,0,0,8,0,0,Random,51884320,44263000,,19.257,19.291,,,-0.24242,-0.52875,-5550582,-10258347
 MSRM,Mushrooms Inc.,Consumer Defensive,Farm Products,XLP,1,2,1,0,0,"Winners,Loosers,Random",2279498,21100,,0.879,0.879,47988,,-0.15113,-0.26048002,-23453,-62083
 MTC,"MMTec, Inc.",Technology,Software—Application,XLK,4,0,0,0,0,Winners,392315648,2270820,59194260,0.839,1.304,3222182,103.983,-0.06079,-0.51097,-8051785,-4454891
+MTLFF,Metallis Resources Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,3309956,68347,66511,1.268,1.375,,0.463,-0.02192,-0.037809998,-1044381,-573439
 MVNT,Movement Industries Corporation,Financial Services,Asset Management,XLF,3,0,0,0,0,Winners,8455677,24670,672424,0.463,1.028,2359600,12.811,,,,2554965
 MWSNF,Mawson Gold Limited,Basic Materials,Gold,XLB,2,0,0,0,0,Winners,128563872,7619037,840642,3.04,3.078,,2.524,-0.087,-0.88082004,-10522872,-646022
 MYCOF,Mydecine Innovations Group Inc.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,7,0,0,0,Loosers,584697,17339,5503494,0.021,0.713,,,-2.0241702,,-7137217,-6418291
@@ -689,15 +700,16 @@ NMGC,NeoMagic Corporation,Technology,Semiconductors,XLK,1,0,0,0,0,Winners,164025
 NMTC,NeuroOne Medical Technologies Corporation,Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,30339152,2680985,153721,2.331,3.682,2815511,3.479,-1.09489,-2.14006,-8606600,-13204012
 NN,NextNav Inc.,Technology,Software—Infrastructure,XLK,5,0,0,0,0,Winners,579425856,97094000,64777000,8.912,9.119,3460000,77.019,-0.24927999,-0.76853997,-16258625,-36517000
 NOCSF,Fitzroy Minerals Inc.,Basic Materials,Other Precious Metals & Mining,XLB,0,6,0,0,0,Loosers,5436410,406279,,12.009,12.009,,,-0.72619003,-1.17514,209088,-770762
+NOTV,"Inotiv, Inc.",Healthcare,Diagnostics & Research,XLV,1,0,0,0,0,Winners,235469088,22001000,428520992,1.043,1.742,585171968,168.602,0.004,-0.12659,10874250,28748000
 NOVA,Sunnova Energy International Inc.,Technology,Solar,XLK,0,1,0,0,0,Loosers,652839680,220288992,7534119936,0.638,0.855,720652992,353.895,-0.011829999,-0.25019,-1776570496,-237562000
-NPPTF,Neptune Digital Assets Corp.,Financial Services,Capital Markets,XLF,0,0,45,0,0,Random,32025924,13274634,,41.832,44.118,2251661,,-0.03723,-0.083409995,4518797,-4175571
+NPPTF,Neptune Digital Assets Corp.,Financial Services,Capital Markets,XLF,0,0,46,0,0,Random,32025924,13274634,,41.832,44.118,2251661,,-0.03723,-0.083409995,4518797,-4175571
 NPRFF,Nepra Foods Inc.,Consumer Defensive,Packaged Foods,XLP,8,8,0,0,0,"Winners,Loosers",4172451,,,1.236,2.939,6052109,,-0.76962,-4.2877803,-5002714,-6616436
-NR,"Newpark Resources, Inc.",Energy,Oil & Gas Equipment & Services,XLE,0,0,17,0,10,"Random,Random 10",584483648,38594000,97196000,1.519,2.621,749600000,23.4,0.03415,0.03463,91228128,100001000
+NR,"Newpark Resources, Inc.",Energy,Oil & Gas Equipment & Services,XLE,0,0,17,0,11,"Random,Random 10",584483648,38594000,97196000,1.519,2.621,749600000,23.4,0.03415,0.03463,91228128,100001000
 NRSAF,Norse Atlantic ASA,Industrials,Airlines,XLI,0,1,0,0,0,Loosers,104748632,54830000,973827008,0.571,0.694,439436000,,-0.07777,,219875,-20558000
 NRVTF,Noram Lithium Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,13185361,6052753,70003,6.4,6.921,,0.782,-0.2886,-0.80219,-6802256,-6001387
 NRXP,"NRx Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,61330980,8902000,10069000,0.461,0.677,,,-1.08969,-6.82612,-14752250,-26783000
 NSPR,"InspireMD, Inc.",Healthcare,Medical Devices,XLV,2,0,0,0,0,Winners,59922232,39023000,1038000,6.89,7.335,6205000,2.628,-0.36556,-0.70011,-13607375,-16376000
-NSTG,"NanoString Technologies, Inc.",Healthcare,Medical Instruments & Supplies,XLV,0,8,0,0,0,Loosers,5066857,97101000,247702000,1.876,2.732,162472992,,-0.30872,-10.28558,-81480752,-114977000
+NSTG,"NanoString Technologies, Inc.",Healthcare,Medical Instruments & Supplies,XLV,0,9,0,0,0,Loosers,5066857,97101000,247702000,1.876,2.732,162472992,,-0.30872,-10.28558,-81480752,-114977000
 NSTGQ,"NanoString Technologies, Inc.",Healthcare,Medical Instruments & Supplies,XLV,0,2,0,0,0,Loosers,,97101000,247702000,1.876,2.732,162472992,,-0.30872,-10.28558,-81480752,-114977000
 NTCPF,NorthIsle Copper and Gold Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,11,0,0,0,0,Winners,67769608,3979417,,5.532,5.65,,,-0.27086002,-0.36115003,-2564548,-5484264
 NTPIF,Nam Tai Property Inc.,Real Estate,Real Estate Services,XLRE,3,0,0,0,0,Winners,222379600,70378000,207944000,0.206,0.964,152982000,76.581,0.0647,0.20083,-38498376,-119997000
@@ -716,46 +728,48 @@ NXE,NexGen Energy Ltd.,Energy,Uranium,XLE,2,0,0,0,0,Winners,3976483584,290743008
 NXGL,"NEXGEL, Inc.",Healthcare,Medical Instruments & Supplies,XLV,1,0,0,0,0,Winners,15787998,3266000,2375000,2.693,3.579,3531000,37.964,-0.17085,-0.36604,-3410750,-3298000
 NYWKF,NTG Clarity Networks Inc.,Technology,Software—Application,XLK,1,0,0,0,0,Winners,7406880,430088,7368411,0.663,0.688,25246860,,0.22631,,1091981,2506518
 NYXH,Nyxoah S.A.,Healthcare,Medical Instruments & Supplies,XLV,1,0,1,0,0,"Winners,Random",487457984,57748000,12704000,4.412,4.732,4348000,12.96,-0.20863001,-0.39581,,
-OABI,"OmniAb, Inc.",Healthcare,Biotechnology,XLV,0,0,24,0,3,"Random,Random 10",631514432,96628000,26176000,4.101,4.264,64687000,8.065,-0.0708,-0.106759995,16199000,4325000
-OCTO,Eightco Holdings Inc.,Consumer Cyclical,Packaging & Containers,XLY,1,0,0,0,0,Winners,3481497,3663658,42433392,0.248,0.686,75824704,1555.628,-0.18353,-16.05299,-816988,-8245123
+OABI,"OmniAb, Inc.",Healthcare,Biotechnology,XLV,0,0,24,0,4,"Random,Random 10",631514432,96628000,26176000,4.101,4.264,64687000,8.065,-0.0708,-0.106759995,16199000,4325000
+OCTO,Eightco Holdings Inc.,Consumer Cyclical,Packaging & Containers,XLY,2,0,0,0,0,Winners,3481497,3663658,42433392,0.248,0.686,75824704,1555.628,-0.18353,-16.05299,-816988,-8245123
 OGEN,"Oragenics, Inc.",Healthcare,Biotechnology,XLV,0,4,0,0,0,Loosers,6407386,5766644,517757,4.138,5.573,37653,7.969,-0.52142,-0.93208003,-5569130,-8621171
-OGNRF,Orogen Royalties Inc.,Basic Materials,Gold,XLB,0,0,36,0,0,Random,124769560,15750878,197520,26.688,27.106,5062511,0.33,0.00895,0.04289,-1560180,1148595
+OGNRF,Orogen Royalties Inc.,Basic Materials,Gold,XLB,0,0,37,0,0,Random,124769560,15750878,197520,26.688,27.106,5062511,0.33,0.00895,0.04289,-1560180,1148595
 OIBZQ,Oi S.A.,Communication Services,Telecom Services,XLC,3,0,0,0,0,Winners,110932800,2483016960,29062856704,0.377,0.719,10060448768,,-0.04401,,-48632376,-1571874048
 OILFF,Nextleaf Solutions Ltd.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,3,0,0,0,0,Winners,16553612,367836,474489,0.607,1.231,10195664,11.121,0.0921,0.27033,-108900,301137
 OMER,Omeros Corporation,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,264035088,310310016,466297984,2.155,2.387,,,-0.21684,,-79752872,84169000
 OMGGF,Omai Gold Mines Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,34733584,1138275,,1.224,1.348,,,-0.52373004,-1.04153,-1224340,-2590344
 OMH,Ohmyhome Limited,Real Estate,Real Estate Services,XLRE,0,1,0,0,0,Loosers,24599052,6348186,1230092,5.876,6.259,5810099,20.598,-0.52889997,-1.5741401,-3680833,-5361155
 ONCO,"Onconetix, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,3996103,7653975,12920093,0.434,0.541,,126.217,-0.30219,-1.01632,-18101304,-12092499
-OPEN,Opendoor Technologies Inc.,Real Estate,Real Estate Services,XLRE,4,0,40,10,0,"Winners,Random,Random 5",1977758208,1068000000,2534000128,15.257,49.214,6945999872,262.048,-0.04447,-0.26790002,2553874944,2344000000
+OPEN,Opendoor Technologies Inc.,Real Estate,Real Estate Services,XLRE,4,0,40,11,0,"Winners,Random,Random 5",1977758208,1068000000,2534000128,15.257,49.214,6945999872,262.048,-0.04447,-0.26790002,2553874944,2344000000
 OPFI,OppFi Inc.,Financial Services,Credit Services,XLF,1,0,0,0,0,Winners,281600000,31800000,334116000,18.725,20.318,226432000,172.199,0.06684,0.22356,,296145984
 OPHRF,Ophir Gold Corp.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,8293459,5508656,,46.981,47.077,,,-0.13247,-0.20354,-496655,-670076
 OPTHF,Optimi Health Corp.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,1,0,0,0,0,Winners,17173748,493176,2631899,0.744,1.847,238618,21.767,-0.19346,-0.3635,-3446540,-4371340
-OPXS,"Optex Systems Holdings, Inc",Industrials,Aerospace & Defense,XLI,3,0,40,0,9,"Winners,Random,Random 10",48107016,2373000,2781000,1.042,3.686,28587000,18.085,0.10840999,0.21150999,340000,1507000
+OPXS,"Optex Systems Holdings, Inc",Industrials,Aerospace & Defense,XLI,3,0,40,0,10,"Winners,Random,Random 10",48107016,2373000,2781000,1.042,3.686,28587000,18.085,0.10840999,0.21150999,340000,1507000
 ORGO,Organogenesis Holdings Inc.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,0,1,0,0,Random,393249728,103840000,121677000,2.308,2.795,433140000,43.665,0.02243,0.018170001,17997876,30917000
 ORMP,Oramed Pharmaceuticals Inc.,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,119126448,162047008,51622000,3.045,3.055,1340000,31.691,-0.051570002,0.0324,-9688750,-10295000
-ORN,"Orion Group Holdings, Inc.",Industrials,Engineering & Construction,XLI,11,0,47,0,10,"Winners,Random,Random 10",292613696,30938000,112940000,1.205,1.259,711777984,92.974,-0.01307,-0.13788,24860250,17178000
+ORN,"Orion Group Holdings, Inc.",Industrials,Engineering & Construction,XLI,11,0,47,0,11,"Winners,Random,Random 10",292613696,30938000,112940000,1.205,1.259,711777984,92.974,-0.01307,-0.13788,24860250,17178000
 ORVMF,Orvana Minerals Corp.,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,16463072,3859000,15126000,0.174,0.538,96268000,29.879,-0.0026800002,-0.0875,8153375,17140000
 OSA,"ProSomnus, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,10721810,12021908,41101056,1.336,1.526,25606048,,-0.59062,,-13582465,-15792074
 OSAAW,"ProSomnus, Inc.",Healthcare,Medical Devices,XLV,0,6,0,0,0,Loosers,,12021908,41101056,1.336,1.526,25606048,,-0.59062,,-13582465,-15792074
 OSCR,"Oscar Health, Inc.",Healthcare,Healthcare Plans,XLV,1,0,0,0,0,Winners,3356311552,2560147968,379755008,1.158,1.26,5861306880,47.109,-0.036229998,-0.31862,546013760,-272159008
 OSIIF,Osino Resources Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,213629376,8338550,19852520,1.764,1.839,,,-0.56944,,-16227839,-16490975
-OSSIF,OneSoft Solutions Inc.,Technology,Software—Application,XLK,0,0,57,0,0,Random,78929648,4306675,,1.195,1.235,9659753,,-0.14671999,-0.53047,-108793,-333919
+OSS,"One Stop Systems, Inc.",Technology,Computer Hardware,XLK,0,0,0,1,0,Random 5,80355600,13174301,4354749,2.084,4.237,65991072,11.122,-0.01809,-0.22695999,1449594,1094338
+OSSIF,OneSoft Solutions Inc.,Technology,Software—Application,XLK,0,0,58,0,0,Random,78929648,4306675,,1.195,1.235,9659753,,-0.14671999,-0.53047,-108793,-333919
 OST,"Ostin Technology Group Co., Ltd.",Technology,Electronic Components,XLK,0,1,0,0,0,Loosers,7283223,854518,28683000,0.197,0.603,57525700,203.597,-0.11481,-0.55467,-2994274,-2591320
 OTCFF,Ocumetics Technology Corp.,Healthcare,Medical Instruments & Supplies,XLV,0,1,0,0,0,Loosers,25755066,2088901,500000,1.153,1.409,,22.695,,,,-2179492
 OVTZ,"Oculus VisionTech, Inc.",Technology,Software—Infrastructure,XLK,0,4,0,0,0,Loosers,2678682,239682,,0.964,0.975,,,-0.89526004,-1.30862,-451895,-789416
-PALT,"Paltalk, Inc.",Technology,Software—Application,XLK,1,0,30,10,0,"Winners,Random,Random 5",44174148,13667000,97727,4.606,4.878,11082867,0.48,-0.05904,-0.06061,-1384127,-1313762
+PALT,"Paltalk, Inc.",Technology,Software—Application,XLK,1,0,30,11,0,"Winners,Random,Random 5",44174148,13667000,97727,4.606,4.878,11082867,0.48,-0.05904,-0.06061,-1384127,-1313762
 PANL,"Pangaea Logistics Solutions, Ltd.",Industrials,Marine Shipping,XLI,0,0,5,0,0,Random,384278816,87358224,275564160,1.294,1.722,495314336,73.021,0.0464,0.11476,-4217838,62815716
 PBYI,"Puma Biotechnology, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,264657520,95939000,111490000,1.453,1.572,235636992,208.619,0.09187,0.57537997,1788375,27009000
 PCCYF,PetroChina Company Limited,Energy,Oil & Gas Integrated,XLE,0,0,9,0,0,Random,221957210112,289187004416,419635986432,0.524,0.961,3065900957696,26.269,0.05641,0.113850005,129615749120,421219991552
 PCOGF,Pancontinental Energy NL,Energy,Oil & Gas E&P,XLE,3,0,0,0,0,Winners,153281920,5300909,476560,21.32,21.32,,5.498,-0.06846,-0.32224,-1103712,-1554104
 PCSA,"Processa Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,0,4,0,0,0,Loosers,3893510,6860672,171521,8.305,9.572,,2.393,-0.69262004,-1.78048,-5017820,-8436863
-PCSV,"PCS Edventures!, Inc.",Consumer Defensive,Education & Training Services,XLP,0,0,33,0,0,Random,23699270,2006618,313105,3.581,8.054,9353163,5.721,,,,2741740
+PCSV,"PCS Edventures!, Inc.",Consumer Defensive,Education & Training Services,XLP,0,0,34,0,0,Random,23699270,2006618,313105,3.581,8.054,9353163,5.721,,,,2741740
 PEGY,Pineapple Energy Inc.,Technology,Solar,XLK,0,3,0,0,0,Loosers,3465448,3417649,19750714,0.43,0.854,77374032,90.346,-0.070650004,-0.22274,5015345,-2061141
 PEMSF,Pacific Empire Minerals Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,5112160,355536,22053,1.483,1.703,,5.743,-0.44507998,-1.00297,73946,-240410
 PETRY,Vibra Energia S.A.,Consumer Cyclical,Specialty Retail,XLY,0,0,6,0,0,Random,5404579840,6665999872,15518000128,1.645,2.361,162947006464,98.646,0.102019995,0.33630002,5187874816,6247000064
 PEXZF,Pacific Ridge Exploration Ltd.,Basic Materials,Other Precious Metals & Mining,XLB,0,1,0,0,0,Loosers,9741600,1572305,81737,0.923,1.318,,1.521,-0.94873,-1.86023,-3215202,-8515775
-PGOL,Patriot Gold Corp.,Basic Materials,Gold,XLB,12,0,27,0,0,"Winners,Random",7073520,2282938,,12.38,12.935,1929158,,0.10564,0.15969,1022368,1200819
+PGOL,Patriot Gold Corp.,Basic Materials,Gold,XLB,12,0,28,0,0,"Winners,Random",7073520,2282938,,12.38,12.935,1929158,,0.10564,0.15969,1022368,1200819
 PGY,Pagaya Technologies Ltd.,Technology,Software—Infrastructure,XLK,2,0,0,0,0,Winners,973040960,188968000,412584000,3.689,4.049,812051008,55.755,-0.01348,-0.26137,22037500,9577000
+PIII,P3 Health Partners Inc.,Healthcare,Medical Care Facilities,XLV,1,0,0,0,0,Winners,521746304,52562000,121808000,0.643,0.672,1177726976,24.311,-0.09689,-0.83654,-24782880,-92104000
 PIK,Kidpik Corp.,Consumer Cyclical,Internet Retail,XLY,4,0,0,0,0,Winners,9253000,55687,3686809,0.04,1.888,15611432,75.602,-0.33545,-1.0182,2346563,-71119
 PKTX,"ProtoKinetix, Incorporated",Healthcare,Biotechnology,XLV,0,3,0,0,0,Loosers,5422080,12396,,0.987,1.07,,,-1.19094,-2.18111,-205317,-445692
 PLCKF,Plurilock Security Inc.,Technology,Software—Infrastructure,XLK,0,2,0,0,0,Loosers,3769965,3573485,7151112,0.663,0.797,65841560,,-0.12966,-6.4409003,-3198381,-5247743
@@ -770,7 +784,7 @@ POET,POET Technologies Inc.,Technology,Semiconductors,XLK,0,1,0,0,0,Loosers,6328
 POL,Polished.com Inc.,Consumer Cyclical,Specialty Retail,XLY,0,1,0,0,0,Loosers,3843876,9811000,103135000,0.326,1.182,364782016,189.705,,,,-8378000
 POLC,Polished.com Inc.,Consumer Cyclical,Specialty Retail,XLY,0,6,0,0,0,Loosers,,9811000,103135000,0.326,1.182,364782016,189.705,,,,-8378000
 POLCQ,Polished.com Inc.,Consumer Cyclical,Specialty Retail,XLY,0,8,0,0,0,Loosers,,9811000,103135000,0.326,1.182,364782016,189.705,,,,-8378000
-PPSI,"Pioneer Power Solutions, Inc.",Industrials,Electrical Equipment & Parts,XLI,2,0,47,0,10,"Winners,Random,Random 10",57594116,7581000,1457000,0.994,1.825,42604000,7.876,0.026670001,0.103369996,1221375,-2064000
+PPSI,"Pioneer Power Solutions, Inc.",Industrials,Electrical Equipment & Parts,XLI,2,0,47,0,11,"Winners,Random,Random 10",57594116,7581000,1457000,0.994,1.825,42604000,7.876,0.026670001,0.103369996,1221375,-2064000
 PPTA,Perpetua Resources Corp.,Basic Materials,Other Precious Metals & Mining,XLB,1,0,0,0,0,Winners,241608864,7104937,55279,1.083,1.244,,0.075,-0.22512,-0.30028,-21585560,-21836890
 PRCH,"Porch Group, Inc.",Technology,Software—Application,XLK,12,0,0,0,0,Winners,365096000,294006016,435739008,0.689,1.041,430302016,,-0.0854,-6.13387,68648248,33929000
 PRFX,PainReform Ltd.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,2,0,0,0,0,Winners,3591511,8026000,86000,3.349,4.066,,1.188,-0.53823,-1.02344,-3560000,-6679000
@@ -786,8 +800,8 @@ PTRAQ,Proterra Inc.,Industrials,Farm & Heavy Construction Machinery,XLI,0,5,0,0,
 PXLW,"Pixelworks, Inc.",Technology,Semiconductors,XLK,1,0,0,0,0,Winners,162782880,47544000,2567000,4.686,5.263,59677000,3.949,-0.18052,-0.39258,,
 PYXS,"Pyxis Oncology, Inc.",Healthcare,Biotechnology,XLV,5,0,0,0,0,Winners,257516624,132967000,21618000,4.693,4.909,,15.671,-0.3081,-0.57726,-46601248,-72842000
 QBTS,D-Wave Quantum Inc.,Technology,Computer Hardware,XLK,9,0,0,0,0,Winners,294267520,53317000,47493000,1.251,1.343,8247000,539.939,-1.0237,-34.94105,-25479000,-56797000
-QD,Qudian Inc.,Financial Services,Credit Services,XLF,0,0,47,10,0,"Random,Random 5",551002560,9695391744,80897000,14.851,15.989,218649984,0.677,-0.00332,0.05483,,
-QGSI,QuantGate Systems Inc.,Technology,Software—Application,XLK,2,0,23,0,0,"Winners,Random",11368960,2657111,434766,2.57,2.58,24590,25.525,-0.17205,-0.14323,-230534,-747218
+QD,Qudian Inc.,Financial Services,Credit Services,XLF,0,0,47,11,0,"Random,Random 5",551002560,9695391744,80897000,14.851,15.989,218649984,0.677,-0.00332,0.05483,,
+QGSI,QuantGate Systems Inc.,Technology,Software—Application,XLK,2,0,24,0,0,"Winners,Random",11368960,2657111,434766,2.57,2.58,24590,25.525,-0.17205,-0.14323,-230534,-747218
 QLI,Qilian International Holding Group Limited,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,1,0,0,0,Loosers,20020000,22419266,577850,4.32,5.182,46471480,1.303,-0.028180001,-0.16356,-1958588,312209
 QMCO,Quantum Corporation,Technology,Computer Hardware,XLK,0,1,0,0,0,Loosers,49706232,25465000,111833000,0.642,1.048,407464992,,-0.06527,,3805875,2797000
 QNCCF,Quantum eMotion Corp.,Technology,Semiconductors,XLK,1,0,0,0,0,Winners,9545445,1671380,40000,4.965,5.19,,1.846,-0.3552,-0.78419,-1309487,-1763623
@@ -795,18 +809,18 @@ QNCX,"Quince Therapeutics, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,
 QNRX,"Quoin Pharmaceuticals, Ltd.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,2050255,13981477,3673733,3.052,3.087,,49.553,-0.36686,-1.04185,-3293436,-6583126
 QSG,QuantaSing Group Limited,Consumer Defensive,Education & Training Services,XLP,0,1,0,0,0,Loosers,163805632,1050780992,78022000,1.131,1.312,3485267968,21.632,0.0975,1.9676,,
 QUAD,"Quad/Graphics, Inc.",Industrials,Specialty Business Services,XLI,2,0,0,0,0,Winners,264024608,53800000,625500032,0.468,0.743,2957700096,523.431,0.04083,-0.37893,134512496,147600000
-RADCQ,Rite Aid Corporation,Healthcare,Pharmaceutical Retailers,XLV,0,8,0,0,0,Loosers,3968741,97115000,6581259776,0.241,0.574,23475490816,,-0.00506,,7251500,-414139008
+RADCQ,Rite Aid Corporation,Healthcare,Pharmaceutical Retailers,XLV,0,9,0,0,0,Loosers,3968741,97115000,6581259776,0.241,0.574,23475490816,,-0.00506,,7251500,-414139008
 RAPT,"RAPT Therapeutics, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,281861376,158862000,6906000,7.275,7.409,,4.697,-0.36134997,-0.5956,-54190752,-97048000
 RAREF,Canada Rare Earth Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,3137928,492013,571497,0.651,0.78,1980119,,-0.124110006,,-77171,692766
 RAYA,Erayak Power Solution Group Inc.,Industrials,Electrical Equipment & Parts,XLI,0,2,0,0,0,Loosers,8856000,5773428,10056656,0.78,1.457,24880696,52.488,0.04362,0.12648,-6323528,90055
 RBOT,Vicarious Surgical Inc.,Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,60652012,98177000,14832000,13.486,13.867,,15.139,-0.38408002,-0.68005997,-36411248,-62305000
 RCHRF,Archer Exploration Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,5,0,0,0,Loosers,3374600,2054239,,2.016,2.115,,,-0.12826,-0.13726,-7630862,-3572819
-RCRUY,"Recruit Holdings Co., Ltd.",Communication Services,Internet Content & Information,XLC,0,0,28,0,10,"Random,Random 10",67635380224,1050484015104,230547996672,2.266,2.382,3400465121280,11.722,0.09117,0.19296,330742235136,459242012672
+RCRUY,"Recruit Holdings Co., Ltd.",Communication Services,Internet Content & Information,XLC,0,0,28,0,11,"Random,Random 10",67635380224,1050484015104,230547996672,2.266,2.382,3400465121280,11.722,0.09117,0.19296,330742235136,459242012672
 RDFN,Redfin Corporation,Real Estate,Real Estate Services,XLRE,1,0,0,0,0,Winners,853772672,196311008,1009809984,0.925,1.658,976672000,2364.507,-0.09628,-1.7246201,137404496,56758000
 RDHL,RedHill Biopharma Ltd.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,1,0,0,0,Loosers,16330709,7014000,2284000,0.352,0.96,35745000,65.802,-0.1717,,-38703624,-26224000
 RDUFF,Radius Gold Inc.,Basic Materials,Gold,XLB,0,10,0,0,0,Loosers,9187317,2894957,100746,12.49,12.71,,2.995,-0.42975,-0.24507,-1605204,-1852665
 REAL,"The RealReal, Inc.",Consumer Cyclical,Luxury Goods,XLY,3,0,0,0,0,Winners,353858976,175708992,577371008,1.022,1.249,549304000,,-0.14292,,-55949000,-61268000
-REAX,The Real Brokerage Inc.,Real Estate,Real Estate Services,XLRE,3,0,47,10,0,"Winners,Random,Random 5",599939968,28929000,,1.303,1.857,689158016,,-0.30018,-0.91484,16491875,19873000
+REAX,The Real Brokerage Inc.,Real Estate,Real Estate Services,XLRE,3,0,47,11,0,"Winners,Random,Random 5",599939968,28929000,,1.303,1.857,689158016,,-0.30018,-0.91484,16491875,19873000
 REBN,"Reborn Coffee, Inc.",Consumer Cyclical,Restaurants,XLY,0,1,0,0,0,Loosers,3314293,363951,6401640,0.147,0.708,5016155,409.097,-0.28601,-1.22321,-3788174,-4291150
 REFXF,RedFlow Limited,Industrials,Electrical Equipment & Parts,XLI,0,1,0,0,0,Loosers,26083200,9697202,156686,1.17,1.6,652757,2.116,-0.65726995,-1.69304,-5363470,-11758464
 REGRF,New World Solutions Inc.,Technology,Software—Application,XLK,2,1,0,0,0,"Winners,Loosers",3569307,388708,,3.194,3.663,-129,,-0.29405,-1.73589,-369014,-1305460
@@ -815,7 +829,7 @@ REVB,"Revelation Biosciences, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loose
 REZZF,Global Battery Metals Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,2953077,878494,,0.979,1.054,,,-0.09342,-0.2225,-641704,-1353126
 RFHRF,Renforth Resources Inc.,Basic Materials,Gold,XLB,0,3,0,0,0,Loosers,4856605,1293553,,3.11,3.162,,,-1.13182,-1.5435001,-1248911,-2222687
 RGF,"The Real Good Food Company, Inc.",Consumer Defensive,Packaged Foods,XLP,0,10,0,0,0,Loosers,19681836,78000,143608000,0.514,1.556,156379008,,-0.17953,,-24410124,-36635000
-RGLG,"UHF Logistics Group, Inc.",Financial Services,Shell Companies,XLF,2,0,32,0,0,"Winners,Random",10351739,17428,,0.72,0.782,219749,,-1.4707,-3.4670498,946476,-207605
+RGLG,"UHF Logistics Group, Inc.",Financial Services,Shell Companies,XLF,2,0,33,0,0,"Winners,Random",10351739,17428,,0.72,0.782,219749,,-1.4707,-3.4670498,946476,-207605
 RGLS,Regulus Therapeutics Inc.,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,53387932,30782000,4064000,3.732,4.253,,14.381,-0.41365,-0.84709,-17511876,-26896000
 RGTI,"Rigetti Computing, Inc.",Technology,Computer Hardware,XLK,10,0,0,0,0,Winners,272763424,110227000,33550000,4.914,5.064,14692000,29.772,-0.24956,-0.61312,-33607000,-52365000
 RHCO,Readen Holding Corp.,Financial Services,Asset Management,XLF,0,11,0,0,0,Loosers,8103036,17746,3734825,0.429,0.551,11024011,53.93,0.09571,0.19174999,1430144,-8154254
@@ -838,7 +852,7 @@ RQIHF,R&Q Insurance Holdings Ltd.,Financial Services,Insurance—Specialty,XLF,0
 RR,Richtech Robotics Inc.,Industrials,Specialty Industrial Machinery,XLI,2,0,0,0,0,Winners,98515872,7535000,391000,12.743,13.727,8919000,3.446,-0.05929,-0.26067,-1738375,-2884000
 RRDMF,Royal Road Minerals Limited,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,19927200,14308021,86449,23.766,26.654,,0.39,-0.24625,-0.45976,-4610589,-9085840
 RRSSF,Neometals Ltd,Industrials,Waste Management,XLI,0,2,0,0,0,Loosers,68053552,25202344,937674,7.699,7.785,,1.003,-0.122159995,-0.31624,-19735464,-20398542
-RSI,"Rush Street Interactive, Inc.",Consumer Cyclical,Gambling,XLY,2,0,21,0,10,"Winners,Random,Random 10",1291007872,,,1.542,1.66,691161024,,-0.09644,-0.33644,13007125,-5932000
+RSI,"Rush Street Interactive, Inc.",Consumer Cyclical,Gambling,XLY,2,0,21,0,11,"Winners,Random,Random 10",1291007872,,,1.542,1.66,691161024,,-0.09644,-0.33644,13007125,-5932000
 RTC,Baijiayun Group Ltd,Technology,Software—Application,XLK,0,2,0,0,0,Loosers,86421160,16612290,13291627,1.36,2.468,82249568,14.925,-0.05474,-0.097629994,-33942704,-10592756
 RVBR,Markray Corp.,Consumer Defensive,Beverages—Non-Alcoholic,XLP,1,1,4,0,0,"Winners,Loosers,Random",1508295,49887,423565,1.118,1.785,2476787,0.097,0.00137,0.00171,-289013,-3799267
 RVIV,"AXIL Brands, Inc.",Consumer Defensive,Household & Personal Products,XLP,1,0,0,0,0,Winners,79026976,5962431,352715,1.545,2.309,27079616,4.439,0.12064,0.31047,1194442,1974054
@@ -859,8 +873,8 @@ SCPX,"Scorpius Holdings, Inc.",Healthcare,Biotechnology,XLV,0,10,0,0,0,Loosers,,
 SCYYF,Scandium International Mining Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,4,0,0,0,Loosers,5302328,1135020,,2.115,2.154,,,-0.18388,0.37728,-1645350,-816986
 SDCCQ,"SmileDirectClub, Inc.",Healthcare,Medical Instruments & Supplies,XLV,0,4,0,0,0,Loosers,603910,28934000,883284992,1.424,1.902,414876000,,-0.22659999,,-79023128,-129488000
 SDIG,"Stronghold Digital Mining, Inc.",Financial Services,Capital Markets,XLF,1,0,0,0,0,Winners,56146020,4214613,60632200,0.138,0.504,74966304,139.714,-0.1701,-1.61087,-23969740,-7147113
-SDXEF,SDX Energy plc,Energy,Oil & Gas E&P,XLE,0,3,0,0,0,Loosers,10745920,6722000,4903000,0.889,1.202,36678000,15.375,-0.19018999,-0.68764997,21156376,7407000
-SECYF,Secure Energy Services Inc.,Industrials,Waste Management,XLI,0,0,10,0,0,Random,2369487872,12000000,1102000000,0.782,2.521,8243999744,92.917,0.07807,0.15905,-390624992,430000000
+SDXEF,SDX Energy plc,Energy,Oil & Gas E&P,XLE,0,4,0,0,0,Loosers,10745920,6722000,4903000,0.889,1.202,36678000,15.375,-0.19018999,-0.68764997,21156376,7407000
+SECYF,Secure Energy Services Inc.,Industrials,Waste Management,XLI,0,0,10,0,1,"Random,Random 10",2369487872,12000000,1102000000,0.782,2.521,8243999744,92.917,0.07807,0.15905,-390624992,430000000
 SELX,Semilux International Ltd.,Technology,Electronic Components,XLK,0,15,0,0,0,Loosers,78725320,299340000,183010000,1.609,2.674,45283000,52.909,,,,-71759000
 SERA,"Sera Prognostics, Inc.",Healthcare,Diagnostics & Research,XLV,2,0,0,0,0,Winners,289235872,46116000,2102000,3.416,3.51,330000,2.787,-0.24738,-0.41696998,-14612625,-27661000
 SEUSF,Sintana Energy Inc.,Energy,Oil & Gas E&P,XLE,2,0,0,0,0,Winners,90284376,4809430,,1.406,1.488,,,-0.11694,0.04916,-3452437,-4642268
@@ -871,7 +885,7 @@ SGCPF,Solstice Gold Corp.,Basic Materials,Gold,XLB,0,13,0,0,0,Loosers,5938086,70
 SGMT,Sagimet Biosciences Inc.,Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,174789536,101842000,103000,20.171,20.364,2000000,0.105,,,,-24136000
 SHCRW,"Sharecare, Inc.",Healthcare,Health Information Services,XLV,0,4,0,0,0,Loosers,,128008000,2493000,2.305,2.426,463236992,0.489,-0.11775,-0.21777001,-14444000,-30413000
 SHGI,"Sparx Holdings Group, Inc.",Financial Services,Shell Companies,XLF,0,1,0,0,0,Loosers,290375,90272,21017,17.44,17.947,,23.154,,-2.12438,,-44229
-SHOT,"Safety Shot, Inc.",Consumer Defensive,Beverages—Non-Alcoholic,XLP,14,0,0,0,0,Winners,92933960,7463588,2614101,1.751,1.915,4876737,38.963,-0.7358,-2.3498101,2864914,-6680190
+SHOT,"Safety Shot, Inc.",Consumer Defensive,Beverages—Non-Alcoholic,XLP,15,0,0,0,0,Winners,92933960,7463588,2614101,1.751,1.915,4876737,38.963,-0.7358,-2.3498101,2864914,-6680190
 SHPH,"Shuttle Pharmaceuticals Holdings, Inc.",Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,1,0,0,0,Loosers,6818204,6806589,966666,8.414,8.632,,17.232,-0.39909,-0.81388,-2738923,-5198840
 SIDU,"Sidus Space, Inc.",Industrials,Aerospace & Defense,XLI,0,1,0,0,0,Loosers,16934428,1597331,2606183,0.278,1.064,6949019,30.72,-0.52898,-1.85621,-12353103,-12221140
 SIEN,"Sientra, Inc.",Healthcare,Medical Devices,XLV,0,2,0,0,0,Loosers,2080639,15026000,64778000,0.293,0.569,90299000,,-0.20566,,8356000,-11375000
@@ -881,7 +895,7 @@ SIRCD,Solar Integrated Roofing Corporation,Technology,Solar,XLK,0,3,0,0,0,Looser
 SISI,"Shineco, Inc.",Consumer Defensive,Farm Products,XLP,0,2,0,0,0,Loosers,7438964,1232909,31183510,0.242,0.539,4503235,61.361,-0.10898,-0.34749,20165000,-6314515
 SITKF,Sitka Gold Corp.,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,34602752,4562658,,12.44,12.643,,,-0.013990001,-0.085559994,-6548940,-826074
 SJ,Scienjoy Holding Corporation,Communication Services,Broadcasting,XLC,0,2,0,0,0,Loosers,44732404,240408992,13680000,2.38,2.793,1570407040,1.205,-0.00486,-0.02943,,
-SLGD,Scott's Liquid Gold-Inc.,Consumer Defensive,Household & Personal Products,XLP,2,0,35,0,0,"Winners,Random",10404960,4415000,2581000,4.699,5.373,16878000,44.585,-0.089420006,-0.64959997,4559375,-707000
+SLGD,Scott's Liquid Gold-Inc.,Consumer Defensive,Household & Personal Products,XLP,2,0,36,0,0,"Winners,Random",10404960,4415000,2581000,4.699,5.373,16878000,44.585,-0.089420006,-0.64959997,4559375,-707000
 SLGGF,SolGold Plc,Basic Materials,Other Industrial Metals & Mining,XLB,0,2,0,0,0,Loosers,315116544,12835344,155589648,2.729,2.912,,53.315,-0.029070001,-0.17046,-9290928,-32098688
 SLSDF,Select Sands Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,3,0,0,0,Loosers,991908,286540,12228599,0.215,0.83,15794535,347.218,-0.0723,-0.62794,1536754,608005
 SMGI,SMG Industries Inc.,Energy,Oil & Gas Equipment & Services,XLE,1,9,0,0,0,"Winners,Loosers",17423574,3668846,50080704,0.369,0.502,93379184,333.732,-0.03928,,-5466956,1444985
@@ -893,7 +907,7 @@ SMXT,"SolarMax Technology, Inc.",Technology,Solar,XLK,1,0,0,0,0,Winners,39184886
 SNOA,"Sonoma Pharmaceuticals, Inc.",Healthcare,Drug Manufacturers—Specialty & Generic,XLV,0,2,0,0,0,Loosers,2325502,2406000,385000,1.802,4.067,12310000,5.753,-0.19438,-0.82866997,-4575375,-4991000
 SNPX,"Synaptogenix, Inc.",Healthcare,Biotechnology,XLV,0,2,0,0,0,Loosers,3629562,31727548,,17.454,17.792,,,-0.25268,-0.02034,-3304282,-6890727
 SNTG,Sentage Holdings Inc.,Financial Services,Credit Services,XLF,3,0,3,0,0,"Winners,Random",7041353,2724245,108678,10.241,42.955,-16035,0.834,-0.11351,-0.18589,-4988404,-6004671
-SNWGF,Snowline Gold Corp.,Basic Materials,Gold,XLB,0,0,47,10,0,"Random,Random 5",605401024,39851404,63885,3.172,3.221,,0.159,,,,-22785836
+SNWGF,Snowline Gold Corp.,Basic Materials,Gold,XLB,0,0,47,11,0,"Random,Random 5",605401024,39851404,63885,3.172,3.221,,0.159,,,,-22785836
 SOFI,"SoFi Technologies, Inc.",Financial Services,Credit Services,XLF,1,0,0,0,0,Winners,7501340160,3091936000,5367237120,0.566,1.411,2067843968,96.62,-0.012250001,-0.05427,,-7227139072
 SONX,"Sonendo, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,9227277,46782000,40167000,1.468,1.848,43865000,141.339,-0.31372,-1.10387,-27421124,-46062000
 SOPH,SOPHiA GENETICS SA,Healthcare,Health Information Services,XLV,2,0,0,0,0,Winners,316711776,123251000,18601000,3.887,4.156,62371000,12.283,-0.20777,-0.4493,-31344250,-48575000
@@ -907,7 +921,8 @@ SPRC,SciSparc Ltd.,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,3495538,208100
 SPTJF,Sinopec Shanghai Petrochemical Company Limited,Energy,Oil & Gas Refining & Marketing,XLE,0,3,0,0,0,Loosers,3306810112,6442930176,5759616000,0.707,1.159,94598955008,22.425,-0.024619998,-0.05982,-6794960896,-3491484928
 SQZB,SQZ Biotechnologies Company,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,1474555,10193000,21472000,1.154,1.369,12121000,1141.52,-0.41138,-2.03372,-29514376,-74334000
 SRCGF,Spruce Ridge Resources Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,25,0,0,"Winners,Random",12749986,7355299,60000,30.887,31.102,940,0.682,-0.061490003,-0.23417,-328634,-306453
-SRNW,Stratos Renewables Corporation,Energy,Oil & Gas Refining & Marketing,XLE,0,2,0,0,0,Loosers,11026327,106975,,24.181,24.181,,,,,,-293025
+SRMMF,Sarama Resources Ltd,Basic Materials,Gold,XLB,1,0,0,0,0,Winners,3038752,352256,,0.465,0.515,226284,,-0.51147,-1.0486699,-932253,-2383348
+SRNW,Stratos Renewables Corporation,Energy,Oil & Gas Refining & Marketing,XLE,0,3,0,0,0,Loosers,11026327,106975,,24.181,24.181,,,,,,-293025
 SRRCF,,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,25542738,4288833,,12.13,12.244,,,,,,-746065
 SSEBF,Silver Spruce Resources Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,3100614,377578,1733,1.907,1.917,,0.879,-1.5425301,-9.24366,-571145,-1009863
 SSNT,"SilverSun Technologies, Inc.",Technology,Software—Application,XLK,1,0,0,0,0,Winners,73142384,6879520,1624990,0.94,1.046,52214464,23.038,0.03533,-0.18200001,4363825,1728813
@@ -933,7 +948,7 @@ SYBX,"Synlogic, Inc.",Healthcare,Biotechnology,XLV,5,0,0,0,0,Winners,17000298,33
 SYRA,Syra Health Corp.,Healthcare,Medical Care Facilities,XLV,0,0,1,0,0,Random,12072664,18010,2465679,0.481,0.519,5714671,,,,,-2223430
 SYRS,"Syros Pharmaceuticals, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,170603952,112219000,62461000,4.011,4.315,8796000,172.059,-0.39157,-1.2686499,-87969376,-122228000
 SZSMF,Santacruz Silver Mining Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,55456580,3186000,17737000,0.629,0.843,257948992,,0.02475,,-72803248,23021000
-TALK,"Talkspace, Inc.",Healthcare,Health Information Services,XLV,1,0,47,10,0,"Winners,Random,Random 5",487917440,123908000,,6.194,6.458,150044992,,-0.097200006,-0.15584,-12442500,-16393000
+TALK,"Talkspace, Inc.",Healthcare,Health Information Services,XLV,1,0,47,11,0,"Winners,Random,Random 5",487917440,123908000,,6.194,6.458,150044992,,-0.097200006,-0.15584,-12442500,-16393000
 TAWNF,Thai Airways International Public Company Limited,Industrials,Airlines,XLI,8,0,0,0,0,Winners,219002400,67130077184,164417683456,1.129,1.268,157445570560,,0.10165,,22821822464,43904856064
 TBLT,"ToughBuilt Industries, Inc.",Industrials,Tools & Accessories,XLI,0,1,0,0,0,Loosers,2819169,1834305,4967901,0.203,0.741,89622600,60.062,-0.41805,-1.76685,14592946,-11105720
 TBNRF,Tamboran Resources Corporation,Energy,Oil & Gas E&P,XLE,0,1,0,0,0,Loosers,432660896,10642739,723537,0.577,1.238,295605,0.328,-0.07683,-0.24754,-145597632,-19359788
@@ -956,16 +971,16 @@ TKLF,"Yoshitsu Co., Ltd",Consumer Cyclical,Specialty Retail,XLY,0,1,0,0,0,Looser
 TKOI,"Telkonet, Inc.",Technology,Scientific & Technical Instruments,XLK,0,2,0,0,0,Loosers,2244090,3243594,508028,1.99,2.744,8448019,11.052,-0.11337,-0.46664003,-2947452,-3598322
 TKVR,"Zhejiang Dashang Media Co., Ltd.",Financial Services,Shell Companies,XLF,4,4,0,0,0,"Winners,Loosers",13635684,1741544,12149835,0.655,0.697,64959148,91.323,-0.05783,-0.75439,-446538,-3198760
 TLRS,Timberline Resources Corporation,Basic Materials,Gold,XLB,0,2,0,0,0,Loosers,6991853,541493,,1.965,2.023,,,-0.06024,-0.10267,-924419,-1341694
-TLS,Telos Corporation,Technology,Software - Infrastructure,XLK,0,0,0,1,0,Random 5,230452784,99953000,11949000,4.238,4.604,151662000,7.285,-0.12937,-0.24418,-1714000,-6977000
+TLS,Telos Corporation,Technology,Software - Infrastructure,XLK,1,0,0,2,0,"Winners,Random 5",230452784,99953000,11949000,4.238,4.604,151662000,7.285,-0.12937,-0.24418,-1714000,-6977000
 TLSIW,"TriSalus Life Sciences, Inc.",Healthcare,Medical Devices,XLV,7,0,0,0,0,Winners,,21383000,1697000,2.626,3.121,16016000,19.993,-1.03845,-4.96214,-32410876,-49506000
 TMC,TMC the metals company Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,474868832,22548000,,1.441,1.441,,,-0.91831,-2.02564,-91534752,-64236000
 TMCWW,TMC the metals company Inc.,Basic Materials,Other Industrial Metals & Mining,XLB,1,0,0,0,0,Winners,,22548000,,1.441,1.441,,,-0.91831,-2.02564,-91534752,-64236000
-TMMI,"TMM, Inc.",Technology,Software—Application,XLK,0,10,0,0,0,Loosers,8849579,98138,,0.397,0.649,,,-0.19928,-0.33966,-1820278,-1458471
+TMMI,"TMM, Inc.",Technology,Software—Application,XLK,0,11,0,0,0,Loosers,8849579,98138,,0.397,0.649,,,-0.19928,-0.33966,-1820278,-1458471
 TNON,"Tenon Medical, Inc.",Healthcare,Medical Devices,XLV,0,5,0,0,0,Loosers,2890881,3371000,743000,1.343,1.609,2397000,29.519,-1.15221,-2.63218,-7681250,-13290000
-TNTMF,Transition Metals Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,3,0,0,0,Loosers,2496222,1997289,,8.741,9.197,,,-0.25948998,-0.41514,-668694,-1457943
+TNTMF,Transition Metals Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,4,0,0,0,Loosers,2496222,1997289,,8.741,9.197,,,-0.25948998,-0.41514,-668694,-1457943
 TNYA,"Tenaya Therapeutics, Inc.",Healthcare,Biotechnology,XLV,4,0,0,0,0,Winners,425039456,121753000,12044000,6.283,6.545,,7.305,-0.39997002,-0.70686996,-57340624,-102830000
 TOMZ,"TOMI Environmental Solutions, Inc.",Industrials,Pollution & Treatment Controls,XLI,2,0,0,0,0,Winners,14305432,1410697,784970,1.937,4.4,8638391,8.279,-0.12952,-0.27087998,-1521019,-2667213
-TORO,Toro Corp.,Industrials,Marine Shipping,XLI,0,0,4,0,10,"Random,Random 10",102424728,155235408,5213786,19.753,21.012,78468576,1.759,0.10163,0.64388,-34610108,56126320
+TORO,Toro Corp.,Industrials,Marine Shipping,XLI,0,0,4,0,11,"Random,Random 10",102424728,155235408,5213786,19.753,21.012,78468576,1.759,0.10163,0.64388,-34610108,56126320
 TOYRF,"Toys""R""Us ANZ Limited",Consumer Cyclical,Leisure,XLY,2,0,0,0,0,Winners,8127364,1766000,24470000,0.127,0.528,32143000,1611.989,-0.17896,-1.41844,-2886250,-12465000
 TPCS,TechPrecision Corporation,Industrials,Metal Fabrication,XLI,0,0,4,0,0,Random,38357368,412421,12757476,0.66,0.916,30496254,99.394,-0.047909997,-0.20569,-66683,3446535
 TPET,Trio Petroleum Corp.,Energy,Oil & Gas E&P,XLE,0,1,0,0,0,Loosers,4114880,1561924,1217597,0.844,0.916,,12.497,-0.27273,-1.04992,-5070243,-4036834
@@ -979,7 +994,7 @@ TSHA,"Taysha Gene Therapies, Inc.",Healthcare,Biotechnology,XLV,5,0,0,0,0,Winner
 TSP,TuSimple Holdings Inc.,Industrials,Trucking,XLI,0,2,0,0,0,Loosers,57472752,775171008,47462000,20.834,21.318,2165000,6.153,-0.22051,-0.39027,-158980256,-291804992
 TSPH,TuSimple Holdings Inc.,Industrials,Trucking,XLI,6,0,0,0,0,Winners,,775171008,47462000,20.834,21.318,2165000,6.153,-0.22051,-0.39027,-158980256,-291804992
 TSYHF,TravelSky Technology Limited,Technology,Information Technology Services,XLK,0,1,0,0,0,Loosers,3389941248,12259771392,955801152,2.705,2.75,6245670400,4.594,0.029159999,0.07097,1335645568,1850862976
-TTI,"TETRA Technologies, Inc.",Energy,Oil & Gas Equipment & Services,XLE,0,0,0,9,0,Random 5,556872064,52485000,194144000,1.304,2.239,626262016,131.771,0.057600003,0.20083,17920624,70206000
+TTI,"TETRA Technologies, Inc.",Energy,Oil & Gas Equipment & Services,XLE,0,0,0,10,0,Random 5,556872064,52485000,194144000,1.304,2.239,626262016,131.771,0.057600003,0.20083,17920624,70206000
 TVCCF,Three Valley Copper Corp.,Basic Materials,Copper,XLB,0,2,0,0,0,Loosers,1250910,2456000,,175.857,203.714,3494000,,-0.0228,,-19601376,1740000
 TWKS,"Thoughtworks Holding, Inc.",Technology,Information Technology Services,XLK,0,1,0,0,0,Loosers,835878400,100305000,338276992,2.407,2.689,1126816000,43.754,0.00145,-0.088520005,92890248,49064000
 TWOU,"2U, Inc.",Consumer Defensive,Education & Training Services,XLP,0,1,0,0,0,Loosers,32060746,60689000,1003184000,0.79,0.97,945953024,457.981,0.00605,-0.88155,10737875,-3431000
@@ -987,9 +1002,9 @@ TXHG,"TX Rail Products, Inc",Industrials,Industrial Distribution,XLI,3,0,0,0,0,W
 TZOO,Travelzoo,Communication Services,Advertising Agencies,XLC,0,0,47,0,2,"Random,Random 10",134129288,15713000,9247000,0.839,0.9,84477000,104.098,0.1587,1.35423,1725500,10684000
 TZPC,ThermaFreeze Products Corporation,Consumer Cyclical,Packaging & Containers,XLY,2,0,0,0,0,Winners,681872,26547,268500,15.246,19.99,28862,69.938,,,,
 UCAR,U Power Limited,Consumer Cyclical,Auto & Truck Dealerships,XLY,0,1,0,0,0,Loosers,3718750,108968000,42097000,1.632,2.398,5415000,14.009,-0.112749994,-0.19024,-29875376,-6752000
-UEC,Uranium Energy Corp.,Energy,Uranium,XLE,2,0,44,0,9,"Winners,Random,Random 10",2626909952,82287000,2663000,3.767,6.848,59390000,0.346,-0.01741,-0.00699,-43836376,-62408000
-UGP,Ultrapar Participações S.A.,Energy,Oil & Gas Refining & Marketing,XLE,0,0,47,0,10,"Random,Random 10",6369123840,6218621952,13295069184,1.2,1.661,126048698368,94.763,0.064619996,0.19216,1680077824,3849821952
-ULBI,Ultralife Corporation,Industrials,Electrical Equipment & Parts,XLI,1,0,46,0,10,"Winners,Random,Random 10",159969584,10278000,25624000,1.772,3.801,158644000,20.429,0.03416,0.05926,,
+UEC,Uranium Energy Corp.,Energy,Uranium,XLE,2,0,44,0,10,"Winners,Random,Random 10",2626909952,82287000,2663000,3.767,6.848,59390000,0.346,-0.01741,-0.00699,-43836376,-62408000
+UGP,Ultrapar Participações S.A.,Energy,Oil & Gas Refining & Marketing,XLE,0,0,47,0,11,"Random,Random 10",6369123840,6218621952,13295069184,1.2,1.661,126048698368,94.763,0.064619996,0.19216,1680077824,3849821952
+ULBI,Ultralife Corporation,Industrials,Electrical Equipment & Parts,XLI,1,0,46,0,11,"Winners,Random,Random 10",159969584,10278000,25624000,1.772,3.801,158644000,20.429,0.03416,0.05926,,
 ULTHF,United Lithium Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,1,0,0,0,Loosers,35636092,3494016,134358,7.745,7.877,,1.092,-0.44522998,-0.76262003,-254437,-1851543
 UMGP,Universal Media Group Inc.,Communication Services,Entertainment,XLC,0,9,0,0,0,Loosers,5102704,4034086,9987048,2.414,2.532,98600,,-1.55634,,-6095375,-10834864
 UNCY,"Unicycive Therapeutics, Inc.",Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,51784056,14345000,866000,0.928,1.201,675000,25.218,-0.83502,-6.96625,-2248500,-19928000
@@ -1021,15 +1036,16 @@ VNCE,Vince Holding Corp.,Consumer Cyclical,Apparel Manufacturing,XLY,0,1,0,0,0,L
 VPRB,"VPR Brands, LP",Consumer Defensive,Tobacco,XLP,0,0,11,0,0,Random,16943802,1852179,1639816,1.863,2.44,10251581,103.37,0.87157,,872655,2944472
 VQSSF,VIQ Solutions Inc.,Technology,Software—Application,XLK,0,1,0,0,0,Loosers,8517492,1733477,11430226,0.678,0.879,40855872,132.42,-0.21634,-1.03262,-3435105,-2493817
 VRCA,Verrica Pharmaceuticals Inc.,Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,221000912,69547000,45510000,4.345,4.554,5124000,230.279,-0.62562,-2.24079,-17119000,-38577000
-VRDR,"Verde Resources, Inc.",Basic Materials,Agricultural Inputs,XLB,0,0,1,0,0,Random,155008096,928280,1522716,0.574,1.001,92520,4.156,-0.043130003,-0.042140003,-1128497,-1491743
-VRNOF,Verano Holdings Corp.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,2,0,0,0,0,Winners,1600819968,174760000,,0.424,0.956,938451968,,0.037920002,-0.08717,,
+VRDR,"Verde Resources, Inc.",Basic Materials,Agricultural Inputs,XLB,0,0,2,0,0,Random,155008096,928280,1522716,0.574,1.001,92520,4.156,-0.043130003,-0.042140003,-1128497,-1491743
+VRNOF,Verano Holdings Corp.,Healthcare,Drug Manufacturers—Specialty & Generic,XLV,3,0,0,0,0,Winners,1600819968,174760000,,0.424,0.956,938451968,,0.037920002,-0.08717,,
 VRRCF,VR Resources Ltd.,Basic Materials,Other Industrial Metals & Mining,XLB,0,2,0,0,0,Loosers,14360090,1362804,,26.3,26.66,,,-0.37579,-0.60109,271032,-529134
-VRSSF,VERSES AI Inc.,Technology,Software—Infrastructure,XLK,12,0,24,10,0,"Winners,Random,Random 5",103863392,5778529,160395,2.553,2.854,1771361,2.175,-2.15517,-5.62856,-13250696,-27244636
+VRSSF,VERSES AI Inc.,Technology,Software—Infrastructure,XLK,12,0,24,11,0,"Winners,Random,Random 5",103863392,5778529,160395,2.553,2.854,1771361,2.175,-2.15517,-5.62856,-13250696,-27244636
 VSME,VS MEDIA Holdings Limited,Communication Services,Advertising Agencies,XLC,0,1,0,0,0,Loosers,9020000,2152997,3855786,0.971,0.971,8229023,,-0.30547002,-4.01863,1897644,-10121
 VSSYW,Versus Systems Inc.,Technology,Software - Application,XLK,0,4,0,0,0,Loosers,,2168798,1791540,1.052,1.234,454557,31.959,-0.4427,-1.7098,-4251363,-6441591
-VTEX,VTEX,Technology,Software—Application,XLK,1,0,47,0,10,"Winners,Random,Random 10",1639680640,209408992,4096000,3.366,3.447,201516992,1.704,-0.02612,-0.053179998,22915500,4259000
+VTAK,"Catheter Precision, Inc.",Healthcare,Medical Devices,XLV,0,1,0,0,0,Loosers,2982123,5579000,210000,2.764,2.838,314000,0.96,-0.56364,-4.54152,-10648500,-21755000
+VTEX,VTEX,Technology,Software—Application,XLK,1,0,47,0,11,"Winners,Random,Random 10",1639680640,209408992,4096000,3.366,3.447,201516992,1.704,-0.02612,-0.053179998,22915500,4259000
 VTNR,"Vertex Energy, Inc.",Energy,Oil & Gas Refining & Marketing,XLE,0,3,0,0,0,Loosers,115022592,76967000,491536992,0.355,1.071,3177187072,245.294,-0.02316,-0.68982005,-124548496,-58632000
-VTSI,"VirTra, Inc.",Industrials,Aerospace & Defense,XLI,0,0,28,0,10,"Random,Random 10",99741352,17201178,8965607,1.993,2.694,36573656,22.598,0.09388,0.19466,4303299,3124999
+VTSI,"VirTra, Inc.",Industrials,Aerospace & Defense,XLI,0,0,28,0,11,"Random,Random 10",99741352,17201178,8965607,1.993,2.694,36573656,22.598,0.09388,0.19466,4303299,3124999
 VVCVF,VVC Exploration Corporation,Energy,Oil & Gas E&P,XLE,0,2,0,0,0,Loosers,16986216,5004084,2154349,0.558,0.565,2350,5.91,-0.07848,-0.23663999,-1252929,-2626942
 VVIVF,Replenish Nutrients Holding Corp.,Basic Materials,Agricultural Inputs,XLB,0,1,0,0,0,Loosers,6838809,1755100,4165774,0.7,1.486,14787026,29.152,-0.03762,-0.25925,-3210079,611205
 VVPR,VivoPower International PLC,Technology,Solar,XLK,0,3,0,0,0,Loosers,5134842,553000,32388000,0.386,0.544,15060000,864.602,-0.07147,-1.5889,-2097875,-8552000
@@ -1039,9 +1055,9 @@ WALDW,Waldencast plc,Technology,Software—Application,XLK,1,0,0,0,0,Winners,,99
 WAVD,"WaveDancer, Inc.",Technology,Information Technology Services,XLK,0,1,0,0,0,Loosers,5657035,877198,947556,1.08,1.246,9121563,32.849,-0.37842998,-1.7314501,-2097962,-3627164
 WDFCF,K9 Gold Corp.,Basic Materials,Other Industrial Metals & Mining,XLB,0,2,0,0,0,Loosers,117176,473127,,2.574,2.969,,,-0.057719998,-0.24723,-938959,-596205
 WDOFF,Wesdome Gold Mines Ltd.,Basic Materials,Gold,XLB,0,0,8,0,0,Random,1107933952,31582000,43657000,0.47,0.785,305987008,10.287,-0.00148,-0.029860001,-42665624,74442000
-WETG,"WeTrade Group, Inc.",Technology,Software—Application,XLK,3,0,39,10,0,"Winners,Random,Random 5",8925442,1416885,,3.471,19.768,4703653,,-0.2169,-0.24604,-27957128,-7214335
+WETG,"WeTrade Group, Inc.",Technology,Software—Application,XLK,3,0,39,11,0,"Winners,Random,Random 5",8925442,1416885,,3.471,19.768,4703653,,-0.2169,-0.24604,-27957128,-7214335
 WETH,Wetouch Technology Inc.,Real Estate,Real Estate Services,XLRE,3,0,4,0,0,"Winners,Random",45311948,93936776,1620146,14.714,14.876,39884112,1.45,0.08732,0.11594,11246102,12825294
-WIMI,WiMi Hologram Cloud Inc.,Communication Services,Advertising Agencies,XLC,1,0,0,0,0,Winners,124859528,631576256,52129536,5.869,6.335,512741344,4.503,-0.123789996,-0.28915,-175138720,-236494384
+WIMI,WiMi Hologram Cloud Inc.,Communication Services,Advertising Agencies,XLC,2,0,0,0,0,Winners,124859528,631576256,52129536,5.869,6.335,512741344,4.503,-0.123789996,-0.28915,-175138720,-236494384
 WINKF,Windfall Geotek Inc.,Technology,Software—Application,XLK,0,5,0,0,0,Loosers,3352400,1296638,,15.933,16.478,392949,,-0.35175,-0.50924,-553850,-1405243
 WISA,"WiSA Technologies, Inc.",Technology,Semiconductors,XLK,0,1,0,0,0,Loosers,1830510,212000,1264000,0.17,1.254,2579000,142.825,-1.61711,-5.08193,-7743750,-16719000
 WLGS,"WANG & LEE GROUP, Inc.",Industrials,Engineering & Construction,XLI,0,3,0,0,0,Loosers,10417957,7416000,1221000,2.144,2.174,4356931,26.207,-0.221,-1.25094,,
@@ -1050,18 +1066,18 @@ WNDW,"SolarWindow Technologies, Inc.",Utilities,Utilities—Renewable,XLU,0,2,0,
 WNW,Meiwu Technology Company Limited,Consumer Cyclical,Internet Retail,XLY,0,1,0,0,0,Loosers,3480311,15783731,581661,2.351,2.573,20495388,2.341,0.02735,-0.24182,5300760,4217081
 WRAP,"Wrap Technologies, Inc.",Technology,Scientific & Technical Instruments,XLK,3,0,0,0,0,Winners,137064016,14934000,221000,1.78,2.389,9129000,1.074,-0.30685,-0.60777,-4221500,-16485000
 WRIT,"WRIT Media Group, Inc.",Communication Services,Entertainment,XLC,1,0,0,0,0,Winners,535030,262383,229905,0.144,0.674,1537419,5.997,-0.11622,-0.27153,-93839,230463
-WSTRF,Western Uranium & Vanadium Corp.,Energy,Uranium,XLE,4,0,47,10,0,"Winners,Random,Random 5",73122520,5811392,,8.899,9.468,605461,,-0.091359995,-0.15991999,-3633420,-3187587
-WT,"WisdomTree, Inc.",Financial Services,Asset Management,XLF,0,0,0,0,1,Random 10,1307462912,188027008,275465984,2.165,2.226,349035008,50.852,0.05529,0.2093,71440248,85600000
+WSTRF,Western Uranium & Vanadium Corp.,Energy,Uranium,XLE,4,0,47,11,0,"Winners,Random,Random 5",73122520,5811392,,8.899,9.468,605461,,-0.091359995,-0.15991999,-3633420,-3187587
+WT,"WisdomTree, Inc.",Financial Services,Asset Management,XLF,0,0,0,0,2,Random 10,1307462912,188027008,275465984,2.165,2.226,349035008,50.852,0.05529,0.2093,71440248,85600000
 WTER,The Alkaline Water Company Inc.,Consumer Defensive,Beverages—Non-Alcoholic,XLP,0,6,0,0,0,Loosers,130238,414648,8262721,0.235,0.575,62392288,,-0.51854,,-2833331,-8343721
-WTTR,"Select Water Solutions, Inc.",Basic Materials,Specialty Chemicals,XLB,0,0,0,0,1,Random 10,1052841216,57083000,53545000,1.796,2.146,1585352960,6.002,0.03965,0.08922,165200128,285355008
+WTTR,"Select Water Solutions, Inc.",Basic Materials,Specialty Chemicals,XLB,0,0,0,0,2,Random 10,1052841216,57083000,53545000,1.796,2.146,1585352960,6.002,0.03965,0.08922,165200128,285355008
 WVE,Wave Life Sciences Ltd.,Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,831531200,200351008,32118000,1.188,1.262,113305000,67.611,-0.20173,-11.181689,64107500,-19431000
 WW,"WW International, Inc.",Consumer Cyclical,Personal Services,XLY,0,1,0,0,0,Loosers,148110560,112921000,1489542016,0.622,0.874,889550976,,0.054970004,,73675624,6686000
 WXXWY,WuXi Biologics (Cayman) Inc.,Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,9451054080,8694262784,5336382976,1.788,2.196,16554265600,13.668,0.05231,0.1145,,
-XAUMF,Goldmoney Inc.,Financial Services,Capital Markets,XLF,0,0,15,0,1,"Random,Random 10",76861464,14876053,42060352,3.494,3.915,303052320,24.206,0.05989,0.058579996,80611056,72799864
-XBIT,XBiotech Inc.,Healthcare,Biotechnology,XLV,1,0,38,0,10,"Winners,Random,Random 10",193274944,202191008,,38.444,38.61,300000,,-0.09649,-0.09894,-15360125,-18456000
-XBP,"XBP Europe Holdings, Inc.",Technology,Software—Infrastructure,XLK,0,1,0,0,0,Loosers,96531520,2819000,37353000,0.357,0.62,169048992,,,,,12627000
+XAUMF,Goldmoney Inc.,Financial Services,Capital Markets,XLF,0,0,15,0,2,"Random,Random 10",76861464,14876053,42060352,3.494,3.915,303052320,24.206,0.05989,0.058579996,80611056,72799864
+XBIT,XBiotech Inc.,Healthcare,Biotechnology,XLV,1,0,38,0,11,"Winners,Random,Random 10",193274944,202191008,,38.444,38.61,300000,,-0.09649,-0.09894,-15360125,-18456000
+XBP,"XBP Europe Holdings, Inc.",Technology,Software—Infrastructure,XLK,0,2,0,0,0,Loosers,96531520,2819000,37353000,0.357,0.62,169048992,,,,,12627000
 XCUR,"Exicure, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,5850582,2335000,6999000,1.632,2.56,23790000,72.117,0.07356,0.56404,-11545000,-21953000
-XELB,"Xcel Brands, Inc.",Consumer Cyclical,Apparel Manufacturing,XLY,1,0,0,0,0,Winners,18685414,2189000,5581000,1.042,1.259,19534000,10.091,-0.16171,-0.32507,-3317250,-5963000
+XELB,"Xcel Brands, Inc.",Consumer Cyclical,Apparel Manufacturing,XLY,1,1,0,0,0,"Winners,Loosers",18685414,2189000,5581000,1.042,1.259,19534000,10.091,-0.16171,-0.32507,-3317250,-5963000
 XERS,"Xeris Biopharma Holdings, Inc.",Healthcare,Biotechnology,XLV,3,0,0,0,0,Winners,316019232,72451000,229191008,1.173,1.642,163914000,,-0.08246,-3.2420301,-19622876,-47023000
 XLMDF,XLMedia PLC,Communication Services,Publishing,XLC,0,1,0,0,0,Loosers,23390820,7434000,1352000,0.902,0.902,57322000,1.284,0.02174,0.030480001,-5024625,5144000
 XPON,Expion360 Inc.,Industrials,Electrical Equipment & Parts,XLI,2,0,0,0,0,Winners,24103114,2910896,4069706,1.722,4.001,6544177,59.603,-0.26822,-0.6772,-2545201,-4976669
@@ -1072,16 +1088,16 @@ XYF,X Financial,Financial Services,Credit Services,XLF,0,0,10,1,0,"Random,Random
 YERBF,Yerbaé Brands Corp.,Consumer Defensive,Beverages—Non-Alcoholic,XLP,0,1,0,0,0,Loosers,38234372,1617486,2703235,0.95,1.486,11918094,1814.544,-2.17895,,-8268854,-11157978
 YGF,"YanGuFang International Group Co., Ltd.",Consumer Defensive,Packaged Foods,XLP,0,1,0,0,0,Loosers,23465600,6853398,12642902,0.24,0.514,41019312,63.395,0.07136,0.23479,-12172,7903097
 YGMZ,MingZhu Logistics Holdings Limited,Industrials,Trucking,XLI,0,2,0,0,0,Loosers,11250547,4307362,15725757,0.428,1.052,109834040,33.917,0.00035,-0.009980001,5249560,-3887530
-YLLXF,Yellow Cake plc,Energy,Uranium,XLE,0,0,36,0,10,"Random,Random 10",1747655936,83401000,,1.18,1.18,508051008,,0.25076,0.41526002,381314624,62800000
+YLLXF,Yellow Cake plc,Energy,Uranium,XLE,0,0,36,0,11,"Random,Random 10",1747655936,83401000,,1.18,1.18,508051008,,0.25076,0.41526002,381314624,62800000
 YMAB,"Y-mAbs Therapeutics, Inc.",Healthcare,Biotechnology,XLV,2,0,0,0,0,Winners,721884352,78637000,1419000,5.022,5.52,84819000,1.405,-0.09835,-0.20387,-14034750,-27232000
-YRD,Yiren Digital Ltd.,Financial Services,Credit Services,XLF,4,0,34,0,10,"Winners,Random,Random 10",453698560,5512157184,55373000,5.084,5.694,4709399040,0.735,0.18311001,0.305,,
+YRD,Yiren Digital Ltd.,Financial Services,Credit Services,XLF,4,0,34,0,11,"Winners,Random,Random 10",453698560,5512157184,55373000,5.084,5.694,4709399040,0.735,0.18311001,0.305,,
 YTEN,"Yield10 Bioscience, Inc.",Basic Materials,Agricultural Inputs,XLB,0,1,0,0,0,Loosers,3234870,2817000,3325000,0.713,0.85,147000,848.214,-1.03774,-3.8076699,-5975500,-11419000
 ZCMD,Zhongchao Inc.,Healthcare,Health Information Services,XLV,0,1,0,0,0,Loosers,4692449,12222919,1442897,8.954,10.658,17232248,5.31,-0.14559,-0.25466,1810624,-1718272
 ZDGE,"Zedge, Inc.",Communication Services,Internet Content & Information,XLC,2,0,3,2,0,"Winners,Random,Random 5",46365360,18745000,2279000,3.672,3.779,27422000,5.847,0.0066299997,-0.14329,1944625,3340000
 ZENV,Zenvia Inc.,Technology,Software—Application,XLK,5,0,0,0,0,Winners,101596568,116507000,109762000,0.504,0.526,765449024,11.88,0.0058399998,-0.18716998,229608128,175550000
 ZEVY,"Lightning eMotors, Inc.",Industrials,Farm & Heavy Construction Machinery,XLI,0,3,0,0,0,Loosers,378468,6022000,66985000,0.224,0.564,25927000,,-0.59002,-7.15662,-51515376,-87423000
 ZIVO,"ZIVO Bioscience, Inc.",Healthcare,Biotechnology,XLV,0,1,0,0,0,Loosers,16284704,1484644,1502121,0.469,0.614,15850,,-1.64739,-39.56017,-3336585,-6531182
-ZJYL,Jin Medical International Ltd.,Healthcare,Medical Instruments & Supplies,XLV,2,0,39,0,10,"Winners,Random,Random 10",1077043456,13380691,1456000,3.008,3.891,19976084,6.184,0.06823,0.16622,-777459,4375423
+ZJYL,Jin Medical International Ltd.,Healthcare,Medical Instruments & Supplies,XLV,2,0,39,1,10,"Winners,Random,Random 5,Random 10",1077043456,13380691,1456000,3.008,3.891,19976084,6.184,0.06823,0.16622,-777459,4375423
 ZKIN,"ZK International Group Co., Ltd.",Basic Materials,Steel,XLB,1,0,0,0,0,Winners,19910388,2633940,21522432,0.832,1.682,109156376,24.762,-0.00649,-0.0691,,
 ZPHYF,Zephyr Minerals Ltd.,Basic Materials,Gold,XLB,0,1,0,0,0,Loosers,2505534,275937,,6.728,7.008,,,-0.19406,-0.34273997,262860,-510633
 ZVRA,"Zevra Therapeutics, Inc.",Healthcare,Biotechnology,XLV,1,0,0,0,0,Winners,240204048,83426000,44826000,4.299,6.31,16563000,66.438,-0.21364,-0.49505,-54710124,-21839000
