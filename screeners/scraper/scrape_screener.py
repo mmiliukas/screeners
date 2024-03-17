@@ -5,7 +5,7 @@ from io import StringIO
 from time import sleep
 
 import pandas
-from playwright.sync_api import Page
+from playwright.sync_api import Page, TimeoutError
 
 from screeners.utils import a_number, a_percent, a_string, an_integer, unique_file_name
 
@@ -18,7 +18,14 @@ def scrape_screener(page: Page, url: str, target: str):
     results = []
 
     page.goto(url)
-    page.wait_for_selector("#scr-res-table")
+    page.wait_for_selector("#fin-scr-res-table")
+
+    try:
+        page.query_selector("#scr-res-table")
+    except TimeoutError:
+        # sometimes screener might return no results
+        logger.info(f'screener "{url}" returned empty results, skipping...')
+        return
 
     converters = {
         "Symbol": a_string,
