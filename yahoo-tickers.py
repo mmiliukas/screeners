@@ -26,16 +26,24 @@ def should_update(df: pd.DataFrame, symbol: str, ticker_file: str):
         return False
 
     expire_after_days = config["yfinance"]["expire_after_days"]
+
     if os.path.exists(ticker_file):
-        modified_at = os.path.getmtime(ticker_file)
-        modified_at_date = datetime.datetime.fromtimestamp(modified_at)
-        diff = datetime.datetime.now() - modified_at_date
-        return True if diff.days >= expire_after_days else False
+        with open(ticker_file, "w") as file:
+            ticker = json.load(file)
+            if "__fetch_time" in ticker:
+                today = datetime.date.today()
+                __fetch_time = datetime.date.fromisoformat(ticker["__fetch_time"])
+
+                diff = abs(today - __fetch_time)
+                if diff.days < expire_after_days:
+                    return False
 
     return True
 
 
 def main():
+    __fetch_time = datetime.date.today().isoformat()
+
     tickers = get_tickers()
     tickers.extend(get_etfs_and_holdings())
 
@@ -56,7 +64,10 @@ def main():
                 logger.info(f'refreshing ticker "{symbol}" information...')
 
                 with open(ticker_path, "w") as file:
-                    file.write(json.dumps([result.info or {}]))
+                    info = result.info
+                    info["__fetch_time"] = __fetch_time
+
+                    file.write(json.dumps([info]))
 
     df.to_csv(ignored_tickers, index=False)
 
