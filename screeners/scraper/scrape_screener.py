@@ -21,9 +21,9 @@ def scrape_screener(page: Page, url: str, target: str):
     page.wait_for_selector("#fin-scr-res-table")
 
     try:
-        page.query_selector("#fin-scr-res-table #scr-res-table")
+        page.wait_for_selector("#fin-scr-res-table #scr-res-table")
     except TimeoutError:
-        # sometimes screener might return no results
+        # sometimes screener returns no results
         logger.info(f'screener "{url}" returned empty results, skipping...')
         return
 
