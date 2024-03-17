@@ -28,11 +28,11 @@ def should_update(df: pd.DataFrame, symbol: str, ticker_file: str):
     expire_after_days = config["yfinance"]["expire_after_days"]
 
     if os.path.exists(ticker_file):
-        with open(ticker_file, "w") as file:
+        with open(ticker_file, "r") as file:
             ticker = json.load(file)
-            if "__fetch_time" in ticker:
+            if "__fetch_time" in ticker[0]:
                 today = datetime.date.today()
-                __fetch_time = datetime.date.fromisoformat(ticker["__fetch_time"])
+                __fetch_time = datetime.date.fromisoformat(ticker[0]["__fetch_time"])
 
                 diff = abs(today - __fetch_time)
                 if diff.days < expire_after_days:
