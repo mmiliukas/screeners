@@ -45,12 +45,4 @@ def get_infos(df: pd.DataFrame, keys: list[str]):
 
 
 def get_info(df: pd.DataFrame, key: str):
-    def get_info_internal(row):
-        file_name = config["tickers"]["cache_name"] + row + ".json"
-        with open(file_name) as file:
-            info = json.load(file)
-            if len(info) == 0:
-                return pd.NA
-            return info[0][key] if key in info[0] else pd.NA
-
-    return df["Symbol"].apply(get_info_internal)
+    return get_infos(df, [key])
