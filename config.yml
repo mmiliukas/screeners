@@ -58,4 +58,4 @@ tickers:
 
 telegram:
   # specify if we should report success/error states to telegram channel
-  enabled: false
+  enabled: true
