@@ -33,12 +33,25 @@ def enrich_screeners_names(row):
 def enrich_screeners(df: pd.DataFrame):
     for screener in config["screeners"]:
         csvs = glob.glob(f'{screener["cache_name"]}/*.csv')
-        all = pd.concat([pd.read_csv(csv) for csv in csvs])
+        all = pd.concat(
+            [
+                pd.read_csv(
+                    csv, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f"
+                )
+                for csv in csvs
+            ]
+        )
         df[screener["name"]] = df["Symbol"].apply(
             lambda _: len(all[all["Symbol"] == _])
         )
+        df[screener["name"] + " First Seen"] = df["Symbol"].apply(
+            lambda _: all[all["Symbol"] == _]["Date"].min()
+        )
 
     df["Screener"] = df.apply(enrich_screeners_names, axis=1)
+
+    names = [screener["name"] + " First Seen" for screener in config["screeners"]]
+    df["Screener First Seen"] = df[names].min(axis=1)
 
 
 def enrich_tickers(symbols) -> pd.DataFrame:
