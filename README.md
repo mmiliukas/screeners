@@ -19,31 +19,35 @@ tickers = pd.read_csv(url)
 ## columns
 ```python
 '''
-Data columns (total 22 columns):
  #   Column                         Non-Null Count  Dtype
 ---  ------                         --------------  -----
- 0   Symbol                         1062 non-null   object
- 1   Name                           1056 non-null   object
- 2   Sector                         1062 non-null   object
- 3   Industry                       1062 non-null   object
- 4   ETF                            1062 non-null   object
- 5   Winners                        1062 non-null   int64
- 6   Loosers                        1062 non-null   int64
- 7   Random                         1062 non-null   int64
- 8   Random 5                       1062 non-null   int64
- 9   Random 10                      1062 non-null   int64
- 10  Screener                       1062 non-null   object
- 11  Financials Market Cap          1024 non-null   float64
- 12  Financials Total Cash          1055 non-null   float64
- 13  Financials Total Debt          874 non-null    float64
- 14  Financials Quick Ratio         1062 non-null   float64
- 15  Financials Current Ratio       1062 non-null   float64
- 16  Financials Total Revenue       802 non-null    float64
- 17  Financials Debt To Equity      733 non-null    float64
- 18  Financials Return On Assets    994 non-null    float64
- 19  Financials Return On Equity    875 non-null    float64
- 20  Financials Free Cashflow       932 non-null    float64
- 21  Financials Operating Cashflow  1008 non-null   float64
-dtypes: float64(11), int64(5), object(6)
+ 0   Symbol                         1106 non-null   object
+ 1   Name                           1106 non-null   object
+ 2   Sector                         1106 non-null   object
+ 3   Industry                       1106 non-null   object
+ 4   ETF                            1106 non-null   object
+ 5   Winners                        1106 non-null   int64
+ 6   Winners First Seen             431 non-null    object
+ 7   Loosers                        1106 non-null   int64
+ 8   Loosers First Seen             614 non-null    object
+ 9   Random                         1106 non-null   int64
+ 10  Random First Seen              167 non-null    object
+ 11  Random 5                       1106 non-null   int64
+ 12  Random 5 First Seen            50 non-null     object
+ 13  Random 10                      1106 non-null   int64
+ 14  Random 10 First Seen           54 non-null     object
+ 15  Screener                       1106 non-null   object
+ 16  Screener First Seen            1106 non-null   object
+ 17  Financials Market Cap          1067 non-null   float64
+ 18  Financials Total Cash          1099 non-null   float64
+ 19  Financials Total Debt          911 non-null    float64
+ 20  Financials Quick Ratio         1106 non-null   float64
+ 21  Financials Current Ratio       1106 non-null   float64
+ 22  Financials Total Revenue       833 non-null    float64
+ 23  Financials Debt To Equity      768 non-null    float64
+ 24  Financials Return On Assets    1035 non-null   float64
+ 25  Financials Return On Equity    912 non-null    float64
+ 26  Financials Free Cashflow       968 non-null    float64
+ 27  Financials Operating Cashflow  1048 non-null   float64
 '''
 ```
