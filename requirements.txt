@@ -22,7 +22,7 @@ numpy==1.26.4
 packaging==24.0
 pandas==2.2.1
 peewee==3.17.1
-pillow==10.2.0
+pillow==10.3.0
 platformdirs==4.2.0
 playwright==1.42.0
 pluggy==1.4.0
