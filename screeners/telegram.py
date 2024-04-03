@@ -1,3 +1,5 @@
+import io
+
 import requests
 
 from screeners.config import config
@@ -13,3 +15,15 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str):
     params = {"chat_id": channel_id, "text": text, "parse_mode": "HTML"}
 
     requests.post(url, params=params)
+
+
+def log_to_telegram_image(file: io.BytesIO, bot_token: str, channel_id: str):
+    enabled = config["telegram"]["enabled"]
+
+    if not enabled:
+        return
+
+    url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
+    files = {"photo": file}
+
+    requests.post(url, data={"chat_id": channel_id}, files=files)
