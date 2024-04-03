@@ -17,7 +17,7 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str):
     requests.post(url, params=params)
 
 
-def log_to_telegram_image(file: io.BytesIO, bot_token: str, channel_id: str):
+def log_to_telegram_image(file, bot_token: str, channel_id: str):
     enabled = config["telegram"]["enabled"]
 
     if not enabled:

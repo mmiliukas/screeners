@@ -56,7 +56,7 @@ def main(argv):
     graph = io.BytesIO()
     plt.savefig(graph, format="png")
 
-    log_to_telegram_image(graph, bot_token, channel_id)
+    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
 
 
 if __name__ == "__main__":
