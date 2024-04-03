@@ -1,4 +1,5 @@
 import sys
+from datetime import date
 
 import pandas as pd
 
@@ -12,7 +13,13 @@ def main(argv):
     tickers = pd.read_csv(config["tickers"]["target"])
     ignored_tickers = pd.read_csv(config["ignored_tickers"]["target"])
 
-    message = f"<b>DAILY RUN:</b> <code>{len(tickers)}</code> tickers matched and <code>{len(ignored_tickers)}</code> ignored"
+    message = (
+        f"<b>DAILY RUN: {date.today().isoformat()}</b> "
+        f"<code>{len(tickers)}</code> matched + "
+        f"<code>{len(ignored_tickers)}</code> ignored = "
+        f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
+    )
+
     log_to_telegram(message, bot_token, channel_id)
 
     ignored_summary = (
