@@ -26,9 +26,4 @@ def log_to_telegram_image(file, bot_token: str, channel_id: str):
     url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
     files = {"photo": file}
 
-    response = requests.post(url, data={"chat_id": channel_id}, files=files)
-
-    if response.status_code == 200:
-        print("Image uploaded successfully!")
-    else:
-        print("Failed to upload image:", response.text)
+    requests.post(url, data={"chat_id": channel_id}, files=files)
