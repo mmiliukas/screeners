@@ -51,7 +51,13 @@ def main(argv):
 
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
-    ax = only_screeners.sum(axis=0).plot(kind="barh")
+    ax = only_screeners.sum(axis=0).plot(kind="barh", figsize=(10, 3))
+    ax.spines[
+        [
+            "top",
+            "right",
+        ]
+    ].set_visible(False)
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
 
     graph = io.BytesIO()
