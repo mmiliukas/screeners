@@ -50,8 +50,9 @@ def main(argv):
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
     screeners = __get_unique_screeners(tickers)
-    only_screeners = tickers[screeners]
-    only_screeners.sum().plot(kind="pie", autopct=lambda p: "{:.2f}%".format(p))
+    only_screeners = tickers[screeners].astype(bool)
+    ax = only_screeners.sum(axis=0).plot(kind="barh")
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
 
     graph = io.BytesIO()
     plt.savefig(graph, format="png")
