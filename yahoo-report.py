@@ -37,7 +37,7 @@ def main(argv):
         ignored_tickers.groupby("Reason")
         .count()["Symbol"]
         .sort_values(ascending=False)
-        .to_string()
+        .to_markdown()
     )
     log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
 
@@ -45,7 +45,7 @@ def main(argv):
         tickers.groupby("Screener")
         .count()["Symbol"]
         .sort_values(ascending=False)
-        .to_string()
+        .to_markdown()
     )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
