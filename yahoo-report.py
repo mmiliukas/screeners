@@ -25,29 +25,30 @@ def main(argv):
     ignored_tickers = pd.read_csv(config["ignored_tickers"]["target"])
 
     message = (
-        f"<b>DAILY RUN: {date.today().isoformat()}</b> "
+        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
         f"<code>{len(tickers)}</code> matched + "
         f"<code>{len(ignored_tickers)}</code> ignored = "
         f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
     )
 
-    log_to_telegram(message, bot_token, channel_id)
+    json = log_to_telegram(message, bot_token, channel_id)
+    message_id = json["result"]["message_id"]
 
     ignored_summary = (
         ignored_tickers.groupby("Reason")
         .count()["Symbol"]
         .sort_values(ascending=False)
-        .to_markdown()
+        .to_string()
     )
-    log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
+    log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id, message_id)
 
     tickers_summary = (
         tickers.groupby("Screener")
         .count()["Symbol"]
         .sort_values(ascending=False)
-        .to_markdown()
+        .to_string()
     )
-    log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
+    log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id, message_id)
 
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
@@ -63,7 +64,7 @@ def main(argv):
     graph = io.BytesIO()
     plt.savefig(graph, format="png")
 
-    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
+    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id, message_id)
 
 
 if __name__ == "__main__":
