@@ -64,7 +64,7 @@ def main(argv):
 
     tickers["SFS"] = tickers["Screener First Seen"].dt.date
     ax = (
-        tickers.groupby("FS")["Symbol"]
+        tickers.groupby("SFS")["Symbol"]
         .count()
         .plot(kind="line", ax=axes[1], xlabel="", ylabel="", grid=True)
     )
