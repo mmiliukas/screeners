@@ -12,7 +12,7 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: int 
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     params = {"chat_id": channel_id, "text": text, "parse_mode": "HTML"}
 
-    if message_id:
+    if message_id > 0:
         params["reply_to_message_id"] = message_id
 
     response = requests.post(url, params=params)
@@ -28,7 +28,7 @@ def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: int
     url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
     files = {"photo": file}
 
-    if message_id:
+    if message_id > 0:
         files["reply_to_message_id"] = message_id
 
     response = requests.post(url, data={"chat_id": channel_id}, files=files)
