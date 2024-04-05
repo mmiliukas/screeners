@@ -21,7 +21,9 @@ def __get_unique_screeners(df: pd.DataFrame):
 def main(argv):
     bot_token, channel_id = argv[1:]
 
-    tickers = pd.read_csv(config["tickers"]["target"])
+    tickers_source = config["tickers"]["target"]
+    tickers = pd.read_csv(tickers_source, parse_dates=["Screener First Seen"])
+
     ignored_tickers = pd.read_csv(config["ignored_tickers"]["target"])
 
     message = (
