@@ -3,7 +3,7 @@ import requests
 from screeners.config import config
 
 
-def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: int = 0):
+def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: str = ""):
     enabled = config["telegram"]["enabled"]
 
     if not enabled:
@@ -19,7 +19,7 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: int 
     return response.json()
 
 
-def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: int = 0):
+def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: str = ""):
     enabled = config["telegram"]["enabled"]
 
     if not enabled:
@@ -28,7 +28,7 @@ def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: int
     url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
     files = {"photo": file}
 
-    if message_id > 0:
+    if message_id:
         files["reply_to_message_id"] = message_id
 
     response = requests.post(url, data={"chat_id": channel_id}, files=files)

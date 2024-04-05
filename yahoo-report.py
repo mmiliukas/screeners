@@ -32,7 +32,7 @@ def main(argv):
     )
 
     json = log_to_telegram(message, bot_token, channel_id)
-    message_id = json["result"]["message_id"]
+    message_id = str(json["result"]["message_id"])
 
     ignored_summary = (
         ignored_tickers.groupby("Reason")
