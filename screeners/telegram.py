@@ -12,7 +12,7 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: str 
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     params = {"chat_id": channel_id, "text": text, "parse_mode": "HTML"}
 
-    if message_id > 0:
+    if message_id:
         params["reply_to_message_id"] = message_id
 
     response = requests.post(url, params=params)
