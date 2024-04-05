@@ -49,16 +49,26 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 5))
+
+    axes[0].set_title("Ticker Count Per Screener")
+    axes[1].set_title("New Ticker Frequency")
+
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
-    ax = only_screeners.sum(axis=0).plot(kind="barh", figsize=(10, 3))
-    ax.spines[
-        [
-            "top",
-            "right",
-        ]
-    ].set_visible(False)
+    ax = only_screeners.sum(axis=0).plot(kind="barh", ax=axes[0])
+    ax.spines[["top", "right"]].set_visible(False)
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
+
+    tickers["SFS"] = tickers["Screener First Seen"].dt.date
+    ax = (
+        tickers.groupby("FS")["Symbol"]
+        .count()
+        .plot(kind="line", ax=axes[1], xlabel="", ylabel="", grid=True)
+    )
+    ax.spines[["top", "right"]].set_visible(False)
+
+    plt.tight_layout()
 
     graph = io.BytesIO()
     plt.savefig(graph, format="png")
