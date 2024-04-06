@@ -18,6 +18,42 @@ def __get_unique_screeners(df: pd.DataFrame):
     return list(result)
 
 
+def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
+    axis.set_title("Ticker Count Per Screener")
+
+    screeners = __get_unique_screeners(tickers)
+    only_screeners = tickers[screeners].astype(bool)
+    ax = only_screeners.sum(axis=0).plot(kind="barh", ax=axis)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
+
+
+def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
+    axis.set_title("New Ticker Frequency")
+
+    tickers["SFS"] = tickers["Screener First Seen"].dt.date
+    ax = (
+        tickers.groupby("SFS")["Symbol"]
+        .count()
+        .plot(
+            kind="line",
+            ax=axis,
+            xlabel="",
+            ylabel="",
+            grid=True,
+            legend=True,
+            label="New Ticker Count",
+        )
+    )
+    ax.spines[["top", "right"]].set_visible(False)
+
+    moving_average = tickers.groupby("SFS")["Symbol"].count().to_frame()
+    moving_average["ma"] = moving_average["Symbol"].rolling(window=7).mean()
+    moving_average["ma"].plot(
+        kind="line", ax=axis, legend=True, label="Moving Average Of 7 Days"
+    )
+
+
 def main(argv):
     bot_token, channel_id = argv[1:]
 
@@ -53,22 +89,8 @@ def main(argv):
 
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 5))
 
-    axes[0].set_title("Ticker Count Per Screener")
-    axes[1].set_title("New Ticker Frequency")
-
-    screeners = __get_unique_screeners(tickers)
-    only_screeners = tickers[screeners].astype(bool)
-    ax = only_screeners.sum(axis=0).plot(kind="barh", ax=axes[0])
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
-
-    tickers["SFS"] = tickers["Screener First Seen"].dt.date
-    ax = (
-        tickers.groupby("SFS")["Symbol"]
-        .count()
-        .plot(kind="line", ax=axes[1], xlabel="", ylabel="", grid=True)
-    )
-    ax.spines[["top", "right"]].set_visible(False)
+    __plot_ticker_count_per_screener(axes[0], tickers)
+    __plot_ticker_frequency(axes[0], tickers)
 
     plt.tight_layout()
 
