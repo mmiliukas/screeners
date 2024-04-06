@@ -19,7 +19,7 @@ def __get_unique_screeners(df: pd.DataFrame):
 
 
 def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
-    axis.set_title("Ticker Count Per Screener")
+    axis.set_title("Tickers per screener")
 
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
@@ -29,7 +29,7 @@ def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
 
 
 def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
-    axis.set_title("New Ticker Frequency")
+    axis.set_title("Ticker appearance frequency")
 
     tickers["SFS"] = tickers["Screener First Seen"].dt.date
     ax = (
@@ -42,7 +42,7 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
             ylabel="",
             grid=True,
             legend=True,
-            label="New Ticker Count",
+            label="Count",
         )
     )
     ax.spines[["top", "right"]].set_visible(False)
@@ -50,7 +50,12 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     moving_average = tickers.groupby("SFS")["Symbol"].count().to_frame()
     moving_average["ma"] = moving_average["Symbol"].rolling(window=7).mean()
     moving_average["ma"].plot(
-        kind="line", ax=axis, legend=True, label="Moving Average Of 7 Days"
+        kind="line",
+        ax=axis,
+        legend=True,
+        label="Moving average (7 days)",
+        xlabel="",
+        ylabel="",
     )
 
 
