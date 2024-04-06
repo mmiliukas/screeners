@@ -52,6 +52,7 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     moving_average["ma"].plot(
         kind="line",
         ax=axis,
+        grid=True,
         legend=True,
         label="Moving average (7 days)",
         xlabel="",
