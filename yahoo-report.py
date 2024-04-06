@@ -90,7 +90,7 @@ def main(argv):
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 5))
 
     __plot_ticker_count_per_screener(axes[0], tickers)
-    __plot_ticker_frequency(axes[0], tickers)
+    __plot_ticker_frequency(axes[1], tickers)
 
     plt.tight_layout()
 
