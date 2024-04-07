@@ -47,7 +47,7 @@ def enrich_close_date(row):
         history = yf.download(
             symbol, start=start, end=end, interval="1d", progress=False, session=session
         )
-        history.to_csv(file_name, index=False)
+        history.to_csv(file_name)
 
     if len(history) == 0:
         print(symbol, start, end)
