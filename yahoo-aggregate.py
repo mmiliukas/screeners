@@ -1,8 +1,11 @@
 import datetime
 import glob
+import os.path
 
 import pandas as pd
+import yfinance as yf
 
+from screeners.cache import session
 from screeners.config import config
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
@@ -28,6 +31,29 @@ def enrich_screeners_names(row):
         if row[screener["name"]] > 0:
             names.append(screener["name"])
     return ",".join(names)
+
+
+def enrich_close_date(row):
+    symbol = row["Symbol"]
+
+    end = row["Screener First Seen"]
+    start = end - datetime.timedelta(days=14)
+
+    file_name = f"first-seen/{symbol}.csv"
+
+    if os.path.exists(file_name):
+        history = pd.read_csv(file_name)
+    else:
+        history = yf.download(
+            symbol, start=start, end=end, interval="1d", progress=False, session=session
+        )
+        history.to_csv(file_name, index=False)
+
+    if len(history) == 0:
+        print(symbol, start, end)
+        return pd.NA
+
+    return history.iloc[-1]["Close"]
 
 
 def enrich_screeners(df: pd.DataFrame):
@@ -91,7 +117,9 @@ def main():
     ignore(df[~filter_ratio], "Current Ratio Below 0.5")
 
     filter = filter_ratio & filter_sector
-    df[filter].to_csv(config["tickers"]["target"], index=False)
+    filtered = df[filter]
+    filtered["Screener First Seen Close"] = filtered.apply(enrich_close_date, axis=1)
+    filtered.to_csv(config["tickers"]["target"], index=False)
 
     df = enrich_tickers(get_holdings())
     df.to_csv(config["etf"]["target"], index=False)
