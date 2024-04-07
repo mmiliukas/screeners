@@ -60,6 +60,24 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     )
 
 
+def __plot_ignored_tickers(axis):
+    df = pd.read_csv(config["ignored_tickers"]["target"], parse_dates=["Date"])
+    df["Date"] = df["Date"].dt.date
+
+    # at ????-??-13 we had a huge amount of removes, so ignoring them
+    df = df[df["Date"] >= date.fromisoformat("2024-03-14")]
+    df = df.groupby("Date")["Symbol"].count().to_frame()
+    df.plot(
+        kind="line",
+        ax=axis,
+        legend=True,
+        grid=True,
+        label="Ignored",
+        xlabel="",
+        ylabel="",
+    )
+
+
 def main(argv):
     bot_token, channel_id = argv[1:]
 
@@ -93,10 +111,11 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 5))
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 7))
 
     __plot_ticker_count_per_screener(axes[0], tickers)
     __plot_ticker_frequency(axes[1], tickers)
+    __plot_ignored_tickers(axes[1])
 
     plt.tight_layout()
 
