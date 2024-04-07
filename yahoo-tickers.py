@@ -34,8 +34,8 @@ def should_update(df: pd.DataFrame, symbol: str, ticker_file: str):
                 today = datetime.date.today()
                 __fetch_time = datetime.date.fromisoformat(ticker[0]["__fetch_time"])
 
-                diff = abs(today - __fetch_time)
-                if diff.days < expire_after_days:
+                diff = today - __fetch_time
+                if abs(diff.days) < expire_after_days:
                     return False
 
     return True

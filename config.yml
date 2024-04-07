@@ -44,7 +44,7 @@ yfinance:
   # directory to use for cached responses
   cache_name: .cache-yfinance
   # how long to keep the cache active (checking the last modification date of a file)
-  expire_after_days: 5
+  expire_after_days: 3
 
 ignored_tickers:
   # file for storing ignored tickers
