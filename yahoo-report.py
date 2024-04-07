@@ -23,7 +23,11 @@ def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
 
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
-    ax = only_screeners.sum(axis=0).plot(kind="barh", ax=axis)
+    ax = (
+        only_screeners.sum(axis=0)
+        .sort_values(ascending=False)
+        .plot(kind="barh", ax=axis)
+    )
     ax.spines[["top", "right"]].set_visible(False)
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
 
@@ -35,7 +39,6 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     ax = (
         tickers.groupby("SFS")["Symbol"]
         .count()
-        .sort_values(ascending=False)
         .plot(
             kind="line",
             ax=axis,
