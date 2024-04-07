@@ -66,8 +66,7 @@ def __plot_ignored_tickers(axis):
 
     # at ????-??-13 we had a huge amount of removes, so ignoring them
     df = df[df["Date"] >= date.fromisoformat("2024-03-14")]
-    df = df.groupby("Date")["Symbol"].count().to_frame()
-    df.plot(
+    df.groupby("Date")["Symbol"].count().plot(
         kind="line",
         ax=axis,
         legend=True,
