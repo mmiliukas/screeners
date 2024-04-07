@@ -35,6 +35,7 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     ax = (
         tickers.groupby("SFS")["Symbol"]
         .count()
+        .sort_values(ascending=False)
         .plot(
             kind="line",
             ax=axis,
