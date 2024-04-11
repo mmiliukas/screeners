@@ -49,11 +49,7 @@ def enrich_close_date(row):
         )
         history.to_csv(file_name)
 
-    if len(history) == 0:
-        print(symbol, start, end)
-        return pd.NA
-
-    return history.iloc[-1]["Close"]
+    return pd.NA if len(history) == 0 else history.iloc[-1]["Close"]
 
 
 def enrich_screeners(df: pd.DataFrame):
@@ -109,16 +105,23 @@ def enrich_tickers(symbols) -> pd.DataFrame:
 def main():
     df = enrich_tickers(get_tickers_whitelisted())
 
-    # custom filters to omit tickers in advance
+    # 1. filter tickers only having sector (means categorized)
     filter_sector = ~df["Sector"].isna()
     ignore(df[~filter_sector], "Not Categorized")
 
+    # 2. filter tickers where ration is above threshold
     filter_ratio = df["Financials Current Ratio"] >= 0.5
     ignore(df[~filter_ratio], "Current Ratio Below 0.5")
 
     filter = filter_ratio & filter_sector
     filtered = df[filter]
+
+    # 3. calculate close price of the ticker before it was seen on a screener
     filtered["Screener First Seen Close"] = filtered.apply(enrich_close_date, axis=1)
+    filter_by_close = ~filtered["Screener First Seen Close"].isna()
+    ignore(df[~filter_by_close], "Missing close price")
+    filtered = filtered[filter_by_close]
+
     filtered.to_csv(config["tickers"]["target"], index=False)
 
     df = enrich_tickers(get_holdings())
