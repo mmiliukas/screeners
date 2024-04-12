@@ -52,20 +52,26 @@ def enrich_close_date(row):
     return pd.NA if len(history) == 0 else history.iloc[-1]["Close"]
 
 
+def read_csv(file: str) -> pd.DataFrame:
+    dates = ["Date"]
+    date_format = "%Y-%m-%dT%H:%M:%S.%f"
+
+    return pd.read_csv(file, parse_dates=dates, date_format=date_format)
+
+
+def exclude_empty(dfs: list[pd.DataFrame]) -> list[pd.DataFrame]:
+    return list(filter(lambda x: not x.empty, dfs))
+
+
 def enrich_screeners(df: pd.DataFrame):
     for screener in config["screeners"]:
         csvs = glob.glob(f'{screener["cache_name"]}/*.csv')
-        all = pd.concat(
-            [
-                pd.read_csv(
-                    csv, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f"
-                )
-                for csv in csvs
-            ]
-        )
+        all = pd.concat(exclude_empty([read_csv(csv) for csv in csvs]))
+
         df[screener["name"]] = df["Symbol"].apply(
             lambda _: len(all[all["Symbol"] == _])
         )
+
         df[screener["name"] + " First Seen"] = df["Symbol"].apply(
             lambda _: all[all["Symbol"] == _]["Date"].min()
         )
