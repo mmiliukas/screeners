@@ -9,7 +9,7 @@ etf:
   target: tickers-etfs.csv
 
 # specifies which urls to scrape, how to name tickers and where to cache them
-# screeners:
+screeners:
 #   - name: Winners
 #     cache_name: runs/winners/
 #     urls:
