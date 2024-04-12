@@ -19,7 +19,7 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: python yahoo.py "$COOKIES"
+      - run: yahoo.py "$COOKIES"
         env:
           COOKIES: ${{ secrets.cookies }}
       - run: python yahoo-tickers.py

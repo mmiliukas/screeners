@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import base64
 import json
 import logging
@@ -36,8 +38,10 @@ def main(argv):
 
         for screener in config["screeners"]:
 
-            screener_cache_name = screener["cache_name"]
+            # not all screeners have url, which is required in case
+            # we want to maintain old data, but stop crawling new tickers
             screener_urls = screener["urls"] if "urls" in screener else []
+            screener_cache_name = screener["cache_name"]
 
             for screener_url in screener_urls:
                 retry(retry_times)(
