@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import io
 import sys
 from datetime import date
@@ -64,22 +66,6 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
     )
 
 
-def __plot_filtered(axis, tickers: pd.DataFrame):
-    close = "Screener First Seen Close"
-    tickers = tickers[(tickers[close] >= 5) & (tickers[close] <= 10)]
-    tickers["SFS"] = tickers["Screener First Seen"].dt.date
-
-    tickers.groupby("SFS")["Symbol"].count().plot(
-        kind="line",
-        ax=axis,
-        xlabel="",
-        ylabel="",
-        grid=True,
-        legend=True,
-        label="Filtered [5, 10]",
-    )
-
-
 def __plot_ignored_tickers(axis):
     df = pd.read_csv(config["ignored_tickers"]["target"], parse_dates=["Date"])
     df["Date"] = df["Date"].dt.date
@@ -134,7 +120,6 @@ def main(argv):
 
     __plot_ticker_count_per_screener(axes[0], tickers)
     __plot_ticker_frequency(axes[1], tickers)
-    __plot_filtered(axes[1], tickers)
     __plot_ignored_tickers(axes[1])
 
     plt.tight_layout()
