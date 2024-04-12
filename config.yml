@@ -10,8 +10,8 @@ etf:
 
 # specifies which urls to scrape, how to name tickers and where to cache them
 screeners:
-#   - name: Winners
-#     cache_name: runs/winners/
+  - name: Winners
+    cache_name: runs/winners/
 #     urls:
 #       - "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736"
 #       - "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
@@ -36,8 +36,8 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/09431cb1-93db-4cfc-836e-26d6142cfa14"
 
-  # - name: Loosers
-  #   cache_name: runs/loosers/
+  - name: Loosers
+    cache_name: runs/loosers/
   #   urls:
   #     - "https://finance.yahoo.com/screener/e5b8bbee-e004-46ce-86dc-ea8c422f3ac7"
   #     - "https://finance.yahoo.com/screener/197f7d16-cd60-4df9-ab7f-fb1867736c98"
