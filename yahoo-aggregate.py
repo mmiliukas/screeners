@@ -28,7 +28,7 @@ def ignore(df: pd.DataFrame, reason: str):
 def enrich_screeners_names(row):
     names = []
     for screener in config["screeners"]:
-        if row[screener["name"]] > 0:
+        if screener["name"] in row and row[screener["name"]] > 0:
             names.append(screener["name"])
     return ",".join(names)
 
@@ -66,7 +66,14 @@ def exclude_empty(dfs: list[pd.DataFrame]) -> list[pd.DataFrame]:
 def enrich_screeners(df: pd.DataFrame):
     for screener in config["screeners"]:
         csvs = glob.glob(f'{screener["cache_name"]}/*.csv')
-        all = pd.concat(exclude_empty([read_csv(csv) for csv in csvs]))
+        all = exclude_empty([read_csv(csv) for csv in csvs])
+
+        if len(all) == 0:
+            df[screener["name"]] = 0
+            df[screener["name"] + " First Seen"] = pd.NaT
+            continue
+
+        all = pd.concat(all)
 
         df[screener["name"]] = df["Symbol"].apply(
             lambda _: len(all[all["Symbol"] == _])
@@ -124,9 +131,9 @@ def main():
 
     # 3. calculate close price of the ticker before it was seen on a screener
     filtered["Screener First Seen Close"] = filtered.apply(enrich_close_date, axis=1)
-    filter_by_close = ~filtered["Screener First Seen Close"].isna()
-    ignore(df[~filter_by_close], "Missing close price")
-    filtered = filtered[filter_by_close]
+    # filter_by_close = ~filtered["Screener First Seen Close"].isna()
+    # ignore(df[~filter_by_close], "Missing close price")
+    # filtered = filtered[filter_by_close]
 
     filtered.to_csv(config["tickers"]["target"], index=False)
 
