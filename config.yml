@@ -9,21 +9,61 @@ etf:
   target: tickers-etfs.csv
 
 # specifies which urls to scrape, how to name tickers and where to cache them
-screeners:
-  - name: Winners
-    cache_name: runs/winners/
-    urls:
-      - "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736"
-      - "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
+# screeners:
+#   - name: Winners
+#     cache_name: runs/winners/
+#     urls:
+#       - "https://finance.yahoo.com/screener/1d954b8e-a9f3-4e02-8314-2587f8029736"
+#       - "https://finance.yahoo.com/screener/c98302b7-934a-49c6-beeb-ba58b7a83a39"
 
-  - name: Loosers
-    cache_name: runs/loosers/
+  - name: "Winners 1"
+    cache_name: runs/winners1/
     urls:
-      - "https://finance.yahoo.com/screener/e5b8bbee-e004-46ce-86dc-ea8c422f3ac7"
-      - "https://finance.yahoo.com/screener/197f7d16-cd60-4df9-ab7f-fb1867736c98"
+      - "https://finance.yahoo.com/screener/7a712692-7bfc-4a53-92df-7607289e916a"
 
-  - name: Random
-    cache_name: runs/random/
+  - name: "Winners 5"
+    cache_name: runs/winners5/
+    urls:
+      - "https://finance.yahoo.com/screener/fbf0a208-739c-4336-8100-e56f17ab01ab"
+
+  - name: "Winners 10"
+    cache_name: runs/winners10/
+    urls:
+      - "https://finance.yahoo.com/screener/b4204420-30b5-4e54-b889-dae9196de206"
+
+  - name: "Winners 100"
+    cache_name: runs/winners100/
+    urls:
+      - "https://finance.yahoo.com/screener/09431cb1-93db-4cfc-836e-26d6142cfa14"
+
+  # - name: Loosers
+  #   cache_name: runs/loosers/
+  #   urls:
+  #     - "https://finance.yahoo.com/screener/e5b8bbee-e004-46ce-86dc-ea8c422f3ac7"
+  #     - "https://finance.yahoo.com/screener/197f7d16-cd60-4df9-ab7f-fb1867736c98"
+
+  - name: "Loosers 1"
+    cache_name: runs/loosers1/
+    urls:
+      - "https://finance.yahoo.com/screener/19949fe1-fe80-4d3e-b960-3a3c3c0d108f"
+
+  - name: "Loosers 5"
+    cache_name: runs/loosers5/
+    urls:
+      - "https://finance.yahoo.com/screener/e361b765-6a1c-4e2d-b16c-39b9547c0f6f"
+
+  - name: "Loosers 10"
+    cache_name: runs/loosers10/
+    urls:
+      - "https://finance.yahoo.com/screener/09324041-bb7b-464e-96a9-61fa4e84f48f"
+
+  - name: "Loosers 100"
+    cache_name: runs/loosers100/
+    urls:
+      - "https://finance.yahoo.com/screener/b03f0d70-20ba-4796-8c5e-20bd3e6a9ed3"
+
+  - name: "Random 1"
+    cache_name: runs/random1/
     urls:
       - "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
 
@@ -36,6 +76,11 @@ screeners:
     cache_name: runs/random10/
     urls:
       - "https://finance.yahoo.com/screener/c2f52d5b-078c-43ea-ad73-0de929180492"
+
+  - name: "Random 100"
+    cache_name: runs/random100/
+    urls:
+      - "https://finance.yahoo.com/screener/8907a7dd-4470-4fde-990c-98c752dd2b53"
 
 # global settings for yfinance library
 # works only on local machine though
