@@ -37,7 +37,7 @@ def main(argv):
         for screener in config["screeners"]:
 
             screener_cache_name = screener["cache_name"]
-            screener_urls = screener["urls"] if "url" in screener else []
+            screener_urls = screener["urls"] if "urls" in screener else []
 
             for screener_url in screener_urls:
                 retry(retry_times)(
