@@ -21,8 +21,6 @@ def __get_unique_screeners(df: pd.DataFrame):
 
 
 def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
-    axis.set_title("Tickers per screener")
-
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
     ax = (
@@ -35,8 +33,6 @@ def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
 
 
 def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
-    axis.set_title("Ticker appearance frequency")
-
     tickers["SFS"] = tickers["Screener First Seen"].dt.date
     ax = (
         tickers.groupby("SFS")["Symbol"]
@@ -48,7 +44,7 @@ def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
             ylabel="",
             grid=True,
             legend=True,
-            label="Count",
+            label="Matched",
         )
     )
     ax.spines[["top", "right"]].set_visible(False)
@@ -116,7 +112,7 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 7))
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 7))
 
     __plot_ticker_count_per_screener(axes[0], tickers)
     __plot_ticker_frequency(axes[1], tickers)
