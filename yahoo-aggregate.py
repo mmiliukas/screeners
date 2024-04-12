@@ -133,9 +133,9 @@ def main():
 
     # 3. calculate close price of the ticker before it was seen on a screener
     filtered["Screener First Seen Close"] = filtered.apply(enrich_close_date, axis=1)
-    # filter_by_close = ~filtered["Screener First Seen Close"].isna()
-    # ignore(df[~filter_by_close], "Missing close price")
-    # filtered = filtered[filter_by_close]
+    filter_by_close = ~filtered["Screener First Seen Close"].isna()
+    ignore(df[~filter_by_close], "Missing Close Price")
+    filtered = filtered[filter_by_close]
 
     filtered.to_csv(config["tickers"]["target"], index=False)
 
