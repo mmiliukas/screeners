@@ -23,7 +23,7 @@ jobs:
         env:
           COOKIES: ${{ secrets.cookies }}
       - run: yahoo-tickers.py
-      - run: python yahoo-aggregate.py
+      - run: yahoo-aggregate.py
       - run: python -m pytest tests/
       - run: python yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
         env:
