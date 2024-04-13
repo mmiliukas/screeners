@@ -112,7 +112,7 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 7))
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
 
     __plot_ticker_count_per_screener(axes[0], tickers)
     __plot_ticker_frequency(axes[1], tickers)
