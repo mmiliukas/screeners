@@ -16,7 +16,7 @@ jobs:
           python-version: "3.10"
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - run: python yahoo-report-error.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+      - run: ./yahoo-report-error.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}

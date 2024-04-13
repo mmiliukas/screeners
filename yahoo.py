@@ -38,8 +38,8 @@ def main(argv):
 
         for screener in config["screeners"]:
 
-            # not all screeners have url, which is required in case
-            # we want to maintain old data, but stop crawling new tickers
+            # some screeners have no urls, cause we want to include
+            # them inside a final dataframe
             screener_urls = screener["urls"] if "urls" in screener else []
             screener_cache_name = screener["cache_name"]
 

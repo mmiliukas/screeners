@@ -89,6 +89,7 @@ def enrich_screeners(df: pd.DataFrame):
 
     names = [screener["name"] + " First Seen" for screener in config["screeners"]]
     df["Screener First Seen"] = df[names].min(axis=1)
+    df["Screener First Seen Close"] = df.apply(enrich_close_date, axis=1)
 
 
 def enrich_tickers(symbols) -> pd.DataFrame:
@@ -128,14 +129,12 @@ def main():
     filter_ratio = df["Financials Current Ratio"] >= 0.5
     ignore(df[~filter_ratio], "Current Ratio Below 0.5")
 
-    filter = filter_ratio & filter_sector
-    filtered = df[filter]
-
     # 3. calculate close price of the ticker before it was seen on a screener
-    filtered["Screener First Seen Close"] = filtered.apply(enrich_close_date, axis=1)
     filter_by_close = ~filtered["Screener First Seen Close"].isna()
     ignore(df[~filter_by_close], "Missing Close Price")
-    filtered = filtered[filter_by_close]
+
+    filter = filter_ratio & filter_sector & filter_by_close
+    filtered = df[filter]
 
     filtered.to_csv(config["tickers"]["target"], index=False)
 

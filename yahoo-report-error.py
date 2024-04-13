@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 from screeners.telegram import log_to_telegram
