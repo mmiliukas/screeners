@@ -23,7 +23,7 @@ def scrape_etf(page: Page, symbol: str):
 
     rows = page.query_selector_all(data_hook)
 
-    data = pd.DataFrame(list(map(get_holding, rows)))
     etf_cache_name = config["etf"]["cache_name"]
 
-    data[0].to_csv(f"{etf_cache_name}{symbol}.csv", index=False)
+    df = pd.DataFrame(list(map(get_holding, rows)))
+    df.to_csv(f"{etf_cache_name}{symbol}.csv", index=False)
