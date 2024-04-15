@@ -13,7 +13,7 @@ def scrape_etf(page: Page, symbol: str):
     logger.info(f'scraping holdings for ETF "{symbol}"...')
 
     page.goto(f"https://finance.yahoo.com/quote/{symbol}/holdings")
-    selector = page.wait_for_selector('[data-test="top-holdings"]')
+    selector = page.wait_for_selector('[data-testid="top-holdings"]')
 
     html = "" if not selector else selector.inner_html()
 
