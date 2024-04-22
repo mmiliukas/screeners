@@ -21,7 +21,7 @@ multitasking==0.0.11
 numpy==1.26.4
 packaging==24.0
 pandas==2.2.2
-peewee==3.17.1
+peewee==3.17.3
 pillow==10.3.0
 platformdirs==4.2.0
 playwright==1.43.0
