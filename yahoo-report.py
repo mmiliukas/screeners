@@ -38,6 +38,12 @@ def __get_counts_by_screener(df: pd.DataFrame):
     return by_screener
 
 
+def __log_diff(df1: pd.DataFrame, df2: pd.DataFrame, bot_token: str, channel_id: str):
+    summary = df1.join(df1 - df2, how="outer", lsuffix=" now", rsuffix=" diff")
+    summary = summary.to_string()
+    log_to_telegram(f"<pre>{summary}</pre>", bot_token, channel_id)
+
+
 def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
@@ -103,12 +109,13 @@ def main(argv):
     tickers_source = config["tickers"]["target"]
     tickers = pd.read_csv(tickers_source, parse_dates=["Screener First Seen"])
 
-    previous_source = (
-        "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + tickers_source
-    )
+    previous = "https://raw.githubusercontent.com/mmiliukas/screeners/main/"
+    previous_source = previous + tickers_source
     previous_tickers = pd.read_csv(previous_source, parse_dates=["Screener First Seen"])
 
-    ignored_tickers = pd.read_csv(config["ignored_tickers"]["target"])
+    ignored_source = config["ignored_tickers"]["target"]
+    ignored_tickers = pd.read_csv(ignored_source)
+    previous_ignored_tickers = pd.read_csv(previous + ignored_source)
 
     message = (
         f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
@@ -119,22 +126,15 @@ def main(argv):
 
     log_to_telegram(message, bot_token, channel_id)
 
-    ignored_summary = (
-        ignored_tickers.groupby("Reason")
-        .count()["Symbol"]
-        .sort_values(ascending=False)
-        .to_string(header=False)
-    )
-    log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
+    # output ignored ticker stats
+    df1 = ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
+    df1 = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
+    __log_diff(df1, df2, bot_token, channel_id)
 
     # output screener counts and their diff from previous run
     df1 = __get_counts_by_screener(tickers)
     df2 = __get_counts_by_screener(previous_tickers)
-    summary_by_screener = df1.join(
-        df1 - df2, how="outer", lsuffix=" now", rsuffix=" diff"
-    )
-    summary_by_screener = summary_by_screener.to_string()
-    log_to_telegram(f"<pre>{summary_by_screener}</pre>", bot_token, channel_id)
+    __log_diff(df1, df2, bot_token, channel_id)
 
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
 
