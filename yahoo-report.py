@@ -128,7 +128,7 @@ def main(argv):
 
     # output ignored ticker stats
     df1 = ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
-    df1 = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
+    df2 = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
     __log_diff(df1, df2, bot_token, channel_id)
 
     # output screener counts and their diff from previous run
