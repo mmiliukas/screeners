@@ -113,13 +113,11 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
 
-    tickers_summary = (
-        tickers.groupby("Screener")
-        .count()["Symbol"]
-        .sort_values(ascending=False)
-        .to_string(header=False)
-    )
-    log_to_telegram(f"<pre>{tickers_summary}</pre>", bot_token, channel_id)
+    by_screener = tickers[__get_unique_screeners(tickers)].astype(bool)
+    by_screener = by_screener.sum(axis=0)
+    by_screener = by_screener.sort_values(ascending=False)
+    summary_by_screener = by_screener.to_string()
+    log_to_telegram(f"<pre>{summary_by_screener}</pre>", bot_token, channel_id)
 
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
 
