@@ -29,6 +29,15 @@ def __get_unique_screeners(df: pd.DataFrame):
     return list(result)
 
 
+def __get_counts_by_screener(df: pd.DataFrame):
+    by_screener = df[__get_unique_screeners(df)].astype(bool)
+    by_screener = by_screener.sum(axis=0)
+    by_screener = by_screener.sort_values(ascending=False)
+    by_screener = by_screener.to_frame()
+    by_screener = by_screener.rename(columns={0: "total"})
+    return by_screener
+
+
 def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
     screeners = __get_unique_screeners(tickers)
     only_screeners = tickers[screeners].astype(bool)
@@ -94,6 +103,11 @@ def main(argv):
     tickers_source = config["tickers"]["target"]
     tickers = pd.read_csv(tickers_source, parse_dates=["Screener First Seen"])
 
+    previous_source = (
+        "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + tickers_source
+    )
+    previous_tickers = pd.read_csv(previous_source, parse_dates=["Screener First Seen"])
+
     ignored_tickers = pd.read_csv(config["ignored_tickers"]["target"])
 
     message = (
@@ -113,10 +127,13 @@ def main(argv):
     )
     log_to_telegram(f"<pre>{ignored_summary}</pre>", bot_token, channel_id)
 
-    by_screener = tickers[__get_unique_screeners(tickers)].astype(bool)
-    by_screener = by_screener.sum(axis=0)
-    by_screener = by_screener.sort_values(ascending=False)
-    summary_by_screener = by_screener.to_string()
+    # output screener counts and their diff from previous run
+    df1 = __get_counts_by_screener(tickers)
+    df2 = __get_counts_by_screener(previous_tickers)
+    summary_by_screener = df1.join(
+        df1 - df2, how="outer", lsuffix=" now", rsuffix=" diff"
+    )
+    summary_by_screener = summary_by_screener.to_string()
     log_to_telegram(f"<pre>{summary_by_screener}</pre>", bot_token, channel_id)
 
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
