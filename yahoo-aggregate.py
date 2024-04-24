@@ -125,7 +125,7 @@ def main():
     filter_sector = ~df["Sector"].isna()
     ignore(df[~filter_sector], "Not Categorized")
 
-    # 2. filter tickers where ration is above threshold
+    # 2. filter tickers where ratio is above threshold
     filter_ratio = df["Financials Current Ratio"] >= 0.5
     ignore(df[~filter_ratio], "Current Ratio Below 0.5")
 

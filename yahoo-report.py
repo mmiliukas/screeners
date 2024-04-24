@@ -1,14 +1,23 @@
 #!/usr/bin/env python
 
 import io
+import logging
+import logging.config
 import sys
 from datetime import date
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import yaml
 
 from screeners.config import config
 from screeners.telegram import log_to_telegram, log_to_telegram_image
+
+with open("config-logging.yml", "r") as config_logging:
+    logging.config.dictConfig(yaml.safe_load(config_logging.read()))
+
+
+logger = logging.getLogger(__name__)
 
 
 def __get_unique_screeners(df: pd.DataFrame):

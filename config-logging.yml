@@ -2,29 +2,29 @@ version: 1
 disable_existing_loggers: False
 
 formatters:
-  short_formatter:
+  mini:
     format: "%(asctime)s - %(message)s"
-  simple_formatter:
+  maxi:
     format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 handlers:
-  console_handler:
+  console:
     class: logging.StreamHandler
     level: DEBUG
-    formatter: short_formatter
+    formatter: mini
     stream: ext://sys.stdout
 
 loggers:
   __main__:
     level: DEBUG
-    handlers: [console_handler]
+    handlers: [console]
     propagate: no
 
   screeners:
     level: DEBUG
-    handlers: [console_handler]
+    handlers: [console]
     propagate: no
 
 root:
   level: WARNING
-  handlers: [console_handler]
+  handlers: [console]

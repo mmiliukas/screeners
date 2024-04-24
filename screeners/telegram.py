@@ -1,6 +1,10 @@
+import logging
+
 import requests
 
 from screeners.config import config
+
+logger = logging.getLogger(__name__)
 
 
 def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: str = ""):
@@ -16,7 +20,10 @@ def log_to_telegram(text: str, bot_token: str, channel_id: str, message_id: str 
         params["reply_to_message_id"] = message_id
 
     response = requests.post(url, params=params)
-    return response.json()
+
+    status_code = response.status_code
+    if status_code != 200:
+        logger.error(f"call to telegram failed with error code {status_code}")
 
 
 def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: str = ""):
@@ -32,4 +39,7 @@ def log_to_telegram_image(file, bot_token: str, channel_id: str, message_id: str
         files["reply_to_message_id"] = message_id
 
     response = requests.post(url, data={"chat_id": channel_id}, files=files)
-    return response.json()
+
+    status_code = response.status_code
+    if status_code != 200:
+        logger.error(f"call to telegram failed with error code {status_code}")
