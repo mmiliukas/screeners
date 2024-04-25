@@ -34,7 +34,7 @@ def __get_counts_by_screener(df: pd.DataFrame):
     by_screener = by_screener.sum(axis=0)
     by_screener = by_screener.sort_values(ascending=False)
     by_screener = by_screener.to_frame()
-    by_screener = by_screener.rename(columns={0: "total"})
+    by_screener = by_screener.rename(columns={0: "Total"})
     return by_screener
 
 
