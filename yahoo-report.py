@@ -19,6 +19,8 @@ with open("config-logging.yml", "r") as config_logging:
 
 logger = logging.getLogger(__name__)
 
+PREVIOUS_SOURCE = "https://raw.githubusercontent.com/mmiliukas/screeners/main/"
+
 
 def __get_unique_screeners(df: pd.DataFrame):
     combined_screeners = df["Screener"].values
@@ -31,17 +33,8 @@ def __get_unique_screeners(df: pd.DataFrame):
 
 def __get_counts_by_screener(df: pd.DataFrame):
     by_screener = df[__get_unique_screeners(df)].astype(bool)
-    by_screener = by_screener.sum(axis=0)
-    by_screener = by_screener.sort_values(ascending=False)
-    by_screener = by_screener.to_frame()
-    by_screener = by_screener.rename(columns={0: "Total"})
+    by_screener = by_screener.sum(axis=0).to_frame()
     return by_screener
-
-
-def __log_diff(df1: pd.DataFrame, df2: pd.DataFrame, bot_token: str, channel_id: str):
-    summary = df1.join(df1 - df2, how="outer", lsuffix=" now", rsuffix=" diff")
-    summary = summary.to_string()
-    log_to_telegram(f"<pre>{summary}</pre>", bot_token, channel_id)
 
 
 def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
@@ -103,38 +96,56 @@ def __plot_ignored_tickers(axis):
     )
 
 
+def read_tickers():
+    source = config["tickers"]["target"]
+    current = pd.read_csv(source, parse_dates=["Screener First Seen"])
+
+    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
+    previous = pd.read_csv(source, parse_dates=["Screener First Seen"])
+
+    return (current, previous)
+
+
+def read_ignored_tickers():
+    source = config["ignored_tickers"]["target"]
+    current = pd.read_csv(source)
+
+    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
+    previous = pd.read_csv(source)
+
+    return (current, previous)
+
+
 def main(argv):
     bot_token, channel_id = argv[1:]
 
-    tickers_source = config["tickers"]["target"]
-    tickers = pd.read_csv(tickers_source, parse_dates=["Screener First Seen"])
+    tickers, previous_tickers = read_tickers()
+    ignored_tickers, previous_ignored_tickers = read_ignored_tickers()
 
-    previous = "https://raw.githubusercontent.com/mmiliukas/screeners/main/"
-    previous_source = previous + tickers_source
-    previous_tickers = pd.read_csv(previous_source, parse_dates=["Screener First Seen"])
-
-    ignored_source = config["ignored_tickers"]["target"]
-    ignored_tickers = pd.read_csv(ignored_source)
-    previous_ignored_tickers = pd.read_csv(previous + ignored_source)
-
+    # log first line (summary of matched + ignored = total)
     message = (
         f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
         f"<code>{len(tickers)}</code> matched + "
         f"<code>{len(ignored_tickers)}</code> ignored = "
         f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
     )
-
     log_to_telegram(message, bot_token, channel_id)
 
     # output ignored ticker stats
-    df1 = ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
-    df2 = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
-    __log_diff(df1, df2, bot_token, channel_id)
+    a = ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
+    b = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
+    c = a.join(a - b, how="outer", lsuffix="_a", rsuffix="_b")
+    c["c"] = c["Symbol_b"].apply(lambda x: "" if x == 0 else "{0:+}".format(x))
+    d = c[["Symbol_a", "c"]].to_string(header=False, index_names=False)
+    log_to_telegram(f"<code>{d}</code>", bot_token, channel_id)
 
-    # output screener counts and their diff from previous run
-    df1 = __get_counts_by_screener(tickers)
-    df2 = __get_counts_by_screener(previous_tickers)
-    __log_diff(df1, df2, bot_token, channel_id)
+    # output screener stats
+    a = __get_counts_by_screener(tickers)
+    b = __get_counts_by_screener(previous_tickers)
+    c = a.join(a - b, how="outer", lsuffix="_a", rsuffix="_b")
+    c["c"] = c["0_b"].apply(lambda x: "" if x == 0 else "{0:+}".format(x))
+    d = c[["0_a", "c"]].to_string(header=False, index_names=False)
+    log_to_telegram(f"<code>{d}</code>", bot_token, channel_id)
 
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
 
