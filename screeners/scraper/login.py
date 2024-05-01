@@ -1,4 +1,5 @@
 import logging
+import re
 from time import sleep
 
 from playwright.sync_api import Page
@@ -21,4 +22,6 @@ def login(page: Page, username: str, password: str):
     sleep(2)
 
     page.click("button#login-signin")
-    page.wait_for_selector("#Page.twelve-col")
+
+    url_to_wait = re.compile(".*www.yahoo.com.*", re.IGNORECASE)
+    page.wait_for_url(url_to_wait, wait_until="domcontentloaded")
