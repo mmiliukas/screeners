@@ -4,8 +4,9 @@ import io
 import logging
 import logging.config
 import sys
-from datetime import date
+from datetime import date, timedelta
 
+import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
@@ -147,7 +148,18 @@ def main(argv):
     d = c[["0_a", "c"]].to_string(header=False, index_names=False)
     log_to_telegram(f"<code>{d}</code>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
+    fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(14, 10))
+
+    # report last 20 days trend
+    names = list(map(lambda x: x["name"], config["screeners"]))
+    from_date = (date.today() - timedelta(days=20)).isoformat()
+    a = tickers.copy(deep=True)
+    a["Screener First Seen"] = a["Screener First Seen"].dt.date
+    a = tickers[tickers["Screener First Seen"] > from_date]
+    a = a.groupby(pd.Grouper(key="Screener First Seen", freq="W-SUN"))[names].sum()
+    b = a.plot(kind="bar", ax=axes[2], legend=True, colormap="tab20")
+    b.xaxis.set_tick_params(rotation=0)
+    b.legend(loc="upper left", ncol=5)
 
     __plot_ticker_count_per_screener(axes[0], tickers)
     __plot_ticker_frequency(axes[1], tickers)
