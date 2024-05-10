@@ -10,6 +10,11 @@ from screeners.scraper import login
 
 
 def main(argv):
+    """
+    This script is used to obtain the cookies
+    from finance.yahoo.com site, so we could easily
+    connect multiple times a site without a need of relogin.
+    """
     username, password = argv[1:]
 
     with sync_playwright() as playwright:
