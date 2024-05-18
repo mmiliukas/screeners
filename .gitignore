@@ -1,0 +1,3 @@
+.vscode/
+.cache-yfinance/
+.pytest_cache/

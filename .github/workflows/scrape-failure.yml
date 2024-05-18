@@ -1,0 +1,22 @@
+name: scrape failure notification
+
+on:
+  workflow_run:
+    workflows: ["scrape"]
+    types: [completed]
+
+jobs:
+  notify:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: ./yahoo-report-error.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
+          TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
