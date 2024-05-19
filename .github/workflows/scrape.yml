@@ -27,8 +27,8 @@ jobs:
       - run: ./yahoo.py "$COOKIES"
         env:
           COOKIES: ${{ secrets.cookies }}
-      - run: ./yahoo-tickers.py
-      - run: ./yahoo-aggregate.py ${{ inputs.expire_after_days || 3 }}
+      - run: ./yahoo-tickers.py ${{ inputs.expire_after_days || 3 }}
+      - run: ./yahoo-aggregate.py
       - run: python -m pytest tests/
       - run: ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
         env:
