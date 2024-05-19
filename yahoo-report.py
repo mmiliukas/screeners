@@ -6,6 +6,7 @@ import logging.config
 import sys
 from datetime import date
 
+import matplotlib.gridspec as gs
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
@@ -65,6 +66,12 @@ def plot_first_seen(ax, tickers: pd.DataFrame):
 
     moving_average = count.to_frame()["Symbol"].rolling(window=7).mean()
     moving_average.plot(label="Moving Average (7 days)", ax=ax, **line_plot_params)
+
+
+def plot_sector(ax, tickers: pd.DataFrame):
+    df = tickers.groupby(by=["Sector"])["Symbol"].count().sort_values(ascending=False)
+    df.plot(kind="barh", ax=ax, xlabel="", ylabel="")
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
 
 
 def plog_ignored(ax, ignored_tickers: pd.DataFrame):
@@ -133,11 +140,17 @@ def main(argv):
     message = summarize_matched(tickers, previous_tickers)
     log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
+    fig = plt.figure(constrained_layout=True, figsize=(14, 10))
+    grid = gs.GridSpec(2, 2, figure=fig)
 
-    plot_sum(axes[0], tickers)
-    plot_first_seen(axes[1], tickers)
-    plog_ignored(axes[1], ignored_tickers)
+    ax1 = fig.add_subplot(grid[0, 0])
+    ax2 = fig.add_subplot(grid[0, 1])
+    ax3 = fig.add_subplot(grid[1, :])
+
+    plot_sum(ax1, tickers)
+    plot_sector(ax2, tickers)
+    plot_first_seen(ax3, tickers)
+    plog_ignored(ax3, ignored_tickers)
 
     graph = io.BytesIO()
 
