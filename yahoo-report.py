@@ -4,9 +4,8 @@ import io
 import logging
 import logging.config
 import sys
-from datetime import date, timedelta
+from datetime import date
 
-import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
@@ -20,101 +19,103 @@ with open("config-logging.yml", "r") as config_logging:
 
 logger = logging.getLogger(__name__)
 
-PREVIOUS_SOURCE = "https://raw.githubusercontent.com/mmiliukas/screeners/main/"
-
-
-def __get_unique_screeners(df: pd.DataFrame):
-    combined_screeners = df["Screener"].values
-    result = set()
-    for screeners in combined_screeners:
-        for screener in screeners.split(","):
-            result.add(screener)
-    return list(result)
-
-
-def __get_counts_by_screener(df: pd.DataFrame):
-    by_screener = df[__get_unique_screeners(df)].astype(bool)
-    by_screener = by_screener.sum(axis=0).to_frame()
-    return by_screener
-
-
-def __plot_ticker_count_per_screener(axis, tickers: pd.DataFrame):
-    screeners = __get_unique_screeners(tickers)
-    only_screeners = tickers[screeners].astype(bool)
-    ax = (
-        only_screeners.sum(axis=0)
-        .sort_values(ascending=False)
-        .plot(kind="barh", ax=axis)
-    )
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)  # type: ignore
-
-
-def __plot_ticker_frequency(axis, tickers: pd.DataFrame):
-    tickers["SFS"] = tickers["Screener First Seen"].dt.date
-    ax = (
-        tickers.groupby("SFS")["Symbol"]
-        .count()
-        .plot(
-            kind="line",
-            ax=axis,
-            xlabel="",
-            ylabel="",
-            grid=True,
-            legend=True,
-            label="Matched",
-        )
-    )
-    ax.spines[["top", "right"]].set_visible(False)
-
-    moving_average = tickers.groupby("SFS")["Symbol"].count().to_frame()
-    moving_average["ma"] = moving_average["Symbol"].rolling(window=7).mean()
-    moving_average["ma"].plot(
-        kind="line",
-        ax=axis,
-        grid=True,
-        legend=True,
-        label="Moving average (7 days)",
-        xlabel="",
-        ylabel="",
-    )
-
-
-def __plot_ignored_tickers(axis):
-    df = pd.read_csv(config["ignored_tickers"]["target"], parse_dates=["Date"])
-    df["Date"] = df["Date"].dt.date
-
-    # at ????-??-13 we had a huge amount of removes, so ignoring them
-    df = df[df["Date"] >= date.fromisoformat("2024-03-14")]
-    df.groupby("Date")["Symbol"].count().plot(
-        kind="line",
-        ax=axis,
-        legend=True,
-        grid=True,
-        label="Ignored",
-        xlabel="",
-        ylabel="",
-    )
+line_plot_params = {
+    "kind": "line",
+    "xlabel": "",
+    "ylabel": "",
+    "grid": True,
+    "legend": True,
+}
 
 
 def read_tickers():
     source = config["tickers"]["target"]
     current = pd.read_csv(source, parse_dates=["Screener First Seen"])
+    current["Screener First Seen"] = current["Screener First Seen"].dt.date
 
     source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
     previous = pd.read_csv(source, parse_dates=["Screener First Seen"])
+    previous["Screener First Seen"] = previous["Screener First Seen"].dt.date
 
     return (current, previous)
 
 
 def read_ignored_tickers():
     source = config["ignored_tickers"]["target"]
-    current = pd.read_csv(source)
+    current = pd.read_csv(source, parse_dates=["Date"])
+    current["Date"] = current["Date"].dt.date
 
     source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
-    previous = pd.read_csv(source)
+    previous = pd.read_csv(source, parse_dates=["Date"])
+    previous["Date"] = previous["Date"].dt.date
 
     return (current, previous)
+
+
+def plot_sum(ax, tickers: pd.DataFrame):
+    names = [x["name"] for x in config["screeners"]]
+    grouped = tickers[names].astype(bool).sum(axis=0).sort_values(ascending=False)
+    grouped.plot(kind="barh", ax=ax)
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
+
+
+def plot_first_seen(ax, tickers: pd.DataFrame):
+    count = tickers.groupby("Screener First Seen")["Symbol"].count()
+    count.plot(label="New Ticker", ax=ax, **line_plot_params)
+
+    moving_average = count.to_frame()["Symbol"].rolling(window=7).mean()
+    moving_average.plot(label="Moving Average (7 days)", ax=ax, **line_plot_params)
+
+
+def plog_ignored(ax, ignored_tickers: pd.DataFrame):
+    # at ????-??-13 we had a huge amount of removes, so ignoring them
+    df = ignored_tickers[ignored_tickers["Date"] >= date.fromisoformat("2024-03-14")]
+    df.groupby("Date")["Symbol"].count().plot(
+        label="Ignored", ax=ax, **line_plot_params
+    )
+
+
+def summarize(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> str:
+    return (
+        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
+        f"<code>{len(tickers)}</code> matched + "
+        f"<code>{len(ignored_tickers)}</code> ignored = "
+        f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
+    )
+
+
+def empty_zeros(x):
+    return "" if x == 0 else "{0:+}".format(x)
+
+
+def summarize_ignored(a: pd.DataFrame, b: pd.DataFrame) -> str:
+    a = a.groupby("Reason")["Symbol"].count().to_frame()
+    b = b.groupby("Reason")["Symbol"].count().to_frame()
+
+    c = a - b
+    c = c.rename(columns={"Symbol": "Delta"})
+
+    result = a.join(c, how="outer")
+    result["Delta"] = result["Delta"].apply(empty_zeros)
+    result = result.sort_values(by="Symbol", ascending=False)
+
+    return result.to_string(header=False, index_names=False)
+
+
+def summarize_matched(a: pd.DataFrame, b: pd.DataFrame) -> str:
+    names = [x["name"] for x in config["screeners"]]
+
+    a = a[names].astype(bool).sum(axis=0).to_frame("Symbol")
+    b = b[names].astype(bool).sum(axis=0).to_frame("Symbol")
+
+    c = a - b
+    c = c.rename(columns={"Symbol": "Delta"})
+
+    result = a.join(c, how="outer")
+    result["Delta"] = result["Delta"].apply(empty_zeros)
+    result = result.sort_values(by="Symbol", ascending=False)
+
+    return result.to_string(header=False, index_names=False)
 
 
 def main(argv):
@@ -123,51 +124,24 @@ def main(argv):
     tickers, previous_tickers = read_tickers()
     ignored_tickers, previous_ignored_tickers = read_ignored_tickers()
 
-    # log first line (summary of matched + ignored = total)
-    message = (
-        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
-        f"<code>{len(tickers)}</code> matched + "
-        f"<code>{len(ignored_tickers)}</code> ignored = "
-        f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
-    )
+    message = summarize(tickers=tickers, ignored_tickers=ignored_tickers)
     log_to_telegram(message, bot_token, channel_id)
 
-    # output ignored ticker stats
-    a = ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
-    b = previous_ignored_tickers.groupby("Reason")["Symbol"].count().to_frame()
-    c = a.join(a - b, how="outer", lsuffix="_a", rsuffix="_b")
-    c["c"] = c["Symbol_b"].apply(lambda x: "" if x == 0 else "{0:+}".format(x))
-    d = c[["Symbol_a", "c"]].to_string(header=False, index_names=False)
-    log_to_telegram(f"<code>{d}</code>", bot_token, channel_id)
+    message = summarize_ignored(ignored_tickers, previous_ignored_tickers)
+    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
 
-    # output screener stats
-    a = __get_counts_by_screener(tickers)
-    b = __get_counts_by_screener(previous_tickers)
-    c = a.join(a - b, how="outer", lsuffix="_a", rsuffix="_b")
-    c["c"] = c["0_b"].apply(lambda x: "" if x == 0 else "{0:+}".format(x))
-    d = c[["0_a", "c"]].to_string(header=False, index_names=False)
-    log_to_telegram(f"<code>{d}</code>", bot_token, channel_id)
+    message = summarize_matched(tickers, previous_tickers)
+    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
 
-    fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(14, 10))
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(14, 10))
 
-    # report last 20 days trend
-    names = list(map(lambda x: x["name"], config["screeners"]))
-    from_date = (date.today() - timedelta(days=20)).isoformat()
-    a = tickers.copy(deep=True)
-    a["Screener First Seen"] = a["Screener First Seen"].dt.date
-    a = tickers[tickers["Screener First Seen"] > from_date]
-    a = a.groupby(pd.Grouper(key="Screener First Seen", freq="W-SUN"))[names].sum()
-    b = a.plot(kind="bar", ax=axes[2], legend=True, colormap="tab20")
-    b.xaxis.set_tick_params(rotation=0)
-    b.legend(loc="upper left", ncol=5)
-
-    __plot_ticker_count_per_screener(axes[0], tickers)
-    __plot_ticker_frequency(axes[1], tickers)
-    __plot_ignored_tickers(axes[1])
-
-    plt.tight_layout()
+    plot_sum(axes[0], tickers)
+    plot_first_seen(axes[1], tickers)
+    plog_ignored(axes[1], ignored_tickers)
 
     graph = io.BytesIO()
+
+    plt.tight_layout()
     plt.savefig(graph, format="png")
 
     log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
