@@ -22,12 +22,12 @@ with open("config-logging.yml", "r") as config_logging:
 logger = logging.getLogger(__name__)
 
 
-def should_update(df: pd.DataFrame, symbol: str, ticker_file: str):
+def should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: str):
     if len(df[df["Symbol"] == symbol]) > 0:
         # ticker is ignored, no need to update
         return False
 
-    expire_after_days = config["yfinance"]["expire_after_days"]
+    expire_after_days = int(days) if days else config["yfinance"]["expire_after_days"]
 
     if os.path.exists(ticker_file):
         with open(ticker_file, "r") as file:
@@ -43,7 +43,7 @@ def should_update(df: pd.DataFrame, symbol: str, ticker_file: str):
     return True
 
 
-def main():
+def main(args: list[str]):
     __fetch_time = datetime.date.today().isoformat()
 
     tickers = get_tickers()
@@ -55,7 +55,7 @@ def main():
     for symbol in tickers:
         ticker_path = config["tickers"]["cache_name"] + symbol + ".json"
 
-        if should_update(df, symbol, ticker_path):
+        if should_update(df, symbol, ticker_path, days=args[0]):
             result = yf.Ticker(symbol, session=session)
             if not result.info or "symbol" not in result.info:
                 logger.info(f'ticker "{symbol}" not found on yahoo.com, ignoring...')
@@ -75,4 +75,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))
