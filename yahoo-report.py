@@ -69,9 +69,14 @@ def plot_first_seen(ax, tickers: pd.DataFrame):
 
 
 def plot_sector(ax, tickers: pd.DataFrame):
-    df = tickers.groupby(by=["Sector"])["Symbol"].count().sort_values(ascending=False)
-    df.plot(kind="barh", ax=ax, xlabel="", ylabel="")
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
+    names = [x["name"] for x in config["screeners"]]
+    df = pd.DataFrame({"Sector": [], "Symbol": [], "Screener": []})
+    for idx, row in tickers.iterrows():
+        for name in names:
+            if row[name] > 0:
+                df.loc[len(df)] = [row["Sector"], row["Symbol"], name]
+    df = df.groupby(by=["Sector", "Screener"]).count()["Symbol"].unstack()
+    df.plot(kind="barh", ax=ax, colormap="tab20", ylabel="", stacked=True)
 
 
 def plog_ignored(ax, ignored_tickers: pd.DataFrame):
@@ -144,8 +149,8 @@ def main(argv):
     grid = gs.GridSpec(2, 2, figure=fig)
 
     ax1 = fig.add_subplot(grid[0, 0])
-    ax2 = fig.add_subplot(grid[0, 1])
-    ax3 = fig.add_subplot(grid[1, :])
+    ax2 = fig.add_subplot(grid[:, 1])
+    ax3 = fig.add_subplot(grid[1, 0])
 
     plot_sum(ax1, tickers)
     plot_sector(ax2, tickers)
