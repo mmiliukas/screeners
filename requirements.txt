@@ -24,7 +24,7 @@ pandas==2.2.2
 peewee==3.17.5
 pillow==10.3.0
 platformdirs==4.2.1
-playwright==1.43.0
+playwright==1.44.0
 pluggy==1.5.0
 pyarrow==16.0.0
 pyee==11.1.0
