@@ -62,7 +62,7 @@ def main(args: list[str]):
                 all_good = result.info and "symbol" in result.info
             except Exception as e:
                 logger.error(f'failed to read info for ticker "{symbol}"!')
-                raise e
+                raise
 
             if not result.info or "symbol" not in result.info:
                 logger.info(f'ticker "{symbol}" not found on yahoo.com, ignoring...')
