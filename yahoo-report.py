@@ -149,8 +149,8 @@ def main(argv):
     grid = gs.GridSpec(2, 2, figure=fig)
 
     ax1 = fig.add_subplot(grid[0, 0])
-    ax2 = fig.add_subplot(grid[:, 1])
-    ax3 = fig.add_subplot(grid[1, 0])
+    ax2 = fig.add_subplot(grid[0, 1])
+    ax3 = fig.add_subplot(grid[1, :])
 
     plot_sum(ax1, tickers)
     plot_sector(ax2, tickers)
