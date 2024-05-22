@@ -140,10 +140,27 @@ def main(argv):
     log_to_telegram(message, bot_token, channel_id)
 
     message = summarize_ignored(ignored_tickers, previous_ignored_tickers)
-    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
+    log_to_telegram(
+        (
+            f"Number of ignored tickers by reason. "
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run. "
+            f"<code>{message}</code>"
+        ),
+        bot_token,
+        channel_id,
+    )
 
     message = summarize_matched(tickers, previous_tickers)
-    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
+    log_to_telegram(
+        (
+            f"Number of tickers (excluding ignored) per screener. "
+            f"Keep in mind that single ticker can appear in multiple screeners. "
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run. "
+            f"<code>{message}</code>"
+        ),
+        bot_token,
+        channel_id,
+    )
 
     fig = plt.figure(constrained_layout=True, figsize=(14, 10))
     grid = gs.GridSpec(2, 2, figure=fig)
