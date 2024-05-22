@@ -26,6 +26,7 @@ line_plot_params = {
     "ylabel": "",
     "grid": True,
     "legend": True,
+    "title": "Ticker appearance",
 }
 
 
@@ -62,10 +63,10 @@ def plot_sum(ax, tickers: pd.DataFrame):
 
 def plot_first_seen(ax, tickers: pd.DataFrame):
     count = tickers.groupby("Screener First Seen")["Symbol"].count()
-    count.plot(label="New Ticker", ax=ax, **line_plot_params)
+    count.plot(label="New (excluding ignore)", ax=ax, **line_plot_params)
 
     moving_average = count.to_frame()["Symbol"].rolling(window=7).mean()
-    moving_average.plot(label="Moving Average (7 days)", ax=ax, **line_plot_params)
+    moving_average.plot(label="Moving average (7 days)", ax=ax, **line_plot_params)
 
 
 def plot_sector(ax, tickers: pd.DataFrame):
