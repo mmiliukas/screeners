@@ -7,8 +7,14 @@ on:
         description: 'Expire ticker cache after days'
         required: false
         default: 3
+  # The regular trading hours for the U.S. stock market,
+  # which includes the Nasdaq Stock Market (Nasdaq)
+  # and the New York Stock Exchange (NYSE),
+  # are 9:30 am to 4 pm, except on stock market holidays.
   schedule:
     - cron: '0 6 * * 2-6'
+    - cron: '0 14 * * 2-6'
+    - cron: '0 9 * * 2-6'
 
 permissions:
   contents: write
