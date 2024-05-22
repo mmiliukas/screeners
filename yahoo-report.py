@@ -56,7 +56,7 @@ def read_ignored_tickers():
 def plot_sum(ax, tickers: pd.DataFrame):
     names = [x["name"] for x in config["screeners"]]
     grouped = tickers[names].astype(bool).sum(axis=0).sort_values(ascending=False)
-    grouped.plot(kind="barh", ax=ax)
+    grouped.plot(kind="barh", ax=ax, title="Tickers per screener (not unique)")
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)
 
 
@@ -71,12 +71,22 @@ def plot_first_seen(ax, tickers: pd.DataFrame):
 def plot_sector(ax, tickers: pd.DataFrame):
     names = [x["name"] for x in config["screeners"]]
     df = pd.DataFrame({"Sector": [], "Symbol": [], "Screener": []})
+
     for idx, row in tickers.iterrows():
         for name in names:
             if row[name] > 0:
                 df.loc[len(df)] = [row["Sector"], row["Symbol"], name]
+
     df = df.groupby(by=["Sector", "Screener"]).count()["Symbol"].unstack()
-    df.plot(kind="barh", ax=ax, colormap="tab20", ylabel="", stacked=True)
+
+    df.plot(
+        kind="barh",
+        ax=ax,
+        colormap="tab20",
+        ylabel="",
+        stacked=True,
+        title="Tickers per sector (not unique)",
+    )
 
 
 def plog_ignored(ax, ignored_tickers: pd.DataFrame):
@@ -89,8 +99,8 @@ def plog_ignored(ax, ignored_tickers: pd.DataFrame):
 
 def summarize(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> str:
     return (
-        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n\n"
-        f"<code>{len(tickers)}</code> matched + "
+        f"<b>DAILY RUN:</b> {date.today().isoformat()}. "
+        f"<code>{len(tickers)}</code> unique valid tickers + "
         f"<code>{len(ignored_tickers)}</code> ignored = "
         f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
     )
