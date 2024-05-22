@@ -142,8 +142,8 @@ def main(argv):
     message = summarize_ignored(ignored_tickers, previous_ignored_tickers)
     log_to_telegram(
         (
-            f"Number of ignored tickers by reason. "
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run. "
+            f"Number of ignored tickers by reason.\n"
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n"
             f"<code>{message}</code>"
         ),
         bot_token,
@@ -153,9 +153,9 @@ def main(argv):
     message = summarize_matched(tickers, previous_tickers)
     log_to_telegram(
         (
-            f"Number of tickers (excluding ignored) per screener. "
-            f"Keep in mind that single ticker can appear in multiple screeners. "
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run. "
+            f"Number of tickers (excluding ignored) per screener.\n"
+            f"Keep in mind that single ticker can appear in multiple screeners.\n"
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n"
             f"<code>{message}</code>"
         ),
         bot_token,
