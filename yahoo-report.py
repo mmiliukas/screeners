@@ -89,7 +89,7 @@ def plog_ignored(ax, ignored_tickers: pd.DataFrame):
 
 def summarize(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> str:
     return (
-        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n"
+        f"<b>DAILY RUN:</b> {date.today().isoformat()}\n\n"
         f"<code>{len(tickers)}</code> matched + "
         f"<code>{len(ignored_tickers)}</code> ignored = "
         f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
@@ -143,7 +143,7 @@ def main(argv):
     log_to_telegram(
         (
             f"Number of ignored tickers by reason.\n"
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n"
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n\n"
             f"<code>{message}</code>"
         ),
         bot_token,
@@ -155,7 +155,7 @@ def main(argv):
         (
             f"Number of tickers (excluding ignored) per screener.\n"
             f"Keep in mind that single ticker can appear in multiple screeners.\n"
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n"
+            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n\n"
             f"<code>{message}</code>"
         ),
         bot_token,
