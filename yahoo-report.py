@@ -148,6 +148,7 @@ def plot_etfs(ax):
         df: pd.DataFrame = yf.download(ticker, period="1y", interval="1d")
         label = label = ticker + " - " + ETF_SECTOR[ticker]
         df["Close"].plot(kind="line", ax=ax, label=label, legend=True)
+    plt.xticks(rotation=0)
 
 
 def main(argv):
