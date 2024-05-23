@@ -36,6 +36,20 @@ SECTOR_ETF = {
     "Industrials": "XLI",
 }
 
+ETF_SECTOR = {
+    "XLB": "Basic Materials",
+    "XLF": "Financial Services",
+    "XLP": "Consumer Defensive",
+    "XLU": "Utilities",
+    "XLE": "Energy",
+    "XLK": "Technology",
+    "XLY": "Consumer Cyclical",
+    "XLRE": "Real Estate",
+    "XLV": "Healthcare",
+    "XLC": "Communication Services",
+    "XLI": "Industrials",
+}
+
 
 def get_etfs():
     all = set()

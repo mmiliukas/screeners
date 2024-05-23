@@ -10,8 +10,10 @@ import matplotlib.gridspec as gs
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
+import yfinance as yf
 
 from screeners.config import config
+from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.telegram import log_to_telegram, log_to_telegram_image
 
 with open("config-logging.yml", "r") as config_logging:
@@ -63,7 +65,7 @@ def plot_sum(ax, tickers: pd.DataFrame):
 
 def plot_first_seen(ax, tickers: pd.DataFrame):
     count = tickers.groupby("Screener First Seen")["Symbol"].count()
-    count.plot(label="New (excluding ignore)", ax=ax, **line_plot_params)
+    count.plot(label="New (excluding ignored)", ax=ax, **line_plot_params)
 
     moving_average = count.to_frame()["Symbol"].rolling(window=7).mean()
     moving_average.plot(label="Moving average (7 days)", ax=ax, **line_plot_params)
@@ -90,7 +92,7 @@ def plot_sector(ax, tickers: pd.DataFrame):
     )
 
 
-def plog_ignored(ax, ignored_tickers: pd.DataFrame):
+def plot_ignored(ax, ignored_tickers: pd.DataFrame):
     # at ????-??-13 we had a huge amount of removes, so ignoring them
     df = ignored_tickers[ignored_tickers["Date"] >= date.fromisoformat("2024-03-14")]
     df.groupby("Date")["Symbol"].count().plot(
@@ -141,6 +143,13 @@ def summarize_matched(a: pd.DataFrame, b: pd.DataFrame) -> str:
     return result.to_string(header=False, index_names=False)
 
 
+def plot_etfs(ax):
+    for ticker in SECTOR_ETF.values():
+        df: pd.DataFrame = yf.download(ticker, period="1y", interval="1d")
+        label = label = ticker + " - " + ETF_SECTOR[ticker]
+        df["Close"].plot(kind="line", ax=ax, label=label, legend=True)
+
+
 def main(argv):
     bot_token, channel_id = argv[1:]
 
@@ -183,13 +192,23 @@ def main(argv):
     plot_sum(ax1, tickers)
     plot_sector(ax2, tickers)
     plot_first_seen(ax3, tickers)
-    plog_ignored(ax3, ignored_tickers)
+    plot_ignored(ax3, ignored_tickers)
 
     graph = io.BytesIO()
-
     plt.tight_layout()
     plt.savefig(graph, format="png")
+    plt.close()
+    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
 
+    fig = plt.figure(constrained_layout=True, figsize=(14, 10))
+    grid = gs.GridSpec(1, 1, figure=fig)
+
+    ax4 = fig.add_subplot(grid[0, 0])
+    plot_etfs(ax4)
+
+    graph = io.BytesIO()
+    plt.tight_layout()
+    plt.savefig(graph, format="png")
     log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
 
 
