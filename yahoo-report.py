@@ -10,96 +10,24 @@ import matplotlib.gridspec as gs
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
-import yfinance as yf
 
 from screeners.config import config
-from screeners.etfs import ETF_SECTOR, SECTOR_ETF
+from screeners.reporting.plot import (
+    plot_etfs,
+    plot_first_seen,
+    plot_ignored,
+    plot_sector,
+    plot_sum,
+)
+from screeners.reporting.read import read_ignored_tickers, read_tickers
+from screeners.reporting.utils import diff_tickers, empty_zeros, prefix
 from screeners.telegram import log_to_telegram, log_to_telegram_image
 
 with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 
-logger = logging.getLogger(__name__)
-
-line_plot_params = {
-    "kind": "line",
-    "xlabel": "",
-    "ylabel": "",
-    "grid": True,
-    "legend": True,
-    "title": "Ticker appearance",
-}
-
 faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
-
-
-def read_tickers():
-    source = config["tickers"]["target"]
-    current = pd.read_csv(source, parse_dates=["Screener First Seen"])
-    current["Screener First Seen"] = current["Screener First Seen"].dt.date
-
-    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
-    previous = pd.read_csv(source, parse_dates=["Screener First Seen"])
-    previous["Screener First Seen"] = previous["Screener First Seen"].dt.date
-
-    return (current, previous)
-
-
-def read_ignored_tickers():
-    source = config["ignored_tickers"]["target"]
-    current = pd.read_csv(source, parse_dates=["Date"])
-    current["Date"] = current["Date"].dt.date
-
-    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
-    previous = pd.read_csv(source, parse_dates=["Date"])
-    previous["Date"] = previous["Date"].dt.date
-
-    return (current, previous)
-
-
-def plot_sum(ax, tickers: pd.DataFrame):
-    names = [x["name"] for x in config["screeners"]]
-    grouped = tickers[names].astype(bool).sum(axis=0).sort_values(ascending=False)
-    grouped.plot(kind="barh", ax=ax, title="Tickers per screener (not unique)")
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
-
-
-def plot_first_seen(ax, tickers: pd.DataFrame):
-    count = tickers.groupby("Screener First Seen")["Symbol"].count()
-    count.plot(label="New (excluding ignored)", ax=ax, **line_plot_params)
-
-    moving_average = count.to_frame()["Symbol"].rolling(window=7).mean()
-    moving_average.plot(label="Moving average (7 days)", ax=ax, **line_plot_params)
-
-
-def plot_sector(ax, tickers: pd.DataFrame):
-    names = [x["name"] for x in config["screeners"]]
-    df = pd.DataFrame({"Sector": [], "Symbol": [], "Screener": []})
-
-    for idx, row in tickers.iterrows():
-        for name in names:
-            if row[name] > 0:
-                df.loc[len(df)] = [row["Sector"], row["Symbol"], name]
-
-    df = df.groupby(by=["Sector", "Screener"]).count()["Symbol"].unstack()
-
-    df.plot(
-        kind="barh",
-        ax=ax,
-        colormap="tab20",
-        ylabel="",
-        stacked=True,
-        title="Tickers per sector (not unique)",
-    )
-
-
-def plot_ignored(ax, ignored_tickers: pd.DataFrame):
-    # at ????-??-13 we had a huge amount of removes, so ignoring them
-    df = ignored_tickers[ignored_tickers["Date"] >= date.fromisoformat("2024-03-14")]
-    df.groupby("Date")["Symbol"].count().plot(
-        label="Ignored", ax=ax, **line_plot_params
-    )
 
 
 def summarize(
@@ -121,24 +49,39 @@ def summarize(
                 len(previous_ignored_tickers),
                 len(previous_tickers) + len(previous_ignored_tickers),
             ],
+            "Added": [
+                prefix(diff_tickers(tickers, previous_tickers), "+"),
+                prefix(diff_tickers(ignored_tickers, previous_ignored_tickers), "+"),
+                "",
+            ],
+            "Removed": [
+                prefix(diff_tickers(previous_tickers, tickers), "-"),
+                prefix(diff_tickers(previous_ignored_tickers, ignored_tickers), "-"),
+                "",
+            ],
         }
     )
 
     df["Delta"] = df["Value"] - df["Previous Value"]
     df["Delta"] = df["Delta"].apply(empty_zeros)
 
-    return df[["Metric", "Value", "Delta"]].to_string(
+    return df[["Metric", "Value", "Delta", "Added", "Removed"]].to_string(
         header=False, index=False, index_names=False
     )
 
 
-def empty_zeros(x):
-    return "" if x == 0 else "{0:+}".format(x)
+def diff_tickers_ignored(a: pd.DataFrame, b: pd.DataFrame, with_prefix: str):
+    def filter_by_reason(reason: str):
+        a_reason = a[a["Reason"] == reason]
+        b_reason = b[b["Reason"] == reason]
+        return prefix(diff_tickers(a_reason, b_reason), with_prefix)
+
+    return filter_by_reason
 
 
-def summarize_ignored(a: pd.DataFrame, b: pd.DataFrame) -> str:
-    a = a.groupby("Reason")["Symbol"].count().to_frame()
-    b = b.groupby("Reason")["Symbol"].count().to_frame()
+def summarize_ignored(aa: pd.DataFrame, bb: pd.DataFrame) -> str:
+    a = aa.groupby("Reason")["Symbol"].count().to_frame()
+    b = bb.groupby("Reason")["Symbol"].count().to_frame()
 
     c = a - b
     c = c.rename(columns={"Symbol": "Delta"})
@@ -147,14 +90,29 @@ def summarize_ignored(a: pd.DataFrame, b: pd.DataFrame) -> str:
     result["Delta"] = result["Delta"].apply(empty_zeros)
     result = result.sort_values(by="Symbol", ascending=False)
 
+    result["Added"] = result.index
+    result["Added"] = result["Added"].apply(diff_tickers_ignored(aa, bb, "+"))
+
+    result["Removed"] = result.index
+    result["Removed"] = result["Removed"].apply(diff_tickers_ignored(bb, aa, "-"))
+
     return result.to_string(header=False, index_names=False)
 
 
-def summarize_matched(a: pd.DataFrame, b: pd.DataFrame) -> str:
+def diff_tickers_matched(a: pd.DataFrame, b: pd.DataFrame, with_prefix: str):
+    def filter_by_screener(screener: str):
+        a_reason = a[a[screener] > 0]
+        b_reason = b[b[screener] > 0]
+        return prefix(diff_tickers(a_reason, b_reason), with_prefix)
+
+    return filter_by_screener
+
+
+def summarize_matched(aa: pd.DataFrame, bb: pd.DataFrame) -> str:
     names = [x["name"] for x in config["screeners"]]
 
-    a = a[names].astype(bool).sum(axis=0).to_frame("Symbol")
-    b = b[names].astype(bool).sum(axis=0).to_frame("Symbol")
+    a = aa[names].astype(bool).sum(axis=0).to_frame("Symbol")
+    b = bb[names].astype(bool).sum(axis=0).to_frame("Symbol")
 
     c = a - b
     c = c.rename(columns={"Symbol": "Delta"})
@@ -163,15 +121,13 @@ def summarize_matched(a: pd.DataFrame, b: pd.DataFrame) -> str:
     result["Delta"] = result["Delta"].apply(empty_zeros)
     result = result.sort_values(by="Symbol", ascending=False)
 
+    result["Added"] = result.index
+    result["Added"] = result["Added"].apply(diff_tickers_matched(aa, bb, "+"))
+
+    result["Removed"] = result.index
+    result["Removed"] = result["Removed"].apply(diff_tickers_matched(bb, aa, "-"))
+
     return result.to_string(header=False, index_names=False)
-
-
-def plot_etfs(ax):
-    for ticker in SECTOR_ETF.values():
-        df: pd.DataFrame = yf.download(ticker, period="1y", interval="1d")
-        label = label = ticker + " - " + ETF_SECTOR[ticker]
-        df["Close"].plot(kind="line", ax=ax, label=label, legend=True)
-    plt.xticks(rotation=0)
 
 
 def main(argv):
