@@ -30,7 +30,7 @@ def log_to_telegram(html: str, bot_token: str, channel_id: str):
         "chat_id": channel_id,
         "text": html,
         "parse_mode": "HTML",
-        "link_preview_options": {"is_disabled": True},
+        "disable_web_page_preview": True,
     }
     response = requests.post(url, params=params)
 
