@@ -26,7 +26,12 @@ def log_to_telegram(html: str, bot_token: str, channel_id: str):
         return logger.debug(html)
 
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    params = {"chat_id": channel_id, "text": html, "parse_mode": "HTML"}
+    params = {
+        "chat_id": channel_id,
+        "text": html,
+        "parse_mode": "HTML",
+        "link_preview_options": {"is_disabled": True},
+    }
     response = requests.post(url, params=params)
 
     validate_telegram_response(response)
