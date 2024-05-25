@@ -23,7 +23,7 @@ def log_to_telegram(html: str, bot_token: str, channel_id: str):
     https://core.telegram.org/bots/update56kabdkb12ibuisabdubodbasbdaosd#formatting-options
     """
     if not config["telegram"]["enabled"]:
-        return
+        return logger.debug(html)
 
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     params = {"chat_id": channel_id, "text": html, "parse_mode": "HTML"}

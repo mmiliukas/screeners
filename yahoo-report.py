@@ -31,6 +31,8 @@ line_plot_params = {
     "title": "Ticker appearance",
 }
 
+faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
+
 
 def read_tickers():
     source = config["tickers"]["target"]
@@ -100,12 +102,33 @@ def plot_ignored(ax, ignored_tickers: pd.DataFrame):
     )
 
 
-def summarize(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> str:
-    return (
-        f"<b>DAILY RUN:</b> {date.today().isoformat()}. "
-        f"<code>{len(tickers)}</code> unique valid tickers + "
-        f"<code>{len(ignored_tickers)}</code> ignored = "
-        f"<code>{len(tickers) + len(ignored_tickers)}</code> total"
+def summarize(
+    tickers: pd.DataFrame,
+    previous_tickers: pd.DataFrame,
+    ignored_tickers: pd.DataFrame,
+    previous_ignored_tickers: pd.DataFrame,
+) -> str:
+    df = pd.DataFrame(
+        {
+            "Metric": ["Unique valid tickers", "Ignored tickers", "Total"],
+            "Value": [
+                len(tickers),
+                len(ignored_tickers),
+                len(tickers) + len(ignored_tickers),
+            ],
+            "Previous Value": [
+                len(previous_tickers),
+                len(previous_ignored_tickers),
+                len(previous_tickers) + len(previous_ignored_tickers),
+            ],
+        }
+    )
+
+    df["Delta"] = df["Value"] - df["Previous Value"]
+    df["Delta"] = df["Delta"].apply(empty_zeros)
+
+    return df[["Metric", "Value", "Delta"]].to_string(
+        header=False, index=False, index_names=False
     )
 
 
@@ -154,34 +177,27 @@ def plot_etfs(ax):
 def main(argv):
     bot_token, channel_id = argv[1:]
 
+    message = f"<b>DAILY RUN:</b> {date.today().isoformat()} <a href='{faq}'>FAQ</a>"
+    log_to_telegram(message, bot_token, channel_id)
+
     tickers, previous_tickers = read_tickers()
     ignored_tickers, previous_ignored_tickers = read_ignored_tickers()
 
-    message = summarize(tickers=tickers, ignored_tickers=ignored_tickers)
-    log_to_telegram(message, bot_token, channel_id)
+    message = summarize(
+        tickers,
+        previous_tickers,
+        ignored_tickers,
+        previous_ignored_tickers,
+    )
+    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
 
     message = summarize_ignored(ignored_tickers, previous_ignored_tickers)
-    log_to_telegram(
-        (
-            f"Number of ignored tickers by reason.\n"
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n\n"
-            f"<code>{message}</code>"
-        ),
-        bot_token,
-        channel_id,
-    )
+    message = f"# of ignored tickers by reason \n\n<code>{message}</code>"
+    log_to_telegram(message, bot_token, channel_id)
 
     message = summarize_matched(tickers, previous_tickers)
-    log_to_telegram(
-        (
-            f"Number of tickers (excluding ignored) per screener.\n"
-            f"Keep in mind that single ticker can appear in multiple screeners.\n"
-            f"<b>+/-</b> sign identifies increase/decrease from a previous run.\n\n"
-            f"<code>{message}</code>"
-        ),
-        bot_token,
-        channel_id,
-    )
+    message = f"# of tickers (excl. ignored) per screener\n\n<code>{message}</code>"
+    log_to_telegram(message, bot_token, channel_id)
 
     fig = plt.figure(constrained_layout=True, figsize=(14, 10))
     grid = gs.GridSpec(2, 2, figure=fig)
