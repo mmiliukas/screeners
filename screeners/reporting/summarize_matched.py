@@ -32,4 +32,7 @@ def summarize_matched(aa: pd.DataFrame, bb: pd.DataFrame) -> str:
     result["Removed"] = result.index
     result["Removed"] = result["Removed"].apply(diff_tickers_matched(bb, aa, "-"))
 
-    return result.to_string(header=False, index_names=False)
+    result["AddedRemoved"] = result["Added"] + result["Removed"]
+    columns = ["Symbol", "Delta", "AddedRemoved"]
+
+    return result[columns].to_string(header=False, index_names=False)

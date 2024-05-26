@@ -29,4 +29,7 @@ def summarize_ignored(aa: pd.DataFrame, bb: pd.DataFrame) -> str:
     result["Removed"] = result.index
     result["Removed"] = result["Removed"].apply(diff_tickers_ignored(bb, aa, "-"))
 
-    return result.to_string(header=False, index_names=False)
+    result["AddedRemoved"] = result["Added"] + result["Removed"]
+
+    columns = ["Symbol", "Delta", "AddedRemoved"]
+    return result[columns].to_string(header=False, index_names=False)

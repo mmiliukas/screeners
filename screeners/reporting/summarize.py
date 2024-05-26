@@ -37,7 +37,8 @@ def summarize(
 
     df["Delta"] = df["Value"] - df["Previous Value"]
     df["Delta"] = df["Delta"].apply(empty_zeros)
+    df["AddedRemoved"] = df["Added"] + df["Removed"]
 
-    return df[["Metric", "Value", "Delta", "Added", "Removed"]].to_string(
+    return df[["Metric", "Value", "Delta", "AddedRemoved"]].to_string(
         header=False, index=False, index_names=False
     )
