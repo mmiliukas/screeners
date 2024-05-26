@@ -66,7 +66,7 @@ def main(argv):
     message = f"# of tickers (excl. ignored) per screener\n\n<code>{message}</code>"
     log_to_telegram(message, bot_token, channel_id)
 
-    fig = plt.figure(constrained_layout=True, figsize=(8, 4))
+    fig = plt.figure(constrained_layout=True, figsize=(16, 8))
     grid = gs.GridSpec(1, 2, figure=fig)
 
     ax1 = fig.add_subplot(grid[0, 0])
@@ -78,7 +78,7 @@ def main(argv):
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
     plt.close()
 
-    fig = plt.figure(constrained_layout=True, figsize=(8, 4))
+    fig = plt.figure(constrained_layout=True, figsize=(16, 8))
     grid = gs.GridSpec(2, 1, figure=fig)
 
     ax3 = fig.add_subplot(grid[0, 0])
@@ -91,7 +91,7 @@ def main(argv):
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
     plt.close()
 
-    fig = plt.figure(constrained_layout=True, figsize=(8, 4))
+    fig = plt.figure(constrained_layout=True, figsize=(16, 8))
     grid = gs.GridSpec(1, 1, figure=fig)
 
     ax4 = fig.add_subplot(grid[0, 0])
