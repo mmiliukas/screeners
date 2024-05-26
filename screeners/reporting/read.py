@@ -4,13 +4,20 @@ from screeners.config import config
 
 
 def read_tickers():
+    names = [f"{x['name']} First Seen" for x in config["screeners"]]
+    names.append("Screener First Seen")
+
     source = config["tickers"]["target"]
-    current = pd.read_csv(source, parse_dates=["Screener First Seen"])
-    current["Screener First Seen"] = current["Screener First Seen"].dt.date
+    current = pd.read_csv(source, parse_dates=names)
+
+    for name in names:
+        current[name] = current[name].dt.date
 
     source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
-    previous = pd.read_csv(source, parse_dates=["Screener First Seen"])
-    previous["Screener First Seen"] = previous["Screener First Seen"].dt.date
+    previous = pd.read_csv(source, parse_dates=names)
+
+    for name in names:
+        previous[name] = previous[name].dt.date
 
     return (current, previous)
 

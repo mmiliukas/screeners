@@ -13,6 +13,7 @@ import yaml
 from screeners.reporting.plot import (
     plot_etfs,
     plot_first_seen,
+    plot_first_seen_by_screener,
     plot_ignored,
     plot_sector,
     plot_sum,
@@ -28,6 +29,17 @@ with open("config-logging.yml", "r") as config_logging:
 
 
 faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
+
+
+def plot_to_buffer():
+    graph = io.BytesIO()
+
+    plt.tight_layout()
+    plt.savefig(graph, format="png")
+    plt.show()
+    plt.close()
+
+    return graph
 
 
 def main(argv):
@@ -55,34 +67,36 @@ def main(argv):
     message = f"# of tickers (excl. ignored) per screener\n\n<code>{message}</code>"
     log_to_telegram(message, bot_token, channel_id)
 
-    fig = plt.figure(constrained_layout=True, figsize=(14, 10))
-    grid = gs.GridSpec(2, 2, figure=fig)
+    fig = plt.figure(constrained_layout=True, figsize=(14, 7))
+    grid = gs.GridSpec(1, 2, figure=fig)
 
     ax1 = fig.add_subplot(grid[0, 0])
     ax2 = fig.add_subplot(grid[0, 1])
-    ax3 = fig.add_subplot(grid[1, :])
 
     plot_sum(ax1, tickers)
     plot_sector(ax2, tickers)
+
+    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
+
+    fig = plt.figure(constrained_layout=True, figsize=(14, 7))
+    grid = gs.GridSpec(2, 1, figure=fig)
+
+    ax3 = fig.add_subplot(grid[0, 0])
+    ax4 = fig.add_subplot(grid[1, 0])
+
     plot_first_seen(ax3, tickers)
     plot_ignored(ax3, ignored_tickers)
+    plot_first_seen_by_screener(ax4, tickers)
 
-    graph = io.BytesIO()
-    plt.tight_layout()
-    plt.savefig(graph, format="png")
-    plt.close()
-    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
+    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
 
-    fig = plt.figure(constrained_layout=True, figsize=(14, 10))
+    fig = plt.figure(constrained_layout=True, figsize=(14, 7))
     grid = gs.GridSpec(1, 1, figure=fig)
 
     ax4 = fig.add_subplot(grid[0, 0])
     plot_etfs(ax4)
 
-    graph = io.BytesIO()
-    plt.tight_layout()
-    plt.savefig(graph, format="png")
-    log_to_telegram_image(graph.getbuffer(), bot_token, channel_id)
+    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
 
 
 if __name__ == "__main__":

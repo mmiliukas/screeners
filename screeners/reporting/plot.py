@@ -24,6 +24,26 @@ def plot_sum(ax, tickers: pd.DataFrame):
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)
 
 
+def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
+    names = [x["name"] for x in config["screeners"]]
+    dfs = []
+
+    for name in names:
+        df = tickers[~tickers[f"{name} First Seen"].isna()].copy(deep=True)
+        df["Date"] = pd.to_datetime(df[f"{name} First Seen"])
+        df["Screener"] = name
+        df["Count"] = 1
+        dfs.append(df[["Date", "Screener", "Count"]])
+
+    df = pd.concat(dfs)
+    df = df.set_index("Date")
+
+    df = df.groupby([pd.Grouper(freq="W-MON"), "Screener"]).sum().reset_index()
+    df = df.pivot(index="Date", columns="Screener", values="Count")
+
+    df.plot(kind="bar", stacked=True, colormap="tab20", ax=ax)
+
+
 def plot_first_seen(ax, tickers: pd.DataFrame):
     count = tickers.groupby("Screener First Seen")["Symbol"].count()
     count.plot(label="New (excluding ignored)", ax=ax, **line_plot_params)
