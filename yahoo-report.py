@@ -36,7 +36,6 @@ def plot_to_buffer():
 
     plt.tight_layout()
     plt.savefig(graph, format="png")
-    plt.close()
 
     return graph
 
@@ -76,6 +75,7 @@ def main(argv):
     plot_sector(ax2, tickers)
 
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
+    plt.close()
 
     fig = plt.figure(constrained_layout=True, figsize=(8, 4))
     grid = gs.GridSpec(2, 1, figure=fig)
@@ -88,6 +88,7 @@ def main(argv):
     plot_first_seen_by_screener(ax4, tickers)
 
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
+    plt.close()
 
     fig = plt.figure(constrained_layout=True, figsize=(8, 4))
     grid = gs.GridSpec(1, 1, figure=fig)
@@ -96,6 +97,7 @@ def main(argv):
     plot_etfs(ax4)
 
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
+    plt.close()
 
 
 if __name__ == "__main__":
