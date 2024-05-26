@@ -37,6 +37,7 @@ def plot_to_buffer():
     plt.tight_layout()
     plt.savefig(graph, format="png")
 
+    graph.seek(0)
     return graph
 
 
