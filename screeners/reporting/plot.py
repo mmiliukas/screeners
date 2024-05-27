@@ -39,9 +39,10 @@ def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
     df = df.set_index("Date")
 
     df = df.groupby([pd.Grouper(freq="W-MON"), "Screener"]).sum().reset_index()
-    df = df.pivot(index="Date", columns="Screener", values="Count")
+    df = df.pivot(index="Date", columns="Screener", values="Count").reset_index()
 
-    df.plot(kind="bar", stacked=True, colormap="tab20", ax=ax)
+    df["Date"] = df["Date"].dt.date
+    df.plot(kind="bar", stacked=True, colormap="tab20", ax=ax, x="Date")
 
 
 def plot_first_seen(ax, tickers: pd.DataFrame):
