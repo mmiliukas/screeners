@@ -7,7 +7,7 @@ charset-normalizer==3.3.2
 contourpy==1.2.1
 cycler==0.12.1
 exceptiongroup==1.2.1
-fonttools==4.51.0
+fonttools==4.52.1
 frozendict==2.4.4
 greenlet==3.0.3
 html5lib==1.1
