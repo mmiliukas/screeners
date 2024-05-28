@@ -13,3 +13,23 @@ In example below we see that `1` one ticker `VJET` was removed from a `Loosers 1
 ```
 Loosers 1    456  -1         -VJET
 ```
+
+## When screeners are scraped ?
+
+The regular trading hours for the U.S. stock market,
+which includes the Nasdaq Stock Market (Nasdaq)
+and the New York Stock Exchange (NYSE),
+are 9:30 am to 4 pm, except on stock market holidays.
+
+Time difference between UTC and EST (-5 hours) and EDT (-4 hours):
+
+```yaml
+  schedule:
+    # 16:30 in local time
+    - cron: '30 9 * * 1-6'
+      timezone: 'America/New_York'
+
+    # 23:00 in local time
+    - cron: '0 16 * * 1-6'
+      timezone: 'America/New_York'
+```
