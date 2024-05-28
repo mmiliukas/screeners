@@ -34,7 +34,7 @@ faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
 def plot_to_buffer():
     graph = io.BytesIO()
 
-    plt.tight_layout()
+    plt.tight_layout(pad=0)
     plt.savefig(graph, format="png")
 
     graph.seek(0)

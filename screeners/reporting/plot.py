@@ -29,7 +29,11 @@ def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
     dfs = []
 
     for name in names:
-        df = tickers[~tickers[f"{name} First Seen"].isna()].copy(deep=True)
+        filter_has_seen = ~tickers[f"{name} First Seen"].isna()
+        filter_first_seen = (
+            tickers[f"{name} First Seen"] == tickers["Screener First Seen"]
+        )
+        df = tickers[filter_has_seen & filter_first_seen].copy(deep=True)
         df["Date"] = pd.to_datetime(df[f"{name} First Seen"])
         df["Screener"] = name
         df["Count"] = 1
@@ -42,7 +46,7 @@ def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
     df = df.pivot(index="Date", columns="Screener", values="Count").reset_index()
 
     df["Date"] = df["Date"].dt.date
-    df.plot(kind="bar", stacked=True, colormap="tab20", ax=ax, x="Date")
+    df.plot(kind="bar", stacked=True, colormap="tab20", ax=ax, x="Date", xlabel="")
 
 
 def plot_first_seen(ax, tickers: pd.DataFrame):
@@ -88,5 +92,5 @@ def plot_etfs(ax):
             ticker, period="1y", interval="1d", progress=False
         )
         label = label = ticker + " - " + ETF_SECTOR[ticker]
-        df["Close"].plot(kind="line", ax=ax, label=label, legend=True)
+        df["Close"].plot(kind="line", ax=ax, label=label, legend=True, xlabel="")
     plt.xticks(rotation=0)
