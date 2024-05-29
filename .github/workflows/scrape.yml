@@ -12,7 +12,11 @@ on:
   # and the New York Stock Exchange (NYSE),
   # are 9:30 am to 4 pm, except on stock market holidays.
   schedule:
+    # 09:30 in local time (in the morning)
+    - cron: '0 6 * * 1-6'
+    # 16:30 in local time (market opened)
     - cron: '30 13 * * 1-6'
+    # 23:00 in local time (market closed)
     - cron: '0 20 * * 1-6'
 
 permissions:
