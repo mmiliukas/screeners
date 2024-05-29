@@ -25,11 +25,10 @@ Time difference between UTC and EST (-5 hours) and EDT (-4 hours):
 
 ```yaml
   schedule:
-    # 16:30 in local time
-    - cron: '30 9 * * 1-6'
-      timezone: 'America/New_York'
-
-    # 23:00 in local time
-    - cron: '0 16 * * 1-6'
-      timezone: 'America/New_York'
+    # 09:30 in local time (in the morning)
+    - cron: '0 6 * * 1-6'
+    # 16:30 in local time (market opened)
+    - cron: '30 13 * * 1-6'
+    # 23:00 in local time (market closed)
+    - cron: '0 20 * * 1-6'
 ```
