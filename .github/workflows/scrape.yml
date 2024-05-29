@@ -12,11 +12,8 @@ on:
   # and the New York Stock Exchange (NYSE),
   # are 9:30 am to 4 pm, except on stock market holidays.
   schedule:
-    - cron: '30 9 * * 1-6'
-      timezone: 'America/New_York'
-
-    - cron: '0 16 * * 1-6'
-      timezone: 'America/New_York'
+    - cron: '30 13 * * 1-6'
+    - cron: '0 20 * * 1-6'
 
 permissions:
   contents: write
