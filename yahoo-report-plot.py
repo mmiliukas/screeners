@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 
+import glob
 import io
+import json
 import logging
 import logging.config
 import sys
 
 import matplotlib.gridspec as gs
 import matplotlib.pyplot as plt
+import pandas as pd
 import yaml
 
 from screeners.reporting.plot import (
@@ -32,6 +35,24 @@ def plot_to_buffer():
 
     graph.seek(0)
     return graph
+
+
+def read_json(name):
+    with open(name, "r") as file:
+        return json.load(file)
+
+
+def plot_exchanges(ax):
+    names = glob.glob("tickers/*.json")
+    jsons = [read_json(name)[0] for name in names]
+    exchanges = [_.get("exchange") for _ in jsons]
+
+    df = pd.DataFrame({"exchange": exchanges})
+    df["count"] = 1
+    df = df.groupby("exchange").count().sort_values(by="count", ascending=False)
+
+    df.plot(kind="barh", ax=ax, ylabel="", xlabel="", legend=False, title="Exchanges")
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
 
 
 def main(argv):
@@ -70,6 +91,15 @@ def main(argv):
 
     ax4 = fig.add_subplot(grid[0, 0])
     plot_etfs(ax4)
+
+    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
+    plt.close()
+
+    fig = plt.figure(constrained_layout=True, figsize=(16, 8))
+    grid = gs.GridSpec(1, 1, figure=fig)
+
+    ax5 = fig.add_subplot(grid[0, 0])
+    plot_exchanges(ax5)
 
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
     plt.close()

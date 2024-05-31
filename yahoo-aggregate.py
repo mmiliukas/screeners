@@ -98,6 +98,7 @@ def enrich_tickers(symbols) -> pd.DataFrame:
     df["Name"] = get_infos(df, ["longName", "shortName"])
     df["Sector"] = get_info(df, "sector")
     df["Industry"] = get_info(df, "industry")
+    df["Exchange"] = get_info(df, "exchange")
 
     df["ETF"] = df["Sector"].apply(resolve_etf)
 
