@@ -7,17 +7,23 @@ on:
         description: 'Number of cache storage in days. Specify "0" if you want to retrieve latest information.'
         required: false
         default: 3
+      plot:
+        description: '1 if summarised plots should be generated or 0 if skipped.'
+        required: false
+        default: '0'
   # The regular trading hours for the U.S. stock market,
   # which includes the Nasdaq Stock Market (Nasdaq)
   # and the New York Stock Exchange (NYSE),
   # are 9:30 am to 4 pm, except on stock market holidays.
+
+  # syntax {minute} {hour} {day month} {month} {day week}
   schedule:
-    # 09:30 in local time (in the morning)
-    - cron: '0 6 * * 1-6'
+    # 09:00 in local time (in the morning)
+    - cron: '0 6 * * *'
     # 16:30 in local time (market opened)
-    - cron: '30 13 * * 1-6'
+    - cron: '30 13 * * *'
     # 23:00 in local time (market closed)
-    - cron: '0 20 * * 1-6'
+    - cron: '0 20 * * *'
 
 permissions:
   contents: write
@@ -43,6 +49,8 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
+      - if: github.event.schedule == '0 6 * * *' || ${{ inputs.plot || '0' }} == '1'
+        run: ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
