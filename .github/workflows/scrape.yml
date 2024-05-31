@@ -10,7 +10,7 @@ on:
       plot:
         description: '1 if summarised plots should be generated or 0 if skipped.'
         required: false
-        default: '0'
+        default: 0
   # The regular trading hours for the U.S. stock market,
   # which includes the Nasdaq Stock Market (Nasdaq)
   # and the New York Stock Exchange (NYSE),
@@ -49,7 +49,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
-      - if: github.event.schedule == '0 6 * * *' || ${{ inputs.plot || '0' }} == '1'
+      - if: github.event.schedule == '0 6 * * *' || "${{ inputs.plot || 0 }}" == "1"
         run: ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
       - run: |
           git config user.name github-actions

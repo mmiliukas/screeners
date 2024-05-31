@@ -24,9 +24,6 @@ with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 
-faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
-
-
 def plot_to_buffer():
     graph = io.BytesIO()
 
