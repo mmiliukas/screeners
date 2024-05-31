@@ -11,6 +11,8 @@ def validate_telegram_response(response: requests.Response):
     status_code = response.status_code
     if status_code != 200:
         logger.error(f"call to telegram failed with error code {status_code}")
+        # exit the process to let us know if reporting is failing
+        raise Exception(f"call to telegram failed with error code {status_code}")
 
 
 def minimize(multiline_string: str):
