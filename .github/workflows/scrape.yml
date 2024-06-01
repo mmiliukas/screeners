@@ -40,13 +40,13 @@ jobs:
 
       - run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
 
-      - if: !github.event.schedule
+      - if: ${{ github.event.schedule == '' }}
         run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
 
-      - if: github.event.schedule == '30 13 * * 1-5'
+      - if: ${{ github.event.schedule == '30 13 * * 1-5' }}
         run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
 
-      - if: github.event.schedule == '0 20 * * 1-5'
+      - if: ${{ github.event.schedule == '0 20 * * 1-5' }}
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
       - run: pip install -r requirements.txt
