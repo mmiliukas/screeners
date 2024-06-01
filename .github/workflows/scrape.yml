@@ -21,9 +21,9 @@ on:
     # 09:00 in local time (in the morning)
     - cron: '0 6 * * *'
     # 16:30 in local time (market opened)
-    - cron: '30 13 * * *'
+    - cron: '30 13 * * 1-5'
     # 23:00 in local time (market closed)
-    - cron: '0 20 * * *'
+    - cron: '0 20 * * 1-5'
 
 permissions:
   contents: write
