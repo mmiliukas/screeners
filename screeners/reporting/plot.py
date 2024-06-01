@@ -1,3 +1,4 @@
+import json
 from datetime import date
 
 import matplotlib.pyplot as plt
@@ -94,3 +95,37 @@ def plot_etfs(ax):
         label = label = ticker + " - " + ETF_SECTOR[ticker]
         df["Close"].plot(kind="line", ax=ax, label=label, legend=True, xlabel="")
     plt.xticks(rotation=0)
+
+
+def read_json(name):
+    with open(name, "r") as file:
+        return json.load(file)
+
+
+def plot_exchanges(ax, tickers: pd.DataFrame, ignored_tickers: pd.DataFrame):
+    df1 = tickers[["Exchange"]].copy(deep=True)
+    df1["Type"] = "Unique valid tickers"
+    df1["Count"] = 1
+    df1.fillna("MISSING", inplace=True)
+
+    ignored = [read_json(f"tickers/{x}.json") for x in ignored_tickers["Symbol"].values]
+    ignored = [x[0].get("exchange") for x in ignored]
+
+    df2 = pd.DataFrame({"Exchange": ignored})
+    df2["Type"] = "Ignored tickers"
+    df2["Count"] = 1
+    df2.fillna("MISSING", inplace=True)
+
+    df = pd.concat([df1, df2])
+    df = df.groupby(by=["Exchange", "Type"])["Count"].count().unstack()
+    df.sort_values(by="Unique valid tickers", ascending=False, inplace=True)
+
+    df.plot.barh(
+        ax=ax,
+        title="Yahoo Exchanges",
+        ylabel="Exchange",
+        xlabel="Count",
+        color=["tomato", "forestgreen"],
+    )
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
+    ax.bar_label(ax.containers[1], fmt="%d", padding=10)
