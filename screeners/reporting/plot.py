@@ -102,6 +102,25 @@ def read_json(name):
         return json.load(file)
 
 
+def plot_exchanges_by_screener(ax, tickers: pd.DataFrame):
+    names = [x["name"] for x in config["screeners"]]
+
+    filtered = tickers[["Exchange"] + names].copy(deep=True)
+    filtered = filtered[filtered["Exchange"] == "PNK"]
+
+    for name in names:
+        filtered[name] = filtered[name].apply(lambda x: 1 if x > 0 else 0)
+
+    stacked = filtered.set_index("Exchange").stack().to_frame("Count")  # type: ignore
+    stacked = stacked.reset_index(names=["Exchange", "Screener"])
+
+    grouped = stacked.groupby(["Screener", "Exchange"])["Count"].sum().unstack()
+    grouped = grouped.sort_values("PNK", ascending=False)
+
+    grouped.plot(kind="barh", ax=ax, title="PNK tickers per screener", xlabel="Count")
+    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
+
+
 def plot_exchanges(ax, tickers: pd.DataFrame, ignored_tickers: pd.DataFrame):
     df1 = tickers[["Exchange"]].copy(deep=True)
     df1["Type"] = "Unique valid tickers"
@@ -122,10 +141,11 @@ def plot_exchanges(ax, tickers: pd.DataFrame, ignored_tickers: pd.DataFrame):
 
     df.plot.barh(
         ax=ax,
-        title="Yahoo Exchanges",
+        title="Yahoo exchanges",
         ylabel="Exchange",
         xlabel="Count",
         color=["tomato", "forestgreen"],
     )
+
     ax.bar_label(ax.containers[0], fmt="%d", padding=10)
     ax.bar_label(ax.containers[1], fmt="%d", padding=10)

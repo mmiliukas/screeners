@@ -19,7 +19,7 @@ def read_tickers():
     for name in names:
         previous[name] = previous[name].dt.date
 
-    return (current, previous)
+    return [current, previous]
 
 
 def read_ignored_tickers():
@@ -31,4 +31,4 @@ def read_ignored_tickers():
     previous = pd.read_csv(source, parse_dates=["Date"])
     previous["Date"] = previous["Date"].dt.date
 
-    return (current, previous)
+    return [current, previous]
