@@ -37,6 +37,15 @@ jobs:
         with:
           python-version: "3.10"
           cache: 'pip'
+
+      - run: echo "RUN_TYPE='DAILY RUN'" >> $GITHUB_ENV
+
+      - if: github.event.schedule == '30 13 * * 1-5'
+        run: echo "RUN_TYPE='BEFORE MARKET OPENED'" >> $GITHUB_ENV
+
+      - if: github.event.schedule == '0 20 * * 1-5'
+        run: echo "RUN_TYPE='AFTER MARKET CLOSED'" >> $GITHUB_ENV
+
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
       - run: ./yahoo.py "$COOKIES"
@@ -45,7 +54,7 @@ jobs:
       - run: ./yahoo-tickers.py ${{ inputs.expire_after_days || 3 }}
       - run: ./yahoo-aggregate.py
       - run: python -m pytest tests/
-      - run: ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+      - run: ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL" "$RUN_TYPE"
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
