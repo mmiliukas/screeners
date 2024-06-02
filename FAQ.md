@@ -26,7 +26,7 @@ Time difference between UTC and EST (-5 hours) and EDT (-4 hours):
 ```yaml
   schedule:
     # 09:00 in local time (in the morning)
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 1-5'
     # 16:30 in local time (market opened)
     - cron: '30 13 * * 1-5'
     # 23:00 in local time (market closed)

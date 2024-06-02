@@ -19,7 +19,7 @@ on:
   # syntax {minute} {hour} {day month} {month} {day week}
   schedule:
     # 09:00 in local time (in the morning)
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 1-5'
     # 16:30 in local time (market opened)
     - cron: '30 13 * * 1-5'
     # 23:00 in local time (market closed)
@@ -63,7 +63,7 @@ jobs:
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
       # send plots only if scheduled in the morning or manually requested
       - name: plot the graphs when needed
-        if: ${{ github.event.schedule == '0 6 * * *' || github.event.inputs.plot == '1' }}
+        if: ${{ github.event.schedule == '0 6 * * 1-5' || github.event.inputs.plot == '1' }}
         run: ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
