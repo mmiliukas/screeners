@@ -45,4 +45,4 @@ url-normalize==1.4.3
 urllib3==1.26.18
 webencodings==0.5.1
 yfinance==0.2.40
-zipp==3.19.0
+zipp==3.19.1
