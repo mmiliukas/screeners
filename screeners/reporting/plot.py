@@ -98,8 +98,25 @@ def plot_etfs(ax):
 
 
 def read_json(name):
-    with open(name, "r") as file:
-        return json.load(file)
+    try:
+        with open(name, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return [{}]
+
+
+def plot_exchanges_by_sector(ax, tickers: pd.DataFrame):
+    filtered = tickers[["Exchange", "Sector"]].copy(deep=True)
+    filtered = filtered[filtered["Exchange"] == "PNK"]
+    filtered["Count"] = 1
+
+    grouped = filtered.groupby(["Sector", "Exchange"])["Count"].sum().unstack()
+    grouped = grouped.sort_values("PNK", ascending=False)
+
+    grouped.plot(
+        kind="barh", ax=ax, title="PNK per sector", xlabel="", ylabel="", legend=False
+    )
+    ax.bar_label(ax.containers[0], fmt="%d")
 
 
 def plot_exchanges_by_screener(ax, tickers: pd.DataFrame):
@@ -117,8 +134,10 @@ def plot_exchanges_by_screener(ax, tickers: pd.DataFrame):
     grouped = stacked.groupby(["Screener", "Exchange"])["Count"].sum().unstack()
     grouped = grouped.sort_values("PNK", ascending=False)
 
-    grouped.plot(kind="barh", ax=ax, title="PNK tickers per screener", xlabel="Count")
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
+    grouped.plot(
+        kind="barh", ax=ax, title="PNK per screener", xlabel="", ylabel="", legend=False
+    )
+    ax.bar_label(ax.containers[0], fmt="%d")
 
 
 def plot_exchanges(ax, tickers: pd.DataFrame, ignored_tickers: pd.DataFrame):
@@ -142,10 +161,10 @@ def plot_exchanges(ax, tickers: pd.DataFrame, ignored_tickers: pd.DataFrame):
     df.plot.barh(
         ax=ax,
         title="Yahoo exchanges",
-        ylabel="Exchange",
-        xlabel="Count",
+        ylabel="",
+        xlabel="",
         color=["tomato", "forestgreen"],
     )
 
-    ax.bar_label(ax.containers[0], fmt="%d", padding=10)
-    ax.bar_label(ax.containers[1], fmt="%d", padding=10)
+    ax.bar_label(ax.containers[0], fmt="%d")
+    ax.bar_label(ax.containers[1], fmt="%d")

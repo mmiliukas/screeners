@@ -13,6 +13,7 @@ from screeners.reporting.plot import (
     plot_etfs,
     plot_exchanges,
     plot_exchanges_by_screener,
+    plot_exchanges_by_sector,
     plot_first_seen,
     plot_first_seen_by_screener,
     plot_ignored,
@@ -42,6 +43,7 @@ def plot_to_buffer():
     graph = io.BytesIO()
 
     plt.tight_layout()
+    plt.show()
     plt.savefig(graph, format="png")
     plt.close()
 
@@ -70,9 +72,10 @@ def main(argv):
     plot_etfs(ax1)
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
 
-    ax1, ax2 = plot_grid(rows=1, cols=2, subplots=[(0, 0), (0, 1)])
+    ax1, ax2, ax3 = plot_grid(rows=1, cols=3, subplots=[(0, 0), (0, 1), (0, 2)])
     plot_exchanges(ax1, tickers, ignored_tickers)
     plot_exchanges_by_screener(ax2, tickers)
+    plot_exchanges_by_sector(ax3, tickers)
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
 
 
