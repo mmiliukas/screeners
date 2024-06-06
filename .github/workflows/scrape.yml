@@ -78,5 +78,5 @@ jobs:
           git add ./tickers-etfs.csv
           git add ./tickers-ignored.csv
           git add ./tickers.csv
-          git commit -m "daily run"
+          git commit -m "$RUN_TYPE"
           git push
