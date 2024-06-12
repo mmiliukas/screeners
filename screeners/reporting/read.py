@@ -5,7 +5,7 @@ from screeners.config import config
 
 def previous_source(source: str) -> str:
     with open(".last_report_commit", "r") as file:
-        last_commit = file.readline() or "main"
+        last_commit = (file.readline() or "main").strip()
     base_url = "https://raw.githubusercontent.com/mmiliukas/screeners"
     return f"{base_url}/{last_commit}/{source}".strip()
 
