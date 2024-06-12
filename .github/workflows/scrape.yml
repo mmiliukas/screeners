@@ -6,11 +6,11 @@ on:
       expire_after_days:
         description: 'Number of cache storage in days. Specify "0" if you want to retrieve latest information.'
         required: false
-        default: 3
+        default: '3'
       plot:
         description: '1 if summarised plots should be generated or 0 if skipped.'
         required: false
-        default: 0
+        default: '0'
   # The regular trading hours for the U.S. stock market,
   # which includes the Nasdaq Stock Market (Nasdaq)
   # and the New York Stock Exchange (NYSE),
