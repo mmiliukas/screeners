@@ -7,7 +7,7 @@ def previous_source(source: str) -> str:
     with open(".last_report_commit", "r") as file:
         last_commit = file.readline() or "main"
     base_url = "https://raw.githubusercontent.com/mmiliukas/screeners"
-    return f"{base_url}/{last_commit}/{source}"
+    return f"{base_url}/{last_commit}/{source}".strip()
 
 
 def read_tickers():
