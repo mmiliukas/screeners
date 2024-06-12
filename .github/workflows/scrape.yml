@@ -38,6 +38,11 @@ jobs:
           python-version: "3.10"
           cache: 'pip'
 
+      - name: install depedencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install chromium
+
       - run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
 
       - if: ${{ github.event.schedule == '' }}
@@ -49,25 +54,24 @@ jobs:
       - if: ${{ github.event.schedule == '0 20 * * 1-5' }}
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
-      - run: pip install -r requirements.txt
-      - run: python -m playwright install chromium
       - run: ./yahoo.py "$COOKIES"
         env:
           COOKIES: ${{ secrets.cookies }}
-      - run: ./yahoo-tickers.py ${{ inputs.expire_after_days || 3 }}
-      - run: ./yahoo-aggregate.py
-      - run: python -m pytest tests/
-      - run: ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL" "$RUN_TYPE"
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
-          TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
-      # send plots only if scheduled in the morning or manually requested
-      - name: plot the graphs when needed
+
+      - run: |
+          ./yahoo-tickers.py ${{ inputs.expire_after_days || 3 }}
+          ./yahoo-aggregate.py
+          python -m pytest tests/
+
+      - name: report summary and plot the graphs when needed
         if: ${{ github.event.schedule == '0 6 * * 1-5' || github.event.inputs.plot == '1' }}
-        run: ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+        run: |
+          ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL" "$RUN_TYPE"
+          ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
         env:
           TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
           TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
+
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
