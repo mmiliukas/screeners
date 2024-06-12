@@ -3,6 +3,13 @@ import pandas as pd
 from screeners.config import config
 
 
+def previous_source(source: str) -> str:
+    with open(".last_report_commit", "r") as file:
+        last_commit = file.readline() or "main"
+    base_url = "https://raw.githubusercontent.com/mmiliukas/screeners"
+    return f"{base_url}/{last_commit}/{source}"
+
+
 def read_tickers():
     names = [f"{x['name']} First Seen" for x in config["screeners"]]
     names.append("Screener First Seen")
@@ -13,7 +20,7 @@ def read_tickers():
     for name in names:
         current[name] = current[name].dt.date
 
-    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
+    source = previous_source(source)
     previous = pd.read_csv(source, parse_dates=names)
 
     for name in names:
@@ -27,7 +34,7 @@ def read_ignored_tickers():
     current = pd.read_csv(source, parse_dates=["Date"])
     current["Date"] = current["Date"].dt.date
 
-    source = "https://raw.githubusercontent.com/mmiliukas/screeners/main/" + source
+    source = previous_source(source)
     previous = pd.read_csv(source, parse_dates=["Date"])
     previous["Date"] = previous["Date"].dt.date
 
