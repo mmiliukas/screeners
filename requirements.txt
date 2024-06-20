@@ -42,7 +42,7 @@ tomli==2.0.1
 typing_extensions==4.12.2
 tzdata==2024.1
 url-normalize==1.4.3
-urllib3==1.26.18
+urllib3==2.2.2
 webencodings==0.5.1
 yfinance==0.2.40
 zipp==3.19.2
