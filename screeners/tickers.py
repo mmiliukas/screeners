@@ -13,7 +13,9 @@ def get_tickers():
     for run in runs:
         csvs.extend(glob.glob(f"{run}/*.csv"))
 
-    df = pd.concat([pd.read_csv(csv) for csv in csvs])
+    all_df = [pd.read_csv(csv) for csv in csvs]
+    all_df = list(filter(lambda x: not x.empty, all_df))
+    df = pd.concat(all_df)
 
     return sorted(list(df["Symbol"].unique()))
 
