@@ -14,6 +14,7 @@ def previous_source(source: str) -> str:
 def read_tickers():
     names = [f"{x['name']} First Seen" for x in config["screeners"]]
     names.append("Screener First Seen")
+    names.append("Date")
 
     source = config["tickers"]["target"]
     current = pd.read_csv(source, parse_dates=names)
