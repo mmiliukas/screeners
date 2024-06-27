@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime, timedelta
 
 from screeners.config import config
 
@@ -25,6 +26,9 @@ def read_tickers():
 
     for name in names:
         previous[name] = previous[name].dt.date
+
+    source = source[source["Date"] > datetime.today() - timedelta(days=90)]
+    previous = previous[source["Date"] > datetime.today() - timedelta(days=90)]
 
     return [current, previous]
 
