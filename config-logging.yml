@@ -11,7 +11,7 @@ handlers:
   console:
     class: logging.StreamHandler
     level: DEBUG
-    formatter: mini
+    formatter: maxi
     stream: ext://sys.stdout
 
 loggers:

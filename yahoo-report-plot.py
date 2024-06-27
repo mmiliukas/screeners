@@ -24,6 +24,7 @@ from screeners.reporting.read import read_ignored_tickers, read_tickers
 from screeners.telegram import log_to_telegram_image
 
 with open("config-logging.yml", "r") as config_logging:
+    logging.captureWarnings(True)
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 

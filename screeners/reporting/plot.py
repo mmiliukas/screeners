@@ -1,5 +1,5 @@
 import json
-from datetime import date
+from datetime import date, datetime, timedelta
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -14,8 +14,17 @@ line_plot_params = {
     "ylabel": "",
     "grid": True,
     "legend": True,
-    "title": "Ticker appearance",
+    "title": "Ticker appearance (last 60 days)",
 }
+
+
+def as_datetime(date: date) -> datetime:
+    return datetime.combine(date, datetime.min.time())
+
+
+def days_ago(days: int) -> date:
+    today = date.today()
+    return today - timedelta(days=days)
 
 
 def plot_sum(ax, tickers: pd.DataFrame):
@@ -34,7 +43,10 @@ def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
         filter_first_seen = (
             tickers[f"{name} First Seen"] == tickers["Screener First Seen"]
         )
-        df = tickers[filter_has_seen & filter_first_seen].copy(deep=True)
+        filter_by_date = tickers["Screener First Seen"] >= days_ago(60)
+        df = tickers[filter_has_seen & filter_first_seen & filter_by_date].copy(
+            deep=True
+        )
         df["Date"] = pd.to_datetime(df[f"{name} First Seen"])
         df["Screener"] = name
         df["Count"] = 1
@@ -51,6 +63,8 @@ def plot_first_seen_by_screener(ax, tickers: pd.DataFrame):
 
 
 def plot_first_seen(ax, tickers: pd.DataFrame):
+    tickers = tickers[tickers["Screener First Seen"] >= days_ago(60)]
+
     count = tickers.groupby("Screener First Seen")["Symbol"].count()
     count.plot(label="New (excluding ignored)", ax=ax, **line_plot_params)
 
@@ -80,8 +94,7 @@ def plot_sector(ax, tickers: pd.DataFrame):
 
 
 def plot_ignored(ax, ignored_tickers: pd.DataFrame):
-    # at ????-??-13 we had a huge amount of removes, so ignoring them
-    df = ignored_tickers[ignored_tickers["Date"] >= date.fromisoformat("2024-03-14")]
+    df = ignored_tickers[ignored_tickers["Date"] >= days_ago(60)]
     df.groupby("Date")["Symbol"].count().plot(
         label="Ignored", ax=ax, **line_plot_params
     )  # type: ignore
@@ -93,6 +106,7 @@ def plot_etfs(ax):
             ticker, period="1y", interval="1d", progress=False
         )
         label = label = ticker + " - " + ETF_SECTOR[ticker]
+        df = df[df.index > as_datetime(days_ago(60))]
         df["Close"].plot(kind="line", ax=ax, label=label, legend=True, xlabel="")
     plt.xticks(rotation=0)
 
