@@ -73,11 +73,12 @@ def write_html(figs: list[Figure], filename: str) -> None:
     html = "\n".join([to_html(fig) for fig in figs])
 
     combined_html = f"""
-<html>
+<!doctype html>
 <head>
-    <title>Combined Plotly Figures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screeners</title>
     <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
-    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
 </head>
 <body>
     {html}
