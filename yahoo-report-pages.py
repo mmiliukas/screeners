@@ -7,9 +7,11 @@ import sys
 import pandas as pd
 import plotly.express as px
 import yaml
+import yfinance as yf
 from plotly.graph_objects import Figure
 
 from screeners.config import config
+from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.reporting.read import read_tickers
 
 with open("config-logging.yml", "r") as config_logging:
@@ -17,6 +19,24 @@ with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 screener_names = [screener["name"] for screener in config["screeners"]]
+
+
+def etfs() -> Figure:
+    dfs = []
+    for ticker in SECTOR_ETF.values():
+        df = yf.download(ticker, period="3mo", interval="1d", progress=False)
+        df["Symbol"] = " - ".join([ticker, ETF_SECTOR[ticker]])
+        dfs.append(df)
+
+    params = {
+        "data_frame": pd.concat(dfs),
+        "y": "Close",
+        "color": "Symbol",
+        "height": 500,
+        "title": "ETF for the last 3 months",
+    }
+
+    return px.line(**params)
 
 
 def tickers_frequency(df: pd.DataFrame) -> Figure:
@@ -28,12 +48,11 @@ def tickers_frequency(df: pd.DataFrame) -> Figure:
         "x": "Screener",
         "y": "Count",
         "text": "Count",
-        "height": 400,
+        "height": 500,
+        "title": "Shows which screener finds the most tickers",
     }
 
     fig = px.bar(**params)
-    fig.update_xaxes(title="")
-    fig.update_yaxes(title="")
     fig.update_traces(textposition="auto", showlegend=False)
 
     return fig
@@ -53,13 +72,12 @@ def tickers_frequency_group(df: pd.DataFrame) -> Figure:
         "y": "Count",
         "color": "Group",
         "text": "Group",
-        "height": 400,
+        "height": 500,
         "barmode": "group",
+        "title": "Shows number of found tickers distributed by price range and screener type",
     }
 
     fig = px.bar(**params)
-    fig.update_xaxes(title=None)
-    fig.update_yaxes(title=None)
     fig.update_traces(textposition="auto", showlegend=False)
 
     return fig
@@ -93,7 +111,9 @@ def write_html(figs: list[Figure], filename: str) -> None:
 def main(argv):
     tickers = read_tickers()[0]
 
-    figs = [tickers_frequency(tickers), tickers_frequency_group(tickers)]
+    etfs()
+
+    figs = [tickers_frequency(tickers), tickers_frequency_group(tickers), etfs()]
     write_html(figs, "./pages/index.html")
 
 
