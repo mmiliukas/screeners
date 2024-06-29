@@ -70,8 +70,8 @@ jobs:
       - name: report summary and plot the graphs when needed
         if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.plot == 'Yes' }}
         run: |
-          ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
-          ./yahoo-report-plot.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
+          python ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
+          python ./yahoo-report-plot.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
 
           git rev-parse HEAD > .last_report_commit
 
