@@ -4,26 +4,23 @@ on:
   workflow_dispatch:
     inputs:
       expire_after_days:
-        description: 'Number of cache storage in days. Specify "0" if you want to retrieve latest information.'
-        required: false
+        description: Ticker cache expiration in days. '0' disables the cache.
+        required: true
+        type: string
         default: '3'
       plot:
-        description: '1 if summarised plots should be generated or 0 if skipped.'
-        required: false
-        default: '0'
-  # The regular trading hours for the U.S. stock market,
-  # which includes the Nasdaq Stock Market (Nasdaq)
-  # and the New York Stock Exchange (NYSE),
-  # are 9:30 am to 4 pm, except on stock market holidays.
+        description: Plot the diagrams and update the telegram channel?
+        required: true
+        type: choice
+        options:
+          - 'Yes'
+          - 'No'
+        default: 'No'
 
-  # syntax {minute} {hour} {day month} {month} {day week}
   schedule:
-    # 09:00 in local time (in the morning)
-    - cron: '0 6 * * 1-5'
-    # 16:30 in local time (market opened)
+    - cron: '00 06 * * 1-5'
     - cron: '30 13 * * 1-5'
-    # 23:00 in local time (market closed)
-    - cron: '0 20 * * 1-5'
+    - cron: '00 20 * * 1-5'
 
 permissions:
   contents: write
@@ -51,7 +48,7 @@ jobs:
       - if: ${{ github.event.schedule == '30 13 * * 1-5' }}
         run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
 
-      - if: ${{ github.event.schedule == '0 20 * * 1-5' }}
+      - if: ${{ github.event.schedule == '00 20 * * 1-5' }}
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
       - run: ./yahoo.py "$COOKIES"
@@ -67,7 +64,7 @@ jobs:
         run: ./yahoo-report-pages.py
 
       - name: report summary and plot the graphs when needed
-        if: ${{ github.event.schedule == '0 6 * * 1-5' || github.event.inputs.plot == '1' }}
+        if: ${{ github.event.schedule == '00 06 * * 1-5' || github.event.inputs.plot == 'Yes' }}
         run: |
           ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL" "$RUN_TYPE"
           ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
