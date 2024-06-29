@@ -87,5 +87,6 @@ jobs:
           git add ./tickers-etfs.csv
           git add ./tickers-ignored.csv
           git add ./tickers.csv
+          git add ./pages
           git commit -m "$RUN_TYPE"
           git push
