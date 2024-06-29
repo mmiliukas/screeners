@@ -63,6 +63,9 @@ jobs:
           ./yahoo-aggregate.py
           python -m pytest tests/
 
+      - name: generate static HTMLs for pages
+        run: ./yahoo-report-pages.py
+
       - name: report summary and plot the graphs when needed
         if: ${{ github.event.schedule == '0 6 * * 1-5' || github.event.inputs.plot == '1' }}
         run: |
