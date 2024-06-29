@@ -75,7 +75,8 @@ jobs:
 
           git rev-parse HEAD > .last_report_commit
 
-      - run: |
+      - name: commit and push the changes
+        run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
