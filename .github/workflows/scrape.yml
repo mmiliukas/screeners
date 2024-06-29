@@ -40,43 +40,47 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
-
-      - if: ${{ github.event.schedule == '' }}
+      - name: run manually
         run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
 
-      - if: ${{ github.event.schedule == '30 13 * * 1-5' }}
+      - name: run daily
+        if: github.event.schedule == '00 06 * * 1-5'
+        run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
+
+      - name: run pre market
+        if: github.event.schedule == '30 13 * * 1-5'
         run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
 
-      - if: ${{ github.event.schedule == '00 20 * * 1-5' }}
+      - name: run after market
+        if: github.event.schedule == '00 20 * * 1-5'
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
-      - run: ./yahoo.py "$COOKIES"
-        env:
-          COOKIES: ${{ secrets.cookies }}
+      - name: scrape the screeners
+        run: python ./yahoo.py "${{ secrets.cookies }}"
 
-      - run: |
-          ./yahoo-tickers.py ${{ inputs.expire_after_days || 3 }}
-          ./yahoo-aggregate.py
-          python -m pytest tests/
+      - name: download ticker details
+        run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
 
-      - name: generate static HTMLs for pages
-        run: ./yahoo-report-pages.py
+      - name: aggregate all the download data
+        run: python ./yahoo-aggregate.py
+
+      - name: test if collected output is valid
+        run: python -m pytest tests/
 
       - name: report summary and plot the graphs when needed
-        if: ${{ github.event.schedule == '00 06 * * 1-5' || github.event.inputs.plot == 'Yes' }}
+        if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.plot == 'Yes' }}
         run: |
-          ./yahoo-report.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL" "$RUN_TYPE"
-          ./yahoo-report-plot.py "$TELEGRAM_TOKEN" "$TELEGRAM_CHANNEL"
+          ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
+          ./yahoo-report-plot.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
+
           git rev-parse HEAD > .last_report_commit
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
-          TELEGRAM_CHANNEL: ${{ secrets.telegram_channel }}
 
       - run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
           git add .last_report_commit
+
           git add ./first-seen/
           git add ./etfs/
           git add ./runs/
@@ -84,6 +88,6 @@ jobs:
           git add ./tickers-etfs.csv
           git add ./tickers-ignored.csv
           git add ./tickers.csv
-          git add ./pages
+
           git commit -m "$RUN_TYPE"
           git push

@@ -3,6 +3,8 @@ disable_existing_loggers: False
 
 formatters:
   mini:
+    format: "%(message)s"
+  medi:
     format: "%(asctime)s - %(message)s"
   maxi:
     format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -11,7 +13,7 @@ handlers:
   console:
     class: logging.StreamHandler
     level: DEBUG
-    formatter: maxi
+    formatter: mini
     stream: ext://sys.stdout
 
 loggers:
