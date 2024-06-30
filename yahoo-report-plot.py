@@ -10,15 +10,9 @@ import matplotlib.pyplot as plt
 import yaml
 
 from screeners.reporting.plot import (
-    plot_etfs,
-    plot_exchanges,
-    plot_exchanges_by_screener,
-    plot_exchanges_by_sector,
     plot_first_seen,
     plot_first_seen_by_screener,
     plot_ignored,
-    plot_sector,
-    plot_sum,
 )
 from screeners.reporting.read import read_ignored_tickers, read_tickers
 from screeners.telegram import log_to_telegram_image
@@ -58,25 +52,10 @@ def main(argv):
     tickers = read_tickers()[0]
     ignored_tickers = read_ignored_tickers()[0]
 
-    ax1, ax2 = plot_grid(rows=1, cols=2, subplots=[(0, 0), (0, 1)])
-    plot_sum(ax1, tickers)
-    plot_sector(ax2, tickers)
-    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
-
     ax1, ax2 = plot_grid(rows=2, cols=1, subplots=[(0, 0), (1, 0)])
     plot_first_seen(ax1, tickers)
     plot_ignored(ax1, ignored_tickers)
     plot_first_seen_by_screener(ax2, tickers)
-    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
-
-    ax1 = plot_grid()[0]
-    plot_etfs(ax1)
-    log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
-
-    ax1, ax2, ax3 = plot_grid(rows=1, cols=3, subplots=[(0, 0), (0, 1), (0, 2)])
-    plot_exchanges(ax1, tickers, ignored_tickers)
-    plot_exchanges_by_screener(ax2, tickers)
-    plot_exchanges_by_sector(ax3, tickers)
     log_to_telegram_image(plot_to_buffer(), bot_token, channel_id)
 
 

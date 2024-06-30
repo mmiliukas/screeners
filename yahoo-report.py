@@ -23,7 +23,12 @@ faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
 def main(argv):
     bot_token, channel_id, run_type = argv[1:]
 
-    message = f"<b>{run_type}:</b> {date.today().isoformat()} <a href='{faq}'>FAQ</a>"
+    message = (
+        f"<b>{run_type}:</b> "
+        "{date.today().isoformat()} "
+        "<a href='{faq}'>FAQ</a> "
+        "<a href='https://screeners.nepasiduok.com'>https://screeners.nepasiduok.com</a>"
+    )
     log_to_telegram(message, bot_token, channel_id)
 
     tickers, previous_tickers = read_tickers()
