@@ -1,73 +1,76 @@
-name: scrape
+name: 'Scrape Yahoo screeners'
 
 on:
   workflow_dispatch:
     inputs:
       expire_after_days:
-        description: Ticker cache expiration in days. '0' disables the cache.
+        description: 'Ticker cache expiration in days. "0" disables the cache.'
         required: true
-        type: string
+        type: 'string'
         default: '3'
       plot:
-        description: Plot the diagrams and update the telegram channel?
+        description: 'Plot the diagrams and update the telegram channel?'
         required: true
-        type: choice
+        type: 'choice'
         options:
           - 'Yes'
           - 'No'
         default: 'No'
 
   schedule:
-    - cron: '00 06 * * 1-5'
-    - cron: '30 13 * * 1-5'
-    - cron: '00 20 * * 1-5'
+    - cron: "00 06 * * 1-5"
+    - cron: "30 13 * * 1-5"
+    - cron: "00 20 * * 1-5"
 
 permissions:
-  contents: write
+  contents: 'write'
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: 'Checkout sources'
+        uses: 'actions/checkout@v4'
+
+      - name: 'Setup python 3.10'
+        uses: 'actions/setup-python@v5'
         with:
-          python-version: "3.10"
+          python-version: '3.10'
           cache: 'pip'
 
-      - name: install depedencies
+      - name: 'Install depedencies'
         run: |
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - name: run manually
+      - name: 'Run manually'
         run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
 
-      - name: run daily
+      - name: 'Run daily'
         if: github.event.schedule == '00 06 * * 1-5'
         run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
 
-      - name: run pre market
+      - name: 'Run pre market'
         if: github.event.schedule == '30 13 * * 1-5'
         run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
 
-      - name: run after market
+      - name: 'Run after market'
         if: github.event.schedule == '00 20 * * 1-5'
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
-      - name: scrape the screeners
+      - name: 'Scrape the screeners'
         run: python ./yahoo.py "${{ secrets.cookies }}"
 
-      - name: download ticker details
+      - name: 'Download ticker details'
         run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
 
-      - name: aggregate all the download data
+      - name: 'Aggregate all the download data'
         run: python ./yahoo-aggregate.py
 
-      - name: test if collected output is valid
+      - name: 'Test if collected output is valid'
         run: python -m pytest tests/
 
-      - name: report summary and plot the graphs when needed
+      - name: 'Report summary and plot the graphs when needed'
         if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.plot == 'Yes' }}
         run: |
           python ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
@@ -75,7 +78,7 @@ jobs:
 
           git rev-parse HEAD > .last_report_commit
 
-      - name: commit and push the changes
+      - name: 'Commit and push the changes'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
