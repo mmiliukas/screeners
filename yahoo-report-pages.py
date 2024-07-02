@@ -11,6 +11,7 @@ import plotly.express as px
 import plotly.io as pio
 import yaml
 import yfinance as yf
+from matplotlib.pyplot import bar
 from plotly.graph_objects import Figure
 
 from screeners.config import config
@@ -39,15 +40,33 @@ def days_ago(days: int) -> date:
     return today - timedelta(days=days)
 
 
-def first_seen(tickers: pd.DataFrame) -> Figure:
-    tickers = tickers[tickers["Screener First Seen"] >= days_ago(60)]
+def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
+    """
+    Plot tickers by first seen date and include the ignored ones too.
+    """
 
-    count = tickers.groupby("Screener First Seen")["Symbol"].count().to_frame()
-    count["Moving average 7 days"] = (
-        count.rolling(window=7).mean()["Symbol"].apply(lambda x: round(x, 0))
+    max_age = days_ago(30)
+
+    def group_first_seen(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
+        df = df[df[column] >= max_age]
+        return df.groupby(column)["Symbol"].count().to_frame(name=name)
+
+    a = group_first_seen(tickers, "Screener First Seen", "New")
+    b = group_first_seen(ignored_tickers, "Date", "Ignored")
+
+    fig = px.bar(
+        a.join([b], how="outer"),
+        text="value",
+        barmode="stack",
+        title="Ticker appearance (last 30 days)",
+        color_discrete_map={"New": "green", "Ignored": "red"},
+        # hover_data={"value": False},
+        # hover_name="value",
     )
 
-    fig = px.line(count)
+    fig.update_traces(showlegend=False)
+    fig.update_layout(xaxis_title="", yaxis_title="")
+
     return fig
 
 
@@ -257,7 +276,7 @@ def main(argv):
     ignored_tickers = read_ignored_tickers()[0]
 
     figs = [
-        first_seen(tickers),
+        first_seen(tickers, ignored_tickers),
         tickers_frequency(tickers),
         tickers_frequency_group(tickers),
         etfs(),
