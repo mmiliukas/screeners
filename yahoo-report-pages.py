@@ -40,12 +40,34 @@ def days_ago(days: int) -> date:
     return today - timedelta(days=days)
 
 
+def add_weekend_shapes(fig, dates):
+    shapes = []
+    for date in dates:
+        if date.weekday() < 5:
+            continue
+        shapes.append(
+            dict(
+                type="rect",
+                xref="x",
+                yref="paper",
+                x0=date + pd.Timedelta(days=-0.5),
+                x1=date + pd.Timedelta(days=+0.5),
+                y0=0,
+                y1=1,
+                fillcolor="rgba(0, 0, 0, 0.2)",
+                line=dict(width=0),
+                layer="below",
+            )
+        )
+    return shapes
+
+
 def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
     """
     Plot tickers by first seen date and include the ignored ones too.
     """
 
-    max_age = days_ago(30)
+    max_age = days_ago(90)
 
     def group_first_seen(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
         df = df[df[column] >= max_age]
@@ -54,18 +76,35 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
     a = group_first_seen(tickers, "Screener First Seen", "New")
     b = group_first_seen(ignored_tickers, "Date", "Ignored")
 
+    b["Ignored"] = b["Ignored"] * -1
+    c = a.join([b], how="outer")
     fig = px.bar(
-        a.join([b], how="outer"),
+        c,
         text="value",
-        barmode="stack",
+        barmode="relative",
         title="Ticker appearance (last 30 days)",
         color_discrete_map={"New": "green", "Ignored": "red"},
-        # hover_data={"value": False},
-        # hover_name="value",
     )
 
-    fig.update_traces(showlegend=False)
-    fig.update_layout(xaxis_title="", yaxis_title="")
+    ds = pd.date_range(start=c.index.min(), end=c.index.max())
+    # fig.update_traces(showlegend=False)
+    shapes = add_weekend_shapes(fig, ds)
+    fig.update_layout(
+        xaxis_title="Date",
+        yaxis_title="Count",
+        shapes=shapes,
+    )
+    fig.update_xaxes(
+        rangeselector=dict(
+            buttons=list(
+                [
+                    dict(count=1, label="1m", step="month", stepmode="backward"),
+                    dict(count=2, label="2m", step="month", stepmode="backward"),
+                    dict(step="all"),
+                ]
+            )
+        )
+    )
 
     return fig
 
