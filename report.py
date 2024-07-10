@@ -44,9 +44,9 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
     b["ignored"] = -b["ignored"]
 
     c = a.join([b], how="outer")
-    c = c.reset_index(names="date")
+    c.index.name = "date"
 
-    c["date_timestamp"] = c["date"].apply(date_to_timestamp)
+    c["date_timestamp"] = c.index.to_series().apply(date_to_timestamp)
     c["ignored"] = c["ignored"].fillna(0).astype(int)
     c["new"] = c["new"].fillna(0).astype(int)
 
