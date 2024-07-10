@@ -1,0 +1,68 @@
+#!/usr/bin/env python
+
+from datetime import date, datetime, timedelta
+
+import pandas as pd
+import pandas_market_calendars as mcal
+
+from screeners.reporting.read import read_ignored_tickers, read_tickers
+
+
+def date_to_timestamp(value: date) -> int:
+    midnight = datetime.combine(value, datetime.min.time())
+    return int(midnight.timestamp() * 1_000)
+
+
+def calendar() -> pd.DataFrame:
+    start_date = date.today() - timedelta(days=365)
+    end_date = date.today() + timedelta(days=365)
+
+    nyse = mcal.get_calendar("NYSE")
+    schedule = nyse.schedule(start_date=start_date, end_date=end_date)
+
+    range = pd.date_range(start=start_date, end=end_date, freq="D")
+
+    df = pd.DataFrame(index=range)
+    df.index.name = "date"
+
+    df["date_timestamp"] = df.index.to_series().apply(date_to_timestamp)
+    df["is_weekend"] = df.index.to_series().apply(lambda x: x.weekday() >= 5)
+    df["is_holiday"] = ~df["is_weekend"] & ~df.index.isin(schedule.index)
+    df["is_non_working_day"] = df["is_weekend"] | df["is_holiday"]
+
+    return df
+
+
+def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataFrame:
+
+    def group_first_seen(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
+        return df.groupby(column)["Symbol"].count().to_frame(name=name)
+
+    a = group_first_seen(tickers, "Screener First Seen", "new")
+    b = group_first_seen(ignored_tickers, "Date", "ignored")
+
+    b["ignored"] = -b["ignored"]
+
+    c = a.join([b], how="outer")
+    c = c.reset_index(names="date")
+
+    c["date_timestamp"] = c["date"].apply(date_to_timestamp)
+    c["ignored"] = c["ignored"].fillna(0).astype(int)
+    c["new"] = c["new"].fillna(0).astype(int)
+
+    return c
+
+
+def main() -> None:
+    tickers = read_tickers()
+    ignored_tickers = read_ignored_tickers()
+
+    df = calendar()
+    df.to_csv("./reports/calendar.csv", float_format=".0f")
+
+    df = first_seen(tickers[0], ignored_tickers[0])
+    df.to_csv("./reports/first-seen.csv", float_format=".0f")
+
+
+if __name__ == "__main__":
+    main()
