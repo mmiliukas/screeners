@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from datetime import date, datetime, timedelta
+from os import sep
 
 import pandas as pd
 import pandas_market_calendars as mcal
@@ -35,11 +36,17 @@ def calendar() -> pd.DataFrame:
 
 def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataFrame:
 
-    def group_first_seen(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
-        return df.groupby(column)["Symbol"].count().to_frame(name=name)
+    def concat(series, separator=", ") -> str:
+        return separator.join(series)
 
-    a = group_first_seen(tickers, "Screener First Seen", "new")
-    b = group_first_seen(ignored_tickers, "Date", "ignored")
+    def group(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
+        params = {}
+        params[name] = ("Symbol", "count")
+        params[f"{name}_tickers"] = ("Symbol", concat)
+        return df.groupby(column).agg(**params)
+
+    a = group(tickers, "Screener First Seen", "new")
+    b = group(ignored_tickers, "Date", "ignored")
 
     b["ignored"] = -b["ignored"]
 
