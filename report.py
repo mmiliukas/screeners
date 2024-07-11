@@ -54,6 +54,8 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
 
     c["ignored"] = c["ignored"].fillna(0).astype(int)
     c["new"] = c["new"].fillna(0).astype(int)
+    c["ignored_tickers"] = c["ignored_tickers"].fillna("")
+    c["new_tickers"] = c["new_tickers"].fillna("")
 
     full_date_range = pd.date_range(start=c.index.min(), end=c.index.max())
 
