@@ -52,15 +52,15 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
 
     c = a.join([b], how="outer")
 
-    c["ignored"] = c["ignored"].fillna(0).astype(int)
-    c["new"] = c["new"].fillna(0).astype(int)
-    c["ignored_tickers"] = c["ignored_tickers"].fillna("")
-    c["new_tickers"] = c["new_tickers"].fillna("")
-
     full_date_range = pd.date_range(start=c.index.min(), end=c.index.max())
 
-    c = c.reindex(full_date_range, fill_value=0)
+    c = c.reindex(full_date_range)
     c.index.name = "date"
+
+    c["ignored"] = c["ignored"].fillna(0).astype(int)
+    c["new"] = c["new"].fillna(0).astype(int)
+    c["ignored_tickers"] = c["ignored_tickers"].fillna("").astype(str)
+    c["new_tickers"] = c["new_tickers"].fillna("").astype(str)
 
     c["date_timestamp"] = c.index.to_series().apply(date_to_timestamp)
 
