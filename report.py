@@ -72,8 +72,21 @@ def etfs() -> pd.DataFrame:
     dfs = []
     for ticker in SECTOR_ETF.values():
         df = yf.download(ticker, period="1y", interval="1d", progress=False)
-        dfs.append(df[["Close", "Volume"]])
-    return pd.concat(dfs)
+        df["Symbol"] = ticker
+        df["Sector"] = ETF_SECTOR[ticker]
+        dfs.append(df[["Close", "Volume", "Symbol", "Sector"]])
+    result = pd.concat(dfs)
+    result = result.reset_index(names="Date")
+    result = result.rename(
+        columns={
+            "Date": "date",
+            "Close": "close",
+            "Volume": "volume",
+            "Symbol": "symbol",
+            "Sector": "sector",
+        }
+    )
+    return result
 
 
 def main() -> None:
