@@ -76,10 +76,9 @@ def etfs() -> pd.DataFrame:
         df["Sector"] = ETF_SECTOR[ticker]
         dfs.append(df[["Close", "Volume", "Symbol", "Sector"]])
     result = pd.concat(dfs)
-    result = result.reset_index(names="Date")
+    result.index.name = "date"
     result = result.rename(
         columns={
-            "Date": "date",
             "Close": "close",
             "Volume": "volume",
             "Symbol": "symbol",
@@ -100,7 +99,6 @@ def main() -> None:
     df.to_csv("./reports/first-seen.csv", float_format="%.0f")
 
     df = etfs()
-    print(df.info())
     df.to_csv("./reports/etfs.csv", float_format="%.2f")
 
 
