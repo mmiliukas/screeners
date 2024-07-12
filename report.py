@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
 from datetime import date, datetime, timedelta
-from os import sep
 
 import pandas as pd
 import pandas_market_calendars as mcal
+import yfinance as yf
 
+from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.reporting.read import read_ignored_tickers, read_tickers
 
 
@@ -67,15 +68,27 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
     return c
 
 
+def etfs() -> pd.DataFrame:
+    dfs = []
+    for ticker in SECTOR_ETF.values():
+        df = yf.download(ticker, period="1y", interval="1d", progress=False)
+        dfs.append(df[["Close", "Volume"]])
+    return pd.concat(dfs)
+
+
 def main() -> None:
     tickers = read_tickers()
     ignored_tickers = read_ignored_tickers()
 
     df = calendar()
-    df.to_csv("./reports/calendar.csv", float_format=".0f")
+    df.to_csv("./reports/calendar.csv", float_format="%.0f")
 
     df = first_seen(tickers[0], ignored_tickers[0])
-    df.to_csv("./reports/first-seen.csv", float_format=".0f")
+    df.to_csv("./reports/first-seen.csv", float_format="%.0f")
+
+    df = etfs()
+    print(df.info())
+    df.to_csv("./reports/etfs.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
