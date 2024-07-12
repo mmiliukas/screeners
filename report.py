@@ -68,23 +68,11 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
     return c
 
 
-def etfs() -> pd.DataFrame:
-    dfs = []
-    for ticker in SECTOR_ETF.values():
-        df = yf.download(ticker, period="1y", interval="1d", progress=False)
-        df["Symbol"] = ticker
-        df["Sector"] = ETF_SECTOR[ticker]
-        dfs.append(df[["Close", "Volume", "Symbol", "Sector"]])
-    result = pd.concat(dfs)
+def etfs_close() -> pd.DataFrame:
+    tickers = ",".join(SECTOR_ETF.values())
+    df = yf.download(tickers, period="1y", interval="1d", progress=False)
+    result = df["Close"]
     result.index.name = "date"
-    result = result.rename(
-        columns={
-            "Close": "close",
-            "Volume": "volume",
-            "Symbol": "symbol",
-            "Sector": "sector",
-        }
-    )
     return result
 
 
@@ -98,8 +86,8 @@ def main() -> None:
     df = first_seen(tickers[0], ignored_tickers[0])
     df.to_csv("./reports/first-seen.csv", float_format="%.0f")
 
-    df = etfs()
-    df.to_csv("./reports/etfs.csv", float_format="%.2f")
+    df = etfs_close()
+    df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
