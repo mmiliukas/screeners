@@ -73,6 +73,11 @@ def etfs_close() -> pd.DataFrame:
     df = yf.download(tickers, period="1y", interval="1d", progress=False)
     result = df["Close"]
     result.index.name = "date"
+
+    def rename_column(name: str) -> str:
+        return f"{name} - {ETF_SECTOR[name]}"
+
+    result.columns = [rename_column(col) for col in result.columns]
     return result
 
 
