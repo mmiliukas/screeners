@@ -10,8 +10,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.io as pio
 import yaml
-import yfinance as yf
-from matplotlib.pyplot import bar
 from plotly.graph_objects import Figure
 
 from screeners.config import config
@@ -60,53 +58,6 @@ def add_weekend_shapes(fig, dates):
             )
         )
     return shapes
-
-
-def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
-    """
-    Plot tickers by first seen date and include the ignored ones too.
-    """
-
-    max_age = days_ago(90)
-
-    def group_first_seen(df: pd.DataFrame, column: str, name: str) -> pd.DataFrame:
-        df = df[df[column] >= max_age]
-        return df.groupby(column)["Symbol"].count().to_frame(name=name)
-
-    a = group_first_seen(tickers, "Screener First Seen", "New")
-    b = group_first_seen(ignored_tickers, "Date", "Ignored")
-
-    b["Ignored"] = b["Ignored"] * -1
-    c = a.join([b], how="outer")
-    fig = px.bar(
-        c,
-        text="value",
-        barmode="relative",
-        title="Ticker appearance (last 30 days)",
-        color_discrete_map={"New": "green", "Ignored": "red"},
-    )
-
-    ds = pd.date_range(start=c.index.min(), end=c.index.max())
-    # fig.update_traces(showlegend=False)
-    shapes = add_weekend_shapes(fig, ds)
-    fig.update_layout(
-        xaxis_title="Date",
-        yaxis_title="Count",
-        shapes=shapes,
-    )
-    fig.update_xaxes(
-        rangeselector=dict(
-            buttons=list(
-                [
-                    dict(count=1, label="1m", step="month", stepmode="backward"),
-                    dict(count=2, label="2m", step="month", stepmode="backward"),
-                    dict(step="all"),
-                ]
-            )
-        )
-    )
-
-    return fig
 
 
 def exchanges_by_sector(tickers: pd.DataFrame) -> Figure:
@@ -190,24 +141,6 @@ def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
     fig.update_traces(textposition="outside")
 
     return fig
-
-
-def etfs() -> Figure:
-    dfs = []
-    for ticker in SECTOR_ETF.values():
-        df = yf.download(ticker, period="3mo", interval="1d", progress=False)
-        df["Symbol"] = " - ".join([ticker, ETF_SECTOR[ticker]])
-        dfs.append(df)
-
-    params = {
-        "data_frame": pd.concat(dfs),
-        "y": "Close",
-        "color": "Symbol",
-        "height": 500,
-        "title": "ETF for the last 3 months",
-    }
-
-    return px.line(**params)
 
 
 def tickers_by_sector(tickers: pd.DataFrame) -> Figure:
@@ -315,10 +248,8 @@ def main(argv):
     ignored_tickers = read_ignored_tickers()[0]
 
     figs = [
-        first_seen(tickers, ignored_tickers),
         tickers_frequency(tickers),
         tickers_frequency_group(tickers),
-        etfs(),
         tickers_by_sector(tickers),
         exchanges(tickers, ignored_tickers),
         exchanges_by_screener(tickers),

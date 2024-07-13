@@ -101,6 +101,14 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
+def pnk_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
+    df = tickers[tickers["Exchange"] == "PNK"]
+    df = df.groupby(by=["Sector"])["Symbol"].count().to_frame()
+    df = df.rename(columns={"Symbol": "symbol"})
+    df.index.name = "sector"
+    return df
+
+
 # def tickers_frequency(df: pd.DataFrame) -> Figure:
 #     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
 #     grouped = grouped.to_frame("Count").reset_index(names="Screener")
@@ -116,20 +124,23 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    tickers = read_tickers()
+    tickers = read_tickers()[0]
     ignored_tickers = read_ignored_tickers()
 
     df = calendar()
     df.to_csv("./reports/calendar.csv", float_format="%.0f")
 
-    df = first_seen(tickers[0], ignored_tickers[0])
+    df = first_seen(tickers, ignored_tickers[0])
     df.to_csv("./reports/first-seen.csv", float_format="%.0f")
 
     df = etfs_close()
     df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
 
-    df = tickers_by_sector(tickers[0])
+    df = tickers_by_sector(tickers)
     df.to_csv("./reports/tickers-sector.csv", float_format="%.2f")
+
+    df = pnk_by_sector(tickers)
+    df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
