@@ -1,0 +1,33 @@
+,sector,group,symbol,screener
+0,Basic Materials,Loosers,161,161
+1,Basic Materials,Random,55,55
+2,Basic Materials,Winners,205,205
+3,Communication Services,Loosers,65,65
+4,Communication Services,Random,28,28
+5,Communication Services,Winners,51,51
+6,Consumer Cyclical,Loosers,121,121
+7,Consumer Cyclical,Random,38,38
+8,Consumer Cyclical,Winners,72,72
+9,Consumer Defensive,Loosers,55,55
+10,Consumer Defensive,Random,24,24
+11,Consumer Defensive,Winners,45,45
+12,Energy,Loosers,29,29
+13,Energy,Random,40,40
+14,Energy,Winners,36,36
+15,Financial Services,Loosers,54,54
+16,Financial Services,Random,34,34
+17,Financial Services,Winners,87,87
+18,Healthcare,Loosers,434,434
+19,Healthcare,Random,101,101
+20,Healthcare,Winners,388,388
+21,Industrials,Loosers,98,98
+22,Industrials,Random,81,81
+23,Industrials,Winners,83,83
+24,Real Estate,Loosers,23,23
+25,Real Estate,Random,4,4
+26,Real Estate,Winners,23,23
+27,Technology,Loosers,214,214
+28,Technology,Random,110,110
+29,Technology,Winners,174,174
+30,Utilities,Loosers,8,8
+31,Utilities,Winners,9,9

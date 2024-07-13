@@ -6,8 +6,11 @@ import pandas as pd
 import pandas_market_calendars as mcal
 import yfinance as yf
 
+from screeners.config import config
 from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.reporting.read import read_ignored_tickers, read_tickers
+
+screener_names = [screener["name"] for screener in config["screeners"]]
 
 
 def date_to_timestamp(value: date) -> int:
@@ -81,6 +84,37 @@ def etfs_close() -> pd.DataFrame:
     return result
 
 
+def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
+    df = pd.DataFrame({"sector": [], "symbol": [], "screener": [], "group": []})
+
+    for idx, row in tickers.iterrows():
+        for name in screener_names:
+            if row[name] > 0:
+                df.loc[len(df)] = [
+                    row["Sector"],
+                    row["Symbol"],
+                    name,
+                    name.split(" ")[0],
+                ]
+
+    result = df.groupby(by=["sector", "group"]).count().reset_index()
+    return result
+
+
+# def tickers_frequency(df: pd.DataFrame) -> Figure:
+#     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
+#     grouped = grouped.to_frame("Count").reset_index(names="Screener")
+
+
+# def tickers_frequency_group(df: pd.DataFrame) -> Figure:
+#     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
+#     grouped = grouped.to_frame("Count").reset_index(names="Screener")
+#     grouped["Group"] = grouped["Screener"].apply(lambda x: x.split(" ")[0])
+#     grouped["Price Range"] = grouped["Screener"].apply(lambda x: x.split(" ")[1])
+#     grouped["Price Range #"] = grouped["Screener"].apply(lambda x: int(x.split(" ")[1]))
+#     grouped.sort_values(by=["Price Range #", "Group"], inplace=True)
+
+
 def main() -> None:
     tickers = read_tickers()
     ignored_tickers = read_ignored_tickers()
@@ -93,6 +127,9 @@ def main() -> None:
 
     df = etfs_close()
     df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
+
+    df = tickers_by_sector(tickers[0])
+    df.to_csv("./reports/tickers-sector.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
