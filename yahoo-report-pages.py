@@ -13,7 +13,6 @@ import yaml
 from plotly.graph_objects import Figure
 
 from screeners.config import config
-from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.reporting.read import read_ignored_tickers, read_tickers
 
 with open("config-logging.yml", "r") as config_logging:
@@ -58,38 +57,6 @@ def add_weekend_shapes(fig, dates):
             )
         )
     return shapes
-
-
-def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
-    df1 = tickers[["Exchange"]].copy(deep=True)
-    df1["Type"] = "Unique valid tickers"
-    df1["Count"] = 1
-    df1.fillna("MISSING", inplace=True)
-
-    ignored = [read_json(f"tickers/{x}.json") for x in ignored_tickers["Symbol"].values]
-    ignored = [x[0].get("exchange") for x in ignored]
-
-    df2 = pd.DataFrame({"Exchange": ignored})
-    df2["Type"] = "Ignored tickers"
-    df2["Count"] = 1
-    df2.fillna("MISSING", inplace=True)
-
-    df = pd.concat([df1, df2])
-    df = df.groupby(by=["Exchange", "Type"])["Count"].count().unstack()
-    df.sort_values(by="Unique valid tickers", ascending=False, inplace=True)
-
-    params = {
-        "data_frame": df,
-        "height": 500,
-        "barmode": "group",
-        "title": "Yahoo exchanges",
-        "text": "value",
-    }
-
-    fig = px.bar(**params)
-    fig.update_traces(textposition="outside")
-
-    return fig
 
 
 def tickers_by_sector(tickers: pd.DataFrame) -> Figure:
@@ -200,7 +167,6 @@ def main(argv):
         tickers_frequency(tickers),
         tickers_frequency_group(tickers),
         tickers_by_sector(tickers),
-        exchanges(tickers, ignored_tickers),
     ]
 
     write_html(figs, "./pages/index.html")
