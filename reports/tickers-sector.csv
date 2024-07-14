@@ -1,33 +1,33 @@
-sector,group,symbol,screener
-Basic Materials,Loosers,161,161
-Basic Materials,Random,55,55
-Basic Materials,Winners,205,205
-Communication Services,Loosers,65,65
-Communication Services,Random,28,28
-Communication Services,Winners,51,51
-Consumer Cyclical,Loosers,121,121
-Consumer Cyclical,Random,38,38
-Consumer Cyclical,Winners,72,72
-Consumer Defensive,Loosers,55,55
-Consumer Defensive,Random,24,24
-Consumer Defensive,Winners,45,45
-Energy,Loosers,29,29
-Energy,Random,40,40
-Energy,Winners,36,36
-Financial Services,Loosers,54,54
-Financial Services,Random,34,34
-Financial Services,Winners,87,87
-Healthcare,Loosers,434,434
-Healthcare,Random,101,101
-Healthcare,Winners,388,388
-Industrials,Loosers,98,98
-Industrials,Random,81,81
-Industrials,Winners,83,83
-Real Estate,Loosers,23,23
-Real Estate,Random,4,4
-Real Estate,Winners,23,23
-Technology,Loosers,214,214
-Technology,Random,110,110
-Technology,Winners,174,174
-Utilities,Loosers,8,8
-Utilities,Winners,9,9
+sector,group,symbol
+Basic Materials,Loosers,160
+Basic Materials,Random,55
+Basic Materials,Winners,205
+Communication Services,Loosers,65
+Communication Services,Random,28
+Communication Services,Winners,51
+Consumer Cyclical,Loosers,121
+Consumer Cyclical,Random,38
+Consumer Cyclical,Winners,72
+Consumer Defensive,Loosers,55
+Consumer Defensive,Random,24
+Consumer Defensive,Winners,45
+Energy,Loosers,29
+Energy,Random,40
+Energy,Winners,36
+Financial Services,Loosers,54
+Financial Services,Random,34
+Financial Services,Winners,87
+Healthcare,Loosers,430
+Healthcare,Random,101
+Healthcare,Winners,390
+Industrials,Loosers,98
+Industrials,Random,81
+Industrials,Winners,83
+Real Estate,Loosers,23
+Real Estate,Random,4
+Real Estate,Winners,23
+Technology,Loosers,214
+Technology,Random,110
+Technology,Winners,174
+Utilities,Loosers,8
+Utilities,Winners,9

@@ -108,6 +108,7 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
 
     result = df.groupby(by=["sector", "group"]).count().reset_index()
     result = result.set_index("sector")
+    result = result[["group", "symbol"]]
 
     return result
 
