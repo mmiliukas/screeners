@@ -1,33 +1,12 @@
-sector,group,symbol
-Basic Materials,Loosers,160
-Basic Materials,Random,55
-Basic Materials,Winners,205
-Communication Services,Loosers,65
-Communication Services,Random,28
-Communication Services,Winners,51
-Consumer Cyclical,Loosers,121
-Consumer Cyclical,Random,38
-Consumer Cyclical,Winners,72
-Consumer Defensive,Loosers,55
-Consumer Defensive,Random,24
-Consumer Defensive,Winners,45
-Energy,Loosers,29
-Energy,Random,40
-Energy,Winners,36
-Financial Services,Loosers,54
-Financial Services,Random,34
-Financial Services,Winners,87
-Healthcare,Loosers,430
-Healthcare,Random,101
-Healthcare,Winners,390
-Industrials,Loosers,98
-Industrials,Random,81
-Industrials,Winners,83
-Real Estate,Loosers,23
-Real Estate,Random,4
-Real Estate,Winners,23
-Technology,Loosers,214
-Technology,Random,110
-Technology,Winners,174
-Utilities,Loosers,8
-Utilities,Winners,9
+sector,Loosers,Random,Winners
+Basic Materials,160.00,55.00,205.00
+Communication Services,65.00,28.00,51.00
+Consumer Cyclical,121.00,38.00,72.00
+Consumer Defensive,55.00,24.00,45.00
+Energy,29.00,40.00,36.00
+Financial Services,54.00,34.00,87.00
+Healthcare,430.00,101.00,390.00
+Industrials,98.00,81.00,83.00
+Real Estate,23.00,4.00,23.00
+Technology,214.00,110.00,174.00
+Utilities,8.00,0.00,9.00

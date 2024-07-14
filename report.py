@@ -109,6 +109,8 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     result = df.groupby(by=["sector", "group"]).count().reset_index()
     result = result.set_index("sector")
     result = result[["group", "symbol"]]
+    result = result.pivot(columns="group", values="symbol")
+    result = result.fillna(0)
 
     return result
 
@@ -188,6 +190,8 @@ def main() -> None:
     df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
 
     df = tickers_by_sector(tickers)
+    print(df.info())
+    print(df.head(10))
     df.to_csv("./reports/tickers-sector.csv", float_format="%.2f")
 
     df = pnk_by_sector(tickers)
