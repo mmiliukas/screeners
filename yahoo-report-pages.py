@@ -60,57 +60,6 @@ def add_weekend_shapes(fig, dates):
     return shapes
 
 
-def exchanges_by_sector(tickers: pd.DataFrame) -> Figure:
-    filtered = tickers[["Exchange", "Sector"]].copy(deep=True)
-    filtered = filtered[filtered["Exchange"] == "PNK"]
-    filtered["Count"] = 1
-
-    grouped = filtered.groupby(["Sector", "Exchange"])["Count"].sum().unstack()
-    grouped = grouped.sort_values("PNK", ascending=False)
-
-    params = {
-        "data_frame": grouped,
-        "height": 500,
-        "barmode": "group",
-        "title": "PNK per sector",
-        "text": "value",
-    }
-
-    fig = px.bar(**params)
-    fig.update_traces(textposition="outside")
-
-    return fig
-
-
-def exchanges_by_screener(tickers: pd.DataFrame) -> Figure:
-    names = [x["name"] for x in config["screeners"]]
-
-    filtered = tickers[["Exchange"] + names].copy(deep=True)
-    filtered = filtered[filtered["Exchange"] == "PNK"]
-
-    for name in names:
-        filtered[name] = filtered[name].apply(lambda x: 1 if x > 0 else 0)
-
-    stacked = filtered.set_index("Exchange").stack().to_frame("Count")  # type: ignore
-    stacked = stacked.reset_index(names=["Exchange", "Screener"])
-
-    grouped = stacked.groupby(["Screener", "Exchange"])["Count"].sum().unstack()
-    grouped = grouped.sort_values("PNK", ascending=False)
-
-    params = {
-        "data_frame": grouped,
-        "height": 500,
-        "barmode": "group",
-        "title": "PNK per screener",
-        "text": "value",
-    }
-
-    fig = px.bar(**params)
-    fig.update_traces(textposition="outside")
-
-    return fig
-
-
 def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> Figure:
     df1 = tickers[["Exchange"]].copy(deep=True)
     df1["Type"] = "Unique valid tickers"
@@ -252,8 +201,6 @@ def main(argv):
         tickers_frequency_group(tickers),
         tickers_by_sector(tickers),
         exchanges(tickers, ignored_tickers),
-        exchanges_by_screener(tickers),
-        exchanges_by_sector(tickers),
     ]
 
     write_html(figs, "./pages/index.html")

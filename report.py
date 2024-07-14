@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import json
 from datetime import date, datetime, timedelta
 
 import pandas as pd
@@ -11,6 +12,14 @@ from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 from screeners.reporting.read import read_ignored_tickers, read_tickers
 
 screener_names = [screener["name"] for screener in config["screeners"]]
+
+
+def read_json(name):
+    try:
+        with open(name, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return [{}]
 
 
 def date_to_timestamp(value: date) -> int:
@@ -126,6 +135,28 @@ def pnk_by_screener(tickers: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataFrame:
+    df1 = tickers[["Exchange"]].copy(deep=True)
+    df1["type"] = "filtered"
+    df1["count"] = 1
+    df1.fillna("MISSING", inplace=True)
+
+    ignored = [read_json(f"tickers/{x}.json") for x in ignored_tickers["Symbol"].values]
+    ignored = [x[0].get("exchange") for x in ignored]
+
+    df2 = pd.DataFrame({"Exchange": ignored})
+    df2["type"] = "ignored"
+    df2["count"] = 1
+    df2.fillna("MISSING", inplace=True)
+
+    df = pd.concat([df1, df2])
+    df = df.groupby(by=["Exchange", "type"])["count"].count().unstack()
+    df.index.name = "exchange"
+    df.fillna(0, inplace=True)
+
+    return df
+
+
 # def tickers_frequency(df: pd.DataFrame) -> Figure:
 #     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
 #     grouped = grouped.to_frame("Count").reset_index(names="Screener")
@@ -142,12 +173,12 @@ def pnk_by_screener(tickers: pd.DataFrame) -> pd.DataFrame:
 
 def main() -> None:
     tickers = read_tickers()[0]
-    ignored_tickers = read_ignored_tickers()
+    ignored_tickers = read_ignored_tickers()[0]
 
     df = calendar()
     df.to_csv("./reports/calendar.csv", float_format="%.0f")
 
-    df = first_seen(tickers, ignored_tickers[0])
+    df = first_seen(tickers, ignored_tickers)
     df.to_csv("./reports/first-seen.csv", float_format="%.0f")
 
     df = etfs_close()
@@ -161,6 +192,11 @@ def main() -> None:
 
     df = pnk_by_screener(tickers)
     df.to_csv("./reports/pnk-by-screener.csv", float_format="%.2f")
+
+    df = exchanges(tickers, ignored_tickers)
+    print(df.info())
+    print(df.head(10))
+    df.to_csv("./reports/exchanges.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
