@@ -59,37 +59,6 @@ def add_weekend_shapes(fig, dates):
     return shapes
 
 
-def tickers_by_sector(tickers: pd.DataFrame) -> Figure:
-    df = pd.DataFrame({"Sector": [], "Symbol": [], "Screener": [], "Group": []})
-
-    for idx, row in tickers.iterrows():
-        for name in screener_names:
-            if row[name] > 0:
-                df.loc[len(df)] = [
-                    row["Sector"],
-                    row["Symbol"],
-                    name,
-                    name.split(" ")[0],
-                ]
-
-    result = df.groupby(by=["Sector", "Group"]).count().reset_index()  # type: ignore
-
-    params = {
-        "data_frame": result,
-        "x": "Sector",
-        "y": "Symbol",
-        "color": "Group",
-        "height": 500,
-        "barmode": "stack",
-        "title": "Ticker group (winner, random, looser) distribution per sector",
-        "text": "Group",
-    }
-
-    fig = px.bar(**params)
-    fig.update_traces(textposition="auto")
-    return fig
-
-
 def tickers_frequency(df: pd.DataFrame) -> Figure:
     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
     grouped = grouped.to_frame("Count").reset_index(names="Screener")
@@ -166,7 +135,6 @@ def main(argv):
     figs = [
         tickers_frequency(tickers),
         tickers_frequency_group(tickers),
-        tickers_by_sector(tickers),
     ]
 
     write_html(figs, "./pages/index.html")

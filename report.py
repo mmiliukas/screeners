@@ -115,6 +115,17 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
+def tickers_by_price(tickers: pd.DataFrame) -> pd.DataFrame:
+    df = tickers[screener_names].astype(bool).sum(axis=0)
+    df = df.to_frame("count").reset_index(names="screener")
+    df["group"] = df["screener"].apply(lambda x: x.split(" ")[0])
+    df["price_range"] = df["screener"].apply(lambda x: x.split(" ")[1])
+    df.set_index("price_range", inplace=True)
+    df = df.pivot(columns="group", values="count")
+
+    return df
+
+
 def pnk_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     df = tickers[tickers["Exchange"] == "PNK"]
     df = df.groupby(by=["Sector"])["Symbol"].count().to_frame()
@@ -190,9 +201,10 @@ def main() -> None:
     df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
 
     df = tickers_by_sector(tickers)
-    print(df.info())
-    print(df.head(10))
     df.to_csv("./reports/tickers-sector.csv", float_format="%.2f")
+
+    df = tickers_by_price(tickers)
+    df.to_csv("./reports/tickers-price.csv", float_format="%.2f")
 
     df = pnk_by_sector(tickers)
     df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")
