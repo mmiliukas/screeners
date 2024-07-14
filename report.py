@@ -126,6 +126,14 @@ def tickers_by_price(tickers: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def tickers_by_screener(tickers: pd.DataFrame) -> pd.DataFrame:
+    df = tickers[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
+    df = df.to_frame("count").reset_index(names="screener")
+    df.set_index("screener", inplace=True)
+
+    return df
+
+
 def pnk_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     df = tickers[tickers["Exchange"] == "PNK"]
     df = df.groupby(by=["Sector"])["Symbol"].count().to_frame()
@@ -173,20 +181,6 @@ def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataFr
     return df
 
 
-# def tickers_frequency(df: pd.DataFrame) -> Figure:
-#     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
-#     grouped = grouped.to_frame("Count").reset_index(names="Screener")
-
-
-# def tickers_frequency_group(df: pd.DataFrame) -> Figure:
-#     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
-#     grouped = grouped.to_frame("Count").reset_index(names="Screener")
-#     grouped["Group"] = grouped["Screener"].apply(lambda x: x.split(" ")[0])
-#     grouped["Price Range"] = grouped["Screener"].apply(lambda x: x.split(" ")[1])
-#     grouped["Price Range #"] = grouped["Screener"].apply(lambda x: int(x.split(" ")[1]))
-#     grouped.sort_values(by=["Price Range #", "Group"], inplace=True)
-
-
 def main() -> None:
     tickers = read_tickers()[0]
     ignored_tickers = read_ignored_tickers()[0]
@@ -205,6 +199,11 @@ def main() -> None:
 
     df = tickers_by_price(tickers)
     df.to_csv("./reports/tickers-price.csv", float_format="%.2f")
+
+    df = tickers_by_screener(tickers)
+    print(df.info())
+    print(df.head(10))
+    df.to_csv("./reports/tickers-screener.csv", float_format="%.2f")
 
     df = pnk_by_sector(tickers)
     df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")

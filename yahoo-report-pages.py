@@ -13,7 +13,7 @@ import yaml
 from plotly.graph_objects import Figure
 
 from screeners.config import config
-from screeners.reporting.read import read_ignored_tickers, read_tickers
+from screeners.reporting.read import read_tickers
 
 with open("config-logging.yml", "r") as config_logging:
     logging.captureWarnings(True)
@@ -35,28 +35,6 @@ def read_json(name):
 def days_ago(days: int) -> date:
     today = date.today()
     return today - timedelta(days=days)
-
-
-def add_weekend_shapes(fig, dates):
-    shapes = []
-    for date in dates:
-        if date.weekday() < 5:
-            continue
-        shapes.append(
-            dict(
-                type="rect",
-                xref="x",
-                yref="paper",
-                x0=date + pd.Timedelta(days=-0.5),
-                x1=date + pd.Timedelta(days=+0.5),
-                y0=0,
-                y1=1,
-                fillcolor="rgba(0, 0, 0, 0.2)",
-                line=dict(width=0),
-                layer="below",
-            )
-        )
-    return shapes
 
 
 def tickers_frequency(df: pd.DataFrame) -> Figure:
@@ -130,7 +108,6 @@ def write_html(figs: list[Figure], filename: str) -> None:
 
 def main(argv):
     tickers = read_tickers()[0]
-    ignored_tickers = read_ignored_tickers()[0]
 
     figs = [
         tickers_frequency(tickers),
