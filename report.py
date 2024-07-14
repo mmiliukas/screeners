@@ -201,8 +201,6 @@ def main() -> None:
     df.to_csv("./reports/tickers-price.csv", float_format="%.2f")
 
     df = tickers_by_screener(tickers)
-    print(df.info())
-    print(df.head(10))
     df.to_csv("./reports/tickers-screener.csv", float_format="%.2f")
 
     df = pnk_by_sector(tickers)
