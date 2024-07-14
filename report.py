@@ -109,6 +109,23 @@ def pnk_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def pnk_by_screener(tickers: pd.DataFrame) -> pd.DataFrame:
+    df = tickers[tickers["Exchange"] == "PNK"]
+    df = df[["Exchange"] + screener_names]
+
+    for name in screener_names:
+        df[name] = df[name].apply(lambda x: 1 if x > 0 else 0)
+
+    df = df.set_index("Exchange").stack().to_frame("Count")  # type: ignore
+    df = df.reset_index(names=["Exchange", "Screener"])
+
+    df = df.groupby(["Screener", "Exchange"])["Count"].sum().unstack()
+    df = df.rename(columns={"PNK": "count"})
+    df.index.name = "screener"
+
+    return df
+
+
 # def tickers_frequency(df: pd.DataFrame) -> Figure:
 #     grouped = df[screener_names].astype(bool).sum(axis=0).sort_values(ascending=False)
 #     grouped = grouped.to_frame("Count").reset_index(names="Screener")
@@ -141,6 +158,9 @@ def main() -> None:
 
     df = pnk_by_sector(tickers)
     df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")
+
+    df = pnk_by_screener(tickers)
+    df.to_csv("./reports/pnk-by-screener.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
