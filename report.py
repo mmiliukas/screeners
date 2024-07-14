@@ -107,6 +107,8 @@ def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:
                 ]
 
     result = df.groupby(by=["sector", "group"]).count().reset_index()
+    result = result.set_index("sector")
+
     return result
 
 
@@ -194,8 +196,6 @@ def main() -> None:
     df.to_csv("./reports/pnk-by-screener.csv", float_format="%.2f")
 
     df = exchanges(tickers, ignored_tickers)
-    print(df.info())
-    print(df.head(10))
     df.to_csv("./reports/exchanges.csv", float_format="%.2f")
 
 
