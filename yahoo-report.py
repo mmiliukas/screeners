@@ -29,11 +29,11 @@ def main(argv) -> None:
     today_ignored = ignored_tickers[ignored_tickers["Date"] == date.today()]
 
     message = (
-        f"<b>{run_type}:</b> {today.isoformat()}<br/>"
-        f"<a href='{grafana}' target='_blank'>Grafana Charts</a><br/> "
+        f"<b>{run_type}:</b> {today.isoformat()}\n"
+        f"<a href='{grafana}'>Grafana Charts</a>\n"
         f"<code>"
-        f"Filtered: {','.join(today_filtered['Symbol'].values)}"
-        f" Ignored: {','.join(today_ignored['Symbol'].values)}"
+        f"Filtered: {','.join(today_filtered['Symbol'].values)}\n"
+        f" Ignored: {','.join(today_ignored['Symbol'].values)}\n"
         f"</code>"
     )
     log_to_telegram(message, bot_token, channel_id)
