@@ -27,7 +27,7 @@ pandas_market_calendars==4.4.1
 peewee==3.17.6
 pillow==10.4.0
 platformdirs==4.2.2
-playwright==1.44.0
+playwright==1.45.0
 plotly==5.22.0
 pluggy==1.5.0
 pyarrow==16.1.0
