@@ -34,9 +34,8 @@ def main(argv) -> None:
     message = (
         f"<b>{run_type}:</b> {today.isoformat()}\n"
         f"<a href='{grafana}'>Grafana Charts</a>\n"
-        f"<b>Filtered: </b> {added if added else 'None'}\n"
-        f"<b>Ignored: </b> {removed if removed else 'None'}\n"
-        f"</code>"
+        f"<b>Filtered:</b> {added if added else 'None'}\n"
+        f"<b>Ignored:</b> {removed if removed else 'None'}\n"
     )
     log_to_telegram(message, bot_token, channel_id)
 
