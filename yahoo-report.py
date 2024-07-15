@@ -33,7 +33,7 @@ def main(argv) -> None:
         f"<a href='{grafana}' target='_blank'>Grafana Charts</a><br/> "
         f"<code>"
         f"Filtered: {','.join(today_filtered['Symbol'].values)}"
-        f" Ignored: {','.join(today_ignored["Symbol"].values)}"
+        f" Ignored: {','.join(today_ignored['Symbol'].values)}"
         f"</code>"
     )
     log_to_telegram(message, bot_token, channel_id)
