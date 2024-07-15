@@ -84,6 +84,7 @@ jobs:
 
           git add .last_report_commit
 
+          git add ./reports/
           git add ./first-seen/
           git add ./etfs/
           git add ./runs/

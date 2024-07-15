@@ -7,10 +7,18 @@ from datetime import date
 
 import yaml
 
+from screeners.report import (
+    calendar,
+    etfs_close,
+    exchanges,
+    first_seen,
+    pnk_by_screener,
+    pnk_by_sector,
+    tickers_by_price,
+    tickers_by_screener,
+    tickers_by_sector,
+)
 from screeners.reporting.read import read_ignored_tickers, read_tickers
-from screeners.reporting.summarize import summarize
-from screeners.reporting.summarize_ignored import summarize_ignored
-from screeners.reporting.summarize_matched import summarize_matched
 from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
@@ -18,37 +26,49 @@ with open("config-logging.yml", "r") as config_logging:
 
 
 faq = "https://github.com/mmiliukas/screeners/blob/main/FAQ.md"
+grafana = "https://mmiliukas.grafana.net/d/b0cf7597-cc5c-4368-b682-92d5e2c505b3/scraping-results"
 
 
-def main(argv):
+def main(argv) -> None:
     bot_token, channel_id, run_type = argv[1:]
 
     message = (
         f"<b>{run_type}:</b> "
-        "{date.today().isoformat()} "
-        "<a href='{faq}'>FAQ</a> "
-        "<a href='https://screeners.nepasiduok.com'>https://screeners.nepasiduok.com</a>"
+        f"{date.today().isoformat()} "
+        f"<a href='{faq}'>FAQ</a> "
+        f"<a href='{grafana}'>Grafana Charts</a>"
     )
     log_to_telegram(message, bot_token, channel_id)
 
-    tickers, previous_tickers = read_tickers()
-    ignored_tickers, previous_ignored_tickers = read_ignored_tickers()
+    tickers = read_tickers()[0]
+    ignored_tickers = read_ignored_tickers()[0]
 
-    message = summarize(
-        tickers,
-        previous_tickers,
-        ignored_tickers,
-        previous_ignored_tickers,
-    )
-    log_to_telegram(f"<code>{message}</code>", bot_token, channel_id)
+    df = calendar()
+    df.to_csv("./reports/calendar.csv", float_format="%.0f")
 
-    message = summarize_ignored(ignored_tickers, previous_ignored_tickers)
-    message = f"# of ignored tickers by reason \n\n<code>{message}</code>"
-    log_to_telegram(message, bot_token, channel_id)
+    df = first_seen(tickers, ignored_tickers)
+    df.to_csv("./reports/first-seen.csv", float_format="%.0f")
 
-    message = summarize_matched(tickers, previous_tickers)
-    message = f"# of tickers (excl. ignored) per screener\n\n<code>{message}</code>"
-    log_to_telegram(message, bot_token, channel_id)
+    df = etfs_close()
+    df.to_csv("./reports/etfs-close.csv", float_format="%.2f")
+
+    df = tickers_by_sector(tickers)
+    df.to_csv("./reports/tickers-sector.csv", float_format="%.2f")
+
+    df = tickers_by_price(tickers)
+    df.to_csv("./reports/tickers-price.csv", float_format="%.2f")
+
+    df = tickers_by_screener(tickers)
+    df.to_csv("./reports/tickers-screener.csv", float_format="%.2f")
+
+    df = pnk_by_sector(tickers)
+    df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")
+
+    df = pnk_by_screener(tickers)
+    df.to_csv("./reports/pnk-by-screener.csv", float_format="%.2f")
+
+    df = exchanges(tickers, ignored_tickers)
+    df.to_csv("./reports/exchanges.csv", float_format="%.2f")
 
 
 if __name__ == "__main__":
