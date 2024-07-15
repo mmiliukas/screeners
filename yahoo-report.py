@@ -28,12 +28,14 @@ def main(argv) -> None:
     today_filtered = tickers[tickers["Screener First Seen"] == date.today()]
     today_ignored = ignored_tickers[ignored_tickers["Date"] == date.today()]
 
+    added = ", ".join(today_filtered["Symbol"].values)
+    removed = ", ".join(today_ignored["Symbol"].values)
+
     message = (
         f"<b>{run_type}:</b> {today.isoformat()}\n"
         f"<a href='{grafana}'>Grafana Charts</a>\n"
-        f"<code>"
-        f"Filtered: {','.join(today_filtered['Symbol'].values)}\n"
-        f" Ignored: {','.join(today_ignored['Symbol'].values)}\n"
+        f"<b>Filtered: </b> {added if added else 'None'}\n"
+        f"<b>Ignored: </b> {removed if removed else 'None'}\n"
         f"</code>"
     )
     log_to_telegram(message, bot_token, channel_id)
