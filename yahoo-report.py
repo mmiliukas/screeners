@@ -32,10 +32,9 @@ def main(argv) -> None:
     removed = ", ".join(today_ignored["Symbol"].values)
 
     message = (
-        f"<b>{run_type}:</b> {today.isoformat()}\n"
-        f"<a href='{grafana}'>Grafana Charts</a>\n"
-        f"<b>Filtered:</b> {added if added else 'None'}\n"
-        f"<b>Ignored:</b> {removed if removed else 'None'}\n"
+        f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a>\n\n"
+        f"<b>Filtered:</b> {added if added else 'None'}\n\n"
+        f"<b>Ignored:</b> {removed if removed else 'None'}"
     )
     log_to_telegram(message, bot_token, channel_id)
 
