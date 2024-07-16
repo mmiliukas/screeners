@@ -5,10 +5,11 @@ import logging.config
 import sys
 from datetime import date
 
+import pandas as pd
 import yaml
 
 import screeners.report as re
-from screeners.reporting.read import read_ignored_tickers, read_tickers
+from screeners.config import config
 from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
@@ -18,26 +19,28 @@ with open("config-logging.yml", "r") as config_logging:
 grafana = "https://mmiliukas.grafana.net/d/b0cf7597-cc5c-4368-b682-92d5e2c505b3/scraping-results"
 
 
-def main(argv) -> None:
-    bot_token, channel_id, run_type = argv[1:]
+def read_tickers() -> pd.DataFrame:
+    names = [f"{x['name']} First Seen" for x in config["screeners"]]
+    names.append("Screener First Seen")
 
-    tickers = read_tickers()[0]
-    ignored_tickers = read_ignored_tickers()[0]
+    source = config["tickers"]["target"]
+    current = pd.read_csv(source, parse_dates=names)
 
-    today = date.today()
-    today_filtered = tickers[tickers["Screener First Seen"] == date.today()]
-    today_ignored = ignored_tickers[ignored_tickers["Date"] == date.today()]
+    for name in names:
+        current[name] = current[name].dt.date
 
-    added = ", ".join(today_filtered["Symbol"].values)
-    removed = ", ".join(today_ignored["Symbol"].values)
+    return current
 
-    message = (
-        f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a>\n\n"
-        f"<b>Filtered:</b> {added if added else 'None'}\n\n"
-        f"<b>Ignored:</b> {removed if removed else 'None'}"
-    )
-    log_to_telegram(message, bot_token, channel_id)
 
+def read_ignored_tickers() -> pd.DataFrame:
+    source = config["ignored_tickers"]["target"]
+    current = pd.read_csv(source, parse_dates=["Date"])
+    current["Date"] = current["Date"].dt.date
+
+    return current
+
+
+def build_reports(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> None:
     df = re.calendar()
     df.to_csv("./reports/calendar.csv", float_format="%.0f")
 
@@ -64,6 +67,40 @@ def main(argv) -> None:
 
     df = re.exchanges(tickers, ignored_tickers)
     df.to_csv("./reports/exchanges.csv", float_format="%.2f")
+
+
+def notify_using_telegram(
+    run_type: str,
+    bot_token: str,
+    channel_id: str,
+    tickers: pd.DataFrame,
+    ignored_tickers: pd.DataFrame,
+) -> None:
+    today = date.today()
+    today_filtered = tickers[tickers["Screener First Seen"] == date.today()]
+    today_ignored = ignored_tickers[ignored_tickers["Date"] == date.today()]
+
+    added = ", ".join(today_filtered["Symbol"].values)
+    removed = ", ".join(today_ignored["Symbol"].values)
+
+    message = "\n".join(
+        [
+            f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a>",
+            f"<b>Filtered:</b> {added if added else 'None'}",
+            f"<b>Ignored:</b> {removed if removed else 'None'}",
+        ]
+    )
+    log_to_telegram(message, bot_token, channel_id)
+
+
+def main(argv) -> None:
+    bot_token, channel_id, run_type = argv[1:]
+
+    tickers = read_tickers()
+    ignored_tickers = read_ignored_tickers()
+
+    build_reports(tickers, ignored_tickers)
+    notify_using_telegram(run_type, bot_token, channel_id, tickers, ignored_tickers)
 
 
 if __name__ == "__main__":
