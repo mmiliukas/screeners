@@ -17,6 +17,7 @@ with open("config-logging.yml", "r") as config_logging:
 
 
 grafana = "https://mmiliukas.grafana.net/d/b0cf7597-cc5c-4368-b682-92d5e2c505b3/scraping-results"
+calendar = "https://mmiliukas.grafana.net/d/bdrydrdj6pz40d/trading-calendar"
 
 
 def read_tickers() -> pd.DataFrame:
@@ -85,7 +86,7 @@ def notify_using_telegram(
 
     message = "\n".join(
         [
-            f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a>",
+            f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a> <a href='{calendar}'>Calendar</a>",
             f"<b>Filtered:</b> {added if added else 'None'}",
             f"<b>Ignored:</b> {removed if removed else 'None'}",
         ]
