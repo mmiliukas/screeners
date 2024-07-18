@@ -3,7 +3,7 @@
 import logging
 import logging.config
 import sys
-from datetime import date
+from datetime import date, timedelta
 
 import pandas as pd
 import yaml
@@ -78,17 +78,25 @@ def notify_using_telegram(
     ignored_tickers: pd.DataFrame,
 ) -> None:
     today = date.today()
-    today_filtered = tickers[tickers["Screener First Seen"] == date.today()]
-    today_ignored = ignored_tickers[ignored_tickers["Date"] == date.today()]
+    yesterday = today - timedelta(days=1)
+
+    today_filtered = tickers[tickers["Screener First Seen"] >= yesterday]
+    today_ignored = ignored_tickers[ignored_tickers["Date"] >= yesterday]
 
     added = ", ".join(today_filtered["Symbol"].values)
     removed = ", ".join(today_ignored["Symbol"].values)
 
     message = "\n".join(
         [
-            f"<b>{run_type}:</b> {today.isoformat()} <a href='{grafana}'>Grafana Charts</a> <a href='{calendar}'>Calendar</a>",
-            f"<b>Filtered:</b> {added if added else 'None'}",
-            f"<b>Ignored:</b> {removed if removed else 'None'}",
+            f"🟢 <b>{run_type}:</b> {today.isoformat()}",
+            f"",
+            f"🔗 <a href='{grafana}'>Scraping Results</a>",
+            f"🔗 <a href='{calendar}'>Trading Calendar</a>",
+            f"",
+            f"Tickers for the last 2 days (today + yesterday).",
+            f"",
+            f"➕ {added if added else 'None'}",
+            f"➖ {removed if removed else 'None'}",
         ]
     )
     log_to_telegram(message, bot_token, channel_id)
