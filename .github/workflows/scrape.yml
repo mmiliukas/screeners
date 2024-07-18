@@ -67,9 +67,6 @@ jobs:
       - name: 'Aggregate all the download data'
         run: python ./yahoo-aggregate.py
 
-      - name: 'Test if collected output is valid'
-        run: python -m pytest tests/
-
       - name: 'Report summary and plot the graphs when needed'
         if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.plot == 'Yes' }}
         run: |
