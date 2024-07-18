@@ -70,15 +70,6 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/8907a7dd-4470-4fde-990c-98c752dd2b53"
 
-# global settings for yfinance library
-# works only on local machine though
-yfinance:
-  backend: filesystem
-  # directory to use for cached responses
-  cache_name: .cache-yfinance
-  # how long to keep the cache active (checking the last modification date of a file)
-  expire_after_days: 3
-
 ignored_tickers:
   # file for storing ignored tickers
   # contains date and reason for ignore

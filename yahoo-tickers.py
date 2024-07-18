@@ -11,7 +11,6 @@ import pandas as pd
 import yaml
 import yfinance as yf
 
-from screeners.cache import session
 from screeners.config import config
 from screeners.etfs import get_etfs_and_holdings
 from screeners.tickers import get_tickers
@@ -56,7 +55,7 @@ def main(args: list[str]):
         ticker_path = config["tickers"]["cache_name"] + symbol + ".json"
 
         if should_update(df, symbol, ticker_path, days=args[0]):
-            result = yf.Ticker(symbol, session=session)
+            result = yf.Ticker(symbol)
 
             try:
                 all_good = result.info and "symbol" in result.info

@@ -7,7 +7,6 @@ import os.path
 import pandas as pd
 import yfinance as yf
 
-from screeners.cache import session
 from screeners.config import config
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
@@ -47,7 +46,7 @@ def enrich_close_date(row):
         history = pd.read_csv(file_name)
     else:
         history = yf.download(
-            symbol, start=start, end=end, interval="1d", progress=False, session=session
+            symbol, start=start, end=end, interval="1d", progress=False
         )
         history.to_csv(file_name)
 
