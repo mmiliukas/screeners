@@ -176,3 +176,21 @@ def exchanges(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataFr
     df.fillna(0, inplace=True)
 
     return df
+
+
+def tickers_ignored(ignored_tickers: pd.DataFrame) -> pd.DataFrame:
+    by_size = ignored_tickers.groupby(["Date", "Reason"]).size()
+    by_size = by_size.reset_index(name="Count")  # type: ignore
+
+    pivot_df = by_size.pivot(index="Date", columns="Reason", values="Count")
+
+    start = pivot_df.index.min()
+    end = pivot_df.index.max()
+    full_date_range = pd.date_range(start=start, end=end)
+
+    pivot_df = pivot_df.reindex(full_date_range)
+    pivot_df = pivot_df.fillna(0)
+    pivot_df.index.name = "Date"
+    pivot_df["Timestamp"] = pivot_df.index.to_series().apply(date_to_timestamp)
+
+    return pivot_df

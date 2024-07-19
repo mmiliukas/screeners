@@ -60,6 +60,9 @@ def build_reports(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> None:
     df = re.tickers_by_screener(tickers)
     df.to_csv("./reports/tickers-screener.csv", float_format="%.2f")
 
+    df = re.tickers_ignored(ignored_tickers)
+    df.to_csv("./reports/tickers-ignored.csv", float_format="%.2f")
+
     df = re.pnk_by_sector(tickers)
     df.to_csv("./reports/pnk-by-sector.csv", float_format="%.2f")
 
