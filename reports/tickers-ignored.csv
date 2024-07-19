@@ -1,0 +1,974 @@
+,Symbol,Date,Reason
+0,ACAX,2024-03-13,Not Found
+1,ATHX,2024-03-13,Not Found
+2,BLTHD,2024-03-13,Not Found
+3,CLIEF,2024-03-13,Not Found
+4,LMDX,2024-03-13,Not Found
+5,ACIXF,2024-03-13,Not Categorized
+6,APLMW,2024-03-13,Not Categorized
+7,ATMGF,2024-03-13,Not Categorized
+8,ATMTF,2024-03-13,Not Categorized
+9,BCHG,2024-03-13,Not Categorized
+10,CNCOF,2024-03-13,Not Categorized
+11,CPPMF,2024-03-13,Not Categorized
+12,CRML,2024-03-13,Not Categorized
+13,EBFI,2024-03-13,Not Categorized
+14,EXPR,2024-03-13,Not Categorized
+15,FMCKK,2024-03-13,Not Categorized
+16,FREJP,2024-03-13,Not Categorized
+17,FUFU,2024-03-13,Not Categorized
+18,GEMZ,2024-03-13,Not Categorized
+19,GREEL,2024-03-13,Not Categorized
+20,HZEN,2024-03-13,Not Categorized
+21,IDGR,2024-03-13,Not Categorized
+22,JL,2024-03-13,Not Categorized
+23,JZZID,2024-03-13,Not Categorized
+24,KDAGF,2024-03-13,Not Categorized
+25,KSPN,2024-03-13,Not Categorized
+26,LXILF,2024-03-13,Not Categorized
+27,MDXXF,2024-03-13,Not Categorized
+28,MHUBD,2024-03-13,Not Categorized
+29,MYBUF,2024-03-13,Not Categorized
+30,NILTF,2024-03-13,Not Categorized
+31,NTMFF,2024-03-13,Not Categorized
+32,OBSEF,2024-03-13,Not Categorized
+33,PBLA,2024-03-13,Not Categorized
+34,PBM,2024-03-13,Not Categorized
+35,PHGE-UN,2024-03-13,Not Categorized
+36,SUNWQ,2024-03-13,Not Categorized
+37,SVMH,2024-03-13,Not Categorized
+38,TGVCW,2024-03-13,Not Categorized
+39,TMXLF,2024-03-13,Not Categorized
+40,WSRIF,2024-03-13,Not Categorized
+41,ZCSH,2024-03-13,Not Categorized
+42,ZMMPY,2024-03-13,Not Categorized
+43,AAGH,2024-03-13,Current Ratio Below 0.5
+44,AAGR,2024-03-13,Current Ratio Below 0.5
+45,ABCP,2024-03-13,Current Ratio Below 0.5
+46,ABMBF,2024-03-13,Current Ratio Below 0.5
+47,ACAN,2024-03-13,Current Ratio Below 0.5
+48,ACON,2024-03-13,Current Ratio Below 0.5
+49,ADIA,2024-03-13,Current Ratio Below 0.5
+50,ADXS,2024-03-13,Current Ratio Below 0.5
+51,AFFL,2024-03-13,Current Ratio Below 0.5
+52,AFFU,2024-03-13,Current Ratio Below 0.5
+53,AGILQ,2024-03-13,Current Ratio Below 0.5
+54,AGRI,2024-03-13,Current Ratio Below 0.5
+55,AIMLF,2024-03-13,Current Ratio Below 0.5
+56,AISP,2024-03-13,Current Ratio Below 0.5
+57,AKAN,2024-03-13,Current Ratio Below 0.5
+58,ALCE,2024-03-13,Current Ratio Below 0.5
+59,ALCUD,2024-03-13,Current Ratio Below 0.5
+60,ALCUF,2024-03-13,Current Ratio Below 0.5
+61,ALID,2024-03-13,Current Ratio Below 0.5
+62,ALPSQ,2024-03-13,Current Ratio Below 0.5
+63,ALRTF,2024-03-13,Current Ratio Below 0.5
+64,ALTUW,2024-03-13,Current Ratio Below 0.5
+65,AMFL,2024-03-13,Current Ratio Below 0.5
+66,AMMJ,2024-03-13,Current Ratio Below 0.5
+67,AMMPF,2024-03-13,Current Ratio Below 0.5
+68,AMNI,2024-03-13,Current Ratio Below 0.5
+69,ANICD,2024-03-13,Current Ratio Below 0.5
+70,ANICF,2024-03-13,Current Ratio Below 0.5
+71,ANTMF,2024-03-13,Current Ratio Below 0.5
+72,APETF,2024-03-13,Current Ratio Below 0.5
+73,APGI,2024-03-13,Current Ratio Below 0.5
+74,APLD,2024-03-13,Current Ratio Below 0.5
+75,APLIF,2024-03-13,Current Ratio Below 0.5
+76,APLMW,2024-03-13,Current Ratio Below 0.5
+77,APYP,2024-03-13,Current Ratio Below 0.5
+78,AQSZF,2024-03-13,Current Ratio Below 0.5
+79,ARIZ,2024-03-13,Current Ratio Below 0.5
+80,ARSLF,2024-03-13,Current Ratio Below 0.5
+81,ARTH,2024-03-13,Current Ratio Below 0.5
+82,ASAP,2024-03-13,Current Ratio Below 0.5
+83,ASKH,2024-03-13,Current Ratio Below 0.5
+84,ATAO,2024-03-13,Current Ratio Below 0.5
+85,ATCH,2024-03-13,Current Ratio Below 0.5
+86,ATHXQ,2024-03-13,Current Ratio Below 0.5
+87,ATMH,2024-03-13,Current Ratio Below 0.5
+88,ATRX,2024-03-13,Current Ratio Below 0.5
+89,AUDA,2024-03-13,Current Ratio Below 0.5
+90,AUDAQ,2024-03-13,Current Ratio Below 0.5
+91,AVAI,2024-03-13,Current Ratio Below 0.5
+92,AVNI,2024-03-13,Current Ratio Below 0.5
+93,AVRW,2024-03-13,Current Ratio Below 0.5
+94,AWON,2024-03-13,Current Ratio Below 0.5
+95,BANT,2024-03-13,Current Ratio Below 0.5
+96,BBLR,2024-03-13,Current Ratio Below 0.5
+97,BBTT,2024-03-13,Current Ratio Below 0.5
+98,BBUZ,2024-03-13,Current Ratio Below 0.5
+99,BCCEF,2024-03-13,Current Ratio Below 0.5
+100,BCHG,2024-03-13,Current Ratio Below 0.5
+101,BCUFF,2024-03-13,Current Ratio Below 0.5
+102,BETRF,2024-03-13,Current Ratio Below 0.5
+103,BEVVF,2024-03-13,Current Ratio Below 0.5
+104,BFCH,2024-03-13,Current Ratio Below 0.5
+105,BGAVF,2024-03-13,Current Ratio Below 0.5
+106,BHSIF,2024-03-13,Current Ratio Below 0.5
+107,BIDCF,2024-03-13,Current Ratio Below 0.5
+108,BLFR,2024-03-13,Current Ratio Below 0.5
+109,BLIS,2024-03-13,Current Ratio Below 0.5
+110,BLPG,2024-03-13,Current Ratio Below 0.5
+111,BLTH,2024-03-13,Current Ratio Below 0.5
+112,BMCS,2024-03-13,Current Ratio Below 0.5
+113,BMXC,2024-03-13,Current Ratio Below 0.5
+114,BNNHF,2024-03-13,Current Ratio Below 0.5
+115,BNZI,2024-03-13,Current Ratio Below 0.5
+116,BOMO,2024-03-13,Current Ratio Below 0.5
+117,BRDSQ,2024-03-13,Current Ratio Below 0.5
+118,BRGC,2024-03-13,Current Ratio Below 0.5
+119,BRSH,2024-03-13,Current Ratio Below 0.5
+120,BRUZF,2024-03-13,Current Ratio Below 0.5
+121,BRVO,2024-03-13,Current Ratio Below 0.5
+122,BRZV,2024-03-13,Current Ratio Below 0.5
+123,BSEM,2024-03-13,Current Ratio Below 0.5
+124,BSGM,2024-03-13,Current Ratio Below 0.5
+125,BSPK,2024-03-13,Current Ratio Below 0.5
+126,BTCY,2024-03-13,Current Ratio Below 0.5
+127,BULT,2024-03-13,Current Ratio Below 0.5
+128,BWMY,2024-03-13,Current Ratio Below 0.5
+129,BWVI,2024-03-13,Current Ratio Below 0.5
+130,BXRX,2024-03-13,Current Ratio Below 0.5
+131,CAMZF,2024-03-13,Current Ratio Below 0.5
+132,CANN,2024-03-13,Current Ratio Below 0.5
+133,CANOQ,2024-03-13,Current Ratio Below 0.5
+134,CAPC,2024-03-13,Current Ratio Below 0.5
+135,CAPV,2024-03-13,Current Ratio Below 0.5
+136,CATTF,2024-03-13,Current Ratio Below 0.5
+137,CBDS,2024-03-13,Current Ratio Below 0.5
+138,CBDW,2024-03-13,Current Ratio Below 0.5
+139,CBMJ,2024-03-13,Current Ratio Below 0.5
+140,CBSC,2024-03-13,Current Ratio Below 0.5
+141,CEOS,2024-03-13,Current Ratio Below 0.5
+142,CGNSF,2024-03-13,Current Ratio Below 0.5
+143,CGRW,2024-03-13,Current Ratio Below 0.5
+144,CHEA,2024-03-13,Current Ratio Below 0.5
+145,CHHYF,2024-03-13,Current Ratio Below 0.5
+146,CJET,2024-03-13,Current Ratio Below 0.5
+147,CLCS,2024-03-13,Current Ratio Below 0.5
+148,CLGCF,2024-03-13,Current Ratio Below 0.5
+149,CLHI,2024-03-13,Current Ratio Below 0.5
+150,CLSH,2024-03-13,Current Ratio Below 0.5
+151,CMXC,2024-03-13,Current Ratio Below 0.5
+152,CNBX,2024-03-13,Current Ratio Below 0.5
+153,CNCOF,2024-03-13,Current Ratio Below 0.5
+154,CNER,2024-03-13,Current Ratio Below 0.5
+155,CNNC,2024-03-13,Current Ratio Below 0.5
+156,CNNN,2024-03-13,Current Ratio Below 0.5
+157,CNTMF,2024-03-13,Current Ratio Below 0.5
+158,CNVT,2024-03-13,Current Ratio Below 0.5
+159,COMCF,2024-03-13,Current Ratio Below 0.5
+160,COMS,2024-03-13,Current Ratio Below 0.5
+161,COOLW,2024-03-13,Current Ratio Below 0.5
+162,CORZQ,2024-03-13,Current Ratio Below 0.5
+163,CPIVF,2024-03-13,Current Ratio Below 0.5
+164,CPMD,2024-03-13,Current Ratio Below 0.5
+165,CPNFF,2024-03-13,Current Ratio Below 0.5
+166,CPPMF,2024-03-13,Current Ratio Below 0.5
+167,CPWR,2024-03-13,Current Ratio Below 0.5
+168,CRDV,2024-03-13,Current Ratio Below 0.5
+169,CRML,2024-03-13,Current Ratio Below 0.5
+170,CRVH,2024-03-13,Current Ratio Below 0.5
+171,CRYBF,2024-03-13,Current Ratio Below 0.5
+172,CRYM,2024-03-13,Current Ratio Below 0.5
+173,CSOC,2024-03-13,Current Ratio Below 0.5
+174,CSSI,2024-03-13,Current Ratio Below 0.5
+175,CSUI,2024-03-13,Current Ratio Below 0.5
+176,CTVEF,2024-03-13,Current Ratio Below 0.5
+177,CULTF,2024-03-13,Current Ratio Below 0.5
+178,CWSFF,2024-03-13,Current Ratio Below 0.5
+179,CYCA,2024-03-13,Current Ratio Below 0.5
+180,CYDY,2024-03-13,Current Ratio Below 0.5
+181,DBGI,2024-03-13,Current Ratio Below 0.5
+182,DDC,2024-03-13,Current Ratio Below 0.5
+183,DGWR,2024-03-13,Current Ratio Below 0.5
+184,DHAI,2024-03-13,Current Ratio Below 0.5
+185,DHCA,2024-03-13,Current Ratio Below 0.5
+186,DIGP,2024-03-13,Current Ratio Below 0.5
+187,DLYT,2024-03-13,Current Ratio Below 0.5
+188,DREM,2024-03-13,Current Ratio Below 0.5
+189,DSGT,2024-03-13,Current Ratio Below 0.5
+190,DTII,2024-03-13,Current Ratio Below 0.5
+191,DTTVY,2024-03-13,Current Ratio Below 0.5
+192,DTZZF,2024-03-13,Current Ratio Below 0.5
+193,DUSYF,2024-03-13,Current Ratio Below 0.5
+194,DWAY,2024-03-13,Current Ratio Below 0.5
+195,EAWD,2024-03-13,Current Ratio Below 0.5
+196,EBET,2024-03-13,Current Ratio Below 0.5
+197,EBFI,2024-03-13,Current Ratio Below 0.5
+198,EBIXQ,2024-03-13,Current Ratio Below 0.5
+199,ECDP,2024-03-13,Current Ratio Below 0.5
+200,ECPL,2024-03-13,Current Ratio Below 0.5
+201,ECSL,2024-03-13,Current Ratio Below 0.5
+202,EGMCF,2024-03-13,Current Ratio Below 0.5
+203,EGOX,2024-03-13,Current Ratio Below 0.5
+204,EGYF,2024-03-13,Current Ratio Below 0.5
+205,ELMGF,2024-03-13,Current Ratio Below 0.5
+206,ELNSF,2024-03-13,Current Ratio Below 0.5
+207,EMMA,2024-03-13,Current Ratio Below 0.5
+208,EMUSF,2024-03-13,Current Ratio Below 0.5
+209,ENCP,2024-03-13,Current Ratio Below 0.5
+210,ENDMD,2024-03-13,Current Ratio Below 0.5
+211,EOSS,2024-03-13,Current Ratio Below 0.5
+212,ERAO,2024-03-13,Current Ratio Below 0.5
+213,ETUGF,2024-03-13,Current Ratio Below 0.5
+214,EVFM,2024-03-13,Current Ratio Below 0.5
+215,EVLLF,2024-03-13,Current Ratio Below 0.5
+216,EVLO,2024-03-13,Current Ratio Below 0.5
+217,EWCLF,2024-03-13,Current Ratio Below 0.5
+218,FAGI,2024-03-13,Current Ratio Below 0.5
+219,FBASF,2024-03-13,Current Ratio Below 0.5
+220,FBRKF,2024-03-13,Current Ratio Below 0.5
+221,FBSE,2024-03-13,Current Ratio Below 0.5
+222,FFNTF,2024-03-13,Current Ratio Below 0.5
+223,FHELF,2024-03-13,Current Ratio Below 0.5
+224,FLES,2024-03-13,Current Ratio Below 0.5
+225,FMCKK,2024-03-13,Current Ratio Below 0.5
+226,FMHS,2024-03-13,Current Ratio Below 0.5
+227,FOBIF,2024-03-13,Current Ratio Below 0.5
+228,FRBK,2024-03-13,Current Ratio Below 0.5
+229,FRCB,2024-03-13,Current Ratio Below 0.5
+230,FRCCL,2024-03-13,Current Ratio Below 0.5
+231,FRCHL,2024-03-13,Current Ratio Below 0.5
+232,FRCIL,2024-03-13,Current Ratio Below 0.5
+233,FRCJL,2024-03-13,Current Ratio Below 0.5
+234,FRCKL,2024-03-13,Current Ratio Below 0.5
+235,FRCLL,2024-03-13,Current Ratio Below 0.5
+236,FRCML,2024-03-13,Current Ratio Below 0.5
+237,FREJP,2024-03-13,Current Ratio Below 0.5
+238,FRES,2024-03-13,Current Ratio Below 0.5
+239,FRLAW,2024-03-13,Current Ratio Below 0.5
+240,FTRS,2024-03-13,Current Ratio Below 0.5
+241,FUAPF,2024-03-13,Current Ratio Below 0.5
+242,FUFU,2024-03-13,Current Ratio Below 0.5
+243,FUST,2024-03-13,Current Ratio Below 0.5
+244,FUUN,2024-03-13,Current Ratio Below 0.5
+245,FZRO,2024-03-13,Current Ratio Below 0.5
+246,GANDF,2024-03-13,Current Ratio Below 0.5
+247,GATEW,2024-03-13,Current Ratio Below 0.5
+248,GBBFF,2024-03-13,Current Ratio Below 0.5
+249,GBNH,2024-03-13,Current Ratio Below 0.5
+250,GBNHF,2024-03-13,Current Ratio Below 0.5
+251,GBUX,2024-03-13,Current Ratio Below 0.5
+252,GEMSF,2024-03-13,Current Ratio Below 0.5
+253,GERS,2024-03-13,Current Ratio Below 0.5
+254,GIFX,2024-03-13,Current Ratio Below 0.5
+255,GKIN,2024-03-13,Current Ratio Below 0.5
+256,GMBL,2024-03-13,Current Ratio Below 0.5
+257,GMBLP,2024-03-13,Current Ratio Below 0.5
+258,GMER,2024-03-13,Current Ratio Below 0.5
+259,GMETF,2024-03-13,Current Ratio Below 0.5
+260,GMPW,2024-03-13,Current Ratio Below 0.5
+261,GMTNF,2024-03-13,Current Ratio Below 0.5
+262,GMVDF,2024-03-13,Current Ratio Below 0.5
+263,GOLLQ,2024-03-13,Current Ratio Below 0.5
+264,GPOX,2024-03-13,Current Ratio Below 0.5
+265,GRDI,2024-03-13,Current Ratio Below 0.5
+266,GREEL,2024-03-13,Current Ratio Below 0.5
+267,GRHI,2024-03-13,Current Ratio Below 0.5
+268,GRIF,2024-03-13,Current Ratio Below 0.5
+269,GRMC,2024-03-13,Current Ratio Below 0.5
+270,GRNBF,2024-03-13,Current Ratio Below 0.5
+271,GRVE,2024-03-13,Current Ratio Below 0.5
+272,GRYP,2024-03-13,Current Ratio Below 0.5
+273,GTGEF,2024-03-13,Current Ratio Below 0.5
+274,GWSO,2024-03-13,Current Ratio Below 0.5
+275,GWTI,2024-03-13,Current Ratio Below 0.5
+276,GWTR,2024-03-13,Current Ratio Below 0.5
+277,GXXY,2024-03-13,Current Ratio Below 0.5
+278,HAPBF,2024-03-13,Current Ratio Below 0.5
+279,HCDIQ,2024-03-13,Current Ratio Below 0.5
+280,HCDPQ,2024-03-13,Current Ratio Below 0.5
+281,HCMA,2024-03-13,Current Ratio Below 0.5
+282,HGYN,2024-03-13,Current Ratio Below 0.5
+283,HIHI,2024-03-13,Current Ratio Below 0.5
+284,HITC,2024-03-13,Current Ratio Below 0.5
+285,HMMR,2024-03-13,Current Ratio Below 0.5
+286,HNRA,2024-03-13,Current Ratio Below 0.5
+287,HOMU,2024-03-13,Current Ratio Below 0.5
+288,HZEN,2024-03-13,Current Ratio Below 0.5
+289,ICU,2024-03-13,Current Ratio Below 0.5
+290,IDEX,2024-03-13,Current Ratio Below 0.5
+291,IDGR,2024-03-13,Current Ratio Below 0.5
+292,IFUS,2024-03-13,Current Ratio Below 0.5
+293,IGPK,2024-03-13,Current Ratio Below 0.5
+294,IHAI,2024-03-13,Current Ratio Below 0.5
+295,ILAL,2024-03-13,Current Ratio Below 0.5
+296,IMPLQ,2024-03-13,Current Ratio Below 0.5
+297,INNI,2024-03-13,Current Ratio Below 0.5
+298,IONI,2024-03-13,Current Ratio Below 0.5
+299,IPIX,2024-03-13,Current Ratio Below 0.5
+300,IPSI,2024-03-13,Current Ratio Below 0.5
+301,IRNTQ,2024-03-13,Current Ratio Below 0.5
+302,ISPOW,2024-03-13,Current Ratio Below 0.5
+303,IVRN,2024-03-13,Current Ratio Below 0.5
+304,IWAL,2024-03-13,Current Ratio Below 0.5
+305,IZOZF,2024-03-13,Current Ratio Below 0.5
+306,JAN,2024-03-13,Current Ratio Below 0.5
+307,JETR,2024-03-13,Current Ratio Below 0.5
+308,JFIL,2024-03-13,Current Ratio Below 0.5
+309,JKHCF,2024-03-13,Current Ratio Below 0.5
+310,JKSM,2024-03-13,Current Ratio Below 0.5
+311,JL,2024-03-13,Current Ratio Below 0.5
+312,JTAIZ,2024-03-13,Current Ratio Below 0.5
+313,JUBAF,2024-03-13,Current Ratio Below 0.5
+314,JZZID,2024-03-13,Current Ratio Below 0.5
+315,KAST,2024-03-13,Current Ratio Below 0.5
+316,KBLB,2024-03-13,Current Ratio Below 0.5
+317,KCRD,2024-03-13,Current Ratio Below 0.5
+318,KDAGF,2024-03-13,Current Ratio Below 0.5
+319,KITL,2024-03-13,Current Ratio Below 0.5
+320,KLSVF,2024-03-13,Current Ratio Below 0.5
+321,KOAN,2024-03-13,Current Ratio Below 0.5
+322,KOMOF,2024-03-13,Current Ratio Below 0.5
+323,KOSK,2024-03-13,Current Ratio Below 0.5
+324,KPIFF,2024-03-13,Current Ratio Below 0.5
+325,KTPPF,2024-03-13,Current Ratio Below 0.5
+326,KUKE,2024-03-13,Current Ratio Below 0.5
+327,KULR,2024-03-13,Current Ratio Below 0.5
+328,KWIK,2024-03-13,Current Ratio Below 0.5
+329,LAAB,2024-03-13,Current Ratio Below 0.5
+330,LANRF,2024-03-13,Current Ratio Below 0.5
+331,LBCMF,2024-03-13,Current Ratio Below 0.5
+332,LBRG,2024-03-13,Current Ratio Below 0.5
+333,LBRMF,2024-03-13,Current Ratio Below 0.5
+334,LCCN,2024-03-13,Current Ratio Below 0.5
+335,LGIQ,2024-03-13,Current Ratio Below 0.5
+336,LGST,2024-03-13,Current Ratio Below 0.5
+337,LIBYW,2024-03-13,Current Ratio Below 0.5
+338,LIGA,2024-03-13,Current Ratio Below 0.5
+339,LKCO,2024-03-13,Current Ratio Below 0.5
+340,LMDXF,2024-03-13,Current Ratio Below 0.5
+341,LMLLF,2024-03-13,Current Ratio Below 0.5
+342,LOBEF,2024-03-13,Current Ratio Below 0.5
+343,LOMEF,2024-03-13,Current Ratio Below 0.5
+344,LRDC,2024-03-13,Current Ratio Below 0.5
+345,LRGR,2024-03-13,Current Ratio Below 0.5
+346,LUNR,2024-03-13,Current Ratio Below 0.5
+347,LUXFF,2024-03-13,Current Ratio Below 0.5
+348,LVGLF,2024-03-13,Current Ratio Below 0.5
+349,LVRLF,2024-03-13,Current Ratio Below 0.5
+350,LYT,2024-03-13,Current Ratio Below 0.5
+351,LZGI,2024-03-13,Current Ratio Below 0.5
+352,MARK,2024-03-13,Current Ratio Below 0.5
+353,MBLMF,2024-03-13,Current Ratio Below 0.5
+354,MCDIF,2024-03-13,Current Ratio Below 0.5
+355,MCLE,2024-03-13,Current Ratio Below 0.5
+356,MDRNF,2024-03-13,Current Ratio Below 0.5
+357,MDTC,2024-03-13,Current Ratio Below 0.5
+358,MDXXF,2024-03-13,Current Ratio Below 0.5
+359,MFLTY,2024-03-13,Current Ratio Below 0.5
+360,MFMLF,2024-03-13,Current Ratio Below 0.5
+361,MHUBD,2024-03-13,Current Ratio Below 0.5
+362,MIGI,2024-03-13,Current Ratio Below 0.5
+363,MIMO,2024-03-13,Current Ratio Below 0.5
+364,MJNE,2024-03-13,Current Ratio Below 0.5
+365,MLLOD,2024-03-13,Current Ratio Below 0.5
+366,MLRT,2024-03-13,Current Ratio Below 0.5
+367,MLYCF,2024-03-13,Current Ratio Below 0.5
+368,MMTIF,2024-03-13,Current Ratio Below 0.5
+369,MNYWW,2024-03-13,Current Ratio Below 0.5
+370,MONI,2024-03-13,Current Ratio Below 0.5
+371,MRDB,2024-03-13,Current Ratio Below 0.5
+372,MRES,2024-03-13,Current Ratio Below 0.5
+373,MRGE,2024-03-13,Current Ratio Below 0.5
+374,MRLLF,2024-03-13,Current Ratio Below 0.5
+375,MSEZ,2024-03-13,Current Ratio Below 0.5
+376,MSSV,2024-03-13,Current Ratio Below 0.5
+377,MTPP,2024-03-13,Current Ratio Below 0.5
+378,MTRBF,2024-03-13,Current Ratio Below 0.5
+379,MVCO,2024-03-13,Current Ratio Below 0.5
+380,MXTRF,2024-03-13,Current Ratio Below 0.5
+381,MYMX,2024-03-13,Current Ratio Below 0.5
+382,MYMXD,2024-03-13,Current Ratio Below 0.5
+383,NASO,2024-03-13,Current Ratio Below 0.5
+384,NAUH,2024-03-13,Current Ratio Below 0.5
+385,NCL,2024-03-13,Current Ratio Below 0.5
+386,NCTY,2024-03-13,Current Ratio Below 0.5
+387,NEPT,2024-03-13,Current Ratio Below 0.5
+388,NEPTF,2024-03-13,Current Ratio Below 0.5
+389,NEVDF,2024-03-13,Current Ratio Below 0.5
+390,NGTF,2024-03-13,Current Ratio Below 0.5
+391,NILA,2024-03-13,Current Ratio Below 0.5
+392,NILTF,2024-03-13,Current Ratio Below 0.5
+393,NIMU,2024-03-13,Current Ratio Below 0.5
+394,NKGN,2024-03-13,Current Ratio Below 0.5
+395,NMLSF,2024-03-13,Current Ratio Below 0.5
+396,NOGNQ,2024-03-13,Current Ratio Below 0.5
+397,NOKPF,2024-03-13,Current Ratio Below 0.5
+398,NREG,2024-03-13,Current Ratio Below 0.5
+399,NRHI,2024-03-13,Current Ratio Below 0.5
+400,NRPI,2024-03-13,Current Ratio Below 0.5
+401,NRRSF,2024-03-13,Current Ratio Below 0.5
+402,NSGP,2024-03-13,Current Ratio Below 0.5
+403,NTMFF,2024-03-13,Current Ratio Below 0.5
+404,NUBI,2024-03-13,Current Ratio Below 0.5
+405,NUKK,2024-03-13,Current Ratio Below 0.5
+406,NUKKW,2024-03-13,Current Ratio Below 0.5
+407,NUMD,2024-03-13,Current Ratio Below 0.5
+408,NWPG,2024-03-13,Current Ratio Below 0.5
+409,NXEN,2024-03-13,Current Ratio Below 0.5
+410,NXGB,2024-03-13,Current Ratio Below 0.5
+411,NXGT,2024-03-13,Current Ratio Below 0.5
+412,NXSGF,2024-03-13,Current Ratio Below 0.5
+413,NYCB,2024-03-13,Current Ratio Below 0.5
+414,NYCB-PA,2024-03-13,Current Ratio Below 0.5
+415,NYMXF,2024-03-13,Current Ratio Below 0.5
+416,OCEA,2024-03-13,Current Ratio Below 0.5
+417,ODII,2024-03-13,Current Ratio Below 0.5
+418,OLVI,2024-03-13,Current Ratio Below 0.5
+419,OMID,2024-03-13,Current Ratio Below 0.5
+420,ONEI,2024-03-13,Current Ratio Below 0.5
+421,ONMD,2024-03-13,Current Ratio Below 0.5
+422,ONXGF,2024-03-13,Current Ratio Below 0.5
+423,OPGN,2024-03-13,Current Ratio Below 0.5
+424,ORHB,2024-03-13,Current Ratio Below 0.5
+425,OSCI,2024-03-13,Current Ratio Below 0.5
+426,OTECW,2024-03-13,Current Ratio Below 0.5
+427,OWRDF,2024-03-13,Current Ratio Below 0.5
+428,PACVD,2024-03-13,Current Ratio Below 0.5
+429,PBLA,2024-03-13,Current Ratio Below 0.5
+430,PBM,2024-03-13,Current Ratio Below 0.5
+431,PFFOF,2024-03-13,Current Ratio Below 0.5
+432,PHUN,2024-03-13,Current Ratio Below 0.5
+433,PLFLF,2024-03-13,Current Ratio Below 0.5
+434,PLGNF,2024-03-13,Current Ratio Below 0.5
+435,PLNH,2024-03-13,Current Ratio Below 0.5
+436,PLTXF,2024-03-13,Current Ratio Below 0.5
+437,PMEDF,2024-03-13,Current Ratio Below 0.5
+438,PPCB,2024-03-13,Current Ratio Below 0.5
+439,PRED,2024-03-13,Current Ratio Below 0.5
+440,PRPRF,2024-03-13,Current Ratio Below 0.5
+441,PRST,2024-03-13,Current Ratio Below 0.5
+442,PRTT,2024-03-13,Current Ratio Below 0.5
+443,PSUD,2024-03-13,Current Ratio Below 0.5
+444,PSYBF,2024-03-13,Current Ratio Below 0.5
+445,PSYGF,2024-03-13,Current Ratio Below 0.5
+446,PTCO,2024-03-13,Current Ratio Below 0.5
+447,PTHR,2024-03-13,Current Ratio Below 0.5
+448,PTRVF,2024-03-13,Current Ratio Below 0.5
+449,PUBC,2024-03-13,Current Ratio Below 0.5
+450,PWWBF,2024-03-13,Current Ratio Below 0.5
+451,PYBX,2024-03-13,Current Ratio Below 0.5
+452,QQQFF,2024-03-13,Current Ratio Below 0.5
+453,QUAN,2024-03-13,Current Ratio Below 0.5
+454,RAFA,2024-03-13,Current Ratio Below 0.5
+455,RCIT,2024-03-13,Current Ratio Below 0.5
+456,RDDTF,2024-03-13,Current Ratio Below 0.5
+457,RDRSF,2024-03-13,Current Ratio Below 0.5
+458,RDYFF,2024-03-13,Current Ratio Below 0.5
+459,RENB,2024-03-13,Current Ratio Below 0.5
+460,RENI,2024-03-13,Current Ratio Below 0.5
+461,REOS,2024-03-13,Current Ratio Below 0.5
+462,REPO,2024-03-13,Current Ratio Below 0.5
+463,RETO,2024-03-13,Current Ratio Below 0.5
+464,REYGF,2024-03-13,Current Ratio Below 0.5
+465,RFLXF,2024-03-13,Current Ratio Below 0.5
+466,RFMCD,2024-03-13,Current Ratio Below 0.5
+467,RFMCF,2024-03-13,Current Ratio Below 0.5
+468,RGBP,2024-03-13,Current Ratio Below 0.5
+469,RGST,2024-03-13,Current Ratio Below 0.5
+470,RIBT,2024-03-13,Current Ratio Below 0.5
+471,RIINF,2024-03-13,Current Ratio Below 0.5
+472,RKFL,2024-03-13,Current Ratio Below 0.5
+473,RKMSF,2024-03-13,Current Ratio Below 0.5
+474,RLAB,2024-03-13,Current Ratio Below 0.5
+475,RLTR,2024-03-13,Current Ratio Below 0.5
+476,RMLFF,2024-03-13,Current Ratio Below 0.5
+477,ROII,2024-03-13,Current Ratio Below 0.5
+478,ROSN,2024-03-13,Current Ratio Below 0.5
+479,ROXIF,2024-03-13,Current Ratio Below 0.5
+480,RSCI,2024-03-13,Current Ratio Below 0.5
+481,RTON,2024-03-13,Current Ratio Below 0.5
+482,RVLWF,2024-03-13,Current Ratio Below 0.5
+483,RVPH,2024-03-13,Current Ratio Below 0.5
+484,RWGI,2024-03-13,Current Ratio Below 0.5
+485,RYDE,2024-03-13,Current Ratio Below 0.5
+486,RZREF,2024-03-13,Current Ratio Below 0.5
+487,SAML,2024-03-13,Current Ratio Below 0.5
+488,SBIG,2024-03-13,Current Ratio Below 0.5
+489,SBNY,2024-03-13,Current Ratio Below 0.5
+490,SBNYL,2024-03-13,Current Ratio Below 0.5
+491,SBOT,2024-03-13,Current Ratio Below 0.5
+492,SCFFF,2024-03-13,Current Ratio Below 0.5
+493,SCFR,2024-03-13,Current Ratio Below 0.5
+494,SCLX,2024-03-13,Current Ratio Below 0.5
+495,SCPS,2024-03-13,Current Ratio Below 0.5
+496,SENR,2024-03-13,Current Ratio Below 0.5
+497,SEVCQ,2024-03-13,Current Ratio Below 0.5
+498,SGD,2024-03-13,Current Ratio Below 0.5
+499,SGGTF,2024-03-13,Current Ratio Below 0.5
+500,SGPTF,2024-03-13,Current Ratio Below 0.5
+501,SIGL,2024-03-13,Current Ratio Below 0.5
+502,SING,2024-03-13,Current Ratio Below 0.5
+503,SIVBQ,2024-03-13,Current Ratio Below 0.5
+504,SIVPQ,2024-03-13,Current Ratio Below 0.5
+505,SLNA,2024-03-13,Current Ratio Below 0.5
+506,SMFL,2024-03-13,Current Ratio Below 0.5
+507,SMMR,2024-03-13,Current Ratio Below 0.5
+508,SMX,2024-03-13,Current Ratio Below 0.5
+509,SNANF,2024-03-13,Current Ratio Below 0.5
+510,SNBH,2024-03-13,Current Ratio Below 0.5
+511,SNMP,2024-03-13,Current Ratio Below 0.5
+512,SNNC,2024-03-13,Current Ratio Below 0.5
+513,SOFO,2024-03-13,Current Ratio Below 0.5
+514,SOLCF,2024-03-13,Current Ratio Below 0.5
+515,SPEYF,2024-03-13,Current Ratio Below 0.5
+516,SPLTF,2024-03-13,Current Ratio Below 0.5
+517,SQNS,2024-03-13,Current Ratio Below 0.5
+518,SRAFF,2024-03-13,Current Ratio Below 0.5
+519,SRAX,2024-03-13,Current Ratio Below 0.5
+520,SRNEQ,2024-03-13,Current Ratio Below 0.5
+521,STHZF,2024-03-13,Current Ratio Below 0.5
+522,STRG,2024-03-13,Current Ratio Below 0.5
+523,STSN,2024-03-13,Current Ratio Below 0.5
+524,SUNWQ,2024-03-13,Current Ratio Below 0.5
+525,SUPV,2024-03-13,Current Ratio Below 0.5
+526,SVMFF,2024-03-13,Current Ratio Below 0.5
+527,SVMH,2024-03-13,Current Ratio Below 0.5
+528,SVVC,2024-03-13,Current Ratio Below 0.5
+529,SYGGF,2024-03-13,Current Ratio Below 0.5
+530,SYSX,2024-03-13,Current Ratio Below 0.5
+531,TAST,2024-03-13,Current Ratio Below 0.5
+532,TBRIF,2024-03-13,Current Ratio Below 0.5
+533,TCRI,2024-03-13,Current Ratio Below 0.5
+534,TDRK,2024-03-13,Current Ratio Below 0.5
+535,TELO,2024-03-13,Current Ratio Below 0.5
+536,TEVNF,2024-03-13,Current Ratio Below 0.5
+537,TGCB,2024-03-13,Current Ratio Below 0.5
+538,TGGLF,2024-03-13,Current Ratio Below 0.5
+539,TGVCW,2024-03-13,Current Ratio Below 0.5
+540,THCBF,2024-03-13,Current Ratio Below 0.5
+541,THXPF,2024-03-13,Current Ratio Below 0.5
+542,TIPS,2024-03-13,Current Ratio Below 0.5
+543,TNRG,2024-03-13,Current Ratio Below 0.5
+544,TOGOF,2024-03-13,Current Ratio Below 0.5
+545,TPIA,2024-03-13,Current Ratio Below 0.5
+546,TRKAQ,2024-03-13,Current Ratio Below 0.5
+547,TRKUF,2024-03-13,Current Ratio Below 0.5
+548,TRLFF,2024-03-13,Current Ratio Below 0.5
+549,TRNR,2024-03-13,Current Ratio Below 0.5
+550,TROYF,2024-03-13,Current Ratio Below 0.5
+551,TRYPF,2024-03-13,Current Ratio Below 0.5
+552,TTLHF,2024-03-13,Current Ratio Below 0.5
+553,TVIPF,2024-03-13,Current Ratio Below 0.5
+554,TWOH,2024-03-13,Current Ratio Below 0.5
+555,UAHC,2024-03-13,Current Ratio Below 0.5
+556,UBMRF,2024-03-13,Current Ratio Below 0.5
+557,UMFGD,2024-03-13,Current Ratio Below 0.5
+558,UNRVD,2024-03-13,Current Ratio Below 0.5
+559,UPIN,2024-03-13,Current Ratio Below 0.5
+560,USAQ,2024-03-13,Current Ratio Below 0.5
+561,USDP,2024-03-13,Current Ratio Below 0.5
+562,USLG,2024-03-13,Current Ratio Below 0.5
+563,VAGNF,2024-03-13,Current Ratio Below 0.5
+564,VDRM,2024-03-13,Current Ratio Below 0.5
+565,VDTAF,2024-03-13,Current Ratio Below 0.5
+566,VISM,2024-03-13,Current Ratio Below 0.5
+567,VLCN,2024-03-13,Current Ratio Below 0.5
+568,VMNT,2024-03-13,Current Ratio Below 0.5
+569,VRCFF,2024-03-13,Current Ratio Below 0.5
+570,VSMR,2024-03-13,Current Ratio Below 0.5
+571,VSST,2024-03-13,Current Ratio Below 0.5
+572,VYST,2024-03-13,Current Ratio Below 0.5
+573,WDDD,2024-03-13,Current Ratio Below 0.5
+574,WEWKQ,2024-03-13,Current Ratio Below 0.5
+575,WGMCF,2024-03-13,Current Ratio Below 0.5
+576,WNFT,2024-03-13,Current Ratio Below 0.5
+577,WOWI,2024-03-13,Current Ratio Below 0.5
+578,WSRC,2024-03-13,Current Ratio Below 0.5
+579,WSRIF,2024-03-13,Current Ratio Below 0.5
+580,WTCZF,2024-03-13,Current Ratio Below 0.5
+581,WULF,2024-03-13,Current Ratio Below 0.5
+582,XBRAF,2024-03-13,Current Ratio Below 0.5
+583,XSNX,2024-03-13,Current Ratio Below 0.5
+584,XTCYF,2024-03-13,Current Ratio Below 0.5
+585,YELLQ,2024-03-13,Current Ratio Below 0.5
+586,ZAIRF,2024-03-13,Current Ratio Below 0.5
+587,ZCAR,2024-03-13,Current Ratio Below 0.5
+588,ZCSH,2024-03-13,Current Ratio Below 0.5
+589,ZHCLF,2024-03-13,Current Ratio Below 0.5
+590,ZHUD,2024-03-13,Current Ratio Below 0.5
+591,KRBP,2024-03-13,Current Ratio Below 0.5
+592,EMOR,2024-03-14,Current Ratio Below 0.5
+593,GBHPF,2024-03-14,Current Ratio Below 0.5
+594,MMSDF,2024-03-15,Not Categorized
+595,NMHI,2024-03-15,Not Categorized
+596,XTIA,2024-03-15,Not Categorized
+597,CMCLF,2024-03-15,Current Ratio Below 0.5
+598,GORAF,2024-03-15,Current Ratio Below 0.5
+599,JTAI,2024-03-15,Current Ratio Below 0.5
+600,MHRE,2024-03-15,Current Ratio Below 0.5
+601,MMSDF,2024-03-15,Current Ratio Below 0.5
+602,NMHI,2024-03-15,Current Ratio Below 0.5
+603,XTIA,2024-03-15,Current Ratio Below 0.5
+604,BLMH,2024-03-16,Current Ratio Below 0.5
+605,JSHG,2024-03-16,Current Ratio Below 0.5
+606,LSDI,2024-03-16,Current Ratio Below 0.5
+607,SLS,2024-03-16,Current Ratio Below 0.5
+608,TELHF,2024-03-16,Current Ratio Below 0.5
+609,TPHS,2024-03-16,Current Ratio Below 0.5
+610,ULY,2024-03-16,Current Ratio Below 0.5
+611,TBNRF,2024-03-17,Not Found
+612,CURO,2024-03-17,Not Categorized
+613,AGEN,2024-03-17,Current Ratio Below 0.5
+614,BTAI,2024-03-17,Current Ratio Below 0.5
+615,THMG,2024-03-17,Current Ratio Below 0.5
+616,ZIVO,2024-03-17,Current Ratio Below 0.5
+617,AMNF,2024-03-19,Current Ratio Below 0.5
+618,GWAV,2024-03-19,Current Ratio Below 0.5
+619,NCMI,2024-03-19,Current Ratio Below 0.5
+620,RIHT,2024-03-19,Current Ratio Below 0.5
+621,AMTX,2024-03-21,Current Ratio Below 0.5
+622,BCEL,2024-03-22,Not Categorized
+623,BTTX,2024-03-22,Not Categorized
+624,ADOC,2024-03-22,Current Ratio Below 0.5
+625,BABL,2024-03-22,Current Ratio Below 0.5
+626,CLDI,2024-03-22,Current Ratio Below 0.5
+627,CMAX,2024-03-22,Current Ratio Below 0.5
+628,EVSV,2024-03-22,Current Ratio Below 0.5
+629,RYES,2024-03-22,Current Ratio Below 0.5
+630,SKGRW,2024-03-22,Current Ratio Below 0.5
+631,SMTSF,2024-03-22,Current Ratio Below 0.5
+632,TPET,2024-03-22,Current Ratio Below 0.5
+633,NSTB,2024-03-26,Current Ratio Below 0.5
+634,FSRN,2024-03-27,Not Categorized
+635,CYAP,2024-03-27,Current Ratio Below 0.5
+636,FSRN,2024-03-27,Current Ratio Below 0.5
+637,IPCIF,2024-03-27,Current Ratio Below 0.5
+638,SFRX,2024-03-27,Current Ratio Below 0.5
+639,TMC,2024-03-27,Current Ratio Below 0.5
+640,TMCWW,2024-03-27,Current Ratio Below 0.5
+641,ANTCF,2024-03-28,Current Ratio Below 0.5
+642,MURA,2024-03-28,Current Ratio Below 0.5
+643,CAIXY,2024-03-29,Current Ratio Below 0.5
+644,PRSNF,2024-03-29,Current Ratio Below 0.5
+645,TKGBY,2024-03-29,Current Ratio Below 0.5
+646,WBBA,2024-03-29,Current Ratio Below 0.5
+647,ARAV,2024-04-02,Not Categorized
+648,COSRF,2024-04-02,Not Categorized
+649,ARAV,2024-04-02,Current Ratio Below 0.5
+650,BCDA,2024-04-02,Current Ratio Below 0.5
+651,HOVR,2024-04-02,Current Ratio Below 0.5
+652,MIMOQ,2024-04-03,Not Categorized
+653,MIMOQ,2024-04-03,Current Ratio Below 0.5
+654,NXTT,2024-04-03,Not Categorized
+655,ASCA,2024-04-03,Current Ratio Below 0.5
+656,NXTT,2024-04-03,Current Ratio Below 0.5
+657,BMMJ,2024-04-03,Current Ratio Below 0.5
+658,GCTS,2024-04-04,Current Ratio Below 0.5
+659,KYCH,2024-04-04,Current Ratio Below 0.5
+660,PSHG,2024-04-04,Current Ratio Below 0.5
+661,VIEWQ,2024-04-06,Not Categorized
+662,VIEWQ,2024-04-06,Current Ratio Below 0.5
+663,ARVL,2024-04-07,Not Found
+664,DMAQ,2024-04-07,Not Found
+665,NOCSF,2024-04-07,Not Found
+666,AREN,2024-04-07,Current Ratio Below 0.5
+667,ATOXF,2024-04-07,Current Ratio Below 0.5
+668,HWH,2024-04-07,Current Ratio Below 0.5
+669,NRXP,2024-04-07,Current Ratio Below 0.5
+670,AUUD,2024-04-10,Current Ratio Below 0.5
+671,CING,2024-04-10,Current Ratio Below 0.5
+672,IVP,2024-04-10,Current Ratio Below 0.5
+673,OCTO,2024-04-10,Current Ratio Below 0.5
+674,ASTI,2024-04-10,Current Ratio Below 0.5
+675,ABCFF,2024-04-11,Current Ratio Below 0.5
+676,CUBXF,2024-04-12,Missing Close Price
+677,LTCHW,2024-04-12,Missing Close Price
+678,VRSSF,2024-04-12,Missing Close Price
+679,DMK,2024-04-13,Not Found
+680,TSP,2024-04-13,Not Found
+681,MVLA,2024-04-13,Not Categorized
+682,ACOR,2024-04-13,Current Ratio Below 0.5
+683,CDSG,2024-04-13,Current Ratio Below 0.5
+684,CNSP,2024-04-13,Current Ratio Below 0.5
+685,DGHI,2024-04-13,Current Ratio Below 0.5
+686,FRZT,2024-04-13,Current Ratio Below 0.5
+687,HLYK,2024-04-13,Current Ratio Below 0.5
+688,KSSRF,2024-04-13,Current Ratio Below 0.5
+689,MEDVF,2024-04-13,Current Ratio Below 0.5
+690,ONCO,2024-04-13,Current Ratio Below 0.5
+691,OTCFF,2024-04-13,Current Ratio Below 0.5
+692,PKTX,2024-04-13,Current Ratio Below 0.5
+693,TOYRF,2024-04-13,Current Ratio Below 0.5
+694,YTEN,2024-04-13,Current Ratio Below 0.5
+695,TBMCR,2024-04-15,Not Categorized
+696,TBMCR,2024-04-15,Current Ratio Below 0.5
+697,SFE,2024-04-16,Not Found
+698,VVPR,2024-04-16,Current Ratio Below 0.5
+699,LKCRU,2024-04-18,Not Categorized
+700,AEY,2024-04-19,Not Found
+701,NVIV,2024-04-19,Not Found
+702,NVTA,2024-04-19,Not Found
+703,RVIV,2024-04-19,Not Found
+704,SUNW,2024-04-19,Not Found
+705,AMPE,2024-04-19,Not Categorized
+706,MDVL,2024-04-19,Not Categorized
+707,MOTS,2024-04-19,Not Categorized
+708,BURU,2024-04-19,Current Ratio Below 0.5
+709,CANB,2024-04-19,Current Ratio Below 0.5
+710,CUEN,2024-04-19,Current Ratio Below 0.5
+711,MDVL,2024-04-19,Current Ratio Below 0.5
+712,NVGLF,2024-04-19,Current Ratio Below 0.5
+713,SMXT,2024-04-19,Current Ratio Below 0.5
+714,SIRCD,2024-04-23,Not Found
+715,MGAM,2024-04-23,Not Categorized
+716,ASTR,2024-04-23,Current Ratio Below 0.5
+717,MAPPF,2024-04-23,Current Ratio Below 0.5
+718,GRCL,2024-04-26,Not Found
+719,JT,2024-04-26,Not Found
+720,SIEN,2024-04-26,Not Found
+721,APSI,2024-04-26,Current Ratio Below 0.5
+722,CDMO,2024-04-26,Current Ratio Below 0.5
+723,IMRFF,2024-04-26,Current Ratio Below 0.5
+724,KNSA,2024-04-26,Current Ratio Below 0.5
+725,OMH,2024-04-26,Current Ratio Below 0.5
+726,HYGN,2024-04-26,Not Categorized
+727,CORR,2024-05-01,Not Found
+728,CORRL,2024-05-01,Not Found
+729,IMPM,2024-05-01,Current Ratio Below 0.5
+730,IONM,2024-05-01,Current Ratio Below 0.5
+731,SCPX,2024-05-01,Current Ratio Below 0.5
+732,POL,2024-05-04,Not Found
+733,STMHD,2024-05-04,Not Found
+734,PXMD,2024-05-04,Not Categorized
+735,CHNR,2024-05-04,Current Ratio Below 0.5
+736,GBRRF,2024-05-04,Current Ratio Below 0.5
+737,KLGDF,2024-05-04,Current Ratio Below 0.5
+738,KXIN,2024-05-04,Current Ratio Below 0.5
+739,LAC,2024-05-04,Current Ratio Below 0.5
+740,MARVF,2024-05-04,Current Ratio Below 0.5
+741,NZAUF,2024-05-04,Current Ratio Below 0.5
+742,PBYI,2024-05-04,Current Ratio Below 0.5
+743,RSI,2024-05-04,Current Ratio Below 0.5
+744,WW,2024-05-04,Current Ratio Below 0.5
+745,MKULQ,2024-05-07,Not Found
+746,ACDXF,2024-05-07,Current Ratio Below 0.5
+747,LPTV,2024-05-07,Current Ratio Below 0.5
+748,CRCQW,2024-05-08,Current Ratio Below 0.5
+749,KD,2024-05-08,Current Ratio Below 0.5
+750,BFX,2024-05-10,Not Found
+751,AFIB,2024-05-10,Not Categorized
+752,BETS,2024-05-10,Not Categorized
+753,VAXX,2024-05-10,Not Categorized
+754,ARHTF,2024-05-10,Current Ratio Below 0.5
+755,BETS,2024-05-10,Current Ratio Below 0.5
+756,IQAIF,2024-05-10,Current Ratio Below 0.5
+757,NGMDF,2024-05-10,Current Ratio Below 0.5
+758,OSIIF,2024-05-10,Current Ratio Below 0.5
+759,RVMD,2024-05-10,Current Ratio Below 0.5
+760,SANA,2024-05-10,Current Ratio Below 0.5
+761,NL,2024-05-11,Current Ratio Below 0.5
+762,CRGE,2024-05-14,Not Found
+763,FAZE,2024-05-14,Not Found
+764,JTCHY,2024-05-14,Not Found
+765,POLC,2024-05-14,Not Found
+766,ARLSF,2024-05-14,Current Ratio Below 0.5
+767,ARMP,2024-05-14,Current Ratio Below 0.5
+768,BNAI,2024-05-14,Current Ratio Below 0.5
+769,CLSD,2024-05-14,Current Ratio Below 0.5
+770,HOWL,2024-05-14,Current Ratio Below 0.5
+771,KOSS,2024-05-14,Current Ratio Below 0.5
+772,FCX,2024-05-16,Missing Close Price
+773,LBBB,2024-05-17,Not Found
+774,PTRAQ,2024-05-17,Not Found
+775,BPTH,2024-05-17,Current Ratio Below 0.5
+776,ESPR,2024-05-17,Current Ratio Below 0.5
+777,MGRX,2024-05-17,Current Ratio Below 0.5
+778,MTLFF,2024-05-17,Current Ratio Below 0.5
+779,VLTTF,2024-05-17,Current Ratio Below 0.5
+780,VQSSF,2024-05-17,Current Ratio Below 0.5
+781,ZENV,2024-05-17,Current Ratio Below 0.5
+782,KWE,2024-05-19,Current Ratio Below 0.5
+783,LTHHF,2024-05-19,Not Found
+784,CLVRW,2024-05-19,Not Categorized
+785,AETHF,2024-05-19,Current Ratio Below 0.5
+786,EFSH,2024-05-19,Current Ratio Below 0.5
+787,HUT,2024-05-19,Current Ratio Below 0.5
+788,INUMF,2024-05-19,Current Ratio Below 0.5
+789,LBSR,2024-05-19,Current Ratio Below 0.5
+790,MOBX,2024-05-19,Current Ratio Below 0.5
+791,NOTV,2024-05-19,Current Ratio Below 0.5
+792,CLVR,2024-05-21,Not Categorized
+793,SAVAW,2024-05-21,Not Categorized
+794,OIBZQ,2024-05-21,Current Ratio Below 0.5
+795,OSAPQ,2024-05-21,Current Ratio Below 0.5
+796,RBT,2024-05-21,Current Ratio Below 0.5
+797,NPTSF,2024-05-21,Not Categorized
+798,AWSL,2024-05-23,Current Ratio Below 0.5
+799,GRPH,2024-05-24,Not Found
+800,YGF,2024-05-24,Not Found
+801,AIMD,2024-05-24,Current Ratio Below 0.5
+802,WSNAF,2024-05-24,Current Ratio Below 0.5
+803,VJET,2024-05-26,Not Found
+804,GMDAQ,2024-05-26,Current Ratio Below 0.5
+805,CREX,2024-05-26,Current Ratio Below 0.5
+806,TKC,2024-05-28,Current Ratio Below 0.5
+807,FSR,2024-05-31,Not Found
+808,JOAN,2024-05-31,Not Found
+809,KIQ,2024-05-31,Not Found
+810,NIRLQ,2024-05-31,Not Found
+811,CATX,2024-05-31,Current Ratio Below 0.5
+812,FFIE,2024-05-31,Current Ratio Below 0.5
+813,VNRX,2024-05-31,Current Ratio Below 0.5
+814,AWKNF,2024-06-03,Current Ratio Below 0.5
+815,GRCMF,2024-06-03,Current Ratio Below 0.5
+816,RNLX,2024-06-03,Current Ratio Below 0.5
+817,ROVMF,2024-06-03,Current Ratio Below 0.5
+818,ACLHF,2024-06-04,Not Found
+819,ALMMF,2024-06-04,Not Found
+820,AZZ,2024-06-04,Not Found
+821,CDNA,2024-06-04,Not Found
+822,CHWY,2024-06-04,Not Found
+823,CMCXF,2024-06-04,Not Found
+824,CTGO,2024-06-04,Not Found
+825,FEAM,2024-06-04,Not Found
+826,FLS,2024-06-04,Not Found
+827,GYRE,2024-06-04,Not Found
+828,MRVI,2024-06-04,Not Found
+829,NPNYY,2024-06-04,Not Found
+830,OII,2024-06-04,Not Found
+831,ONON,2024-06-04,Not Found
+832,PAVS,2024-06-04,Not Found
+833,RSLS,2024-06-04,Not Found
+834,SMR,2024-06-04,Not Found
+835,SMTK,2024-06-04,Not Found
+836,TRMD,2024-06-04,Not Found
+837,VHIBF,2024-06-04,Not Found
+838,VNOM,2024-06-04,Not Found
+839,CMPS,2024-06-05,Not Found
+840,FQVLF,2024-06-05,Not Found
+841,FSM,2024-06-05,Not Found
+842,SPWH,2024-06-05,Not Found
+843,WKME,2024-06-05,Not Found
+844,OSAAW,2024-06-06,Not Found
+845,WETG,2024-06-06,Not Found
+846,AUSVF,2024-06-06,Current Ratio Below 0.5
+847,CERO,2024-06-06,Current Ratio Below 0.5
+848,EVAX,2024-06-06,Current Ratio Below 0.5
+849,EXAI,2024-06-06,Current Ratio Below 0.5
+850,GALT,2024-06-06,Current Ratio Below 0.5
+851,GNS,2024-06-06,Current Ratio Below 0.5
+852,KA,2024-06-06,Current Ratio Below 0.5
+853,LUXH,2024-06-06,Current Ratio Below 0.5
+854,VVCVF,2024-06-06,Current Ratio Below 0.5
+855,WAMFF,2024-06-06,Current Ratio Below 0.5
+856,CASA,2024-06-10,Not Found
+857,NGM,2024-06-10,Not Found
+858,STRC,2024-06-10,Not Found
+859,AGSS,2024-06-10,Current Ratio Below 0.5
+860,EDBL,2024-06-10,Current Ratio Below 0.5
+861,FCUV,2024-06-10,Current Ratio Below 0.5
+862,MLAB,2024-06-10,Current Ratio Below 0.5
+863,ONFO,2024-06-10,Current Ratio Below 0.5
+864,OVTZ,2024-06-10,Current Ratio Below 0.5
+865,MBAIF,2024-06-10,Not Categorized
+866,MBAIF,2024-06-10,Current Ratio Below 0.5
+867,CJREF,2024-06-11,Not Found
+868,SER,2024-06-11,Not Found
+869,STRM,2024-06-11,Not Found
+870,AIGFF,2024-06-13,Current Ratio Below 0.5
+871,ROYL,2024-06-13,Current Ratio Below 0.5
+872,SRMMF,2024-06-13,Current Ratio Below 0.5
+873,STI,2024-06-13,Current Ratio Below 0.5
+874,CNXA,2024-06-15,Not Found
+875,WALRF,2024-06-20,Not Categorized
+876,WALRF,2024-06-20,Current Ratio Below 0.5
+877,MDC,2024-06-21,Not Found
+878,TXHG,2024-06-21,Not Found
+879,IONGF,2024-06-24,Current Ratio Below 0.5
+880,CMG,2024-06-26,Missing Close Price
+881,IOMT,2024-06-26,Not Categorized
+882,DTSRF,2024-06-27,Not Categorized
+883,NKE,2024-06-28,Missing Close Price
+884,VIAO,2024-06-30,Not Found
+885,PNST,2024-06-30,Current Ratio Below 0.5
+886,SRRCF,2024-06-30,Current Ratio Below 0.5
+887,LAAOF,2024-07-01,Not Categorized
+888,CGOLF,2024-07-08,Not Found
+889,RCHRF,2024-07-08,Not Found
+890,RRSSF,2024-07-08,Not Found
+891,MYCOF,2024-07-08,Current Ratio Below 0.5
+892,SSEBF,2024-07-08,Current Ratio Below 0.5
+893,STHFF,2024-07-08,Current Ratio Below 0.5
+894,CRGEQ,2024-07-11,Not Found
+895,EGRNQ,2024-07-11,Not Found
+896,ELIQ,2024-07-11,Not Found
+897,NKORF,2024-07-11,Not Found
+898,ETAO,2024-07-14,Not Found
+899,NBSE,2024-07-14,Not Found
+900,MLMLF,2024-07-14,Current Ratio Below 0.5
+901,TRIT,2024-07-16,Not Categorized
+902,TRIT,2024-07-16,Current Ratio Below 0.5
+903,EMEXF,2024-07-17,Not Categorized
+904,EMEXF,2024-07-17,Current Ratio Below 0.5
+905,SMURF,2024-07-19,Not Found
+906,ASWRF,2024-07-19,Not Categorized
+907,AWMLF,2024-07-19,Not Categorized
+908,BCBCF,2024-07-19,Not Categorized
+909,BERI,2024-07-19,Not Categorized
+910,BIOCQ,2024-07-19,Not Categorized
+911,BKLPF,2024-07-19,Not Categorized
+912,BSRUF,2024-07-19,Not Categorized
+913,CECAF,2024-07-19,Not Categorized
+914,CNRIF,2024-07-19,Not Categorized
+915,CPFXF,2024-07-19,Not Categorized
+916,ECRO,2024-07-19,Not Categorized
+917,EMHLF,2024-07-19,Not Categorized
+918,EWGFF,2024-07-19,Not Categorized
+919,GDNSF,2024-07-19,Not Categorized
+920,LRSRF,2024-07-19,Not Categorized
+921,LUVU,2024-07-19,Not Categorized
+922,MCREF,2024-07-19,Not Categorized
+923,MDVLQ,2024-07-19,Not Categorized
+924,MGHCF,2024-07-19,Not Categorized
+925,MRVSY,2024-07-19,Not Categorized
+926,PIAIF,2024-07-19,Not Categorized
+927,RDUFF,2024-07-19,Not Categorized
+928,RQIHF,2024-07-19,Not Categorized
+929,SHGDF,2024-07-19,Not Categorized
+930,SRLZF,2024-07-19,Not Categorized
+931,TAGP,2024-07-19,Not Categorized
+932,TERCF,2024-07-19,Not Categorized
+933,TRTPF,2024-07-19,Not Categorized
+934,TVCCF,2024-07-19,Not Categorized
+935,VLOWY,2024-07-19,Not Categorized
+936,WMWWF,2024-07-19,Not Categorized
+937,XPNGF,2024-07-19,Not Categorized
+938,ZNCXF,2024-07-19,Not Categorized
+939,ASWRF,2024-07-19,Current Ratio Below 0.5
+940,AWMLF,2024-07-19,Current Ratio Below 0.5
+941,BCBCF,2024-07-19,Current Ratio Below 0.5
+942,BERI,2024-07-19,Current Ratio Below 0.5
+943,BIOCQ,2024-07-19,Current Ratio Below 0.5
+944,BKLPF,2024-07-19,Current Ratio Below 0.5
+945,BSRUF,2024-07-19,Current Ratio Below 0.5
+946,CECAF,2024-07-19,Current Ratio Below 0.5
+947,CNRIF,2024-07-19,Current Ratio Below 0.5
+948,CPFXF,2024-07-19,Current Ratio Below 0.5
+949,ECRO,2024-07-19,Current Ratio Below 0.5
+950,EMHLF,2024-07-19,Current Ratio Below 0.5
+951,EWGFF,2024-07-19,Current Ratio Below 0.5
+952,GDNSF,2024-07-19,Current Ratio Below 0.5
+953,LRSRF,2024-07-19,Current Ratio Below 0.5
+954,LUVU,2024-07-19,Current Ratio Below 0.5
+955,MCREF,2024-07-19,Current Ratio Below 0.5
+956,MDVLQ,2024-07-19,Current Ratio Below 0.5
+957,MGHCF,2024-07-19,Current Ratio Below 0.5
+958,MRVSY,2024-07-19,Current Ratio Below 0.5
+959,PIAIF,2024-07-19,Current Ratio Below 0.5
+960,RDUFF,2024-07-19,Current Ratio Below 0.5
+961,RQIHF,2024-07-19,Current Ratio Below 0.5
+962,SHGDF,2024-07-19,Current Ratio Below 0.5
+963,SRLZF,2024-07-19,Current Ratio Below 0.5
+964,TAGP,2024-07-19,Current Ratio Below 0.5
+965,TERCF,2024-07-19,Current Ratio Below 0.5
+966,TRTPF,2024-07-19,Current Ratio Below 0.5
+967,TVCCF,2024-07-19,Current Ratio Below 0.5
+968,VEII,2024-07-19,Current Ratio Below 0.5
+969,VLOWY,2024-07-19,Current Ratio Below 0.5
+970,WMWWF,2024-07-19,Current Ratio Below 0.5
+971,XPNGF,2024-07-19,Current Ratio Below 0.5
+972,ZNCXF,2024-07-19,Current Ratio Below 0.5
