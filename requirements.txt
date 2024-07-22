@@ -25,7 +25,7 @@ peewee==3.17.6
 pillow==10.4.0
 platformdirs==4.2.2
 playwright==1.45.0
-pyarrow==16.1.0
+pyarrow==17.0.0
 pyee==11.1.0
 pyluach==2.2.0
 pyparsing==3.1.2
