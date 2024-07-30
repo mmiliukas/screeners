@@ -340,10 +340,13 @@ def run(start_date, end_date):
     positions = []
     history = []
     counter = 1_000_000
+    fee = 1.5
 
     daily = []
+    total = len(schedule.index.to_list())
     for dateidx, date in enumerate(schedule.index.to_list()):
         date = date.date()
+        progress(f"{date.isoformat()}", dateidx + 1, total)
 
         in_positions = calculate_positions(positions, date)
         in_budget = budget
@@ -362,7 +365,7 @@ def run(start_date, end_date):
         # print(date, candidate["Symbol"], candidate["Strategy"], buy_amount)
 
 
-        fee = 1.5
+
         for idx, candidate in candidates.iterrows():
             # print(buy_amount)
             if buy_amount + fee < budget:  # type: ignore
