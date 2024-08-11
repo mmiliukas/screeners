@@ -1,0 +1,90 @@
+name: 'Scrape Yahoo Screeners'
+
+on:
+  workflow_dispatch:
+    inputs:
+      expire_after_days:
+        description: 'Ticker cache expiration in days. "0" disables the cache.'
+        required: true
+        type: 'string'
+        default: '3'
+      notify:
+        description: 'Update the telegram channel?'
+        required: true
+        type: 'choice'
+        options:
+          - 'Yes'
+          - 'No'
+        default: 'No'
+
+  schedule:
+    - cron: '00 06 * * 1-5'
+    - cron: '30 13 * * 1-5'
+    - cron: '00 20 * * 1-5'
+
+permissions:
+  contents: 'write'
+
+jobs:
+  scrape:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout sources'
+        uses: 'actions/checkout@v4'
+
+      - name: 'Setup python 3.10'
+        uses: 'actions/setup-python@v5'
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 'Install depedencies'
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install chromium
+
+      - name: 'Run manually'
+        run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
+
+      - name: 'Run daily'
+        if: github.event.schedule == '00 06 * * 1-5'
+        run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
+
+      - name: 'Run pre market'
+        if: github.event.schedule == '30 13 * * 1-5'
+        run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
+
+      - name: 'Run after market'
+        if: github.event.schedule == '00 20 * * 1-5'
+        run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
+
+      - name: 'Scrape the screeners'
+        run: python ./yahoo.py "${{ secrets.cookies }}"
+
+      - name: 'Download ticker details'
+        run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
+
+      - name: 'Aggregate all the download data'
+        run: python ./yahoo-aggregate.py
+
+      - name: 'Report summary when needed'
+        if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.notify == 'Yes' }}
+        run: |
+          python ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
+
+      - name: 'Commit and push the changes'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add ./reports/
+          git add ./first-seen/
+          git add ./etfs/
+          git add ./runs/
+          git add ./tickers/
+          git add ./tickers-etfs.csv
+          git add ./tickers-ignored.csv
+          git add ./tickers.csv
+
+          git commit -m "$RUN_TYPE"
+          git push

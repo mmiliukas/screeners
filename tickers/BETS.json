@@ -1,0 +1,1 @@
+[{"maxAge": 86400, "priceHint": 4, "currency": "USD", "exchange": "NGM", "quoteType": "EQUITY", "symbol": "BETS", "underlyingSymbol": "BETS", "timeZoneFullName": "America/New_York", "timeZoneShortName": "EDT", "gmtOffSetMilliseconds": -14400000, "trailingPegRatio": null, "__fetch_time": "2024-05-10"}]
