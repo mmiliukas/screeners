@@ -76,7 +76,7 @@ ignored_tickers:
   target: tickers-ignored.csv
 
 tickers:
-  # specifies directory where to story downloaded information about the ticker
+  # specifies directory where to store downloaded information about the ticker
   cache_name: tickers/
   target: tickers.csv
 
