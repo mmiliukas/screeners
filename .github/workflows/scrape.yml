@@ -64,7 +64,7 @@ jobs:
       - name: 'Download ticker details'
         run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
 
-      - name: 'Aggregate all the download data'
+      - name: 'Aggregate all the downloaded data'
         run: python ./yahoo-aggregate.py
 
       - name: 'Report summary when needed'
