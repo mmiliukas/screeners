@@ -14,7 +14,7 @@ idna==3.7
 importlib_resources==6.4.0
 kiwisolver==1.4.5
 korean-lunar-calendar==0.3.1
-lxml==5.2.2
+lxml==5.3.0
 matplotlib==3.9.1
 multitasking==0.0.11
 numpy==2.0.1
