@@ -86,6 +86,10 @@ def enrich_screeners(df: pd.DataFrame):
 
     df["Screener"] = df.apply(enrich_screeners_names, axis=1)
 
+    # create a derived column which tells the max occurance
+    names = list(map(lambda screener: screener["name"], config["screeners"]))
+    df["Screener Max"] = df[names].idxmax(axis=1)
+
     names = [screener["name"] + " First Seen" for screener in config["screeners"]]
     df["Screener First Seen"] = df[names].min(axis=1)
     df["Screener First Seen Close"] = df.apply(enrich_close_date, axis=1)
