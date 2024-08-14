@@ -25,10 +25,25 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/b4204420-30b5-4e54-b889-dae9196de206"
 
+  - name: "Winners 30"
+    cache_name: runs/winners30/
+    urls:
+      - "https://finance.yahoo.com/screener/ae5ec646-e73d-4133-b785-a4668b6c366c"
+
+  - name: "Winners 50"
+    cache_name: runs/winners50/
+    urls:
+      - "https://finance.yahoo.com/screener/05701f22-6e63-4d76-af38-18a2ca0abe38"
+
+  - name: "Winners 70"
+    cache_name: runs/winners70/
+    urls:
+      - "https://finance.yahoo.com/screener/2ee39be9-0152-467b-8a4e-4296d3b9f3ed"
+
   - name: "Winners 100"
     cache_name: runs/winners100/
     urls:
-      - "https://finance.yahoo.com/screener/09431cb1-93db-4cfc-836e-26d6142cfa14"
+      - "https://finance.yahoo.com/screener/946a6a6b-6dc7-4deb-9749-be3923536203"
 
   - name: "Loosers 1"
     cache_name: runs/loosers1/
@@ -45,10 +60,25 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/09324041-bb7b-464e-96a9-61fa4e84f48f"
 
+  - name: "Loosers 30"
+    cache_name: runs/loosers30/
+    urls:
+      - "https://finance.yahoo.com/screener/62b1e0d2-04d7-4fc6-9304-df45b1b25da5"
+
+  - name: "Loosers 50"
+    cache_name: runs/loosers50/
+    urls:
+      - "https://finance.yahoo.com/screener/049896cc-2fc9-4428-9c58-5a2cb0cb0bf6"
+
+  - name: "Loosers 70"
+    cache_name: runs/loosers70/
+    urls:
+      - "https://finance.yahoo.com/screener/7b4b12b5-78d8-4e46-a514-156c9da39aee"
+
   - name: "Loosers 100"
     cache_name: runs/loosers100/
     urls:
-      - "https://finance.yahoo.com/screener/b03f0d70-20ba-4796-8c5e-20bd3e6a9ed3"
+      - "https://finance.yahoo.com/screener/1c20cb1c-c66f-4bbb-b0db-0825cff38b85"
 
   - name: "Random 1"
     cache_name: runs/random1/
@@ -65,10 +95,30 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/c2f52d5b-078c-43ea-ad73-0de929180492"
 
+  - name: "Random 30"
+    cache_name: runs/random30/
+    urls:
+      - "https://finance.yahoo.com/screener/eab7f7c7-a542-4ea5-9f96-e0a56cdb8045"
+
+  - name: "Random 50"
+    cache_name: runs/random50/
+    urls:
+      - "https://finance.yahoo.com/screener/bbbaec89-7f51-47c7-804e-63cca94eaecf"
+
+  - name: "Random 70"
+    cache_name: runs/random70/
+    urls:
+      - "https://finance.yahoo.com/screener/037d2f0f-ca64-4825-96eb-bc55cd4d38bd"
+
   - name: "Random 100"
     cache_name: runs/random100/
     urls:
-      - "https://finance.yahoo.com/screener/8907a7dd-4470-4fde-990c-98c752dd2b53"
+      - "https://finance.yahoo.com/screener/949fbfa3-eb9f-49c9-8f3c-2abb70e8a7bd"
+
+  - name: "Random 120"
+    cache_name: runs/random120/
+    urls:
+      - "https://finance.yahoo.com/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91"
 
 ignored_tickers:
   # file for storing ignored tickers
