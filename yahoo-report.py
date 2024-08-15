@@ -2,22 +2,15 @@
 
 import logging
 import logging.config
-import sys
-from datetime import date, timedelta
 
 import pandas as pd
 import yaml
 
 import screeners.report as re
 from screeners.config import config
-from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
-
-
-grafana = "https://mmiliukas.grafana.net/d/b0cf7597-cc5c-4368-b682-92d5e2c505b3/scraping-results"
-calendar = "https://mmiliukas.grafana.net/d/bdrydrdj6pz40d/trading-calendar"
 
 
 def read_tickers() -> pd.DataFrame:
@@ -73,48 +66,12 @@ def build_reports(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> None:
     df.to_csv("./reports/exchanges.csv", float_format="%.2f")
 
 
-def notify_using_telegram(
-    run_type: str,
-    bot_token: str,
-    channel_id: str,
-    tickers: pd.DataFrame,
-    ignored_tickers: pd.DataFrame,
-) -> None:
-    today = date.today()
-    yesterday = today - timedelta(days=1)
-
-    today_filtered = tickers[tickers["Screener First Seen"] >= yesterday]
-    today_ignored = ignored_tickers[ignored_tickers["Date"] >= yesterday]
-
-    added = ", ".join(today_filtered["Symbol"].values)
-    removed = ", ".join(today_ignored["Symbol"].values)
-
-    message = "\n".join(
-        [
-            f"🟢 <b>{run_type}:</b> {today.isoformat()}",
-            f"",
-            f"🔗 <a href='{grafana}'>Scraping Results</a>",
-            f"🔗 <a href='{calendar}'>Trading Calendar</a>",
-            f"",
-            f"Tickers for the last 2 days (today + yesterday).",
-            f"",
-            f"➕ {added if added else 'None'}",
-            f"",
-            f"➖ {removed if removed else 'None'}",
-        ]
-    )
-    log_to_telegram(message, bot_token, channel_id)
-
-
-def main(argv) -> None:
-    bot_token, channel_id, run_type = argv[1:]
-
+def main() -> None:
     tickers = read_tickers()
     ignored_tickers = read_ignored_tickers()
 
     build_reports(tickers, ignored_tickers)
-    notify_using_telegram(run_type, bot_token, channel_id, tickers, ignored_tickers)
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv))
+    main()

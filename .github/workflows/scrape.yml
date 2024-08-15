@@ -29,51 +29,36 @@ jobs:
   scrape:
     runs-on: 'ubuntu-latest'
     steps:
-      - name: 'Checkout sources'
-        uses: 'actions/checkout@v4'
-
-      - name: 'Setup python 3.10'
-        uses: 'actions/setup-python@v5'
+      - uses: 'actions/checkout@v4'
+      - uses: 'actions/setup-python@v5'
         with:
           python-version: '3.10'
           cache: 'pip'
 
-      - name: 'Install depedencies'
-        run: |
+      - run: |
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - name: 'Run manually'
-        run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
+      - run: echo "RUN_TYPE=MANUAL" >> $GITHUB_ENV
 
-      - name: 'Run daily'
-        if: github.event.schedule == '00 06 * * 1-5'
+      - if: github.event.schedule == '00 06 * * 1-5'
         run: echo "RUN_TYPE=DAILY RUN" >> $GITHUB_ENV
 
-      - name: 'Run pre market'
-        if: github.event.schedule == '30 13 * * 1-5'
+      - if: github.event.schedule == '30 13 * * 1-5'
         run: echo "RUN_TYPE=PRE MARKET" >> $GITHUB_ENV
 
-      - name: 'Run after market'
-        if: github.event.schedule == '00 20 * * 1-5'
+      - if: github.event.schedule == '00 20 * * 1-5'
         run: echo "RUN_TYPE=AFTER MARKET" >> $GITHUB_ENV
 
-      - name: 'Scrape the screeners'
-        run: python ./yahoo.py "${{ secrets.cookies }}"
+      - run: python ./yahoo.py "${{ secrets.cookies }}"
+      - run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
+      - run: python ./yahoo-aggregate.py
+      - run: python ./yahoo-report.py
 
-      - name: 'Download ticker details'
-        run: python ./yahoo-tickers.py "${{ inputs.expire_after_days || '3' }}"
+      - if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.notify == 'Yes' }}
+        run: python ./yahoo-notify.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
 
-      - name: 'Aggregate all the downloaded data'
-        run: python ./yahoo-aggregate.py
-
-      - name: 'Report summary when needed'
-        if: ${{ github.event.schedule == '00 06 * * 1-5' || inputs.notify == 'Yes' }}
-        run: |
-          python ./yahoo-report.py "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}" "$RUN_TYPE"
-
-      - name: 'Commit and push the changes'
-        run: |
+      - run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
