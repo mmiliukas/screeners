@@ -28,14 +28,23 @@ def split(
 
 
 def main() -> None:
-    df = split("winners100", (10, 30), (30, 100))
-    df.to_csv("./runs/winners30/2024_08_15_01_01_01.csv", index=False)
+    # df = split("winners100", (10, 30), (30, 100))
+    # df.to_csv("./runs/winners30/2024_08_15_01_01_01.csv", index=False)
 
-    df = split("winners100", (30, 50), (50, 100))
-    df.to_csv("./runs/winners50/2024_08_15_01_01_01.csv", index=False)
+    # df = split("winners100", (30, 50), (50, 100))
+    # df.to_csv("./runs/winners50/2024_08_15_01_01_01.csv", index=False)
 
-    df = split("winners100", (50, 70), (70, 100))
-    df.to_csv("./runs/winners70/2024_08_15_01_01_01.csv", index=False)
+    # df = split("winners100", (50, 70), (70, 100))
+    # df.to_csv("./runs/winners70/2024_08_15_01_01_01.csv", index=False)
+
+    df = split("loosers100", (10, 30), (30, 100))
+    df.to_csv("./runs/loosers30/2024_08_15_01_01_01.csv", index=False)
+
+    df = split("loosers100", (30, 50), (50, 100))
+    df.to_csv("./runs/loosers50/2024_08_15_01_01_01.csv", index=False)
+
+    df = split("loosers100", (50, 70), (70, 100))
+    df.to_csv("./runs/loosers70/2024_08_15_01_01_01.csv", index=False)
 
 
 if __name__ == "__main__":
