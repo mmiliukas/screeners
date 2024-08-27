@@ -3,9 +3,11 @@
 import datetime
 import glob
 import os.path
+from typing import List, Tuple
 
 import pandas as pd
 import yfinance as yf
+from tqdm import tqdm
 
 from screeners.config import config
 from screeners.etfs import get_holdings, resolve_etf
@@ -122,8 +124,30 @@ def enrich_tickers(symbols) -> pd.DataFrame:
     return df
 
 
-def main():
-    df = enrich_tickers(get_tickers_whitelisted())
+def filter_out_with_zero_trading(tickers: List[str]) -> Tuple[List[str], pd.DataFrame]:
+    valid: List[str] = []
+    invalid: List[str] = []
+
+    start = datetime.date.today() - datetime.timedelta(days=5)
+
+    with tqdm(total=len(tickers)) as progress:
+        for ticker in tickers:
+            df: pd.DataFrame = yf.download(
+                ticker, interval="1d", start=start, progress=False
+            )
+            invalid.append(ticker) if df.empty else valid.append(ticker)
+            progress.update()
+
+    return (valid, pd.DataFrame({"Symbol": invalid}))
+
+
+def main() -> None:
+    tickers = get_tickers_whitelisted()
+
+    tickers, no_trading = filter_out_with_zero_trading(tickers)
+    ignore(no_trading, "No Recent Trades")
+
+    df = enrich_tickers(tickers)
 
     # 1. filter tickers only having sector (means categorized)
     filter_sector = ~df["Sector"].isna()
