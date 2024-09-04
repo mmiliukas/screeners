@@ -1,18 +1,18 @@
 import time
 
 
-def a_string(x: str):
+def a_string(x: str) -> str:
     return x
 
 
-def a_percent(x: str):
+def a_percent(x: str) -> float | int:
     try:
         return round(float(x.replace("%", "")), 4)
     except Exception:
         return round(0, 4)
 
 
-def a_number(x: str):
+def a_number(x: str) -> float | int:
     multipliers = {
         "k": 10**3,
         "K": 10**3,
@@ -31,7 +31,7 @@ def a_number(x: str):
         return round(0, 4)
 
 
-def an_integer(x: str):
+def an_integer(x: str) -> int:
     try:
         return int(a_number(x))
     except Exception:
@@ -52,7 +52,7 @@ def retry(times: int):
     return try_fn
 
 
-def unique_file_name(extension: str = ".csv"):
+def unique_file_name(extension: str = ".csv") -> str:
     name = time.strftime("%Y_%m_%d_%H_%M_%S")
     return f"{name}{extension}"
 

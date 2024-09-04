@@ -20,7 +20,7 @@ with open("config-logging.yml", "r") as config_logging:
 logger = logging.getLogger(__name__)
 
 
-def main(argv):
+def main(argv) -> None:
 
     cookies = argv[1]
     retry_times = config["scraper"]["retry_times"]

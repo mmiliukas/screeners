@@ -8,12 +8,12 @@ from screeners.config import config
 logger = logging.getLogger(__name__)
 
 
-def get_holding(el: ElementHandle):
+def get_holding(el: ElementHandle) -> dict[str, str]:
     symbol, name, assets = el.inner_text().strip().split("\n")
     return {"Name": name, "Symbol": symbol, "% Assets": assets}
 
 
-def scrape_etf(page: Page, symbol: str):
+def scrape_etf(page: Page, symbol: str) -> None:
     logger.info(f'scraping holdings for ETF "{symbol}"...')
 
     page.goto(f"https://finance.yahoo.com/quote/{symbol}/holdings")

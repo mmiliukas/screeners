@@ -12,7 +12,7 @@ from screeners.utils import a_number, a_percent, a_string, an_integer, unique_fi
 logger = logging.getLogger(__name__)
 
 
-def scrape_screener(page: Page, url: str, target: str):
+def scrape_screener(page: Page, url: str, target: str) -> None:
     logger.info(f'scraping "{url}" to "{target}"...')
 
     results = []
