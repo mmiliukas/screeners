@@ -48,7 +48,7 @@ def __revive(df: pd.DataFrame) -> list[str]:
             if __is_ticker_alive(symbol, ticker):
                 revived_symbols.append(symbol)
 
-            progress.set_description(f"{symbol:<10}")
+            progress.set_description(f"{symbol:<10}", refresh=False)
             progress.update(1)
 
     return revived_symbols
