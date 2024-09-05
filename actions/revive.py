@@ -1,4 +1,3 @@
-import logging
 from datetime import date, timedelta
 
 import pandas as pd
@@ -57,9 +56,6 @@ def __revive(df: pd.DataFrame) -> list[str]:
 
 
 def revive() -> None:
-    # ignored tickers generate too much noice, filtering them out
-    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
-
     file_name = config["ignored_tickers"]["target"]
     df = pd.read_csv(file_name)
 

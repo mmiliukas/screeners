@@ -1,11 +1,19 @@
 #!/usr/bin/env python
 
+import logging
+import logging.config
+
 import typer
+import yaml
 
 from actions.cookies import cookies
 from actions.etf import etf
 from actions.revive import revive
+from actions.scrape import scrape
 from actions.split import split
+
+with open("config-logging.yml", "r") as config_logging:
+    logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 app = typer.Typer()
 
@@ -53,6 +61,11 @@ def command_split() -> None:
 
     df = split("random100", (50, 70), (70, 100))
     df.to_csv("./runs/random70/2024_08_15_01_01_01.csv", index=False)
+
+
+@app.command(name="scrape")
+def command_scrape(cookies: str) -> None:
+    scrape(cookies)
 
 
 if __name__ == "__main__":
