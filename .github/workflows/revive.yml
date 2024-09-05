@@ -10,7 +10,7 @@ permissions:
   contents: 'write'
 
 jobs:
-  scrape:
+  revive:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: 'actions/checkout@v4'
