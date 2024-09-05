@@ -1,16 +1,11 @@
-import logging
 import re
 from time import sleep
 
 from playwright.sync_api import Page
 
-logger = logging.getLogger(__name__)
 
-
-def login(page: Page, username: str, password: str):
+def login(page: Page, username: str, password: str) -> None:
     login_url = "https://login.yahoo.com"
-
-    logger.info(f'logging in into "{login_url}"...')
 
     page.goto(login_url)
     page.wait_for_selector("input#login-username")

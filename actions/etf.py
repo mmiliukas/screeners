@@ -13,8 +13,8 @@ from screeners.utils import retry
 def etf(cookies: str) -> None:
 
     retry_times = config["scraper"]["retry_times"]
-
     etfs = get_etfs()
+
     with tqdm(total=len(etfs)) as progress:
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(headless=True)
@@ -24,8 +24,8 @@ def etf(cookies: str) -> None:
             decoded_cookies = base64.b64decode(cookies)
             page.context.add_cookies(json.loads(decoded_cookies))
 
-            for etf in get_etfs():
+            for etf in etfs:
                 retry(retry_times)(lambda: scrape_etf(page, etf))
 
-                progress.set_description(f"{etf:<10}", refresh=False)
+                progress.set_description(f"{etf:>10}", refresh=False)
                 progress.update(1)

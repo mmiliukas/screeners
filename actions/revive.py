@@ -26,8 +26,8 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     if current_ratio < 0.5:
         return False
 
-    # not being traded anymore, no trades in the last 7 days
-    start = date.today() - timedelta(days=7)
+    # not being traded anymore, no trades in the last 5 days
+    start = date.today() - timedelta(days=5)
 
     history = yf.download(symbol, period="max", interval="1d", progress=False)
     history = history[history.index > pd.to_datetime(start)]
@@ -48,7 +48,7 @@ def __revive(df: pd.DataFrame) -> list[str]:
             if __is_ticker_alive(symbol, ticker):
                 revived_symbols.append(symbol)
 
-            progress.set_description(f"{symbol:<10}", refresh=False)
+            progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
 
     return revived_symbols
