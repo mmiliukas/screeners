@@ -74,5 +74,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
                 return
             else:
+                logger.info("next page")
+
                 button.click()
                 sleep(2)

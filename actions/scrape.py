@@ -1,11 +1,18 @@
 import base64
 import json
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Request, Route, sync_playwright
 
 from screeners.config import config
 from screeners.scraper import scrape_screener
 from screeners.utils import retry
+
+
+def __block_heavy_requests(route: Route, request: Request) -> None:
+    if request.resource_type in ["stylesheet", "image", "media", "font"]:
+        route.abort()
+    else:
+        route.continue_()
 
 
 def scrape(cookies: str) -> None:
@@ -19,6 +26,8 @@ def scrape(cookies: str) -> None:
 
         decoded_cookies = base64.b64decode(cookies)
         page.context.add_cookies(json.loads(decoded_cookies))
+
+        page.route("**/*", __block_heavy_requests)
 
         for screener in config["screeners"]:
 
