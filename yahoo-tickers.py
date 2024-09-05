@@ -42,7 +42,7 @@ def should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: str):
     return True
 
 
-def main(args: list[str]):
+def main(args: list[str]) -> None:
     __fetch_time = datetime.date.today().isoformat()
 
     tickers = get_tickers()

@@ -17,8 +17,6 @@ from screeners.utils import retry
 with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
-logger = logging.getLogger(__name__)
-
 
 def main(argv) -> None:
 

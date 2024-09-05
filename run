@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+import typer
+
+from actions.revive import revive
+
+app = typer.Typer()
+
+
+@app.command(name="revive")
+def command_revive() -> None:
+    revive()
+
+
+@app.command(name="bar")
+def foo() -> None:
+    pass
+
+
+if __name__ == "__main__":
+    app()

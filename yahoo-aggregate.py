@@ -14,7 +14,7 @@ from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
 
 
-def ignore(df: pd.DataFrame, reason: str):
+def ignore(df: pd.DataFrame, reason: str) -> None:
     if len(df) == 0:
         return
 
