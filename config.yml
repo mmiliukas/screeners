@@ -120,6 +120,21 @@ screeners:
     urls:
       - "https://finance.yahoo.com/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91?count=100"
 
+  - name: "Giga 1-5"
+    cache_name: runs/giga1-5/
+    urls:
+      - "https://finance.yahoo.com/screener/b783c44f-13f2-4d87-bda2-d399b0c4abb9?count=100"
+
+  - name: "Giga 5-10"
+    cache_name: runs/giga5-10/
+    urls:
+      - "https://finance.yahoo.com/screener/2f8576d2-b0b7-4ebe-bac1-6be25e36d4e2?count=100"
+
+  - name: "Giga 10-100"
+    cache_name: runs/giga10-100/
+    urls:
+      - "https://finance.yahoo.com/screener/961b7d7a-95ee-48ac-babe-532eebdb1a5d?count=100"
+
 ignored_tickers:
   # file for storing ignored tickers
   # contains date and reason for ignore
