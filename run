@@ -2,6 +2,7 @@
 
 import typer
 
+from actions.cookies import cookies
 from actions.revive import revive
 
 app = typer.Typer()
@@ -12,9 +13,10 @@ def command_revive() -> None:
     revive()
 
 
-@app.command(name="bar")
-def foo() -> None:
-    pass
+@app.command(name="cookies")
+def command_cookies(username: str, password: str) -> None:
+    result = cookies(username, password)
+    print(result)
 
 
 if __name__ == "__main__":
