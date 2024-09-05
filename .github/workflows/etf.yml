@@ -20,7 +20,7 @@ jobs:
           cache: 'pip'
 
       - run: pip install -r requirements.txt
-      - run: ./run etf
+      - run: ./run etf "${{ secrets.username }}" "${{ secrets.password }}"
 
       - run: |
           git config user.name 'github-actions[bot]'
