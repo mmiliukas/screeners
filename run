@@ -17,13 +17,12 @@ def command_revive() -> None:
 
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
-    result = cookies(username, password)
-    print(result)
+    print(cookies(username, password))
 
 
 @app.command(name="etf")
-def command_etf(username: str, password: str) -> None:
-    etf(cookies(username, password))
+def command_etf(cookies: str) -> None:
+    etf(cookies)
 
 
 @app.command(name="split")

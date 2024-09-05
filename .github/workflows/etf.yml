@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - run: ./run etf "${{ secrets.username }}" "${{ secrets.password }}"
+      - run: ./run etf "${{ secrets.cookies }}"
 
       - run: |
           git config user.name 'github-actions[bot]'
