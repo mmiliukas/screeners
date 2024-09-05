@@ -2,12 +2,6 @@ name: 'Scrape Yahoo Screeners (daily)'
 
 on:
   workflow_dispatch:
-    inputs:
-      expire_after_days:
-        description: 'Ticker cache expiration in days. "0" disables the cache.'
-        required: true
-        type: 'string'
-        default: '3'
 
   schedule:
     - cron: '00 06 * * 1-5'
