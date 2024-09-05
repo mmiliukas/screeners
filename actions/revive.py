@@ -35,6 +35,8 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     if len(history) == 0:
         return False
 
+    # TODO: check Missing Close Price
+
     return True
 
 

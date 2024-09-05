@@ -55,13 +55,3 @@ def retry(times: int):
 def unique_file_name(extension: str = ".csv") -> str:
     name = time.strftime("%Y_%m_%d_%H_%M_%S")
     return f"{name}{extension}"
-
-
-def progress(prefix: str, current: int, total: int) -> None:
-    percentage = current / total
-    line = "\r[{1:20s}] {2:4}/{3} ({4:3}%) {0}".format(
-        prefix, "■" * int(percentage * 20), current, total, int(percentage * 100)
-    )
-    print(line, end="", flush=True)
-    if current == total:
-        print("", flush=True)
