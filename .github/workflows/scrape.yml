@@ -64,7 +64,6 @@ jobs:
 
           git add ./reports/
           git add ./first-seen/
-          git add ./etfs/
           git add ./runs/
           git add ./tickers/
           git add ./tickers-etfs.csv

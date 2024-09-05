@@ -1,4 +1,4 @@
-name: 'Scrape Yahoo ETF holdings'
+name: 'Scrape Yahoo ETF holdings (on Saturday morning)'
 
 on:
   workflow_dispatch:
@@ -28,5 +28,5 @@ jobs:
 
           git add ./etfs
 
-          git commit --allow-empty -m "chore(tickers): etf holdings"
+          git commit --allow-empty -m "chore(etf): update etf holdings"
           git push
