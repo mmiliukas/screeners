@@ -13,112 +13,112 @@ screeners:
   - name: "Winners 1"
     cache_name: runs/winners1/
     urls:
-      - "https://finance.yahoo.com/screener/7a712692-7bfc-4a53-92df-7607289e916a"
+      - "https://finance.yahoo.com/screener/7a712692-7bfc-4a53-92df-7607289e916a?count=100"
 
   - name: "Winners 5"
     cache_name: runs/winners5/
     urls:
-      - "https://finance.yahoo.com/screener/fbf0a208-739c-4336-8100-e56f17ab01ab"
+      - "https://finance.yahoo.com/screener/fbf0a208-739c-4336-8100-e56f17ab01ab?count=100"
 
   - name: "Winners 10"
     cache_name: runs/winners10/
     urls:
-      - "https://finance.yahoo.com/screener/b4204420-30b5-4e54-b889-dae9196de206"
+      - "https://finance.yahoo.com/screener/b4204420-30b5-4e54-b889-dae9196de206?count=100"
 
   - name: "Winners 30"
     cache_name: runs/winners30/
     urls:
-      - "https://finance.yahoo.com/screener/ae5ec646-e73d-4133-b785-a4668b6c366c"
+      - "https://finance.yahoo.com/screener/ae5ec646-e73d-4133-b785-a4668b6c366c?count=100"
 
   - name: "Winners 50"
     cache_name: runs/winners50/
     urls:
-      - "https://finance.yahoo.com/screener/05701f22-6e63-4d76-af38-18a2ca0abe38"
+      - "https://finance.yahoo.com/screener/05701f22-6e63-4d76-af38-18a2ca0abe38?count=100"
 
   - name: "Winners 70"
     cache_name: runs/winners70/
     urls:
-      - "https://finance.yahoo.com/screener/2ee39be9-0152-467b-8a4e-4296d3b9f3ed"
+      - "https://finance.yahoo.com/screener/2ee39be9-0152-467b-8a4e-4296d3b9f3ed?count=100"
 
   - name: "Winners 100"
     cache_name: runs/winners100/
     urls:
-      - "https://finance.yahoo.com/screener/946a6a6b-6dc7-4deb-9749-be3923536203"
+      - "https://finance.yahoo.com/screener/946a6a6b-6dc7-4deb-9749-be3923536203?count=100"
 
   - name: "Loosers 1"
     cache_name: runs/loosers1/
     urls:
-      - "https://finance.yahoo.com/screener/19949fe1-fe80-4d3e-b960-3a3c3c0d108f"
+      - "https://finance.yahoo.com/screener/19949fe1-fe80-4d3e-b960-3a3c3c0d108f?count=100"
 
   - name: "Loosers 5"
     cache_name: runs/loosers5/
     urls:
-      - "https://finance.yahoo.com/screener/e361b765-6a1c-4e2d-b16c-39b9547c0f6f"
+      - "https://finance.yahoo.com/screener/e361b765-6a1c-4e2d-b16c-39b9547c0f6f?count=100"
 
   - name: "Loosers 10"
     cache_name: runs/loosers10/
     urls:
-      - "https://finance.yahoo.com/screener/09324041-bb7b-464e-96a9-61fa4e84f48f"
+      - "https://finance.yahoo.com/screener/09324041-bb7b-464e-96a9-61fa4e84f48f?count=100"
 
   - name: "Loosers 30"
     cache_name: runs/loosers30/
     urls:
-      - "https://finance.yahoo.com/screener/62b1e0d2-04d7-4fc6-9304-df45b1b25da5"
+      - "https://finance.yahoo.com/screener/62b1e0d2-04d7-4fc6-9304-df45b1b25da5?count=100"
 
   - name: "Loosers 50"
     cache_name: runs/loosers50/
     urls:
-      - "https://finance.yahoo.com/screener/049896cc-2fc9-4428-9c58-5a2cb0cb0bf6"
+      - "https://finance.yahoo.com/screener/049896cc-2fc9-4428-9c58-5a2cb0cb0bf6?count=100"
 
   - name: "Loosers 70"
     cache_name: runs/loosers70/
     urls:
-      - "https://finance.yahoo.com/screener/7b4b12b5-78d8-4e46-a514-156c9da39aee"
+      - "https://finance.yahoo.com/screener/7b4b12b5-78d8-4e46-a514-156c9da39aee?count=100"
 
   - name: "Loosers 100"
     cache_name: runs/loosers100/
     urls:
-      - "https://finance.yahoo.com/screener/1c20cb1c-c66f-4bbb-b0db-0825cff38b85"
+      - "https://finance.yahoo.com/screener/1c20cb1c-c66f-4bbb-b0db-0825cff38b85?count=100"
 
   - name: "Random 1"
     cache_name: runs/random1/
     urls:
-      - "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f"
+      - "https://finance.yahoo.com/screener/77abaf9c-8923-408e-ab93-9e6f7c21563f?count=100"
 
   - name: "Random 5"
     cache_name: runs/random5/
     urls:
-      - "https://finance.yahoo.com/screener/0c843e2d-2d90-4f39-a3aa-eca119051cd8"
+      - "https://finance.yahoo.com/screener/0c843e2d-2d90-4f39-a3aa-eca119051cd8?count=100"
 
   - name: "Random 10"
     cache_name: runs/random10/
     urls:
-      - "https://finance.yahoo.com/screener/c2f52d5b-078c-43ea-ad73-0de929180492"
+      - "https://finance.yahoo.com/screener/c2f52d5b-078c-43ea-ad73-0de929180492?count=100"
 
   - name: "Random 30"
     cache_name: runs/random30/
     urls:
-      - "https://finance.yahoo.com/screener/eab7f7c7-a542-4ea5-9f96-e0a56cdb8045"
+      - "https://finance.yahoo.com/screener/eab7f7c7-a542-4ea5-9f96-e0a56cdb8045?count=100"
 
   - name: "Random 50"
     cache_name: runs/random50/
     urls:
-      - "https://finance.yahoo.com/screener/bbbaec89-7f51-47c7-804e-63cca94eaecf"
+      - "https://finance.yahoo.com/screener/bbbaec89-7f51-47c7-804e-63cca94eaecf?count=100"
 
   - name: "Random 70"
     cache_name: runs/random70/
     urls:
-      - "https://finance.yahoo.com/screener/037d2f0f-ca64-4825-96eb-bc55cd4d38bd"
+      - "https://finance.yahoo.com/screener/037d2f0f-ca64-4825-96eb-bc55cd4d38bd?count=100"
 
   - name: "Random 100"
     cache_name: runs/random100/
     urls:
-      - "https://finance.yahoo.com/screener/949fbfa3-eb9f-49c9-8f3c-2abb70e8a7bd"
+      - "https://finance.yahoo.com/screener/949fbfa3-eb9f-49c9-8f3c-2abb70e8a7bd?count=100"
 
   - name: "Random 120"
     cache_name: runs/random120/
     urls:
-      - "https://finance.yahoo.com/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91"
+      - "https://finance.yahoo.com/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91?count=100"
 
 ignored_tickers:
   # file for storing ignored tickers
