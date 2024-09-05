@@ -3,6 +3,7 @@
 import typer
 
 from actions.cookies import cookies
+from actions.etf import etf
 from actions.revive import revive
 
 app = typer.Typer()
@@ -17,6 +18,11 @@ def command_revive() -> None:
 def command_cookies(username: str, password: str) -> None:
     result = cookies(username, password)
     print(result)
+
+
+@app.command(name="etf")
+def command_etf(username: str, password: str) -> None:
+    etf(cookies(username, password))
 
 
 if __name__ == "__main__":

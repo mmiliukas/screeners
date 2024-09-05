@@ -10,8 +10,7 @@ import yaml
 from playwright.sync_api import sync_playwright
 
 from screeners.config import config
-from screeners.etfs import get_etfs
-from screeners.scraper import scrape_etf, scrape_screener
+from screeners.scraper import scrape_screener
 from screeners.utils import retry
 
 with open("config-logging.yml", "r") as config_logging:
@@ -30,9 +29,6 @@ def main(argv) -> None:
 
         decoded_cookies = base64.b64decode(cookies)
         page.context.add_cookies(json.loads(decoded_cookies))
-
-        for etf in get_etfs():
-            retry(retry_times)(lambda: scrape_etf(page, etf))
 
         for screener in config["screeners"]:
 

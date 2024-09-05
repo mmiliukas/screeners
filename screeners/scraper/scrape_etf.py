@@ -8,14 +8,12 @@ from screeners.config import config
 logger = logging.getLogger(__name__)
 
 
-def get_holding(el: ElementHandle) -> dict[str, str]:
+def __get_holding(el: ElementHandle) -> dict[str, str]:
     symbol, name, assets = el.inner_text().strip().split("\n")
     return {"Name": name, "Symbol": symbol, "% Assets": assets}
 
 
 def scrape_etf(page: Page, symbol: str) -> None:
-    logger.info(f'scraping holdings for ETF "{symbol}"...')
-
     page.goto(f"https://finance.yahoo.com/quote/{symbol}/holdings")
 
     data_hook = '[data-testid="top-holdings"] div.container div.content'
@@ -25,5 +23,5 @@ def scrape_etf(page: Page, symbol: str) -> None:
 
     etf_cache_name = config["etf"]["cache_name"]
 
-    df = pd.DataFrame(list(map(get_holding, rows)))
+    df = pd.DataFrame(list(map(__get_holding, rows)))
     df.to_csv(f"{etf_cache_name}{symbol}.csv", index=False)
