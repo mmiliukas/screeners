@@ -67,7 +67,7 @@ def get_holdings():
     return df["Symbol"].unique()
 
 
-def get_etfs_and_holdings():
+def get_etfs_and_holdings() -> list[str]:
     etfs = get_etfs()
     etfs.extend(get_holdings())
 

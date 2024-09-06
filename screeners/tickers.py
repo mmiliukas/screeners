@@ -6,7 +6,7 @@ import pandas as pd
 from screeners.config import config
 
 
-def get_tickers():
+def get_tickers() -> list[str]:
     runs = [screener["cache_name"] for screener in config["screeners"]]
 
     csvs = []
