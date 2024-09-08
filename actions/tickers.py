@@ -11,7 +11,7 @@ from screeners.etfs import get_etfs_and_holdings
 from screeners.tickers import get_tickers
 
 
-def should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) -> bool:
+def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) -> bool:
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
 
@@ -42,7 +42,7 @@ def tickers(days: int) -> None:
         for symbol in tickers:
             ticker_path = config["tickers"]["cache_name"] + symbol + ".json"
 
-            if should_update(df, symbol, ticker_path, days=days):
+            if __should_update(df, symbol, ticker_path, days=days):
                 result = yf.Ticker(symbol)
 
                 if not result.info or "symbol" not in result.info:
