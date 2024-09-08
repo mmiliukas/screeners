@@ -14,8 +14,8 @@ from screeners.tickers import get_tickers
 def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) -> bool:
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
-    print(ticker_file)
-    if os.path.exists(ticker_file):
+    file_name = os.path.join(os.getcwd(), ticker_file)
+    if os.path.exists(file_name):
         with open(ticker_file, "r") as file:
             ticker = json.load(file)
             if "__fetch_time" in ticker[0]:
@@ -49,7 +49,8 @@ def tickers(days: int) -> None:
                     now = datetime.datetime.now()
                     df.loc[len(df.index)] = [symbol, now, "Not Found"]
                 else:
-                    with open(ticker_path, "w") as file:
+                    file_name = os.path.join(os.getcwd(), ticker_path)
+                    with open(file_name, "w") as file:
                         info = result.info
                         info["__fetch_time"] = __fetch_time
 
