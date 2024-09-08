@@ -49,7 +49,8 @@ def tickers(days: int) -> None:
                     now = datetime.datetime.now()
                     df.loc[len(df.index)] = [symbol, now, "Not Found"]
                 else:
-                    with open(os.path.abspath(ticker_path), "w") as file:
+                    file_name = os.path.join(os.getcwd(), ticker_path)
+                    with open(file_name, "w") as file:
                         info = result.info
                         info["__fetch_time"] = __fetch_time
 
