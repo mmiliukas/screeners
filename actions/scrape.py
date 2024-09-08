@@ -1,11 +1,12 @@
 import base64
 import json
+import os
 
 from playwright.sync_api import Request, Route, sync_playwright
 
 from screeners.config import config
 from screeners.scraper import scrape_screener
-from screeners.utils import retry
+from screeners.utils import retry, unique_file_name
 
 
 def __block_heavy_requests(route: Route, request: Request) -> None:
@@ -34,9 +35,10 @@ def scrape(cookies: str) -> None:
             # some screeners have no urls, cause we want to include
             # them inside a final dataframe
             screener_urls = screener["urls"] if "urls" in screener else []
-            screener_cache_name = screener["cache_name"]
+            dir = screener["cache_name"]
 
-            for screener_url in screener_urls:
-                retry(retry_times)(
-                    lambda: scrape_screener(page, screener_url, screener_cache_name)
-                )
+            for url in screener_urls:
+                file = unique_file_name(extension=".csv")
+                target = os.path.join(os.getcwd(), dir, file)
+
+                retry(retry_times)(lambda: scrape_screener(page, url, target))
