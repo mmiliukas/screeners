@@ -139,4 +139,4 @@ tickers:
   target: tickers.csv
 
 telegram:
-  enabled: true
+  enabled: False
