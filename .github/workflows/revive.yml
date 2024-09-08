@@ -30,3 +30,5 @@ jobs:
 
           git commit --allow-empty -m "chore(tickers): revive"
           git push
+
+      - run: ./run notify -- '🟢 tickers revived' "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"

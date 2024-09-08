@@ -39,7 +39,10 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     return True
 
 
-def __revive(df: pd.DataFrame) -> list[str]:
+def revive() -> None:
+    file_name = config["ignored_tickers"]["target"]
+    df = pd.read_csv(file_name)
+
     revived_symbols = []
 
     with tqdm(total=len(df)) as progress:
@@ -51,15 +54,6 @@ def __revive(df: pd.DataFrame) -> list[str]:
 
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
-
-    return revived_symbols
-
-
-def revive() -> None:
-    file_name = config["ignored_tickers"]["target"]
-    df = pd.read_csv(file_name)
-
-    revived_symbols = __revive(df)
 
     df = df[~df["Symbol"].isin(revived_symbols)]
     df.to_csv(file_name, index=False)
