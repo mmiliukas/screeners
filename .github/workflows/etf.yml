@@ -1,4 +1,4 @@
-name: 'Scrape Yahoo ETF holdings (on Saturday morning)'
+name: 'Scrape ETF Holdings'
 
 on:
   workflow_dispatch:

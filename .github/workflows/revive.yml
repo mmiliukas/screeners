@@ -1,4 +1,4 @@
-name: 'Revive Tickers (on Sunday morning)'
+name: 'Revive'
 
 on:
   workflow_dispatch:
