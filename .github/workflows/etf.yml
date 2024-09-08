@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - run: ./run etf "${{ secrets.cookies }}"
+      - run: ./run etf '${{ secrets.cookies }}'
 
       - run: |
           git config user.name 'github-actions[bot]'
@@ -31,7 +31,7 @@ jobs:
 
           git add ./etfs
 
-          git commit --allow-empty -m "chore(etf): update etf holdings"
+          git commit --allow-empty -m 'chore(etf): update etf holdings'
           git push
 
-      - run: ./run notify "🟢 ETF holdings updated" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
+      - run: ./run notify '🟢 ETF holdings updated' '${{ secrets.telegram_token }}' '${{ secrets.telegram_channel }}'
