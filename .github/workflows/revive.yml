@@ -1,4 +1,4 @@
-name: 'Revive'
+name: 'Revive Tickers'
 
 on:
   workflow_dispatch:

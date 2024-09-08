@@ -1,4 +1,4 @@
-name: 'Scrape Yahoo Screeners (daily)'
+name: 'Scrape Screeners'
 
 on:
   workflow_dispatch:

@@ -1,10 +1,12 @@
-name: 'Update tickers'
+name: 'Update Tickers'
 
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: '00 06 * * 1-5'
+  workflow_run:
+    workflows: ["Scrape Screeners"]
+    types:
+      - completed
 
 permissions:
   contents: 'write'
