@@ -12,11 +12,22 @@ from actions.revive import revive
 from actions.scrape import scrape
 from actions.split import split
 from actions.tickers import tickers
+from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 app = typer.Typer()
+
+
+@app.command(name="notify")
+def command_notify(message: str, bot_token: str, channel_id: str) -> None:
+    log_to_telegram(message, bot_token, channel_id)
+
+
+@app.command(name="etf")
+def command_etf(cookies: str) -> None:
+    etf(cookies)
 
 
 @app.command(name="revive")
@@ -27,11 +38,6 @@ def command_revive() -> None:
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
     print(cookies(username, password))
-
-
-@app.command(name="etf")
-def command_etf(cookies: str) -> None:
-    etf(cookies)
 
 
 @app.command(name="split")

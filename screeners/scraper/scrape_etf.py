@@ -1,11 +1,7 @@
-import logging
-
 import pandas as pd
 from playwright.sync_api import ElementHandle, Page
 
 from screeners.config import config
-
-logger = logging.getLogger(__name__)
 
 
 def __get_holding(el: ElementHandle) -> dict[str, str]:
