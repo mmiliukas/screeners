@@ -1,5 +1,6 @@
 import base64
 import json
+import os
 
 from playwright.sync_api import Request, Route, sync_playwright
 
@@ -30,6 +31,6 @@ def giga(cookies: str) -> None:
         page.route("**/*", __block_heavy_requests)
 
         for screener in config["giga"]:
-            retry(retry_times)(
-                lambda: scrape_screener(page, screener["url"], screener["target"])
-            )
+            url = screener["url"]
+            target = os.path.join(os.getcwd(), screener["target"])
+            retry(retry_times)(lambda: scrape_screener(page, url, target))
