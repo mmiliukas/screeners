@@ -4,10 +4,10 @@ from datetime import datetime
 from io import StringIO
 from time import sleep
 
-import pandas
+import pandas as pd
 from playwright.sync_api import Page, TimeoutError
 
-from screeners.utils import a_number, a_percent, a_string, an_integer, unique_file_name
+from screeners.utils import a_number, a_percent, a_string, an_integer
 
 logger = logging.getLogger(__name__)
 
@@ -50,12 +50,13 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
     ]
 
     date = datetime.now().isoformat()
+    page_no = 1
 
     while True:
         table = page.wait_for_selector("#scr-res-table")
         html = "" if not table else table.inner_html()
 
-        data = pandas.read_html(StringIO(html), converters=converters)[0][columns]  # type: ignore
+        data = pd.read_html(StringIO(html), converters=converters)[0][columns]  # type: ignore
         data.dropna(inplace=True)
         data["Date"] = date
 
@@ -65,16 +66,14 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         if button:
             is_last = button.is_disabled()
             if is_last:
-                if not os.path.exists(target):
-                    os.makedirs(target)
-
-                pandas.concat(results).to_csv(
-                    target + unique_file_name(extension=".csv"), index=False
-                )
+                dir = os.path.dirname(target)
+                os.makedirs(dir, exist_ok=True)
+                pd.concat(results).to_csv(target, index=False)
 
                 return
             else:
-                logger.info("next page")
+                page_no += 1
+                logger.info(f"going to next page '{page_no}'...")
 
                 button.click()
                 sleep(2)
