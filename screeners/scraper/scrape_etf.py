@@ -8,9 +8,10 @@ from screeners.utils import abs_path
 
 
 def scrape_etf(page: Page, symbol: str) -> None:
-    page.goto(f"https://finance.yahoo.com/quote/{symbol}/holdings")
+    url = f"https://finance.yahoo.com/quote/{symbol}/holdings"
+    page.goto(url, wait_until="domcontentloaded")
 
-    data_hook = '[data-test="top-holdings"] table'
+    data_hook = '[data-test="top-holdings"]'
 
     table = page.wait_for_selector(data_hook)
     html = "" if not table else table.inner_html()
