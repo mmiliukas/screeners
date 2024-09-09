@@ -20,6 +20,7 @@ jobs:
           cache: 'pip'
 
       - run: pip install -r requirements.txt
+
       - run: ./run revive
 
       - run: |
@@ -31,4 +32,4 @@ jobs:
           git commit --allow-empty -m "chore(tickers): revive"
           git push
 
-      - run: ./run notify -- '🟢 tickers revived' "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
+      - run: ./run notify -- "🟢 tickers revived" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"

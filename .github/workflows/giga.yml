@@ -34,4 +34,4 @@ jobs:
           git commit --allow-empty -m "chore(giga): scrape"
           git push
 
-      - run: ./run notify -- '🟢 giga screeners scraped' "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
+      - run: ./run notify -- "🟢 giga screeners scraped" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"

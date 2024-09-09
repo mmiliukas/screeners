@@ -2,6 +2,7 @@ import pandas as pd
 from playwright.sync_api import ElementHandle, Page
 
 from screeners.config import config
+from screeners.utils import abs_path
 
 
 def __get_holding(el: ElementHandle) -> dict[str, str]:
@@ -17,7 +18,7 @@ def scrape_etf(page: Page, symbol: str) -> None:
 
     rows = page.query_selector_all(data_hook)
 
-    etf_cache_name = config["etf"]["cache_name"]
+    etf_cache_name = abs_path(config["etf"]["cache_name"])
 
     df = pd.DataFrame(list(map(__get_holding, rows)))
     df.to_csv(f"{etf_cache_name}{symbol}.csv", index=False)
