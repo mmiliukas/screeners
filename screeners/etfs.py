@@ -3,6 +3,7 @@ import glob
 import pandas as pd
 
 from screeners.config import config
+from screeners.utils import abs_path
 
 ETFS = [
     {"EU": ["CRB", "SXPR"], "US": ["XLB"], "Sector": "Basic Materials"},
@@ -61,7 +62,7 @@ def get_etfs():
 
 
 def get_holdings():
-    cache_name = config["etf"]["cache_name"]
+    cache_name = abs_path(config["etf"]["cache_name"])
     df = pd.concat([pd.read_csv(csv) for csv in glob.glob(f"{cache_name}*.csv")])
 
     return df["Symbol"].unique()
@@ -74,5 +75,5 @@ def get_etfs_and_holdings() -> list[str]:
     return etfs
 
 
-def resolve_etf(sector):
+def resolve_etf(sector) -> str:
     return SECTOR_ETF[sector] if sector in SECTOR_ETF else ""
