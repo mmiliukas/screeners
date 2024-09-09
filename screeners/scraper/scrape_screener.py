@@ -68,6 +68,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
             if is_last:
                 dir = os.path.dirname(target)
                 os.makedirs(dir, exist_ok=True)
+
                 pd.concat(results).to_csv(target, index=False)
 
                 return

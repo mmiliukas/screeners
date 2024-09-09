@@ -1,3 +1,4 @@
+import os
 import time
 
 
@@ -55,3 +56,7 @@ def retry(times: int):
 def unique_file_name(extension: str = ".csv") -> str:
     name = time.strftime("%Y_%m_%d_%H_%M_%S")
     return f"{name}{extension}"
+
+
+def abs_path(partial_path: str) -> str:
+    return os.path.join(os.getcwd(), partial_path)
