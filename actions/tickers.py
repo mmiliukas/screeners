@@ -39,6 +39,7 @@ def tickers(days: int) -> None:
     ignored_tickers = abs_path(config["ignored_tickers"]["target"])
     df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
     cache_name = abs_path(config["tickers"]["cache_name"])
+    print(os.getcwd())
 
     with tqdm(total=len(tickers)) as progress:
         for symbol in tickers:
