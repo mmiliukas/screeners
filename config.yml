@@ -1,5 +1,7 @@
 scraper:
   retry_times: 2
+  min_current_ratio: 0.5
+  min_trading_days: 5
 
 etf:
   cache_name: etfs/

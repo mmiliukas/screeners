@@ -5,6 +5,7 @@ import yfinance as yf
 from tqdm import tqdm
 
 from screeners.config import config
+from screeners.utils import abs_path
 
 
 def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
@@ -20,13 +21,13 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     if not ticker.info.get("sector"):
         return False
 
-    # ratio below 0.5
+    # ratio below X
     current_ratio = ticker.info.get("currentRatio", 0)
-    if current_ratio < 0.5:
+    if current_ratio < config["scraper"]["min_current_ratio"]:
         return False
 
-    # not being traded anymore, no trades in the last 5 days
-    start = date.today() - timedelta(days=5)
+    # not being traded anymore, no trades in the last X days
+    start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
 
     history = yf.download(symbol, period="max", interval="1d", progress=False)
     history = history[history.index > pd.to_datetime(start)]
@@ -40,20 +41,20 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
 
 
 def revive() -> None:
-    file_name = config["ignored_tickers"]["target"]
-    df = pd.read_csv(file_name)
+    target = abs_path(config["ignored_tickers"]["target"])
+    df = pd.read_csv(target)
 
-    revived_symbols = []
+    revived = []
 
     with tqdm(total=len(df)) as progress:
         for symbol in df["Symbol"].values:
             ticker = yf.Ticker(symbol)
 
             if __is_ticker_alive(symbol, ticker):
-                revived_symbols.append(symbol)
+                revived.append(symbol)
 
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
 
-    df = df[~df["Symbol"].isin(revived_symbols)]
-    df.to_csv(file_name, index=False)
+    df = df[~df["Symbol"].isin(revived)]
+    df.to_csv(target, index=False)
