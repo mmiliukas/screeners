@@ -58,5 +58,5 @@ def unique_file_name(extension: str = ".csv") -> str:
     return f"{name}{extension}"
 
 
-def abs_path(partial_path: str) -> str:
-    return os.path.join(os.getcwd(), partial_path)
+def abs_path(*partial_paths: str) -> str:
+    return os.path.join(os.getcwd(), *partial_paths)
