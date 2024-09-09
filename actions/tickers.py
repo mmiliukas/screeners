@@ -9,13 +9,13 @@ from tqdm import tqdm
 from screeners.config import config
 from screeners.etfs import get_etfs_and_holdings
 from screeners.tickers import get_tickers
+from screeners.utils import abs_path
 
 
 def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) -> bool:
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
-    file_name = os.path.join(os.getcwd(), ticker_file)
-    if os.path.exists(file_name):
+    if os.path.exists(ticker_file):
         with open(ticker_file, "r") as file:
             ticker = json.load(file)
             if "__fetch_time" in ticker[0]:
@@ -35,12 +35,12 @@ def tickers(days: int) -> None:
     tickers = get_tickers()
     tickers.extend(get_etfs_and_holdings())
 
-    ignored_tickers = config["ignored_tickers"]["target"]
+    ignored_tickers = abs_path(config["ignored_tickers"]["target"])
     df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
 
     with tqdm(total=len(tickers)) as progress:
         for symbol in tickers:
-            ticker_path = config["tickers"]["cache_name"] + symbol + ".json"
+            ticker_path = abs_path(config["tickers"]["cache_name"] + symbol + ".json")
 
             if __should_update(df, symbol, ticker_path, days=days):
                 result = yf.Ticker(symbol)
@@ -49,8 +49,7 @@ def tickers(days: int) -> None:
                     now = datetime.datetime.now()
                     df.loc[len(df.index)] = [symbol, now, "Not Found"]
                 else:
-                    file_name = os.path.join(os.getcwd(), ticker_path)
-                    with open(file_name, "w") as file:
+                    with open(ticker_path, "w") as file:
                         info = result.info
                         info["__fetch_time"] = __fetch_time
 
