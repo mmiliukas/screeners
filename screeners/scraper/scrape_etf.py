@@ -1,24 +1,21 @@
+from io import StringIO
+
 import pandas as pd
-from playwright.sync_api import ElementHandle, Page
+from playwright.sync_api import Page
 
 from screeners.config import config
 from screeners.utils import abs_path
 
 
-def __get_holding(el: ElementHandle) -> dict[str, str]:
-    symbol, name, assets = el.inner_text().strip().split("\n")
-    return {"Name": name, "Symbol": symbol, "% Assets": assets}
-
-
 def scrape_etf(page: Page, symbol: str) -> None:
     page.goto(f"https://finance.yahoo.com/quote/{symbol}/holdings")
 
-    data_hook = '[data-testid="top-holdings"] div.container div.content'
-    page.wait_for_selector(data_hook)
+    data_hook = '[data-test="top-holdings"] table'
 
-    rows = page.query_selector_all(data_hook)
+    table = page.wait_for_selector(data_hook)
+    html = "" if not table else table.inner_html()
 
-    etf_cache_name = abs_path(config["etf"]["cache_name"])
+    df = pd.read_html(StringIO(html))[0]
 
-    df = pd.DataFrame(list(map(__get_holding, rows)))
-    df.to_csv(f"{etf_cache_name}{symbol}.csv", index=False)
+    target = abs_path(config["etf"]["cache_name"])
+    df.to_csv(f"{target}{symbol}.csv", index=False)
