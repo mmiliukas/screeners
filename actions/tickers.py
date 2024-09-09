@@ -15,6 +15,7 @@ from screeners.utils import abs_path
 def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) -> bool:
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
+
     if os.path.exists(ticker_file):
         with open(ticker_file, "r") as file:
             ticker = json.load(file)
@@ -37,10 +38,11 @@ def tickers(days: int) -> None:
 
     ignored_tickers = abs_path(config["ignored_tickers"]["target"])
     df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
+    cache_name = abs_path(config["tickers"]["cache_name"])
 
     with tqdm(total=len(tickers)) as progress:
         for symbol in tickers:
-            ticker_path = abs_path(config["tickers"]["cache_name"] + symbol + ".json")
+            ticker_path = os.path.join(cache_name, symbol + ".json")
 
             if __should_update(df, symbol, ticker_path, days=days):
                 result = yf.Ticker(symbol)
