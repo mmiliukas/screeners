@@ -37,9 +37,9 @@ def tickers(days: int) -> None:
     tickers.extend(get_etfs_and_holdings())
 
     ignored_tickers = abs_path(config["ignored_tickers"]["target"])
-    df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
     cache_name = abs_path(config["tickers"]["cache_name"])
-    print(os.getcwd())
+
+    df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
 
     with tqdm(total=len(tickers)) as progress:
         for symbol in tickers:
