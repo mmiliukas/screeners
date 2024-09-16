@@ -31,7 +31,7 @@ pyee==11.1.0
 pyluach==2.2.0
 pyparsing==3.1.4
 python-dateutil==2.9.0.post0
-pytz==2024.1
+pytz==2024.2
 PyYAML==6.0.2
 requests==2.32.3
 scipy==1.14.1
