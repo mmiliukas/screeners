@@ -1,0 +1,38 @@
+name: 'Reports'
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: ["Aggregate"]
+    types:
+      - completed
+
+permissions:
+  contents: 'write'
+
+jobs:
+  reports:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - uses: 'actions/setup-python@v5'
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - run: ./run reports
+
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add ./reports/
+
+          git commit --allow-empty -m "chore(reports): update"
+          git push
+
+      - run: |
+          ./run notify -- "🟢 daily update" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"

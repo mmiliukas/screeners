@@ -1,0 +1,36 @@
+name: 'Tickers'
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: ["Scrape"]
+    types:
+      - completed
+
+permissions:
+  contents: 'write'
+
+jobs:
+  tickers:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - uses: 'actions/setup-python@v5'
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - run: ./run tickers 3
+
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add ./tickers/
+          git add ./tickers-ignored.csv
+
+          git commit --allow-empty -m "chore(tickers): update"
+          git push

@@ -1,0 +1,77 @@
+#!/usr/bin/env python
+
+import logging
+import logging.config
+
+import typer
+import yaml
+
+from actions.aggregate import aggregate
+from actions.cookies import cookies
+from actions.etf import etf
+from actions.giga import giga
+from actions.reports import reports
+from actions.revive import revive
+from actions.scrape import scrape
+from actions.split import split
+from actions.tickers import tickers
+from screeners.telegram import log_to_telegram
+
+with open("config-logging.yml", "r") as config_logging:
+    logging.config.dictConfig(yaml.safe_load(config_logging.read()))
+
+app = typer.Typer()
+
+
+@app.command(name="notify")
+def command_notify(message: str, bot_token: str, channel_id: str) -> None:
+    log_to_telegram(message, bot_token, channel_id)
+
+
+@app.command(name="giga")
+def command_giga(cookies: str) -> None:
+    giga(cookies)
+
+
+@app.command(name="etf")
+def command_etf(cookies: str) -> None:
+    etf(cookies)
+
+
+@app.command(name="revive")
+def command_revive() -> None:
+    revive()
+
+
+@app.command(name="cookies")
+def command_cookies(username: str, password: str) -> None:
+    print(cookies(username, password))
+
+
+@app.command(name="split")
+def command_split() -> None:
+    split()
+
+
+@app.command(name="scrape")
+def command_scrape(cookies: str) -> None:
+    scrape(cookies)
+
+
+@app.command(name="tickers")
+def command_tickers(days: int) -> None:
+    tickers(days)
+
+
+@app.command(name="aggregate")
+def command_aggregate() -> None:
+    aggregate()
+
+
+@app.command(name="reports")
+def command_reports() -> None:
+    reports()
+
+
+if __name__ == "__main__":
+    app()
