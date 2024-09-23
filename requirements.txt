@@ -11,7 +11,7 @@ fonttools==4.53.1
 frozendict==2.4.4
 greenlet==3.0.3
 html5lib==1.1
-idna==3.8
+idna==3.10
 importlib_resources==6.4.5
 kiwisolver==1.4.7
 korean-lunar-calendar==0.3.1
