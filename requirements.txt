@@ -20,7 +20,7 @@ matplotlib==3.9.2
 multitasking==0.0.11
 numpy==2.1.1
 packaging==24.1
-pandas==2.2.2
+pandas==2.2.3
 pandas_market_calendars==4.4.1
 peewee==3.17.6
 pillow==10.4.0
