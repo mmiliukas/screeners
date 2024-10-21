@@ -23,7 +23,7 @@ packaging==24.1
 pandas==2.2.3
 pandas_market_calendars==4.4.1
 peewee==3.17.7
-pillow==10.4.0
+pillow==11.0.0
 platformdirs==4.3.6
 playwright==1.48.0
 pyarrow==17.0.0
