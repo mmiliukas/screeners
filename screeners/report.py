@@ -3,9 +3,9 @@ from datetime import date, datetime, timedelta
 
 import pandas as pd
 import pandas_market_calendars as mcal
-import yfinance as yf
 
 from screeners.config import config
+from screeners.download import download
 from screeners.etfs import ETF_SECTOR, SECTOR_ETF
 
 screener_names = [screener["name"] for screener in config["screeners"]]
@@ -79,7 +79,7 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
 
 def etfs_close() -> pd.DataFrame:
     tickers = ",".join(SECTOR_ETF.values())
-    df = yf.download(tickers, period="1y", interval="1d", progress=False)
+    df = download(tickers, period="1y")
     result = df["Close"]
     result.index.name = "date"
 
@@ -87,7 +87,7 @@ def etfs_close() -> pd.DataFrame:
         return f"{name} - {ETF_SECTOR[name]}"
 
     result.columns = [rename_column(col) for col in result.columns]
-    return result
+    return result  # type: ignore
 
 
 def tickers_by_sector(tickers: pd.DataFrame) -> pd.DataFrame:

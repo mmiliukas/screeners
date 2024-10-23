@@ -3,10 +3,10 @@ import glob
 import os.path
 
 import pandas as pd
-import yfinance as yf
 from tqdm import tqdm
 
 from screeners.config import config
+from screeners.download import download
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
 
@@ -44,7 +44,7 @@ def enrich_close_date(row):
     if os.path.exists(file_name):
         history = pd.read_csv(file_name)
     else:
-        history = yf.download(symbol, start=start, end=end, interval="1d", progress=False)
+        history = download(symbol, start=start, end=end)
         history.to_csv(file_name)
 
     return pd.NA if len(history) == 0 else history.iloc[-1]["Close"]
@@ -126,7 +126,7 @@ def filter_out_with_zero_trading(tickers: list[str]) -> tuple[list[str], pd.Data
 
     with tqdm(total=len(tickers)) as progress:
         for ticker in tickers:
-            df: pd.DataFrame = yf.download(ticker, interval="1d", start=start, progress=False)
+            df: pd.DataFrame = download(ticker, start=start)
             invalid.append(ticker) if df.empty else valid.append(ticker)
             progress.update(1)
 
