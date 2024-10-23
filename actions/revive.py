@@ -31,7 +31,7 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
 
     history = download(symbol, period="max")
-    history = history[history.index > pd.to_datetime(start)]
+    history = history[history.index > start]
 
     if len(history) == 0:
         return False
