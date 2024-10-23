@@ -79,7 +79,7 @@ def first_seen(tickers: pd.DataFrame, ignored_tickers: pd.DataFrame) -> pd.DataF
 
 def etfs_close() -> pd.DataFrame:
     tickers = ",".join(SECTOR_ETF.values())
-    df = download(tickers, period="1y")
+    df = download(tickers, period="1y", skip_transform=True)
     result = df["Close"]
     result.index.name = "date"
 

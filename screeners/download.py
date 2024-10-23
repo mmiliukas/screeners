@@ -11,7 +11,9 @@ def download(
     interval="1d",
     period: str = "max",
     progress=False,
+    skip_transform=False,
 ) -> pd.DataFrame:
+    group_by = "column" if skip_transform else "ticker"
     history = yf.download(
         ticker,
         start=start,
@@ -19,9 +21,13 @@ def download(
         interval=interval,
         period=period,
         progress=progress,
-        group_by="ticker",
+        group_by=group_by,
     )
-    history = history[ticker]
+
+    if not skip_transform:
+        history = history[ticker]
+
     history.index = history.index.date
     history.index.name = "Date"
+
     return history
