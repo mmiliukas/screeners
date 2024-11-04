@@ -23,7 +23,9 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - run: ./run giga "${{ secrets.cookies }}"
+      - run: ./run giga "${{ secrets.cookies }}" 0
+      - run: ./run giga "${{ secrets.cookies }}" 1
+      - run: ./run giga "${{ secrets.cookies }}" 2
 
       - run: |
           git config user.name 'github-actions[bot]'

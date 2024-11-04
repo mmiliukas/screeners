@@ -29,8 +29,8 @@ def command_notify(message: str, bot_token: str, channel_id: str) -> None:
 
 
 @app.command(name="giga")
-def command_giga(cookies: str) -> None:
-    giga(cookies)
+def command_giga(cookies: str, index: int) -> None:
+    giga(cookies, index)
 
 
 @app.command(name="etf")
