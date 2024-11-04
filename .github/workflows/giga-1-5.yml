@@ -1,4 +1,4 @@
-name: 'Scrape Giga'
+name: 'Scrape Giga 1-5'
 
 on:
   workflow_dispatch:
@@ -24,8 +24,6 @@ jobs:
           python -m playwright install chromium
 
       - run: ./run giga "${{ secrets.cookies }}" 0
-      - run: ./run giga "${{ secrets.cookies }}" 1
-      - run: ./run giga "${{ secrets.cookies }}" 2
 
       - run: |
           git config user.name 'github-actions[bot]'
@@ -33,7 +31,5 @@ jobs:
 
           git add ./tickers-giga*.csv
 
-          git commit --allow-empty -m "chore(giga): scrape"
+          git commit --allow-empty -m "chore(giga 1-5): scrape"
           git push
-
-      - run: ./run notify -- "🟢 giga screeners scraped" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
