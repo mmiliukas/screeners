@@ -48,15 +48,19 @@ def tickers(days: int) -> None:
             if __should_update(df, symbol, ticker_path, days=days):
                 result = yf.Ticker(symbol)
 
-                if not result.info or "symbol" not in result.info:
-                    now = datetime.datetime.now()
-                    df.loc[len(df.index)] = [symbol, now, "Not Found"]
-                else:
-                    with open(ticker_path, "w") as file:
-                        info = result.info
-                        info["__fetch_time"] = __fetch_time
+                try:
+                    if not result.info or "symbol" not in result.info:
+                        now = datetime.datetime.now()
+                        df.loc[len(df.index)] = [symbol, now, "Not Found"]
+                    else:
+                        with open(ticker_path, "w") as file:
+                            info = result.info
+                            info["__fetch_time"] = __fetch_time
 
-                        file.write(json.dumps([info]))
+                            file.write(json.dumps([info]))
+                except Exception as e:
+                    print(f"error fetching {symbol}: {e}")
+                    raise e
 
             progress.update(1)
 
