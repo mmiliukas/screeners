@@ -2,6 +2,7 @@
 
 import logging
 import logging.config
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import typer
 import yaml
@@ -15,6 +16,7 @@ from actions.revive import revive
 from actions.scrape import scrape
 from actions.split import split
 from actions.tickers import tickers
+from screeners.config import config
 from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
@@ -55,7 +57,13 @@ def command_split() -> None:
 
 @app.command(name="scrape")
 def command_scrape(cookies: str) -> None:
-    scrape(cookies)
+    with ProcessPoolExecutor() as pool:
+        futures = [
+            pool.submit(scrape, cookies, screener["cache_name"], screener["url"])
+            for screener in config["screeners"]
+        ]
+        for future in as_completed(futures):
+            future.result()
 
 
 @app.command(name="tickers")
