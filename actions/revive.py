@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+from time import sleep
 
 import pandas as pd
 import yfinance as yf
@@ -56,6 +57,8 @@ def revive() -> None:
 
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
+
+            sleep(0.3)
 
     df = df[~df["Symbol"].isin(revived)]
     df.to_csv(target, index=False)
