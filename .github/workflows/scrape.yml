@@ -20,9 +20,8 @@ jobs:
           cache: 'pip'
 
       - run: |
-          echo $(pwd)
           pip install -r requirements.txt
-          python -m playwright install chromium
+          [ -d "$HOME/.cache/ms-playwright" ] && echo "Directory $HOME/.cache/ms-playwright exists." || python -m playwright install chromium
 
       - run: ./run scrape "${{ secrets.cookies }}"
 
