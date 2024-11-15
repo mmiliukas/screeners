@@ -21,7 +21,7 @@ jobs:
 
       - run: |
           pip install -r requirements.txt
-          [ -d "$HOME/.cache/ms-playwright" ] && echo "Directory $HOME/.cache/ms-playwright exists." || python -m playwright install chromium
+          [ -d "$HOME/.cache/ms-playwright" ] && echo "directory $HOME/.cache/ms-playwright exists." || python -m playwright install chromium
 
       - run: ./run scrape "${{ secrets.cookies }}"
 
