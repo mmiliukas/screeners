@@ -19,5 +19,5 @@ def scrape(cookies: str, cache_name: str, url: str) -> None:
             target = abs_path(cache_name, file_name)
 
             retry(retry_times)(lambda: scrape_screener(page, url, target))
-    except asyncio.exceptions.CancelledError:
+    except asyncio.CancelledError:
         pass
