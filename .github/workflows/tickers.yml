@@ -23,7 +23,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: ./run tickers 7
+      - run: ./run tickers 3
 
       - run: |
           git config user.name 'github-actions[bot]'
