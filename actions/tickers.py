@@ -1,6 +1,7 @@
 import datetime
 import json
 import os.path
+from time import sleep
 
 import pandas as pd
 import yfinance as yf
@@ -47,6 +48,10 @@ def tickers(days: int) -> None:
 
             if __should_update(df, symbol, ticker_path, days=days):
                 result = yf.Ticker(symbol)
+
+                # wait a little bit before fetching the info
+                # seems like yahoo is detecting malicious activity
+                sleep(1)
 
                 try:
                     if not result.info or "symbol" not in result.info:
