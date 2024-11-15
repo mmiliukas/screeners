@@ -22,6 +22,7 @@ def download(
         period=period,
         progress=progress,
         group_by=group_by,
+        threads=False,
     )
 
     if not skip_transform:
