@@ -51,7 +51,7 @@ def tickers(days: int) -> None:
 
                 # wait a little bit before fetching the info
                 # seems like yahoo is detecting malicious activity
-                sleep(1)
+                sleep(0.3)
 
                 try:
                     if not result.info or "symbol" not in result.info:
