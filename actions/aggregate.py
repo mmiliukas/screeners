@@ -1,6 +1,7 @@
 import datetime
 import glob
 import os.path
+from time import sleep
 
 import pandas as pd
 from tqdm import tqdm
@@ -127,6 +128,7 @@ def filter_out_with_zero_trading(tickers: list[str]) -> tuple[list[str], pd.Data
     with tqdm(total=len(tickers)) as progress:
         for ticker in tickers:
             df: pd.DataFrame = download(ticker, start=start)
+            sleep(0.3)
             invalid.append(ticker) if df.empty else valid.append(ticker)
             progress.update(1)
 
