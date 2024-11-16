@@ -1,33 +1,22 @@
-name: 'Scrape Giga 1-5'
+name: Scrape Giga 1-5
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: '00 09 * * 0'
 
 permissions:
-  contents: 'write'
+  contents: write
 
 jobs:
   giga:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
     steps:
-      - uses: 'actions/checkout@v4'
-      - uses: 'actions/setup-python@v5'
-        with:
-          python-version: '3.12.3'
-          cache: 'pip'
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
 
       - run: |
-          pip install -r requirements.txt
-          python -m playwright install chromium
-
-      - run: ./run giga "${{ secrets.cookies }}" 0
-
-      - run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          ./run giga "${{ secrets.cookies }}" 0
 
           git add ./tickers-giga*.csv
 
