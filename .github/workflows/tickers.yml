@@ -3,10 +3,10 @@ name: 'Tickers'
 on:
   workflow_dispatch:
 
-  workflow_run:
-    workflows: ["Scrape"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["Scrape"]
+  #   types:
+  #     - completed
 
 permissions:
   contents: 'write'
