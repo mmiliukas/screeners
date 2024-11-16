@@ -15,22 +15,23 @@ jobs:
     steps:
       - uses: 'actions/checkout@v4'
       - uses: 'actions/setup-python@v5'
+        id: setup-python
         with:
           python-version: '3.12.3'
           cache: 'pip'
 
       - uses: actions/cache@v3
-        id: cache-pip
+        id: cache
         with:
-          key: ${{ runner.os }}-build-${{ hashFiles('**/requirements.txt') }}
+          key: ${{ runner.os }}-cache-${{ hashFiles('**/requirements.txt') }}
           path: |
             ~/.cache/ms-playwright
-            ~/.cache/pip
 
-      - if: steps.cache-pip.outputs.cache-hit != 'true'
-        run: |
-          pip install -r requirements.txt
-          python -m playwright install chromium
+      - if: steps.setup-python.outputs.cache-hit != 'true'
+        run: pip install -r requirements.txt
+
+      - if: steps.cache.outputs.cache-hit != 'true'
+        run: python -m playwright install chromium
 
       - run: ./run scrape "${{ secrets.cookies }}"
 
