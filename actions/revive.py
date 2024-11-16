@@ -30,10 +30,7 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
 
     # not being traded anymore, no trades in the last X days
     start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
-
-    history = download(symbol, period="1mo")
-    history = history[history.index > start]
-
+    history = download(symbol, start=start, interval="1d")
     if len(history) == 0:
         return False
 
@@ -42,9 +39,11 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     return True
 
 
-def revive() -> None:
+def revive(reason: str) -> None:
     target = abs_path(config["ignored_tickers"]["target"])
+
     df = pd.read_csv(target)
+    df = df[df["Reason"] == reason]
 
     revived = []
 
@@ -58,7 +57,7 @@ def revive() -> None:
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
 
-            sleep(0.3)
+            sleep(config["revive"]["sleep"])
 
     df = df[~df["Symbol"].isin(revived)]
     df.to_csv(target, index=False)

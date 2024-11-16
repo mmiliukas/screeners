@@ -1,31 +1,24 @@
-name: 'Revive'
+name: Revive
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: '00 06 * * 0'
 
 permissions:
-  contents: 'write'
+  contents: write
 
 jobs:
   revive:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
     steps:
-      - uses: 'actions/checkout@v4'
-      - uses: 'actions/setup-python@v5'
-        with:
-          python-version: '3.12.3'
-          cache: 'pip'
-
-      - run: pip install -r requirements.txt
-
-      - run: ./run revive
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
 
       - run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          ./run revive "Not Found"
+          ./run revive "Missing Close Price"
+          ./run revive "Not Categorized"
 
           git add ./tickers-ignored.csv
 

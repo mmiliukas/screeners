@@ -41,8 +41,8 @@ def command_etf(cookies: str) -> None:
 
 
 @app.command(name="revive")
-def command_revive() -> None:
-    revive()
+def command_revive(reason: str) -> None:
+    revive(reason)
 
 
 @app.command(name="cookies")

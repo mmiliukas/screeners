@@ -4,6 +4,9 @@ scraper:
   min_current_ratio: 0.5
   min_trading_days: 7
 
+revive:
+  sleep: 0.3
+
 etf:
   cache_name: etfs/
   target: tickers-etfs.csv
