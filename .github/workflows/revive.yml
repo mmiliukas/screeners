@@ -16,10 +16,10 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: |
-          ./run revive "Not Found"
-          ./run revive "Missing Close Price"
-          ./run revive "Not Categorized"
-          ./run revive "Current Ratio Below 0.5"
+          # ./run revive "Not Found"
+          # ./run revive "Missing Close Price"
+          # ./run revive "Not Categorized"
+          # ./run revive "Current Ratio Below 0.5"
           ./run revive "No Recent Trades"
 
           git add ./tickers-ignored.csv

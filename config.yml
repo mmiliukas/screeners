@@ -6,7 +6,7 @@ scraper:
 
 revive:
   sleep: 0.3
-  limit: 1000
+  limit: 200
 
 etf:
   cache_name: etfs/
