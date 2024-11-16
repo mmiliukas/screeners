@@ -1,0 +1,28 @@
+name: "Setup"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: "actions/checkout@v4"
+
+    - uses: "actions/setup-python@v5"
+      id: setup-python
+      with:
+        python-version: "3.12.3"
+        cache: "pip"
+
+    - uses: actions/cache@v3
+      id: cache
+      with:
+        key: ${{ runner.os }}-cache-${{ hashFiles('**/requirements.txt') }}
+        path: |
+          ~/.cache/ms-playwright
+
+    - run: pip install -r requirements.txt
+
+    - if: steps.cache.outputs.cache-hit != 'true'
+      run: python -m playwright install chromium
+
+    - run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
