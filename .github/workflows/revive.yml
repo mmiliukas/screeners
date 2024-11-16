@@ -19,6 +19,7 @@ jobs:
           ./run revive "Not Found"
           ./run revive "Missing Close Price"
           ./run revive "Not Categorized"
+          ./run revive "Current Ratio Below 0.5"
 
           git add ./tickers-ignored.csv
 
