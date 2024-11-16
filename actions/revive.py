@@ -31,7 +31,7 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     # not being traded anymore, no trades in the last X days
     start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
 
-    history = download(symbol, period="max")
+    history = download(symbol, period="1mo")
     history = history[history.index > start]
 
     if len(history) == 0:
