@@ -1,4 +1,4 @@
-name: 'Scrape'
+name: Scrape
 
 on:
   workflow_dispatch:
@@ -7,13 +7,14 @@ on:
     - cron: '00 06 * * 1-5'
 
 permissions:
-  contents: 'write'
+  contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
+      - uses: actions/checkout@v4
+
       - uses: ./.github/actions/setup
 
       - run: |

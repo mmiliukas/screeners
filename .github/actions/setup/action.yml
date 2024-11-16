@@ -4,8 +4,6 @@ description: "Setup the environment for workflows"
 runs:
   using: "composite"
   steps:
-    - uses: "actions/checkout@v4"
-
     - uses: "actions/setup-python@v5"
       id: setup-python
       with:
