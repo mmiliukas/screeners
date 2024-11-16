@@ -1,4 +1,5 @@
 name: "Setup"
+description: "Setup the environment for workflows"
 
 runs:
   using: "composite"
@@ -19,10 +20,13 @@ runs:
           ~/.cache/ms-playwright
 
     - run: pip install -r requirements.txt
+      shell: bash
 
     - if: steps.cache.outputs.cache-hit != 'true'
       run: python -m playwright install chromium
+      shell: bash
 
     - run: |
         git config user.name 'github-actions[bot]'
         git config user.email 'github-actions[bot]@users.noreply.github.com'
+      shell: bash

@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: ./.github/actions/setup.yml
+      - uses: ./.github/actions/setup
 
       - run: |
           ./run scrape "${{ secrets.cookies }}"
