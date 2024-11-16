@@ -17,6 +17,8 @@ def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) 
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
 
+    return True
+
     if os.path.exists(ticker_file):
         with open(ticker_file, "r") as file:
             ticker = json.load(file)
