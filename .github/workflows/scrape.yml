@@ -20,15 +20,17 @@ jobs:
           cache: 'pip'
 
       - uses: actions/cache@v3
+        id: cache-pip
         with:
           key: ${{ runner.os }}-build-${{ hashFiles('**/requirements.txt') }}
           path: |
             ~/.cache/ms-playwright
             ~/.cache/pip
 
-      - run: |
+      - if: steps.cache-pip.outputs.cache-hit != 'true'
+        run: |
           pip install -r requirements.txt
-          [ -d "$HOME/.cache/ms-playwright" ] && echo "directory $HOME/.cache/ms-playwright exists." || python -m playwright install chromium
+          python -m playwright install chromium
 
       - run: ./run scrape "${{ secrets.cookies }}"
 
