@@ -1,33 +1,22 @@
-name: 'Scrape ETF'
+name: Scrape ETF
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: '00 06 * * 6'
 
 permissions:
-  contents: 'write'
+  contents: write
 
 jobs:
   etf:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
     steps:
-      - uses: 'actions/checkout@v4'
-      - uses: 'actions/setup-python@v5'
-        with:
-          python-version: '3.12.3'
-          cache: 'pip'
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
 
       - run: |
-          pip install -r requirements.txt
-          python -m playwright install chromium
-
-      - run: ./run etf '${{ secrets.cookies }}'
-
-      - run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          ./run etf '${{ secrets.cookies }}'
 
           git add ./etfs
 
