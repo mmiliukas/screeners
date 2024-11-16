@@ -48,7 +48,10 @@ def revive(reason: str) -> None:
     revived = []
 
     with tqdm(total=len(df_filtered)) as progress:
-        for symbol in df_filtered["Symbol"].values:
+        for index, symbol in enumerate(df_filtered["Symbol"].values):
+            if index > config["revive"]["limit"]:
+                break
+
             ticker = yf.Ticker(symbol)
 
             if __is_ticker_alive(symbol, ticker):
