@@ -43,12 +43,12 @@ def revive(reason: str) -> None:
     target = abs_path(config["ignored_tickers"]["target"])
 
     df = pd.read_csv(target)
-    df = df[df["Reason"] == reason]
+    df_filtered = df[df["Reason"] == reason]
 
     revived = []
 
-    with tqdm(total=len(df)) as progress:
-        for symbol in df["Symbol"].values:
+    with tqdm(total=len(df_filtered)) as progress:
+        for symbol in df_filtered["Symbol"].values:
             ticker = yf.Ticker(symbol)
 
             if __is_ticker_alive(symbol, ticker):
