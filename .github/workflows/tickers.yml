@@ -20,7 +20,7 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - run: ./run tickers 0
+      - run: ./run tickers "-1"
 
       - run: |
           git add ./tickers/
