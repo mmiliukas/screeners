@@ -1,0 +1,24 @@
+name: Revive Ratio
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 09 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  revive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: |
+          ./run revive "Current Ratio Below 0.5"
+
+          git add ./tickers-ignored.csv
+
+          git commit --allow-empty -m "chore(tickers): revive"
+          git push

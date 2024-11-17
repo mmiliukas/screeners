@@ -1,9 +1,9 @@
-name: Revive
+name: Revive No Trades
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 06 * * 0'
+    - cron: '00 10 * * 0'
 
 permissions:
   contents: write
@@ -16,15 +16,9 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: |
-          # ./run revive "Not Found"
-          # ./run revive "Missing Close Price"
-          # ./run revive "Not Categorized"
-          # ./run revive "Current Ratio Below 0.5"
           ./run revive "No Recent Trades"
 
           git add ./tickers-ignored.csv
 
           git commit --allow-empty -m "chore(tickers): revive"
           git push
-
-      - run: ./run notify -- "🟢 tickers revived" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"
