@@ -22,5 +22,3 @@ jobs:
 
           git commit --allow-empty -m 'chore(etf): update etf holdings'
           git push
-
-      - run: ./run notify -- "🟢 ETF holdings updated" "${{ secrets.telegram_token }}" "${{ secrets.telegram_channel }}"

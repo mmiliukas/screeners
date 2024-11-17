@@ -1,28 +1,26 @@
-name: 'Tickers'
+name: Tickers
 
 on:
   workflow_dispatch:
 
   workflow_run:
-    workflows: ["Scrape"]
-    types:
-      - completed
+    workflows: [Scrape]
+    types: [completed]
 
 permissions:
-  contents: 'write'
+  contents: write
 
 jobs:
   tickers:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: ./.github/actions/setup
 
-      - run: ./run tickers 7
-
       - run: |
+          ./run tickers 7
+
           git add ./tickers/
           git add ./tickers-ignored.csv
 
