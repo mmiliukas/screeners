@@ -1,15 +1,16 @@
 import datetime
 import glob
 import os.path
-from time import sleep
 
 import pandas as pd
 from tqdm import tqdm
 
 from screeners.config import config
-from screeners.download import download
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
+
+# from screeners.download import download
+# from time import sleep
 
 
 def ignore(df: pd.DataFrame, reason: str) -> None:
@@ -37,16 +38,17 @@ def enrich_screeners_names(row):
 def enrich_close_date(row):
     symbol = row["Symbol"]
 
-    end = row["Screener First Seen"]
-    start = end - datetime.timedelta(days=14)
+    # end = row["Screener First Seen"]
+    # start = end - datetime.timedelta(days=14)
 
     file_name = f"first-seen/{symbol}.csv"
 
     if os.path.exists(file_name):
         history = pd.read_csv(file_name)
     else:
-        history = download(symbol, start=start, end=end)
-        history.to_csv(file_name)
+        raise Exception(f"file {file_name} does not exist")
+        # history = download(symbol, start=start, end=end)
+        # history.to_csv(file_name)
 
     return pd.NA if len(history) == 0 else history.iloc[-1]["Close"]
 
@@ -127,9 +129,10 @@ def filter_out_with_zero_trading(tickers: list[str]) -> tuple[list[str], pd.Data
 
     with tqdm(total=len(tickers)) as progress:
         for ticker in tickers:
-            df: pd.DataFrame = download(ticker, start=start)
-            sleep(0.3)
-            invalid.append(ticker) if df.empty else valid.append(ticker)
+            # df: pd.DataFrame = download(ticker, start=start)
+            # sleep(0.3)
+            # invalid.append(ticker) if df.empty else valid.append(ticker)
+            valid.append(ticker)
             progress.update(1)
 
     return (valid, pd.DataFrame({"Symbol": invalid}))

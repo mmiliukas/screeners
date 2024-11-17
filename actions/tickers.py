@@ -17,20 +17,20 @@ def __should_update(df: pd.DataFrame, symbol: str, ticker_file: str, days: int) 
     if len(df[df["Symbol"] == symbol]) > 0:
         return False
 
-    return True
+    return not os.path.exists(ticker_file)
 
-    if os.path.exists(ticker_file):
-        with open(ticker_file, "r") as file:
-            ticker = json.load(file)
-            if "__fetch_time" in ticker[0]:
-                today = datetime.date.today()
-                __fetch_time = datetime.date.fromisoformat(ticker[0]["__fetch_time"])
+    # if os.path.exists(ticker_file):
+    #     with open(ticker_file, "r") as file:
+    #         ticker = json.load(file)
+    #         if "__fetch_time" in ticker[0]:
+    #             today = datetime.date.today()
+    #             __fetch_time = datetime.date.fromisoformat(ticker[0]["__fetch_time"])
 
-                diff = today - __fetch_time
-                if abs(diff.days) < days:
-                    return False
+    #             diff = today - __fetch_time
+    #             if abs(diff.days) < days:
+    #                 return False
 
-    return True
+    # return True
 
 
 def tickers(days: int) -> None:
