@@ -10,8 +10,6 @@ from screeners.download import download
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
 
-# from time import sleep
-
 
 def ignore(df: pd.DataFrame, reason: str) -> None:
     if len(df) == 0:
@@ -46,7 +44,6 @@ def enrich_close_date(row):
     if os.path.exists(file_name):
         history = pd.read_csv(file_name)
     else:
-        # raise Exception(f"file {file_name} does not exist")
         history = download(symbol, start=start, end=end)
         history.to_csv(file_name)
 
