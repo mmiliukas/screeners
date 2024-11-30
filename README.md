@@ -14,3 +14,5 @@
 |     | 12:00 | [![Revive Ratio](https://github.com/mmiliukas/screeners/actions/workflows/revive-ratio.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/revive-ratio.yml) |
 |     | 13:00 | [![Revive No Trades](https://github.com/mmiliukas/screeners/actions/workflows/revive-no-trades.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/revive-no-trades.yml) |
 |     | 14:00 | [![Scrape Giga 1-5](https://github.com/mmiliukas/screeners/actions/workflows/giga-1-5.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-1-5.yml) [![Scrape Giga 5-10](https://github.com/mmiliukas/screeners/actions/workflows/giga-5-10.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-5-10.yml) [![Scrape Giga 10-100](https://github.com/mmiliukas/screeners/actions/workflows/giga-10-100.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-10-100.yml) |
+
+
