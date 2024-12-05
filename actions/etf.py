@@ -12,9 +12,9 @@ def etf(cookies: str) -> None:
     retry_times = config["scraper"]["retry_times"]
     etfs = get_etfs()
 
-    with tqdm(total=len(etfs)) as progress:
-        with sync_playwright() as playwright:
-            page = open_page(playwright, cookies)
+    with sync_playwright() as playwright:
+        page = open_page(playwright, cookies)
+        with tqdm(total=len(etfs)) as progress:
 
             for etf in etfs:
                 retry(retry_times)(lambda: scrape_etf(page, etf))
