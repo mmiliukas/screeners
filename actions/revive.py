@@ -31,6 +31,7 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     # not being traded anymore, no trades in the last X days
     start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
     history = download(symbol, start=start, interval="1d")
+
     if len(history) == 0:
         return False
 
@@ -48,9 +49,7 @@ def revive(reason: str) -> None:
     revived = []
 
     with tqdm(total=len(df_filtered)) as progress:
-        for index, symbol in enumerate(df_filtered["Symbol"].values):
-            if index > config["revive"]["limit"]:
-                break
+        for symbol in df_filtered["Symbol"].values:
 
             ticker = yf.Ticker(symbol)
 
