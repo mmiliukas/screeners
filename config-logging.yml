@@ -22,8 +22,8 @@ loggers:
     handlers: [console]
     propagate: no
 
-  actions.giga:
-    level: INFO
+  actions:
+    level: DEBUG
     handlers: [console]
     propagate: no
 
