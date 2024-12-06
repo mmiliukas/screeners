@@ -22,6 +22,11 @@ loggers:
     handlers: [console]
     propagate: no
 
+  actions.giga:
+    level: INFO
+    handlers: [console]
+    propagate: no
+
   screeners:
     level: DEBUG
     handlers: [console]
