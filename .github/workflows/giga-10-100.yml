@@ -2,9 +2,8 @@ name: Scrape Giga 10-100
 
 on:
   workflow_dispatch:
-  workflow_run:
-      workflows: [Scrape Giga 5-10]
-      types: [completed]
+  schedule:
+    - cron: '00 13 * * 0'
 
 permissions:
   contents: write

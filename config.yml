@@ -1,6 +1,6 @@
 scraper:
   sleep_after_click: 1
-  retry_times: 2
+  retry_times: 2 # in total there will be 3 tries, original and 2 retries
   min_current_ratio: 0.5
   min_trading_days: 7
 
