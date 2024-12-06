@@ -30,12 +30,30 @@ class ConfigGiga(BaseConfig):
         self.target: str = os.path.join(os.getcwd(), values["target"])
 
 
+class ConfigIgnoredTickers(BaseConfig):
+    def __init__(self, values: dict):
+        super().__init__(values)
+
+        self.target: str = os.path.join(os.getcwd(), values["target"])
+
+
+class ConfigRevive(BaseConfig):
+    def __init__(self, values: dict):
+        super().__init__(values)
+
+        self.sleep: float = float(values["sleep"])
+        self.limit: int = int(values["limit"])
+        self.ignore_after_days: int = int(values["ignore_after_days"])
+
+
 class Config(BaseConfig):
     def __init__(self, values: dict):
         super().__init__(values)
 
-        self.scraper: ConfigScraper = ConfigScraper(values["scraper"])
-        self.giga: list[ConfigGiga] = [ConfigGiga(_) for _ in values["giga"]]
+        self.scraper = ConfigScraper(values["scraper"])
+        self.giga = [ConfigGiga(_) for _ in values["giga"]]
+        self.revive = ConfigRevive(values["revive"])
+        self.ignored_tickers = ConfigIgnoredTickers(values["ignored_tickers"])
 
     def __getitem__(self, key: str):
         return self._values[key]

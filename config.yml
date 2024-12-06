@@ -5,7 +5,8 @@ scraper:
   min_trading_days: 7
 
 revive:
-  sleep: 0.3
+  ignore_after_days: 32
+  sleep: 1
   limit: 900
 
 etf:

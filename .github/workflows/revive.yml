@@ -1,9 +1,9 @@
-name: Revive Ratio
+name: Revive
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 09 * * 0'
+    - cron: '00 10 * * 0'
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: |
-          ./run revive "Current Ratio Below 0.5"
+          ./run revive
 
           git add ./tickers-ignored.csv
 

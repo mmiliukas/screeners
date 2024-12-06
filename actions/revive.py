@@ -10,7 +10,7 @@ from screeners.download import download
 from screeners.utils import abs_path
 
 
-def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
+def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     # 404
     if not ticker.info:
         return False
@@ -25,26 +25,29 @@ def __is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
 
     # ratio below X
     current_ratio = ticker.info.get("currentRatio", 0)
-    if current_ratio < config["scraper"]["min_current_ratio"]:
+    if current_ratio < config.scraper.min_current_ratio:
         return False
 
     # not being traded anymore, no trades in the last X days
-    start = date.today() - timedelta(days=config["scraper"]["min_trading_days"])
+    start = date.today() - timedelta(days=config.scraper.min_trading_days)
     history = download(symbol, start=start, interval="1d")
 
     if len(history) == 0:
         return False
 
-    # TODO: check Missing Close Price
+    # TODO: check Missing Close Price ???
 
     return True
 
 
-def revive(reason: str) -> None:
-    target = abs_path(config["ignored_tickers"]["target"])
+def revive() -> None:
+    target = abs_path(config.ignored_tickers.target)
 
-    df = pd.read_csv(target)
-    df_filtered = df[df["Reason"] == reason]
+    df = pd.read_csv(target, parse_dates=["Date"])
+    df["Date"] = df["Date"].dt.date
+
+    ignore_after_date = date.today() - timedelta(days=config.revive.ignore_after_days)
+    df_filtered = df[df["Date"] > ignore_after_date]
 
     revived = []
 
@@ -53,13 +56,13 @@ def revive(reason: str) -> None:
 
             ticker = yf.Ticker(symbol)
 
-            if __is_ticker_alive(symbol, ticker):
+            if is_ticker_alive(symbol, ticker):
                 revived.append(symbol)
 
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
 
-            sleep(config["revive"]["sleep"])
+            sleep(config.revive.sleep)
 
     df = df[~df["Symbol"].isin(revived)]
     df.to_csv(target, index=False)
