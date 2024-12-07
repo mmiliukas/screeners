@@ -7,7 +7,6 @@ scraper:
 revive:
   ignore_after_days: 32
   sleep: 1
-  limit: 900
 
 etf:
   cache_name: etfs/

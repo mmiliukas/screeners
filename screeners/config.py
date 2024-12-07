@@ -58,7 +58,6 @@ class ConfigRevive(BaseConfig):
         super().__init__(values)
 
         self.sleep: float = float(values["sleep"])
-        self.limit: int = int(values["limit"])
         self.ignore_after_days: int = int(values["ignore_after_days"])
 
 
