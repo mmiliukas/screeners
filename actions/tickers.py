@@ -30,8 +30,13 @@ def tickers() -> None:
     for symbol in tickers:
 
         ticker_path = abs_path(cache_name, symbol + ".json")
+
         if os.path.exists(ticker_path):
-            logger.info(f"skipping {symbol} as it already exists")
+            logger.info(f"skipping {symbol:>5} as it already exists")
+            continue
+
+        if symbol in df["Symbol"].values:
+            logger.info(f"skipping {symbol:>5} as it is ignored")
             continue
 
         sleep(0.3)
