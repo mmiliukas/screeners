@@ -81,7 +81,7 @@ class Config(BaseConfig):
         self.etf = ConfigEtf(values["etf"])
         self.tickers = ConfigTickers(values["tickers"])
         self.giga = [ConfigGiga(_) for _ in values["giga"]]
-        self.screeners = [ConfigScreener(_) for _ in values["screener"]]
+        self.screeners = [ConfigScreener(_) for _ in values["screeners"]]
 
     def __getitem__(self, key: str):
         return self._values[key]
