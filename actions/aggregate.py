@@ -3,7 +3,6 @@ import glob
 import os.path
 
 import pandas as pd
-from tqdm import tqdm
 
 from screeners.config import config
 from screeners.download import download
@@ -117,29 +116,8 @@ def enrich_tickers(symbols) -> pd.DataFrame:
     return df
 
 
-def filter_out_with_zero_trading(tickers: list[str]) -> tuple[list[str], pd.DataFrame]:
-    valid: list[str] = []
-    invalid: list[str] = []
-
-    days = config["scraper"]["min_trading_days"]
-    start = datetime.date.today() - datetime.timedelta(days=days)
-
-    with tqdm(total=len(tickers)) as progress:
-        for ticker in tickers:
-            # df: pd.DataFrame = download(ticker, start=start)
-            # sleep(0.3)
-            # invalid.append(ticker) if df.empty else valid.append(ticker)
-            valid.append(ticker)
-            progress.update(1)
-
-    return (valid, pd.DataFrame({"Symbol": invalid}))
-
-
 def aggregate() -> None:
     tickers = get_tickers_whitelisted()
-
-    tickers, no_trading = filter_out_with_zero_trading(tickers)
-    ignore(no_trading, "No Recent Trades")
 
     df = enrich_tickers(tickers)
 
@@ -148,7 +126,7 @@ def aggregate() -> None:
     ignore(df[~filter_sector], "Not Categorized")
 
     # 2. filter tickers where ratio is above threshold
-    filter_ratio = df["Financials Current Ratio"] >= config["scraper"]["min_current_ratio"]
+    filter_ratio = df["Financials Current Ratio"] >= config.scraper.min_current_ratio
     ignore(df[~filter_ratio], "Current Ratio Below 0.5")
 
     # 3. calculate close price of the ticker before it was seen on a screener
@@ -158,7 +136,7 @@ def aggregate() -> None:
     filter = filter_ratio & filter_sector & filter_by_close
     filtered = df[filter]
 
-    filtered.to_csv(config["tickers"]["target"], index=False)
+    filtered.to_csv(config.tickers.target, index=False)
 
     df = enrich_tickers(get_holdings())
-    df.to_csv(config["etf"]["target"], index=False)
+    df.to_csv(config.etf.target, index=False)
