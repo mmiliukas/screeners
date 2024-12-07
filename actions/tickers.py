@@ -27,24 +27,24 @@ def tickers() -> None:
     with tqdm(total=len(tickers)) as progress:
         for symbol in tickers:
 
+            progress.update(1)
+            sleep(0.3)
+
             ticker_path = abs_path(cache_name, symbol + ".json")
             if os.path.exists(ticker_path):
                 continue
 
             result = yf.Ticker(symbol)
 
-            sleep(0.3)
-
             if not result.info or "symbol" not in result.info:
-                now = datetime.datetime.now()
-                df.loc[len(df.index)] = [symbol, now, "Not Found"]
+                if symbol not in df["Symbol"].values:
+                    now = datetime.datetime.now()
+                    df.loc[len(df.index)] = [symbol, now, "Not Found"]
             else:
                 with open(ticker_path, "w") as file:
                     info = result.info
                     info["__fetch_time"] = __fetch_time
 
                     file.write(json.dumps([info]))
-
-            progress.update(1)
 
     df.to_csv(ignored_tickers, index=False)
