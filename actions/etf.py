@@ -9,13 +9,13 @@ from screeners.utils import retry
 
 def etf(cookies: str) -> None:
 
-    retry_times = config["scraper"]["retry_times"]
+    retry_times = config.scraper.retry_times
     etfs = get_etfs()
 
     with sync_playwright() as playwright:
         page = open_page(playwright, cookies)
-        with tqdm(total=len(etfs)) as progress:
 
+        with tqdm(total=len(etfs)) as progress:
             for etf in etfs:
                 retry(retry_times)(lambda: scrape_etf(page, etf))
 

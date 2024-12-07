@@ -72,7 +72,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
                 return
             else:
                 page_no += 1
-                logger.info(f"going to next page {page_no}...")
+                logger.info(f"going to next page {page_no:>3}...")
 
                 button.click()
                 sleep(config.scraper.sleep_after_click)
