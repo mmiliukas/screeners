@@ -7,7 +7,6 @@ from tqdm import tqdm
 
 from screeners.config import config
 from screeners.download import download
-from screeners.utils import abs_path
 
 
 def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
@@ -39,13 +38,13 @@ def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
 
 
 def revive() -> None:
-    target = abs_path(config.ignored_tickers.target)
+    target = config.ignored_tickers.target
 
-    df = pd.read_csv(target, parse_dates=["Date"])
-    df["Date"] = df["Date"].dt.date
+    df_filtered = pd.read_csv(target, parse_dates=["Date"])
+    df_filtered["Date"] = df_filtered["Date"].dt.date
 
     ignore_after_date = date.today() - timedelta(days=config.revive.ignore_after_days)
-    df_filtered = df[df["Date"] > ignore_after_date]
+    df_filtered = df_filtered[df_filtered["Date"] > ignore_after_date]
 
     revived = []
 
@@ -62,5 +61,6 @@ def revive() -> None:
 
             sleep(config.revive.sleep)
 
+    df = pd.read_csv(target)
     df = df[~df["Symbol"].isin(revived)]
     df.to_csv(target, index=False)
