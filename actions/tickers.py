@@ -28,12 +28,12 @@ def tickers() -> None:
         for symbol in tickers:
 
             progress.update(1)
-            sleep(0.3)
 
             ticker_path = abs_path(cache_name, symbol + ".json")
             if os.path.exists(ticker_path):
                 continue
 
+            sleep(0.3)
             result = yf.Ticker(symbol)
 
             if not result.info or "symbol" not in result.info:
