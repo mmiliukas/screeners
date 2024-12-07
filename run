@@ -67,8 +67,8 @@ def command_scrape(cookies: str) -> None:
 
 
 @app.command(name="tickers")
-def command_tickers(days: int) -> None:
-    tickers(days)
+def command_tickers() -> None:
+    tickers()
 
 
 @app.command(name="aggregate")

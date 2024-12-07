@@ -45,6 +45,14 @@ class ConfigEtf(BaseConfig):
         self.target: str = os.path.join(os.getcwd(), values["target"])
 
 
+class ConfigTickers(BaseConfig):
+    def __init__(self, values: dict):
+        super().__init__(values)
+
+        self.cache_name: str = os.path.join(os.getcwd(), values["cache_name"])
+        self.target: str = os.path.join(os.getcwd(), values["target"])
+
+
 class ConfigRevive(BaseConfig):
     def __init__(self, values: dict):
         super().__init__(values)
@@ -63,6 +71,7 @@ class Config(BaseConfig):
         self.revive = ConfigRevive(values["revive"])
         self.ignored_tickers = ConfigIgnoredTickers(values["ignored_tickers"])
         self.etf = ConfigEtf(values["etf"])
+        self.tickers = ConfigTickers(values["tickers"])
 
     def __getitem__(self, key: str):
         return self._values[key]
