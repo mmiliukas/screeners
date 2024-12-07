@@ -59,8 +59,8 @@ def command_split() -> None:
 def command_scrape(cookies: str) -> None:
     with ProcessPoolExecutor() as pool:
         futures = [
-            pool.submit(scrape, cookies, screener["cache_name"], screener["url"])
-            for screener in config["screeners"]
+            pool.submit(scrape, cookies, screener.cache_name, screener.url)
+            for screener in config.screeners
         ]
         for future in as_completed(futures):
             future.result()

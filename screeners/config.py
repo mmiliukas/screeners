@@ -62,16 +62,26 @@ class ConfigRevive(BaseConfig):
         self.ignore_after_days: int = int(values["ignore_after_days"])
 
 
+class ConfigScreener(BaseConfig):
+    def __init__(self, values: dict):
+        super().__init__(values)
+
+        self.name: str = values["name"]
+        self.cache_name: str = values["cache_name"]
+        self.url: str = values["url"]
+
+
 class Config(BaseConfig):
     def __init__(self, values: dict):
         super().__init__(values)
 
         self.scraper = ConfigScraper(values["scraper"])
-        self.giga = [ConfigGiga(_) for _ in values["giga"]]
         self.revive = ConfigRevive(values["revive"])
         self.ignored_tickers = ConfigIgnoredTickers(values["ignored_tickers"])
         self.etf = ConfigEtf(values["etf"])
         self.tickers = ConfigTickers(values["tickers"])
+        self.giga = [ConfigGiga(_) for _ in values["giga"]]
+        self.screeners = [ConfigScreener(_) for _ in values["screener"]]
 
     def __getitem__(self, key: str):
         return self._values[key]
