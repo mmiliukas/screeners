@@ -6,7 +6,6 @@ from time import sleep
 
 import pandas as pd
 import yfinance as yf
-from tqdm import tqdm
 
 from screeners.config import config
 from screeners.etfs import get_etfs_and_holdings
@@ -43,11 +42,9 @@ def tickers() -> None:
         result = yf.Ticker(symbol)
 
         if not result.info or "symbol" not in result.info:
-            logger.info(f"{symbol} not found")
-            if symbol not in df["Symbol"].values:
-                logger.info(f"ignoring {symbol}")
-                now = datetime.datetime.now()
-                df.loc[len(df.index)] = [symbol, now, "Not Found"]
+            logger.info(f"ignoring {symbol}")
+            now = datetime.datetime.now()
+            df.loc[len(df.index)] = [symbol, now, "Not Found"]
         else:
             logger.info(f"downloading ticker {symbol}")
             with open(ticker_path, "w") as file:
