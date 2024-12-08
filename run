@@ -7,7 +7,6 @@ import typer
 import yaml
 
 from actions.aggregate import aggregate
-from actions.reports import reports
 from actions.revive import revive
 from screeners.config import config
 
@@ -51,6 +50,8 @@ def command_aggregate() -> None:
 
 @app.command(name="reports")
 def command_reports() -> None:
+    from actions.reports import reports
+
     reports()
 
 
@@ -75,25 +76,11 @@ def command_summary() -> None:
     summary()
 
 
-@app.command(name="notify")
-def command_notify(message: str, bot_token: str, channel_id: str) -> None:
-    from screeners.telegram import log_to_telegram
-
-    log_to_telegram(message, bot_token, channel_id)
-
-
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
     from actions.cookies import cookies
 
     print(cookies(username, password))
-
-
-@app.command(name="split")
-def command_split() -> None:
-    from actions.split import split
-
-    split()
 
 
 if __name__ == "__main__":
