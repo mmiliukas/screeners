@@ -8,14 +8,11 @@ import typer
 import yaml
 
 from actions.aggregate import aggregate
-from actions.etf import etf
 from actions.reports import reports
 from actions.revive import revive
 from actions.scrape import scrape
-from actions.split import split
 from actions.tickers import tickers
 from screeners.config import config
-from screeners.telegram import log_to_telegram
 
 with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
@@ -23,24 +20,9 @@ with open("config-logging.yml", "r") as config_logging:
 app = typer.Typer()
 
 
-@app.command(name="notify")
-def command_notify(message: str, bot_token: str, channel_id: str) -> None:
-    log_to_telegram(message, bot_token, channel_id)
-
-
-@app.command(name="etf")
-def command_etf(cookies: str) -> None:
-    etf(cookies)
-
-
 @app.command(name="revive")
 def command_revive() -> None:
     revive()
-
-
-@app.command(name="split")
-def command_split() -> None:
-    split()
 
 
 @app.command(name="scrape")
@@ -69,6 +51,13 @@ def command_reports() -> None:
     reports()
 
 
+@app.command(name="etf")
+def command_etf(cookies: str) -> None:
+    from actions.etf import etf
+
+    etf(cookies)
+
+
 @app.command(name="giga")
 def command_giga(cookies: str, index: int) -> None:
     from actions.giga import giga
@@ -76,11 +65,25 @@ def command_giga(cookies: str, index: int) -> None:
     giga(cookies, index)
 
 
+@app.command(name="notify")
+def command_notify(message: str, bot_token: str, channel_id: str) -> None:
+    from screeners.telegram import log_to_telegram
+
+    log_to_telegram(message, bot_token, channel_id)
+
+
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
     from actions.cookies import cookies
 
     print(cookies(username, password))
+
+
+@app.command(name="split")
+def command_split() -> None:
+    from actions.split import split
+
+    split()
 
 
 if __name__ == "__main__":
