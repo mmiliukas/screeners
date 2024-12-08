@@ -2,7 +2,6 @@
 
 import logging
 import logging.config
-from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import typer
 import yaml
@@ -10,7 +9,6 @@ import yaml
 from actions.aggregate import aggregate
 from actions.reports import reports
 from actions.revive import revive
-from actions.scrape import scrape
 from actions.tickers import tickers
 from screeners.config import config
 
@@ -27,6 +25,10 @@ def command_revive() -> None:
 
 @app.command(name="scrape")
 def command_scrape(cookies: str) -> None:
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+
+    from actions.scrape import scrape
+
     with ProcessPoolExecutor() as pool:
         futures = [
             pool.submit(scrape, cookies, screener.cache_name, screener.url)
