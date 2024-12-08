@@ -65,6 +65,13 @@ def command_giga(cookies: str, index: int) -> None:
     giga(cookies, index)
 
 
+@app.command(name="summary")
+def command_summary() -> None:
+    from actions.summary import summary
+
+    summary()
+
+
 @app.command(name="notify")
 def command_notify(message: str, bot_token: str, channel_id: str) -> None:
     from screeners.telegram import log_to_telegram

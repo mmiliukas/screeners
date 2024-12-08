@@ -123,3 +123,6 @@ tickers:
 
 telegram:
   enabled: False
+
+summary:
+  target: summary.md

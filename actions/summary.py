@@ -3,6 +3,8 @@ import os
 
 import pandas as pd
 
+from screeners.config import config
+
 
 def convert_size(size_bytes) -> str:
     if size_bytes == 0:
@@ -31,7 +33,7 @@ def summarize_dir(dir: str) -> tuple[str, int, str, int]:
     return dir, size, convert_size(size), count
 
 
-if __name__ == "__main__":
+def summary() -> None:
     entries = os.listdir(".")
 
     files = [file for file in entries if os.path.isfile(file) and file.endswith(".csv")]
@@ -45,6 +47,7 @@ if __name__ == "__main__":
 
     df = pd.concat([df_dirs, df_files])
 
-    print("```csv")
-    print(df[[0, 2, 3]].to_string(index=False, header=False))
-    print("```")
+    with open(config.summary.target, "w") as file:
+        file.write("```csv\n")
+        file.write(df[[0, 2, 3]].to_string(index=False, header=False))
+        file.write("\n```")
