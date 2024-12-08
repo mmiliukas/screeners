@@ -8,7 +8,6 @@ import typer
 import yaml
 
 from actions.aggregate import aggregate
-from actions.cookies import cookies
 from actions.etf import etf
 from actions.reports import reports
 from actions.revive import revive
@@ -37,11 +36,6 @@ def command_etf(cookies: str) -> None:
 @app.command(name="revive")
 def command_revive() -> None:
     revive()
-
-
-@app.command(name="cookies")
-def command_cookies(username: str, password: str) -> None:
-    print(cookies(username, password))
 
 
 @app.command(name="split")
@@ -80,6 +74,13 @@ def command_giga(cookies: str, index: int) -> None:
     from actions.giga import giga
 
     giga(cookies, index)
+
+
+@app.command(name="cookies")
+def command_cookies(username: str, password: str) -> None:
+    from actions.cookies import cookies
+
+    print(cookies(username, password))
 
 
 if __name__ == "__main__":
