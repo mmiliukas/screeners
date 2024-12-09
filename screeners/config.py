@@ -53,13 +53,6 @@ class ConfigTickers(BaseConfig):
         self.target: str = os.path.join(os.getcwd(), values["target"])
 
 
-class ConfigSummary(BaseConfig):
-    def __init__(self, values: dict):
-        super().__init__(values)
-
-        self.target: str = os.path.join(os.getcwd(), values["target"])
-
-
 class ConfigRevive(BaseConfig):
     def __init__(self, values: dict):
         super().__init__(values)
@@ -88,7 +81,6 @@ class Config(BaseConfig):
         self.tickers = ConfigTickers(values["tickers"])
         self.giga = [ConfigGiga(_) for _ in values["giga"]]
         self.screeners = [ConfigScreener(_) for _ in values["screeners"]]
-        self.summary = ConfigSummary(values["summary"])
 
     def __getitem__(self, key: str):
         return self._values[key]
