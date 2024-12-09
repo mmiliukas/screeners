@@ -22,6 +22,7 @@ jobs:
           ./run tickers
 
           git add ./tickers/
+          git add ./first-seen/
           git add ./tickers-ignored.csv
 
           git commit --allow-empty -m "chore(tickers): update"
