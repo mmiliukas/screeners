@@ -69,13 +69,6 @@ def command_giga(cookies: str, index: int) -> None:
     giga(cookies, index)
 
 
-@app.command(name="summary")
-def command_summary() -> None:
-    from actions.summary import summary
-
-    summary()
-
-
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
     from actions.cookies import cookies

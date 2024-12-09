@@ -120,9 +120,3 @@ ignored_tickers:
 tickers:
   cache_name: tickers/
   target: tickers.csv
-
-telegram:
-  enabled: False
-
-summary:
-  target: summary.md
