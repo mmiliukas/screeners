@@ -43,6 +43,13 @@ def command_tickers() -> None:
     tickers()
 
 
+@app.command(name="ignore")
+def command_ignore() -> None:
+    from actions.ignore import ignore
+
+    ignore()
+
+
 @app.command(name="aggregate")
 def command_aggregate() -> None:
     from actions.aggregate import aggregate

@@ -21,7 +21,6 @@ jobs:
 
           git add ./tickers.csv
           git add ./tickers-ignored.csv
-          git add ./first-seen/
 
           git commit --allow-empty -m "chore(aggregate): update"
           git push
