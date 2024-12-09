@@ -6,8 +6,6 @@ import logging.config
 import typer
 import yaml
 
-from actions.aggregate import aggregate
-from actions.revive import revive
 from screeners.config import config
 
 with open("config-logging.yml", "r") as config_logging:
@@ -18,6 +16,8 @@ app = typer.Typer()
 
 @app.command(name="revive")
 def command_revive() -> None:
+    from actions.revive import revive
+
     revive()
 
 
@@ -45,6 +45,8 @@ def command_tickers() -> None:
 
 @app.command(name="aggregate")
 def command_aggregate() -> None:
+    from actions.aggregate import aggregate
+
     aggregate()
 
 
