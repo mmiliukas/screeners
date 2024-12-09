@@ -2,10 +2,12 @@ import datetime
 import json
 import logging
 import os.path
+from glob import glob
 from time import sleep
 
 import pandas as pd
 import yfinance as yf
+from tqdm import tqdm
 
 from screeners.config import config
 from screeners.etfs import get_etfs_and_holdings
@@ -16,41 +18,29 @@ logger = logging.getLogger(__name__)
 
 
 def tickers() -> None:
-    __fetch_time = datetime.date.today().isoformat()
 
-    tickers = get_tickers()
-    tickers.extend(get_etfs_and_holdings())
+    runs = [screener.cache_name for screener in config.screeners]
+    csvs = [csv for run in runs for csv in glob(f"{run}/*.csv")]
 
-    ignored_tickers = config.ignored_tickers.target
-    cache_name = config.tickers.cache_name
+    dfs = [
+        pd.read_csv(csv, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f")
+        for csv in csvs
+    ]
+    df = pd.concat([df for df in dfs if not df.empty])
 
-    df = pd.read_csv(ignored_tickers, parse_dates=["Date"])
+    tickers = list(df["Symbol"].unique()) + get_etfs_and_holdings()
 
-    for symbol in tickers:
+    with tqdm(total=len(tickers)) as progress:
+        for ticker in tickers:
+            progress.update(1)
 
-        ticker_path = abs_path(cache_name, symbol + ".json")
+            path = abs_path(config.tickers.cache_name, ticker + ".json")
+            if os.path.exists(path):
+                continue
 
-        if os.path.exists(ticker_path):
-            logger.info(f"skipping {symbol:>5} as it already exists")
-            continue
-
-        if symbol in df["Symbol"].values:
-            logger.info(f"skipping {symbol:>5} as it is ignored")
-            continue
-
-        sleep(0.3)
-        result = yf.Ticker(symbol)
-
-        if not result.info or "symbol" not in result.info:
-            logger.info(f"ignoring {symbol}")
-            now = datetime.datetime.now()
-            df.loc[len(df.index)] = [symbol, now, "Not Found"]
-        else:
-            logger.info(f"downloading ticker {symbol}")
-            with open(ticker_path, "w") as file:
-                info = result.info
-                info["__fetch_time"] = __fetch_time
+            yf_ticker = yf.Ticker(ticker)
+            with open(path, "w") as file:
+                info = yf_ticker.info
+                info["__fetch_time"] = datetime.date.today().isoformat()
 
                 file.write(json.dumps([info]))
-
-    df.to_csv(ignored_tickers, index=False)
