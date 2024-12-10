@@ -1,10 +1,10 @@
-name: Tickers
+name: Ignore
 
 on:
   workflow_dispatch:
 
   workflow_run:
-    workflows: [Scrape]
+    workflows: [Tickers]
     types: [completed]
 
 permissions:
@@ -19,10 +19,9 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: |
-          ./run tickers
+          ./run ignore
 
-          git add ./tickers/
-          git add ./first-seen/
+          git add ./tickers-ignored.csv
 
-          git commit --allow-empty -m "chore(tickers): update"
+          git commit --allow-empty -m "chore(ignore): update"
           git push
