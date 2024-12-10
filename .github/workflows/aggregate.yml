@@ -2,9 +2,10 @@ name: Aggregate
 
 on:
   workflow_dispatch:
-  # workflow_run:
-  #   workflows: [Tickers]
-  #   types: [completed]
+
+  workflow_run:
+    workflows: [Ignore]
+    types: [completed]
 
 permissions:
   contents: write

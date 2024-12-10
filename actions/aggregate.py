@@ -1,27 +1,11 @@
 import datetime
 import glob
-import os.path
 
 import pandas as pd
 
 from screeners.config import config
-from screeners.download import download
 from screeners.etfs import get_holdings, resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
-
-
-def ignore(df: pd.DataFrame, reason: str) -> None:
-    if len(df) == 0:
-        return
-
-    now = datetime.datetime.now()
-    ignored_target = config["ignored_tickers"]["target"]
-    ignored = pd.read_csv(ignored_target, parse_dates=["Date"])
-
-    for symbol in df["Symbol"].unique():
-        ignored.loc[len(ignored.index)] = [symbol, now, reason]
-
-    ignored.to_csv(ignored_target, index=False)
 
 
 def enrich_screeners_names(row):
@@ -39,14 +23,9 @@ def enrich_close_date(row):
     start = end - datetime.timedelta(days=14)
 
     file_name = f"first-seen/{symbol}.csv"
+    history = pd.read_csv(file_name)
 
-    if os.path.exists(file_name):
-        history = pd.read_csv(file_name)
-    else:
-        history = download(symbol, start=start, end=end)
-        history.to_csv(file_name)
-
-    return pd.NA if len(history) == 0 else history.iloc[-1]["Close"]
+    return history.iloc[-1]["Close"]
 
 
 def read_csv(file: str) -> pd.DataFrame:
@@ -120,23 +99,7 @@ def aggregate() -> None:
     tickers = get_tickers_whitelisted()
 
     df = enrich_tickers(tickers)
-
-    # 1. filter tickers only having sector (means categorized)
-    filter_sector = ~df["Sector"].isna()
-    ignore(df[~filter_sector], "Not Categorized")
-
-    # 2. filter tickers where ratio is above threshold
-    filter_ratio = df["Financials Current Ratio"] >= config.scraper.min_current_ratio
-    ignore(df[~filter_ratio], "Current Ratio Below 0.5")
-
-    # 3. calculate close price of the ticker before it was seen on a screener
-    filter_by_close = ~df["Screener First Seen Close"].isna()
-    ignore(df[~filter_by_close], "Missing Close Price")
-
-    filter = filter_ratio & filter_sector & filter_by_close
-    filtered = df[filter]
-
-    filtered.to_csv(config.tickers.target, index=False)
+    df.to_csv(config.tickers.target, index=False)
 
     df = enrich_tickers(get_holdings())
     df.to_csv(config.etf.target, index=False)
