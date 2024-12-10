@@ -16,15 +16,16 @@ from screeners.utils import abs_path
 logger = logging.getLogger(__name__)
 
 
+def read_csv(file: str) -> pd.DataFrame:
+    return pd.read_csv(file, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f")
+
+
 def tickers() -> None:
 
     runs = [screener.cache_name for screener in config.screeners]
     csvs = [csv for run in runs for csv in glob(f"{run}/*.csv")]
 
-    dfs = [
-        pd.read_csv(csv, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f")
-        for csv in csvs
-    ]
+    dfs = [read_csv(csv) for csv in csvs]
     df = pd.concat([df for df in dfs if not df.empty])
 
     tickers = list(df["Symbol"].unique())
