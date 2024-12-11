@@ -14,15 +14,15 @@ with open("config-logging.yml", "r") as config_logging:
 app = typer.Typer()
 
 
-class IgnoreCancelledErrorFilter(logging.Filter):
-    def filter(self, record):
-        if "CancelledError" in record.getMessage():
-            return False
-        return True
+# class IgnoreCancelledErrorFilter(logging.Filter):
+#     def filter(self, record):
+#         if "CancelledError" in record.getMessage():
+#             return False
+#         return True
 
 
-logging.getLogger("asyncio").addFilter(IgnoreCancelledErrorFilter())
-logging.getLogger("playwright").addFilter(IgnoreCancelledErrorFilter())
+# logging.getLogger("asyncio").addFilter(IgnoreCancelledErrorFilter())
+# logging.getLogger("playwright").addFilter(IgnoreCancelledErrorFilter())
 
 
 @app.command(name="revive")
@@ -34,17 +34,10 @@ def command_revive() -> None:
 
 @app.command(name="scrape")
 def command_scrape(cookies: str) -> None:
-    from concurrent.futures import ProcessPoolExecutor, as_completed
-
     from actions.scrape import scrape
 
-    with ProcessPoolExecutor() as pool:
-        futures = [
-            pool.submit(scrape, cookies, screener.cache_name, screener.url)
-            for screener in config.screeners
-        ]
-        for future in as_completed(futures):
-            future.result()
+    for screener in config.screeners:
+        scrape(cookies, screener.cache_name, screener.url)
 
 
 @app.command(name="tickers")
