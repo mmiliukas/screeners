@@ -12,16 +12,6 @@ with open("config-logging.yml", "r") as config_logging:
     logging.config.dictConfig(yaml.safe_load(config_logging.read()))
 
 
-class IgnoreCancelledErrorFilter(logging.Filter):
-    def filter(self, record):
-        if "CancelledError" in record.getMessage():
-            return False
-        return True
-
-
-logging.getLogger("asyncio").addFilter(IgnoreCancelledErrorFilter())
-logging.getLogger("playwright").addFilter(IgnoreCancelledErrorFilter())
-
 app = typer.Typer()
 
 
