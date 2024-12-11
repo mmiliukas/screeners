@@ -18,7 +18,7 @@ jobs:
       - run: |
           ./run giga "${{ secrets.cookies }}" 0
 
-          git add ./tickers-giga*.csv
+          git add .
 
           git commit --allow-empty -m "chore(giga 1-5): scrape"
           git push
