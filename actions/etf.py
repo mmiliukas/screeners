@@ -1,15 +1,31 @@
-from playwright.sync_api import sync_playwright
+import pandas as pd
+from playwright.sync_api import ElementHandle, Page, sync_playwright
 from tqdm import tqdm
 
 from screeners.config import config
 from screeners.etfs import ETFS
-from screeners.scraper import open_page, scrape_etf
-from screeners.utils import retry
+from screeners.scraper import open_page
+
+
+def get_holding(el: ElementHandle) -> dict[str, str]:
+    spans = el.query_selector_all("span")
+    symbol, name, assets = [span.inner_text() for span in spans]
+    return {"Name": name, "Symbol": symbol, "% Assets": assets}
+
+
+def scrape(page: Page, symbol: str) -> None:
+    url = f"https://finance.yahoo.com/quote/{symbol}/holdings"
+    page.goto(url, wait_until="domcontentloaded")
+
+    data_hook = '[data-testid="top-holdings"] div.container div.content'
+    rows = page.query_selector_all(data_hook)
+
+    df = pd.DataFrame(list(map(get_holding, rows)))
+    df.to_csv(f"{config.etf.cache_name}{symbol}.csv", index=False)
 
 
 def etf(cookies: str) -> None:
 
-    retry_times = config.scraper.retry_times
     etfs = [ticker for etf in ETFS for ticker in etf["US"]]
 
     with sync_playwright() as playwright:
@@ -20,4 +36,4 @@ def etf(cookies: str) -> None:
                 progress.set_description(f"{etf:>10}", refresh=False)
                 progress.update(1)
 
-                retry(retry_times)(lambda: scrape_etf(page, etf))
+                scrape(page, etf)

@@ -1,4 +1,4 @@
-name: Scrape ETF
+name: ETF
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
       - run: |
           ./run etf '${{ secrets.cookies }}'
 
-          git add ./etfs
+          git add .
 
           git commit --allow-empty -m 'chore(etf): update etf holdings'
           git push
