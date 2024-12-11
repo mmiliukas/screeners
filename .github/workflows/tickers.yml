@@ -3,9 +3,9 @@ name: Tickers
 on:
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [Scrape]
-    types: [completed]
+  # workflow_run:
+  #   workflows: [Scrape]
+  #   types: [completed]
 
 permissions:
   contents: write
@@ -21,8 +21,7 @@ jobs:
       - run: |
           ./run tickers
 
-          git add ./tickers/
-          git add ./first-seen/
+          git add .
 
           git commit --allow-empty -m "chore(tickers): update"
           git push
