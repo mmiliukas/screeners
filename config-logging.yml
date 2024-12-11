@@ -37,11 +37,6 @@ loggers:
     handlers: [console]
     propagate: no
 
-  asyncio:
-    level: ERROR
-    handlers: []
-    propagate: no
-
 root:
   level: WARNING
   handlers: [console]
