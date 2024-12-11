@@ -14,30 +14,17 @@ with open("config-logging.yml", "r") as config_logging:
 app = typer.Typer()
 
 
-# class IgnoreCancelledErrorFilter(logging.Filter):
-#     def filter(self, record):
-#         if "CancelledError" in record.getMessage():
-#             return False
-#         return True
-
-
-# logging.getLogger("asyncio").addFilter(IgnoreCancelledErrorFilter())
-# logging.getLogger("playwright").addFilter(IgnoreCancelledErrorFilter())
-
-
-@app.command(name="revive")
-def command_revive() -> None:
-    from actions.revive import revive
-
-    revive()
-
-
 @app.command(name="scrape")
 def command_scrape(cookies: str) -> None:
     from actions.scrape import scrape
 
     for screener in config.screeners:
-        scrape(cookies, screener.cache_name, screener.url)
+        scrape(
+            screener.name,
+            cookies,
+            screener.cache_name,
+            screener.url,
+        )
 
 
 @app.command(name="tickers")
@@ -80,6 +67,13 @@ def command_giga(cookies: str, index: int) -> None:
     from actions.giga import giga
 
     giga(cookies, index)
+
+
+@app.command(name="revive")
+def command_revive() -> None:
+    from actions.revive import revive
+
+    revive()
 
 
 @app.command(name="cookies")
