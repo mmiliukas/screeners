@@ -20,7 +20,7 @@ def login(page: Page, username: str, password: str) -> None:
 
     page.click("button#login-signin")
 
-    url_to_wait = re.compile(".*www\.yahoo\.com.*", re.IGNORECASE)
+    url_to_wait = re.compile(r".*www\.yahoo\.com.*", re.IGNORECASE)
     page.wait_for_url(url_to_wait, wait_until="domcontentloaded")
 
 
