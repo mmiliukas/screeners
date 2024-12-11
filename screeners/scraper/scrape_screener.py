@@ -1,5 +1,4 @@
 import logging
-import os
 from datetime import datetime
 from io import StringIO
 from time import sleep
@@ -11,6 +10,29 @@ from screeners.config import config
 from screeners.utils import a_number, a_percent, a_string, an_integer
 
 logger = logging.getLogger(__name__)
+
+
+converters: dict = {
+    "Symbol": a_string,
+    "Name": a_string,
+    "Price (Intraday)": a_number,
+    "Change": a_number,
+    "% Change": a_percent,
+    "Volume": an_integer,
+    "Avg Vol (3 month)": an_integer,
+    "Market Cap": an_integer,
+}
+
+columns = [
+    "Symbol",
+    "Name",
+    "Price (Intraday)",
+    "Change",
+    "% Change",
+    "Volume",
+    "Avg Vol (3 month)",
+    "Market Cap",
+]
 
 
 def scrape_screener(page: Page, url: str, target: str) -> None:
@@ -27,28 +49,6 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         logger.info(f"screener {url} returned empty results, skipping...")
         return
 
-    converters: dict = {
-        "Symbol": a_string,
-        "Name": a_string,
-        "Price (Intraday)": a_number,
-        "Change": a_number,
-        "% Change": a_percent,
-        "Volume": an_integer,
-        "Avg Vol (3 month)": an_integer,
-        "Market Cap": an_integer,
-    }
-
-    columns = [
-        "Symbol",
-        "Name",
-        "Price (Intraday)",
-        "Change",
-        "% Change",
-        "Volume",
-        "Avg Vol (3 month)",
-        "Market Cap",
-    ]
-
     date = datetime.now().isoformat()
     page_no = 1
 
@@ -63,16 +63,15 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         results.append(data)
 
         button = page.wait_for_selector('#scr-res-table button:has-text("Next")')
-        if button:
-            is_last = button.is_disabled()
-            if is_last:
-                dir = os.path.dirname(target)
-                os.makedirs(dir, exist_ok=True)
-                pd.concat(results).to_csv(target, index=False)
-                return
-            else:
-                page_no += 1
-                logger.info(f"going to next page {page_no:>3}...")
+        assert button is not None, "next button not found"
 
-                button.click()
-                sleep(config.scraper.sleep_after_click)
+        is_last = button.is_disabled()
+        if is_last:
+            pd.concat(results).to_csv(target, index=False)
+            return
+
+        page_no += 1
+        logger.info(f"going to next page {page_no:>3}...")
+
+        button.click()
+        sleep(config.scraper.sleep_after_click)
