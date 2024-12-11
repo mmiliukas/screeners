@@ -3,9 +3,9 @@ name: Aggregate
 on:
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [Ignore]
-    types: [completed]
+  # workflow_run:
+  #   workflows: [Ignore]
+  #   types: [completed]
 
 permissions:
   contents: write
@@ -20,8 +20,7 @@ jobs:
       - run: |
           ./run aggregate
 
-          git add ./tickers.csv
-          git add ./tickers-ignored.csv
+          git add .
 
           git commit --allow-empty -m "chore(aggregate): update"
           git push
