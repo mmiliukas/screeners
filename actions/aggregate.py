@@ -1,10 +1,9 @@
-import datetime
 import glob
 
 import pandas as pd
 
 from screeners.config import config
-from screeners.etfs import get_holdings, resolve_etf
+from screeners.etfs import resolve_etf
 from screeners.tickers import get_info, get_infos, get_tickers_whitelisted
 
 
@@ -19,9 +18,6 @@ def enrich_screeners_names(row):
 def enrich_close_date(row):
     symbol = row["Symbol"]
 
-    end = row["Screener First Seen"]
-    start = end - datetime.timedelta(days=14)
-
     file_name = f"first-seen/{symbol}.csv"
     history = pd.read_csv(file_name)
 
@@ -29,10 +25,7 @@ def enrich_close_date(row):
 
 
 def read_csv(file: str) -> pd.DataFrame:
-    dates = ["Date"]
-    date_format = "%Y-%m-%dT%H:%M:%S.%f"
-
-    return pd.read_csv(file, parse_dates=dates, date_format=date_format)
+    return pd.read_csv(file, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f")
 
 
 def exclude_empty(dfs: list[pd.DataFrame]) -> list[pd.DataFrame]:
@@ -100,6 +93,3 @@ def aggregate() -> None:
 
     df = enrich_tickers(tickers)
     df.to_csv(config.tickers.target, index=False)
-
-    df = enrich_tickers(get_holdings())
-    df.to_csv(config.etf.target, index=False)
