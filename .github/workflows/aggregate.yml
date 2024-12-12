@@ -3,9 +3,9 @@ name: Aggregate
 on:
   workflow_dispatch:
 
-  # workflow_run:
-  #   workflows: [Ignore]
-  #   types: [completed]
+  workflow_run:
+    workflows: [Ignore]
+    types: [completed]
 
 permissions:
   contents: write
@@ -17,10 +17,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
 
-      - run: |
-          ./run aggregate
+      - run: ./run aggregate
 
-          git add .
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(tickers): aggregate"
 
-          git commit --allow-empty -m "chore(aggregate): update"
-          git push
