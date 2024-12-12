@@ -42,7 +42,6 @@ class ConfigEtf(BaseConfig):
         super().__init__(values)
 
         self.cache_name: str = os.path.join(os.getcwd(), values["cache_name"])
-        self.target: str = os.path.join(os.getcwd(), values["target"])
 
 
 class ConfigTickers(BaseConfig):
