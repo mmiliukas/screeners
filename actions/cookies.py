@@ -7,9 +7,7 @@ from playwright.sync_api import Page, sync_playwright
 
 
 def login(page: Page, username: str, password: str) -> None:
-    login_url = "https://login.yahoo.com"
-
-    page.goto(login_url)
+    page.goto("https://login.yahoo.com")
     page.wait_for_selector("input#login-username")
     page.type("input#login-username", username, delay=100)
     page.click("input#login-signin")

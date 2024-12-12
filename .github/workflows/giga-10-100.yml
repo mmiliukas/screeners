@@ -15,10 +15,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
 
-      - run: |
-          ./run giga "${{ secrets.cookies }}" 2
+      - run: ./run giga "${{ secrets.cookies }}" 2
 
-          git add .
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(giga): 10-100 scrape"
 
-          git commit --allow-empty -m "chore(giga 10-100): scrape"
-          git push
