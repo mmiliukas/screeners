@@ -1,4 +1,5 @@
 import logging
+from time import sleep
 
 from playwright.sync_api import sync_playwright
 
@@ -21,3 +22,7 @@ def scrape(name: str, cookies: str, cache_name: str, url: str) -> None:
 
         logger.info(f"scraping {name}")
         retry(retry_times)(lambda: scrape_screener(page, url, target))
+
+        page.close()
+
+        sleep(1)
