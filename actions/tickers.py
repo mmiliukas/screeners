@@ -31,7 +31,7 @@ def tickers() -> None:
     tickers = list(df["Symbol"].unique())
     all_tickers = tickers + get_etfs_and_holdings()
 
-    logger.info(f"downloading tickers...")
+    logger.info(f"downloading missing tickers...")
 
     with tqdm(total=len(all_tickers)) as progress:
         for ticker in all_tickers:
@@ -48,7 +48,7 @@ def tickers() -> None:
 
                 file.write(json.dumps([info]))
 
-    logger.info(f"downloading first seen details...")
+    logger.info(f"downloading missing first seen details...")
 
     with tqdm(total=len(tickers)) as progress:
         for ticker in tickers:
@@ -61,5 +61,4 @@ def tickers() -> None:
             end = df[df["Symbol"] == ticker]["Date"].min()
             start = end - pd.Timedelta(days=config.scraper.min_trading_days)
 
-            first_seen_df = download(ticker, start, end)
-            first_seen_df.to_csv(path)
+            download(ticker, start, end).to_csv(path)
