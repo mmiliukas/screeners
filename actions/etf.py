@@ -37,3 +37,5 @@ def etf(cookies: str) -> None:
                 progress.update(1)
 
                 scrape(page, etf)
+
+        page.close()
