@@ -3,9 +3,9 @@ name: Ignore
 on:
   workflow_dispatch:
 
-  # workflow_run:
-  #   workflows: [Tickers]
-  #   types: [completed]
+  workflow_run:
+    workflows: [Tickers]
+    types: [completed]
 
 permissions:
   contents: write
