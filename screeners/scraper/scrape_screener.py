@@ -76,10 +76,12 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
         results.append(data)
 
-        button = page.wait_for_selector(selector_button)
-        assert button is not None, "next button not found"
+        try:
+            button = page.wait_for_selector(selector_button, timeout=5000)
+        except Exception:
+            button = None
 
-        is_last = button.is_disabled()
+        is_last = not button or button.is_disabled()
         if is_last:
             pd.concat(results).to_csv(target, index=False)
             return
