@@ -4,6 +4,9 @@ scraper:
   min_current_ratio: 0.5
   min_trading_days: 7
 
+ignored_tickers:
+  target: tickers-ignored.csv
+
 revive:
   ignore_after_days: 32
   sleep: 1
@@ -112,9 +115,6 @@ screeners:
   - name: "Random 120"
     cache_name: runs/random120/
     url: "https://finance.yahoo.com/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91?count=100"
-
-ignored_tickers:
-  target: tickers-ignored.csv
 
 tickers:
   cache_name: tickers/
