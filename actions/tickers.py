@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 def read_csv(file: str) -> pd.DataFrame:
-    return pd.read_csv(file, parse_dates=["Date"], date_format="%Y-%m-%dT%H:%M:%S.%f")
+    return pd.read_csv(file, parse_dates=["Date"])
 
 
 def tickers() -> None:
