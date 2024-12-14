@@ -24,5 +24,4 @@ def scrape(name: str, cookies: str, cache_name: str, url: str) -> None:
         retry(retry_times)(lambda: scrape_screener(page, url, target))
 
         page.close()
-
         sleep(1)
