@@ -3,7 +3,7 @@ import time
 
 
 def a_string(x: str) -> str:
-    return x
+    return str(x).strip()
 
 
 def a_percent(x: str) -> float | int:

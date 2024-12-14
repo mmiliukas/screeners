@@ -1,6 +1,6 @@
 scraper:
-  sleep_after_click: 1
   retry_times: 2
+  sleep_after_click: 1
   min_current_ratio: 0.5
   min_trading_days: 7
 
@@ -18,7 +18,7 @@ giga:
 
   - name: Giga 5-10
     target: tickers-giga-5-10.csv
-    url: https://finance.yahoo.com/screener/2f8576d2-b0b7-4ebe-bac1-6be25e36d4e2?count=100
+    url: https://finance.yahoo.com/research-hub/screener/2f8576d2-b0b7-4ebe-bac1-6be25e36d4e2?count=100
 
   - name: Giga 10-100
     target: tickers-giga-10-100.csv

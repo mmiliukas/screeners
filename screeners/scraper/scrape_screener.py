@@ -12,14 +12,19 @@ from screeners.utils import a_number, a_percent, a_string, an_integer
 logger = logging.getLogger(__name__)
 
 
+def a_symbol(value: str) -> str:
+    parts = a_string(value).split(" ")
+    return parts[1] if len(parts) > 1 else parts[0]
+
+
 converters: dict = {
-    "Symbol": a_string,
+    "Symbol": a_symbol,
     "Name": a_string,
     "Price (Intraday)": a_number,
     "Change": a_number,
-    "% Change": a_percent,
+    "Change %": a_percent,
     "Volume": an_integer,
-    "Avg Vol (3 month)": an_integer,
+    "Avg Vol (3M)": an_integer,
     "Market Cap": an_integer,
 }
 
@@ -28,41 +33,50 @@ columns = [
     "Name",
     "Price (Intraday)",
     "Change",
-    "% Change",
+    "Change %",
     "Volume",
-    "Avg Vol (3 month)",
+    "Avg Vol (3M)",
     "Market Cap",
 ]
+
+rename_columns = {
+    "Change %": "% Change",
+    "Avg Vol (3M)": "Avg Vol (3 month)",
+}
+
+
+selector_table = ".screener-table .table-container"
+selector_id = f"{selector_table} table tbody tr:first-child td:first-child"
+selector_button = "button[data-testid='next-page-button']"
 
 
 def scrape_screener(page: Page, url: str, target: str) -> None:
     logger.info(f"scraping {url} to {target}...")
 
-    results = []
-
     page.goto(url)
-    page.wait_for_selector("#fin-scr-res-table")
 
     try:
-        page.wait_for_selector("#fin-scr-res-table #scr-res-table")
+        page.wait_for_selector(selector_table)
     except TimeoutError:
         logger.info(f"screener {url} returned empty results, skipping...")
         return
 
-    date = datetime.now().isoformat()
+    results = []
     page_no = 1
+    date = datetime.now().isoformat()
 
     while True:
-        table = page.wait_for_selector("#scr-res-table")
+        table = page.wait_for_selector(selector_table)
         html = "" if not table else table.inner_html()
 
-        data = pd.read_html(StringIO(html), converters=converters)[0][columns]
-        data.dropna(inplace=True)
+        data = pd.read_html(StringIO(html), converters=converters)[0]
+        data = data[columns].dropna()
         data["Date"] = date
+        data = data.rename(columns=rename_columns)
 
         results.append(data)
 
-        button = page.wait_for_selector('#scr-res-table button:has-text("Next")')
+        button = page.wait_for_selector(selector_button)
         assert button is not None, "next button not found"
 
         is_last = button.is_disabled()
@@ -73,5 +87,18 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         page_no += 1
         logger.info(f"going to next page {page_no:>3}...")
 
+        id = page.query_selector(selector_id)
+        assert id is not None, "id not found"
+
+        initial_content = id.inner_text()
         button.click()
+
+        page.wait_for_function(
+            """([selector, initialContent]) => {
+                const element = document.querySelector(selector);
+                return element && element.innerText !== initialContent;
+            }""",
+            arg=[selector_id, initial_content],
+        )
+
         sleep(config.scraper.sleep_after_click)
