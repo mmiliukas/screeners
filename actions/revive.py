@@ -11,6 +11,11 @@ from screeners.utils import abs_path
 
 
 def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
+    # missing close price
+    first_seen = pd.read_csv(abs_path("first-seen/", symbol + ".csv"))
+    if first_seen.empty:
+        return False
+
     # 404
     if not ticker.info:
         return False
@@ -33,11 +38,6 @@ def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     history = download(symbol, start=start, interval="1d")
 
     if len(history) == 0:
-        return False
-
-    # not enough data
-    first_seen = pd.read_csv(abs_path("first-seen/", symbol + ".csv"))
-    if len(first_seen) == 0:
         return False
 
     return True
