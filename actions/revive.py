@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 from screeners.config import config
 from screeners.download import download
+from screeners.utils import abs_path
 
 
 def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
@@ -34,22 +35,27 @@ def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
     if len(history) == 0:
         return False
 
+    # not enough data
+    first_seen = pd.read_csv(abs_path("first-seen/", symbol + ".csv"))
+    if len(first_seen) == 0:
+        return False
+
     return True
 
 
 def revive() -> None:
     target = config.ignored_tickers.target
 
-    df_filtered = pd.read_csv(target, parse_dates=["Date"])
-    df_filtered["Date"] = df_filtered["Date"].dt.date
+    df = pd.read_csv(target, parse_dates=["Date"])
+    df["Date"] = df["Date"].dt.date
 
     ignore_after_date = date.today() - timedelta(days=config.revive.ignore_after_days)
-    df_filtered = df_filtered[df_filtered["Date"] > ignore_after_date]
+    df = df[df["Date"] > ignore_after_date]
 
     revived = []
 
-    with tqdm(total=len(df_filtered)) as progress:
-        for symbol in df_filtered["Symbol"].values:
+    with tqdm(total=len(df)) as progress:
+        for symbol in df["Symbol"].values:
 
             ticker = yf.Ticker(symbol)
 
