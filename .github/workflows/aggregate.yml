@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   workflow_run:
-    workflows: [Ignore]
+    workflows: [Tickers]
     types: [completed]
 
 permissions:
@@ -18,6 +18,7 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: ./run aggregate
+      - run: ./run reports
 
       - uses: ./.github/actions/push
         with:

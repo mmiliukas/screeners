@@ -19,6 +19,7 @@ jobs:
       - uses: ./.github/actions/setup
 
       - run: ./run tickers
+      - run: ./run ignore
 
       - uses: ./.github/actions/push
         with:
