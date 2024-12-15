@@ -77,6 +77,13 @@ def command_revive() -> None:
     revive()
 
 
+@app.command(name="refresh")
+def command_refresh() -> None:
+    from actions.refresh import refresh
+
+    refresh()
+
+
 @app.command(name="cookies")
 def command_cookies(username: str, password: str) -> None:
     from actions.cookies import cookies

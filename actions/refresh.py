@@ -5,13 +5,24 @@ from glob import glob
 
 import pandas as pd
 import yfinance as yf
-from tqdm import tqdm
 
 from screeners.config import config
 from screeners.etfs import get_etfs_and_holdings
 from screeners.utils import abs_path
 
 logger = logging.getLogger(__name__)
+
+
+def last_fetched_in_days(path: str) -> int:
+    with open(path, "r") as file:
+        fetch_time = json.load(file)[0].get("__fetch_time")
+    fetch_time = datetime.date.fromisoformat(fetch_time)
+    today = datetime.date.today()
+    return (today - fetch_time).days
+
+
+def is_outdated(pah: str) -> bool:
+    return last_fetched_in_days(pah) > config.tickers.refresh_in_days
 
 
 def refresh() -> None:
@@ -25,14 +36,30 @@ def refresh() -> None:
     tickers = list(df["Symbol"].unique())
     all_tickers = tickers + get_etfs_and_holdings()
 
-    with tqdm(total=len(all_tickers)) as progress:
-        for ticker in all_tickers:
-            progress.update(1)
+    ignored = pd.read_csv(config.ignored_tickers.target)
 
-            path = abs_path(config.tickers.cache_name, ticker + ".json")
-            yf_ticker = yf.Ticker(ticker)
-            with open(path, "w") as file:
-                info = yf_ticker.info
-                info["__fetch_time"] = datetime.date.today().isoformat()
+    processed = 0
 
-                file.write(json.dumps([info]))
+    for ticker in all_tickers:
+        if len(ignored[ignored["Symbol"] == ticker]) != 0:
+            logger.info(f"{ticker:>20} ignored")
+            continue
+
+        path = abs_path(config.tickers.cache_name, ticker + ".json")
+        if not is_outdated(path):
+            logger.info(f"{ticker:>20} cache hit")
+            continue
+
+        processed += 1
+        if processed > config.tickers.refresh_limit:
+            return
+
+        yf_ticker = yf.Ticker(ticker)
+        with open(path, "w") as file:
+            info = yf_ticker.info
+            info["__fetch_time"] = datetime.date.today().isoformat()
+
+            file.write(json.dumps([info]))
+            logger.info(
+                f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
+            )

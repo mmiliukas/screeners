@@ -50,6 +50,8 @@ class ConfigTickers(BaseConfig):
 
         self.cache_name: str = os.path.join(os.getcwd(), values["cache_name"])
         self.target: str = os.path.join(os.getcwd(), values["target"])
+        self.refresh_in_days: int = int(values["refresh_in_days"])
+        self.refresh_limit: int = int(values["refresh_limit"])
 
 
 class ConfigRevive(BaseConfig):

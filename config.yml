@@ -14,6 +14,12 @@ revive:
 etf:
   cache_name: etfs/
 
+tickers:
+  refresh_in_days: 3
+  refresh_limit: 200
+  cache_name: tickers/
+  target: tickers.csv
+
 giga:
   - name: Giga 1-5
     target: tickers-giga-1-5.csv
@@ -115,7 +121,3 @@ screeners:
   - name: Random 120
     cache_name: runs/random120/
     url: https://finance.yahoo.com/research-hub/screener/d2e2f40d-a6ed-42c9-b977-58a139b6fa91?count=100
-
-tickers:
-  cache_name: tickers/
-  target: tickers.csv
