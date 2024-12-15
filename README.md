@@ -1,5 +1,6 @@
 > This project is designed solely for educational purposes.
 
+
 | Day | Time        | Status |
 |-----|-------------|--------|
 | Mon | 09:00       | [![Scrape](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml) [![Tickers](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml) [![Ignore](https://github.com/mmiliukas/screeners/actions/workflows/ignore.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/ignore.yml) [![Aggregate](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml) [![Reports](https://github.com/mmiliukas/screeners/actions/workflows/reports.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/reports.yml) |
