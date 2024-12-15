@@ -1,4 +1,4 @@
-name: Reports
+name: Generate Reports
 
 on:
   workflow_dispatch:
