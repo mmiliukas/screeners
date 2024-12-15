@@ -1,22 +1,22 @@
-name: ETF
+name: Refresh
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 06 * * 0'
+    - cron: '0 9-19 * * 6'
 
 permissions:
   contents: write
 
 jobs:
-  etf:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
 
-      - run: ./run etf '${{ secrets.cookies }}'
+      - run: ./run refresh
 
       - uses: ./.github/actions/push
         with:
-          message: "chore(etf): update etf holdings"
+          message: "chore(tickers): refresh"

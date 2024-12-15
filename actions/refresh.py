@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 from glob import glob
+from time import sleep
 
 import pandas as pd
 import yfinance as yf
@@ -63,3 +64,5 @@ def refresh() -> None:
             logger.info(
                 f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
             )
+
+            sleep(1)
