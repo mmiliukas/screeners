@@ -17,10 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
 
-      - run: |
-          ./run reports
+      - run: ./run reports
 
-          git add ./reports/
-
-          git commit --allow-empty -m "chore(reports): update"
-          git push
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(reports): update"
