@@ -78,6 +78,13 @@ def sentiments(
         if not filtered.empty:
             if os.path.exists(file_name):
                 existing = pd.read_csv(file_name)
-                pd.concat([existing, filtered]).to_csv(file_name, index=False)
+                pd.concat([existing, filtered]).drop_duplicates(
+                    ignore_index=True,
+                ).to_csv(file_name, index=False)
             else:
-                filtered.to_csv(file_name, index=False)
+                filtered.drop_duplicates(ignore_index=True).to_csv(
+                    file_name, index=False
+                )
+            pd.read_csv(file_name).drop_duplicates(ignore_index=True).to_csv(
+                file_name, index=False
+            )
