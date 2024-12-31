@@ -51,7 +51,7 @@ def sentiments(
             file.write(json.dumps(data))
 
     flattened_data = []
-    for row in data["feed"]:
+    for row in data.get("feed", []):
         for sentiment in row["ticker_sentiment"]:
             copy = dict()
             copy["title"] = row["title"]

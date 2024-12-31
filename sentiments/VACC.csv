@@ -1,3 +1,5 @@
 title,time_published,url,ticker,relevance_score,ticker_sentiment_label,ticker_sentiment_score
 Stocks That Hit 52-Week Lows On Tuesday,20220329T154325,https://www.benzinga.com/news/22/03/26352676/stocks-that-hit-52-week-lows-on-tuesday,VACC,0.027837,Neutral,-0.012169
 99 Biggest Movers From Yesterday,20220512T082956,https://www.benzinga.com/news/22/05/27156577/99-biggest-movers-from-yesterday,VACC,0.042462,Neutral,-0.000484
+110 Biggest Movers From Friday,20220516T092329,https://www.benzinga.com/news/22/05/27213491/110-biggest-movers-from-friday,VACC,0.059552,Neutral,0.042132
+110 Biggest Movers From Friday,20220516T092329,https://markets.businessinsider.com/news/stocks/110-biggest-movers-from-friday-1031463674,VACC,0.036437,Neutral,0.01807
