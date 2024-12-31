@@ -1,0 +1,26 @@
+name: Sentiments
+
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Comma separated tickers (no more than 25)'
+        required: true
+        default: 'ACIU'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  giga:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: ./run sentiments "${{ secrets.alphavantage }}" "${{ inputs.tickers }}"
+
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(sentiments): update ${{ inputs.tickers }}"

@@ -1,0 +1,22 @@
+name: ETF
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 06 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  etf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: ./run etf '${{ secrets.cookies }}'
+
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(etf): update etf holdings"
