@@ -12,7 +12,7 @@ frozendict==2.4.6
 greenlet==3.1.1
 html5lib==1.1
 idna==3.10
-importlib_resources==6.4.5
+importlib_resources==6.5.2
 kiwisolver==1.4.8
 korean-lunar-calendar==0.3.1
 lxml==5.3.0
