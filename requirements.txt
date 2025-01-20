@@ -18,7 +18,7 @@ korean-lunar-calendar==0.3.1
 lxml==5.3.0
 matplotlib==3.10.0
 multitasking==0.0.11
-numpy==2.2.1
+numpy==2.2.2
 packaging==24.2
 pandas==2.2.3
 pandas_market_calendars==4.5.1
