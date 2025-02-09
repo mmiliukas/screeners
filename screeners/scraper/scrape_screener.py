@@ -93,6 +93,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         assert id is not None, "id not found"
 
         initial_content = id.inner_text()
+        print(initial_content)
         button.click()  # type: ignore
 
         page.wait_for_function(
