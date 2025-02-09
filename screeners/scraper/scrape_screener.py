@@ -96,6 +96,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         logger.info(initial_content)
 
         button.scroll_into_view_if_needed()  # type: ignore
+        page.wait_for_timeout(1_000)
         button.click()  # type: ignore
 
         page.wait_for_function(
