@@ -94,6 +94,8 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
         initial_content = id.inner_text()
         logger.info(initial_content)
+
+        page.scroll_into_view(selector_button)
         button.click()  # type: ignore
 
         page.wait_for_function(
