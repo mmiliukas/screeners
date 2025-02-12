@@ -1,0 +1,22 @@
+name: Scrape Giga 1-5
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 11 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  giga:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: ./run giga "${{ secrets.cookies }}" 0
+
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(giga): 1-5 scrape"

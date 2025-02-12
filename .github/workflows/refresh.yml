@@ -1,0 +1,22 @@
+name: Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0,20,40 9-20 * * 6'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: ./run refresh
+
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(tickers): refresh"

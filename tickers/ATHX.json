@@ -1,0 +1,1 @@
+[{"maxAge": 86400, "priceHint": 2, "currency": "USD", "exchange": "NGM", "quoteType": "EQUITY", "symbol": "ATHX", "underlyingSymbol": "ATHX", "shortName": "Athersys, Inc.", "timeZoneFullName": "America/New_York", "timeZoneShortName": "EST", "uuid": "652ff454-b29b-3086-a883-e6205eef7413", "gmtOffSetMilliseconds": -18000000, "trailingPegRatio": null, "__fetch_time": "2024-12-07"}]

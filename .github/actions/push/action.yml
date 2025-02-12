@@ -1,0 +1,17 @@
+name: "Push"
+description: "Commits and pushes the changes to repository"
+
+inputs:
+  message:
+    description: "Commit message"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        git add .
+        git commit --allow-empty -m "${{ inputs.message }}"
+        git push
+
+      shell: bash

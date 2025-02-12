@@ -1,0 +1,26 @@
+name: Aggregate
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: [Tickers]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+
+      - run: ./run aggregate
+      - run: ./run reports
+
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(tickers): aggregate"
+
