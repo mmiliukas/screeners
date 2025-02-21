@@ -66,9 +66,9 @@ def revive() -> None:
                 if is_ticker_alive(symbol, ticker):
                     revived.append(symbol)
             except Exception as check_error:
-                logger.error(f"failed to check ticker {ticker}", check_error)
+                logger.errinfoor(f"failed to check ticker {ticker}")
 
-            progress.set_description(f"{symbol:>10}", refresh=False)
+            progress.set_description(f"{symbol:>10}", refresh=True)
             progress.update(1)
 
             sleep(config.revive.sleep)
