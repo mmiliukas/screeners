@@ -25,8 +25,11 @@ def ignore_ticker(ticker: str, reason: str) -> None:
 
 def read_ticker(ticker: str) -> dict:
     path = abs_path(config.tickers.cache_name, ticker + ".json")
-    with open(path, "r") as file:
-        return json.load(file)[0]
+    try:
+        with open(path, "r") as file:
+            return json.load(file)[0]
+    except Exception:
+        return None
 
 
 def read_first_seen(ticker: str) -> pd.DataFrame:
@@ -49,7 +52,7 @@ def ignore() -> None:
             progress.update(1)
 
             result = read_ticker(ticker)
-            if result.get("symbol") != ticker:
+            if not result or result.get("symbol") != ticker:
                 ignore_ticker(ticker, "Not Found")
                 continue
 
