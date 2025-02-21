@@ -57,12 +57,15 @@ def refresh() -> None:
 
         yf_ticker = yf.Ticker(ticker)
         with open(path, "w") as file:
-            info = yf_ticker.info
-            info["__fetch_time"] = datetime.date.today().isoformat()
+            try:
+                info = yf_ticker.info
+                info["__fetch_time"] = datetime.date.today().isoformat()
 
-            file.write(json.dumps([info]))
-            logger.info(
-                f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
-            )
+                file.write(json.dumps([info]))
+                logger.info(
+                    f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
+                )
+            except Exception:
+                logger.info(f"{ticker:>20} error")
 
             sleep(1)
