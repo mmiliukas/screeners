@@ -9,7 +9,7 @@ ignored_tickers:
 
 revive:
   ignore_after_days: 32
-  sleep: 1
+  sleep: 2
 
 etf:
   cache_name: etfs/
