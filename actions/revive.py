@@ -1,6 +1,7 @@
 from datetime import date, timedelta
 from time import sleep
 
+import logging
 import pandas as pd
 import yfinance as yf
 from tqdm import tqdm
@@ -8,6 +9,8 @@ from tqdm import tqdm
 from screeners.config import config
 from screeners.download import download
 from screeners.utils import abs_path
+
+logger = logging.getLogger(__name__)
 
 
 def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
@@ -59,8 +62,11 @@ def revive() -> None:
 
             ticker = yf.Ticker(symbol)
 
-            if is_ticker_alive(symbol, ticker):
-                revived.append(symbol)
+            try:
+                if is_ticker_alive(symbol, ticker):
+                    revived.append(symbol)
+            except Exception as check_error:
+                logger.error(f"failed to check ticker {ticker}", check_error)
 
             progress.set_description(f"{symbol:>10}", refresh=False)
             progress.update(1)
