@@ -1,11 +1,9 @@
 from datetime import date, timedelta
 from time import sleep
-
 import logging
 import pandas as pd
 import yfinance as yf
 from tqdm import tqdm
-
 from screeners.config import config
 from screeners.download import download
 from screeners.utils import abs_path
@@ -13,14 +11,20 @@ from screeners.utils import abs_path
 logger = logging.getLogger(__name__)
 
 
-def is_ticker_alive(symbol: str, ticker: yf.Ticker) -> bool:
+def is_ticker_alive(symbol: str) -> bool:
     # missing close price
     first_seen = pd.read_csv(abs_path("first-seen/", symbol + ".csv"))
     if first_seen.empty:
         return False
 
-    # 404
-    if not ticker.info:
+    ticker = yf.Ticker(symbol)
+
+    try:
+        # 404
+        if not ticker.info:
+            return False
+    except Exception:
+        # yfinance raises an error once gets 404
         return False
 
     # 404
@@ -59,14 +63,8 @@ def revive() -> None:
 
     with tqdm(total=len(df)) as progress:
         for symbol in df["Symbol"].values:
-
-            ticker = yf.Ticker(symbol)
-
-            try:
-                if is_ticker_alive(symbol, ticker):
-                    revived.append(symbol)
-            except Exception as check_error:
-                logger.error(f"failed to check ticker {ticker}")
+            if is_ticker_alive(symbol):
+                revived.append(symbol)
 
             progress.set_description(f"{symbol:>10}", refresh=True)
             progress.update(1)
