@@ -15,11 +15,11 @@ logger = logging.getLogger(__name__)
 
 
 def last_fetched_in_days(path: str) -> int:
-    with open(path, "r") as file:
-        try:
+    try:
+        with open(path, "r") as file:
             fetch_time = json.load(file)[0].get("__fetch_time")
-        except Exception:
-            fetch_time = "2024-01-01"
+    except Exception:
+        fetch_time = "2024-01-01"
     fetch_time = datetime.date.fromisoformat(fetch_time)
     today = datetime.date.today()
     return (today - fetch_time).days
