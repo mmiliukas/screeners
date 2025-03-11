@@ -43,7 +43,10 @@ def tickers() -> None:
 
             yf_ticker = yf.Ticker(ticker)
             with open(path, "w") as file:
-                info = yf_ticker.info
+                try:
+                    info = yf_ticker.info
+                except Exception:
+                    info = {"symbol": ticker}
                 info["__fetch_time"] = datetime.date.today().isoformat()
 
                 file.write(json.dumps([info]))
