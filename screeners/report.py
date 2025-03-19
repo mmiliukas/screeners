@@ -15,7 +15,7 @@ def read_json(name):
     try:
         with open(name, "r") as file:
             return json.load(file)
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return [{}]
 
 
