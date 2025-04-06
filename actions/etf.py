@@ -9,7 +9,7 @@ from screeners.scraper import open_page
 
 def get_holding(el: ElementHandle) -> dict[str, str]:
     spans = el.query_selector_all("span")
-    symbol, name, assets = [span.inner_text() for span in spans]
+    _, symbol, name, assets = [span.inner_text() for span in spans]
     return {"Name": name, "Symbol": symbol, "% Assets": assets}
 
 
