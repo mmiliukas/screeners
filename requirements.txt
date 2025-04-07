@@ -44,7 +44,7 @@ toolz==1.0.0
 tqdm==4.67.1
 typer-slim==0.15.2
 typing_extensions==4.12.2
-tzdata==2025.1
+tzdata==2025.2
 urllib3==2.3.0
 webencodings==0.5.1
 yfinance==0.2.55
