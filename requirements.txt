@@ -21,7 +21,7 @@ multitasking==0.0.11
 numpy==2.2.4
 packaging==24.2
 pandas==2.2.3
-pandas_market_calendars==4.6.1
+pandas_market_calendars==5.0.0
 peewee==3.17.9
 pillow==11.1.0
 platformdirs==4.3.7
