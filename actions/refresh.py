@@ -73,4 +73,4 @@ def refresh() -> None:
                 f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
             )
 
-            # sleep(1)
+            sleep(1)
