@@ -26,7 +26,7 @@ pandas==2.2.3
 pandas_market_calendars==5.1.0
 peewee==3.18.1
 pillow==11.2.1
-platformdirs==4.3.7
+platformdirs==4.3.8
 playwright==1.51.0
 pyarrow==20.0.0
 pycparser==2.22
