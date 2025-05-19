@@ -11,7 +11,7 @@ exceptiongroup==1.2.2
 exchange_calendars==4.9
 fonttools==4.58.0
 frozendict==2.4.6
-greenlet==3.2.1
+greenlet==3.2.2
 html5lib==1.1
 idna==3.10
 importlib_resources==6.5.2
