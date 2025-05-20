@@ -13,3 +13,4 @@
 |     | 11:00       | [![Scrape Giga 1-5](https://github.com/mmiliukas/screeners/actions/workflows/giga-1-5.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-1-5.yml) |
 |     | 12:00       | [![Scrape Giga 5-10](https://github.com/mmiliukas/screeners/actions/workflows/giga-5-10.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-5-10.yml) |
 |     | 13:00       | [![Scrape Giga 10-100](https://github.com/mmiliukas/screeners/actions/workflows/giga-10-100.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga-10-100.yml) |
+|     |             | [![Top 1](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml) |
