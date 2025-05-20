@@ -1,6 +1,7 @@
 name: Top 1
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'top-1/**'
