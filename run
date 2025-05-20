@@ -100,5 +100,12 @@ def command_test(api_key: str, tickers_csv: str) -> None:
         sentiments(api_key, ticker, force=False)
 
 
+@app.command(name="top-1")
+def command_top_1() -> None:
+    from actions.top_1 import top_1
+
+    top_1()
+
+
 if __name__ == "__main__":
     app()
