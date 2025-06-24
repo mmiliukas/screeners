@@ -45,6 +45,7 @@ rename_columns = {
 }
 
 
+selector_screener_name = ".screenerName"
 selector_table = ".screener-table .table-container"
 selector_id = f"{selector_table} table tbody tr:first-child td:first-child"
 selector_button = "button[data-testid='next-page-button']"
@@ -54,6 +55,12 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
     logger.info(f"scraping {url} to {target}...")
 
     page.goto(url)
+
+    try:
+        page.wait_for_selector(selector_screener_name)
+    except TimeoutError:
+        logger.error(f"screener {url} not found, might be session has expired")
+        raise Exception(f"screener {url} not found, might be session has expired")
 
     try:
         page.wait_for_selector(selector_table)
