@@ -49,7 +49,7 @@ tqdm==4.67.1
 typer-slim==0.16.0
 typing_extensions==4.13.2
 tzdata==2025.2
-urllib3==2.4.0
+urllib3==2.5.0
 webencodings==0.5.1
 websockets==15.0.1
 yfinance==0.2.63
