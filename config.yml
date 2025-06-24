@@ -8,7 +8,7 @@ ignored_tickers:
   target: tickers-ignored.csv
 
 revive:
-  ignore_after_days: 32
+  ignore_after_days: 96
   sleep: 2
 
 etf:
