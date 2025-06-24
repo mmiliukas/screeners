@@ -44,14 +44,14 @@ def refresh() -> None:
 
     processed = 0
 
-    for ticker in all_tickers:
+    for index, ticker in enumerate(all_tickers):
         if len(ignored[ignored["Symbol"] == ticker]) != 0:
-            logger.info(f"{ticker:>20} ignored")
+            logger.info(f"{ticker:>20} ignored {index}/{len(all_tickers)}")
             continue
 
         path = abs_path(config.tickers.cache_name, ticker + ".json")
         if not is_outdated(path):
-            logger.info(f"{ticker:>20} cache hit")
+            logger.info(f"{ticker:>20} cache hit {index}/{len(all_tickers)}")
             continue
 
         processed += 1
@@ -70,7 +70,7 @@ def refresh() -> None:
 
             file.write(json.dumps([info]))
             logger.info(
-                f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed"
+                f"{ticker:>20} {processed:>4}/{config.tickers.refresh_limit} refreshed {index}/{len(all_tickers)}"
             )
 
             sleep(1)
