@@ -1,9 +1,9 @@
-name: giga 10-100
+name: giga
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 13 * * 0'
+    - cron: '00 11 * * 0'
 
 permissions:
   contents: write
@@ -14,10 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-
+      - run: ./run giga "${{ secrets.cookies }}" 0
+      - run: ./run giga "${{ secrets.cookies }}" 1
       - run: ./run giga "${{ secrets.cookies }}" 2
-
       - uses: ./.github/actions/push
         with:
-          message: "chore(giga): 10-100 scrape"
-
+          message: "chore(giga): scrape"

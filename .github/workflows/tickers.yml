@@ -1,10 +1,9 @@
-name: Tickers
+name: tickers
 
 on:
   workflow_dispatch:
-
   workflow_run:
-    workflows: [Scrape]
+    workflows: [scrape]
     types: [completed]
 
 permissions:
@@ -13,14 +12,11 @@ permissions:
 jobs:
   tickers:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-
       - run: ./run tickers
       - run: ./run ignore
-
       - uses: ./.github/actions/push
         with:
-          message: "chore(tickers): update"
+          message: "chore(tickers): update and ignore"

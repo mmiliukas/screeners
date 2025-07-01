@@ -1,10 +1,9 @@
-name: Aggregate
+name: aggregate
 
 on:
   workflow_dispatch:
-
   workflow_run:
-    workflows: [Tickers]
+    workflows: [tickers]
     types: [completed]
 
 permissions:
@@ -16,11 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-
       - run: ./run aggregate
       - run: ./run reports
-
       - uses: ./.github/actions/push
         with:
-          message: "chore(tickers): aggregate"
+          message: "chore(tickers): aggregate and reports"
 
