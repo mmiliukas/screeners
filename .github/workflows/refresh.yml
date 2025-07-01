@@ -3,7 +3,7 @@ name: refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6-21 * * 6'
+    - cron: '0/30 6-16 * * 6'
 
 permissions:
   contents: write
