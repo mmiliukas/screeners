@@ -35,7 +35,7 @@ def refresh() -> None:
     df = pd.concat([df for df in dfs if not df.empty])
 
     tickers = list(df["Symbol"].unique())
-    all_tickers = set(tickers + get_etfs_and_holdings())
+    all_tickers = sorted(set(tickers + get_etfs_and_holdings()))
 
     logger.info(f"Total unique tickers found '{len(all_tickers)}'...")
 
