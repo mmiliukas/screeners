@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACOR", "underlyingSymbol": "ACOR", "uuid": "6677f3ed-ce73-34bc-a776-76e782fb0960", "messageBoardId": "finmb_24246", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2024-12-07"}]
+[{"quoteType": "NONE", "symbol": "ACOR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "messageBoardId": "finmb_24246", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-07-01"}]
