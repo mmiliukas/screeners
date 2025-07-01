@@ -1,6 +1,5 @@
 .vscode/
 .cache/
-.cache2/
 .cache-yfinance/
 .pytest_cache/
 __pycache__
