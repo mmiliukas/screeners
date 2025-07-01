@@ -15,7 +15,7 @@ etf:
   cache_name: etfs/
 
 tickers:
-  refresh_in_days: 3
+  refresh_in_days: 1
   refresh_limit: 300
   cache_name: tickers/
   target: tickers.csv

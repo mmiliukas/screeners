@@ -40,15 +40,9 @@ def refresh() -> None:
     tickers = list(df["Symbol"].unique())
     all_tickers = tickers + get_etfs_and_holdings()
 
-    ignored = pd.read_csv(config.ignored_tickers.target)
-
     processed = 0
 
     for index, ticker in enumerate(all_tickers):
-        if len(ignored[ignored["Symbol"] == ticker]) != 0:
-            logger.info(f"{ticker:>20} ignored {index}/{len(all_tickers)}")
-            continue
-
         path = abs_path(config.tickers.cache_name, ticker + ".json")
         if not is_outdated(path):
             logger.info(f"{ticker:>20} cache hit {index}/{len(all_tickers)}")
