@@ -91,15 +91,6 @@ def command_cookies(username: str, password: str) -> None:
     print(cookies(username, password))
 
 
-@app.command(name="sentiments")
-def command_test(api_key: str, tickers_csv: str) -> None:
-    from actions.sentiments import sentiments
-
-    tickers = tickers_csv.split(",")
-    for ticker in tickers:
-        sentiments(api_key, ticker, force=False)
-
-
 @app.command(name="top-1")
 def command_top_1() -> None:
     from actions.top_1 import top_1

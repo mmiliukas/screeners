@@ -1,4 +1,4 @@
-name: Scrape Giga 1-5
+name: giga 1-5
 
 on:
   workflow_dispatch:
