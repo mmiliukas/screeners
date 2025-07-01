@@ -1,12 +1,11 @@
-import datetime
 import json
 import logging
 import os.path
+from datetime import date
 from glob import glob
 
 import pandas as pd
 import yfinance as yf
-from tqdm import tqdm
 
 from screeners.config import config
 from screeners.download import download
@@ -29,39 +28,36 @@ def tickers() -> None:
     df = pd.concat([df for df in dfs if not df.empty])
 
     tickers = list(df["Symbol"].unique())
-    all_tickers = tickers + get_etfs_and_holdings()
+    all_tickers = sorted(set(tickers + get_etfs_and_holdings()))
 
-    logger.info(f"downloading missing tickers...")
+    logger.info(f"Downloading missing tickers...")
 
-    with tqdm(total=len(all_tickers)) as progress:
-        for ticker in all_tickers:
-            progress.update(1)
+    for ticker in all_tickers:
 
-            path = abs_path(config.tickers.cache_name, ticker + ".json")
-            if os.path.exists(path):
-                continue
+        path = abs_path(config.tickers.cache_name, ticker + ".json")
+        if os.path.exists(path):
+            continue
 
-            yf_ticker = yf.Ticker(ticker)
-            with open(path, "w") as file:
-                try:
-                    info = yf_ticker.info
-                except Exception:
-                    info = {"symbol": ticker}
-                info["__fetch_time"] = datetime.date.today().isoformat()
+        logger.info(path)
 
-                file.write(json.dumps([info]))
+        yf_ticker = yf.Ticker(ticker)
+        with open(path, "w") as file:
+            info = yf_ticker.info or {}
+            info["__fetch_time"] = date.today().isoformat()
 
-    logger.info(f"downloading missing first seen details...")
+            file.write(json.dumps([info]))
 
-    with tqdm(total=len(tickers)) as progress:
-        for ticker in tickers:
-            progress.update(1)
+    logger.info(f"Downloading missing first seen details...")
 
-            path = abs_path("first-seen/", ticker + ".csv")
-            if os.path.exists(path):
-                continue
+    for ticker in tickers:
 
-            end = df[df["Symbol"] == ticker]["Date"].min()
-            start = end - pd.Timedelta(days=config.scraper.min_trading_days)
+        path = abs_path("first-seen/", ticker + ".csv")
+        if os.path.exists(path):
+            continue
 
-            download(ticker, start, end).to_csv(path)
+        logger.info(path)
+
+        end = df[df["Symbol"] == ticker]["Date"].min()
+        start = end - pd.Timedelta(days=config.scraper.min_trading_days)
+
+        download(ticker, start, end).to_csv(path)

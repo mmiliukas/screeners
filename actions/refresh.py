@@ -20,8 +20,8 @@ def last_fetched_in_days(path: str) -> int:
     return (date.today() - date.fromisoformat(fetch_time)).days
 
 
-def is_outdated(pah: str) -> bool:
-    return last_fetched_in_days(pah) > config.tickers.refresh_in_days
+def is_outdated(path: str) -> bool:
+    return last_fetched_in_days(path) > config.tickers.refresh_in_days
 
 
 def refresh() -> None:
@@ -54,7 +54,7 @@ def refresh() -> None:
         with open(path, "w") as file:
             yf_ticker = yf.Ticker(ticker)
 
-            info = yf_ticker.info
+            info = yf_ticker.info or {}
             info["__fetch_time"] = date.today().isoformat()
 
             file.write(json.dumps([info]))
