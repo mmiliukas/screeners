@@ -11,4 +11,4 @@
 | Sun | 06:00       | [![etf](https://github.com/mmiliukas/screeners/actions/workflows/etf.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/etf.yml) |
 |     | 10:00       | [![revive](https://github.com/mmiliukas/screeners/actions/workflows/revive.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/revive.yml) |
 |     | 11:00       | [![giga](https://github.com/mmiliukas/screeners/actions/workflows/giga.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/giga.yml) |
-|     |             | [![top-1](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml) |
+|     | on push     | [![top-1](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/top-1.yml) |
