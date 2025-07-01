@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EXAI", "underlyingSymbol": "EXAI", "messageBoardId": "finmb_408328234", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-02-08"}]
+[{"quoteType": "NONE", "symbol": "EXAI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "messageBoardId": "finmb_408328234", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-07-01"}]
