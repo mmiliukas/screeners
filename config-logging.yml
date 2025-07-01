@@ -13,7 +13,7 @@ handlers:
   console:
     class: logging.StreamHandler
     level: DEBUG
-    formatter: maxi
+    formatter: medi
     stream: ext://sys.stdout
 
 loggers:
