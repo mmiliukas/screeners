@@ -53,10 +53,6 @@ def ignore() -> None:
                 ignore_ticker(ticker, "Not Found")
                 continue
 
-            if not result.get("sector"):
-                ignore_ticker(ticker, "Not Categorized")
-                continue
-
             if result.get("currentRatio", 0) < config.scraper.min_current_ratio:
                 ignore_ticker(ticker, "Current Ratio Below 0.5")
                 continue

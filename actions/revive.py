@@ -1,9 +1,11 @@
+import logging
 from datetime import date, timedelta
 from time import sleep
-import logging
+
 import pandas as pd
 import yfinance as yf
 from tqdm import tqdm
+
 from screeners.config import config
 from screeners.download import download
 from screeners.utils import abs_path
@@ -29,10 +31,6 @@ def is_ticker_alive(symbol: str) -> bool:
 
     # 404
     if ticker.info.get("symbol") != symbol:
-        return False
-
-    # not categorized
-    if not ticker.info.get("sector"):
         return False
 
     # ratio below X
