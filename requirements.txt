@@ -52,5 +52,5 @@ tzdata==2025.2
 urllib3==2.5.0
 webencodings==0.5.1
 websockets==15.0.1
-yfinance==0.2.64
+yfinance==0.2.65
 zipp==3.23.0
