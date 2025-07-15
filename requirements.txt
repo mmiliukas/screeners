@@ -24,7 +24,7 @@ numpy==2.2.4
 packaging==25.0
 pandas==2.3.1
 pandas_market_calendars==5.1.1
-peewee==3.18.1
+peewee==3.18.2
 pillow==11.3.0
 platformdirs==4.3.8
 playwright==1.53.0
