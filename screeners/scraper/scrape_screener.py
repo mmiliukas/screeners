@@ -52,20 +52,18 @@ selector_button = "button[data-testid='next-page-button']"
 
 
 def scrape_screener(page: Page, url: str, target: str) -> None:
-    logger.info(f"scraping {url} to {target}...")
-
     results = []
     offset = 0
     date = datetime.now().isoformat()
 
     while True:
-        logger.info(f"offset {offset:>4}")
-
         url_to_scape = url if offset == 0 else f"${url}&start={offset}"
+        logger.info(f"scraping {offset:>4} from {url} to {target}...")
+
         df = scrape_screener_single(page, url_to_scape, date)
 
         if df.empty:
-            logger.info("empty result, breaking")
+            logger.info("empty result, stopping...")
             break
 
         results.append(df)
