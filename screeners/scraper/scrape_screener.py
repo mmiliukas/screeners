@@ -56,6 +56,8 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
     offset = 0
     date = datetime.now().isoformat()
 
+    page.set_viewport_size({"width": 2040, "height": 1080})
+
     while True:
         url_to_scape = url if offset == 0 else f"{url}&start={offset}"
         logger.info(f"scraping {offset:>4} from {url_to_scape} to {target}...")
