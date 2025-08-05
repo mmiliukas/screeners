@@ -71,7 +71,10 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
         sleep(config.scraper.sleep_after_click)
 
-    pd.concat(results).to_csv(target, index=False)
+    if results:
+        pd.concat(results).to_csv(target, index=False)
+    else:
+        logger.info("no results, skipping saving csv...")
 
 
 def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
