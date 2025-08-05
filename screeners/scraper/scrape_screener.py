@@ -95,6 +95,8 @@ def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
     html = "" if not table else table.inner_html()
 
     data = pd.read_html(StringIO(html), converters=converters)[0]
+    logger.info(html)
+    logger.info(data.columns)
     data = data[columns].dropna()
     data["Date"] = date
     data = data.rename(columns=rename_columns)
