@@ -54,6 +54,29 @@ selector_button = "button[data-testid='next-page-button']"
 def scrape_screener(page: Page, url: str, target: str) -> None:
     logger.info(f"scraping {url} to {target}...")
 
+    results = []
+    offset = 0
+    date = datetime.now().isoformat()
+
+    while True:
+        logger.info(f"offset {offset:>4}")
+
+        url_to_scape = url if offset == 0 else url + f"&start={offset}"
+        df = scrape_screener_single(page, url_to_scape, date)
+
+        if df.empty:
+            logger.info("empty result, breaking")
+            break
+
+        results.append(df)
+        offset += 100
+
+        sleep(config.scraper.sleep_after_click)
+
+    pd.concat(results).to_csv(target, index=False)
+
+
+def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
     page.goto(url)
 
     try:
@@ -66,60 +89,16 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
         page.wait_for_selector(selector_table)
     except TimeoutError:
         logger.info(f"screener {url} returned empty results, skipping...")
-        return
+        return pd.DataFrame()
 
-    results = []
-    page_no = 1
     date = datetime.now().isoformat()
 
-    while True:
-        table = page.wait_for_selector(selector_table)
-        html = "" if not table else table.inner_html()
+    table = page.wait_for_selector(selector_table)
+    html = "" if not table else table.inner_html()
 
-        data = pd.read_html(StringIO(html), converters=converters)[0]
-        data = data[columns].dropna()
-        data["Date"] = date
-        data = data.rename(columns=rename_columns)
+    data = pd.read_html(StringIO(html), converters=converters)[0]
+    data = data[columns].dropna()
+    data["Date"] = date
+    data = data.rename(columns=rename_columns)
 
-        results.append(data)
-
-        try:
-            button = page.wait_for_selector(selector_button, timeout=5000)
-        except Exception:
-            button = None
-
-        is_last = not button or button.is_disabled()
-        if is_last:
-            pd.concat(results).to_csv(target, index=False)
-            return
-
-        page_no += 1
-        logger.info(f"going to next page {page_no:>3}...")
-
-        id = page.query_selector(selector_id)
-        assert id is not None, "id not found"
-
-        initial_content = id.inner_text()
-        logger.info(initial_content)
-
-        button.scroll_into_view_if_needed()  # type: ignore
-        page.wait_for_timeout(1_000)
-
-        try:
-            button.click()  # type: ignore
-        except Exception:
-            # sometimes yfinance shows confirmation modals
-            # so trying to automatically close them and repeating the action
-            page.click("dialog button.close-button")
-            page.wait_for_timeout(1_000)
-            button.click()  # type: ignore
-
-        page.wait_for_function(
-            """([selector, initialContent]) => {
-                const element = document.querySelector(selector);
-                return element && element.innerText !== initialContent;
-            }""",
-            arg=[selector_id, initial_content],
-        )
-
-        sleep(config.scraper.sleep_after_click)
+    return data
