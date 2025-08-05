@@ -75,7 +75,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
 
 def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
-    page.goto(url)
+    page.goto(url, wait_until="domcontentloaded")
 
     try:
         page.wait_for_selector(selector_screener_name)
