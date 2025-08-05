@@ -47,8 +47,6 @@ rename_columns = {
 
 selector_screener_name = ".screenerName"
 selector_table = ".screener-table .table-container"
-selector_id = f"{selector_table} table tbody tr:first-child td:first-child"
-selector_button = "button[data-testid='next-page-button']"
 
 
 def scrape_screener(page: Page, url: str, target: str) -> None:
@@ -87,6 +85,7 @@ def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
 
     try:
         page.wait_for_selector(selector_table)
+        page.wait_for_selector(f"{selector_table} table thead tr")
     except TimeoutError:
         logger.info(f"screener {url} returned empty results, skipping...")
         return pd.DataFrame()
