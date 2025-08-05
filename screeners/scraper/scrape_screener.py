@@ -61,7 +61,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
     while True:
         logger.info(f"offset {offset:>4}")
 
-        url_to_scape = url if offset == 0 else url + f"&start={offset}"
+        url_to_scape = url if offset == 0 else f"${url}&start={offset}"
         df = scrape_screener_single(page, url_to_scape, date)
 
         if df.empty:
@@ -77,7 +77,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
 
 
 def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
-    page.goto(url)
+    page.goto(url, wait_until="domcontentloaded")
 
     try:
         page.wait_for_selector(selector_screener_name)
