@@ -84,7 +84,8 @@ def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
         raise Exception(f"screener {url} not found, might be session has expired")
 
     try:
-        page.wait_for_selector(selector_table, state="visible", strict=True)
+        tbl = page.wait_for_selector(selector_table, state="visible", strict=True)
+        logger.info(tbl.inner_html() if tbl else "empty table")
         page.wait_for_selector(
             f"{selector_table} table thead tr", state="visible", strict=True
         )
@@ -92,8 +93,6 @@ def scrape_screener_single(page: Page, url: str, date: str) -> pd.DataFrame:
     except TimeoutError:
         logger.info(f"screener {url} returned empty results, skipping...")
         return pd.DataFrame()
-
-    date = datetime.now().isoformat()
 
     table = page.wait_for_selector(selector_table)
     html = "" if not table else table.inner_html()
