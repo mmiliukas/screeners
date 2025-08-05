@@ -57,7 +57,7 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
     date = datetime.now().isoformat()
 
     while True:
-        url_to_scape = url if offset == 0 else f"${url}&start={offset}"
+        url_to_scape = url if offset == 0 else f"{url}&start={offset}"
         logger.info(f"scraping {offset:>4} from {url} to {target}...")
 
         df = scrape_screener_single(page, url_to_scape, date)
