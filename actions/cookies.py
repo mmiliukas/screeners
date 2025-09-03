@@ -21,11 +21,18 @@ def login(page: Page, username: str, password: str) -> None:
     url_to_wait = re.compile(r".*www\.yahoo\.com.*", re.IGNORECASE)
     page.wait_for_url(url_to_wait, wait_until="domcontentloaded")
 
+    sleep(10)
+
 
 def cookies(username: str, password: str) -> str:
     with sync_playwright() as playwright:
-
-        browser = playwright.chromium.launch(headless=True)
+        browser = playwright.chromium.launch(
+            headless=False,
+            args=[
+                "--disable-features=ThirdPartyCookies",
+                "--test-third-party-cookie-phaseout",
+            ],
+        )
         context = browser.new_context()
         page = context.new_page()
 
