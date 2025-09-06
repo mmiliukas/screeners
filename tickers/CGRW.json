@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CGRW", "underlyingSymbol": "CGRW", "uuid": "81522a53-87a8-3294-b9e7-350e93584686", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "CGRW", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
