@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GRDI", "underlyingSymbol": "GRDI", "uuid": "3598405e-5056-33bc-8036-816bf439ed71", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "GRDI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GDNPF", "underlyingSymbol": "GDNPF", "uuid": "256d31f3-2226-36ca-b708-21dc55d3afd6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "GDNPF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
