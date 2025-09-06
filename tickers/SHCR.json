@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SHCR", "underlyingSymbol": "SHCR", "uuid": "c9904fcd-af08-3f1f-aa6d-f451d7f34b2e", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SHCR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

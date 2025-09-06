@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SFTGQ", "underlyingSymbol": "SFTGQ", "uuid": "bd86d603-e114-39e8-9f2b-1c72cfca2818", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SFTGQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

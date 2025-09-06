@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SMLP", "underlyingSymbol": "SMLP", "uuid": "6b65bb95-fe01-3496-b060-9ddb73713e78", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SMLP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

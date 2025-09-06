@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SMURF", "underlyingSymbol": "SMURF", "uuid": "c475446d-cb55-3eb8-aa1e-e61f389ee226", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SMURF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
