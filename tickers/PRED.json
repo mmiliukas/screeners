@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PRED", "underlyingSymbol": "PRED", "uuid": "39e59205-5230-35dd-bcc9-6030e4170e53", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "PRED", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
