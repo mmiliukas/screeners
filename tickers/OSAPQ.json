@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "OSAPQ", "underlyingSymbol": "OSAPQ", "uuid": "8d3e15be-00a9-3f1f-a6b5-c2f4be47758b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "OSAPQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
