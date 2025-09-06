@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SUNW", "underlyingSymbol": "SUNW", "uuid": "1d7b9505-f1f1-3e32-9b8d-3d28aabb5537", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SUNW", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

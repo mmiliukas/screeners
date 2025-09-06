@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SPEYF", "underlyingSymbol": "SPEYF", "uuid": "564cd019-853b-3f29-8a1b-aa73fd08a9d8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "SPEYF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
