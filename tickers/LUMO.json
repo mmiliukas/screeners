@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "LUMO", "underlyingSymbol": "LUMO", "uuid": "bcffe56f-50ef-3693-86d2-3838602f9308", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "LUMO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
