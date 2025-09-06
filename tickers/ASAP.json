@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ASAP", "underlyingSymbol": "ASAP", "uuid": "9310a615-c4fe-3c86-8759-9ad3975a5b59", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "ASAP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
