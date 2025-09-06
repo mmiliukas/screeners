@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MIMOQ", "underlyingSymbol": "MIMOQ", "uuid": "ee09fc64-345d-37ab-9439-4a2fcf1c5631", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "MIMOQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

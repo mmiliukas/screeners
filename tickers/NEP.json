@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "NEP", "underlyingSymbol": "NEP", "uuid": "1037dff3-7215-392e-9b79-948118e2037c", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "NEP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

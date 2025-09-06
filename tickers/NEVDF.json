@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "NEVDF", "underlyingSymbol": "NEVDF", "uuid": "a745740c-2b5f-33a0-afcb-b6835569623b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "NEVDF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

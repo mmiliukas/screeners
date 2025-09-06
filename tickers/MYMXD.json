@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MYMXD", "underlyingSymbol": "MYMXD", "uuid": "b16dfb1e-643a-317a-9e75-bddfab9f5105", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "MYMXD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "EUR", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
