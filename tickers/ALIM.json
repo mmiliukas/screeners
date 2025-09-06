@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALIM", "underlyingSymbol": "ALIM", "uuid": "43b46644-06cf-3ac0-9514-3b668c1cfa9e", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "ALIM", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]

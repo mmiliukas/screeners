@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACST", "underlyingSymbol": "ACST", "uuid": "b85d19b3-5615-3119-8c13-5a148ac836a8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-08-30"}]
+[{"quoteType": "NONE", "symbol": "ACST", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
