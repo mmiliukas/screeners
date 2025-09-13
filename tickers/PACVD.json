@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PACVD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "PACVD", "underlyingSymbol": "PACVD", "uuid": "37840738-a043-3987-91b0-1bf6088f12a3", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]

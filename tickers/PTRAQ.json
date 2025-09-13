@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PTRAQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "PTRAQ", "underlyingSymbol": "PTRAQ", "uuid": "6ceb7566-ab55-3df6-9b79-7e4058733708", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]

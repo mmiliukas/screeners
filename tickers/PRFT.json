@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PRFT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "PRFT", "underlyingSymbol": "PRFT", "uuid": "76592de3-9eda-34ba-8848-4a8c825371d4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
