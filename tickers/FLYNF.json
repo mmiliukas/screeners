@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "FLYNF", "underlyingSymbol": "FLYNF", "uuid": "d08dc95c-85d5-3078-a8f5-34dc9c68ab18", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "FLYNF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "CAD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
