@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "VGANF", "underlyingSymbol": "VGANF", "uuid": "f759aa56-0104-3f8e-ba26-6bd512803e16", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "VGANF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]

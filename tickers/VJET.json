@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "VJET", "underlyingSymbol": "VJET", "uuid": "948e1586-489f-3151-ab71-147b451497e2", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "VJET", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "EUR", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
