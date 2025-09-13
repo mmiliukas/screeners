@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ECSL", "underlyingSymbol": "ECSL", "uuid": "227880da-ef80-3d01-bb0f-1a3fa74d0eaf", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "ECSL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
