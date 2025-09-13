@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "COOLW", "underlyingSymbol": "COOLW", "uuid": "e794be33-f915-37b4-a987-133f394b753b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "COOLW", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "USD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CUROQ", "underlyingSymbol": "CUROQ", "uuid": "9dabc6b6-0e0d-3577-a959-704426557a8b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-06"}]
+[{"quoteType": "NONE", "symbol": "CUROQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
