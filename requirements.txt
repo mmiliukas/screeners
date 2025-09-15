@@ -33,7 +33,7 @@ pyarrow==21.0.0
 pycparser==2.22
 pyee==13.0.0
 pyluach==2.2.0
-pyparsing==3.2.3
+pyparsing==3.2.4
 python-dateutil==2.9.0.post0
 pytz==2025.2
 PyYAML==6.0.2
