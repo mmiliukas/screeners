@@ -30,7 +30,7 @@ platformdirs==4.4.0
 playwright==1.55.0
 protobuf==6.32.1
 pyarrow==21.0.0
-pycparser==2.22
+pycparser==2.23
 pyee==13.0.0
 pyluach==2.2.0
 pyparsing==3.2.3
