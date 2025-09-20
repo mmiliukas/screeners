@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "QLI", "underlyingSymbol": "QLI", "uuid": "c02a01f3-2484-3f33-a6ae-3d93a465e41f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "QLI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]

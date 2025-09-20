@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PFIE", "underlyingSymbol": "PFIE", "uuid": "f3d39d82-2b51-32e7-b2f4-440d563cdaea", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "PFIE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
