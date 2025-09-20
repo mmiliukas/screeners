@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "KSPN", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "KSPN", "underlyingSymbol": "KSPN", "uuid": "322044ac-f53f-3e3d-a16b-22603d57714c", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
