@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "TRYPF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "TRYPF", "underlyingSymbol": "TRYPF", "uuid": "9cb12462-7365-35fe-9d45-06c6b7e87d95", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]

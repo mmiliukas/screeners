@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "USDR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "USDR", "underlyingSymbol": "USDR", "uuid": "834fa6ef-1986-3ae2-a55e-534f1e5befae", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
