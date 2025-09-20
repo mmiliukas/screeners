@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "WRNT", "underlyingSymbol": "WRNT", "uuid": "f1987b3e-f02a-39fd-8519-29809f0c3cd0", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "WRNT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "JPY", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
