@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "IRNTQ", "underlyingSymbol": "IRNTQ", "uuid": "9c773251-52f4-368b-9e2a-9b3fc588fee6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "IRNTQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]

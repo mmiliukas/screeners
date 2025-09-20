@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HA", "underlyingSymbol": "HA", "uuid": "594c16ca-0695-3666-9d7c-f4971707adf6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "HA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]

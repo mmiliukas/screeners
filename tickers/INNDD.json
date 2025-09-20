@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "INNDD", "underlyingSymbol": "INNDD", "uuid": "2da6d0f9-288b-3946-949a-cbdf0413515a", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "INNDD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HOLI", "underlyingSymbol": "HOLI", "uuid": "451a6d70-ce89-386d-b352-6bbf2140f5fe", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-13"}]
+[{"quoteType": "NONE", "symbol": "HOLI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
