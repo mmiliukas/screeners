@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "JZZID", "underlyingSymbol": "JZZID", "uuid": "3808a3b4-1f57-3e22-a0d9-7345350daff1", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "JZZID", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
