@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "TSP", "underlyingSymbol": "TSP", "uuid": "e902a36a-de48-3cde-97d8-06974068a10f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "TSP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
