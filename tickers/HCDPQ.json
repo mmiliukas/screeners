@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HCDPQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "HCDPQ", "underlyingSymbol": "HCDPQ", "uuid": "78caf847-b06b-3660-867d-55b215cf6794", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]

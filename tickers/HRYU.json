@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HRYU", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "HRYU", "underlyingSymbol": "HRYU", "uuid": "dd9bae89-e2f2-3a4b-a58d-158ea5148ee7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
