@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BMTX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "BMTX", "underlyingSymbol": "BMTX", "uuid": "e1ca0817-2aa9-3339-875c-d744b638f974", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]

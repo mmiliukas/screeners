@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BRSH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "BRSH", "underlyingSymbol": "BRSH", "uuid": "2b2badf9-bf3b-39bc-a55e-86ad2e8808f7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
