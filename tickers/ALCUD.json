@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALCUD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "ALCUD", "underlyingSymbol": "ALCUD", "uuid": "1e0be182-aca8-362d-87e2-b95783d87f1c", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]

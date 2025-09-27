@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACTHF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "ACTHF", "underlyingSymbol": "ACTHF", "uuid": "53c88860-180e-37c9-95ec-35001bb4fcc8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
