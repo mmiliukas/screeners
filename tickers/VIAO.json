@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "VIAO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "EUR", "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-20"}]
+[{"quoteType": "NONE", "symbol": "VIAO", "underlyingSymbol": "VIAO", "uuid": "e77f750d-c073-3a0c-8fd1-bdad3719a0c7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
