@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EXPR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "EXPR", "underlyingSymbol": "EXPR", "uuid": "b0cd8af1-57ed-30ea-a198-0da18b07a38d", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]

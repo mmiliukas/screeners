@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EBIXQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "corporateActions": [], "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "EBIXQ", "underlyingSymbol": "EBIXQ", "uuid": "13953c29-cf83-3e20-ae99-52567bb618b9", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DRFS", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "DRFS", "underlyingSymbol": "DRFS", "uuid": "bda255b7-1e2b-307b-9aa8-dc50c6da15bb", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
