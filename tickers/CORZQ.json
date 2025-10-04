@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CORZQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "CORZQ", "underlyingSymbol": "CORZQ", "uuid": "089dda76-0314-35fb-9b68-441de6ae9b64", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]

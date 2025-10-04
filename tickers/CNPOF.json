@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CNPOF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "CNPOF", "underlyingSymbol": "CNPOF", "uuid": "3f117002-7358-3947-aa8d-4e4ce752cef1", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
