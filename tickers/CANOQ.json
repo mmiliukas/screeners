@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CANOQ", "underlyingSymbol": "CANOQ", "uuid": "ca9f69ab-6284-3916-afc7-e9edf707392c", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "CANOQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
