@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GRPH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "GRPH", "underlyingSymbol": "GRPH", "uuid": "0e2cca8f-1aec-3e6d-80d3-39814500dbb7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
