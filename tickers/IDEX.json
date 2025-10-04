@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "IDEX", "underlyingSymbol": "IDEX", "uuid": "8a7f51ae-8125-3823-b037-35cb78a95033", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "IDEX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
