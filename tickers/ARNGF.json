@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ARNGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-09-27"}]
+[{"quoteType": "NONE", "symbol": "ARNGF", "underlyingSymbol": "ARNGF", "uuid": "6963ec69-3252-3037-8aae-19a8e3b5e1aa", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
