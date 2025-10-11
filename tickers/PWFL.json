@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PWFL", "underlyingSymbol": "PWFL", "uuid": "cae661de-7d22-320e-9974-55bfa76b8d25", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "PWFL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
