@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "TMDIF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "TMDIF", "underlyingSymbol": "TMDIF", "uuid": "6a8baea8-cb0e-3ab3-9697-89f012aca0a6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
