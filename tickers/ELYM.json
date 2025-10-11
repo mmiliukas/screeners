@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ELYM", "underlyingSymbol": "ELYM", "uuid": "1b4f0889-5a57-3355-b4cd-22b070a75c16", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "ELYM", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
