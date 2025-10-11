@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "FSRN", "underlyingSymbol": "FSRN", "uuid": "8e7535dc-3c5b-37a3-9696-608c9a8f2917", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "FSRN", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

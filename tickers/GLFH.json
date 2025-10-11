@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GLFH", "underlyingSymbol": "GLFH", "uuid": "cf8d7ee8-dde9-3499-89e9-754382e8fca4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "GLFH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

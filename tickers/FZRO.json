@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "FZRO", "underlyingSymbol": "FZRO", "uuid": "7594ff21-9433-3424-8386-a650391e6937", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "FZRO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
