@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALLG", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "esgPopulated": false, "financialCurrency": "EUR", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "ALLG", "underlyingSymbol": "ALLG", "uuid": "6db0955c-1eb8-3a78-9705-5fd78184f3fc", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALPSQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "ALPSQ", "underlyingSymbol": "ALPSQ", "uuid": "554e33bf-cf40-3b04-a7a7-deb75867108a", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
