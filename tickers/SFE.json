@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SFE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "SFE", "underlyingSymbol": "SFE", "uuid": "d3cc3676-89bb-3b89-905a-d069db7743e8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
