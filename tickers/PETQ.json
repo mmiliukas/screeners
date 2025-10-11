@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PETQ", "underlyingSymbol": "PETQ", "uuid": "113caed0-d6cf-3490-b9c4-41015f087e14", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "PETQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

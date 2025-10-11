@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PEGY", "underlyingSymbol": "PEGY", "uuid": "24257b68-3ef5-362f-846f-309c56a7e4df", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "PEGY", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
