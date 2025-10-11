@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CHEA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "CHEA", "underlyingSymbol": "CHEA", "uuid": "941f8098-2f9c-3f5b-8d5b-d53014311cd4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

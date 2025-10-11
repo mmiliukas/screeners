@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CAMPQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "CAMPQ", "underlyingSymbol": "CAMPQ", "uuid": "34dd46f4-d987-3a1e-858d-e41164c445fb", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

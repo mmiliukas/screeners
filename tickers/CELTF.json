@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CELTF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "CELTF", "underlyingSymbol": "CELTF", "uuid": "35045215-8b93-3a19-8c60-a01052db6a97", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

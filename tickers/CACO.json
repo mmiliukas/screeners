@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CACO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "CACO", "underlyingSymbol": "CACO", "uuid": "a7b700e5-a15c-3a40-8752-b1ad2298a569", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]

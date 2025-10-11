@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CHUY", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-04"}]
+[{"quoteType": "NONE", "symbol": "CHUY", "underlyingSymbol": "CHUY", "uuid": "1fcd7cc6-c93c-3b5b-a2c9-b73ca1df7387", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
