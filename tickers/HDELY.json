@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HDELY", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "EUR", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "HDELY", "underlyingSymbol": "HDELY", "uuid": "ef5ad54f-e2de-3be2-b2d5-91d202f0122f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]

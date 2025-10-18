@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HLTH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "HLTH", "underlyingSymbol": "HLTH", "uuid": "c3ef9294-5eb5-3904-b61f-6ee72ad4d793", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
