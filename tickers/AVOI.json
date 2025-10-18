@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AVOI", "underlyingSymbol": "AVOI", "uuid": "a557346c-c4a2-3672-910d-5a0178e8c56d", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "AVOI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]

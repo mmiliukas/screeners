@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ARLSD", "underlyingSymbol": "ARLSD", "uuid": "051deca3-d5ae-36aa-9fc3-c67478b0e3cf", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "ARLSD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
