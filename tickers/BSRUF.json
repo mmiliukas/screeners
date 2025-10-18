@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BSRUF", "underlyingSymbol": "BSRUF", "uuid": "74ef149b-53e6-3e48-945d-c60ec1bd17d9", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "BSRUF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
