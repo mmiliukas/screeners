@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACTHD", "underlyingSymbol": "ACTHD", "uuid": "89a40ba2-7d18-38d6-9277-4f0c8efeae93", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "ACTHD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]

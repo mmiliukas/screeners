@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALRN", "underlyingSymbol": "ALRN", "uuid": "aab0072b-67d5-3152-ae06-7c7794bcf03f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "ALRN", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]

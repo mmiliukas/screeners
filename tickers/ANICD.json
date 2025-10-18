@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ANICD", "underlyingSymbol": "ANICD", "uuid": "c9a2715a-1551-3074-a15d-dd8c22675de2", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "ANICD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
