@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PSTX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-11"}]
+[{"quoteType": "NONE", "symbol": "PSTX", "underlyingSymbol": "PSTX", "uuid": "291e20e1-54d3-33de-96cd-b23bf8be3533", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
