@@ -1,0 +1,18 @@
+name: top-1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  top-1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - run: ./run top-1
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(top-1): aggregate"

@@ -1,0 +1,20 @@
+name: scrape
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 06 * * 1-5'
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - run: ./run scrape "${{ secrets.cookies }}"
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(tickers): scrape"

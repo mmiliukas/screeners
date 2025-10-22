@@ -1,0 +1,20 @@
+name: revive
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 10 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  revive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - run: ./run revive
+      - uses: ./.github/actions/push
+        with:
+          message: "chore(tickers): revive"

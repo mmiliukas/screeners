@@ -1,0 +1,30 @@
+name: "Setup"
+description: "Setup the environment for workflows"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: "actions/setup-python@v6"
+      id: setup-python
+      with:
+        python-version: "3.13.7"
+        cache: "pip"
+
+    - uses: actions/cache@v4
+      id: cache
+      with:
+        key: ${{ runner.os }}-cache-${{ hashFiles('**/requirements.txt') }}
+        path: |
+          ~/.cache/ms-playwright
+
+    - run: pip install -r requirements.txt
+      shell: bash
+
+    - if: steps.cache.outputs.cache-hit != 'true'
+      run: python -m playwright install chromium
+      shell: bash
+
+    - run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+      shell: bash
