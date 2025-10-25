@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PAAND", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "PAAND", "underlyingSymbol": "PAAND", "uuid": "797c1b34-6031-3570-ac73-dab96f10e205", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
