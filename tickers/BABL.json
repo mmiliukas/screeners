@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BABL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "BABL", "underlyingSymbol": "BABL", "uuid": "b3e53044-f29e-37f3-95a0-33b66d389121", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]

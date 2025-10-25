@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AUSVF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "AUSVF", "underlyingSymbol": "AUSVF", "uuid": "22d04455-4c54-3e40-98ab-8bbee761f93e", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
