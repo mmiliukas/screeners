@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CYAP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "CYAP", "underlyingSymbol": "CYAP", "uuid": "a2ffb6df-2194-36d2-94c2-8bcf01cc6c31", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CONN", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "CONN", "underlyingSymbol": "CONN", "uuid": "f6120da3-058d-3ff8-ab98-9d1f5a7b84e6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
