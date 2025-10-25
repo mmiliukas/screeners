@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "FBSE", "underlyingSymbol": "FBSE", "uuid": "03d7471d-21ff-3a51-8ba8-c4e56bf4693d", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "FBSE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
