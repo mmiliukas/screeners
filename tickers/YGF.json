@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "YGF", "underlyingSymbol": "YGF", "uuid": "aede4f40-7826-388b-b85e-51f07b99b129", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "YGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
