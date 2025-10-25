@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "WEWKQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "WEWKQ", "underlyingSymbol": "WEWKQ", "uuid": "c783ff02-457e-37db-afe6-42943cef8f68", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
