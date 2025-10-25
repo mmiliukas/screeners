@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "REPO", "underlyingSymbol": "REPO", "uuid": "b0b520ad-5ae9-3cda-af3b-dce67c0c98f1", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "REPO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]

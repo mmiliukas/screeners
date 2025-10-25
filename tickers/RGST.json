@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RGST", "underlyingSymbol": "RGST", "uuid": "2ca034b9-6e2e-3668-a621-32c9f6cebca6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "RGST", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]

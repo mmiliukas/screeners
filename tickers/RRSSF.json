@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RRSSF", "underlyingSymbol": "RRSSF", "uuid": "3b947404-a5e6-39bd-87bc-9f942a0cf24b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "RRSSF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "AUD", "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]

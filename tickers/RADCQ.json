@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RADCQ", "underlyingSymbol": "RADCQ", "uuid": "5da19e83-5398-3736-b490-738baf5c7c39", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "RADCQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
