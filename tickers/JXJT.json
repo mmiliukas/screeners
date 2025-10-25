@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "JXJT", "underlyingSymbol": "JXJT", "uuid": "5e100eb8-2f1d-35d8-bf64-6e1859a14efc", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-18"}]
+[{"quoteType": "NONE", "symbol": "JXJT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
