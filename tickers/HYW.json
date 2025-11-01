@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HYW", "underlyingSymbol": "HYW", "uuid": "b1d75e54-d29f-33f4-a62b-050630a45894", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "HYW", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CNY", "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]

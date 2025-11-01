@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HUGE", "underlyingSymbol": "HUGE", "uuid": "b37d3e6e-b1d0-354e-b132-8824585d9624", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "HUGE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GRCL", "underlyingSymbol": "GRCL", "uuid": "54f05ed8-1760-3cc2-8994-445bae3df5e8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "GRCL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "CNY", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
