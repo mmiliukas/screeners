@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "STMHD", "underlyingSymbol": "STMHD", "uuid": "ab779a5e-8544-39f0-9677-71b534c40b74", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "STMHD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]

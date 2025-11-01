@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "TMXLF", "underlyingSymbol": "TMXLF", "uuid": "f295a85b-b9a4-35fb-8630-c9f2d91d5e7a", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "TMXLF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "MXN", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "TBNRF", "underlyingSymbol": "TBNRF", "uuid": "51f221c9-bf89-387c-93f5-1ef87223e3ff", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "TBNRF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "AUD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
