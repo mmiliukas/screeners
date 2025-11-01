@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AVGR", "underlyingSymbol": "AVGR", "uuid": "4434fc85-429f-3fc7-9434-7a74cb27103e", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "AVGR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
