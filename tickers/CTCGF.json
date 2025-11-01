@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CTCGF", "underlyingSymbol": "CTCGF", "uuid": "98e5a6f1-9324-390a-84f7-aceff35f4170", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "CTCGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
