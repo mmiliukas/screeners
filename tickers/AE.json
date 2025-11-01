@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "AE", "underlyingSymbol": "AE", "uuid": "ea8a1a99-f6c9-3c27-9a58-dcd78f418c1f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
