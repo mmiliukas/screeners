@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "VTNR", "underlyingSymbol": "VTNR", "uuid": "f84e375d-78c9-32b9-98a3-8000d34b9981", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "VTNR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
