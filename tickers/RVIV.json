@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RVIV", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-10-25"}]
+[{"quoteType": "NONE", "symbol": "RVIV", "underlyingSymbol": "RVIV", "uuid": "c1fc8068-8182-3c4d-9139-ddeec112b5f5", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
