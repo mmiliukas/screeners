@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "NTBL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
+[{"quoteType": "NONE", "symbol": "NTBL", "underlyingSymbol": "NTBL", "uuid": "9e25d101-7671-335a-b328-0a6fce687c00", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
