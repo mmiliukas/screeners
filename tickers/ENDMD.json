@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ENDMD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "financialCurrency": "CAD", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
+[{"quoteType": "NONE", "symbol": "ENDMD", "underlyingSymbol": "ENDMD", "uuid": "d230a990-ddf5-3a6f-9997-fd987b7fce8b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
