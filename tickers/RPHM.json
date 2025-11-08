@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RPHM", "underlyingSymbol": "RPHM", "uuid": "c7de8d52-ede8-3468-aef4-c60e74653234", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
+[{"quoteType": "NONE", "symbol": "RPHM", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
