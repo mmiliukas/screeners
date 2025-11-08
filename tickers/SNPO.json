@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SNPO", "underlyingSymbol": "SNPO", "uuid": "3fafd2b3-91ed-34dd-b498-be3c9665067f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-01"}]
+[{"quoteType": "NONE", "symbol": "SNPO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
