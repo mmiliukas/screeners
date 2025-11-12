@@ -10,7 +10,7 @@ cycler==0.12.1
 exceptiongroup==1.3.0
 exchange_calendars==4.11.3
 fonttools==4.60.1
-frozendict==2.4.6
+frozendict==2.4.7
 greenlet==3.2.4
 html5lib==1.1
 idna==3.11
