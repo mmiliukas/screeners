@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "KRRGF", "underlyingSymbol": "KRRGF", "uuid": "4dff534b-75e5-3687-898c-689725324a42", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "KRRGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "CAD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]

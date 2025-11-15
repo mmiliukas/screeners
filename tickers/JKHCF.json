@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "JKHCF", "underlyingSymbol": "JKHCF", "uuid": "f6f66fab-bc13-3b6f-9d81-44da9e58cbf8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "JKHCF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
