@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AKLI", "underlyingSymbol": "AKLI", "uuid": "07e8927c-4d6f-369c-9eac-62b851dab9d3", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "AKLI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]

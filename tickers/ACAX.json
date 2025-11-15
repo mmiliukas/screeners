@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACAX", "underlyingSymbol": "ACAX", "uuid": "1f752bf4-4cd5-35d5-b2a4-404239961c86", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "ACAX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
