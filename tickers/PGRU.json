@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PGRU", "underlyingSymbol": "PGRU", "uuid": "80975919-1352-3102-b2f6-8a7949eeebcb", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "PGRU", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "SGD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "esgPopulated": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
