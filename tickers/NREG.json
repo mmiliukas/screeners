@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "NREG", "underlyingSymbol": "NREG", "uuid": "61ceb74a-5808-377e-9445-c1ebaa828593", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "NREG", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "OTECW", "underlyingSymbol": "OTECW", "uuid": "b90b65fc-07d5-3a49-8eec-a99a93620fd0", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "OTECW", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
