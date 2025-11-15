@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DIGP", "underlyingSymbol": "DIGP", "uuid": "f0340f2f-b7af-329c-a099-3ef850b8bfeb", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "DIGP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]

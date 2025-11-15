@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DHCA", "underlyingSymbol": "DHCA", "uuid": "58d9a7e6-d8de-3b81-be30-136e935d50d0", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-08"}]
+[{"quoteType": "NONE", "symbol": "DHCA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
