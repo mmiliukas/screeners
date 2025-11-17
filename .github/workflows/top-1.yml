@@ -10,6 +10,7 @@ jobs:
   top-1:
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 30
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
       - run: ./run top-1
