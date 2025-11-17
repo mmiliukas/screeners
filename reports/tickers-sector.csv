@@ -1,12 +1,12 @@
 sector,Loosers,Random,Winners
-Basic Materials,253.00,258.00,410.00
-Communication Services,93.00,93.00,138.00
-Consumer Cyclical,201.00,187.00,199.00
-Consumer Defensive,99.00,85.00,99.00
-Energy,52.00,75.00,77.00
-Financial Services,92.00,93.00,170.00
-Healthcare,615.00,347.00,856.00
-Industrials,210.00,290.00,294.00
-Real Estate,25.00,12.00,38.00
-Technology,388.00,425.00,476.00
-Utilities,18.00,0.00,28.00
+Basic Materials,251,255,405
+Communication Services,94,95,139
+Consumer Cyclical,198,186,195
+Consumer Defensive,100,85,98
+Energy,52,74,77
+Financial Services,93,93,171
+Healthcare,617,359,860
+Industrials,212,289,292
+Real Estate,25,13,39
+Technology,388,427,476
+Utilities,17,1,27
