@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def top_1():
-    paths = glob.glob("./top-1/*.csv")
+    paths = glob.glob("./top-1/*.csv") + glob.glob("./top-1-5/*.csv")
 
     all = []
 
@@ -18,7 +18,17 @@ def top_1():
 
         df = pd.read_csv(path)
 
-        df["Screener"] = ("Winners" if len(parts) == 3 else parts[3]).capitalize()
+        screener = ("Winners" if len(parts) == 3 else parts[3]).capitalize()
+
+        if screener.startswith("5"):
+            if screener == "5":
+                screener = "Winners 5"
+            else:
+                screener = screener.replace("5-", "").capitalize() + " 5"
+        else:
+            screener = screener + " 10"
+
+        df["Screener"] = screener
 
         df["Date"] = f"{parts[0]}-{parts[1]}-{parts[2]}"
         df["Date"] = pd.to_datetime(df["Date"]).dt.date
