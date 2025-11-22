@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MICS", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
+[{"quoteType": "NONE", "symbol": "MICS", "underlyingSymbol": "MICS", "uuid": "4b9f238e-2381-375e-9e54-ee638019b9dc", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-22"}]

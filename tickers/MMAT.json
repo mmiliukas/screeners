@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MMAT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2025-11-15"}]
+[{"quoteType": "NONE", "symbol": "MMAT", "underlyingSymbol": "MMAT", "uuid": "8e474d43-19f7-3241-b98f-d5ecdc5a21a8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-22"}]
