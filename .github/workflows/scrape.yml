@@ -3,14 +3,33 @@ name: scrape
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 06 * * 1-5'
+    - cron: '30 06 * * 1-5'
+    - cron: '30 07 * * 1-5'
 
 permissions:
   contents: write
 
 jobs:
-  scrape:
+  precondition:
     runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.precondition.outputs.run }}
+
+    steps:
+      - id: precondition
+        run: |
+          HOUR=$(TZ=Europe/Vilnius date +%H)
+          RUN=false
+          if [ "$HOUR" -eq 9 ] || [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            RUN=true
+          fi
+          echo "run=$RUN" >> "$GITHUB_OUTPUT"
+
+  scrape:
+    needs: precondition
+    runs-on: ubuntu-latest
+    if: needs.precondition.outputs.run == 'true'
+
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup
