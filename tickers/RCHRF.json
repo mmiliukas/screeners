@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RCHRF", "underlyingSymbol": "RCHRF", "uuid": "f075a525-c4d0-3510-b38e-04b8ce32ba32", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-22"}]
+[{"quoteType": "NONE", "symbol": "RCHRF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-29"}]
