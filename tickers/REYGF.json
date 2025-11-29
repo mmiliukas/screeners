@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "REYGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2025-11-22"}]
+[{"quoteType": "NONE", "symbol": "REYGF", "underlyingSymbol": "REYGF", "uuid": "bae92422-7e5a-392c-8b23-e0db369070bd", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-29"}]

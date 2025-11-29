@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SGE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "hasPrePostMarketData": false, "corporateActions": [], "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2025-11-22"}]
+[{"quoteType": "NONE", "symbol": "SGE", "underlyingSymbol": "SGE", "uuid": "dd25db07-09d4-37c0-9b05-7f311208f753", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-11-29"}]
