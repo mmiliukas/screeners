@@ -2,6 +2,11 @@ name: top-1
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "top-1-5/*-loosers.csv"
 
 permissions:
   contents: write
