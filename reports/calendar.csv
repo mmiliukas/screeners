@@ -1,5 +1,4 @@
 date,date_timestamp,is_weekend,is_holiday,is_non_working_day
-2024-12-01,1733011200000,True,False,True
 2024-12-02,1733097600000,False,False,False
 2024-12-03,1733184000000,False,False,False
 2024-12-04,1733270400000,False,False,False
@@ -730,3 +729,4 @@ date,date_timestamp,is_weekend,is_holiday,is_non_working_day
 2026-11-29,1795910400000,True,False,True
 2026-11-30,1795996800000,False,False,False
 2026-12-01,1796083200000,False,False,False
+2026-12-02,1796169600000,False,False,False
