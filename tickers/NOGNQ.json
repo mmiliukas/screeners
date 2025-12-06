@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "NOGNQ", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2025-11-29"}]
+[{"quoteType": "NONE", "symbol": "NOGNQ", "underlyingSymbol": "NOGNQ", "uuid": "36be9886-4657-3383-a44d-06949bd3daab", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-12-06"}]
