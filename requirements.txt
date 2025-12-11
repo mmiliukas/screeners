@@ -18,7 +18,7 @@ importlib_resources==6.5.2
 kiwisolver==1.4.9
 korean-lunar-calendar==0.3.1
 lxml==6.0.2
-matplotlib==3.10.7
+matplotlib==3.10.8
 multitasking==0.0.12
 numpy==2.3.5
 packaging==25.0
