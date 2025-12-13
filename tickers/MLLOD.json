@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MLLOD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2025-12-06"}]
+[{"quoteType": "NONE", "symbol": "MLLOD", "underlyingSymbol": "MLLOD", "uuid": "07251d63-8251-350a-8444-7ee9b365baf3", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2025-12-13"}]
