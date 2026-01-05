@@ -63,11 +63,6 @@ def get_etfs():
 
 def get_holdings():
     csvs = abs_path(config["etf"]["cache_name"], "*.csv")
-    for a in glob.glob(csvs):
-        b = pd.read_csv(a)
-        if b.empty:
-            print(a, "is empty")
-
     df = pd.concat([pd.read_csv(csv) for csv in glob.glob(csvs)])
 
     return df["Symbol"].unique()
