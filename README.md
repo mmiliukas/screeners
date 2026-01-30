@@ -1,7 +1,7 @@
 > This project is designed solely for educational purposes.
 
 | Day | Time (UTC)  | Status |
-|-----|-------------|--------|
+|:----|:------------|:-------|
 | Mon | 06:00       | [![scrape](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml) [![tickers](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml) [![aggregate](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml) |
 | Tue | 06:00       | [![scrape](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml) [![tickers](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml) [![aggregate](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml) |
 | Wed | 06:00       | [![scrape](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/scrape.yml) [![tickers](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/tickers.yml) [![aggregate](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml/badge.svg)](https://github.com/mmiliukas/screeners/actions/workflows/aggregate.yml) |
