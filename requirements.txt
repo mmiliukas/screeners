@@ -21,7 +21,7 @@ lxml==6.0.2
 matplotlib==3.10.8
 multitasking==0.0.12
 numpy==2.4.1
-packaging==25.0
+packaging==26.0
 pandas==2.3.3
 pandas_market_calendars==5.2.4
 peewee==3.19.0
