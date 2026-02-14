@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ARVL", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-02-07"}]
+[{"quoteType": "NONE", "symbol": "ARVL", "underlyingSymbol": "ARVL", "uuid": "da647c0e-1a08-33f9-bfb9-0c9c750a5cf0", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-02-14"}]
