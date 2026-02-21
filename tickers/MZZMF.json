@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "MZZMF", "underlyingSymbol": "MZZMF", "uuid": "3a7221c6-081a-3761-8192-bae33acb2bae", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-02-14"}]
+[{"quoteType": "NONE", "symbol": "MZZMF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "AUD", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-02-21"}]
