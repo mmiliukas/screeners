@@ -1,12 +1,12 @@
 screener,count
-Loosers 1,401
+Loosers 1,402
 Loosers 10,14
 Loosers 100,0
 Loosers 30,18
 Loosers 5,35
 Loosers 50,2
 Loosers 70,1
-Random 1,124
+Random 1,125
 Random 10,55
 Random 100,1
 Random 120,0
@@ -14,10 +14,10 @@ Random 30,70
 Random 5,57
 Random 50,3
 Random 70,3
-Winners 1,484
+Winners 1,488
 Winners 10,22
 Winners 100,0
 Winners 30,17
-Winners 5,54
+Winners 5,55
 Winners 50,6
 Winners 70,0
