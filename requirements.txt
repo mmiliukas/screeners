@@ -23,7 +23,7 @@ markdown-it-py==4.0.0
 matplotlib==3.10.8
 mdurl==0.1.2
 multitasking==0.0.12
-numpy==2.4.2
+numpy==2.4.3
 packaging==26.0
 pandas==3.0.1
 pandas_market_calendars==5.3.1
