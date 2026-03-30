@@ -1,0 +1,42 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  mini:
+    format: "%(message)s"
+  medi:
+    format: "%(asctime)s - %(message)s"
+  maxi:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: medi
+    stream: ext://sys.stdout
+
+loggers:
+  __main__:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+
+  actions:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+
+  screeners:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+
+  yfinance:
+    level: CRITICAL
+    handlers: [console]
+    propagate: no
+
+root:
+  level: WARNING
+  handlers: [console]
