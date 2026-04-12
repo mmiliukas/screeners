@@ -35,7 +35,7 @@ protobuf==7.34.1
 pyarrow==23.0.1
 pycparser==3.0
 pyee==13.0.1
-Pygments==2.19.2
+Pygments==2.20.0
 pyluach==2.3.0
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
