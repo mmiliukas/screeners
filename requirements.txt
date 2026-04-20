@@ -25,7 +25,7 @@ mdurl==0.1.2
 multitasking==0.0.12
 numpy==2.4.4
 packaging==26.0
-pandas==3.0.1
+pandas==3.0.2
 pandas_market_calendars==5.3.2
 peewee==4.0.3
 pillow==12.1.1
