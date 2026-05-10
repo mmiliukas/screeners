@@ -22,7 +22,7 @@ lxml==6.1.0
 markdown-it-py==4.0.0
 matplotlib==3.10.9
 mdurl==0.1.2
-multitasking==0.0.12
+multitasking==0.0.13
 numpy==2.4.4
 packaging==26.2
 pandas==3.0.2
