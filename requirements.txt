@@ -24,7 +24,7 @@ matplotlib==3.10.8
 mdurl==0.1.2
 multitasking==0.0.12
 numpy==2.4.4
-packaging==26.1
+packaging==26.2
 pandas==3.0.2
 pandas_market_calendars==5.3.2
 peewee==4.0.4
