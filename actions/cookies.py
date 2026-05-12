@@ -8,15 +8,15 @@ from playwright.sync_api import Page, sync_playwright
 
 def login(page: Page, username: str, password: str) -> None:
     page.goto("https://login.yahoo.com")
-    page.wait_for_selector("input#login-username")
-    page.type("input#login-username", username, delay=100)
-    page.click("input#login-signin")
+    page.wait_for_selector("input#username")
+    page.type("input#username", username, delay=100)
+    page.click("button[name='signin']")
     page.wait_for_selector("input#login-passwd")
     page.type("input#login-passwd", password, delay=120)
 
     sleep(2)
 
-    page.click("button#login-signin")
+    page.click("button[name='validate']")
 
     url_to_wait = re.compile(r".*www\.yahoo\.com.*", re.IGNORECASE)
     page.wait_for_url(url_to_wait, wait_until="domcontentloaded")
