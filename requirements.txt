@@ -30,7 +30,7 @@ pandas_market_calendars==5.3.2
 peewee==4.0.5
 pillow==12.2.0
 platformdirs==4.9.6
-playwright==1.59.0
+playwright==1.60.0
 protobuf==7.34.1
 pyarrow==24.0.0
 pycparser==3.0
