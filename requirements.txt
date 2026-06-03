@@ -31,7 +31,7 @@ peewee==4.0.6
 pillow==12.2.0
 platformdirs==4.9.6
 playwright==1.60.0
-protobuf==7.34.1
+protobuf==7.35.0
 pyarrow==24.0.0
 pycparser==3.0
 pyee==13.0.1
