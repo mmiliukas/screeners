@@ -23,7 +23,7 @@ tickers:
 giga:
   - name: 10b
     target: 10b.csv
-    url: https://finance.yahoo.com/research-hub/screener/91d69bed-62b8-4eed-82a4-870944c9a709?count=100
+    url: https://finance.yahoo.com/research-hub/screener/6336dca9-2135-4f62-a37c-1a809a6ae117?count=100
 
   - name: Giga 1-5
     target: tickers-giga-1-5.csv
