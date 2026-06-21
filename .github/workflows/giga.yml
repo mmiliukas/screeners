@@ -17,6 +17,7 @@ jobs:
       - run: ./run giga "${{ secrets.cookies }}" 0
       - run: ./run giga "${{ secrets.cookies }}" 1
       - run: ./run giga "${{ secrets.cookies }}" 2
+      - run: ./run giga "${{ secrets.cookies }}" 3
       - uses: ./.github/actions/push
         with:
           message: "chore(giga): scrape"
