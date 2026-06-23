@@ -1,6 +1,6 @@
 annotated-doc==0.0.4
 appdirs==1.4.4
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
 boolean.py==5.0
 CacheControl==0.14.4
 certifi==2026.5.20
