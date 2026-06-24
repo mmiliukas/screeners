@@ -51,6 +51,7 @@ selector_table = ".screener-table .table-container"
 
 def scrape_screener(page: Page, url: str, target: str) -> None:
     results = []
+    seen_symbols: set[str] = set()
     offset = 0
     date = datetime.now().isoformat()
 
@@ -66,6 +67,17 @@ def scrape_screener(page: Page, url: str, target: str) -> None:
             logger.info("empty result, stopping...")
             break
 
+        fetched_symbols = set(df["Symbol"])
+        if seen_symbols & fetched_symbols:
+            # The page ignored the offset and returned already-seen data,
+            # which means we have reached the last page.
+            logger.info(
+                f"fetched symbols overlap with previously seen ones at offset {offset}, "
+                "assuming end of results."
+            )
+            break
+
+        seen_symbols |= fetched_symbols
         results.append(df)
         offset += 100
 
