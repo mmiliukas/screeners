@@ -39,7 +39,7 @@ peewee==4.0.6
 pillow==12.2.0
 pip-api==0.0.34
 pip-requirements-parser==32.0.1
-pip_audit==2.10.0
+pip_audit==2.10.1
 platformdirs==4.10.0
 playwright==1.60.0
 protobuf==7.35.0
