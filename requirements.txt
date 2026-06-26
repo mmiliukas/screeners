@@ -26,7 +26,7 @@ korean-lunar-calendar==0.3.1
 license-expression==30.4.4
 lxml==6.1.1
 markdown-it-py==4.2.0
-matplotlib==3.10.9
+matplotlib==3.11.0
 mdurl==0.1.2
 msgpack==1.2.1
 multitasking==0.0.13
