@@ -36,7 +36,7 @@ packaging==26.2
 pandas==3.0.3
 pandas_market_calendars==5.4.0
 peewee==4.1.0
-pillow==12.2.0
+pillow==12.3.0
 pip-api==0.0.34
 pip-requirements-parser==32.0.1
 pip_audit==2.10.1
