@@ -30,7 +30,7 @@ matplotlib==3.11.0
 mdurl==0.1.2
 msgpack==1.2.1
 multitasking==0.0.13
-numpy==2.4.6
+numpy==2.5.0
 packageurl-python==0.17.6
 packaging==26.2
 pandas==3.0.3
