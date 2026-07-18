@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SYT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "JPY", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-01-31"}]
+[{"quoteType": "NONE", "symbol": "SYT", "underlyingSymbol": "SYT", "uuid": "857958f2-83bc-3ae9-b6a9-63d0a02ae5b7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]

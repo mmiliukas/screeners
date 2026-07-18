@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SUP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-01-31"}]
+[{"quoteType": "NONE", "symbol": "SUP", "underlyingSymbol": "SUP", "uuid": "319bfbc0-22f7-3b4f-81c9-2d3460ae3bde", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
