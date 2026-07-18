@@ -54,7 +54,12 @@ def refresh() -> None:
         with open(path, "w") as file:
             yf_ticker = yf.Ticker(ticker)
 
-            info = yf_ticker.info or {}
+            try:
+                info = yf_ticker.info or {}
+            except Exception as e:
+                logger.error(f"Failed to fetch info for {ticker}: {e}")
+                info = {}
+
             info["__fetch_time"] = date.today().isoformat()
 
             file.write(json.dumps([info]))
