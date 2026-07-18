@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "UMFGD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-01-24"}]
+[{"quoteType": "NONE", "symbol": "UMFGD", "underlyingSymbol": "UMFGD", "uuid": "84fee95c-3f4a-352c-9848-47d78b706fe4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
