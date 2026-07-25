@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BYROF", "underlyingSymbol": "BYROF", "uuid": "8d5acf49-f021-37f4-ae64-c0edbbd71d77", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "BYROF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "hasPrePostMarketData": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-07-25"}]
