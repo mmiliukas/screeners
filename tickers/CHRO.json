@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CHRO", "underlyingSymbol": "CHRO", "uuid": "6f1c1782-f7b5-3f67-a9fa-2d3ca7aa4092", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-07-25"}]
+[{"quoteType": "NONE", "symbol": "CHRO", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
