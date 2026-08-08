@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CXBMF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "CXBMF", "underlyingSymbol": "CXBMF", "uuid": "48ce867e-62b7-3421-8ba9-6dadbd18887b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]

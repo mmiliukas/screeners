@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CSSI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "CSSI", "underlyingSymbol": "CSSI", "uuid": "65435e90-ee52-36e1-a593-f369f9bbcf69", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
