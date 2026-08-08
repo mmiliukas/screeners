@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DEFTF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "DEFTF", "underlyingSymbol": "DEFTF", "uuid": "528bf28b-5caf-345d-bbf0-3fd956e03d28", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]

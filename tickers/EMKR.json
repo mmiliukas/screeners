@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EMKR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "EMKR", "underlyingSymbol": "EMKR", "uuid": "92d8cc67-b2b9-311a-8e52-b88f81d331b4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]

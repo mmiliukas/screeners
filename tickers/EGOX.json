@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EGOX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "EGOX", "underlyingSymbol": "EGOX", "uuid": "55ed4df5-954d-3d75-ba6a-38378b02a1d5", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
