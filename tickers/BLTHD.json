@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BLTHD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-01"}]
+[{"quoteType": "NONE", "symbol": "BLTHD", "underlyingSymbol": "BLTHD", "uuid": "aaae1fa5-f10b-3ea2-baa3-565523774c49", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
