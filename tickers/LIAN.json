@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "LIAN", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "LIAN", "underlyingSymbol": "LIAN", "uuid": "f81cec73-1f77-34c7-bba7-e7e32beb34f1", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]

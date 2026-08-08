@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "LXILF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "GBP", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "LXILF", "underlyingSymbol": "LXILF", "uuid": "7fa785dd-9ba9-351c-8215-fd1b94cf6942", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
