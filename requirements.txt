@@ -1,4 +1,4 @@
-annotated-doc==0.0.4
+annotated-doc==0.0.5
 appdirs==1.4.4
 beautifulsoup4==4.15.0
 boolean.py==5.0
