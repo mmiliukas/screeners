@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CCLDP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CCLDP", "underlyingSymbol": "CCLDP", "uuid": "48fb096f-c1ef-3138-91f2-4ce1c5761d1f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

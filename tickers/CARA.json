@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CARA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CARA", "underlyingSymbol": "CARA", "uuid": "2959e4f9-c48b-308c-8431-9b84f96c60e5", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

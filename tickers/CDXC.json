@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CDXC", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CDXC", "underlyingSymbol": "CDXC", "uuid": "77342014-e7f0-3894-9d34-bbc3f6ead2f8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

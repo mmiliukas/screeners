@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CDBT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "esgPopulated": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CDBT", "underlyingSymbol": "CDBT", "uuid": "7759cfd9-65d1-33f8-a282-a789e90496ce", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
