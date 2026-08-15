@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "KWE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "financialCurrency": "CAD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "KWE", "underlyingSymbol": "KWE", "uuid": "aebaf795-cd6e-3796-8b7e-8c3b1e39159b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
