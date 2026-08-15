@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "SAVE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "SAVE", "underlyingSymbol": "SAVE", "uuid": "f5cf47ab-06d0-398b-8d16-d10c82d87953", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
