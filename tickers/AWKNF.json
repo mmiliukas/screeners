@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AWKNF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "AWKNF", "underlyingSymbol": "AWKNF", "uuid": "595fd0b1-2e29-3fed-b382-0b786bf6dbf2", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
