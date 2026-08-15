@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AMPS", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "AMPS", "underlyingSymbol": "AMPS", "uuid": "91da270f-7a3a-3a76-ab9f-6f25aa6b3004", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

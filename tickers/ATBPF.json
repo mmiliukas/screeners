@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ATBPF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "ATBPF", "underlyingSymbol": "ATBPF", "uuid": "7218ff42-f0b9-3dd5-ad81-b15b2b847305", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
