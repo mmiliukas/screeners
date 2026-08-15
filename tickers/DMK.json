@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DMK", "underlyingSymbol": "DMK", "uuid": "021cbf74-ddb5-3b5d-8c89-80eb8f2ee700", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "DMK", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
