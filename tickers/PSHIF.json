@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PSHIF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "PSHIF", "underlyingSymbol": "PSHIF", "uuid": "f69359f8-341b-3781-ba8a-5cca169aa62a", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

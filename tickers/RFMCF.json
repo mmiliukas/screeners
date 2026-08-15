@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RFMCF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "RFMCF", "underlyingSymbol": "RFMCF", "uuid": "98087fb0-0cf8-3eb4-896b-9b3101cfc340", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

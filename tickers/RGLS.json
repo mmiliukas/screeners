@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RGLS", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "RGLS", "underlyingSymbol": "RGLS", "uuid": "cd43addf-be3b-3da4-8113-29f5cb221300", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

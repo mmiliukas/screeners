@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RELT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "RELT", "underlyingSymbol": "RELT", "uuid": "fa30edcb-7db2-3cfd-bdb7-af048e2993e4", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

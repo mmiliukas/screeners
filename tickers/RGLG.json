@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "RGLG", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-07-18"}]
+[{"quoteType": "NONE", "symbol": "RGLG", "underlyingSymbol": "RGLG", "uuid": "43ea6ab4-07db-32f3-8241-4f6c06d3f743", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
