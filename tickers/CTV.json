@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CTV", "underlyingSymbol": "CTV", "uuid": "2c92b58c-155f-3675-a435-131e2f2f45d7", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CTV", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

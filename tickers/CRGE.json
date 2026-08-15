@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "CRGE", "underlyingSymbol": "CRGE", "uuid": "1c862aa0-66b1-3294-9095-2c26ea578b7b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "CRGE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
