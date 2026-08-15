@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "JT", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "CNY", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "JT", "underlyingSymbol": "JT", "uuid": "4d43fd4f-4fc0-3228-819d-bb24ad8ba5fb", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

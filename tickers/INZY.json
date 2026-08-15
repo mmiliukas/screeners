@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "INZY", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "INZY", "underlyingSymbol": "INZY", "uuid": "f627b06e-ce15-3126-896c-1db8a4222086", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

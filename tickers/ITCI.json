@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ITCI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "ITCI", "underlyingSymbol": "ITCI", "uuid": "663c5e9c-25b0-3a49-b384-beebac54b1ca", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

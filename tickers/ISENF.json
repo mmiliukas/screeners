@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ISENF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "CAD", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "ISENF", "underlyingSymbol": "ISENF", "uuid": "87b54147-ff66-317d-be26-0e395efc3700", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

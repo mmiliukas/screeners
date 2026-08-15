@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "IXIXF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "IXIXF", "underlyingSymbol": "IXIXF", "uuid": "88192a5e-044d-3d3a-a411-6bb741f5e7e2", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

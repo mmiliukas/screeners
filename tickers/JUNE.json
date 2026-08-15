@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "JUNE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "JUNE", "underlyingSymbol": "JUNE", "uuid": "5ed250ff-3e59-3efd-a468-6706d34fcdf6", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]

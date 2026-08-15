@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "KAST", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-08"}]
+[{"quoteType": "NONE", "symbol": "KAST", "underlyingSymbol": "KAST", "uuid": "83ac7675-6689-3844-8cc1-3d444f3eaffd", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
