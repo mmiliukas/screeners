@@ -32,7 +32,7 @@ msgpack==1.2.1
 multitasking==0.0.13
 numpy==2.5.1
 packageurl-python==0.17.6
-packaging==26.2
+packaging==26.3
 pandas==3.0.5
 pandas_market_calendars==5.4.0
 peewee==4.3.0
