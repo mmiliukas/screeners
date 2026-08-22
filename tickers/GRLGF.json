@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GRLGF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "GBP", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "GRLGF", "underlyingSymbol": "GRLGF", "uuid": "7f6e7314-1543-370b-899e-744b0289cf67", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

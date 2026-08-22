@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "FSR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "FSR", "underlyingSymbol": "FSR", "uuid": "a8847ff4-60e7-30f6-ba54-f06a667534b1", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

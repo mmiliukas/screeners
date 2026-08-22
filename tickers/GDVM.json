@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GDVM", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "GDVM", "underlyingSymbol": "GDVM", "uuid": "2dab6be1-3c72-3237-ba72-e566e67cabed", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

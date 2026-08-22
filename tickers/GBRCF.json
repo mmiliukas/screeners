@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GBRCF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "GBRCF", "underlyingSymbol": "GBRCF", "uuid": "a76eee43-6c10-3c38-8969-5b4c0ef2a015", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

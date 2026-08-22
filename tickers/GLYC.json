@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GLYC", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "GLYC", "underlyingSymbol": "GLYC", "uuid": "efe04473-e4ee-3464-8e89-48cc4b8490b8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

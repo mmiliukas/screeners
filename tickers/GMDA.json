@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "GMDA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "GMDA", "underlyingSymbol": "GMDA", "uuid": "ff39c3c4-fc7a-3cce-8fdf-d4071894393b", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
