@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ICLK", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "ICLK", "underlyingSymbol": "ICLK", "uuid": "419d45a9-c086-3406-b6b7-f9c220ad0d05", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

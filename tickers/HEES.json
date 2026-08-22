@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HEES", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "HEES", "underlyingSymbol": "HEES", "uuid": "7718b7f5-617e-3f99-a4d1-44d7afe26e21", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

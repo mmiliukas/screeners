@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HITC", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "HITC", "underlyingSymbol": "HITC", "uuid": "adac8421-bd7f-3974-9751-125f6959d2e8", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HPH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "financialCurrency": "CNY", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "HPH", "underlyingSymbol": "HPH", "uuid": "3ee456ee-3c6f-31fe-a18e-a18f1f4990a9", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

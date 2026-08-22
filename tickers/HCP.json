@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "HCP", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "esgPopulated": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "HCP", "underlyingSymbol": "HCP", "uuid": "c812dbb6-683b-3cff-bdde-bd554aa15055", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
