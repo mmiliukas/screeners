@@ -1,4 +1,5 @@
 annotated-doc==0.0.5
+
 appdirs==1.4.4
 beautifulsoup4==4.15.0
 boolean.py==5.0
@@ -46,7 +47,7 @@ protobuf==7.36.0
 py-serializable==2.1.0
 pyarrow==25.0.1
 pycparser==3.0
-pyee==14.0.0
+pyee==13.0.1
 Pygments==2.21.0
 pyluach==2.3.0
 pyparsing==3.3.2
