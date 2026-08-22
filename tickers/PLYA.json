@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "PLYA", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "PLYA", "underlyingSymbol": "PLYA", "uuid": "96429dc2-abb7-32a6-8588-45c4842f3824", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
