@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DGHI", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "DGHI", "underlyingSymbol": "DGHI", "uuid": "ef5a8919-d0d7-3019-9405-5d408a144935", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "DCFC", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "financialCurrency": "USD", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "DCFC", "underlyingSymbol": "DCFC", "uuid": "3ddff09e-2aab-39f0-8cd4-fae304bc5e5c", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

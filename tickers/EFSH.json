@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EFSH", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "EFSH", "underlyingSymbol": "EFSH", "uuid": "c20c994a-bb47-3c5f-a5ca-d879324264ac", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

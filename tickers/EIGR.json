@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "EIGR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "EIGR", "underlyingSymbol": "EIGR", "uuid": "f40195ae-deeb-3177-beb3-ef4809e78599", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
