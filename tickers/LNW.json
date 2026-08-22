@@ -1,1 +1,1 @@
-[{"maxAge": 86400, "priceHint": 2, "previousClose": 86.22, "regularMarketPreviousClose": 86.22, "currency": "USD", "tradeable": false, "exchange": "NMS", "quoteType": "EQUITY", "symbol": "LNW", "underlyingSymbol": "LNW", "shortName": "Light & Wonder, Inc.", "firstTradeDateEpochUtc": 1784295000, "timeZoneFullName": "America/New_York", "timeZoneShortName": "EDT", "uuid": "1f3e80d3-e052-3b1a-8152-e8090bf6ed38", "gmtOffSetMilliseconds": -14400000, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"trailingPegRatio": null, "__fetch_time": "2026-08-22"}]

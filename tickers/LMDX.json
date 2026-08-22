@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "LMDX", "underlyingSymbol": "LMDX", "uuid": "d8533d4f-1b02-3b48-94f3-fbf8b2dcf93a", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-15"}]
+[{"quoteType": "NONE", "symbol": "LMDX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "financialCurrency": "USD", "hasPrePostMarketData": false, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
