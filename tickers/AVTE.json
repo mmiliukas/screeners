@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AVTE", "underlyingSymbol": "AVTE", "uuid": "cbf275de-3fc7-3baa-b402-2df34de7643f", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
+[{"quoteType": "NONE", "symbol": "AVTE", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-08-29"}]
