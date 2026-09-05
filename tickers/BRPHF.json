@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BRPHF", "underlyingSymbol": "BRPHF", "uuid": "15fa7459-68e0-3573-af5b-f054b4197203", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
+[{"quoteType": "NONE", "symbol": "BRPHF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "financialCurrency": "USD", "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]

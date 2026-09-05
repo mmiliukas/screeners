@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BETS", "underlyingSymbol": "BETS", "uuid": "155b80e8-7b50-3b89-87c6-204de9731d57", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
+[{"quoteType": "NONE", "symbol": "BETS", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "hasPrePostMarketData": false, "tradeable": false, "cryptoTradeable": false, "corporateActions": [], "esgPopulated": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]

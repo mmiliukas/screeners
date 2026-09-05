@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "BFX", "underlyingSymbol": "BFX", "uuid": "520a05f7-076c-371d-9dad-93bcf41f3d12", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-08-22"}]
+[{"quoteType": "NONE", "symbol": "BFX", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "financialCurrency": "USD", "hasPrePostMarketData": false, "corporateActions": [], "esgPopulated": false, "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]
