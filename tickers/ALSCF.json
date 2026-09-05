@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALSCF", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "CAD", "esgPopulated": false, "corporateActions": [], "trailingPegRatio": null, "__fetch_time": "2026-08-29"}]
+[{"quoteType": "NONE", "symbol": "ALSCF", "underlyingSymbol": "ALSCF", "uuid": "a0b7c389-3ea1-3393-abf0-97f835ee4b70", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]

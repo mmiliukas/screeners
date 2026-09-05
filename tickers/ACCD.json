@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ACCD", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-08-29"}]
+[{"quoteType": "NONE", "symbol": "ACCD", "underlyingSymbol": "ACCD", "uuid": "d4026a24-00cd-3ab3-acf6-d09025a9e726", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]
