@@ -1,42 +1,22 @@
 import base64
 import json
-import re
-from time import sleep
 
-from playwright.sync_api import Page, sync_playwright
-
-
-def login(page: Page, username: str, password: str) -> None:
-    page.goto("https://login.yahoo.com")
-    page.wait_for_selector("input#username")
-    page.type("input#username", username, delay=100)
-    page.click("button[name='signin']")
-    page.wait_for_selector("input#login-passwd")
-    page.type("input#login-passwd", password, delay=120)
-
-    sleep(2)
-
-    page.click("button[name='validate']")
-
-    url_to_wait = re.compile(r".*www\.yahoo\.com.*", re.IGNORECASE)
-    page.wait_for_url(url_to_wait, wait_until="domcontentloaded")
-
-    sleep(10)
+from playwright.sync_api import sync_playwright
 
 
 def cookies(username: str, password: str) -> str:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(
             headless=False,
-            args=[
-                "--disable-features=ThirdPartyCookies",
-                "--test-third-party-cookie-phaseout",
-            ],
+            channel="chrome",  # use real installed Chrome, not bundled Chromium
+            args=["--disable-blink-features=AutomationControlled"],
         )
         context = browser.new_context()
         page = context.new_page()
 
-        login(page, username, password)
+        page.goto("https://login.yahoo.com")
 
-        cookies = json.dumps(page.context.cookies()).encode()
-        return base64.b64encode(cookies).decode("ascii")
+        input("Log in manually in the browser window, then press Enter to capture cookies...")
+
+        result = json.dumps(page.context.cookies()).encode()
+        return base64.b64encode(result).decode("ascii")
