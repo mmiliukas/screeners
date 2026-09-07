@@ -56,7 +56,7 @@ pytz==2026.3.post1
 PyYAML==6.0.3
 requests==2.34.2
 rich==15.0.0
-scipy==1.18.0
+scipy==1.18.1
 shellingham==1.5.4
 six==1.17.0
 sortedcontainers==2.4.0
