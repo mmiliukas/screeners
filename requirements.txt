@@ -29,7 +29,7 @@ lxml==6.1.2
 markdown-it-py==4.2.0
 matplotlib==3.11.1
 mdurl==0.1.2
-msgpack==1.2.1
+msgpack==1.2.2
 multitasking==0.0.13
 numpy==2.5.2
 packageurl-python==0.17.6
