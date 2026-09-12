@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "AHNR", "underlyingSymbol": "AHNR", "uuid": "46fb7e92-2918-3976-9cf7-a93c4ebbdef3", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-09-05"}]
+[{"quoteType": "NONE", "symbol": "AHNR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "corporateActions": [], "esgPopulated": false, "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-09-12"}]
