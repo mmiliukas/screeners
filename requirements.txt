@@ -70,7 +70,7 @@ tqdm==4.70.1
 typer==0.27.2
 typer-slim==0.24.0
 typing_extensions==4.16.0
-tzdata==2026.3
+tzdata==2026.4
 urllib3==2.7.0
 webencodings==0.6.1
 websockets==17.1
