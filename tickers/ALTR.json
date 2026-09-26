@@ -1,1 +1,1 @@
-[{"quoteType": "NONE", "symbol": "ALTR", "language": "en-US", "region": "US", "triggerable": false, "customPriceAlertConfidence": "NONE", "esgPopulated": false, "corporateActions": [], "tradeable": false, "cryptoTradeable": false, "hasPrePostMarketData": false, "financialCurrency": "USD", "trailingPegRatio": null, "__fetch_time": "2026-09-19"}]
+[{"quoteType": "NONE", "symbol": "ALTR", "underlyingSymbol": "ALTR", "uuid": "a03bbc0e-3c1e-3d96-96c5-d4d170ac54cf", "maxAge": 86400, "trailingPegRatio": null, "__fetch_time": "2026-09-26"}]
