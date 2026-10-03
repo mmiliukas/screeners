@@ -6,7 +6,7 @@ boolean.py==5.0
 CacheControl==0.14.4
 certifi==2026.7.22
 cffi==2.1.1
-charset-normalizer==3.5.1
+charset-normalizer==3.5.2
 click==8.5.0
 contourpy==1.4.0
 curl_cffi==0.16.3
