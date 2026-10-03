@@ -34,7 +34,7 @@ multitasking==0.0.13
 numpy==2.5.3
 packageurl-python==0.17.6
 packaging==26.3
-pandas==3.0.5
+pandas==3.0.6
 pandas_market_calendars==5.4.0
 peewee==4.5.1
 pillow==12.3.0
