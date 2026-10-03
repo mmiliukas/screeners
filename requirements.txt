@@ -50,7 +50,7 @@ pycparser==3.0
 pyee==13.0.1
 Pygments==2.21.0
 pyluach==2.3.0
-pyparsing==3.3.2
+pyparsing==3.3.3
 python-dateutil==2.9.0.post0
 pytz==2026.4
 PyYAML==6.0.3
