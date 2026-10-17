@@ -73,6 +73,6 @@ typing_extensions==4.16.0
 tzdata==2026.5
 urllib3==2.8.0
 webencodings==0.6.1
-websockets==17.1
+websockets==17.2
 yfinance==1.7.0
 zipp==4.1.0
