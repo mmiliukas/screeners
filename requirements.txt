@@ -75,4 +75,4 @@ urllib3==2.8.0
 webencodings==0.6.1
 websockets==17.1
 yfinance==1.7.0
-zipp==4.1.0
+zipp==4.1.1
