@@ -51,7 +51,7 @@ pyee==16.0.0
 Pygments==2.21.0
 pyluach==2.3.0
 pyparsing==3.3.3
-python-dateutil==3.0.0
+python-dateutil==4.0.0
 pytz==2026.5
 PyYAML==6.0.3
 requests==2.34.2
