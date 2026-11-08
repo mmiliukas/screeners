@@ -44,7 +44,7 @@ pip_audit==2.10.1
 platformdirs==4.13.5
 playwright==1.64.1
 protobuf==7.36.2
-py-serializable==2.1.0
+py-serializable==2.2.0
 pyarrow==26.0.0
 pycparser==3.12
 pyee==16.0.0
