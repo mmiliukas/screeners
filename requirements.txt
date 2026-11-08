@@ -45,7 +45,7 @@ platformdirs==4.13.5
 playwright==1.63.0
 protobuf==7.36.2
 py-serializable==2.1.0
-pyarrow==25.0.1
+pyarrow==26.0.0
 pycparser==3.12
 pyee==13.0.1
 Pygments==2.21.0
