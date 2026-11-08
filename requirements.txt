@@ -47,7 +47,7 @@ protobuf==7.36.2
 py-serializable==2.1.0
 pyarrow==26.0.0
 pycparser==3.12
-pyee==13.0.1
+pyee==16.0.0
 Pygments==2.21.0
 pyluach==2.3.0
 pyparsing==3.3.3
