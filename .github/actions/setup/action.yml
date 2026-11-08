@@ -7,7 +7,7 @@ runs:
     - uses: "actions/setup-python@v7"
       id: setup-python
       with:
-        python-version: "3.14.8"
+        python-version: "3.15.1"
         cache: "pip"
 
     - uses: actions/cache@v6
